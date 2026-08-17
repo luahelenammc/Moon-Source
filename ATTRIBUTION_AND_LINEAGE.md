@@ -16,11 +16,7 @@ The method and public architecture are called **Moon Source**.
 
 - Moon Source public surface: https://www.luahelena.com.br/moonsource/?lang=en
 - Moon's professional context: https://www.luahelena.com.br/ia/?lang=en
-- Canonical public repository: https://github.com/luahelena/mmc/Moon-Source
-
-The canonical repository URL is https://github.com/luahelena/mmc/Moon-Source? No. The correct canonical repository is:
-
-https://github.com/luahelenammc/Moon-Source
+- Canonical public repository: https://github.com/luahelenammc/Moon-Source
 
 ## Adaptation
 
