@@ -8,6 +8,19 @@ Moon Source is a public reference architecture for deciding what context should 
 
 This repository is the canonical public body of Moon Source. Setup, MSL and Chat–Work are public projections of that same architecture. Each is an entry point into a different responsibility, not a separate system.
 
+## Download Moon Source
+
+**Want the whole public architecture offline?**  
+[**Download the complete Moon Source repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+
+Or download only the portable you need:
+
+- [**Moon Source Setup 2.0 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) — reusable personal AI context.
+- [**Moon Source Language 4.3 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/msl/MSL_4_3.md) — adaptive structural grammar for context work.
+- [**Chat–Work Routing Protocol V2 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) — routing across ChatGPT surfaces, models and reasoning effort.
+
+[**Open the download hub →**](DOWNLOADS.md) for guidance on which file to choose and what the full ZIP contains.
+
 ## What can I use Moon Source for?
 
 | Situation | Start here | What it helps you do |
@@ -46,6 +59,7 @@ The topology is a loop of decisions, not a compulsory workflow. A materializatio
 
 ## Read deeper
 
+- [Downloads](DOWNLOADS.md) provides one-click access to the full repository ZIP and individual public portables.
 - [Architecture](ARCHITECTURE.md) explains the public field-to-form topology.
 - [Responsibility map](docs/RESPONSIBILITY_MAP.md) explains what each object is responsible for.
 - [Terminology](docs/TERMINOLOGY.md) translates local vocabulary into public language.
