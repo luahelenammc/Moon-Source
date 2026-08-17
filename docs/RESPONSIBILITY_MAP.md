@@ -42,7 +42,9 @@ System:
 [paste the file list, folder layout, workflow or object descriptions]
 ```
 
-If the field itself is still unclear, begin with [Field to Form](FIELD_TO_FORM.md). If a structural artifact or handoff is needed, use [MSL 4.3](../portables/msl/MSL_4_3.md). If the unresolved issue is where ChatGPT work should run, use the [Chat–Work Routing Protocol V2](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md). The [download hub](../DOWNLOADS.md) is the complete public access route.
+If the field itself is still unclear, begin with [Field to Form](FIELD_TO_FORM.md). If a structural artifact or handoff is needed, use [MSL 4.3](../portables/msl/MSL_4_3.md). If the unresolved issue is where ChatGPT work should run, use the [Chat–Work Routing Protocol V2](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md).
+
+**Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
 
 ## Reading rule
 
