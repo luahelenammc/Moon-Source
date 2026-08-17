@@ -41,3 +41,8 @@ A portable has one canonical path in this repository. A website or other surface
 ## Reuse
 
 Reuse, adaptation and teaching are welcome only within the terms stated by the portable and without erasing attribution. A repository-wide open-source license is not assumed unless one is explicitly added later.
+
+
+## Mirror synchronization
+
+A mirror may exist for access and backward-compatible URLs, but it is never a second semantic source. Preserve the mapped path, version and exact canonical bytes. Record the expected SHA-256 fingerprint in `registry/public-portables.json` and verify it with `scripts/check_mirror_sync.py`.
