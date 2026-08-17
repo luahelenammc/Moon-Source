@@ -40,7 +40,7 @@ A portable has one canonical path in this repository. A website or other surface
 
 ## Reuse
 
-Reuse, adaptation and teaching are welcome only within the terms stated by the portable and without erasing attribution. A repository-wide open-source license is not assumed unless one is explicitly added later.
+Use of a portable is governed by its own stated terms and any other applicable permission. Attribution guidance explains how credit should be preserved when a use is permitted; it does not grant rights by itself. A repository-wide open-source license is not assumed unless one is explicitly added later.
 
 
 ## Mirror synchronization
