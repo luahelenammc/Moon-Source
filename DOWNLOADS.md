@@ -6,9 +6,16 @@ Choose the smallest download that matches what you need.
 
 [**Download the complete Moon Source repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
 
-The ZIP contains the current public architecture, documentation, registry, validation scripts and all public portables in one offline snapshot of `main`.
+The ZIP contains the current public architecture, documentation, registry, validation scripts, all public portables and the Moon Source AI Kernel in one offline snapshot of `main`.
 
-After extracting it, start with `README.md`.
+- **Human reader:** start with `README.md`.
+- **AI receiving the repository or ZIP:** start with `MOON_SOURCE_AI_KERNEL.md`.
+
+## Download the AI Kernel by itself
+
+[**Download / open Moon Source AI Kernel (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/MOON_SOURCE_AI_KERNEL.md)
+
+Use the standalone kernel when you want to give an AI only selected Moon Source files rather than the entire repository. It defines the public boot sequence, authority map, task routing, context-loading discipline, freshness rules and public-boundary behavior.
 
 ## Download one public portable
 
@@ -22,6 +29,7 @@ These links point to the canonical files in this repository. Website copies are 
 
 ## Browse before downloading
 
+- [Moon Source AI Kernel](MOON_SOURCE_AI_KERNEL.md)
 - [Moon Source Setup guide](portables/setup/README.md)
 - [MSL 4.3 guide](portables/msl/README.md)
 - [Chat–Work Routing guide](portables/chat-work/README.md)
@@ -30,6 +38,7 @@ These links point to the canonical files in this repository. Website copies are 
 
 ## Which download should I choose?
 
+- **Giving Moon Source files to an AI?** Include or point it to the **Moon Source AI Kernel**.
 - **Just want AI to understand you better?** Download **Moon Source Setup 2.0**.
 - **Want the structural grammar?** Download **MSL 4.3**.
 - **Want the Chat ↔ Work operating protocol?** Download **Chat–Work Routing Protocol V2**.

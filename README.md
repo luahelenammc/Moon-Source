@@ -8,6 +8,8 @@ Moon Source is a public reference architecture for deciding what context should 
 
 This repository is the canonical public body of Moon Source. Setup, MSL and Chat–Work are public projections of that same architecture. Each is an entry point into a different responsibility, not a separate system.
 
+**Giving this repository or its ZIP to an AI?** Start with the [Moon Source AI Kernel](MOON_SOURCE_AI_KERNEL.md). It defines the boot sequence, authority map, context-loading rules and task routing for the public corpus.
+
 ## Download Moon Source
 
 **Want the whole public architecture offline?**  
@@ -19,7 +21,7 @@ Or download only the portable you need:
 - [**Moon Source Language 4.3 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/msl/MSL_4_3.md) — adaptive structural grammar for context work.
 - [**Chat–Work Routing Protocol V2 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) — routing across ChatGPT surfaces, models and reasoning effort.
 
-[**Open the download hub →**](DOWNLOADS.md) for guidance on which file to choose and what the full ZIP contains.
+[**Open the download hub →**](DOWNLOADS.md) for the standalone AI Kernel, individual files and guidance on which download to choose.
 
 ## What can I use Moon Source for?
 
