@@ -32,63 +32,35 @@ Or download only the portable you need:
 | You work across ChatGPT surfaces and need to decide where a task belongs | [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) | Route a task by surface, model and reasoning effort, with product details bounded by freshness and official references |
 | You want to publish, mirror or adapt one of the public materials | [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), [registry](registry/PUBLIC_PORTABLES.md) and [versioning rules](docs/VERSIONING_AND_RELEASES.md) | Find canonical paths, freshness rules, attribution guidance, mirror rules and release boundaries |
 
-## Public proof map
+## How Moon Source works
 
-| Artifact | What it demonstrates | What it is not |
-|---|---|---|
-| [Moon Source Setup 2.0](portables/setup/MOON_SOURCE_SETUP.md) | A guided way to create reusable personal AI context from situated information | The complete private Moon Source system or proof of downstream impact |
-| [Moon Source Language 4.3](portables/msl/MSL_4_3.md) | An adaptive Markdown-native structural grammar for context work | Executable code, a universal standard or disclosure of private compiler/resolver internals |
-| [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) | A practical routing protocol that separates surface, model and reasoning effort | Official OpenAI policy or a guarantee that dated product details remain current |
-| [Moon Source public surface](https://www.luahelena.com.br/moonsource/?lang=en) | A human-facing explanation and access layer | The canonical semantic or versioning authority |
-| [Moon professional context](https://www.luahelena.com.br/ia/?lang=en) | The professional context surrounding Moon's context-architecture work | A client adoption case study |
-| [Moon Source repository](https://github.com/luahelenammc/Moon-Source) | Versioned public architecture, evidence discipline, public boundaries and canonical portable files | An SDK, hosted service or public dump of the private corpus |
+Moon Source follows a decision loop:
 
-## How the architecture decides
+**field → observation and diagnosis → authority → responsibility → proportional form → operation and transport → feedback, hygiene and archive**
 
-Moon Source uses a short decision topology:
+It is not a compulsory workflow. A materialization can reveal new facts and send the work back to observation, authority or responsibility. The point is to let the situation determine the smallest form that can carry the work without losing provenance, scope or ownership.
 
-| Question | Public guide |
-|---|---|
-| What is happening before it becomes a document? | [Field to form](docs/FIELD_TO_FORM.md) |
-| Which source has authority over which claim or state? | [Architecture](ARCHITECTURE.md#3-jurisdiction-and-authority) and [responsibility map](docs/RESPONSIBILITY_MAP.md) |
-| What form is proportionate to the work? | [Architecture](ARCHITECTURE.md) and [terminology](docs/TERMINOLOGY.md) |
-| How should context move between people, models, threads or systems? | [Responsibility map](docs/RESPONSIBILITY_MAP.md) and [MSL 4.3](portables/msl/MSL_4_3.md) |
-| How should a public artifact remain current and bounded? | [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), [registry](registry/PUBLIC_PORTABLES.md) and [versioning](docs/VERSIONING_AND_RELEASES.md) |
-
-The topology is a loop of decisions, not a compulsory workflow. A materialization can reveal new facts and send the work back to observation, authority or responsibility.
+For the deeper model, read [Architecture](ARCHITECTURE.md), [Field to form](docs/FIELD_TO_FORM.md), the [Responsibility map](docs/RESPONSIBILITY_MAP.md) and [Terminology](docs/TERMINOLOGY.md).
 
 ## Read deeper
 
-- [Downloads](DOWNLOADS.md) provides one-click access to the full repository ZIP and individual public portables.
-- [Architecture](ARCHITECTURE.md) explains the public field-to-form topology.
-- [Responsibility map](docs/RESPONSIBILITY_MAP.md) explains what each object is responsible for.
-- [Terminology](docs/TERMINOLOGY.md) translates local vocabulary into public language.
-- [Existing implementations](docs/EXISTING_IMPLEMENTATIONS.md) maps published artifacts and their evidence class.
-- [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md) explains canonical paths, mirrors and portable boundaries.
-- [Public Boundary](PUBLIC_BOUNDARY.md) and [Evidence and Claims](EVIDENCE_AND_CLAIMS.md) define the disclosure and claim ceiling.
-- [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) explains how repository, portable, MSL and website revisions remain distinct.
+- [Existing implementations](docs/EXISTING_IMPLEMENTATIONS.md) maps the public artifacts that actually exist and the evidence class behind them.
+- [Evidence and Claims](EVIDENCE_AND_CLAIMS.md) and [Public Boundary](PUBLIC_BOUNDARY.md) define what the public body supports, what it does not establish and what remains private.
+- [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), the [portable registry](registry/PUBLIC_PORTABLES.md) and [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) govern canonical paths, mirrors, freshness and releases.
 - [Attribution and Lineage](ATTRIBUTION_AND_LINEAGE.md) records authorship and historical relation.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16.
-- Current structural grammar: MSL 4.3.
-- MSL verdict: KEEP_MSL_4_3.
-- Public portables: Setup 2.0, MSL 4.3 and Chat–Work Routing Protocol V2 2.0-public.
-- Canonical repository: [luahelenammc/Moon-Source](https://github.com/luahelenammc/Moon-Source).
-- Human-facing public surface: [luahelena.com.br/moonsource](https://www.luahelena.com.br/moonsource/?lang=en).
-- Professional context: [luahelena.com.br/ia](https://www.luahelena.com.br/ia/?lang=en).
-- Website downloads are convenience mirrors. The repository remains the semantic and versioning source.
+- Public architecture baseline: 2026-08-16; current structural grammar: MSL 4.3 (`KEEP_MSL_4_3`).
+- The current public portable family is tracked in the [portable registry](registry/PUBLIC_PORTABLES.md).
+- Human-facing public surface: [luahelena.com.br/moonsource](https://www.luahelena.com.br/moonsource/?lang=en). Professional context: [luahelena.com.br/ia](https://www.luahelena.com.br/ia/?lang=en).
+- This repository remains the semantic and versioning authority; website downloads are convenience mirrors.
 
-## Evidence and public boundary
+## Evidence, boundary and terms
 
-The public body documents architecture, terminology, interfaces, versioning, evidence classes and published portables. It is built from existing evidence and deliberately does not manufacture a case study or before-and-after story.
+The public body is built from existing evidence. It does not manufacture a case study or before-and-after story, and it does not establish external adoption, impact, universal validity, product-market fit, enterprise readiness or a universal standard.
 
 Private source corpora, third-party material, deployment state, private resolver and compiler heuristics, detailed reconciliation machinery and enough cross-file detail to reconstruct protected methods remain outside this repository.
-
-The public body supports claims about the published artifacts and the public reference architecture. It does not establish external adoption, impact, universal validity, product-market fit, enterprise readiness or a universal standard. See [Evidence and Claims](EVIDENCE_AND_CLAIMS.md) and [Public Boundary](PUBLIC_BOUNDARY.md).
-
-## Authorship, attribution and terms
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority. See [Attribution and Lineage](ATTRIBUTION_AND_LINEAGE.md).
 
