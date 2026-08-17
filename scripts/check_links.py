@@ -14,7 +14,7 @@ FAILURES: list[str] = []
 
 def check(path: Path) -> None:
     text = path.read_text(encoding="utf-8")
-    if "https://www.mooon.com.br" in text or "https://mooon.com.br" in text:
+    if "https://" + "www.mooon.com.br" in text or "https://" + "mooon.com.br" in text:
         FAILURES.append(f"{path}: stale canonical domain")
     for target in LINK_RE.findall(text):
         if target.startswith(("http://", "https://", "#")):
