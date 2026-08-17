@@ -40,7 +40,7 @@ Moon Source follows a decision loop:
 
 It is not a compulsory workflow. A materialization can reveal new facts and send the work back to observation, authority or responsibility. The point is to let the situation determine the smallest form that can carry the work without losing provenance, scope or ownership.
 
-For the deeper model, read [Architecture](ARCHITECTURE.md), [Field to form](docs/FIELD_TO_FORM.md), the [Responsibility map](docs/RESPONSIBILITY_MAP.md) and [Terminology](docs/TERMINOLOGY.md).
+Apply the architecture directly through [Architecture](ARCHITECTURE.md), [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [Terminology](docs/TERMINOLOGY.md); each includes a practical way to use that layer and routes to the relevant public portable.
 
 ## Read deeper
 

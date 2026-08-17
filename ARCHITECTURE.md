@@ -29,6 +29,41 @@ feedback, hygiene and archive
 
 This is a decision topology, not a universal mandatory lifecycle. A materialization can reveal new facts and send the work back to observation, authority or topology.
 
+## Use this architecture
+
+Choose the public entry point that matches the field in front of you:
+
+- **Personal context:** start with [Moon Source Setup 2.0](portables/setup/MOON_SOURCE_SETUP.md).
+- **Project, team or knowledge field:** run the [Field-to-Form diagnostic](docs/FIELD_TO_FORM.md) before choosing a document type.
+- **Structure, source, handoff or protocol design:** use [MSL 4.3](portables/msl/MSL_4_3.md) after the responsibility is clear.
+- **ChatGPT execution routing:** use the [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) when surface, model or reasoning effort is the actual decision.
+
+### Apply this architecture now
+
+Copy the operation below into an AI conversation or use it as a worksheet:
+
+```text
+Use the Moon Source public field-to-form architecture on the situation below.
+
+Identify:
+1. the field as it exists before choosing a document type;
+2. relevant sources, actors and current pressures;
+3. contradiction, freshness, friction and uncertainty;
+4. which source or role has authority over each important claim or state;
+5. responsibilities and relationships that must remain distinct;
+6. the smallest materialization that would create a real capability;
+7. how that materialization should operate, travel and be updated;
+8. what belongs in active state, lineage or archive.
+
+Keep observed material separate from inference when the distinction changes a decision.
+Do not force every Moon Source artifact family into the result. Use only forms that earn a real function.
+
+Situation:
+[describe or attach the material]
+```
+
+For the supporting decisions, use [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [MSL 4.3](portables/msl/MSL_4_3.md). The [download hub](DOWNLOADS.md) keeps the public materials together; the [full public repository ZIP](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) is the offline route.
+
 ## 1. Field
 
 The field is the situation before it has been reduced to a document type.

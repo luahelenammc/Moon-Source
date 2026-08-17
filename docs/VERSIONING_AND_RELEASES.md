@@ -37,3 +37,7 @@ The 2026-08-16 promotion audit returns KEEP_MSL_4_3. Source jurisdiction, proced
 ## Future versions
 
 A future MSL major version would need evidence that the grammar itself has changed: for example, a new invariant, a new form-selection law or a new structural responsibility that cannot remain a procedural projection or protocol. If that happens, publish migration guidance and preserve MSL 4.3 as a prior generation.
+
+## Public routes
+
+Inspect the current public family in the [portable registry](../registry/PUBLIC_PORTABLES.md), use the [download hub](../DOWNLOADS.md) for access, or return to [Architecture](../ARCHITECTURE.md) for the governing model.

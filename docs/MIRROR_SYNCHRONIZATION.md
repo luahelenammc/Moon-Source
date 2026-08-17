@@ -40,3 +40,7 @@ python scripts/check_mirror_sync.py --mirror-root /path/to/LUAHELENA
 ```
 
 A non-zero exit means at least one canonical file or mirror has drifted.
+
+## Public routes
+
+Use the [portable registry](../registry/PUBLIC_PORTABLES.md) for canonical paths and fingerprints, the [download hub](../DOWNLOADS.md) for public access, or [Architecture](../ARCHITECTURE.md) for the responsibilities behind the files.

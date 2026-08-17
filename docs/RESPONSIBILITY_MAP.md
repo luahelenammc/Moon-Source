@@ -21,6 +21,29 @@ The following objects can work together, but they do not perform the same job.
 | Archive / legacy | Preserved history | Retain prior states without governing the present | The current active source |
 | MSL | Adaptive structural grammar | Choose proportionate form and preserve structural laws | A container, runtime or universal ontology |
 
+## Use the responsibility map
+
+Apply the map to an existing set of files, objects or workflows before creating new categories:
+
+```text
+Use the Moon Source Responsibility Map on the system below.
+
+For each important item, identify:
+1. what responsibility it currently appears to perform;
+2. what responsibility it should own;
+3. whether it is overloaded, duplicated or carrying another object's authority;
+4. which object should remain authoritative;
+5. the smallest repair: split, merge, relabel, bridge, handoff, protocol, archive or no change;
+6. what must remain current and what should be demoted to lineage or archive.
+
+Prioritize repairing ownership and transport. Do not generate every Moon Source object type unless the field requires it.
+
+System:
+[paste the file list, folder layout, workflow or object descriptions]
+```
+
+If the field itself is still unclear, begin with [Field to Form](FIELD_TO_FORM.md). If a structural artifact or handoff is needed, use [MSL 4.3](../portables/msl/MSL_4_3.md). If the unresolved issue is where ChatGPT work should run, use the [Chat–Work Routing Protocol V2](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md). The [download hub](../DOWNLOADS.md) is the complete public access route.
+
 ## Reading rule
 
 When two objects appear to overlap, ask which responsibility is actually changing. Similar content does not make the objects interchangeable.
