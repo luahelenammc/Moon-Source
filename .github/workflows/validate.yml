@@ -1,1 +1,2 @@
 name: Validate public repository
+on: workflow_dispatch
