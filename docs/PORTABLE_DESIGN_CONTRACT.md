@@ -46,3 +46,7 @@ Use of a portable is governed by its own stated terms and any other applicable p
 ## Mirror synchronization
 
 A mirror may exist for access and backward-compatible URLs, but it is never a second semantic source. Preserve the mapped path, version and exact canonical bytes. Record the expected SHA-256 fingerprint in `registry/public-portables.json` and verify it with `scripts/check_mirror_sync.py`.
+
+## Public routes
+
+Use the [portable registry](../registry/PUBLIC_PORTABLES.md) for canonical files and fingerprints, the [download hub](../DOWNLOADS.md) for distribution, or [Architecture](../ARCHITECTURE.md) for the underlying responsibilities.

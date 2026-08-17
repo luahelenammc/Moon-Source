@@ -46,3 +46,7 @@ If yes or plausibly yes, reduce the disclosure to principles, responsibilities, 
 ## Public-safe claim rule
 
 Existing artifacts may be inspected, versioned and mapped. They must not be rewritten as adoption stories, validated case studies or successful outcomes when the evidence does not establish those claims.
+
+## Public routes
+
+For practical use, start with [Architecture](ARCHITECTURE.md) or [Field to Form](docs/FIELD_TO_FORM.md). Use [Downloads](DOWNLOADS.md) to reach the current public materials.

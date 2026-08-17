@@ -27,3 +27,25 @@ Prefer responsibility-first language:
 - “public reference repository” before “engine.”
 
 Local terms may follow once the responsibility is clear.
+
+## Translate an existing system into Moon Source language
+
+Use terminology as a diagnostic, not as a renaming exercise:
+
+```text
+Translate the system below into responsibility-first public language.
+
+Return a compact table with:
+- original term or object;
+- what it currently does in practice;
+- closest Moon Source term, if one clarifies responsibility;
+- whether renaming is actually necessary;
+- any authority, ownership or freshness ambiguity revealed by the translation.
+
+Do not rename something merely to make it sound like Moon Source. Preserve the original vocabulary when it is already clear.
+
+System:
+[paste project docs, folder layout, workflow, AI setup or knowledge-base vocabulary]
+```
+
+Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when the translation exposes overloaded roles, and [Architecture](../ARCHITECTURE.md) when it exposes a missing field or authority decision. Use [MSL 4.3](../portables/msl/MSL_4_3.md) only when a structural materialization is warranted. The [download hub](../DOWNLOADS.md) provides the full public route.

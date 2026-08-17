@@ -15,6 +15,35 @@ Moon Source begins with a field: a changing situation whose context, authority a
 
 The sequence can loop. It is a map of decisions, not a compulsory waterfall.
 
+## Run Field to Form
+
+Use this lightweight diagnostic on a real situation, either as a human worksheet or as a copy-paste operation for another AI:
+
+```text
+Run a Moon Source Field-to-Form diagnostic on the material below.
+
+Return only what is needed to choose a proportionate form:
+- Field
+- Observed pressures and friction
+- Relevant sources
+- Authority / jurisdiction
+- Actors and owners
+- Candidate materializations
+- Smallest adequate form, with the reason it earns existence
+- What is intentionally not being created
+- Operation / transport
+- Freshness or update trigger
+- Next action
+
+Keep facts, inference and uncertainty distinct where they could change the choice.
+Do not require every Moon Source artifact type. The form comes from the field.
+
+Material:
+[describe or attach the situation, sources or workflow]
+```
+
+For a personal field, continue with [Moon Source Setup 2.0](../portables/setup/MOON_SOURCE_SETUP.md). For structural materialization, use [MSL 4.3](../portables/msl/MSL_4_3.md). Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when ownership is the unresolved question, or the [download hub](../DOWNLOADS.md) for the complete public family.
+
 ## A practical test
 
 Before creating a new artifact, ask:

@@ -59,3 +59,7 @@ Every new public claim should answer:
 4. Is the language stronger than the evidence?
 
 If a claim cannot answer those questions, label it INCUBATING, PLANNED, RESERVED or NOT_DEMONSTRATED.
+
+## Public routes
+
+Use [Existing Implementations](docs/EXISTING_IMPLEMENTATIONS.md) to inspect the artifacts behind current claims, the [README](README.md) for orientation, or [Downloads](DOWNLOADS.md) for the current public distribution.
