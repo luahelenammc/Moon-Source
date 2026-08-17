@@ -21,10 +21,10 @@ The public body does not automatically include:
 
 - full source-authority resolver rules;
 - private calibration, thresholds or scoring;
-- complete Project MRI taxonomies or repair ordering;
-- private Skill Foundry compiler gates and evaluation suites;
+- private diagnostic taxonomies;
+- private compiler and evaluation machinery;
 - private prompts, adapters or context corpora;
-- detailed reconciliation and mutation heuristics;
+- detailed reconciliation, mutation and repair ordering;
 - patient, client, collaborator or third-party material;
 - deployment credentials, runtime state, hosts, quotas or ephemeral receipts;
 - enough cross-file detail to reconstruct protected machinery with high fidelity.
@@ -33,7 +33,7 @@ The public body does not automatically include:
 
 The boundary protects privacy, third-party material, unfinished work and legitimate intellectual property. It also improves public clarity. A public reader needs to understand the responsibility of a resolver or compiler before receiving its private implementation.
 
-Public disclosure is not a promise of open-source licensing. A portable may be readable and reusable within its stated terms while the repository remains without a broad repository-wide license until that choice is ratified.
+Public disclosure is not a promise of open-source licensing. A portable may be readable within its stated scope while the repository remains without a broad repository-wide license until that choice is ratified. Attribution guidance does not itself grant reuse rights.
 
 ## Reconstruction test
 

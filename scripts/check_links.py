@@ -5,30 +5,54 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
-FAILURES: list[str] = []
+LINK_RE = re.compile(r"\[[^\]]+\]\(([^)\n]+)\)")
 
 
-def check(path: Path) -> None:
+def local_target(path: Path, target: str) -> Path | None:
+    """Return the filesystem target for a relative Markdown link."""
+
+    target = target.strip()
+    if target.startswith("<") and target.endswith(">"):
+        target = target[1:-1]
+
+    parsed = urlsplit(target)
+    if parsed.scheme or parsed.netloc or not parsed.path:
+        return None
+
+    return (path.parent / unquote(parsed.path)).resolve()
+
+
+def check(path: Path) -> list[str]:
+    """Return validation failures for one Markdown file."""
+
+    failures: list[str] = []
     text = path.read_text(encoding="utf-8")
-    if "https://" + "www.mooon.com.br" in text or "https://" + "mooon.com.br" in text:
-        FAILURES.append(f"{path}: stale canonical domain")
+
+    if "mooon.com.br" in text:
+        failures.append(f"{path}: stale canonical domain")
+
     for target in LINK_RE.findall(text):
-        if target.startswith(("http://", "https://", "#")):
-            continue
-        target_path = (path.parent / target).resolve()
-        if not target_path.exists():
-            FAILURES.append(f"{path}: missing relative link {target}")
+        target_path = local_target(path, target)
+        if target_path is not None and not target_path.exists():
+            failures.append(f"{path}: missing relative link {target}")
+
+    return failures
 
 
-for markdown in ROOT.rglob("*.md"):
-    check(markdown)
+def main() -> None:
+    failures: list[str] = []
+    for markdown in ROOT.rglob("*.md"):
+        failures.extend(check(markdown))
 
-if FAILURES:
-    print("\n".join(FAILURES))
-    raise SystemExit(1)
+    if failures:
+        print("\n".join(failures))
+        raise SystemExit(1)
 
-print("local Markdown links and canonical domains validated")
+    print("local Markdown links and canonical domains validated")
+
+
+if __name__ == "__main__":
+    main()

@@ -6,7 +6,7 @@ Historical and superseded material should be preserved through Git history or an
 
 The branded website may retain legacy download URLs for compatibility. Those URLs are convenience mirrors, not the source of current semantics.
 
-The previous mooon.com.br location is historical lineage only. Current references belong to:
+The previous pre-canonical location is historical lineage only. Current references belong to:
 
 - https://www.luahelena.com.br/moonsource/
 - https://www.luahelena.com.br/ia/
