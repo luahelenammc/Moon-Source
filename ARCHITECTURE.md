@@ -62,7 +62,9 @@ Situation:
 [describe or attach the material]
 ```
 
-For the supporting decisions, use [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [MSL 4.3](portables/msl/MSL_4_3.md). The [download hub](DOWNLOADS.md) keeps the public materials together; the [full public repository ZIP](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) is the offline route.
+For the supporting decisions, use [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [MSL 4.3](portables/msl/MSL_4_3.md).
+
+**Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](DOWNLOADS.md).
 
 ## 1. Field
 
