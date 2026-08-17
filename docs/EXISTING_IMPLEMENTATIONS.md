@@ -2,7 +2,9 @@
 
 This map points to artifacts that already exist. It is not a manufactured case study and does not claim external adoption.
 
-Use it to choose an inspectable public capability. If the question is what should be created rather than what already exists, start with [Field to Form](FIELD_TO_FORM.md) and [Architecture](../ARCHITECTURE.md). The [download hub](../DOWNLOADS.md) is the route to the complete public family.
+Use it to choose an inspectable public capability. If the question is what should be created rather than what already exists, start with [Field to Form](FIELD_TO_FORM.md) and [Architecture](../ARCHITECTURE.md).
+
+**Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
 
 ## Public artifacts
 
