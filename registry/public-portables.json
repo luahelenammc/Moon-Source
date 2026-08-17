@@ -25,7 +25,9 @@
       "freshness": "general; review wording when the public setup changes",
       "claim_ceiling": "Published guided setup; no impact or adoption claim",
       "supersedes": null,
-      "archive_paths": []
+      "archive_paths": [],
+      "mirror_path": "moonsource/downloads/MOON_SOURCE_SETUP.md",
+      "canonical_sha256": "8023c97cc5f64392da77cc9e55fb723208ab291c3f616fd1b0519ba8d2a2461f"
     },
     {
       "id": "moon-source-language",
@@ -47,7 +49,9 @@
       "freshness": "structural standard; audit before adopting a later version",
       "claim_ceiling": "Published MSL 4.3 portable; not a universal standard or runtime",
       "supersedes": null,
-      "archive_paths": []
+      "archive_paths": [],
+      "mirror_path": "moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_4_3.md",
+      "canonical_sha256": "99988c11b756f6d989c63585e366d5ca7a3c49f2ae6f5c62b4e2359572296f44"
     },
     {
       "id": "chat-work-routing",
@@ -71,7 +75,25 @@
       "freshness": "date-sensitive; recheck product behavior, model names, prices and usage pools",
       "claim_ceiling": "Published routing protocol; no universal benchmark or OpenAI policy claim",
       "supersedes": null,
-      "archive_paths": []
+      "archive_paths": [],
+      "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V2_MSL_4_3.md",
+      "canonical_sha256": "c6e536d3c681c0d34b257974ca39789a36011cda16726926b78a7b9f583b264d"
     }
-  ]
+  ],
+  "mirror_contract": {
+    "status": "pending-website-pr-11-merge",
+    "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
+    "mirror_repository": "https://github.com/luahelenammc/LUAHELENA",
+    "mirror_branch": "main",
+    "rule": "The repository is the only semantic and versioning source; website downloads are convenience mirrors with preserved legacy paths.",
+    "update_procedure": [
+      "Update the canonical portable in Moon-Source first.",
+      "Run scripts/validate_portables.py and scripts/check_links.py.",
+      "Copy the exact canonical UTF-8 bytes to the mapped LUAHELENA moonsource/downloads path on a branch.",
+      "Run scripts/check_mirror_sync.py against the remote mirror or a local LUAHELENA checkout.",
+      "Open and review a website pull request; merge only after SHA-256 equality and production-surface review."
+    ],
+    "mismatch_detection": "python scripts/check_mirror_sync.py",
+    "current_rebase_note": "PR #11 carries exact mirror updates; production main remains unchanged pending explicit Moon acceptance."
+  }
 }
