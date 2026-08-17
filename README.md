@@ -33,6 +33,19 @@ It explains the public architecture, versions the public portable family, maps e
 
 Each portable is useful on its own and belongs to the same family. The registry records its canonical path, version, freshness and claim ceiling.
 
+## Moon Source at a glance
+
+Moon Source is the architecture that turns a situated field into a governed, portable and proportionate form. The public artifacts below are instances of this architecture; they are not the whole architecture.
+
+| Moon Source layer | What it does | What it is not |
+|---|---|---|
+| Field / situated reality | Starts with the person, project, team, institution, workflow, knowledge base or changing situation as it actually exists | Not a generic prompt or an abstract data schema |
+| Observation / diagnosis | Separates evidence, friction, contradiction, freshness, risk and missing context before materialization | Not an automatic truth detector or an opaque scoring engine |
+| Authority / topology | Identifies which source governs which claim or state, who owns the work and how sources relate | Not a claim that every accessible file is authoritative |
+| Proportional form | Chooses the smallest adequate form for the situation instead of forcing everything into one template | Not a universal template or a maximal documentation ritual |
+| Materialization families | Lets context travel through living sources, skills, handoffs, protocols, packets, registries, interfaces, bridges or archives when those forms are useful | Not a requirement that every project use every form |
+| Public boundary / evidence discipline | Distinguishes public artifacts, internal projections, reserved methods and claims the available evidence does not establish | Not external validation, adoption evidence or disclosure of protected machinery |
+
 ## Public artifact map
 
 This is a compact orientation layer. `EXISTING_IMPLEMENTATIONS.md` carries the deeper evidence map; the registry carries portable metadata.
