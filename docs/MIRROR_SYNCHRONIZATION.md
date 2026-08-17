@@ -23,7 +23,7 @@ A mirror is synchronized only when its fetched bytes hash to the canonical finge
 5. Review the website PR for path preservation, rendering and production safety.
 6. Merge only after SHA-256 equality is confirmed.
 
-The 2026-08-16 rebase prepared exact mirror updates in [LUAHELENA PR #11](https://github.com/luahelenammc/LUAHELENA/pull/11). Production `main` remains unchanged until Moon accepts promotion.
+The 2026-08-16 rebase prepared exact mirror updates in [LUAHELENA PR #11](https://github.com/luahelenammc/LUAHELENA/pull/11), which merged into `main` as `31e1473ead26ba6f23900ad4f7259cbe2bdec7e4`. The mirror files are now in production `main`; canonical and mirror bytes were verified equal on 2026-08-16 after PR #12 and PR #13, and GitHub Pages run `31985711151` completed successfully.
 
 ## Mismatch detection
 
