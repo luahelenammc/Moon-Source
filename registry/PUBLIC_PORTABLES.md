@@ -25,3 +25,10 @@ Setup and MSL are general public documents, but their wording can evolve. Chatâ€
 ## Legacy policy
 
 A superseded version should remain recoverable through Git history, an archive path or a preserved website URL where feasible. It should be marked superseded rather than silently deleted.
+
+
+## Mirror synchronization contract
+
+The repository paths in the table are the only current semantic sources. The branded website paths are convenience mirrors preserved for compatibility.
+
+Each registry entry records the mirror path, mirror URL, portable version and canonical SHA-256 fingerprint. Run `python scripts/check_mirror_sync.py` after any portable or mirror change. The 2026-08-16 rebase prepared exact mirror updates in [LUAHELENA PR #11](https://github.com/luahelenammc/LUAHELENA/pull/11); production remains unchanged pending explicit Moon acceptance.
