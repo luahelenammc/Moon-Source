@@ -40,15 +40,14 @@ A reference architecture is not a universal standard.
 
 This repository does not claim:
 
-- validated enterprise deployment;
-- external adoption;
+- external adoption or independently validated outcomes;
+- validated enterprise deployment or enterprise readiness;
 - universal superiority over other context systems;
-- a general software engine without corresponding public implementation evidence;
-- automated cross-platform synchronization;
-- native Personal Skills availability on every ChatGPT surface;
-- full Citadel runtime proof;
-- consciousness or autonomy;
-- MSL 5.
+- a universal standard;
+- a general software engine or hosted service without corresponding public implementation evidence;
+- automated cross-platform synchronization beyond the explicit mirror checks;
+- reproduction of the full private runtime or source corpus;
+- product-market fit, return on investment or downstream impact.
 
 ## Claim discipline
 
