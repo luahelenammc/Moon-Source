@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -22,6 +23,9 @@ REQUIRED = {
     "best_for",
     "canonical_path",
     "download_url",
+    "mirror_path",
+    "mirror_url",
+    "canonical_sha256",
     "public_surface_url",
     "professional_context_url",
     "dependencies",
@@ -57,6 +61,15 @@ def main() -> None:
         seen_paths.add(portable["canonical_path"])
 
         content = path.read_text(encoding="utf-8")
+        expected_sha256 = portable["canonical_sha256"]
+        if not re.fullmatch(r"[0-9a-f]{64}", expected_sha256):
+            fail(f"{portable['id']} has an invalid canonical_sha256")
+        actual_sha256 = hashlib.sha256(content.encode("utf-8")).hexdigest()
+        if actual_sha256 != expected_sha256:
+            fail(f"{portable['id']} canonical_sha256 does not match its file")
+        if not portable["mirror_path"].startswith("moonsource/downloads/"):
+            fail(f"{portable['id']} mirror_path is outside the website download surface")
+
         for required_url in (
             data["public_surface_url"],
             data["professional_context_url"],
