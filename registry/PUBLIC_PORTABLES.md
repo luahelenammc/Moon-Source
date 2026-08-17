@@ -31,4 +31,4 @@ A superseded version should remain recoverable through Git history, an archive p
 
 The repository paths in the table are the only current semantic sources. The branded website paths are convenience mirrors preserved for compatibility.
 
-Each registry entry records the mirror path, mirror URL, portable version and canonical SHA-256 fingerprint. Run `python scripts/check_mirror_sync.py` after any portable or mirror change. The 2026-08-16 rebase prepared exact mirror updates in [LUAHELENA PR #11](https://github.com/luahelenammc/LUAHELENA/pull/11); production remains unchanged pending explicit Moon acceptance.
+Each registry entry records the mirror path, mirror URL, portable version and canonical SHA-256 fingerprint. Run `python scripts/check_mirror_sync.py` after any portable or mirror change. The 2026-08-16 rebase prepared exact mirror updates in [LUAHELENA PR #11](https://github.com/luahelenammc/LUAHELENA/pull/11), which merged into `main` as `31e1473ead26ba6f23900ad4f7259cbe2bdec7e4`. Canonical and mirror bytes were verified equal on 2026-08-16 after production promotion PR #12 and title cleanup PR #13; GitHub Pages run `31985711151` completed successfully.

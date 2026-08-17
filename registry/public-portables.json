@@ -81,7 +81,7 @@
     }
   ],
   "mirror_contract": {
-    "status": "pending-website-pr-11-merge",
+    "status": "verified-production-main",
     "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
     "mirror_repository": "https://github.com/luahelenammc/LUAHELENA",
     "mirror_branch": "main",
@@ -94,6 +94,6 @@
       "Open and review a website pull request; merge only after SHA-256 equality and production-surface review."
     ],
     "mismatch_detection": "python scripts/check_mirror_sync.py",
-    "current_rebase_note": "PR #11 carries exact mirror updates; production main remains unchanged pending explicit Moon acceptance."
+    "current_rebase_note": "PR #11 carried exact mirror updates and merged into LUAHELENA main as 31e1473ead26ba6f23900ad4f7259cbe2bdec7e4. Production promotion merged as PR #12 (7346a7e8b3fb778a930485cdd74091c2b8629f8f), with the production-title cleanup merged as PR #13 (fb1d318378cf00ea7b8f7239b4b4dd4be39c303c). Canonical and mirror bytes were verified equal on 2026-08-16; Pages run 31985711151 completed successfully."
   }
 }
