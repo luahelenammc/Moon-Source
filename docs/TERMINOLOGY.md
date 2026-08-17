@@ -48,4 +48,6 @@ System:
 [paste project docs, folder layout, workflow, AI setup or knowledge-base vocabulary]
 ```
 
-Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when the translation exposes overloaded roles, and [Architecture](../ARCHITECTURE.md) when it exposes a missing field or authority decision. Use [MSL 4.3](../portables/msl/MSL_4_3.md) only when a structural materialization is warranted. The [download hub](../DOWNLOADS.md) provides the full public route.
+Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when the translation exposes overloaded roles, and [Architecture](../ARCHITECTURE.md) when it exposes a missing field or authority decision. Use [MSL 4.3](../portables/msl/MSL_4_3.md) only when a structural materialization is warranted.
+
+**Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
