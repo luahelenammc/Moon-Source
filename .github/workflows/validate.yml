@@ -29,6 +29,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: Fingerprint portable bytes
+        run: |
+          sha256sum portables/setup/MOON_SOURCE_SETUP.md
+          sha256sum portables/msl/MSL_4_3.md
+          sha256sum portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md
       - run: python scripts/check_links.py
       - run: python scripts/validate_portables.py
       - run: python scripts/test_check_links.py
