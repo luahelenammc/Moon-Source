@@ -105,7 +105,7 @@
       "Open and review a website pull request; merge only after SHA-256 equality and production-surface review."
     ],
     "mismatch_detection": "python scripts/check_mirror_sync.py",
-    "current_rebase_note": "PR #11 carried exact mirror updates and merged into LUAHELENA main as 31e1473ead26ba6f23900ad4f7259cbe2bdec7e4. Production promotion merged as PR #12 (7346a7e8b3fb778a930485cdd74091c2b8629f8f), with the production-title cleanup merged as PR #13 (fb1d318378cf00ea7b8f7239b4b4dd4be39c303c). Canonical and mirror bytes were verified equal on 2026-08-16; Pages run 31985711151 completed successfully."
+    "current_rebase_note": "The 2026-08-17 repository-wide public-stamp release refreshed canonical portable fingerprints and re-synchronized all three branded mirrors through LUAHELENA PR #18, merged as 055a413490273c1df26f89f9a011b5a33ec907c2. Post-copy Git blob identities matched the Moon-Source canonical files byte-for-byte: Setup 2891435ad98f17940edbd761fd7b3bed83af4bbb, MSL dfb5e327e9813ad9dd3db15f5030efa21083edbd, Chat–Work a74f0c20c56d81640512bf7fe78cc96e5adda548. Earlier 2026-08-16 mirror lineage remains in Git history and MIRROR_SYNCHRONIZATION.md."
   },
   "_moon_source_public_stamp": {
     "full_zip": "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip",
