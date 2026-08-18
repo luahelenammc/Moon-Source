@@ -1,15 +1,21 @@
 name: One-time attribution governance migration
 
 on:
-  push:
-    branches:
-      - agent/split-attribution-governance
+  pull_request:
+    branches: [main]
+    paths:
+      - "*.md"
+      - "**/*.md"
+      - "registry/**"
+      - "scripts/**"
+      - ".github/workflows/migrate-attribution-governance.yml"
 
 permissions:
   contents: write
 
 jobs:
   migrate:
+    if: github.head_ref == 'agent/split-attribution-governance'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -66,7 +72,7 @@ jobs:
       - name: Normalize compact watermark and portable hashes
         run: python scripts/apply_public_stamps.py
 
-      - name: Validate repository
+      - name: Validate migrated tree
         run: |
           python scripts/check_links.py
           python scripts/validate_portables.py
