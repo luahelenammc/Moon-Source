@@ -42,7 +42,7 @@ Material:
 [describe or attach the situation, sources or workflow]
 ```
 
-For a personal field, continue with [Moon Source Setup 2.0](../portables/setup/MOON_SOURCE_SETUP.md). For structural materialization, use [MSL 4.3](../portables/msl/MSL_4_3.md). Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when ownership is the unresolved question and [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when source lineage, adaptation or permission scope changes the form.
+For a personal or project field, continue with [Moon Source Setup 3.0](../portables/setup/MOON_SOURCE_SETUP.md). For structural materialization, use [MSL 4.3](../portables/msl/MSL_4_3.md). Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when ownership is the unresolved question and [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when source lineage, adaptation or permission scope changes the form.
 
 **Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
 

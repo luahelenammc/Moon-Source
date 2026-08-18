@@ -33,7 +33,7 @@ This is a decision topology, not a universal mandatory lifecycle. A materializat
 
 Choose the public entry point that matches the field in front of you:
 
-- **Personal context:** start with [Moon Source Setup 2.0](portables/setup/MOON_SOURCE_SETUP.md).
+- **Personal or project context:** start with [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
 - **Project, team or knowledge field:** run the [Field-to-Form diagnostic](docs/FIELD_TO_FORM.md) before choosing a document type.
 - **Structure, source, handoff or protocol design:** use [MSL 4.3](portables/msl/MSL_4_3.md) after the responsibility is clear.
 - **ChatGPT execution routing:** use the [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) when surface, model or reasoning effort is the actual decision.
