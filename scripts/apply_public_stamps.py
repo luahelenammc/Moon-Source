@@ -54,11 +54,14 @@ def tracked_files() -> list[Path]:
 
 def normalize_text_stamp(path: Path, stamp: str, marker: str) -> bool:
     content = path.read_text(encoding="utf-8")
-    if marker in content:
-        base = content.split(marker, 1)[0].rstrip()
+    marker_line = f"\n{marker}\n"
+    if marker_line in content:
+        base = content.rsplit(marker_line, 1)[0].rstrip()
+    elif content.startswith(marker + "\n"):
+        base = ""
     else:
         base = content.rstrip()
-    normalized = base + "\n\n" + stamp.rstrip() + "\n"
+    normalized = base + "\n\n" + stamp.rstrip() + "\n" if base else stamp.rstrip() + "\n"
     if normalized == content:
         return False
     path.write_text(normalized, encoding="utf-8", newline="\n")
