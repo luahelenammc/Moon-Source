@@ -49,6 +49,7 @@ jobs:
           python-version: "3.x"
       - run: python scripts/check_mirror_sync.py
 
+# final repository-wide stamp validation refresh
 # MOON-SOURCE-PUBLIC-STAMP
 # 🌙 Moon Source · 📦 Full ZIP: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
 # 🧬 Credit: Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion.
