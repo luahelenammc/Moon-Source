@@ -23,7 +23,9 @@ A mirror is synchronized only when its fetched bytes hash to the canonical finge
 5. Review the website PR for path preservation, rendering and production safety.
 6. Merge only after SHA-256 equality is confirmed.
 
-The 2026-08-16 rebase prepared exact mirror updates in [LUAHELENA PR #11](https://github.com/luahelenammc/LUAHELENA/pull/11), which merged into `main` as `31e1473ead26ba6f23900ad4f7259cbe2bdec7e4`. The mirror files are now in production `main`; canonical and mirror bytes were verified equal on 2026-08-16 after PR #12 and PR #13, and GitHub Pages run `31985711151` completed successfully.
+The 2026-08-16 rebase prepared exact mirror updates in [LUAHELENA PR #11](https://github.com/luahelenammc/LUAHELENA/pull/11), which merged into `main` as `31e1473ead26ba6f23900ad4f7259cbe2bdec7e4`. The mirror files were verified equal after PR #12 and PR #13, and GitHub Pages run `31985711151` completed successfully.
+
+The 2026-08-17 repository-wide public-stamp release changed the canonical portable bytes. Their SHA-256 fingerprints were refreshed and the three branded mirrors were copied directly from `Moon-Source/main` in [LUAHELENA PR #18](https://github.com/luahelenammc/LUAHELENA/pull/18), merged as `055a413490273c1df26f89f9a011b5a33ec907c2`. Post-copy Git blob identities matched the canonical files byte-for-byte: Setup `2891435ad98f17940edbd761fd7b3bed83af4bbb`, MSL `dfb5e327e9813ad9dd3db15f5030efa21083edbd`, and Chat–Work `a74f0c20c56d81640512bf7fe78cc96e5adda548`.
 
 ## Mismatch detection
 
