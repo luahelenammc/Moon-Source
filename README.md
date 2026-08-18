@@ -1,4 +1,4 @@
-# Moon Source
+# 🌙 Moon Source
 
 AI chat history is not the same thing as governed context.
 
@@ -10,20 +10,20 @@ This repository is the canonical public body of Moon Source. Setup, MSL and Chat
 
 **Giving this repository or its ZIP to an AI?** Start with the [Moon Source AI Kernel](MOON_SOURCE_AI_KERNEL.md). It defines the boot sequence, authority map, context-loading rules and task routing for the public corpus.
 
-## Download Moon Source
+## 📦 Download Moon Source
 
 **Want the whole public architecture offline?**  
-[**Download the complete Moon Source repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+[📦 **Download the complete Moon Source repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
 
 Or download only the portable you need:
 
-- [**Moon Source Setup 2.0 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) — reusable personal AI context.
-- [**Moon Source Language 4.3 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/msl/MSL_4_3.md) — adaptive structural grammar for context work.
-- [**Chat–Work Routing Protocol V2 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) — routing across ChatGPT surfaces, models and reasoning effort.
+- [🧭 **Moon Source Setup 2.0 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) — reusable personal AI context.
+- [🧱 **Moon Source Language 4.3 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/msl/MSL_4_3.md) — adaptive structural grammar for context work.
+- [🔀 **Chat–Work Routing Protocol V2 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) — routing across ChatGPT surfaces, models and reasoning effort.
 
-[**Open the download hub →**](DOWNLOADS.md) for the standalone AI Kernel, individual files and guidance on which download to choose.
+[🗂️ **Open the download hub →**](DOWNLOADS.md) for the standalone AI Kernel, individual files and guidance on which download to choose.
 
-## What can I use Moon Source for?
+## 🧭 What can I use Moon Source for?
 
 | Situation | Start here | What it helps you do |
 |---|---|---|
@@ -32,9 +32,9 @@ Or download only the portable you need:
 | You need a structure for recurring context work, updates or handoffs | [Moon Source Language 4.3](portables/msl/MSL_4_3.md) | Choose a proportionate Markdown-native form for sources, skills, handoffs, packets, protocols, registries and archives |
 | Work needs to move between a person, model, thread or project without losing state | [MSL 4.3](portables/msl/MSL_4_3.md) and the [responsibility map](docs/RESPONSIBILITY_MAP.md) | Separate objective, current state, constraints, authority, provenance and next actions |
 | You work across ChatGPT surfaces and need to decide where a task belongs | [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) | Route a task by surface, model and reasoning effort, with product details bounded by freshness and official references |
-| You want to publish, mirror or adapt one of the public materials | [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), [registry](registry/PUBLIC_PORTABLES.md) and [versioning rules](docs/VERSIONING_AND_RELEASES.md) | Find canonical paths, freshness rules, attribution guidance, mirror rules and release boundaries |
+| You want to publish, mirror or adapt one of the public materials | [📐 Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), [🗂️ registry](registry/PUBLIC_PORTABLES.md) and [📚 versioning rules](docs/VERSIONING_AND_RELEASES.md) | Find canonical paths, freshness rules, attribution guidance, mirror rules and release boundaries |\n| A stable method needs to become a reusable procedural capability | [🧭 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Separate governing source, reusable procedure, triggers, guards, QA and native/fallback surfaces |\n| A context corpus feels stale, contradictory or bloated | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Audit authority, freshness, duplication, contradiction, orphaned decisions, provenance and the smallest safe repair |
 
-## How Moon Source works
+## ⚙️ How Moon Source works
 
 Moon Source follows a decision loop:
 
@@ -44,21 +44,21 @@ It is not a compulsory workflow. A materialization can reveal new facts and send
 
 Apply the architecture directly through [Architecture](ARCHITECTURE.md), [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [Terminology](docs/TERMINOLOGY.md); each includes a practical way to use that layer and routes to the relevant public portable.
 
-## Read deeper
+## 🔗 Read deeper
 
 - [Existing implementations](docs/EXISTING_IMPLEMENTATIONS.md) maps the public artifacts that actually exist and the evidence class behind them.
 - [Evidence and Claims](EVIDENCE_AND_CLAIMS.md) and [Public Boundary](PUBLIC_BOUNDARY.md) define what the public body supports, what it does not establish and what remains private.
 - [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), the [portable registry](registry/PUBLIC_PORTABLES.md) and [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) govern canonical paths, mirrors, freshness and releases.
-- [Attribution and Lineage](ATTRIBUTION_AND_LINEAGE.md) records authorship and historical relation.
+- 🧬 [Attribution and Lineage](ATTRIBUTION_AND_LINEAGE.md) records authorship and historical relation.\n- 🧭 [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) explains reusable methods without turning them into sources of truth.\n- 🧹 [Source Hygiene](docs/SOURCE_HYGIENE.md) explains bounded corpus diagnosis and conservative repair.
 
-## Current baseline
+## 📌 Current baseline
 
 - Public architecture baseline: 2026-08-16; current structural grammar: MSL 4.3 (`KEEP_MSL_4_3`).
 - The current public portable family is tracked in the [portable registry](registry/PUBLIC_PORTABLES.md).
 - Human-facing public surface: [luahelena.com.br/moonsource](https://www.luahelena.com.br/moonsource/?lang=en). Professional context: [luahelena.com.br/ia](https://www.luahelena.com.br/ia/?lang=en).
 - This repository remains the semantic and versioning authority; website downloads are convenience mirrors.
 
-## Evidence, boundary and terms
+## 🛡️ Evidence, boundary and terms
 
 The public body is built from existing evidence. It does not manufacture a case study or before-and-after story, and it does not establish external adoption, impact, universal validity, product-market fit, enterprise readiness or a universal standard.
 

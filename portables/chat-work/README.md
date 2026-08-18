@@ -1,15 +1,15 @@
-# Chat–Work Routing Protocol V2
+# 🔀 Chat–Work Routing Protocol V2
 
 A public, ChatGPT-first protocol for separating surface, model and reasoning-effort decisions.
 
-[**Download / open Chat–Work Routing Protocol V2 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md)
+[⬇️ **Download / open Chat–Work Routing Protocol V2 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md)
 
-- Current version: 2.0-public
-- Canonical file: [CHAT_WORK_ROUTING_PROTOCOL_V2.md](CHAT_WORK_ROUTING_PROTOCOL_V2.md)
-- Language: English
-- Freshness: date-sensitive; recheck product behavior and model calibration
-- Claim ceiling: published routing protocol; not an OpenAI policy or universal benchmark
+- 📌 Current version: 2.0-public
+- 🗂️ Canonical file: [CHAT_WORK_ROUTING_PROTOCOL_V2.md](CHAT_WORK_ROUTING_PROTOCOL_V2.md)
+- 🌐 Language: English
+- 🕒 Freshness: date-sensitive; recheck product behavior and model calibration
+- 🛡️ Claim ceiling: published routing protocol; not an OpenAI policy or universal benchmark
 
-Want the whole public architecture instead? [Download the complete Moon Source repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip).
+Want the whole public architecture instead? [📦 Download the complete Moon Source repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip).
 
-Return to the [download hub](../../DOWNLOADS.md) or [portable registry](../../registry/PUBLIC_PORTABLES.md).
+Return to the [🗂️ download hub](../../DOWNLOADS.md) or [📚 portable registry](../../registry/PUBLIC_PORTABLES.md).
