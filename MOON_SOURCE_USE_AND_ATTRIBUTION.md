@@ -1,6 +1,6 @@
 # 🌙 Moon Source Use & Attribution
 
-## Public project governance · MSL 4.3
+## Repository footer governance · MSL 4.3
 
 - **canonical repository:** https://github.com/luahelenammc/Moon-Source
 - **canonical path:** `MOON_SOURCE_USE_AND_ATTRIBUTION.md`
@@ -8,11 +8,14 @@
 - **professional context:** https://www.luahelena.com.br/ia/?lang=en
 - **human creator and final authority:** Lua Helena Moon Martins Cardoso (Moon)
 - **AI-assisted coauthorial development:** Moon + Áurion
-- **status:** active public use-and-attribution authority
+- **catalogue status:** repository governance; not a Moon Source component or portable
+- **status:** active footer use-and-attribution authority
 
 This document governs how the public Moon Source body may be used, referenced, adapted, taught, mirrored and credited. It is specific to Moon Source itself.
 
-It does not replace the reusable [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) module. That component governs provenance and attribution as a general operation for any project or source family. This file governs the Moon Source project, its public body and the compact stamp carried by its documents.
+This is repository governance, not an operational Moon Source component. It belongs to the compact footer / watermark carried by public Moon Source documents and should not be listed alongside methods, engines, procedures or portables in capability menus.
+
+It does not replace the reusable [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) module. **Credits & Attribution Ops is the actual Moon Source component** for provenance and attribution as a general operation for any project or source family. This file governs the Moon Source project, its public body and the compact stamp carried by its documents.
 
 ## 1. Two different questions
 
