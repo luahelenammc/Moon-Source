@@ -15,6 +15,8 @@ Internal names are useful for continuity, but a public reader should be able to 
 | Runtime | Callable operating layer | Use only where real executable capacity is evidenced |
 | Public surface | Human-facing portal or distribution layer | Does not replace the source |
 | Archive | Preserved historical material | Historical does not mean current |
+| Credits / Attribution Ops | Bounded operation for authorship, lineage, adaptation and permission scope | Not a licence or automatic rights resolver |
+| Provenance | Recoverable relationship between a source, transformation and destination | Do not treat a record as authority by itself |
 
 ## Public language
 
@@ -48,6 +50,6 @@ System:
 [paste project docs, folder layout, workflow, AI setup or knowledge-base vocabulary]
 ```
 
-Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when the translation exposes overloaded roles, and [Architecture](../ARCHITECTURE.md) when it exposes a missing field or authority decision. Use [MSL 4.3](../portables/msl/MSL_4_3.md) only when a structural materialization is warranted.
+Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when the translation exposes overloaded roles, [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when it exposes missing provenance or adaptation boundaries, and [Architecture](../ARCHITECTURE.md) when it exposes a missing field or authority decision. Use [MSL 4.3](../portables/msl/MSL_4_3.md) only when a structural materialization is warranted.
 
 **Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).

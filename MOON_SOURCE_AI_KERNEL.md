@@ -29,7 +29,10 @@ Use each file for the responsibility it actually owns:
 - `ARCHITECTURE.md` — public Moon Source architecture and field-to-form topology.
 - `docs/FIELD_TO_FORM.md` — deciding what should exist before choosing a container or artifact type.
 - `docs/RESPONSIBILITY_MAP.md` — separating responsibilities, ownership, authority and transport between objects.
-- `docs/TERMINOLOGY.md` — responsibility-first translation between ordinary language and Moon Source vocabulary.\n- `docs/PROCEDURAL_PROJECTION.md` — public source/procedure/skill contract, projection, QA and semantic-undercompilation checks.\n- `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
+- `docs/TERMINOLOGY.md` — responsibility-first translation between ordinary language and Moon Source vocabulary.
+- `docs/CREDITS_ATTRIBUTION_OPS.md` — bounded operations for authorship, provenance, adaptation, permission scope, mirrors and public credit.
+- `docs/PROCEDURAL_PROJECTION.md` — public source/procedure/skill contract, projection, QA and semantic-undercompilation checks.
+- `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — guided personal-context setup.
 - `portables/msl/MSL_4_3.md` — current public structural grammar for materialization. MSL remains 4.3.
 - `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md` — ChatGPT surface/model/reasoning-effort routing; product details are date-sensitive.
@@ -79,7 +82,30 @@ Load:
 
 Choose the smallest form that creates a real capability. Do not generate a source, skill, handoff, protocol, registry, bridge and archive just because those categories exist.
 
-### If the user wants to turn a stable method into a reusable procedural capability\n\nLoad:\n- `docs/PROCEDURAL_PROJECTION.md`\n\nThen load the governing source or procedure only as needed. Keep live state in the source; do not imply automatic synchronization or native execution where only a portable or mirror is available.\n\n### If the user needs to audit a stale, contradictory or bloated context corpus\n\nLoad:\n- `docs/SOURCE_HYGIENE.md`\n- `docs/RESPONSIBILITY_MAP.md` when ownership or authority is unclear.\n\nDo not rewrite governed sources without explicit mutation authority. Do not treat a bounded hygiene method as an autonomous scanner.\n\n### If the user needs to transfer context between people, models, threads or projects
+### If the user wants to turn a stable method into a reusable procedural capability
+
+Load:
+- `docs/PROCEDURAL_PROJECTION.md`
+
+Then load the governing source or procedure only as needed. Keep live state in the source; do not imply automatic synchronization or native execution where only a portable or mirror is available.
+
+### If the user needs to audit a stale, contradictory or bloated context corpus
+
+Load:
+- `docs/SOURCE_HYGIENE.md`
+- `docs/RESPONSIBILITY_MAP.md` when ownership or authority is unclear.
+
+Do not rewrite governed sources without explicit mutation authority. Do not treat a bounded hygiene method as an autonomous scanner.
+
+### If the user needs to preserve credits, lineage or adaptation boundaries
+
+Load:
+- `docs/CREDITS_ATTRIBUTION_OPS.md`
+- `ATTRIBUTION_AND_LINEAGE.md` when authorship or final authority is disputed.
+
+Record origin, relationship, absorbed/adapted/rejected material, permission scope and destination. Do not infer permission from public availability, and do not let a credit record become a source of truth by itself.
+
+### If the user needs to transfer context between people, models, threads or projects
 
 Load:
 - `docs/RESPONSIBILITY_MAP.md`
@@ -99,6 +125,7 @@ Treat model names, prices, usage pools, limits and product behavior as date-sens
 Load:
 - `registry/PUBLIC_PORTABLES.md`
 - `docs/PORTABLE_DESIGN_CONTRACT.md`
+- `docs/CREDITS_ATTRIBUTION_OPS.md`
 - `docs/VERSIONING_AND_RELEASES.md`
 - `EVIDENCE_AND_CLAIMS.md`
 - `PUBLIC_BOUNDARY.md`
@@ -125,7 +152,7 @@ For a general Moon Source application, use this loop only to the depth the task 
 5. **Responsibility** — Which objects should own which jobs, and which are overloaded?
 6. **Proportional form** — What is the smallest materialization that creates a needed capability?
 7. **Operation / transport** — How will it actually be used, moved or invoked?
-8. **Hygiene** — What must remain current, what is superseded, and what belongs in lineage or archive?
+8. **Hygiene and lineage** — What must remain current, what is superseded, what provenance must remain visible, and what belongs in lineage or archive?
 
 This is a decision loop, not a compulsory waterfall.
 
@@ -202,6 +229,7 @@ The public Moon Source may expose:
 - public portable procedures;
 - public responsibility distinctions;
 - public versioning, lineage and distribution rules.
+- bounded credits, attribution and adaptation operations.
 
 It does not expose or establish:
 - private source corpora;

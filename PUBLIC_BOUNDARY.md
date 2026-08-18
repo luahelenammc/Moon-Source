@@ -13,6 +13,7 @@ The public body may include:
 - public portables that are independently usable;
 - evidence classes and non-claims;
 - attribution and lineage;
+- bounded credits and attribution operations;
 - versioning and public-safe implementation notes.
 
 ## Reserved
@@ -27,7 +28,9 @@ The public body does not automatically include:
 - detailed reconciliation, mutation and repair ordering;
 - patient, client, collaborator or third-party material;
 - deployment credentials, runtime state, hosts, quotas or ephemeral receipts;
-- enough cross-file detail to reconstruct protected machinery with high fidelity;\n- the fine Skill Foundry compiler, promotion gates, hidden evaluation suites, MRI taxonomy, weights, labels, repair ordering or private corpus.
+- enough cross-file detail to reconstruct protected machinery with high fidelity;
+- the fine Skill Foundry compiler, promotion gates, hidden evaluation suites, MRI taxonomy, weights, labels, repair ordering or private corpus;
+- private ingestion ledgers, permission-resolution heuristics or third-party confidential attribution material.
 
 ## Why this boundary exists
 
@@ -49,4 +52,4 @@ Existing artifacts may be inspected, versioned and mapped. They must not be rewr
 
 ## Public routes
 
-For practical use, start with [Architecture](ARCHITECTURE.md) or [Field to Form](docs/FIELD_TO_FORM.md). For reusable procedures, use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md); for corpus diagnosis, use [Source Hygiene](docs/SOURCE_HYGIENE.md). Use [Downloads](DOWNLOADS.md) to reach the current public materials.
+For practical use, start with [Architecture](ARCHITECTURE.md) or [Field to Form](docs/FIELD_TO_FORM.md). For reusable procedures, use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md); for corpus diagnosis, use [Source Hygiene](docs/SOURCE_HYGIENE.md); for credits, lineage, adaptation and bounded reuse, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md). Use [Downloads](DOWNLOADS.md) to reach the current public materials.

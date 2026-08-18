@@ -4,6 +4,17 @@
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
   "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+  "public_governance_components": [
+    {
+      "id": "credits-attribution-ops",
+      "title": "Credits & Attribution Ops Protocol",
+      "class": "public-governance-reference",
+      "canonical_path": "docs/CREDITS_ATTRIBUTION_OPS.md",
+      "function": "Preserve authorship, source lineage, adaptation, permission scope, mirror identity and public credit",
+      "claim_ceiling": "Bounded public method; not a licence, legal resolver, automatic rights system or adoption claim",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
+    }
+  ],
   "portables": [
     {
       "id": "moon-source-setup",
@@ -27,7 +38,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_SETUP.md",
-      "canonical_sha256": "8023c97cc5f64392da77cc9e55fb723208ab291c3f616fd1b0519ba8d2a2461f"
+      "canonical_sha256": "b2660faf140926d248871b3e7fe44bb1990b927f95822efb0ada6d5c31e3a58b"
     },
     {
       "id": "moon-source-language",
@@ -51,7 +62,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_4_3.md",
-      "canonical_sha256": "99988c11b756f6d989c63585e366d5ca7a3c49f2ae6f5c62b4e2359572296f44"
+      "canonical_sha256": "ebbe7aeabc9020c3895af46e7d2b963c8b963bba35b74c857247910bd7922070"
     },
     {
       "id": "chat-work-routing",
@@ -77,7 +88,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V2_MSL_4_3.md",
-      "canonical_sha256": "b4ce03e175aa6022663071c1baa7ae72529f39a2f2432fe302dbcb8f07565bcc"
+      "canonical_sha256": "1cf353c33c4de3a4d15ebed083abd90379d0e250f4f31ba2130d0609c0a0681d"
     }
   ],
   "mirror_contract": {

@@ -6,6 +6,8 @@ A public source-hygiene method for auditing context corpora, project files and k
 
 **Project MRI** is the lineage name for this family of work. This document publishes a bounded diagnostic interface, not a finished autonomous scanner or the private MRI engine.
 
+Missing provenance, unclear adaptation or an unattributed material transformation is a source-hygiene finding. Use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for the bounded public operation; do not publish private ingestion ledgers or infer legal permission from a missing marker.
+
 ## 🔍 What kind of failure is this?
 
 | Finding | The question |
@@ -51,6 +53,7 @@ A useful finding should be recorded with:
 | **Smallest repair** | The least invasive action that improves legibility |
 | **Mutation authority** | Who or what must authorize a rewrite |
 | **Lineage impact** | What history, archive or mirror must be preserved |
+| **Attribution impact** | Which authorship, source relationship or permission scope must remain visible |
 | **Uncertainty** | What remains unproven |
 
 ## 🛠️ Apply it now
