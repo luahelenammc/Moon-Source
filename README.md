@@ -15,7 +15,7 @@ This repository is the canonical public body of Moon Source. Setup, MSL and Chat
 
 Or download only the portable you need:
 
-- [🧭 **Moon Source Setup 2.0 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) — reusable personal AI context.
+- [🧭 **Moon Source Setup 3.0 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) — adaptive routing for proportionate personal and project AI context.
 - [🧱 **Moon Source Language 4.3 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/msl/MSL_4_3.md) — adaptive structural grammar for context work.
 - [🔀 **Chat–Work Routing Protocol V2 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) — routing across ChatGPT surfaces, models and reasoning effort.
 
@@ -25,7 +25,7 @@ Or download only the portable you need:
 
 | Situation | Start here | What it helps you do |
 |---|---|---|
-| You want an AI to understand your personal context more consistently | [Moon Source Setup 2.0](portables/setup/MOON_SOURCE_SETUP.md) | Create a guided, reusable personal context source and use it inside the AI tool you already use |
+| You want an AI to understand your context more consistently | [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md) | Infer the smallest useful setup for your need, maturity, destination and privacy boundary |
 | A project or knowledge base has scattered sources, unclear ownership or recurring friction | [Architecture](ARCHITECTURE.md) and [Field to form](docs/FIELD_TO_FORM.md) | Inspect the field, identify authority and responsibility, and choose what deserves to become a source, procedure or other form |
 | You need a structure for recurring context work, updates or handoffs | [Moon Source Language 4.3](portables/msl/MSL_4_3.md) | Choose a proportionate Markdown-native form for sources, skills, handoffs, packets, protocols, registries and archives |
 | Work needs to move between a person, model, thread or project without losing state | [MSL 4.3](portables/msl/MSL_4_3.md) and the [responsibility map](docs/RESPONSIBILITY_MAP.md) | Separate objective, current state, constraints, authority, provenance and next actions |

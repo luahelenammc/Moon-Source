@@ -10,9 +10,9 @@ Use it to choose an inspectable public capability. If the question is what shoul
 
 | Capability | Inspectable materialization | Evidence class | Claim ceiling |
 |---|---|---|---|
-| Personal context setup | [Moon Source Setup 2.0](../portables/setup/MOON_SOURCE_SETUP.md) | PUBLIC_ARTIFACT | A guided setup is published; impact is not demonstrated here. |
+| Personal context setup | [Moon Source Setup 3.0](../portables/setup/MOON_SOURCE_SETUP.md) | PUBLIC_ARTIFACT | An adaptive setup is published; impact is not demonstrated here. |
 | Adaptive structural grammar | [MSL 4.3](../portables/msl/MSL_4_3.md) | PUBLIC_ARTIFACT | MSL 4.3 is published as a portable; it is not a universal standard. |\n| Procedural projection method | [Procedural Projection](PROCEDURAL_PROJECTION.md) | PUBLIC_ARTIFACT | A bounded public method exists; automatic synchronization, native execution everywhere and impact are not demonstrated. |\n| Source-hygiene / Project MRI method | [Source Hygiene](SOURCE_HYGIENE.md) | PUBLIC_ARTIFACT | A bounded diagnostic surface exists; it is not a finished autonomous scanner or repair engine. |
-| Personal context setup | [Moon Source Setup 2.0](../portables/setup/MOON_SOURCE_SETUP.md) | PUBLIC_ARTIFACT | A guided setup is published; impact is not demonstrated here. |
+| Personal context setup | [Moon Source Setup 3.0](../portables/setup/MOON_SOURCE_SETUP.md) | PUBLIC_ARTIFACT | An adaptive setup is published; impact is not demonstrated here. |
 | Adaptive structural grammar | [MSL 4.3](../portables/msl/MSL_4_3.md) | PUBLIC_ARTIFACT | MSL 4.3 is published as a portable; it is not a universal standard. |
 | Procedural projection method | [Procedural Projection](PROCEDURAL_PROJECTION.md) | PUBLIC_ARTIFACT | A bounded public method exists; automatic synchronization, native execution everywhere and impact are not demonstrated. |
 | Source-hygiene / Project MRI method | [Source Hygiene](SOURCE_HYGIENE.md) | PUBLIC_ARTIFACT | A bounded diagnostic surface exists; it is not a finished autonomous scanner or repair engine. |

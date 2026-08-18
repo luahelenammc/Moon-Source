@@ -33,7 +33,7 @@ Use each file for the responsibility it actually owns:
 - `docs/CREDITS_ATTRIBUTION_OPS.md` — bounded operations for authorship, provenance, adaptation, permission scope, mirrors and public credit.
 - `docs/PROCEDURAL_PROJECTION.md` — public source/procedure/skill contract, projection, QA and semantic-undercompilation checks.
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
-- `portables/setup/MOON_SOURCE_SETUP.md` — guided personal-context setup.
+- `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router.
 - `portables/msl/MSL_4_3.md` — current public structural grammar for materialization. MSL remains 4.3.
 - `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md` — ChatGPT surface/model/reasoning-effort routing; product details are date-sensitive.
 - `registry/PUBLIC_PORTABLES.md` — canonical public portable identities, versions and fingerprints.
@@ -52,7 +52,7 @@ When two files appear to conflict, do not flatten them together. First ask wheth
 ### If the user wants AI to understand them more consistently
 
 Load:
-- `portables/setup/MOON_SOURCE_SETUP.md`
+- `portables/setup/MOON_SOURCE_SETUP.md` — Setup 3.0
 
 Optionally load:
 - `ARCHITECTURE.md` if the user's context is already distributed across several sources or roles.
