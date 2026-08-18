@@ -50,3 +50,12 @@ If the field itself is still unclear, begin with [Field to Form](FIELD_TO_FORM.m
 ## Reading rule
 
 When two objects appear to overlap, ask which responsibility is actually changing. Similar content does not make the objects interchangeable.
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source public stamp**  
+> 📦 **Full repository:** [Download the complete Moon Source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)  
+> 🧬 **Credit & attribution:** **Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion.** [Credits & Attribution Ops](https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md) · [Professional context](https://www.luahelena.com.br/ia/?lang=en)  
+> Public availability and attribution do not themselves grant reuse rights; applicable component terms and permissions remain controlling.

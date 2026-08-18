@@ -22,29 +22,6 @@ permissions:
   contents: read
 
 jobs:
-  stamp-repository:
-    if: github.event_name == 'push' && github.event.head_commit.message == 'Install repository stamp applicator'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-      - run: python scripts/apply_public_stamps.py
-      - name: Commit repository-wide public stamps
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No stamp changes required."
-            exit 0
-          fi
-          git commit -m "Apply Moon Source distribution and attribution stamps"
-          git push origin HEAD:main
-
   local-validation:
     runs-on: ubuntu-latest
     steps:
@@ -55,6 +32,7 @@ jobs:
       - run: python scripts/check_links.py
       - run: python scripts/validate_portables.py
       - run: python scripts/test_check_links.py
+      - run: python scripts/check_public_stamps.py
 
   remote-mirror-drift:
     if: github.event_name == 'workflow_dispatch'
@@ -65,3 +43,10 @@ jobs:
         with:
           python-version: "3.x"
       - run: python scripts/check_mirror_sync.py
+
+# MOON-SOURCE-PUBLIC-STAMP
+# 🌙 Moon Source · 📦 Full ZIP: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
+# 🧬 Credit: Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion.
+# Attribution ops: https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md
+# Professional context: https://www.luahelena.com.br/ia/?lang=en
+# Public availability and attribution do not themselves grant reuse rights; applicable component terms and permissions remain controlling.

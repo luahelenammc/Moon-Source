@@ -69,3 +69,12 @@ If a claim cannot answer those questions, label it INCUBATING, PLANNED, RESERVED
 Use [Existing Implementations](docs/EXISTING_IMPLEMENTATIONS.md) to inspect the artifacts behind current claims, the [README](README.md) for orientation, or [Downloads](DOWNLOADS.md) for the current public distribution.
 
 For authorship, lineage and bounded reuse operations, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) together with [Attribution and Lineage](ATTRIBUTION_AND_LINEAGE.md).
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source public stamp**  
+> 📦 **Full repository:** [Download the complete Moon Source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)  
+> 🧬 **Credit & attribution:** **Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion.** [Credits & Attribution Ops](https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md) · [Professional context](https://www.luahelena.com.br/ia/?lang=en)  
+> Public availability and attribution do not themselves grant reuse rights; applicable component terms and permissions remain controlling.

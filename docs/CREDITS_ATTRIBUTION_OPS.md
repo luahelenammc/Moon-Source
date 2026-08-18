@@ -159,3 +159,12 @@ The method is public and inspectable. Its use in a given output still depends on
 - Public boundary: [Public Boundary](../PUBLIC_BOUNDARY.md)
 - Portable publication: [Portable Design Contract](PORTABLE_DESIGN_CONTRACT.md)
 - Mirror identity: [Mirror Synchronization](MIRROR_SYNCHRONIZATION.md)
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source public stamp**  
+> 📦 **Full repository:** [Download the complete Moon Source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)  
+> 🧬 **Credit & attribution:** **Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion.** [Credits & Attribution Ops](https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md) · [Professional context](https://www.luahelena.com.br/ia/?lang=en)  
+> Public availability and attribution do not themselves grant reuse rights; applicable component terms and permissions remain controlling.

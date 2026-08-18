@@ -27,3 +27,19 @@
 - Connected authorship, provenance, adaptation, permission scope, mirror identity and generated-output credit to the public architecture, procedural projection, source hygiene, registry and release routes.
 - Kept the protocol separate from licensing, legal permission, automatic rights resolution, adoption claims and private ingestion ledgers.
 - Repaired literal escaped line breaks introduced in the previous documentation integration.
+
+## 2026-08-17 — Repository-wide public stamps
+
+- Applied a compact Full ZIP distribution route and Credits & Attribution stamp across every tracked public text file in the repository.
+- Added an idempotent repository stamp applicator and a CI validator so future Markdown, Python, YAML and JSON components inherit the same public contract.
+- Preserved the permission boundary: public availability and attribution do not themselves grant reuse rights.
+- Required registered portable fingerprints to refresh whenever the stamp changes canonical bytes.
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source public stamp**  
+> 📦 **Full repository:** [Download the complete Moon Source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)  
+> 🧬 **Credit & attribution:** **Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion.** [Credits & Attribution Ops](https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md) · [Professional context](https://www.luahelena.com.br/ia/?lang=en)  
+> Public availability and attribution do not themselves grant reuse rights; applicable component terms and permissions remain controlling.

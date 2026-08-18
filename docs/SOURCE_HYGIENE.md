@@ -94,3 +94,12 @@ Do not rewrite a governed source without explicit mutation authority.
 This is a public source-hygiene method and bounded Project MRI lineage surface. It does not establish a finished scanner, autonomous repair, hidden taxonomy, scoring system, private evaluation corpus, external adoption or measured impact.
 
 See [Architecture](../ARCHITECTURE.md), [Evidence and Claims](../EVIDENCE_AND_CLAIMS.md) and [Public Boundary](../PUBLIC_BOUNDARY.md).
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source public stamp**  
+> 📦 **Full repository:** [Download the complete Moon Source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)  
+> 🧬 **Credit & attribution:** **Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion.** [Credits & Attribution Ops](https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md) · [Professional context](https://www.luahelena.com.br/ia/?lang=en)  
+> Public availability and attribution do not themselves grant reuse rights; applicable component terms and permissions remain controlling.

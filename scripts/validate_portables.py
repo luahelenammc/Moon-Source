@@ -109,3 +109,10 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+# MOON-SOURCE-PUBLIC-STAMP
+# 🌙 Moon Source · 📦 Full ZIP: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
+# 🧬 Credit: Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion.
+# Attribution ops: https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md
+# Professional context: https://www.luahelena.com.br/ia/?lang=en
+# Public availability and attribution do not themselves grant reuse rights; applicable component terms and permissions remain controlling.
