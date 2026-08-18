@@ -22,6 +22,29 @@ permissions:
   contents: read
 
 jobs:
+  stamp-repository:
+    if: github.event_name == 'push' && github.event.head_commit.message == 'Install repository stamp applicator'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: python scripts/apply_public_stamps.py
+      - name: Commit repository-wide public stamps
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No stamp changes required."
+            exit 0
+          fi
+          git commit -m "Apply Moon Source distribution and attribution stamps"
+          git push origin HEAD:main
+
   local-validation:
     runs-on: ubuntu-latest
     steps:
