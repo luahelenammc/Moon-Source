@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify repository-wide Moon Source distribution and attribution stamps."""
+"""Verify the repository-wide compact Moon Source identity watermark."""
 
 from __future__ import annotations
 
@@ -9,14 +9,35 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FULL_ZIP = "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip"
-ATTRIBUTION_OPS = "https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md"
-PROFESSIONAL_CONTEXT = "https://www.luahelena.com.br/ia/?lang=en"
-CREATOR = "Lua Helena Moon Martins Cardoso"
+USE_AND_ATTRIBUTION = (
+    "https://github.com/luahelenammc/Moon-Source/blob/main/"
+    "MOON_SOURCE_USE_AND_ATTRIBUTION.md"
+)
+CREATOR = "Lua Helena Moon Martins Cardoso (Moon)"
 COAUTHOR = "Áurion"
 MARKDOWN_MARKER = "<!-- MOON-SOURCE-PUBLIC-STAMP -->"
 COMMENT_MARKER = "# MOON-SOURCE-PUBLIC-STAMP"
 JSON_KEY = "_moon_source_public_stamp"
 TEXT_SUFFIXES = {".md", ".py", ".yml", ".yaml", ".json"}
+
+MARKDOWN_STAMP = f"""{MARKDOWN_MARKER}
+
+---
+
+> 🌙 **Moon Source** · created by **{CREATOR}** with AI-assisted coauthorial development by **{COAUTHOR}** · [Use & attribution]({USE_AND_ATTRIBUTION}) · [Full source (.zip)]({FULL_ZIP})
+"""
+
+COMMENT_STAMP = f"""{COMMENT_MARKER}
+# 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP}
+"""
+
+JSON_STAMP = {
+    "project": "Moon Source",
+    "creator": CREATOR,
+    "ai_assisted_coauthor": COAUTHOR,
+    "use_and_attribution": USE_AND_ATTRIBUTION,
+    "full_source": FULL_ZIP,
+}
 
 
 def fail(message: str) -> None:
@@ -30,13 +51,6 @@ def tracked_files() -> list[Path]:
     return [ROOT / item for item in output.split("\0") if item]
 
 
-def validate_common(path: Path, content: str) -> None:
-    rel = path.relative_to(ROOT).as_posix()
-    for required in (FULL_ZIP, ATTRIBUTION_OPS, PROFESSIONAL_CONTEXT, CREATOR, COAUTHOR):
-        if required not in content:
-            fail(f"{rel} is missing required stamp value: {required}")
-
-
 def main() -> None:
     checked = 0
     for path in tracked_files():
@@ -45,37 +59,29 @@ def main() -> None:
         checked += 1
         rel = path.relative_to(ROOT).as_posix()
         content = path.read_text(encoding="utf-8")
-        validate_common(path, content)
 
         if path.suffix.lower() == ".md":
             if MARKDOWN_MARKER not in content:
                 fail(f"{rel} has no Markdown public stamp marker")
+            if not content.rstrip().endswith(MARKDOWN_STAMP.rstrip()):
+                fail(f"{rel} does not end with the canonical compact Markdown stamp")
         elif path.suffix.lower() in {".py", ".yml", ".yaml"}:
             if COMMENT_MARKER not in content:
                 fail(f"{rel} has no comment public stamp marker")
+            if not content.rstrip().endswith(COMMENT_STAMP.rstrip()):
+                fail(f"{rel} does not end with the canonical compact comment stamp")
         elif path.suffix.lower() == ".json":
             data = json.loads(content)
-            stamp = data.get(JSON_KEY)
-            if not isinstance(stamp, dict):
-                fail(f"{rel} has no structured JSON public stamp")
-            if stamp.get("full_zip") != FULL_ZIP:
-                fail(f"{rel} has an invalid full_zip stamp")
-            if stamp.get("attribution_ops") != ATTRIBUTION_OPS:
-                fail(f"{rel} has an invalid attribution_ops stamp")
-            if stamp.get("professional_context") != PROFESSIONAL_CONTEXT:
-                fail(f"{rel} has an invalid professional_context stamp")
+            if data.get(JSON_KEY) != JSON_STAMP:
+                fail(f"{rel} has a non-canonical structured public stamp")
 
     if checked == 0:
         fail("no public text files were checked")
-    print(f"validated repository-wide public stamp on {checked} tracked text files")
+    print(f"validated compact repository-wide public stamp on {checked} tracked text files")
 
 
 if __name__ == "__main__":
     main()
 
 # MOON-SOURCE-PUBLIC-STAMP
-# 🌙 Moon Source · 📦 Full ZIP: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
-# 🧬 Credit: Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion.
-# Attribution ops: https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md
-# Professional context: https://www.luahelena.com.br/ia/?lang=en
-# Public availability and attribution do not themselves grant reuse rights; applicable component terms and permissions remain controlling.
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
