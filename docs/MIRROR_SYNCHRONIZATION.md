@@ -12,7 +12,7 @@ Each registry entry records:
 - the expected UTF-8 SHA-256 fingerprint of the canonical bytes;
 - the checker that detects mismatch.
 
-A mirror is synchronized only when its fetched bytes hash to the canonical fingerprint. A matching filename or matching version string is not sufficient.
+A mirror is synchronized only when its fetched bytes hash to the canonical fingerprint. A matching filename or matching version string is not sufficient. Apply [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when the mirror is presented outside its canonical repository so the source relationship and semantic authority remain visible.
 
 ## Update procedure
 
@@ -43,4 +43,4 @@ A non-zero exit means at least one canonical file or mirror has drifted.
 
 ## Public routes
 
-Use the [portable registry](../registry/PUBLIC_PORTABLES.md) for canonical paths and fingerprints, the [download hub](../DOWNLOADS.md) for public access, or [Architecture](../ARCHITECTURE.md) for the responsibilities behind the files.
+Use the [portable registry](../registry/PUBLIC_PORTABLES.md) for canonical paths and fingerprints, the [download hub](../DOWNLOADS.md) for public access, [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for provenance and mirror credit, or [Architecture](../ARCHITECTURE.md) for the responsibilities behind the files.

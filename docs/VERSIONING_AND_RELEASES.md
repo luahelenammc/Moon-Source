@@ -28,7 +28,8 @@ They should not be collapsed into one number.
 4. A version change must state whether it is additive, corrective, incompatible or archival.
 5. A major MSL version requires a semantic grammar change and migration guidance, not a new label.
 6. A public release must pass the public-boundary and claim checks.
-7. No license rights are broadened by implication.
+7. A release that changes authorship, lineage, adaptation status, canonical path or mirror identity must run the [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) checks.
+8. No license rights are broadened by implication.
 
 ## MSL decision
 
@@ -40,4 +41,4 @@ A future MSL major version would need evidence that the grammar itself has chang
 
 ## Public routes
 
-Inspect the current public family in the [portable registry](../registry/PUBLIC_PORTABLES.md), use the [download hub](../DOWNLOADS.md) for access, or return to [Architecture](../ARCHITECTURE.md) for the governing model.
+Inspect the current public family in the [portable registry](../registry/PUBLIC_PORTABLES.md), use the [download hub](../DOWNLOADS.md) for access, consult [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for provenance changes, or return to [Architecture](../ARCHITECTURE.md) for the governing model.

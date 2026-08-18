@@ -32,13 +32,16 @@ Or download only the portable you need:
 | You need a structure for recurring context work, updates or handoffs | [Moon Source Language 4.3](portables/msl/MSL_4_3.md) | Choose a proportionate Markdown-native form for sources, skills, handoffs, packets, protocols, registries and archives |
 | Work needs to move between a person, model, thread or project without losing state | [MSL 4.3](portables/msl/MSL_4_3.md) and the [responsibility map](docs/RESPONSIBILITY_MAP.md) | Separate objective, current state, constraints, authority, provenance and next actions |
 | You work across ChatGPT surfaces and need to decide where a task belongs | [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) | Route a task by surface, model and reasoning effort, with product details bounded by freshness and official references |
-| You want to publish, mirror or adapt one of the public materials | [📐 Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), [🗂️ registry](registry/PUBLIC_PORTABLES.md) and [📚 versioning rules](docs/VERSIONING_AND_RELEASES.md) | Find canonical paths, freshness rules, attribution guidance, mirror rules and release boundaries |\n| A stable method needs to become a reusable procedural capability | [🧭 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Separate governing source, reusable procedure, triggers, guards, QA and native/fallback surfaces |\n| A context corpus feels stale, contradictory or bloated | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Audit authority, freshness, duplication, contradiction, orphaned decisions, provenance and the smallest safe repair |
+| You want to publish, mirror or adapt one of the public materials | [📐 Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), [🗂️ registry](registry/PUBLIC_PORTABLES.md) and [📚 versioning rules](docs/VERSIONING_AND_RELEASES.md) | Find canonical paths, freshness rules, attribution guidance, mirror rules and release boundaries |
+| An external idea, method or adaptation needs provenance | [🧬 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Record origin, relationship, permission scope, local changes and the canonical credit |
+| A stable method needs to become a reusable procedural capability | [🧭 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Separate governing source, reusable procedure, triggers, guards, QA and native/fallback surfaces |
+| A context corpus feels stale, contradictory or bloated | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Audit authority, freshness, duplication, contradiction, orphaned decisions, provenance and the smallest safe repair |
 
 ## ⚙️ How Moon Source works
 
 Moon Source follows a decision loop:
 
-**field → observation and diagnosis → authority → responsibility → proportional form → operation and transport → feedback, hygiene and archive**
+**field → observation and diagnosis → authority → responsibility → proportional form → operation and transport → feedback, hygiene, lineage and archive**
 
 It is not a compulsory workflow. A materialization can reveal new facts and send the work back to observation, authority or responsibility. The point is to let the situation determine the smallest form that can carry the work without losing provenance, scope or ownership.
 
@@ -49,7 +52,10 @@ Apply the architecture directly through [Architecture](ARCHITECTURE.md), [Field 
 - [Existing implementations](docs/EXISTING_IMPLEMENTATIONS.md) maps the public artifacts that actually exist and the evidence class behind them.
 - [Evidence and Claims](EVIDENCE_AND_CLAIMS.md) and [Public Boundary](PUBLIC_BOUNDARY.md) define what the public body supports, what it does not establish and what remains private.
 - [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), the [portable registry](registry/PUBLIC_PORTABLES.md) and [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) govern canonical paths, mirrors, freshness and releases.
-- 🧬 [Attribution and Lineage](ATTRIBUTION_AND_LINEAGE.md) records authorship and historical relation.\n- 🧭 [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) explains reusable methods without turning them into sources of truth.\n- 🧹 [Source Hygiene](docs/SOURCE_HYGIENE.md) explains bounded corpus diagnosis and conservative repair.
+- 🧬 [Attribution and Lineage](ATTRIBUTION_AND_LINEAGE.md) records authorship and historical relation.
+- 🧬 [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) applies that lineage across reuse, adaptation, mirrors and generated outputs.
+- 🧭 [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) explains reusable methods without turning them into sources of truth.
+- 🧹 [Source Hygiene](docs/SOURCE_HYGIENE.md) explains bounded corpus diagnosis and conservative repair.
 
 ## 📌 Current baseline
 

@@ -12,4 +12,4 @@ The previous pre-canonical location is historical lineage only. Current referenc
 - 💼 [Professional context](https://www.luahelena.com.br/ia/)
 - 🐙 [Canonical GitHub repository](https://github.com/luahelenammc/Moon-Source)
 
-For active public methods, use [🧭 Procedural Projection](../docs/PROCEDURAL_PROJECTION.md) and [🧹 Source Hygiene](../docs/SOURCE_HYGIENE.md).
+For active public methods, use [🧭 Procedural Projection](../docs/PROCEDURAL_PROJECTION.md), [🧹 Source Hygiene](../docs/SOURCE_HYGIENE.md) and [🧬 Credits & Attribution Ops](../docs/CREDITS_ATTRIBUTION_OPS.md). Archive material remains historical lineage; it does not become current authority merely because it is linked.

@@ -8,6 +8,7 @@ The public portable edition of MSL 4.3, the adaptive structural grammar used to 
 - 🗂️ Canonical file: [MSL_4_3.md](MSL_4_3.md)
 - 🌐 Language: English
 - 🧩 Dependencies: none
+- 🧬 Credits and attribution operations: [public protocol](../../docs/CREDITS_ATTRIBUTION_OPS.md)
 - 🛡️ Claim ceiling: published grammar portable; not a universal standard or runtime
 
 Want the whole public architecture instead? [📦 Download the complete Moon Source repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip).

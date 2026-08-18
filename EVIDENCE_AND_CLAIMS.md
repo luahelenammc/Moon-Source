@@ -21,7 +21,10 @@ Moon Source is disclosed through existing evidence only. This repository organiz
 - Moon Source is a public context-architecture method and reference architecture. Evidence: PUBLIC_ARTIFACT, PUBLIC_REPOSITORY.
 - Moon Source includes independently readable public portables for setup, adaptive structural grammar and Chat–Work routing. Evidence: PUBLIC_ARTIFACT.
 - MSL 4.3 is the current public structural standard in this repository. Evidence: PUBLIC_ARTIFACT, INTERNAL_SOURCE_USED.
-- The repository is a public versioning and reference body. Evidence: PUBLIC_REPOSITORY.\n- A bounded public procedural-projection method exists. Evidence: PUBLIC_ARTIFACT; this does not establish automatic Source ↔ Skill synchronization or native execution in every environment.\n- A bounded public source-hygiene / Project MRI method exists. Evidence: PUBLIC_ARTIFACT; this does not establish an autonomous scanner, repair engine or measured impact.
+- The repository is a public versioning and reference body. Evidence: PUBLIC_REPOSITORY.
+- A bounded public procedural-projection method exists. Evidence: PUBLIC_ARTIFACT; this does not establish automatic Source ↔ Skill synchronization or native execution in every environment.
+- A bounded public source-hygiene / Project MRI method exists. Evidence: PUBLIC_ARTIFACT; this does not establish an autonomous scanner, repair engine or measured impact.
+- A bounded public Credits & Attribution Ops method exists. Evidence: PUBLIC_ARTIFACT; this does not establish a repository-wide licence, legal permission, endorsement, external adoption or automatic provenance resolution.
 - The website is a human-facing public surface and the professional page is a separate professional context. Evidence: PUBLIC_REPOSITORY and public URLs.
 
 ## What the current public body does not establish
@@ -46,6 +49,7 @@ This repository does not claim:
 - a universal standard;
 - a general software engine or hosted service without corresponding public implementation evidence;
 - automated cross-platform synchronization beyond the explicit mirror checks;
+- automatic permission, authorship or attribution resolution;
 - reproduction of the full private runtime or source corpus;
 - product-market fit, return on investment or downstream impact.
 
@@ -63,3 +67,5 @@ If a claim cannot answer those questions, label it INCUBATING, PLANNED, RESERVED
 ## Public routes
 
 Use [Existing Implementations](docs/EXISTING_IMPLEMENTATIONS.md) to inspect the artifacts behind current claims, the [README](README.md) for orientation, or [Downloads](DOWNLOADS.md) for the current public distribution.
+
+For authorship, lineage and bounded reuse operations, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) together with [Attribution and Lineage](ATTRIBUTION_AND_LINEAGE.md).

@@ -8,6 +8,7 @@ A beginner-friendly guided portable for creating reusable personal AI context.
 - 🗂️ Canonical file: [MOON_SOURCE_SETUP.md](MOON_SOURCE_SETUP.md)
 - 🌐 Language: English-first portable with language-sensitive operation
 - 🧩 Dependencies: none
+- 🧬 Credits and attribution operations: [public protocol](../../docs/CREDITS_ATTRIBUTION_OPS.md)
 - 🛡️ Claim ceiling: published setup; no impact or adoption claim
 
 Want the whole public architecture instead? [📦 Download the complete Moon Source repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip).

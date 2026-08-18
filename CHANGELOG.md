@@ -20,3 +20,10 @@
 - Added local repository validation and a separate scheduled/manual mirror-drift check to GitHub Actions.
 - Clarified public-boundary, attribution and reuse language without ratifying a repository-wide license.
 - Refreshed the Chat–Work product calibration against current official OpenAI documentation; the routing doctrine and MSL 4.3 decision remain unchanged.
+
+## 2026-08-17 — Credits and attribution operations
+
+- Added the bounded public [Credits & Attribution Ops Protocol](docs/CREDITS_ATTRIBUTION_OPS.md) as a Moon Source governance component.
+- Connected authorship, provenance, adaptation, permission scope, mirror identity and generated-output credit to the public architecture, procedural projection, source hygiene, registry and release routes.
+- Kept the protocol separate from licensing, legal permission, automatic rights resolution, adoption claims and private ingestion ledgers.
+- Repaired literal escaped line breaks introduced in the previous documentation integration.

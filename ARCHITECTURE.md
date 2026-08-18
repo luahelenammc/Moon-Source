@@ -23,7 +23,7 @@ proportional materialization
       ↓
 operation and transport
       ↓
-feedback, hygiene and archive
+feedback, hygiene, lineage and archive
       ↺
 ```
 
@@ -36,7 +36,10 @@ Choose the public entry point that matches the field in front of you:
 - **Personal context:** start with [Moon Source Setup 2.0](portables/setup/MOON_SOURCE_SETUP.md).
 - **Project, team or knowledge field:** run the [Field-to-Form diagnostic](docs/FIELD_TO_FORM.md) before choosing a document type.
 - **Structure, source, handoff or protocol design:** use [MSL 4.3](portables/msl/MSL_4_3.md) after the responsibility is clear.
-- **ChatGPT execution routing:** use the [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) when surface, model or reasoning effort is the actual decision.\n- **Reusable procedure:** use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.\n- **Stale or contradictory corpus:** use [Source Hygiene](docs/SOURCE_HYGIENE.md) when retrieval is not the real problem.
+- **ChatGPT execution routing:** use the [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) when surface, model or reasoning effort is the actual decision.
+- **Credits, lineage or adaptation:** use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when a method, resource, mirror or generated output needs provenance and a bounded credit.
+- **Reusable procedure:** use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.
+- **Stale or contradictory corpus:** use [Source Hygiene](docs/SOURCE_HYGIENE.md) when retrieval is not the real problem.
 
 ### Apply this architecture now
 
@@ -159,7 +162,9 @@ Transport may involve:
 
 Transport is not the same as authority. A copy can carry context while the source of truth remains elsewhere.
 
-## 7. Feedback, hygiene and archive\n\nFor a bounded public operation, use [Source Hygiene](docs/SOURCE_HYGIENE.md) to distinguish retrieval problems from source-architecture problems. Use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when feedback shows that a recurring method deserves a reusable procedure.
+## 7. Feedback, hygiene, lineage and archive
+
+For a bounded public operation, use [Source Hygiene](docs/SOURCE_HYGIENE.md) to distinguish retrieval problems from source-architecture problems. Use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when feedback shows that a recurring method deserves a reusable procedure. Use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when the operation moves an idea, source, method, mirror or output across boundaries.
 
 A living architecture must account for change.
 
@@ -171,6 +176,7 @@ Feedback includes:
 - what needs review;
 - what belongs in active state;
 - what should be preserved as lineage;
+- which authorship, source relationship and permission scope must remain visible;
 - what should be archived or retired.
 
 History matters, but history should not quietly govern the present. Active sources should remain legible; archives should preserve the past without impersonating current truth.
