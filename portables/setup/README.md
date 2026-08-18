@@ -1,15 +1,17 @@
-# 🧭 Moon Source Setup
+# 🧭 Moon Source Setup 3.0
 
-A beginner-friendly guided portable for creating reusable personal AI context.
+An adaptive portable for routing beginners, regular users, power users and builders to the smallest useful AI context setup.
 
-[⬇️ **Download / open Moon Source Setup 2.0 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md)
+[⬇️ **Download / open Moon Source Setup 3.0 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md)
 
-- 📌 Current version: 2.0
+- 📌 Current version: 3.0
 - 🗂️ Canonical file: [MOON_SOURCE_SETUP.md](MOON_SOURCE_SETUP.md)
 - 🌐 Language: English-first portable with language-sensitive operation
-- 🧩 Dependencies: none
+- 🧩 Dependencies: none in standalone mode; repository-aware mode defers to the Moon Source AI Kernel
+- 🧭 Core model: adaptive preflight → maturity and use-case inference → destination-aware output
+- 🧰 Public routes: personal calibration, repair, project context, bounded packets and proportionate component routing
 - 🧬 Credits and attribution operations: [public protocol](../../docs/CREDITS_ATTRIBUTION_OPS.md)
-- 🛡️ Claim ceiling: published setup; no impact or adoption claim
+- 🛡️ Claim ceiling: published adaptive setup; no impact or adoption claim
 
 Want the whole public architecture instead? [📦 Download the complete Moon Source repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip).
 

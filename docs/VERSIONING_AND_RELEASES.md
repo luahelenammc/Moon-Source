@@ -16,7 +16,7 @@ They should not be collapsed into one number.
 
 - Public architecture baseline: 2026-08-16.
 - Current structural grammar: MSL 4.3.
-- Public portables: Setup 2.0, MSL 4.3, Chat–Work Routing Protocol 2.0-public.
+- Public portables: Setup 3.0, MSL 4.3, Chat–Work Routing Protocol 2.0-public.
 - Website: production public convenience surface; canonical and mapped mirror bytes were verified after promotion on 2026-08-16.
 - Repository: luahelenammc/Moon-Source, public reference and versioning body.
 
