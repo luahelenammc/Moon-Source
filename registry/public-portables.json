@@ -38,7 +38,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_SETUP.md",
-      "canonical_sha256": "b2660faf140926d248871b3e7fe44bb1990b927f95822efb0ada6d5c31e3a58b"
+      "canonical_sha256": "6398142d4c11becaf71a9fd27a7d52dae911a3603290bc41fde44cb3809d01eb"
     },
     {
       "id": "moon-source-language",
@@ -62,7 +62,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_4_3.md",
-      "canonical_sha256": "ebbe7aeabc9020c3895af46e7d2b963c8b963bba35b74c857247910bd7922070"
+      "canonical_sha256": "145ca60d18fec3e2f83b50e35b071cce8c0849c6822f26ebd017c69b00445a62"
     },
     {
       "id": "chat-work-routing",
@@ -88,7 +88,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V2_MSL_4_3.md",
-      "canonical_sha256": "1cf353c33c4de3a4d15ebed083abd90379d0e250f4f31ba2130d0609c0a0681d"
+      "canonical_sha256": "510f3a4c7f68e462cd7018807e2920f7b3997b8bd7d2eeb9e816022a3e930d21"
     }
   ],
   "mirror_contract": {
