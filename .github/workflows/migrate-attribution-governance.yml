@@ -83,14 +83,16 @@ jobs:
             exit 1
           fi
 
-      - name: Remove one-time migration workflow and commit migration
+      - name: Commit migrated non-workflow tree
         run: |
-          rm .github/workflows/migrate-attribution-governance.yml
+          git restore .github/workflows/validate.yml
+          rm -rf scripts/__pycache__
           git config user.name "Moon Source migration"
           git config user.email "actions@users.noreply.github.com"
           git add -A
+          git reset .github/workflows
           if git diff --cached --quiet; then
-            echo "No migration delta to commit."
+            echo "No non-workflow migration delta to commit."
           else
             git commit -m "Apply attribution governance split repository-wide"
             git push origin HEAD:agent/split-attribution-governance
