@@ -38,7 +38,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_SETUP.md",
-      "canonical_sha256": "6398142d4c11becaf71a9fd27a7d52dae911a3603290bc41fde44cb3809d01eb"
+      "canonical_sha256": "122a55950a3d01b05e4aa8e600eb64325d500a20fa69d3190413c54f7ac7a745"
     },
     {
       "id": "moon-source-language",
@@ -62,7 +62,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_4_3.md",
-      "canonical_sha256": "145ca60d18fec3e2f83b50e35b071cce8c0849c6822f26ebd017c69b00445a62"
+      "canonical_sha256": "bd7f1f179e5a2d8b2cf75ebddd565c5ff0f663f8499604fb5d4e156571cec0ea"
     },
     {
       "id": "chat-work-routing",
@@ -88,7 +88,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V2_MSL_4_3.md",
-      "canonical_sha256": "510f3a4c7f68e462cd7018807e2920f7b3997b8bd7d2eeb9e816022a3e930d21"
+      "canonical_sha256": "61899bf6100c5099a4a7f7ef8f671783a7142e8a5c6ef098af7c9673d6486409"
     }
   ],
   "mirror_contract": {
@@ -108,10 +108,10 @@
     "current_rebase_note": "The 2026-08-17 repository-wide public-stamp release refreshed canonical portable fingerprints and re-synchronized all three branded mirrors through LUAHELENA PR #18, merged as 055a413490273c1df26f89f9a011b5a33ec907c2. Post-copy Git blob identities matched the Moon-Source canonical files byte-for-byte: Setup 2891435ad98f17940edbd761fd7b3bed83af4bbb, MSL dfb5e327e9813ad9dd3db15f5030efa21083edbd, Chat–Work a74f0c20c56d81640512bf7fe78cc96e5adda548. Earlier 2026-08-16 mirror lineage remains in Git history and MIRROR_SYNCHRONIZATION.md."
   },
   "_moon_source_public_stamp": {
-    "full_zip": "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip",
-    "credit": "Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion.",
-    "attribution_ops": "https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md",
-    "professional_context": "https://www.luahelena.com.br/ia/?lang=en",
-    "permission_note": "Public availability and attribution do not themselves grant reuse rights; applicable component terms and permissions remain controlling."
+    "project": "Moon Source",
+    "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+    "ai_assisted_coauthor": "Áurion",
+    "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md",
+    "full_source": "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip"
   }
 }

@@ -41,7 +41,7 @@ Use each file for the responsibility it actually owns:
 - `docs/VERSIONING_AND_RELEASES.md` — distinction between repository, portable, MSL and website versions.
 - `EVIDENCE_AND_CLAIMS.md` — what public evidence supports and what it does not establish.
 - `PUBLIC_BOUNDARY.md` — what may be public and what remains outside the public body.
-- `ATTRIBUTION_AND_LINEAGE.md` — authorship and lineage.
+- `MOON_SOURCE_USE_AND_ATTRIBUTION.md` — authorship and lineage.
 - `CHANGELOG.md` — recorded public changes.
 - `archive/` — preserved history. Archive material does not govern the present unless a current authoritative file explicitly promotes it.
 
@@ -101,7 +101,7 @@ Do not rewrite governed sources without explicit mutation authority. Do not trea
 
 Load:
 - `docs/CREDITS_ATTRIBUTION_OPS.md`
-- `ATTRIBUTION_AND_LINEAGE.md` when authorship or final authority is disputed.
+- `MOON_SOURCE_USE_AND_ATTRIBUTION.md` when authorship or final authority is disputed.
 
 Record origin, relationship, absorbed/adapted/rejected material, permission scope and destination. Do not infer permission from public availability, and do not let a credit record become a source of truth by itself.
 
@@ -278,7 +278,4 @@ If time is limited, do this:
 
 ---
 
-> 🌙 **Moon Source public stamp**  
-> 📦 **Full repository:** [Download the complete Moon Source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)  
-> 🧬 **Credit & attribution:** **Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion.** [Credits & Attribution Ops](https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md) · [Professional context](https://www.luahelena.com.br/ia/?lang=en)  
-> Public availability and attribution do not themselves grant reuse rights; applicable component terms and permissions remain controlling.
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

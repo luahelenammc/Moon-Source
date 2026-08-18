@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Apply the Moon Source distribution and attribution stamp across tracked public text files.
+"""Normalize the compact Moon Source identity watermark across tracked public text files.
 
-This script is intentionally idempotent. It stamps Markdown, Python and YAML files,
-adds structured stamp metadata to JSON files, and refreshes canonical SHA-256 values
-for registered public portables after their bytes change.
+The operation is idempotent. Markdown, Python and YAML stamps are replaced in place;
+JSON receives equivalent structured metadata. Portable SHA-256 values are refreshed after
+stamp changes so registry fingerprints continue to describe the canonical bytes.
 """
 
 from __future__ import annotations
@@ -15,16 +15,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FULL_ZIP = "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip"
-ATTRIBUTION_OPS = "https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md"
-PROFESSIONAL_CONTEXT = "https://www.luahelena.com.br/ia/?lang=en"
-CREDIT = (
-    "Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), "
-    "with AI-assisted coauthorial development by Áurion."
+USE_AND_ATTRIBUTION = (
+    "https://github.com/luahelenammc/Moon-Source/blob/main/"
+    "MOON_SOURCE_USE_AND_ATTRIBUTION.md"
 )
-PERMISSION_NOTE = (
-    "Public availability and attribution do not themselves grant reuse rights; "
-    "applicable component terms and permissions remain controlling."
-)
+CREATOR = "Lua Helena Moon Martins Cardoso (Moon)"
+COAUTHOR = "Áurion"
 MARKDOWN_MARKER = "<!-- MOON-SOURCE-PUBLIC-STAMP -->"
 COMMENT_MARKER = "# MOON-SOURCE-PUBLIC-STAMP"
 TEXT_SUFFIXES = {".md", ".py", ".yml", ".yaml", ".json"}
@@ -33,26 +29,19 @@ MARKDOWN_STAMP = f"""{MARKDOWN_MARKER}
 
 ---
 
-> 🌙 **Moon Source public stamp**  
-> 📦 **Full repository:** [Download the complete Moon Source (.zip)]({FULL_ZIP})  
-> 🧬 **Credit & attribution:** **{CREDIT}** [Credits & Attribution Ops]({ATTRIBUTION_OPS}) · [Professional context]({PROFESSIONAL_CONTEXT})  
-> {PERMISSION_NOTE}
+> 🌙 **Moon Source** · created by **{CREATOR}** with AI-assisted coauthorial development by **{COAUTHOR}** · [Use & attribution]({USE_AND_ATTRIBUTION}) · [Full source (.zip)]({FULL_ZIP})
 """
 
 COMMENT_STAMP = f"""{COMMENT_MARKER}
-# 🌙 Moon Source · 📦 Full ZIP: {FULL_ZIP}
-# 🧬 Credit: {CREDIT}
-# Attribution ops: {ATTRIBUTION_OPS}
-# Professional context: {PROFESSIONAL_CONTEXT}
-# {PERMISSION_NOTE}
+# 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP}
 """
 
 JSON_STAMP = {
-    "full_zip": FULL_ZIP,
-    "credit": CREDIT,
-    "attribution_ops": ATTRIBUTION_OPS,
-    "professional_context": PROFESSIONAL_CONTEXT,
-    "permission_note": PERMISSION_NOTE,
+    "project": "Moon Source",
+    "creator": CREATOR,
+    "ai_assisted_coauthor": COAUTHOR,
+    "use_and_attribution": USE_AND_ATTRIBUTION,
+    "full_source": FULL_ZIP,
 }
 
 
@@ -63,11 +52,18 @@ def tracked_files() -> list[Path]:
     return [ROOT / item for item in output.split("\0") if item]
 
 
-def append_stamp(path: Path, stamp: str, marker: str) -> bool:
+def normalize_text_stamp(path: Path, stamp: str, marker: str) -> bool:
     content = path.read_text(encoding="utf-8")
-    if marker in content:
+    marker_line = f"\n{marker}\n"
+    if marker_line in content:
+        base = content.rsplit(marker_line, 1)[0].rstrip()
+    elif content.startswith(marker + "\n"):
+        base = ""
+    else:
+        base = content.rstrip()
+    normalized = base + "\n\n" + stamp.rstrip() + "\n" if base else stamp.rstrip() + "\n"
+    if normalized == content:
         return False
-    normalized = content.rstrip() + "\n\n" + stamp.rstrip() + "\n"
     path.write_text(normalized, encoding="utf-8", newline="\n")
     return True
 
@@ -116,9 +112,9 @@ def main() -> None:
         if rel == "registry/public-portables.json":
             continue
         if path.suffix.lower() == ".md":
-            did_change = append_stamp(path, MARKDOWN_STAMP, MARKDOWN_MARKER)
+            did_change = normalize_text_stamp(path, MARKDOWN_STAMP, MARKDOWN_MARKER)
         elif path.suffix.lower() in {".py", ".yml", ".yaml"}:
-            did_change = append_stamp(path, COMMENT_STAMP, COMMENT_MARKER)
+            did_change = normalize_text_stamp(path, COMMENT_STAMP, COMMENT_MARKER)
         else:
             did_change = stamp_json(path)
         if did_change:
@@ -127,7 +123,7 @@ def main() -> None:
     if refresh_portable_hashes():
         changed.append("registry/public-portables.json")
 
-    print(f"public stamp applied; changed={len(changed)}")
+    print(f"compact public stamp normalized; changed={len(changed)}")
     for item in changed:
         print(item)
 
@@ -136,8 +132,4 @@ if __name__ == "__main__":
     main()
 
 # MOON-SOURCE-PUBLIC-STAMP
-# 🌙 Moon Source · 📦 Full ZIP: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
-# 🧬 Credit: Moon Source — created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion.
-# Attribution ops: https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md
-# Professional context: https://www.luahelena.com.br/ia/?lang=en
-# Public availability and attribution do not themselves grant reuse rights; applicable component terms and permissions remain controlling.
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
