@@ -9,7 +9,7 @@ The following objects can work together, but they do not perform the same job.
 | Living source | Updateable governed context | Keep scope, freshness, owner and active state visible | A chat transcript |
 | Project | Bounded work domain | Define purpose, jurisdiction, participants and outputs | A single task |
 | Procedure | Reusable way of working | Describe how an operation is performed | A source of truth for all facts |
-| Skill | Portable procedural projection | Trigger and execute a reusable procedure | A magical capability or private corpus |
+| Skill | [Portable procedural projection](PROCEDURAL_PROJECTION.md) | Trigger and execute a reusable procedure | A magical capability or private corpus |
 | Task | One bounded action or recurring obligation | Move a project or source through a concrete next step | A project architecture |
 | Handoff | Transfer of responsibility and state | Let another person, model or thread continue safely | A complete backup of the corpus |
 | Packet / capsule | Bounded transport envelope | Carry objective, state, limits, provenance and next actions | A new authority by itself |

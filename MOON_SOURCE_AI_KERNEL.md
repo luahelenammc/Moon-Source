@@ -29,7 +29,7 @@ Use each file for the responsibility it actually owns:
 - `ARCHITECTURE.md` — public Moon Source architecture and field-to-form topology.
 - `docs/FIELD_TO_FORM.md` — deciding what should exist before choosing a container or artifact type.
 - `docs/RESPONSIBILITY_MAP.md` — separating responsibilities, ownership, authority and transport between objects.
-- `docs/TERMINOLOGY.md` — responsibility-first translation between ordinary language and Moon Source vocabulary.
+- `docs/TERMINOLOGY.md` — responsibility-first translation between ordinary language and Moon Source vocabulary.\n- `docs/PROCEDURAL_PROJECTION.md` — public source/procedure/skill contract, projection, QA and semantic-undercompilation checks.\n- `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — guided personal-context setup.
 - `portables/msl/MSL_4_3.md` — current public structural grammar for materialization. MSL remains 4.3.
 - `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md` — ChatGPT surface/model/reasoning-effort routing; product details are date-sensitive.
@@ -79,7 +79,7 @@ Load:
 
 Choose the smallest form that creates a real capability. Do not generate a source, skill, handoff, protocol, registry, bridge and archive just because those categories exist.
 
-### If the user needs to transfer context between people, models, threads or projects
+### If the user wants to turn a stable method into a reusable procedural capability\n\nLoad:\n- `docs/PROCEDURAL_PROJECTION.md`\n\nThen load the governing source or procedure only as needed. Keep live state in the source; do not imply automatic synchronization or native execution where only a portable or mirror is available.\n\n### If the user needs to audit a stale, contradictory or bloated context corpus\n\nLoad:\n- `docs/SOURCE_HYGIENE.md`\n- `docs/RESPONSIBILITY_MAP.md` when ownership or authority is unclear.\n\nDo not rewrite governed sources without explicit mutation authority. Do not treat a bounded hygiene method as an autonomous scanner.\n\n### If the user needs to transfer context between people, models, threads or projects
 
 Load:
 - `docs/RESPONSIBILITY_MAP.md`

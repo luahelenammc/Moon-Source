@@ -34,7 +34,7 @@ These links point to the canonical files in this repository. Website copies are 
 - [MSL 4.3 guide](portables/msl/README.md)
 - [Chat–Work Routing guide](portables/chat-work/README.md)
 - [Public portable registry](registry/PUBLIC_PORTABLES.md)
-- [Moon Source architecture](ARCHITECTURE.md)
+- [🏛️ Moon Source architecture](ARCHITECTURE.md)\n- [🧭 Procedural Projection](docs/PROCEDURAL_PROJECTION.md)\n- [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md)
 
 ## Which download should I choose?
 

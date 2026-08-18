@@ -36,7 +36,7 @@ Choose the public entry point that matches the field in front of you:
 - **Personal context:** start with [Moon Source Setup 2.0](portables/setup/MOON_SOURCE_SETUP.md).
 - **Project, team or knowledge field:** run the [Field-to-Form diagnostic](docs/FIELD_TO_FORM.md) before choosing a document type.
 - **Structure, source, handoff or protocol design:** use [MSL 4.3](portables/msl/MSL_4_3.md) after the responsibility is clear.
-- **ChatGPT execution routing:** use the [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) when surface, model or reasoning effort is the actual decision.
+- **ChatGPT execution routing:** use the [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) when surface, model or reasoning effort is the actual decision.\n- **Reusable procedure:** use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.\n- **Stale or contradictory corpus:** use [Source Hygiene](docs/SOURCE_HYGIENE.md) when retrieval is not the real problem.
 
 ### Apply this architecture now
 
@@ -159,7 +159,7 @@ Transport may involve:
 
 Transport is not the same as authority. A copy can carry context while the source of truth remains elsewhere.
 
-## 7. Feedback, hygiene and archive
+## 7. Feedback, hygiene and archive\n\nFor a bounded public operation, use [Source Hygiene](docs/SOURCE_HYGIENE.md) to distinguish retrieval problems from source-architecture problems. Use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when feedback shows that a recurring method deserves a reusable procedure.
 
 A living architecture must account for change.
 

@@ -27,7 +27,7 @@ The public body does not automatically include:
 - detailed reconciliation, mutation and repair ordering;
 - patient, client, collaborator or third-party material;
 - deployment credentials, runtime state, hosts, quotas or ephemeral receipts;
-- enough cross-file detail to reconstruct protected machinery with high fidelity.
+- enough cross-file detail to reconstruct protected machinery with high fidelity;\n- the fine Skill Foundry compiler, promotion gates, hidden evaluation suites, MRI taxonomy, weights, labels, repair ordering or private corpus.
 
 ## Why this boundary exists
 
@@ -49,4 +49,4 @@ Existing artifacts may be inspected, versioned and mapped. They must not be rewr
 
 ## Public routes
 
-For practical use, start with [Architecture](ARCHITECTURE.md) or [Field to Form](docs/FIELD_TO_FORM.md). Use [Downloads](DOWNLOADS.md) to reach the current public materials.
+For practical use, start with [Architecture](ARCHITECTURE.md) or [Field to Form](docs/FIELD_TO_FORM.md). For reusable procedures, use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md); for corpus diagnosis, use [Source Hygiene](docs/SOURCE_HYGIENE.md). Use [Downloads](DOWNLOADS.md) to reach the current public materials.
