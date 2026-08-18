@@ -8,8 +8,6 @@ Moon Source is a public reference architecture for deciding what context should 
 
 This repository is the canonical public body of Moon Source. Setup, MSL and Chat–Work are public projections of that same architecture. Each is an entry point into a different responsibility, not a separate system.
 
-**Giving this repository or its ZIP to an AI?** Start with the [Moon Source AI Kernel](MOON_SOURCE_AI_KERNEL.md). It defines the boot sequence, authority map, context-loading rules and task routing for the public corpus.
-
 ## 📦 Download Moon Source
 
 **Want the whole public architecture offline?**  
