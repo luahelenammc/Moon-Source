@@ -1,15 +1,5 @@
 # Changelog
 
-## 2026-08-18 — Moon Source Setup 3.0
-
-- Promoted the public Setup from 2.0 to 3.0 through a coherent rewrite.
-- Replaced intake-first profile generation with adaptive preflight, inferred AI-use maturity and separate use-case routing.
-- Added standalone and repository-aware operation, with repository loading deferred to the public AI Kernel.
-- Added implicit capability routing so public components are invoked by need rather than by user knowledge or mere availability.
-- Made destination, privacy, existing material, calibration and update contracts part of the operating route.
-- Removed forced coupling between Setup version and user-artifact names or schemas.
-- Preserved standalone portability and the public boundary; no private machinery, licence or impact claim was added.
-
 ## 2026-08-16 — Public architecture baseline
 
 - Rebased the public disclosure around field-to-form context architecture.
@@ -44,6 +34,17 @@
 - Added an idempotent repository stamp applicator and a CI validator so future Markdown, Python, YAML and JSON components inherit the same public contract.
 - Preserved the permission boundary: public availability and attribution do not themselves grant reuse rights.
 - Required registered portable fingerprints to refresh whenever the stamp changes canonical bytes.
+
+## 2026-08-18 — Credits Ops recanonized as immaterial-asset protection
+
+- Reframed [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) from a primarily provenance/credit operation into the Moon Source component for intellectual lineage, content custody and operational protection of immaterial material.
+- Added explicit protection against source laundering, authorship collapse, lineage amnesia, permission drift, derivative ambiguity, canonical identity loss, credit dilution, AI-mediated provenance laundering, composite opacity and disclosure-boundary erosion.
+- Added a two-axis model separating upstream relationship from custody dimensions, plus a minimum protection record, identity-evidence ladder, transformation inheritance, permission envelopes, disclosure boundaries and proportional protection profiles.
+- Added explicit AI-mediated lineage rules so generation does not silently erase material upstream provenance.
+- Preserved the claim ceiling: the component is an operational and evidentiary continuity layer, not a licence, legal rights resolver, proof of ownership or enforcement mechanism.
+- Updated README, public architecture, AI Kernel, terminology, evidence and public-boundary routes to present the expanded component consistently.
+- Kept `MOON_SOURCE_USE_AND_ATTRIBUTION.md` as repository/footer governance rather than a Moon Source component.
+- Removed duplicated artifact rows and escaped-line artifacts from `docs/EXISTING_IMPLEMENTATIONS.md` while updating its public evidence description.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

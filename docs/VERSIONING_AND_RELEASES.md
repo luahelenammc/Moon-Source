@@ -16,7 +16,7 @@ They should not be collapsed into one number.
 
 - Public architecture baseline: 2026-08-16.
 - Current structural grammar: MSL 4.3.
-- Public portables: Setup 3.0, MSL 4.3, Chat–Work Routing Protocol 2.0-public.
+- Public portables: Setup 2.0, MSL 4.3, Chat–Work Routing Protocol 2.0-public.
 - Website: production public convenience surface; canonical and mapped mirror bytes were verified after promotion on 2026-08-16.
 - Repository: luahelenammc/Moon-Source, public reference and versioning body.
 
@@ -28,12 +28,15 @@ They should not be collapsed into one number.
 4. A version change must state whether it is additive, corrective, incompatible or archival.
 5. A major MSL version requires a semantic grammar change and migration guidance, not a new label.
 6. A public release must pass the public-boundary and claim checks.
-7. A release that changes authorship, lineage, adaptation status, canonical path or mirror identity must run the [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) checks.
-8. No license rights are broadened by implication.
+7. A release that changes content identity, authorship, upstream lineage, transformation status, canonical path, permission scope, disclosure boundary, derivative relationship or mirror identity must run the relevant [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) custody checks.
+8. Exact-identity claims should use version/fingerprint evidence when appropriate, without treating a fingerprint as proof of authorship, ownership or permission.
+9. No license rights are broadened by implication.
 
 ## MSL decision
 
 The 2026-08-16 promotion audit returns KEEP_MSL_4_3. Source jurisdiction, procedural skills, handoffs and bridges are important architectural layers, but the live MSL 4.3 source already provides the structural grammar needed to express them. They remain separate responsibilities rather than being absorbed into MSL 5.
+
+The expanded Credits & Attribution Ops component does not by itself require an MSL major version. It adds a distinct operational responsibility for intellectual lineage and content custody rather than changing the MSL structural grammar.
 
 ## Future versions
 
@@ -41,7 +44,7 @@ A future MSL major version would need evidence that the grammar itself has chang
 
 ## Public routes
 
-Inspect the current public family in the [portable registry](../registry/PUBLIC_PORTABLES.md), use the [download hub](../DOWNLOADS.md) for access, consult [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for provenance changes, or return to [Architecture](../ARCHITECTURE.md) for the governing model.
+Inspect the current public family in the [portable registry](../registry/PUBLIC_PORTABLES.md), use the [download hub](../DOWNLOADS.md) for access, consult [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for intellectual lineage and content-custody changes, or return to [Architecture](../ARCHITECTURE.md) for the governing model.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

@@ -15,7 +15,8 @@ The following objects can work together, but they do not perform the same job.
 | Packet / capsule | Bounded transport envelope | Carry objective, state, limits, provenance and next actions | A new authority by itself |
 | Bridge | Translation between systems | Preserve meaning across jurisdictions without owning either source | Silent authority transfer |
 | Ledger / registry | Structured record | Track decisions, identities, versions, checkpoints or lineage | A full narrative archive |
-| Credits / attribution record | Provenance marker | Preserve authorship, source relationship, adaptation and permission scope | A licence, legal resolver or source of truth |
+| Intellectual custody / Credits & Attribution Ops | Immaterial-asset protection layer | Keep content identity, origin, authorship, canonicality, transformations, permission boundaries, derivatives, attribution and evidence recoverable as material moves or changes | A licence, legal rights resolver, ownership proof or enforcement mechanism |
+| Attribution record | Public or bounded lineage output | Carry the proportionate credit and lineage facts a material descendant needs | The whole custody system or a grant of permission |
 | Protocol | Repeatable operating rule | Set conditions, sequence, boundaries and acceptance | A runtime implementation |
 | Runtime | Callable operating capacity | Execute a bounded operation and return observable state or receipts | A synonym for documentation |
 | Public surface | Human-facing entry point | Explain, distribute or route public material | The semantic source of truth |
@@ -43,7 +44,7 @@ System:
 [paste the file list, folder layout, workflow or object descriptions]
 ```
 
-If the field itself is still unclear, begin with [Field to Form](FIELD_TO_FORM.md). If a structural artifact or handoff is needed, use [MSL 4.3](../portables/msl/MSL_4_3.md). If a source, adaptation, mirror or output needs provenance, use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md). If the unresolved issue is where ChatGPT work should run, use the [Chat–Work Routing Protocol V2](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md).
+If the field itself is still unclear, begin with [Field to Form](FIELD_TO_FORM.md). If a structural artifact or handoff is needed, use [MSL 4.3](../portables/msl/MSL_4_3.md). If intellectual material needs identity, lineage or custody protection while it moves, changes, forks, mirrors or passes through AI, use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md). If the unresolved issue is where ChatGPT work should run, use the [Chat–Work Routing Protocol V2](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md).
 
 **Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
 

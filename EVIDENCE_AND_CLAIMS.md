@@ -24,7 +24,7 @@ Moon Source is disclosed through existing evidence only. This repository organiz
 - The repository is a public versioning and reference body. Evidence: PUBLIC_REPOSITORY.
 - A bounded public procedural-projection method exists. Evidence: PUBLIC_ARTIFACT; this does not establish automatic Source ↔ Skill synchronization or native execution in every environment.
 - A bounded public source-hygiene / Project MRI method exists. Evidence: PUBLIC_ARTIFACT; this does not establish an autonomous scanner, repair engine or measured impact.
-- A bounded public Credits & Attribution Ops method exists. Evidence: PUBLIC_ARTIFACT; this does not establish a repository-wide licence, legal permission, endorsement, external adoption or automatic provenance resolution.
+- A bounded public Credits & Attribution Ops component exists for intellectual lineage, content custody and immaterial-asset protection across identity, origin, authorship, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence. Evidence: PUBLIC_ARTIFACT; this does not establish legal ownership, a repository-wide licence, legal permission, enforcement, endorsement, external adoption or automatic provenance resolution.
 - The website is a human-facing public surface and the professional page is a separate professional context. Evidence: PUBLIC_REPOSITORY and public URLs.
 
 ## What the current public body does not establish
@@ -49,7 +49,8 @@ This repository does not claim:
 - a universal standard;
 - a general software engine or hosted service without corresponding public implementation evidence;
 - automated cross-platform synchronization beyond the explicit mirror checks;
-- automatic permission, authorship or attribution resolution;
+- automatic permission, legal ownership, authorship, provenance or attribution resolution;
+- cryptographic proof of authorship merely because a fingerprint is present;
 - reproduction of the full private runtime or source corpus;
 - product-market fit, return on investment or downstream impact.
 
@@ -68,7 +69,7 @@ If a claim cannot answer those questions, label it INCUBATING, PLANNED, RESERVED
 
 Use [Existing Implementations](docs/EXISTING_IMPLEMENTATIONS.md) to inspect the artifacts behind current claims, the [README](README.md) for orientation, or [Downloads](DOWNLOADS.md) for the current public distribution.
 
-For authorship, lineage and bounded reuse operations, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) together with [Moon Source Use & Attribution](MOON_SOURCE_USE_AND_ATTRIBUTION.md).
+For intellectual lineage, content custody and immaterial-asset protection, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md). For Moon Source-specific use framing, authorship and the repository footer/watermark, use [Moon Source Use & Attribution](MOON_SOURCE_USE_AND_ATTRIBUTION.md).
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

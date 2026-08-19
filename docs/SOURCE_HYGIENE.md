@@ -6,7 +6,7 @@ A public source-hygiene method for auditing context corpora, project files and k
 
 **Project MRI** is the lineage name for this family of work. This document publishes a bounded diagnostic interface, not a finished autonomous scanner or the private MRI engine.
 
-Missing provenance, unclear adaptation or an unattributed material transformation is a source-hygiene finding. Use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for the bounded public operation; do not publish private ingestion ledgers or infer legal permission from a missing marker.
+Broken intellectual custody is a source-hygiene finding. Missing origin, unclear authorship, lost canonical identity, unrecorded transformations, permission drift, derivative ambiguity or unattributed material reuse can all make a corpus structurally unreliable even when retrieval works. Use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for the dedicated protection operation; do not publish private custody ledgers or infer legal permission from a missing marker.
 
 ## 🔍 What kind of failure is this?
 
@@ -21,9 +21,9 @@ Missing provenance, unclear adaptation or an unattributed material transformatio
 | **Bloat / fossilization** | Is historical or low-value material increasing cognitive load or silently governing the present? |
 | **Jurisdiction drift** | Has a copy, bridge, archive or public surface started acting like the authority? |
 | **Freshness failure** | Is there no visible update trigger, review point or current-state marker? |
-| **Missing provenance** | Can a reader tell where a claim, decision or transformation came from? |
+| **Broken intellectual custody** | Can a reader recover the material's origin, authorship, canonical identity, transformation history and relevant lineage? |
 
-The distinction matters because a better index, search layer or retrieval prompt cannot repair contradictory source architecture.
+The distinction matters because a better index, search layer or retrieval prompt cannot repair contradictory source architecture or a broken chain of intellectual custody.
 
 ## 🧭 Public diagnostic loop
 
@@ -32,9 +32,9 @@ Use the smallest loop that can explain the problem:
 1. **Inventory** the files, sources, objects, owners and surfaces involved.
 2. **Identify current authority** for each important claim, state or decision.
 3. **Map freshness**: current, dated, superseded, unknown or review-triggered.
-4. **Detect structural findings**: contradiction, duplication, stale authority, orphan state, bloat, jurisdiction drift or missing provenance.
+4. **Detect structural findings**: contradiction, duplication, stale authority, orphan state, bloat, jurisdiction drift or broken intellectual custody.
 5. **Classify severity without fake scoring**: explain the consequence instead of manufacturing a universal number.
-6. **Propose conservative repairs**: relabel, link, split, merge, demote, archive, add provenance or create a bounded bridge.
+6. **Propose conservative repairs**: relabel, link, split, merge, demote, archive, restore canonical identity, repair lineage or create a bounded bridge.
 7. **Preserve history and provenance** so the repair does not erase how the state changed.
 8. **Require explicit mutation authority** before rewriting governed sources.
 
@@ -52,8 +52,8 @@ A useful finding should be recorded with:
 | **Risk** | What could go wrong if the finding remains |
 | **Smallest repair** | The least invasive action that improves legibility |
 | **Mutation authority** | Who or what must authorize a rewrite |
-| **Lineage impact** | What history, archive or mirror must be preserved |
-| **Attribution impact** | Which authorship, source relationship or permission scope must remain visible |
+| **Lineage impact** | What history, archive, mirror, canonical identity or derivative relationship must be preserved |
+| **Custody impact** | Which authorship, transformation, permission or disclosure facts must remain recoverable |
 | **Uncertainty** | What remains unproven |
 
 ## 🛠️ Apply it now
@@ -71,17 +71,17 @@ For each material finding, return:
 - evidence;
 - current governing source;
 - freshness status;
-- contradiction / duplication / orphan / bloat / jurisdiction / provenance signal;
+- contradiction / duplication / orphan / bloat / jurisdiction / intellectual-custody signal;
 - risk;
 - smallest conservative repair;
 - mutation authority required;
-- archive, lineage or mirror impact;
+- archive, lineage, custody or mirror impact;
 - uncertainty.
 
 Then return:
 1. the most important unresolved authority question;
 2. any source that should be demoted to mirror, archive or reference;
-3. any missing link or provenance marker;
+3. any missing canonical, lineage or custody marker;
 4. what should remain unchanged because evidence is insufficient;
 5. the next review or freshness trigger.
 
