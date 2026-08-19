@@ -1,0 +1,202 @@
+name: Reframe Credits Ops and reconcile Setup 3.0
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    if: github.head_ref == 'agent/expand-credits-ops-immaterial-protection'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Reconcile Setup 3.0 and Credits Ops framing
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import subprocess
+
+          def replace_once(path: str, old: str, new: str) -> None:
+              p = Path(path)
+              text = p.read_text(encoding='utf-8')
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f'{path}: expected exactly one match, found {count}: {old[:100]!r}')
+              p.write_text(text.replace(old, new), encoding='utf-8', newline='\n')
+
+          def insert_once(path: str, anchor: str, insertion: str) -> None:
+              p = Path(path)
+              text = p.read_text(encoding='utf-8')
+              if insertion.strip() in text:
+                  return
+              count = text.count(anchor)
+              if count != 1:
+                  raise SystemExit(f'{path}: expected exactly one anchor, found {count}: {anchor[:100]!r}')
+              p.write_text(text.replace(anchor, insertion + anchor), encoding='utf-8', newline='\n')
+
+          credits_url = 'https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md'
+
+          # Preserve the concurrent Setup 3.0 release in files this branch also changes.
+          replace_once(
+              'README.md',
+              '- [🧭 **Moon Source Setup 2.0 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) — reusable personal AI context.',
+              '- [🧭 **Moon Source Setup 3.0 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) — adaptive routing for proportionate personal and project AI context.'
+          )
+          replace_once(
+              'README.md',
+              '| You want an AI to understand your personal context more consistently | [Moon Source Setup 2.0](portables/setup/MOON_SOURCE_SETUP.md) | Create a guided, reusable personal context source and use it inside the AI tool you already use |',
+              '| You want an AI to understand your context more consistently | [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md) | Infer the smallest useful setup for your need, maturity, destination and privacy boundary |'
+          )
+          replace_once(
+              'ARCHITECTURE.md',
+              '- **Personal context:** start with [Moon Source Setup 2.0](portables/setup/MOON_SOURCE_SETUP.md).',
+              '- **Personal or project context:** start with [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user\'s actual need.'
+          )
+          replace_once(
+              'MOON_SOURCE_AI_KERNEL.md',
+              '- `portables/setup/MOON_SOURCE_SETUP.md` — guided personal-context setup.',
+              '- `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router.'
+          )
+          replace_once(
+              'MOON_SOURCE_AI_KERNEL.md',
+              '- `portables/setup/MOON_SOURCE_SETUP.md`\n\nOptionally load:',
+              '- `portables/setup/MOON_SOURCE_SETUP.md` — Setup 3.0\n\nOptionally load:'
+          )
+          replace_once(
+              'docs/EXISTING_IMPLEMENTATIONS.md',
+              '| Personal context setup | [Moon Source Setup 2.0](../portables/setup/MOON_SOURCE_SETUP.md) | PUBLIC_ARTIFACT | A guided setup is published; impact is not demonstrated here. |',
+              '| Personal context setup | [Moon Source Setup 3.0](../portables/setup/MOON_SOURCE_SETUP.md) | PUBLIC_ARTIFACT | An adaptive setup is published; impact is not demonstrated here. |'
+          )
+          replace_once(
+              'docs/FIELD_TO_FORM.md',
+              'For a personal field, continue with [Moon Source Setup 2.0](../portables/setup/MOON_SOURCE_SETUP.md).',
+              'For a personal or project field, continue with [Moon Source Setup 3.0](../portables/setup/MOON_SOURCE_SETUP.md).'
+          )
+          replace_once(
+              'docs/VERSIONING_AND_RELEASES.md',
+              '- Public portables: Setup 2.0, MSL 4.3, Chat–Work Routing Protocol 2.0-public.',
+              '- Public portables: Setup 3.0, MSL 4.3, Chat–Work Routing Protocol 2.0-public.'
+          )
+          replace_once(
+              'registry/PUBLIC_PORTABLES.md',
+              '| moon-source-setup | Moon Source Setup | 2.0 | current | Guided personal context setup | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md) | [`.md`](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) |',
+              '| moon-source-setup | Moon Source Setup | 3.0 | current | Adaptive routing for proportionate personal and project AI context | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md) | [`.md`](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) |'
+          )
+
+          setup3 = '''## 2026-08-18 — Moon Source Setup 3.0
+
+- Promoted the public Setup from 2.0 to 3.0 through a coherent rewrite.
+- Replaced intake-first profile generation with adaptive preflight, inferred AI-use maturity and separate use-case routing.
+- Added standalone and repository-aware operation, with repository loading deferred to the public AI Kernel.
+- Added implicit capability routing so public components are invoked by need rather than by user knowledge or mere availability.
+- Made destination, privacy, existing material, calibration and update contracts part of the operating route.
+- Removed forced coupling between Setup version and user-artifact names or schemas.
+- Preserved standalone portability and the public boundary; no private machinery, licence or impact claim was added.
+
+'''
+          insert_once('CHANGELOG.md', '## 2026-08-16 — Public architecture baseline\n', setup3)
+
+          # Rebase the machine-readable registry from current main, preserving this branch's new component taxonomy.
+          branch_registry = json.loads(Path('registry/public-portables.json').read_text(encoding='utf-8'))
+          main_registry = json.loads(subprocess.check_output(
+              ['git', 'show', 'origin/main:registry/public-portables.json'], text=True
+          ))
+          main_registry['as_of'] = '2026-08-18'
+          main_registry.pop('public_governance_components', None)
+          main_registry['public_components'] = branch_registry['public_components']
+          Path('registry/public-portables.json').write_text(
+              json.dumps(main_registry, indent=2, ensure_ascii=False) + '\n', encoding='utf-8', newline='\n'
+          )
+
+          # Setup 3.0: broaden component routing without changing its adaptive-router responsibility.
+          replace_once(
+              'portables/setup/MOON_SOURCE_SETUP.md',
+              '- Credits activate when lineage, adaptation, mirroring or permission scope matters;',
+              '- Credits & Attribution Ops activates when intellectual material must retain identity, authorship, canonicality, transformation history, permission boundaries, disclosure limits, derivative lineage or evidence as it moves or changes;'
+          )
+          replace_once(
+              'portables/setup/MOON_SOURCE_SETUP.md',
+              '| A source, method, mirror or output needs lineage or permission boundaries | docs/CREDITS_ATTRIBUTION_OPS.md |',
+              '| Intellectual material needs identity, authorship, lineage or custody protection while it moves, changes, mirrors, forks, combines or passes through AI | docs/CREDITS_ATTRIBUTION_OPS.md |'
+          )
+          replace_once(
+              'portables/setup/MOON_SOURCE_SETUP.md',
+              '| “I am adapting someone else’s method or resource.” | Credits & Attribution Ops |',
+              '| “This idea, method or file is being adapted, mirrored, generated from or passed around and its authorship and lineage need to stay intact.” | Credits & Attribution Ops |'
+          )
+
+          # MSL: attribution becomes one output of intellectual lineage/content custody.
+          replace_once('portables/msl/MSL_4_3.md', '## 17. Attribution and lineage', '## 17. Intellectual lineage and content custody')
+          replace_once(
+              'portables/msl/MSL_4_3.md',
+              'Moon Source treats attribution as part of context integrity.',
+              'Moon Source treats continuity of intellectual identity, authorship and lineage as part of context integrity.'
+          )
+          replace_once(
+              'portables/msl/MSL_4_3.md',
+              'When importing an external idea, framework, module, prompt, or method, record when relevant:',
+              'When intellectual material is created, imported, adapted, mirrored, combined, generated from source material, or otherwise transformed, record when relevant:'
+          )
+          replace_once(
+              'portables/msl/MSL_4_3.md',
+              '- whether the result is inspiration, adaptation, derivative method, or independent implementation.',
+              '- whether the result is inspiration, adaptation, derivative method, generated derivation, mirror, composite, or independent implementation;\n- which source, path, version, or artifact is canonical;\n- which material transformations occurred;\n- which permission scope and disclosure boundary are actually known;\n- which derivative relationships or attribution facts should remain recoverable.'
+          )
+          replace_once(
+              'portables/msl/MSL_4_3.md',
+              'Absorption should not erase lineage.',
+              'Movement, adaptation, composition or AI-mediated transformation should not erase material lineage.'
+          )
+          replace_once(
+              'portables/msl/MSL_4_3.md',
+              f'For the full public operation, including permission scope, mirrors, composite outputs and attribution QA, use the [Credits & Attribution Ops Protocol]({credits_url}).',
+              f'For the full public operation that protects intellectual lineage and content custody across canonical identity, transformations, permission envelopes, disclosure boundaries, mirrors, derivatives, attribution and evidence, use [Credits & Attribution Ops]({credits_url}).'
+          )
+
+          # Chat–Work: preserve its own lineage as a custody concern, not merely a credit block.
+          replace_once('portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md', '## 20. Attribution Ops', '## 20. Intellectual Lineage & Attribution Ops')
+          replace_once(
+              'portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md',
+              f'This portable carries a local attribution operation for its own reuse. The repository-wide contract for origin, adaptation, permission scope, mirrors, composite outputs and attribution QA is [Credits & Attribution Ops]({credits_url}).',
+              f'This portable carries a local lineage surface for its own reuse. The Moon Source component for protecting its intellectual identity and content custody across origin, canonicality, transformations, permission envelopes, disclosure boundaries, mirrors, derivatives, attribution and evidence is [Credits & Attribution Ops]({credits_url}).'
+          )
+          PY
+
+      - name: Refresh portable fingerprints and stamps
+        run: python scripts/apply_public_stamps.py
+
+      - name: Validate repository
+        run: |
+          python scripts/check_links.py
+          python scripts/validate_portables.py
+          python scripts/test_check_links.py
+          python scripts/check_public_stamps.py
+
+      - name: Commit reconciled release
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md ARCHITECTURE.md CHANGELOG.md MOON_SOURCE_AI_KERNEL.md \
+            docs/EXISTING_IMPLEMENTATIONS.md docs/FIELD_TO_FORM.md docs/VERSIONING_AND_RELEASES.md \
+            registry/PUBLIC_PORTABLES.md registry/public-portables.json portables
+          if git diff --cached --quiet; then
+            echo "No reconciliation delta to commit."
+            exit 0
+          fi
+          git commit -m "Reconcile Credits Ops with Setup 3.0 and public portables"
+          git push origin HEAD:${{ github.head_ref }}
+
+# MOON-SOURCE-PUBLIC-STAMP
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
