@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-18 — Moon Source Setup 3.0
+
+- Promoted the public Setup from 2.0 to 3.0 through a coherent rewrite.
+- Replaced intake-first profile generation with adaptive preflight, inferred AI-use maturity and separate use-case routing.
+- Added standalone and repository-aware operation, with repository loading deferred to the public AI Kernel.
+- Added implicit capability routing so public components are invoked by need rather than by user knowledge or mere availability.
+- Made destination, privacy, existing material, calibration and update contracts part of the operating route.
+- Removed forced coupling between Setup version and user-artifact names or schemas.
+- Preserved standalone portability and the public boundary; no private machinery, licence or impact claim was added.
+
 ## 2026-08-16 — Public architecture baseline
 
 - Rebased the public disclosure around field-to-form context architecture.
