@@ -6,7 +6,7 @@ Want everything at once? [**Download the complete Moon Source repository (.zip)*
 
 | ID | Title | Version | Status | Function | Canonical file | Download |
 |---|---|---:|---|---|---|---|
-| moon-source-setup | Moon Source Setup | 2.0 | current | Guided personal context setup | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md) | [`.md`](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) |
+| moon-source-setup | Moon Source Setup | 3.0 | current | Adaptive routing for proportionate personal and project AI context | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md) | [`.md`](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) |
 | moon-source-language | Moon Source Language | 4.3 | current | Adaptive structural grammar for context work | [MSL_4_3.md](../portables/msl/MSL_4_3.md) | [`.md`](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/msl/MSL_4_3.md) |
 | chat-work-routing | Chat–Work Routing Protocol V2 | 2.0-public | current | Surface, model and reasoning-effort routing | [CHAT_WORK_ROUTING_PROTOCOL_V2.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) | [`.md`](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) |
 
