@@ -30,7 +30,7 @@ Use each file for the responsibility it actually owns:
 - `docs/FIELD_TO_FORM.md` — deciding what should exist before choosing a container or artifact type.
 - `docs/RESPONSIBILITY_MAP.md` — separating responsibilities, ownership, authority and transport between objects.
 - `docs/TERMINOLOGY.md` — responsibility-first translation between ordinary language and Moon Source vocabulary.
-- `docs/CREDITS_ATTRIBUTION_OPS.md` — bounded operations for authorship, provenance, adaptation, permission scope, mirrors and public credit.
+- `docs/CREDITS_ATTRIBUTION_OPS.md` — intellectual-lineage, content-custody and immaterial-asset protection across identity, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
 - `docs/PROCEDURAL_PROJECTION.md` — public source/procedure/skill contract, projection, QA and semantic-undercompilation checks.
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router.
@@ -41,7 +41,7 @@ Use each file for the responsibility it actually owns:
 - `docs/VERSIONING_AND_RELEASES.md` — distinction between repository, portable, MSL and website versions.
 - `EVIDENCE_AND_CLAIMS.md` — what public evidence supports and what it does not establish.
 - `PUBLIC_BOUNDARY.md` — what may be public and what remains outside the public body.
-- `MOON_SOURCE_USE_AND_ATTRIBUTION.md` — authorship and lineage.
+- `MOON_SOURCE_USE_AND_ATTRIBUTION.md` — repository/footer governance for Moon Source-specific authorship, use framing and watermark identity; not a Moon Source component.
 - `CHANGELOG.md` — recorded public changes.
 - `archive/` — preserved history. Archive material does not govern the present unless a current authoritative file explicitly promotes it.
 
@@ -97,13 +97,18 @@ Load:
 
 Do not rewrite governed sources without explicit mutation authority. Do not treat a bounded hygiene method as an autonomous scanner.
 
-### If the user needs to preserve credits, lineage or adaptation boundaries
+### If intellectual material needs protection while it is created, shared, transformed or generated
 
 Load:
 - `docs/CREDITS_ATTRIBUTION_OPS.md`
-- `MOON_SOURCE_USE_AND_ATTRIBUTION.md` when authorship or final authority is disputed.
 
-Record origin, relationship, absorbed/adapted/rejected material, permission scope and destination. Do not infer permission from public availability, and do not let a credit record become a source of truth by itself.
+Also load:
+- the governing source or artifact whose lineage is being protected;
+- `MOON_SOURCE_USE_AND_ATTRIBUTION.md` only when the material is Moon Source itself and project-specific use/authorship governance is relevant.
+
+Identify the asset, origin, material contributors, current custodian, canonical identity, transformations, permission envelope, disclosure boundary, derivative lineage, attribution inheritance and evidence. Use the lightest protection profile that preserves what matters.
+
+Do not infer permission or ownership from public availability, attribution or model mediation. Do not treat AI generation as a provenance reset when identifiable source material materially conditioned the output. Do not expose private lineage merely to make a public credit more complete.
 
 ### If the user needs to transfer context between people, models, threads or projects
 
@@ -112,6 +117,8 @@ Load:
 - `portables/msl/MSL_4_3.md`
 
 Determine whether the transfer is actually a handoff, packet/capsule, bridge or another form. Transport does not automatically inherit source authority.
+
+If intellectual material is also changing custody or becoming a derivative, load `docs/CREDITS_ATTRIBUTION_OPS.md` to preserve its lineage and canonical identity proportionally.
 
 ### If the user asks where ChatGPT work should run
 
@@ -129,6 +136,9 @@ Load:
 - `docs/VERSIONING_AND_RELEASES.md`
 - `EVIDENCE_AND_CLAIMS.md`
 - `PUBLIC_BOUNDARY.md`
+- `MOON_SOURCE_USE_AND_ATTRIBUTION.md`
+
+Use Credits & Attribution Ops for content identity, custody, transformations, mirror/derivative lineage and evidence; use Moon Source Use & Attribution for Moon Source-specific project use framing and the repository footer/watermark.
 
 Do not infer a repository-wide open-source license. No such broad license is ratified in the current public baseline.
 
@@ -152,7 +162,7 @@ For a general Moon Source application, use this loop only to the depth the task 
 5. **Responsibility** — Which objects should own which jobs, and which are overloaded?
 6. **Proportional form** — What is the smallest materialization that creates a needed capability?
 7. **Operation / transport** — How will it actually be used, moved or invoked?
-8. **Hygiene and lineage** — What must remain current, what is superseded, what provenance must remain visible, and what belongs in lineage or archive?
+8. **Hygiene, lineage and custody** — What must remain current, what is superseded, what identity and provenance must remain recoverable, which boundaries must travel, and what belongs in archive?
 
 This is a decision loop, not a compulsory waterfall.
 
@@ -228,13 +238,14 @@ The public Moon Source may expose:
 - public-safe diagnostics;
 - public portable procedures;
 - public responsibility distinctions;
-- public versioning, lineage and distribution rules.
-- bounded credits, attribution and adaptation operations.
+- public versioning, lineage and distribution rules;
+- bounded intellectual-lineage, content-custody and immaterial-asset protection operations.
 
 It does not expose or establish:
 - private source corpora;
 - protected resolver/compiler heuristics;
 - hidden scoring or reconciliation machinery;
+- private custody/permission ledgers whose disclosure would cross a project boundary;
 - external adoption merely because artifacts are public;
 - impact or enterprise readiness without evidence;
 - a universal standard;

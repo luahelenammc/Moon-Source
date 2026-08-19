@@ -6,7 +6,7 @@ The active Moon Source authority for project authorship, permitted-use framing, 
 
 ➡️ [**Moon Source Use & Attribution**](MOON_SOURCE_USE_AND_ATTRIBUTION.md)
 
-For the reusable, project-agnostic provenance operation, use:
+For the reusable Moon Source component that protects intellectual lineage and immaterial material across identity, custody, transformation, permission boundaries, derivatives, attribution and evidence, use:
 
 ➡️ [**Credits & Attribution Ops**](docs/CREDITS_ATTRIBUTION_OPS.md)
 

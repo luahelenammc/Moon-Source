@@ -23,7 +23,7 @@ proportional materialization
       ↓
 operation and transport
       ↓
-feedback, hygiene, lineage and archive
+feedback, hygiene, lineage, custody and archive
       ↺
 ```
 
@@ -37,7 +37,7 @@ Choose the public entry point that matches the field in front of you:
 - **Project, team or knowledge field:** run the [Field-to-Form diagnostic](docs/FIELD_TO_FORM.md) before choosing a document type.
 - **Structure, source, handoff or protocol design:** use [MSL 4.3](portables/msl/MSL_4_3.md) after the responsibility is clear.
 - **ChatGPT execution routing:** use the [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) when surface, model or reasoning effort is the actual decision.
-- **Credits, lineage or adaptation:** use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when a method, resource, mirror or generated output needs provenance and a bounded credit.
+- **Intellectual lineage and immaterial-asset protection:** use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material must retain identity, authorship, canonicality, transformation history, permission scope, disclosure boundaries, derivative lineage and recoverable evidence as it moves or changes.
 - **Reusable procedure:** use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.
 - **Stale or contradictory corpus:** use [Source Hygiene](docs/SOURCE_HYGIENE.md) when retrieval is not the real problem.
 
@@ -162,9 +162,9 @@ Transport may involve:
 
 Transport is not the same as authority. A copy can carry context while the source of truth remains elsewhere.
 
-## 7. Feedback, hygiene, lineage and archive
+## 7. Feedback, hygiene, lineage, custody and archive
 
-For a bounded public operation, use [Source Hygiene](docs/SOURCE_HYGIENE.md) to distinguish retrieval problems from source-architecture problems. Use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when feedback shows that a recurring method deserves a reusable procedure. Use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when the operation moves an idea, source, method, mirror or output across boundaries.
+For a bounded public operation, use [Source Hygiene](docs/SOURCE_HYGIENE.md) to distinguish retrieval problems from source-architecture problems. Use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when feedback shows that a recurring method deserves a reusable procedure. Use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material needs a recoverable chain of custody across origin, authorship, canonical identity, transformation, permission, exposure, derivatives and evidence.
 
 A living architecture must account for change.
 
@@ -176,10 +176,11 @@ Feedback includes:
 - what needs review;
 - what belongs in active state;
 - what should be preserved as lineage;
-- which authorship, source relationship and permission scope must remain visible;
+- which authorship, canonical identity, transformation history, permission scope and disclosure boundary must remain recoverable;
+- which descendants should remain connected to an upstream lineage;
 - what should be archived or retired.
 
-History matters, but history should not quietly govern the present. Active sources should remain legible; archives should preserve the past without impersonating current truth.
+History matters, but history should not quietly govern the present. Active sources should remain legible; archives should preserve the past without impersonating current truth. Likewise, material that travels through copies, adaptations, models or public surfaces should not lose its identity merely because its container changed.
 
 ## MSL as grammar
 

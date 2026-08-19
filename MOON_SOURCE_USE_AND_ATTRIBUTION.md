@@ -15,7 +15,7 @@ This document governs how the public Moon Source body may be used, referenced, a
 
 This is repository governance, not an operational Moon Source component. It belongs to the compact footer / watermark carried by public Moon Source documents and should not be listed alongside methods, engines, procedures or portables in capability menus.
 
-It does not replace the reusable [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) module. **Credits & Attribution Ops is the actual Moon Source component** for provenance and attribution as a general operation for any project or source family. This file governs the Moon Source project, its public body and the compact stamp carried by its documents.
+It does not replace the reusable [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) module. **Credits & Attribution Ops is the actual Moon Source component** for intellectual lineage, content custody and immaterial-asset protection across origin, authorship, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence. This file governs the Moon Source project, its public body and the compact stamp carried by its documents.
 
 ## 1. Two different questions
 
@@ -96,7 +96,7 @@ Every tracked public Moon Source text document carries a compact identity waterm
 
 JSON and comparable structured artifacts may carry equivalent fields rather than prose.
 
-The stamp is intentionally concise. Detailed permission, adaptation, lineage and third-party questions route here or to the universal [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) module.
+The stamp is intentionally concise. Moon Source-specific use and credit questions route here. Deeper questions about content identity, intellectual lineage, custody, transformation, permission scope, disclosure, derivatives or evidence route to the reusable [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) component.
 
 ## 6. Adaptation rule
 
@@ -129,7 +129,7 @@ For exact mirrors:
 
 Moon Source may contain public references to external ideas, projects, people, communities or donor lineages. Moon Source attribution does not erase those origins.
 
-When a reused component carries material third-party lineage, preserve it proportionally. Use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when the relationship needs to be classified, adapted, mirrored or recorded in detail.
+When a reused component carries material third-party lineage, preserve it proportionally. Use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when the asset's origin, custody, canonical identity, transformation history, permission envelope, disclosure boundary, derivative lineage or evidentiary record needs to be governed in detail.
 
 ## 9. Claim ceiling
 
@@ -145,7 +145,7 @@ Using Moon Source does not establish that:
 
 ## 10. Public routes
 
-- Universal provenance operation: [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md)
+- Universal immaterial-asset protection component: [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md)
 - Evidence and claims: [Evidence and Claims](EVIDENCE_AND_CLAIMS.md)
 - Public boundary: [Public Boundary](PUBLIC_BOUNDARY.md)
 - Portable publication: [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md)

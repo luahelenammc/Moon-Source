@@ -6,7 +6,7 @@ A public method for turning a stable way of working into a reusable procedural c
 
 This document exposes the responsibility contract and public diagnostic surface. It does not publish the private compiler, promotion gates, evaluation corpus or automatic synchronization machinery.
 
-When a procedure is adapted from another source or transported into a new surface, apply [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) so the procedural projection does not lose its lineage, permission scope or local authorship.
+When a procedure is adapted, transported, mirrored, generated from source material or combined with another method, apply [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) so the procedural projection does not lose its intellectual identity, upstream lineage, canonical origin, transformation history, permission envelope, disclosure boundary or local authorship.
 
 ## 🔗 Responsibility contract
 
@@ -60,7 +60,8 @@ Check for losses in:
 - output shape and acceptance criteria;
 - QA and recovery logic;
 - source authority and provenance;
-- authorship, adaptation relationship and permission scope;
+- intellectual identity, upstream lineage and canonical origin;
+- local transformation, authorship, permission scope and disclosure boundary;
 - edge conditions and uncertainty;
 - the distinction between current state and reusable doctrine.
 
@@ -103,7 +104,7 @@ Return:
 5. Synchronization implications: doctrinal change, factual change, rename/version/deprecation or no action.
 6. Smallest repair: the minimum change that restores the procedure without exposing private machinery.
 7. Surface label: native capability, portable projection or fallback/mirror.
-8. Attribution and lineage: origin, relationship, local adaptation and permission scope when applicable.
+8. Intellectual custody: origin, canonical source, relationship, material transformations, local authorship, permission scope and disclosure boundary when applicable.
 9. Uncertainty: what cannot be established from the supplied material.
 
 Do not invent private compiler rules, thresholds, evaluation labels or adoption claims.

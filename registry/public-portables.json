@@ -4,14 +4,14 @@
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
   "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
-  "public_governance_components": [
+  "public_components": [
     {
       "id": "credits-attribution-ops",
-      "title": "Credits & Attribution Ops Protocol",
-      "class": "public-governance-reference",
+      "title": "Credits & Attribution Ops",
+      "class": "immaterial-asset-protection",
       "canonical_path": "docs/CREDITS_ATTRIBUTION_OPS.md",
-      "function": "Preserve authorship, source lineage, adaptation, permission scope, mirror identity and public credit",
-      "claim_ceiling": "Bounded public method; not a licence, legal resolver, automatic rights system or adoption claim",
+      "function": "Protect intellectual lineage and content custody across identity, origin, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence",
+      "claim_ceiling": "Operational and evidentiary continuity layer; not a licence, legal rights resolver, ownership proof, enforcement mechanism or adoption claim",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
     }
   ],
