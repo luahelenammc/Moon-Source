@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-21 — Signal Calibration
+
+- Added the bounded public [Signal Calibration](docs/SIGNAL_CALIBRATION.md) component for qualitative reasoning from weak, convergent or ambiguous signals.
+- Added explicit protection against certainty inflation and epistemic sterilization, including the distinction between an established floor and a working read.
+- Added convergence/dependency checks, meaningful alternatives, consequence-sensitive evidence bars, update conditions and public QA.
+- Kept private thresholds, scoring and hidden calibration machinery outside the public boundary.
+- Kept MSL at 4.3; no portable or grammar-level version changed.
+
 ## 2026-08-18 — Moon Source Setup 3.0
 
 - Promoted the public Setup from 2.0 to 3.0 through a coherent rewrite.

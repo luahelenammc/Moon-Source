@@ -24,6 +24,7 @@ Moon Source is disclosed through existing evidence only. This repository organiz
 - The repository is a public versioning and reference body. Evidence: PUBLIC_REPOSITORY.
 - A bounded public procedural-projection method exists. Evidence: PUBLIC_ARTIFACT; this does not establish automatic Source ↔ Skill synchronization or native execution in every environment.
 - A bounded public source-hygiene / Project MRI method exists. Evidence: PUBLIC_ARTIFACT; this does not establish an autonomous scanner, repair engine or measured impact.
+- A bounded public signal / inference calibration method exists for separating observation, convergence, working inference, meaningful alternatives, uncertainty and established claims. Evidence: PUBLIC_ARTIFACT; this does not establish proof of motive, diagnostic validity, scientific validation, external adoption or measured impact.
 - A bounded public Credits & Attribution Ops component exists for intellectual lineage, content custody and immaterial-asset protection across identity, origin, authorship, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence. Evidence: PUBLIC_ARTIFACT; this does not establish legal ownership, a repository-wide licence, legal permission, enforcement, endorsement, external adoption or automatic provenance resolution.
 - The website is a human-facing public surface and the professional page is a separate professional context. Evidence: PUBLIC_REPOSITORY and public URLs.
 
@@ -55,6 +56,8 @@ This repository does not claim:
 - product-market fit, return on investment or downstream impact.
 
 ## Claim discipline
+
+`EVIDENCE_AND_CLAIMS.md` governs public claims about Moon Source and should not be interpreted as requiring every useful working inference inside a field to meet publication-grade evidence before it can be stated as an inference.
 
 Every new public claim should answer:
 

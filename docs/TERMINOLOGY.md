@@ -11,6 +11,8 @@ Internal names are useful for continuity, but a public reader should be able to 
 | Bridge | Translation across systems or projects | Does not transfer semantic authority |
 | Packet / capsule | Bounded transport envelope | Transport is not authority |
 | Source hygiene | Maintenance of active truth, freshness, duplication, contradiction and archive boundaries | Not a claim of perfect automation |
+| Signal calibration | Using incomplete or ambiguous cues proportionally without promoting them to fact or discarding them because certainty is unavailable | Not proof of motive, diagnosis or causality |
+| Working inference | The current best-supported interpretation kept explicitly distinct from established fact | Not a public claim or a substitute for domain evidence standards |
 | MSL | Adaptive structural grammar | Current public version is MSL 4.3 |
 | Runtime | Callable operating layer | Use only where real executable capacity is evidenced |
 | Public surface | Human-facing portal or distribution layer | Does not replace the source |

@@ -14,6 +14,8 @@ The public body may include:
 - evidence classes and non-claims;
 - public-safe intellectual lineage and content-custody concepts;
 - bounded immaterial-asset protection operations for identity, provenance, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence;
+- bounded qualitative signal / inference calibration principles;
+- public interfaces and QA for separating observation from working inference;
 - versioning and public-safe implementation notes.
 
 ## Reserved
@@ -21,7 +23,7 @@ The public body may include:
 The public body does not automatically include:
 
 - full source-authority resolver rules;
-- private calibration, thresholds or scoring;
+- private calibration thresholds, scoring, bands, labels or hidden evaluation machinery;
 - private diagnostic taxonomies;
 - private compiler and evaluation machinery;
 - private prompts, adapters or context corpora;
@@ -61,7 +63,7 @@ Existing artifacts may be inspected, versioned and mapped. They must not be rewr
 
 ## Public routes
 
-For practical use, start with [Architecture](ARCHITECTURE.md) or [Field to Form](docs/FIELD_TO_FORM.md). For reusable procedures, use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md); for corpus diagnosis, use [Source Hygiene](docs/SOURCE_HYGIENE.md); for intellectual lineage, content custody and immaterial-asset protection, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md). Use [Downloads](DOWNLOADS.md) to reach the current public materials.
+For practical use, start with [Architecture](ARCHITECTURE.md) or [Field to Form](docs/FIELD_TO_FORM.md). For reusable procedures, use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md); for signal and inference calibration, use [Signal Calibration](docs/SIGNAL_CALIBRATION.md); for corpus diagnosis, use [Source Hygiene](docs/SOURCE_HYGIENE.md); for intellectual lineage, content custody and immaterial-asset protection, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md). Use [Downloads](DOWNLOADS.md) to reach the current public materials.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

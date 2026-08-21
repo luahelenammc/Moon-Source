@@ -32,6 +32,7 @@ Use each file for the responsibility it actually owns:
 - `docs/TERMINOLOGY.md` — responsibility-first translation between ordinary language and Moon Source vocabulary.
 - `docs/CREDITS_ATTRIBUTION_OPS.md` — intellectual-lineage, content-custody and immaterial-asset protection across identity, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
 - `docs/PROCEDURAL_PROJECTION.md` — public source/procedure/skill contract, projection, QA and semantic-undercompilation checks.
+- `docs/SIGNAL_CALIBRATION.md` — bounded qualitative calibration for weak, convergent or ambiguous signals and working inference.
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router.
 - `portables/msl/MSL_4_3.md` — current public structural grammar for materialization. MSL remains 4.3.
@@ -97,6 +98,19 @@ Load:
 
 Do not rewrite governed sources without explicit mutation authority. Do not treat a bounded hygiene method as an autonomous scanner.
 
+### If the user has several weak or ambiguous cues and needs a useful interpretation
+
+Load:
+- `docs/SIGNAL_CALIBRATION.md`
+
+Use it for:
+- interpreting ambiguous behavior or patterns;
+- synthesizing multiple weak signals;
+- evaluating a user's intuition or preliminary read;
+- avoiding both hallucinated certainty and caveat paralysis.
+
+Use Signal Calibration for a bounded working inference. Use `EVIDENCE_AND_CLAIMS.md` when making public claims about Moon Source, use domain-specific evidence requirements when the stakes demand them, and use `docs/SOURCE_HYGIENE.md` when the unresolved problem is corpus quality, authority or provenance rather than inference.
+
 ### If intellectual material needs protection while it is created, shared, transformed or generated
 
 Load:
@@ -156,8 +170,8 @@ Do not manufacture case studies, adoption, impact, product-market fit, enterpris
 For a general Moon Source application, use this loop only to the depth the task needs:
 
 1. **Field** — What is actually happening before a container is chosen?
-2. **Observation** — Which sources, actors, routines, decisions, constraints and uncertainties matter?
-3. **Diagnosis** — Where are contradiction, staleness, duplication, missing authority or recurring friction?
+2. **Observation** — Which sources, actors, routines, decisions, constraints, weak signals and uncertainties matter?
+3. **Diagnosis** — Where are contradiction, staleness, duplication, missing authority or recurring friction, and what working inference, if any, is proportionately supported?
 4. **Jurisdiction** — Which source or role governs each important claim or state?
 5. **Responsibility** — Which objects should own which jobs, and which are overloaded?
 6. **Proportional form** — What is the smallest materialization that creates a needed capability?
@@ -171,13 +185,15 @@ This is a decision loop, not a compulsory waterfall.
 When applying Moon Source, prefer outputs that distinguish:
 
 - observed source material;
-- inference;
+- working inference;
+- meaningful alternative;
 - uncertainty;
 - current authority;
 - historical or superseded state;
+- update condition;
 - next action.
 
-Do not make every output use the same schema. Structure should be sufficient, not maximal.
+Use the distinctions when they change the decision. Do not make every output use the same schema. Structure should be sufficient, not maximal, and uncertainty should calibrate confidence rather than erase a supported working read.
 
 When a user asks for a concrete artifact, produce the artifact rather than only explaining the architecture.
 

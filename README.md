@@ -34,6 +34,7 @@ Or download only the portable you need:
 | Intellectual material needs to retain its identity, authorship and lineage as it moves or changes | [🧬 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Protect content identity and chain of custody across origin, authorship, transformations, permission scope, disclosure boundaries, canonical versions, derivatives, attribution and evidence |
 | A stable method needs to become a reusable procedural capability | [🧭 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Separate governing source, reusable procedure, triggers, guards, QA and native/fallback surfaces |
 | A context corpus feels stale, contradictory or bloated | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Audit authority, freshness, duplication, contradiction, orphaned decisions, provenance and the smallest safe repair |
+| You have several weak or ambiguous signals and need a useful interpretation without pretending certainty | [🔭 Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Separate observation, convergence, working inference, meaningful alternatives and the evidence needed to update the read |
 
 ## ⚙️ How Moon Source works
 
@@ -53,6 +54,7 @@ Apply the architecture directly through [Architecture](ARCHITECTURE.md), [Field 
 - 🧬 [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) is the reusable immaterial-asset protection component for intellectual lineage, content custody, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
 - 🧭 [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) explains reusable methods without turning them into sources of truth.
 - 🧹 [Source Hygiene](docs/SOURCE_HYGIENE.md) explains bounded corpus diagnosis and conservative repair.
+- 🔭 [Signal Calibration](docs/SIGNAL_CALIBRATION.md) explains how to preserve useful inference without promoting weak signals to fact or flattening them into “we cannot know”.
 
 ## 📌 Current baseline
 
