@@ -26,7 +26,7 @@ Moon Source is disclosed through existing evidence only. This repository organiz
 - A bounded public procedural-projection method exists. Evidence: PUBLIC_ARTIFACT; this does not establish automatic Source ↔ Skill synchronization or native execution in every environment.
 - A bounded public source-hygiene / Project MRI method exists. Evidence: PUBLIC_ARTIFACT; this does not establish an autonomous scanner, repair engine or measured impact.
 - A bounded public signal / inference calibration method exists for separating observation, convergence, working inference, meaningful alternatives, uncertainty and established claims. Evidence: PUBLIC_ARTIFACT; this does not establish proof of motive, diagnostic validity, scientific validation, external adoption or measured impact.
-- A bounded public Credits & Attribution Ops component exists for intellectual lineage, content custody and immaterial-asset protection across identity, origin, authorship, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence. Evidence: PUBLIC_ARTIFACT; this does not establish legal ownership, a repository-wide licence, legal permission, enforcement, endorsement, external adoption or automatic provenance resolution.
+- A bounded public Credits & Attribution Ops component exists for intellectual lineage, content custody and immaterial-asset protection across identity, origin, authorship, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence. Evidence: PUBLIC_ARTIFACT; this does not establish legal ownership, resolve third-party permission, provide enforcement, imply endorsement, establish external adoption or automatically resolve provenance. Legal reuse permission for Moon Source files is routed separately through the applicable standard license.
 - The website is a human-facing public surface and the professional page is a separate professional context. Evidence: PUBLIC_REPOSITORY and public URLs.
 
 ## What the current public body does not establish
@@ -73,10 +73,10 @@ If a claim cannot answer those questions, label it INCUBATING, PLANNED, RESERVED
 
 Use [Existing Implementations](docs/EXISTING_IMPLEMENTATIONS.md) to inspect the artifacts behind current claims, the [README](README.md) for orientation, or [Downloads](DOWNLOADS.md) for the current public distribution.
 
-For intellectual lineage, content custody and immaterial-asset protection, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md). For Moon Source-specific use framing, authorship and the repository footer/watermark, use [Moon Source Use & Attribution](MOON_SOURCE_USE_AND_ATTRIBUTION.md).
+For licensing, use [LICENSING.md](LICENSING.md). For intellectual lineage, content custody and immaterial-asset protection, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md). For Moon Source-specific use framing, authorship and the repository footer/watermark, use [Moon Source Use & Attribution](MOON_SOURCE_USE_AND_ATTRIBUTION.md).
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

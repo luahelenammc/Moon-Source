@@ -40,7 +40,7 @@ The public body does not automatically include:
 
 The boundary protects privacy, third-party material, unfinished work and legitimate intellectual property. It also improves public clarity. A public reader needs to understand the responsibility of a resolver, compiler or custody operation before receiving its private implementation or sensitive ledger.
 
-Public disclosure is not a promise of open-source licensing. A portable may be readable within its stated scope while the repository remains without a broad repository-wide license until that choice is ratified. Attribution guidance, a provenance record or a public content-custody record does not itself grant reuse rights.
+Public disclosure and licensing are separate boundaries. The active public body is openly reusable under the applicable standard license described in [LICENSING.md](LICENSING.md), but that license does not disclose, authorize access to or license private corpora, hidden machinery, confidential lineage or third-party rights Moon cannot grant. Attribution guidance and a provenance record remain custody infrastructure; they do not replace the applicable license or create ownership.
 
 Credits & Attribution Ops uses **immaterial-asset protection** in an operational and evidentiary sense: preserving identity, lineage, transformation history, boundaries and recoverable evidence. It is not a legal rights, enforcement or dispute-resolution system.
 
@@ -70,4 +70,4 @@ For practical use, start with [Preflight](docs/PREFLIGHT.md) when the request it
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

@@ -19,7 +19,7 @@ It does not replace the reusable [Credits & Attribution Ops](docs/CREDITS_ATTRIB
 
 ## 1. Two different questions
 
-Moon Source separates **operational use** from **reuse rights**.
+Moon Source separates **operational use**, **legal reuse rights** and **provenance governance**.
 
 ### Operational use
 
@@ -37,11 +37,11 @@ Typical uses include:
 
 ### Reuse, modification and redistribution
 
-Permission to copy, modify, redistribute, fork or commercially reuse a specific artifact depends on that artifact's own terms or another applicable permission.
+The public Moon Source body is openly reusable under a mixed standard-license model. Software, executable code, automation and technical implementation use Apache-2.0. Documentation, methods, public portables, prose, diagrams and textual knowledge artifacts use CC-BY-4.0 unless a file-level or third-party notice says otherwise.
 
-Public availability, a GitHub path, a download button or attribution guidance do not by themselves grant broader rights. No repository-wide licence is created by this document.
+The complete routing and standard texts live in [LICENSING.md](LICENSING.md), [`LICENSE`](LICENSE), [`NOTICE`](NOTICE), [`LICENSES/`](LICENSES/) and [file-level SPDX metadata](REUSE.toml). Those standard licenses govern copying, modification, adaptation, publication, redistribution, forks, mirrors and commercial use within the rights Moon is authorized to grant.
 
-When a component does grant or otherwise permit a use, the attribution rules below apply.
+This document does not create extra restrictions or replace the applicable standard license. Public availability still does not relicense third-party material, disclose private corpora or turn abstract ideas and methods into universally copyright-exclusive works.
 
 ## 2. Canonical authorship
 
@@ -86,11 +86,11 @@ Every tracked public Moon Source text document carries a compact identity waterm
 
 ### Markdown
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
 
 ### Comment-based files
 
-`🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Use & attribution: [canonical URL] · Full source: [ZIP]`
+`🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: [canonical URL] · Use & attribution: [canonical URL] · Full source: [ZIP]`
 
 ### Structured files
 
@@ -100,7 +100,7 @@ The stamp is intentionally concise. Moon Source-specific use and credit question
 
 ## 6. Adaptation rule
 
-When a use is otherwise permitted and you adapt a Moon Source component:
+When you share or adapt a CC-BY-4.0-covered Moon Source component:
 
 - keep the original component name and canonical path recoverable;
 - identify your local project or adaptation;
@@ -108,10 +108,12 @@ When a use is otherwise permitted and you adapt a Moon Source component:
 - do not attribute your local changes to Moon;
 - do not erase external lineage already recorded by the source;
 - do not imply that Moon reviewed, endorsed or validated the adaptation unless she did.
+- indicate whether changes were made and link the applicable license;
+- satisfy Apache-2.0 notice requirements instead when the material is software or automation.
 
 Recommended compact pattern:
 
-> Adapted from **[Moon Source component]** by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion. Local adaptation by **[person / project]**, **[version/date]**. Original: **[canonical path]**.
+> Adapted from **[Moon Source component]** by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion. Local adaptation by **[person / project]**, **[version/date]**. Original: **[canonical path]**. Licensed under **CC BY 4.0**.
 
 ## 7. Mirrors and transport
 
@@ -148,6 +150,7 @@ Using Moon Source does not establish that:
 - Universal immaterial-asset protection component: [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md)
 - Evidence and claims: [Evidence and Claims](EVIDENCE_AND_CLAIMS.md)
 - Public boundary: [Public Boundary](PUBLIC_BOUNDARY.md)
+- Legal route: [Licensing](LICENSING.md)
 - Portable publication: [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md)
 - Mirror identity: [Mirror Synchronization](docs/MIRROR_SYNCHRONIZATION.md)
 - Full public source: [download repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
@@ -156,4 +159,4 @@ Using Moon Source does not establish that:
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

@@ -1,5 +1,16 @@
 # Changelog
 
+Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
+
+## 2026-08-23 — Open licensing ratified
+
+- Ratified an explicit mixed open licensing model for the public repository: Apache-2.0 for software, executable code, automation and technical implementation; CC-BY-4.0 for documentation, methods, public portables and knowledge artifacts.
+- Added standard license texts, a human-readable licensing route, `NOTICE`, `THIRD_PARTY_NOTICES.md`, `CITATION.cff`, REUSE/SPDX metadata and contribution guidance.
+- Kept Credits & Attribution Ops as the separate provenance, custody and lineage layer rather than turning it into legal boilerplate.
+- Added mandatory attribution where the applicable standard license makes it meaningful, with a recommended visible credit preserving Moon's human authorship and AI-assisted coauthorial process.
+- Added no custom license, non-commercial clause, copyleft restriction, share-alike requirement or trademark endorsement grant.
+- Kept the public/private boundary unchanged and kept MSL at 4.3.
+
 ## 2026-08-23 — Preflight public promotion
 
 - Added [Preflight](docs/PREFLIGHT.md) as a first-class public Moon Source mechanism and one of its crown-jewel methods.
@@ -76,4 +87,4 @@
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

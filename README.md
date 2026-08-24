@@ -23,6 +23,17 @@ Or download only the portable you need:
 
 [🗂️ **Open the download hub →**](DOWNLOADS.md) for the standalone AI Kernel, individual files and guidance on which download to choose.
 
+## 🔓 Open licensing
+
+Moon Source is openly reusable under a mixed standard-license model:
+
+- **Code and automation:** [Apache License 2.0](LICENSES/Apache-2.0.txt).
+- **Documentation, methods and public portables:** [CC BY 4.0](LICENSES/CC-BY-4.0.txt).
+- **Attribution:** preserve Moon Source authorship, applicable notices and material lineage; adaptations should identify changes.
+- **Third-party material:** remains subject to its own terms.
+
+See the full [licensing guide](LICENSING.md), [`NOTICE`](NOTICE), [Moon Source Use & Attribution](MOON_SOURCE_USE_AND_ATTRIBUTION.md) and [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md).
+
 ## 🧭 What can I use Moon Source for?
 
 | Situation | Start here | What it helps you do |
@@ -77,10 +88,10 @@ Private source corpora, third-party material, deployment state, private resolver
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
 
-Attribution guidance explains how credit should be preserved when a use is otherwise permitted. It does not grant rights beyond the terms stated in a specific portable or other applicable permission. No repository-wide open-source license is ratified in this baseline.
+Moon Source is openly reusable under the applicable standard license: software and automation use Apache-2.0; documentation, methods and public portables use CC-BY-4.0. Attribution and provenance remain important, but the repository does not invent a custom license or silently relicense third-party material. See [LICENSING.md](LICENSING.md) for scope, exceptions and the legal ceiling.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

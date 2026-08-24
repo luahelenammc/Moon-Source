@@ -26,7 +26,7 @@ It is:
 
 This module is intentionally universal. It can operate inside Moon Source or be transplanted into another source-governed project without making that project subordinate to Moon Source.
 
-It does not decide how Moon Source itself may be used. That project-specific authority lives in [Moon Source Use & Attribution](../MOON_SOURCE_USE_AND_ATTRIBUTION.md).
+It does not decide how Moon Source itself may be used. Legal reuse permission for Moon Source files comes from the applicable standard license routed by [Moon Source Licensing](../LICENSING.md); project-specific plain-language use framing lives in [Moon Source Use & Attribution](../MOON_SOURCE_USE_AND_ATTRIBUTION.md). This protocol preserves provenance and custody but cannot invent permission for third-party material.
 
 ## 1. What this component protects
 
@@ -353,7 +353,7 @@ Before publishing, mirroring, adapting, generating from or teaching with materia
 
 This module is not:
 
-- a repository-wide licence;
+- the Moon Source license or a substitute for the applicable standard license;
 - legal advice or a legal classification system;
 - a copyright, trademark, patent or contractual rights resolver;
 - an enforcement, takedown or dispute-resolution mechanism;
@@ -401,4 +401,4 @@ Moon Source-specific authorship, permitted-use framing, project identity and the
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

@@ -49,6 +49,8 @@ Only the smallest relevant component set should be loaded for the actual task.
 - 🧩 **Standalone dependencies:** none
 - 🧭 **Routing model:** need × inferred maturity × destination × sensitivity
 - 🔧 **Default with existing material:** inspect → diagnose → preserve what works → repair only what is needed
+- 🔓 **License:** [CC BY 4.0](../../LICENSES/CC-BY-4.0.txt); share/adapt with credit and change indication
+- 📜 **Licensing route:** [LICENSING.md](../../LICENSING.md)
 - 🛡️ **Claim ceiling:** published adaptive setup; no adoption, impact or enterprise-readiness claim
 - 🧬 **Credits & attribution operations:** [public protocol](../../docs/CREDITS_ATTRIBUTION_OPS.md)
 
@@ -60,4 +62,4 @@ Return to the [🗂️ download hub](../../DOWNLOADS.md) or [📚 portable regis
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
