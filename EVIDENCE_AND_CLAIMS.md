@@ -22,6 +22,7 @@ Moon Source is disclosed through existing evidence only. This repository organiz
 - Moon Source includes independently readable public portables for setup, adaptive structural grammar and Chat–Work routing. Evidence: PUBLIC_ARTIFACT.
 - MSL 4.3 is the current public structural standard in this repository. Evidence: PUBLIC_ARTIFACT, INTERNAL_SOURCE_USED.
 - The repository is a public versioning and reference body. Evidence: PUBLIC_REPOSITORY.
+- The public body includes a documented Preflight method for adaptive task shaping, integrated with the AI Kernel, Architecture and Setup 3.0. Evidence: PUBLIC_ARTIFACT, PUBLIC_REPOSITORY; this does not establish uniqueness, universal superiority, external adoption, independent validation or measured impact.
 - A bounded public procedural-projection method exists. Evidence: PUBLIC_ARTIFACT; this does not establish automatic Source ↔ Skill synchronization or native execution in every environment.
 - A bounded public source-hygiene / Project MRI method exists. Evidence: PUBLIC_ARTIFACT; this does not establish an autonomous scanner, repair engine or measured impact.
 - A bounded public signal / inference calibration method exists for separating observation, convergence, working inference, meaningful alternatives, uncertainty and established claims. Evidence: PUBLIC_ARTIFACT; this does not establish proof of motive, diagnostic validity, scientific validation, external adoption or measured impact.

@@ -29,6 +29,10 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 
 These links point to the canonical files in this repository. Website copies are convenience mirrors, not separate semantic sources.
 
+## Open a public component
+
+[**Preflight — Adaptive Task Shaping Before AI Execution**](docs/PREFLIGHT.md) is a directly usable public component for shaping a request before generation. It is not a separate portable family; [Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md) contains its personal/project-context specialization.
+
 ## Browse before downloading
 
 - [Moon Source AI Kernel](MOON_SOURCE_AI_KERNEL.md)
@@ -37,6 +41,7 @@ These links point to the canonical files in this repository. Website copies are 
 - [Chat–Work Routing guide](portables/chat-work/README.md)
 - [Public portable registry](registry/PUBLIC_PORTABLES.md)
 - [🏛️ Moon Source architecture](ARCHITECTURE.md)
+- [🛫 Preflight](docs/PREFLIGHT.md)
 - [🧬 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md)
 - [🔓 Licensing](LICENSING.md)
 - [🧭 Procedural Projection](docs/PROCEDURAL_PROJECTION.md)

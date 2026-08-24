@@ -6,6 +6,15 @@
   "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
   "public_components": [
     {
+      "id": "preflight",
+      "title": "Preflight — Adaptive Task Shaping Before AI Execution",
+      "class": "adaptive-task-shaping",
+      "canonical_path": "docs/PREFLIGHT.md",
+      "function": "Shape a raw request before execution through intent, authority, missing facts, risk, destination, proportionate form and question threshold",
+      "claim_ceiling": "Documented public method integrated with the AI Kernel, Architecture and Setup 3.0; not a uniqueness, adoption, impact or independent-validation claim",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
+    },
+    {
       "id": "credits-attribution-ops",
       "title": "Credits & Attribution Ops",
       "class": "immaterial-asset-protection",
@@ -44,7 +53,7 @@
       "supersedes": "2.0",
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_SETUP.md",
-      "canonical_sha256": "39a72b1c7c7648bbe92a9434469af0b11915d0f4d7d00048c1769c41b46ce97f"
+      "canonical_sha256": "4c88b9fc313bd9c9048d99f5d390e0de7c4b46d285c9f58970dc42b8ceb4e3a5"
     },
     {
       "id": "moon-source-language",

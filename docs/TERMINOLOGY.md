@@ -4,6 +4,9 @@ Internal names are useful for continuity, but a public reader should be able to 
 
 | Moon Source term | Public explanation | Use with care |
 |---|---|---|
+| Preflight | Adaptive pass before execution that shapes the actual task through intent, authority, missing facts, risk, destination, form and question threshold | Not a compulsory questionnaire, hidden reasoning transcript or autonomous self-modification |
+| Adaptive Preflight | Setup 3.0's specialization of the broader Preflight mechanism for personal and project-context setup | Do not treat Setup as the owner of all Preflight behavior |
+| Self-prompt / self-adjusting prompt | Explanatory metaphor for a prompt or procedure that first reshapes its working task according to context, risk and destination | Not canonical ontology; does not imply hidden chain-of-thought, literal system-prompt editing or persistent self-modification |
 | Source jurisdiction | Which source has authority over which claim or state | Do not publish private resolver heuristics by default |
 | Living source | Governed, updateable context with explicit scope and freshness | Not a promise of automatic synchronization |
 | Handoff | Portable transfer of objective, state, constraints and next actions | Not a complete corpus export |
