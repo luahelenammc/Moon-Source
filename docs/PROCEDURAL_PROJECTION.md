@@ -49,6 +49,16 @@ Synchronization here is a governed relationship, not an automatic promise.
 
 Use [Mirror Synchronization](MIRROR_SYNCHRONIZATION.md) for the repository's concrete public mirror contract. That contract verifies bounded file identity; it does not claim semantic automation across every surface.
 
+## Procedure → operational device
+
+A procedural projection remains readable and transportable. An [Operational Device](OPERATIONAL_DEVICES.md) is a further materialization only when the procedure needs a named concrete execution surface, state, guardrails, failure behavior and observable receipts.
+
+```text
+governing source → procedure → operational device → surface / runtime → receipt
+```
+
+The device does not inherit source authority merely by invoking the procedure. Its adapter carries surface-specific assumptions and freshness; [Operational Reliability](OPERATIONAL_RELIABILITY.md) evaluates the execution and recovery contract. A repeated failure may be a candidate for this projection through [Failure to Capability — Failure Foundry](FAILURE_FOUNDRY.md), but only after the smallest mechanism has been validated.
+
 ## 🧠 Semantic undercompilation
 
 Semantic undercompilation is a public failure mode: a procedural projection is structurally valid but too thin to reconstruct the intended method.

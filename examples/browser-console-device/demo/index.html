@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moon Source · Browser Console Device Demo</title>
+    <style>
+      :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #111827; color: #e5e7eb; }
+      body { margin: 0; padding: 2rem; max-width: 960px; margin-inline: auto; }
+      header, section { background: #1f2937; border: 1px solid #374151; border-radius: 14px; padding: 1rem 1.2rem; margin-bottom: 1rem; }
+      h1, h2 { margin-top: 0; }
+      .controls { display: flex; flex-wrap: wrap; gap: .6rem; }
+      button { border: 0; border-radius: 999px; padding: .65rem 1rem; cursor: pointer; background: #c084fc; color: #1f1231; font-weight: 700; }
+      button.secondary { background: #93c5fd; color: #10233f; }
+      .demo-item { background: #111827; border: 1px solid #4b5563; border-radius: 10px; padding: .75rem; margin: .65rem 0; }
+      .demo-item h2 { font-size: 1rem; margin-bottom: .3rem; }
+      .demo-item p { margin: 0; color: #cbd5e1; }
+      pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #030712; border-radius: 10px; padding: 1rem; min-height: 5rem; }
+      .note { color: #c4b5fd; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Browser Console Device</h1>
+      <p class="note">Synthetic localhost reference implementation. The run is read-only and intentionally bounded.</p>
+      <div class="controls">
+        <button id="run-device" type="button">Run synthetic device</button>
+        <button id="copy-json" class="secondary" type="button">Copy JSON receipt</button>
+        <button id="download-json" class="secondary" type="button">Download JSON receipt</button>
+      </div>
+      <pre id="run-output" aria-live="polite">No run yet.</pre>
+    </header>
+
+    <section>
+      <h2>Synthetic progressive surface</h2>
+      <div id="demo-list">
+        <article class="demo-item" data-item-id="item-001">
+          <h2>Item One</h2>
+          <p data-visible-summary>Visible summary with a same-origin metadata record.</p>
+        </article>
+        <article class="demo-item" data-item-id="item-001">
+          <h2>Item One duplicate</h2>
+          <p data-visible-summary>Duplicate stable ID intentionally retained for dedupe testing.</p>
+        </article>
+        <article class="demo-item" data-item-id="item-002">
+          <h2>Item Two</h2>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Final readback</h2>
+      <pre id="readback-output">Counts appear after the run.</pre>
+    </section>
+
+    <script src="../../collector.template.js"></script>
+    <script src="adapter.js"></script>
+    <script>
+      (function () {
+        "use strict";
+        var result = null;
+        var output = document.getElementById("run-output");
+        var readback = document.getElementById("readback-output");
+
+        function render(next) {
+          result = next;
+          var summary = window.MoonSourceBrowserDevice.readback(next);
+          output.textContent = JSON.stringify({
+            status: next.status,
+            stop_reason: next.stop_reason,
+            counts: next.counts,
+            item_statuses: next.items.map(function (item) {
+              return { id: item.id, status: item.status, confidence: item.confidence };
+            })
+          }, null, 2);
+          readback.textContent = JSON.stringify(summary, null, 2);
+        }
+
+        document.getElementById("run-device").addEventListener("click", async function () {
+          output.textContent = "Running…";
+          var next = await window.MoonSourceBrowserDevice.run({
+            adapter: window.MoonSourceDemoAdapter,
+            maxItems: 20,
+            maxRounds: 5,
+            maxStagnantRounds: 2,
+            concurrency: 2,
+            allowSameOriginSession: true
+          });
+          render(next);
+        });
+
+        document.getElementById("copy-json").addEventListener("click", async function () {
+          if (!result) return;
+          var copied = await window.MoonSourceBrowserDevice.copyJSON(result);
+          output.textContent = JSON.stringify({ copy: copied, readback: window.MoonSourceBrowserDevice.readback(result) }, null, 2);
+        });
+
+        document.getElementById("download-json").addEventListener("click", function () {
+          if (result) window.MoonSourceBrowserDevice.downloadJSON(result);
+        });
+      }());
+    </script>
+  </body>
+</html>
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+<!-- 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip -->

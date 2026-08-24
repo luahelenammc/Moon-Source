@@ -17,6 +17,9 @@ The public body may include:
 - bounded immaterial-asset protection operations for identity, provenance, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence;
 - bounded qualitative signal / inference calibration principles;
 - public interfaces and QA for separating observation from working inference;
+- bounded Operational Device contracts and a synthetic reference implementation;
+- generic Operational Reliability principles for read-only diagnosis, dependency checks, failure domains, receipts, reversibility and freshness;
+- a bounded Failure Foundry loop for turning recurring failure into the smallest validated reusable mechanism;
 - versioning and public-safe implementation notes.
 
 ## Reserved
@@ -28,6 +31,7 @@ The public body does not automatically include:
 - private diagnostic taxonomies;
 - private compiler and evaluation machinery;
 - private prompts, adapters or context corpora;
+- real site-specific selectors, endpoints, browser adapters or authenticated-session details;
 - detailed reconciliation, mutation and repair ordering;
 - patient, client, collaborator or third-party material;
 - deployment credentials, runtime state, hosts, quotas or ephemeral receipts;
@@ -35,6 +39,9 @@ The public body does not automatically include:
 - the fine Skill Foundry compiler, promotion gates, hidden evaluation suites, MRI taxonomy, weights, labels, repair ordering or private corpus;
 - private ingestion, custody or permission ledgers;
 - confidential derivative maps, dispute notes, permission-resolution heuristics or third-party attribution material.
+- exact Failure Foundry promotion thresholds, hidden weights, evaluation corpora, compiler logic or source mutation ordering;
+- credentials, cookies, tokens, passwords, authorization headers or account state;
+- bypass machinery for CAPTCHA, paywalls, access controls, CORS, fingerprinting or rate limits.
 
 ## Why this boundary exists
 
@@ -64,7 +71,7 @@ Existing artifacts may be inspected, versioned and mapped. They must not be rewr
 
 ## Public routes
 
-For practical use, start with [Preflight](docs/PREFLIGHT.md) when the request itself needs shaping, or use [Architecture](ARCHITECTURE.md) and [Field to Form](docs/FIELD_TO_FORM.md) when the field needs diagnosis. For reusable procedures, use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md); for signal and inference calibration, use [Signal Calibration](docs/SIGNAL_CALIBRATION.md); for corpus diagnosis, use [Source Hygiene](docs/SOURCE_HYGIENE.md); for intellectual lineage, content custody and immaterial-asset protection, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md). Use [Downloads](DOWNLOADS.md) to reach the current public materials.
+For practical use, start with [Preflight](docs/PREFLIGHT.md) when the request itself needs shaping, or use [Architecture](ARCHITECTURE.md) and [Field to Form](docs/FIELD_TO_FORM.md) when the field needs diagnosis. For reusable procedures, use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md); for concrete bounded execution, use [Operational Devices](docs/OPERATIONAL_DEVICES.md) and [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md); for recurring failure, use [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md); for signal and inference calibration, use [Signal Calibration](docs/SIGNAL_CALIBRATION.md); for corpus diagnosis, use [Source Hygiene](docs/SOURCE_HYGIENE.md); for intellectual lineage, content custody and immaterial-asset protection, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md). Use [Downloads](DOWNLOADS.md) to reach the current public materials.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

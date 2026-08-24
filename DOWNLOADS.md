@@ -45,6 +45,10 @@ These links point to the canonical files in this repository. Website copies are 
 - [🧬 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md)
 - [🔓 Licensing](LICENSING.md)
 - [🧭 Procedural Projection](docs/PROCEDURAL_PROJECTION.md)
+- [⚙️ Operational Devices](docs/OPERATIONAL_DEVICES.md)
+- [🛡️ Operational Reliability](docs/OPERATIONAL_RELIABILITY.md)
+- [🔧 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md)
+- [🧪 Browser Console Device reference](examples/browser-console-device/)
 - [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md)
 
 ## Which download should I choose?
@@ -53,6 +57,9 @@ These links point to the canonical files in this repository. Website copies are 
 - **Just want AI to understand you better?** Download **Moon Source Setup 3.0**.
 - **Want the structural grammar?** Download **MSL 4.3**.
 - **Want the Chat ↔ Work operating protocol?** Download **Chat–Work Routing Protocol V2**.
+- **Need a bounded operational execution pattern?** Browse **Operational Devices** and **Operational Reliability**.
+- **Need to metabolize recurring failure?** Browse **Failure to Capability — Failure Foundry**.
+- **Want the synthetic browser reference?** Browse **Browser Console Device**; it is an experimental example, not a current portable download.
 - **Want to inspect or keep the whole public architecture locally?** Download the **full repository ZIP**.
 
 The full ZIP is a distribution snapshot. The live `main` branch remains the current canonical public repository state.

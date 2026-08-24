@@ -54,6 +54,8 @@ Choose the public entry point that matches the field in front of you:
 - **Intellectual lineage and immaterial-asset protection:** use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material must retain identity, authorship, canonicality, transformation history, permission scope, disclosure boundaries, derivative lineage and recoverable evidence as it moves or changes.
 - **Licensing and redistribution:** use [LICENSING](LICENSING.md) to route software to Apache-2.0, documentation and public portables to CC-BY-4.0, and third-party material to its own terms.
 - **Reusable procedure:** use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.
+- **Concrete recurring execution:** use [Operational Devices](docs/OPERATIONAL_DEVICES.md) when a procedure needs a named surface, state, guards and receipts; use [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) to keep that execution diagnosable and bounded.
+- **Recurring or costly failure:** use [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) when a failure pattern may have earned a smaller reusable rule, gate, procedure or device.
 - **Ambiguous or convergent signals:** use [Signal Calibration](docs/SIGNAL_CALIBRATION.md) when weak or incomplete cues need a useful working inference without being promoted to fact or discarded through caveats.
 - **Stale or contradictory corpus:** use [Source Hygiene](docs/SOURCE_HYGIENE.md) when retrieval is not the real problem.
 
@@ -179,6 +181,14 @@ Transport may involve:
 - a workflow or runtime that performs a bounded operation.
 
 Transport is not the same as authority. A copy can carry context while the source of truth remains elsewhere.
+
+When a reusable procedure needs concrete execution, keep the relationship explicit:
+
+```text
+procedure → operational device → concrete surface / runtime → action + receipt
+```
+
+The device embodies the procedure on a bounded surface; it does not become a source of authority, gain new privilege or prove that documentation alone is a runtime. A surface-specific adapter binds the generic device to the surface and carries its freshness and fragility assumptions.
 
 ## 7. Feedback, hygiene, lineage, custody and archive
 

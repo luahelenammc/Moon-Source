@@ -1,0 +1,373 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/luahelenammc/Moon-Source/blob/main/examples/browser-console-device/output-schema.json",
+  "title": "Moon Source Browser Console Device output",
+  "description": "Secret-free output contract for the experimental Browser Console Device reference implementation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "device",
+    "adapter",
+    "origin_context",
+    "timestamps",
+    "counts",
+    "status",
+    "stop_reason",
+    "items",
+    "run_warnings",
+    "run_errors",
+    "guardrails",
+    "_moon_source_public_stamp"
+  ],
+  "properties": {
+    "device": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "version",
+        "class",
+        "mode",
+        "claim_ceiling"
+      ],
+      "properties": {
+        "id": {
+          "const": "browser-console-device"
+        },
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "mode": {
+          "const": "read-only"
+        },
+        "claim_ceiling": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "adapter": {
+      "type": "object",
+      "required": [
+        "name",
+        "version",
+        "intended_origin",
+        "same_origin_access",
+        "freshness"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "intended_origin": {
+          "type": "string"
+        },
+        "same_origin_access": {
+          "type": "boolean"
+        },
+        "freshness": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "origin_context": {
+      "type": "object",
+      "required": [
+        "origin",
+        "path",
+        "sanitized"
+      ],
+      "properties": {
+        "origin": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "sanitized": {
+          "const": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "timestamps": {
+      "type": "object",
+      "required": [
+        "started_at",
+        "updated_at"
+      ],
+      "properties": {
+        "started_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "discovered",
+        "unique",
+        "duplicates",
+        "completed",
+        "partial",
+        "failed"
+      ],
+      "properties": {
+        "discovered": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unique": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "duplicates": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "completed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "partial": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "failed": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "status": {
+      "enum": [
+        "OK",
+        "PARTIAL",
+        "ERROR",
+        "ABORTED_BY_GUARDRAIL"
+      ]
+    },
+    "stop_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "source_method",
+          "confidence",
+          "warnings",
+          "errors",
+          "provenance"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "OK",
+              "PARTIAL",
+              "ERROR"
+            ]
+          },
+          "source_method": {
+            "type": "string"
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low",
+              "unknown"
+            ]
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "domain",
+                "phase",
+                "code",
+                "message",
+                "http_status"
+              ],
+              "properties": {
+                "domain": {
+                  "type": "string"
+                },
+                "phase": {
+                  "type": "string"
+                },
+                "item_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "code": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "http_status": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "provenance": {
+            "type": "object",
+            "required": [
+              "origin",
+              "path",
+              "adapter",
+              "adapter_version"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string"
+              },
+              "adapter": {
+                "type": "string"
+              },
+              "adapter_version": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "run_warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "run_errors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "domain",
+          "phase",
+          "code",
+          "message",
+          "http_status"
+        ],
+        "properties": {
+          "domain": {
+            "type": "string"
+          },
+          "phase": {
+            "type": "string"
+          },
+          "item_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "code": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "http_status": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "guardrails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "_moon_source_public_stamp": {
+      "type": "object",
+      "required": [
+        "project",
+        "creator",
+        "ai_assisted_coauthor",
+        "use_and_attribution",
+        "full_source"
+      ],
+      "properties": {
+        "project": {
+          "const": "Moon Source"
+        },
+        "creator": {
+          "type": "string"
+        },
+        "ai_assisted_coauthor": {
+          "type": "string"
+        },
+        "use_and_attribution": {
+          "type": "string",
+          "format": "uri"
+        },
+        "full_source": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "_moon_source_public_stamp": {
+    "project": "Moon Source",
+    "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+    "ai_assisted_coauthor": "Áurion",
+    "licensing": "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md",
+    "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md",
+    "full_source": "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip"
+  }
+}

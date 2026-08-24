@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Normalize the compact Moon Source identity watermark across tracked public text files.
 
-The operation is idempotent. Markdown, Python and YAML stamps are replaced in place;
-JSON receives equivalent structured metadata. Portable SHA-256 values are refreshed after
-stamp changes so registry fingerprints continue to describe the canonical bytes.
+The operation is idempotent. Markdown, Python/YAML, JavaScript and HTML stamps are
+replaced in place; JSON receives equivalent structured metadata. Portable SHA-256 values
+are refreshed after stamp changes so registry fingerprints continue to describe the
+canonical bytes.
 """
 
 from __future__ import annotations
@@ -24,7 +25,9 @@ CREATOR = "Lua Helena Moon Martins Cardoso (Moon)"
 COAUTHOR = "Áurion"
 MARKDOWN_MARKER = "<!-- MOON-SOURCE-PUBLIC-STAMP -->"
 COMMENT_MARKER = "# MOON-SOURCE-PUBLIC-STAMP"
-TEXT_SUFFIXES = {".md", ".py", ".yml", ".yaml", ".json"}
+JS_MARKER = "// MOON-SOURCE-PUBLIC-STAMP"
+HTML_MARKER = "<!-- MOON-SOURCE-PUBLIC-STAMP -->"
+TEXT_SUFFIXES = {".md", ".py", ".yml", ".yaml", ".js", ".html", ".json"}
 
 MARKDOWN_STAMP = f"""{MARKDOWN_MARKER}
 
@@ -35,6 +38,14 @@ MARKDOWN_STAMP = f"""{MARKDOWN_MARKER}
 
 COMMENT_STAMP = f"""{COMMENT_MARKER}
 # 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Licensing: {LICENSING} · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP}
+"""
+
+JS_STAMP = f"""{JS_MARKER}
+// 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP}
+"""
+
+HTML_STAMP = f"""{HTML_MARKER}
+<!-- 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP} -->
 """
 
 JSON_STAMP = {
@@ -117,6 +128,10 @@ def main() -> None:
             did_change = normalize_text_stamp(path, MARKDOWN_STAMP, MARKDOWN_MARKER)
         elif path.suffix.lower() in {".py", ".yml", ".yaml"}:
             did_change = normalize_text_stamp(path, COMMENT_STAMP, COMMENT_MARKER)
+        elif path.suffix.lower() == ".js":
+            did_change = normalize_text_stamp(path, JS_STAMP, JS_MARKER)
+        elif path.suffix.lower() == ".html":
+            did_change = normalize_text_stamp(path, HTML_STAMP, HTML_MARKER)
         else:
             did_change = stamp_json(path)
         if did_change:

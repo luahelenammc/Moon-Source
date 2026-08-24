@@ -16,6 +16,13 @@ Want everything at once? [**Download the complete Moon Source repository (.zip)*
 
 [🧬 **Credits & Attribution Ops**](../docs/CREDITS_ATTRIBUTION_OPS.md) is a public Moon Source component, not a portable registry entry. It provides intellectual-lineage, content-custody and immaterial-asset protection across identity, origin, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
 
+The operational layer is also outside the portable registry:
+
+- [Operational Devices](../docs/OPERATIONAL_DEVICES.md) — bounded operational embodiment of a reusable procedure on a concrete surface.
+- [Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) — execution discipline for diagnosis, boundaries, receipts and recovery.
+- [Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) — bounded failure-to-capability projection.
+- [Browser Console Device reference](../examples/browser-console-device/) — experimental synthetic implementation; not a current portable and therefore not assigned a portable fingerprint or mirror.
+
 `MOON_SOURCE_USE_AND_ATTRIBUTION.md` is not a component. It remains repository/footer governance for Moon Source-specific use framing, project authorship and the compact watermark.
 
 ## Website mirrors

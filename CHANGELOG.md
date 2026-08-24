@@ -19,6 +19,16 @@ Historical entries describe the repository state at their recorded date. The cur
 - Added public explanations of Preflight as task shaping, a self-prompt and a self-adjusting prompt, with explicit boundaries against hidden chain-of-thought and autonomous self-modification claims.
 - Kept MSL at 4.3 and did not create a separate Preflight portable family.
 
+## 2026-08-23 — Operational Devices and Reliability Layer
+
+- Added the public [Operational Devices](docs/OPERATIONAL_DEVICES.md) component for bounded embodiments of reusable procedures on concrete execution surfaces.
+- Added [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) with read-only-first diagnosis, Dependency Staircase, layered troubleshooting, change-of-error evidence, Safe Mutation Gate, Instrument Reliability, public failure domains, status contracts, receipts, idempotency and freshness gates.
+- Added the bounded [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) projection for turning recurring failure into the smallest validated reusable mechanism without publishing protected promotion machinery.
+- Added the experimental synthetic [Browser Console Device reference](examples/browser-console-device/) with separate adapter, progressive loading, deduplication, fault isolation, same-origin enrichment, checkpointing and JSON/CSV receipts.
+- Integrated the new layer into the README, Architecture, AI Kernel, Field to Form, Responsibility Map, Terminology, Procedural Projection, Public Boundary, Evidence and Claims, Existing Implementations, Downloads and registry metadata.
+- Extended public stamps to JavaScript and HTML while preserving idempotency and structured JSON stamps.
+- Kept MSL at 4.3, left existing portables unchanged, kept the Browser Console Device outside the portable registry and kept the repository's mixed standard licensing model intact.
+
 ## 2026-08-21 — Signal Calibration
 
 - Added the bounded public [Signal Calibration](docs/SIGNAL_CALIBRATION.md) component for qualitative reasoning from weak, convergent or ambiguous signals.

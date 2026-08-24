@@ -19,6 +19,12 @@ SPDX-FileCopyrightText = "2026 Lua Helena Moon Martins Cardoso (Moon)"
 SPDX-License-Identifier = "CC-BY-4.0"
 
 [[annotations]]
+path = ["examples/**/*.js", "examples/**/*.html", "examples/**/*.json"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Lua Helena Moon Martins Cardoso (Moon)"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
 path = "REUSE.toml"
 precedence = "override"
 SPDX-FileCopyrightText = "2026 Lua Helena Moon Martins Cardoso (Moon)"
