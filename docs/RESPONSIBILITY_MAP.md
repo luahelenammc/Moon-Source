@@ -7,6 +7,9 @@ The following objects can work together, but they do not perform the same job.
 | Field | The real situation | Supply the context that must be understood | A document template |
 | Source | Governed context | Hold facts, decisions, rules or material with an authority boundary | Every note ever written |
 | Living source | Updateable governed context | Keep scope, freshness, owner and active state visible | A chat transcript |
+| Connected source | Reachable governed external context | Expose a source through a connector while preserving authority, jurisdiction, freshness, provenance and verification | Authority merely because it is reachable |
+| Source substrate | Persistent accessible source body | Preserve stable identity, retrieval, freshness, permissions and history for living-source operation | A vendor-specific ontology or automatic source of truth |
+| Connector / app | Bounded access or action surface | Carry read, search or authorized action capability between the AI and a substrate | Mutation authority, exhaustive understanding or semantic ownership |
 | Project | Bounded work domain | Define purpose, jurisdiction, participants and outputs | A single task |
 | Procedure | Reusable way of working | Describe how an operation is performed | A source of truth for all facts |
 | Skill | [Portable procedural projection](PROCEDURAL_PROJECTION.md) | Trigger and execute a reusable procedure | A magical capability or private corpus |
