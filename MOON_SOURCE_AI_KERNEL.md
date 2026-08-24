@@ -28,6 +28,7 @@ Use each file for the responsibility it actually owns:
 - `README.md` — orientation, public entry points and top-level routing.
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
 - `docs/PREFLIGHT.md` — adaptive task shaping before execution: intent, authority, missing facts, risk, destination, form and question threshold.
+- `docs/CONNECTED_SOURCES.md` — connector-aware source access: substrate, jurisdiction, retrieval scope, freshness, mutation authority and readback.
 - `ARCHITECTURE.md` — public Moon Source architecture and field-to-form topology.
 - `docs/FIELD_TO_FORM.md` — deciding what should exist before choosing a container or artifact type.
 - `docs/RESPONSIBILITY_MAP.md` — separating responsibilities, ownership, authority and transport between objects.
@@ -174,6 +175,16 @@ Determine whether the transfer is actually a handoff, packet/capsule, bridge or 
 
 If intellectual material is also changing custody or becoming a derivative, load `docs/CREDITS_ATTRIBUTION_OPS.md` to preserve its lineage and canonical identity proportionally.
 
+### If the user needs to reach a connected living source or external-memory substrate
+
+Load:
+- `docs/CONNECTED_SOURCES.md`
+- `docs/RESPONSIBILITY_MAP.md` when authority or ownership is unclear
+- `docs/SOURCE_HYGIENE.md` when the corpus itself may be stale, contradictory or bloated
+- `docs/OPERATIONAL_RELIABILITY.md` when the operation includes mutation, retries, partial failure or recovery
+
+Apply Connector Preflight proportionately. Treat access as reach, not authority; search as discovery, not census; synchronization as freshness evidence, not exhaustive reading; and write capability as distinct from mutation authority. For ChatGPT product facts, use the dated official adapter in Connected Sources and refresh it before relying on a volatile capability claim.
+
 ### If the user asks where ChatGPT work should run
 
 Load:
@@ -221,6 +232,19 @@ For a general Moon Source application, enter through Preflight when task shaping
 8. **Hygiene, lineage and custody** — What must remain current, what is superseded, what identity and provenance must remain recoverable, which boundaries must travel, and what belongs in archive?
 
 This is a decision loop, not a compulsory waterfall.
+
+### Connected-source pass
+
+When an external connected source materially matters, perform the smallest useful pass:
+
+1. resolve the source surface and canonical locator;
+2. identify the governing responsibility or facet;
+3. check freshness and whether retrieval is targeted or exhaustive;
+4. distinguish read, proposal and authorized mutation;
+5. after mutation, reread or otherwise verify the resulting source state;
+6. report bounded coverage or partial failure instead of implying omniscience.
+
+Do not let a connected item become authoritative merely because it was retrieved. Do not claim a corpus was exhaustively checked from a semantic search alone.
 
 ## 5. Output discipline
 

@@ -9,6 +9,10 @@ Internal names are useful for continuity, but a public reader should be able to 
 | Self-prompt / self-adjusting prompt | Explanatory metaphor for a prompt or procedure that first reshapes its working task according to context, risk and destination | Not canonical ontology; does not imply hidden chain-of-thought, literal system-prompt editing or persistent self-modification |
 | Source jurisdiction | Which source has authority over which claim or state | Do not publish private resolver heuristics by default |
 | Living source | Governed, updateable context with explicit scope and freshness | Not a promise of automatic synchronization |
+| Connected source | External governed context made reachable through a connector or app | Reach is not authority, jurisdiction or exhaustive reading |
+| Source substrate | Persistent accessible body that stores and exposes a living source | Vendor-portable contract, not a universal requirement for one provider |
+| Connector / app | Bounded surface that provides access or actions against an external substrate | Capabilities, permissions and write authority vary by product surface and time |
+| Connector Preflight | Adaptive source-access pass that resolves surface, authority, locator, freshness, retrieval scope and verification | A specialization of Preflight, not a mandatory ceremony or competing mechanism |
 | Handoff | Portable transfer of objective, state, constraints and next actions | Not a complete corpus export |
 | Skill | Reusable procedural projection | Not proof of impact |
 | Bridge | Translation across systems or projects | Does not transfer semantic authority |

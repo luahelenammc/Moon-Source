@@ -2,6 +2,15 @@
 
 Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
 
+## 2026-08-23 — Connected Sources
+
+- Added [Connected Sources](docs/CONNECTED_SOURCES.md) as the public connector-aware context-operations component.
+- Defined the universal persistent-source-substrate requirement while positioning Google Drive as the ChatGPT document-source reference and GitHub as a complementary executable-source substrate.
+- Added public laws for authority, jurisdiction, freshness, targeted versus exhaustive retrieval, mutation authority, readback, provenance and cross-source reconciliation.
+- Integrated the component into README, Architecture, AI Kernel, Responsibility Map, Terminology, Existing Implementations, Evidence and Claims and Public Boundary.
+- Kept the component out of the portable registry, created no new portable, preserved MSL 4.3, Setup 3.0, existing licensing and the public/private boundary.
+- Bounded product-specific claims with an `as of 2026-08-23` official OpenAI documentation check.
+
 ## 2026-08-23 — Open licensing ratified
 
 - Ratified an explicit mixed open licensing model for the public repository: Apache-2.0 for software, executable code, automation and technical implementation; CC-BY-4.0 for documentation, methods, public portables and knowledge artifacts.
