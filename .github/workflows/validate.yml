@@ -8,6 +8,14 @@ on:
       - "**/*.md"
       - "registry/**"
       - "scripts/**"
+      - "LICENSE"
+      - "LICENSES/**"
+      - "LICENSING.md"
+      - "NOTICE"
+      - "THIRD_PARTY_NOTICES.md"
+      - "CITATION.cff"
+      - "REUSE.toml"
+      - "CONTRIBUTING.md"
       - ".github/workflows/validate.yml"
   push:
     branches: [main]
@@ -16,6 +24,14 @@ on:
       - "**/*.md"
       - "registry/**"
       - "scripts/**"
+      - "LICENSE"
+      - "LICENSES/**"
+      - "LICENSING.md"
+      - "NOTICE"
+      - "THIRD_PARTY_NOTICES.md"
+      - "CITATION.cff"
+      - "REUSE.toml"
+      - "CONTRIBUTING.md"
       - ".github/workflows/validate.yml"
 
 permissions:
@@ -29,6 +45,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - run: python -m pip install --disable-pip-version-check --no-input reuse cffconvert
+      - run: python scripts/check_licensing.py
+      - run: reuse lint
+      - run: cffconvert --validate --infile CITATION.cff
       - run: python scripts/check_links.py
       - run: python scripts/validate_portables.py
       - run: python scripts/test_check_links.py
@@ -45,4 +65,4 @@ jobs:
       - run: python scripts/check_mirror_sync.py
 
 # MOON-SOURCE-PUBLIC-STAMP
-# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip

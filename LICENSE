@@ -1,0 +1,11 @@
+# Moon Source licensing
+
+Moon Source is a mixed open-source/open-content repository.
+
+- Software, executable code, automation and technical implementation are licensed under the Apache License 2.0 (`Apache-2.0`), unless a file-level notice or a third-party notice says otherwise.
+- Documentation, methods, public portables, prose, diagrams, textual specifications and other Moon-authored knowledge artifacts are licensed under the Creative Commons Attribution 4.0 International license (`CC-BY-4.0`), unless a file-level notice or a third-party notice says otherwise.
+- Third-party material remains under its own applicable terms and is not silently relicensed by this repository.
+
+The exact scopes, exceptions, attribution guidance and legal routes are described in [`LICENSING.md`](LICENSING.md). The unmodified standard license texts are stored in [`LICENSES/`](LICENSES/). [`NOTICE`](NOTICE), [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md), file-level SPDX metadata and the repository's provenance documentation preserve the relevant attribution and lineage information.
+
+This file is a repository-level license map. It is not a custom Moon Source license and does not add terms to Apache-2.0 or CC-BY-4.0. Where this summary or any plain-language governance guidance conflicts with an applicable standard license, the applicable standard license controls.

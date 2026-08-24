@@ -14,7 +14,7 @@ Each registry entry records:
 
 A mirror is synchronized only when its fetched bytes hash to the canonical fingerprint. A matching filename or matching version string is not sufficient.
 
-Mirroring is also a content-custody event. Apply [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when an artifact crosses into another repository or public surface so canonical origin, semantic authority, exact-identity status and relevant attribution inheritance remain recoverable. If the bytes change, stop calling the result an exact mirror and classify the transformation honestly.
+Mirroring is also a content-custody and licensing event. Apply [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when an artifact crosses into another repository or public surface so canonical origin, semantic authority, exact-identity status and relevant attribution inheritance remain recoverable. Preserve the applicable license from [LICENSING](../LICENSING.md) and any third-party notice. If the bytes change, stop calling the result an exact mirror and classify the transformation honestly.
 
 A matching fingerprint supports byte identity for the checked artifact. It does not prove authorship, ownership, permission or semantic freshness beyond the compared bytes.
 
@@ -55,4 +55,4 @@ Use the [portable registry](../registry/PUBLIC_PORTABLES.md) for canonical paths
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

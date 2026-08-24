@@ -31,6 +31,12 @@ REQUIRED = {
     "dependencies",
     "freshness",
     "claim_ceiling",
+    "license",
+    "license_class",
+    "license_url",
+    "licensing_url",
+    "creator",
+    "adaptation_policy",
     "supersedes",
     "archive_paths",
 }
@@ -91,6 +97,8 @@ def main() -> None:
             data["canonical_repository"],
             data["public_surface_url"],
             data["professional_context_url"],
+            portable["license_url"],
+            portable["licensing_url"],
         ):
             if required_url not in content:
                 fail(f"{portable['id']} does not expose {required_url}")
@@ -99,6 +107,14 @@ def main() -> None:
             fail(f"{portable['id']} does not expose its canonical path")
         if "mooon.com.br" in content:
             fail(f"{portable['id']} contains a stale canonical mooon.com.br URL")
+        if portable["license"] != "CC-BY-4.0":
+            fail(f"{portable['id']} is not classified as CC-BY-4.0")
+        if portable["license_class"] != "open-content":
+            fail(f"{portable['id']} is not classified as open-content")
+        if portable["creator"] not in content:
+            fail(f"{portable['id']} does not expose its creator")
+        if "adapt" not in content.lower() or "change" not in content.lower():
+            fail(f"{portable['id']} does not expose an adaptation/change expectation")
         if not content.lstrip().startswith("#"):
             fail(f"{portable['id']} does not start with a Markdown heading")
         if not URL_RE.search(content):
@@ -111,4 +127,4 @@ if __name__ == "__main__":
     main()
 
 # MOON-SOURCE-PUBLIC-STAMP
-# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip

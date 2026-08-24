@@ -8,6 +8,8 @@ Choose the smallest download that matches what you need.
 
 The ZIP contains the current public architecture, documentation, registry, validation scripts, all public portables and the Moon Source AI Kernel in one offline snapshot of `main`.
 
+The distribution is mixed-license: software and automation use Apache-2.0; documentation, methods and public portables use CC-BY-4.0. Read the [licensing guide](LICENSING.md) and [`NOTICE`](NOTICE) before redistributing detached files.
+
 - **Human reader:** start with `README.md`.
 - **AI receiving the repository or ZIP:** start with `MOON_SOURCE_AI_KERNEL.md`.
 
@@ -36,6 +38,7 @@ These links point to the canonical files in this repository. Website copies are 
 - [Public portable registry](registry/PUBLIC_PORTABLES.md)
 - [🏛️ Moon Source architecture](ARCHITECTURE.md)
 - [🧬 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md)
+- [🔓 Licensing](LICENSING.md)
 - [🧭 Procedural Projection](docs/PROCEDURAL_PROJECTION.md)
 - [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md)
 
@@ -53,4 +56,4 @@ The full ZIP is a distribution snapshot. The live `main` branch remains the curr
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

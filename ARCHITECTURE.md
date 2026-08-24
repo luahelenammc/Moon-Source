@@ -38,6 +38,7 @@ Choose the public entry point that matches the field in front of you:
 - **Structure, source, handoff or protocol design:** use [MSL 4.3](portables/msl/MSL_4_3.md) after the responsibility is clear.
 - **ChatGPT execution routing:** use the [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) when surface, model or reasoning effort is the actual decision.
 - **Intellectual lineage and immaterial-asset protection:** use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material must retain identity, authorship, canonicality, transformation history, permission scope, disclosure boundaries, derivative lineage and recoverable evidence as it moves or changes.
+- **Licensing and redistribution:** use [LICENSING](LICENSING.md) to route software to Apache-2.0, documentation and public portables to CC-BY-4.0, and third-party material to its own terms.
 - **Reusable procedure:** use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.
 - **Ambiguous or convergent signals:** use [Signal Calibration](docs/SIGNAL_CALIBRATION.md) when weak or incomplete cues need a useful working inference without being promoted to fact or discarded through caveats.
 - **Stale or contradictory corpus:** use [Source Hygiene](docs/SOURCE_HYGIENE.md) when retrieval is not the real problem.
@@ -68,7 +69,7 @@ Situation:
 
 For the supporting decisions, use [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [MSL 4.3](portables/msl/MSL_4_3.md).
 
-**Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](DOWNLOADS.md).
+**Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](DOWNLOADS.md). For reuse rights, use [LICENSING](LICENSING.md).
 
 ## 1. Field
 
@@ -212,4 +213,4 @@ This repository is a public reference architecture and a versioned home for publ
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

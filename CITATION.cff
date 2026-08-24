@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: >-
+  If you use or adapt Moon Source, cite the repository and preserve the
+  applicable license and attribution notices. This citation metadata file is
+  documentation under CC-BY-4.0; the repository is mixed-license, with
+  Apache-2.0 for software and automation and CC-BY-4.0 for documentation,
+  methods and public portables. Human creator and final authority: Lua Helena
+  Moon Martins Cardoso (Moon). Development included AI-assisted coauthorial
+  work with Áurion; Áurion is not represented as a legal human copyright
+  holder.
+title: "Moon Source"
+type: software
+version: "2026-08-23"
+date-released: 2026-08-23
+authors:
+  - given-names: "Lua Helena Moon"
+    family-names: "Martins Cardoso"
+    alias: "Moon"
+    website: "https://www.luahelena.com.br/ia/?lang=en"
+repository-code: "https://github.com/luahelenammc/Moon-Source"
+url: "https://www.luahelena.com.br/moonsource/?lang=en"
+license: "CC-BY-4.0"
+license-url: "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md"
+abstract: >-
+  Moon Source is a public reference architecture for deciding what context
+  should exist, where authority lives, how it travels, and how it stays current.
+  This is a mixed-license repository: software and automation use Apache-2.0;
+  documentation, methods and public portables use CC-BY-4.0.
+keywords:
+  - context engineering
+  - human-AI collaboration
+  - knowledge architecture
+  - provenance
+  - continuity
+  - MSL
+  - open source
+  - open content

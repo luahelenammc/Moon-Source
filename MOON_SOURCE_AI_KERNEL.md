@@ -145,6 +145,8 @@ Treat model names, prices, usage pools, limits and product behavior as date-sens
 
 Load:
 - `registry/PUBLIC_PORTABLES.md`
+- `LICENSING.md`
+- `THIRD_PARTY_NOTICES.md`
 - `docs/PORTABLE_DESIGN_CONTRACT.md`
 - `docs/CREDITS_ATTRIBUTION_OPS.md`
 - `docs/VERSIONING_AND_RELEASES.md`
@@ -154,7 +156,7 @@ Load:
 
 Use Credits & Attribution Ops for content identity, custody, transformations, mirror/derivative lineage and evidence; use Moon Source Use & Attribution for Moon Source-specific project use framing and the repository footer/watermark.
 
-Do not infer a repository-wide open-source license. No such broad license is ratified in the current public baseline.
+Use the applicable standard license declared by [LICENSING.md](LICENSING.md), the file-level SPDX metadata and any third-party notice. Moon Source uses Apache-2.0 for software and automation and CC-BY-4.0 for documentation, methods and public portables. Do not collapse the mixed repository into one homogeneous software license.
 
 ### If the user asks what Moon Source publicly proves
 
@@ -265,7 +267,8 @@ It does not expose or establish:
 - external adoption merely because artifacts are public;
 - impact or enterprise readiness without evidence;
 - a universal standard;
-- a repository-wide open-source license unless one is explicitly added later.
+- private or internal material merely because a related public file is licensed;
+- rights in third-party material that Moon is not authorized to grant.
 
 When public claims matter, read `EVIDENCE_AND_CLAIMS.md` and `PUBLIC_BOUNDARY.md` before answering.
 
@@ -305,4 +308,4 @@ If time is limited, do this:
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

@@ -8,6 +8,8 @@ A public, ChatGPT-first protocol for separating surface, model and reasoning-eff
 - 🗂️ Canonical file: [CHAT_WORK_ROUTING_PROTOCOL_V2.md](CHAT_WORK_ROUTING_PROTOCOL_V2.md)
 - 🌐 Language: English
 - 🕒 Freshness: date-sensitive; recheck product behavior and model calibration
+- 🔓 License: [CC BY 4.0](../../LICENSES/CC-BY-4.0.txt); share/adapt with credit and change indication
+- 📜 Licensing route: [LICENSING.md](../../LICENSING.md)
 - 🧬 Credits and attribution operations: [public protocol](../../docs/CREDITS_ATTRIBUTION_OPS.md)
 - 🛡️ Claim ceiling: published routing protocol; not an OpenAI policy or universal benchmark
 
@@ -19,4 +21,4 @@ Return to the [🗂️ download hub](../../DOWNLOADS.md) or [📚 portable regis
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
