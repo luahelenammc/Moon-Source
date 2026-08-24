@@ -32,6 +32,10 @@ Use each file for the responsibility it actually owns:
 - `docs/TERMINOLOGY.md` — responsibility-first translation between ordinary language and Moon Source vocabulary.
 - `docs/CREDITS_ATTRIBUTION_OPS.md` — intellectual-lineage, content-custody and immaterial-asset protection across identity, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
 - `docs/PROCEDURAL_PROJECTION.md` — public source/procedure/skill contract, projection, QA and semantic-undercompilation checks.
+- `docs/OPERATIONAL_DEVICES.md` — bounded operational embodiment of a reusable procedure on a concrete execution surface.
+- `docs/OPERATIONAL_RELIABILITY.md` — read-only-first execution discipline, dependency checks, failure domains, receipts and recovery.
+- `docs/FAILURE_FOUNDRY.md` — bounded failure-to-capability loop for recurring or costly operational failure.
+- `examples/browser-console-device/README.md` — experimental synthetic Browser Console Device reference implementation.
 - `docs/SIGNAL_CALIBRATION.md` — bounded qualitative calibration for weak, convergent or ambiguous signals and working inference.
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router.
@@ -89,6 +93,31 @@ Load:
 - `docs/PROCEDURAL_PROJECTION.md`
 
 Then load the governing source or procedure only as needed. Keep live state in the source; do not imply automatic synchronization or native execution where only a portable or mirror is available.
+
+### If a recurring procedure needs a concrete bounded execution surface
+
+Load:
+- `docs/OPERATIONAL_DEVICES.md`
+- `docs/OPERATIONAL_RELIABILITY.md`
+
+Use an operational device only when a named surface, trigger, state, guardrail, failure contract and observable output are actually needed. Keep the generic device separate from its surface-specific adapter. Do not infer runtime authority, universal stability or new permissions from documentation or a reference implementation.
+
+### If repeated or costly failure keeps producing the same loop
+
+Load:
+- `docs/FAILURE_FOUNDRY.md`
+- `docs/OPERATIONAL_RELIABILITY.md`
+
+Preserve evidence, separate failure domains and forge only the smallest validated mechanism. Use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) or [Operational Devices](docs/OPERATIONAL_DEVICES.md) only when the learning earns that form. Never expose private promotion thresholds, compiler machinery or source-specific protected detail.
+
+### If the user asks for the Browser Console Device reference
+
+Load:
+- `examples/browser-console-device/README.md`
+- `docs/OPERATIONAL_DEVICES.md`
+- `docs/OPERATIONAL_RELIABILITY.md`
+
+Keep the run read-only by default, use only a legitimate same-origin session, preserve partial results and never bypass CAPTCHA, paywalls, access controls, CORS or rate limits. The synthetic example is experimental and is not a current portable.
 
 ### If the user needs to audit a stale, contradictory or bloated context corpus
 

@@ -14,9 +14,11 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16.
+- Public architecture baseline: 2026-08-16; additive operational-layer update: 2026-08-23.
 - Current structural grammar: MSL 4.3.
 - Public portables: Setup 3.0, MSL 4.3, Chat–Work Routing Protocol 2.0-public.
+- Operational Devices, Operational Reliability and Failure Foundry are public components outside the portable registry.
+- Browser Console Device is an experimental bounded reference implementation outside the current portable family.
 - Website: production public convenience surface; canonical and mapped mirror bytes were verified after promotion on 2026-08-16.
 - Repository: luahelenammc/Moon-Source, public reference and versioning body.
 
@@ -37,6 +39,8 @@ They should not be collapsed into one number.
 The 2026-08-16 promotion audit returns KEEP_MSL_4_3. Source jurisdiction, procedural skills, handoffs and bridges are important architectural layers, but the live MSL 4.3 source already provides the structural grammar needed to express them. They remain separate responsibilities rather than being absorbed into MSL 5.
 
 The expanded Credits & Attribution Ops component does not by itself require an MSL major version. It adds a distinct operational responsibility for intellectual lineage and content custody rather than changing the MSL structural grammar.
+
+The 2026-08-23 Operational Devices / Operational Reliability / Failure Foundry update is additive. It makes execution, receipts, failure boundaries and failure-to-capability projection explicit without changing the MSL grammar, bumping an existing portable or adding a repository-wide license. The Browser Console Device remains an experimental reference implementation and is not a current portable.
 
 ## Future versions
 

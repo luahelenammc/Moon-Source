@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": "item-001",
+      "category": "synthetic-alpha",
+      "tags": [
+        "structured",
+        "complete"
+      ],
+      "description": "A complete synthetic enrichment record.",
+      "metadata_version": "fixture-1"
+    },
+    {
+      "id": "item-002",
+      "category": "synthetic-beta",
+      "tags": [
+        "partial-metadata"
+      ],
+      "metadata_version": "fixture-1"
+    },
+    {
+      "id": "item-004",
+      "category": "synthetic-delta",
+      "tags": [
+        "progressive",
+        "complete"
+      ],
+      "description": "A record discovered during the second synthetic loading round.",
+      "metadata_version": "fixture-1"
+    }
+  ],
+  "_moon_source_public_stamp": {
+    "project": "Moon Source",
+    "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+    "ai_assisted_coauthor": "Áurion",
+    "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md",
+    "full_source": "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip"
+  }
+}

@@ -22,6 +22,9 @@ Internal names are useful for continuity, but a public reader should be able to 
 | Permission envelope | The specific uses actually known as allowed, restricted, conditional or unresolved | Do not infer permission from availability or attribution |
 | Attribution inheritance | The origin and transformation facts that should remain attached to a material descendant | Keep it proportional; do not inflate trivial influence into authorship |
 | Provenance | Recoverable relationship between a source, transformation and destination | Do not treat a record as authority by itself |
+| Operational device | Bounded operational embodiment of a reusable procedure on a concrete execution surface | Not a source of authority, automatic privilege or proof of runtime merely because it is documented |
+| Operational reliability | Execution discipline that distinguishes target, instrument, environment, dependencies, guards and receipts | Not a guarantee of safety, correctness or autonomous repair |
+| Failure Foundry | Failure-to-capability loop that preserves evidence and forges the smallest validated reusable mechanism | Not an autonomous self-improvement engine, compiler or universal promotion rule |
 
 ## Public language
 
@@ -31,6 +34,9 @@ Prefer responsibility-first language:
 - “reusable procedure” before “skill”;
 - “portable transfer” before “handoff”;
 - “adaptive structural grammar” before “MSL”;
+- “bounded operational embodiment” before “operational device”;
+- “execution reliability and receipts” before “reliability engine”;
+- “failure-to-capability loop” before “Failure Foundry”;
 - “public reference repository” before “engine.”
 
 Local terms may follow once the responsibility is clear.

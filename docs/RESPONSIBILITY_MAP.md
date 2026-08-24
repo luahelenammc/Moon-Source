@@ -10,6 +10,7 @@ The following objects can work together, but they do not perform the same job.
 | Project | Bounded work domain | Define purpose, jurisdiction, participants and outputs | A single task |
 | Procedure | Reusable way of working | Describe how an operation is performed | A source of truth for all facts |
 | Skill | [Portable procedural projection](PROCEDURAL_PROJECTION.md) | Trigger and execute a reusable procedure | A magical capability or private corpus |
+| Operational device | Bounded operational embodiment | Execute a reusable procedure on a named surface with state, guards, failure behavior and receipts | Semantic authority, unrestricted automation or new privilege |
 | Task | One bounded action or recurring obligation | Move a project or source through a concrete next step | A project architecture |
 | Handoff | Transfer of responsibility and state | Let another person, model or thread continue safely | A complete backup of the corpus |
 | Packet / capsule | Bounded transport envelope | Carry objective, state, limits, provenance and next actions | A new authority by itself |
@@ -44,7 +45,7 @@ System:
 [paste the file list, folder layout, workflow or object descriptions]
 ```
 
-If the field itself is still unclear, begin with [Field to Form](FIELD_TO_FORM.md). If a structural artifact or handoff is needed, use [MSL 4.3](../portables/msl/MSL_4_3.md). If intellectual material needs identity, lineage or custody protection while it moves, changes, forks, mirrors or passes through AI, use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md). If the unresolved issue is where ChatGPT work should run, use the [Chat–Work Routing Protocol V2](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md).
+If the field itself is still unclear, begin with [Field to Form](FIELD_TO_FORM.md). If a structural artifact or handoff is needed, use [MSL 4.3](../portables/msl/MSL_4_3.md). If a procedure needs a concrete execution surface, use [Operational Devices](OPERATIONAL_DEVICES.md) with [Operational Reliability](OPERATIONAL_RELIABILITY.md). If intellectual material needs identity, lineage or custody protection while it moves, changes, forks, mirrors or passes through AI, use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md). If the unresolved issue is where ChatGPT work should run, use the [Chat–Work Routing Protocol V2](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md).
 
 **Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
 

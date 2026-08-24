@@ -17,8 +17,10 @@ CREATOR = "Lua Helena Moon Martins Cardoso (Moon)"
 COAUTHOR = "Áurion"
 MARKDOWN_MARKER = "<!-- MOON-SOURCE-PUBLIC-STAMP -->"
 COMMENT_MARKER = "# MOON-SOURCE-PUBLIC-STAMP"
+JS_MARKER = "// MOON-SOURCE-PUBLIC-STAMP"
+HTML_MARKER = "<!-- MOON-SOURCE-PUBLIC-STAMP -->"
 JSON_KEY = "_moon_source_public_stamp"
-TEXT_SUFFIXES = {".md", ".py", ".yml", ".yaml", ".json"}
+TEXT_SUFFIXES = {".md", ".py", ".yml", ".yaml", ".js", ".html", ".json"}
 
 MARKDOWN_STAMP = f"""{MARKDOWN_MARKER}
 
@@ -29,6 +31,14 @@ MARKDOWN_STAMP = f"""{MARKDOWN_MARKER}
 
 COMMENT_STAMP = f"""{COMMENT_MARKER}
 # 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP}
+"""
+
+JS_STAMP = f"""{JS_MARKER}
+// 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP}
+"""
+
+HTML_STAMP = f"""{HTML_MARKER}
+<!-- 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP} -->
 """
 
 JSON_STAMP = {
@@ -70,6 +80,16 @@ def main() -> None:
                 fail(f"{rel} has no comment public stamp marker")
             if not content.rstrip().endswith(COMMENT_STAMP.rstrip()):
                 fail(f"{rel} does not end with the canonical compact comment stamp")
+        elif path.suffix.lower() == ".js":
+            if JS_MARKER not in content:
+                fail(f"{rel} has no JavaScript public stamp marker")
+            if not content.rstrip().endswith(JS_STAMP.rstrip()):
+                fail(f"{rel} does not end with the canonical JavaScript stamp")
+        elif path.suffix.lower() == ".html":
+            if HTML_MARKER not in content:
+                fail(f"{rel} has no HTML public stamp marker")
+            if not content.rstrip().endswith(HTML_STAMP.rstrip()):
+                fail(f"{rel} does not end with the canonical HTML stamp")
         elif path.suffix.lower() == ".json":
             data = json.loads(content)
             if data.get(JSON_KEY) != JSON_STAMP:

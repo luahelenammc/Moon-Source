@@ -33,6 +33,8 @@ Or download only the portable you need:
 | You want to publish, mirror or adapt one of the public materials | [📐 Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), [🗂️ registry](registry/PUBLIC_PORTABLES.md) and [📚 versioning rules](docs/VERSIONING_AND_RELEASES.md) | Find canonical paths, freshness rules, attribution guidance, mirror rules and release boundaries |
 | Intellectual material needs to retain its identity, authorship and lineage as it moves or changes | [🧬 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Protect content identity and chain of custody across origin, authorship, transformations, permission scope, disclosure boundaries, canonical versions, derivatives, attribution and evidence |
 | A stable method needs to become a reusable procedural capability | [🧭 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Separate governing source, reusable procedure, triggers, guards, QA and native/fallback surfaces |
+| A recurring procedure needs a bounded concrete execution surface | [Operational Devices](docs/OPERATIONAL_DEVICES.md) and [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Embody a procedure with explicit state, guardrails, failure behavior, receipts and recovery |
+| Repeated failure keeps generating the same loop | [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Preserve the evidence, separate failure domains and forge the smallest validated reusable mechanism |
 | A context corpus feels stale, contradictory or bloated | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Audit authority, freshness, duplication, contradiction, orphaned decisions, provenance and the smallest safe repair |
 | You have several weak or ambiguous signals and need a useful interpretation without pretending certainty | [🔭 Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Separate observation, convergence, working inference, meaningful alternatives and the evidence needed to update the read |
 
@@ -53,6 +55,10 @@ Apply the architecture directly through [Architecture](ARCHITECTURE.md), [Field 
 - [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), the [portable registry](registry/PUBLIC_PORTABLES.md) and [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) govern canonical paths, mirrors, freshness and releases.
 - 🧬 [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) is the reusable immaterial-asset protection component for intellectual lineage, content custody, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
 - 🧭 [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) explains reusable methods without turning them into sources of truth.
+- ⚙️ [Operational Devices](docs/OPERATIONAL_DEVICES.md) explains when a procedure deserves a bounded concrete execution surface.
+- 🛡️ [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) keeps execution diagnosable, reversible where possible and honest about partial results.
+- 🔧 [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) turns recurring failure into the smallest validated capability without exposing protected machinery.
+- 🧪 [Browser Console Device reference](examples/browser-console-device/) demonstrates that layer on a synthetic `localhost` surface; it is experimental and not a current portable.
 - 🧹 [Source Hygiene](docs/SOURCE_HYGIENE.md) explains bounded corpus diagnosis and conservative repair.
 - 🔭 [Signal Calibration](docs/SIGNAL_CALIBRATION.md) explains how to preserve useful inference without promoting weak signals to fact or flattening them into “we cannot know”.
 

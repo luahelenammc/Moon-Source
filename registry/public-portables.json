@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0",
-  "as_of": "2026-08-18",
+  "as_of": "2026-08-23",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
   "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -12,6 +12,33 @@
       "canonical_path": "docs/CREDITS_ATTRIBUTION_OPS.md",
       "function": "Protect intellectual lineage and content custody across identity, origin, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence",
       "claim_ceiling": "Operational and evidentiary continuity layer; not a licence, legal rights resolver, ownership proof, enforcement mechanism or adoption claim",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
+    },
+    {
+      "id": "operational-devices",
+      "title": "Operational Devices",
+      "class": "operational-device-pattern",
+      "canonical_path": "docs/OPERATIONAL_DEVICES.md",
+      "function": "Define bounded embodiments of reusable procedures on concrete execution surfaces with explicit state, guardrails, failure behavior and receipts",
+      "claim_ceiling": "Public responsibility pattern; not a universal runtime, automatic adapter generator, privilege grant or cross-surface stability claim",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
+    },
+    {
+      "id": "operational-reliability",
+      "title": "Operational Reliability",
+      "class": "operational-reliability-method",
+      "canonical_path": "docs/OPERATIONAL_RELIABILITY.md",
+      "function": "Keep bounded execution read-only-first, diagnosable, failure-aware, reversible where possible and supported by receipts and freshness checks",
+      "claim_ceiling": "Public execution-discipline method; not a guarantee of safety, diagnosis correctness, autonomous repair or recovery in every environment",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
+    },
+    {
+      "id": "failure-foundry",
+      "title": "Failure to Capability — Failure Foundry",
+      "class": "failure-to-capability-method",
+      "canonical_path": "docs/FAILURE_FOUNDRY.md",
+      "function": "Preserve recurring failure evidence and forge the smallest validated reusable mechanism while keeping protected machinery bounded",
+      "claim_ceiling": "Bounded public projection; not an autonomous self-improvement engine, compiler, benchmark, universal promotion rule or measured-impact claim",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
     }
   ],
