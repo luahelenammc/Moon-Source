@@ -13,10 +13,11 @@ If you received the full repository or ZIP:
 1. Read this file first.
 2. Read `README.md` for orientation and public entry points.
 3. Identify the user's actual task before loading more files.
-4. Load only the smallest set of Moon Source modules that can answer or execute that task.
-5. Use the authority map below when files overlap.
-6. Preserve the distinction between current state, historical material, public claims and private/non-disclosed machinery.
-7. If the task changes, re-route rather than carrying every previously loaded module forward by default.
+4. If the request itself is ambiguous, underspecified, risky, destination-sensitive or likely to activate the wrong source or form, apply [Preflight](docs/PREFLIGHT.md) before loading more modules.
+5. Load only the smallest set of Moon Source modules that can answer or execute that task.
+6. Use the authority map below when files overlap.
+7. Preserve the distinction between current state, historical material, public claims and private/non-disclosed machinery.
+8. If the task changes, re-route rather than carrying every previously loaded module forward by default.
 
 Do not treat "read the whole repository" as the default operating mode. More context is not automatically better context.
 
@@ -26,6 +27,7 @@ Use each file for the responsibility it actually owns:
 
 - `README.md` — orientation, public entry points and top-level routing.
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
+- `docs/PREFLIGHT.md` — adaptive task shaping before execution: intent, authority, missing facts, risk, destination, form and question threshold.
 - `ARCHITECTURE.md` — public Moon Source architecture and field-to-form topology.
 - `docs/FIELD_TO_FORM.md` — deciding what should exist before choosing a container or artifact type.
 - `docs/RESPONSIBILITY_MAP.md` — separating responsibilities, ownership, authority and transport between objects.
@@ -52,7 +54,16 @@ Use each file for the responsibility it actually owns:
 
 When two files appear to conflict, do not flatten them together. First ask whether they have different jurisdictions. Prefer the file whose declared responsibility governs the disputed state.
 
+Preflight is the general before-execution gate. It may remain silent for a clear, low-risk task, or route to the component that owns the next decision. It does not replace the default operating loop and is not a mandatory permanent stage.
+
 ## 3. Route by user intent
+
+### If the request itself is unclear, risky or likely to activate the wrong source or form
+
+Load:
+- `docs/PREFLIGHT.md`
+
+Use it when the immediate problem is task shaping rather than a known domain operation: the user's real intention, governing authority, missing facts, freshness, sensitivity, destination, question threshold or smallest adequate form may change the route. After the pass, load only the specialized component that the shaped task actually needs.
 
 ### If the user wants AI to understand them more consistently
 
@@ -174,6 +185,8 @@ Treat model names, prices, usage pools, limits and product behavior as date-sens
 
 Load:
 - `registry/PUBLIC_PORTABLES.md`
+- `LICENSING.md`
+- `THIRD_PARTY_NOTICES.md`
 - `docs/PORTABLE_DESIGN_CONTRACT.md`
 - `docs/CREDITS_ATTRIBUTION_OPS.md`
 - `docs/VERSIONING_AND_RELEASES.md`
@@ -183,7 +196,7 @@ Load:
 
 Use Credits & Attribution Ops for content identity, custody, transformations, mirror/derivative lineage and evidence; use Moon Source Use & Attribution for Moon Source-specific project use framing and the repository footer/watermark.
 
-Do not infer a repository-wide open-source license. No such broad license is ratified in the current public baseline.
+Use the applicable standard license declared by [LICENSING.md](LICENSING.md), the file-level SPDX metadata and any third-party notice. Moon Source uses Apache-2.0 for software and automation and CC-BY-4.0 for documentation, methods and public portables. Do not collapse the mixed repository into one homogeneous software license.
 
 ### If the user asks what Moon Source publicly proves
 
@@ -196,7 +209,7 @@ Do not manufacture case studies, adoption, impact, product-market fit, enterpris
 
 ## 4. Default operating loop
 
-For a general Moon Source application, use this loop only to the depth the task needs:
+For a general Moon Source application, enter through Preflight when task shaping is the unresolved problem. Then use this loop only to the depth the task needs; skip layers that do not affect the decision:
 
 1. **Field** — What is actually happening before a container is chosen?
 2. **Observation** — Which sources, actors, routines, decisions, constraints, weak signals and uncertainties matter?
@@ -294,7 +307,8 @@ It does not expose or establish:
 - external adoption merely because artifacts are public;
 - impact or enterprise readiness without evidence;
 - a universal standard;
-- a repository-wide open-source license unless one is explicitly added later.
+- private or internal material merely because a related public file is licensed;
+- rights in third-party material that Moon is not authorized to grant.
 
 When public claims matter, read `EVIDENCE_AND_CLAIMS.md` and `PUBLIC_BOUNDARY.md` before answering.
 
@@ -334,4 +348,4 @@ If time is limited, do this:
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

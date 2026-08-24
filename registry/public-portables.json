@@ -6,6 +6,15 @@
   "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
   "public_components": [
     {
+      "id": "preflight",
+      "title": "Preflight — Adaptive Task Shaping Before AI Execution",
+      "class": "adaptive-task-shaping",
+      "canonical_path": "docs/PREFLIGHT.md",
+      "function": "Shape a raw request before execution through intent, authority, missing facts, risk, destination, proportionate form and question threshold",
+      "claim_ceiling": "Documented public method integrated with the AI Kernel, Architecture and Setup 3.0; not a uniqueness, adoption, impact or independent-validation claim",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
+    },
+    {
       "id": "credits-attribution-ops",
       "title": "Credits & Attribution Ops",
       "class": "immaterial-asset-protection",
@@ -62,10 +71,16 @@
       "dependencies": [],
       "freshness": "general; review wording when the public setup changes",
       "claim_ceiling": "Published adaptive setup; no impact or adoption claim",
+      "license": "CC-BY-4.0",
+      "license_class": "open-content",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "licensing_url": "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md",
+      "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+      "adaptation_policy": "Share or adapt with appropriate credit, a license link and an indication of changes; do not imply endorsement.",
       "supersedes": "2.0",
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_SETUP.md",
-      "canonical_sha256": "9697a732a667c1e32148e5d921e96c9465f476f10007d242b8b4ab16152c5faf"
+      "canonical_sha256": "4c88b9fc313bd9c9048d99f5d390e0de7c4b46d285c9f58970dc42b8ceb4e3a5"
     },
     {
       "id": "moon-source-language",
@@ -86,10 +101,16 @@
       "dependencies": [],
       "freshness": "structural standard; audit before adopting a later version",
       "claim_ceiling": "Published MSL 4.3 portable; not a universal standard or runtime",
+      "license": "CC-BY-4.0",
+      "license_class": "open-content",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "licensing_url": "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md",
+      "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+      "adaptation_policy": "Share or adapt with appropriate credit, a license link and an indication of changes; do not imply endorsement.",
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_4_3.md",
-      "canonical_sha256": "bd7f1f179e5a2d8b2cf75ebddd565c5ff0f663f8499604fb5d4e156571cec0ea"
+      "canonical_sha256": "fb227783e9550699f0bd5e9f6b9822394d708ad9b3373ccbddcc2850d0d9ee35"
     },
     {
       "id": "chat-work-routing",
@@ -112,10 +133,16 @@
       ],
       "freshness": "date-sensitive; recheck product behavior, model names, prices and usage pools",
       "claim_ceiling": "Published routing protocol; no universal benchmark or OpenAI policy claim",
+      "license": "CC-BY-4.0",
+      "license_class": "open-content",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "licensing_url": "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md",
+      "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+      "adaptation_policy": "Share or adapt with appropriate credit, a license link and an indication of changes; do not imply endorsement.",
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V2_MSL_4_3.md",
-      "canonical_sha256": "61899bf6100c5099a4a7f7ef8f671783a7142e8a5c6ef098af7c9673d6486409"
+      "canonical_sha256": "362630cdecfd358eaa74bf197f93d4bd7671e48c87870a8c074e7252386f2305"
     }
   ],
   "mirror_contract": {
@@ -138,6 +165,7 @@
     "project": "Moon Source",
     "creator": "Lua Helena Moon Martins Cardoso (Moon)",
     "ai_assisted_coauthor": "Áurion",
+    "licensing": "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md",
     "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md",
     "full_source": "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip"
   }

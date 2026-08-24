@@ -29,15 +29,30 @@ feedback, hygiene, lineage, custody and archive
 
 This is a decision topology, not a universal mandatory lifecycle. A materialization can reveal new facts and send the work back to observation, authority or topology.
 
+## Before the topology: Preflight
+
+When the immediate problem is not yet “what structure should exist?” but “what is the AI actually being asked to do, under what authority, risk, destination and constraints?”, start with [Preflight](docs/PREFLIGHT.md).
+
+Preflight is the adaptive gate before and during execution. It can:
+
+- terminate quickly and let a clear, low-risk task execute directly;
+- route into [Field to Form](docs/FIELD_TO_FORM.md) when the field needs architectural diagnosis;
+- route into another specialized public component when that responsibility is the real problem;
+- reroute when new evidence changes the task, authority, destination or risk.
+
+It is transversal, not a mandatory permanent stage in the topology. **Preflight shapes the task; Field to Form decides what the field deserves to become.**
+
 ## Use this architecture
 
 Choose the public entry point that matches the field in front of you:
 
+- **Request shaping before execution:** start with [Preflight](docs/PREFLIGHT.md) when the request is vague, underspecified, risky, destination-sensitive or likely to activate the wrong source or form.
 - **Personal or project context:** start with [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
 - **Project, team or knowledge field:** run the [Field-to-Form diagnostic](docs/FIELD_TO_FORM.md) before choosing a document type.
 - **Structure, source, handoff or protocol design:** use [MSL 4.3](portables/msl/MSL_4_3.md) after the responsibility is clear.
 - **ChatGPT execution routing:** use the [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) when surface, model or reasoning effort is the actual decision.
 - **Intellectual lineage and immaterial-asset protection:** use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material must retain identity, authorship, canonicality, transformation history, permission scope, disclosure boundaries, derivative lineage and recoverable evidence as it moves or changes.
+- **Licensing and redistribution:** use [LICENSING](LICENSING.md) to route software to Apache-2.0, documentation and public portables to CC-BY-4.0, and third-party material to its own terms.
 - **Reusable procedure:** use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.
 - **Concrete recurring execution:** use [Operational Devices](docs/OPERATIONAL_DEVICES.md) when a procedure needs a named surface, state, guards and receipts; use [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) to keep that execution diagnosable and bounded.
 - **Recurring or costly failure:** use [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) when a failure pattern may have earned a smaller reusable rule, gate, procedure or device.
@@ -70,7 +85,7 @@ Situation:
 
 For the supporting decisions, use [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [MSL 4.3](portables/msl/MSL_4_3.md).
 
-**Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](DOWNLOADS.md).
+**Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](DOWNLOADS.md). For reuse rights, use [LICENSING](LICENSING.md).
 
 ## 1. Field
 
@@ -222,4 +237,4 @@ This repository is a public reference architecture and a versioned home for publ
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

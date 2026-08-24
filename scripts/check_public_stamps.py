@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FULL_ZIP = "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip"
+LICENSING = "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md"
 USE_AND_ATTRIBUTION = (
     "https://github.com/luahelenammc/Moon-Source/blob/main/"
     "MOON_SOURCE_USE_AND_ATTRIBUTION.md"
@@ -26,11 +27,11 @@ MARKDOWN_STAMP = f"""{MARKDOWN_MARKER}
 
 ---
 
-> 🌙 **Moon Source** · created by **{CREATOR}** with AI-assisted coauthorial development by **{COAUTHOR}** · [Use & attribution]({USE_AND_ATTRIBUTION}) · [Full source (.zip)]({FULL_ZIP})
+> 🌙 **Moon Source** · created by **{CREATOR}** with AI-assisted coauthorial development by **{COAUTHOR}** · [Licensing]({LICENSING}) · [Use & attribution]({USE_AND_ATTRIBUTION}) · [Full source (.zip)]({FULL_ZIP})
 """
 
 COMMENT_STAMP = f"""{COMMENT_MARKER}
-# 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP}
+# 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Licensing: {LICENSING} · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP}
 """
 
 JS_STAMP = f"""{JS_MARKER}
@@ -45,6 +46,7 @@ JSON_STAMP = {
     "project": "Moon Source",
     "creator": CREATOR,
     "ai_assisted_coauthor": COAUTHOR,
+    "licensing": LICENSING,
     "use_and_attribution": USE_AND_ATTRIBUTION,
     "full_source": FULL_ZIP,
 }
@@ -104,4 +106,4 @@ if __name__ == "__main__":
     main()
 
 # MOON-SOURCE-PUBLIC-STAMP
-# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip

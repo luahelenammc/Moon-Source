@@ -10,6 +10,7 @@ Use it to choose an inspectable public capability. If the question is what shoul
 
 | Capability | Inspectable materialization | Evidence class | Claim ceiling |
 |---|---|---|---|
+| Adaptive task shaping before execution | [Preflight](PREFLIGHT.md) | PUBLIC_ARTIFACT, PUBLIC_REPOSITORY | A documented public method is integrated with the AI Kernel, Architecture and Setup 3.0; uniqueness, adoption, impact and independent validation are not demonstrated here. |
 | Personal context setup | [Moon Source Setup 3.0](../portables/setup/MOON_SOURCE_SETUP.md) | PUBLIC_ARTIFACT | An adaptive setup is published; impact is not demonstrated here. |
 | Adaptive structural grammar | [MSL 4.3](../portables/msl/MSL_4_3.md) | PUBLIC_ARTIFACT | MSL 4.3 is published as a portable; it is not a universal standard. |
 | Procedural projection method | [Procedural Projection](PROCEDURAL_PROJECTION.md) | PUBLIC_ARTIFACT | A bounded public method exists; automatic synchronization, native execution everywhere and impact are not demonstrated. |
@@ -42,4 +43,4 @@ Internal Local Moon Source and Moon Professional Source materials informed the p
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

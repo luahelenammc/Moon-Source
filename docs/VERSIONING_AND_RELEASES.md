@@ -20,7 +20,7 @@ They should not be collapsed into one number.
 - Operational Devices, Operational Reliability and Failure Foundry are public components outside the portable registry.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
 - Website: production public convenience surface; canonical and mapped mirror bytes were verified after promotion on 2026-08-16.
-- Repository: luahelenammc/Moon-Source, public reference and versioning body.
+- Repository: luahelenammc/Moon-Source, public reference and versioning body; software and automation are Apache-2.0, while documentation, methods and public portables are CC-BY-4.0.
 
 ## Release rules
 
@@ -32,7 +32,7 @@ They should not be collapsed into one number.
 6. A public release must pass the public-boundary and claim checks.
 7. A release that changes content identity, authorship, upstream lineage, transformation status, canonical path, permission scope, disclosure boundary, derivative relationship or mirror identity must run the relevant [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) custody checks.
 8. Exact-identity claims should use version/fingerprint evidence when appropriate, without treating a fingerprint as proof of authorship, ownership or permission.
-9. No license rights are broadened by implication.
+9. License rights come from the applicable standard license and file-level metadata; they are not broadened beyond those terms by implication.
 
 ## MSL decision
 
@@ -54,4 +54,4 @@ Inspect the current public family in the [portable registry](../registry/PUBLIC_
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

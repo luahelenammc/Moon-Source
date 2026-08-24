@@ -8,6 +8,8 @@ Moon Source is a public reference architecture for deciding what context should 
 
 This repository is the canonical public body of Moon Source. Setup, MSL and Chat–Work are public projections of that same architecture. Each is an entry point into a different responsibility, not a separate system.
 
+**Preflight is one of Moon Source's crown-jewel mechanisms:** the adaptive pass where the AI reshapes the task before the task shapes the output. It checks intent, authority, missing facts, risk, destination and proportionate form before deciding whether to ask, route, create or act.
+
 ## 📦 Download Moon Source
 
 **Want the whole public architecture offline?**  
@@ -21,11 +23,23 @@ Or download only the portable you need:
 
 [🗂️ **Open the download hub →**](DOWNLOADS.md) for the standalone AI Kernel, individual files and guidance on which download to choose.
 
+## 🔓 Open licensing
+
+Moon Source is openly reusable under a mixed standard-license model:
+
+- **Code and automation:** [Apache License 2.0](LICENSES/Apache-2.0.txt).
+- **Documentation, methods and public portables:** [CC BY 4.0](LICENSES/CC-BY-4.0.txt).
+- **Attribution:** preserve Moon Source authorship, applicable notices and material lineage; adaptations should identify changes.
+- **Third-party material:** remains subject to its own terms.
+
+See the full [licensing guide](LICENSING.md), [`NOTICE`](NOTICE), [Moon Source Use & Attribution](MOON_SOURCE_USE_AND_ATTRIBUTION.md) and [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md).
+
 ## 🧭 What can I use Moon Source for?
 
 | Situation | Start here | What it helps you do |
 |---|---|---|
 | You want an AI to understand your context more consistently | [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md) | Infer the smallest useful setup for your need, maturity, destination and privacy boundary |
+| A request is vague, high-stakes, destination-sensitive or keeps producing answers to the wrong problem | [Preflight](docs/PREFLIGHT.md) | Shape the task before execution: clarify intent, authority, missing facts, risk, destination and the smallest adequate form |
 | A project or knowledge base has scattered sources, unclear ownership or recurring friction | [Architecture](ARCHITECTURE.md) and [Field to form](docs/FIELD_TO_FORM.md) | Inspect the field, identify authority and responsibility, and choose what deserves to become a source, procedure or other form |
 | You need a structure for recurring context work, updates or handoffs | [Moon Source Language 4.3](portables/msl/MSL_4_3.md) | Choose a proportionate Markdown-native form for sources, skills, handoffs, packets, protocols, registries and archives |
 | Work needs to move between a person, model, thread or project without losing state | [MSL 4.3](portables/msl/MSL_4_3.md) and the [responsibility map](docs/RESPONSIBILITY_MAP.md) | Separate objective, current state, constraints, authority, provenance and next actions |
@@ -44,6 +58,8 @@ Moon Source follows a decision loop:
 
 **field → observation and diagnosis → authority → responsibility → proportional form → operation and transport → feedback, hygiene, lineage and archive**
 
+When the immediate problem is not yet the field's structure but the request itself, begin with [Preflight](docs/PREFLIGHT.md). It is a transversal before-execution gate that may resolve quickly, route into Field to Form or another component, or reroute when the task changes. It is not a mandatory extra stage for every operation.
+
 It is not a compulsory workflow. A materialization can reveal new facts and send the work back to observation, authority or responsibility. The point is to let the situation determine the smallest form that can carry the work without losing provenance, scope or ownership.
 
 Apply the architecture directly through [Architecture](ARCHITECTURE.md), [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [Terminology](docs/TERMINOLOGY.md); each includes a practical way to use that layer and routes to the relevant public portable.
@@ -52,6 +68,7 @@ Apply the architecture directly through [Architecture](ARCHITECTURE.md), [Field 
 
 - [Existing implementations](docs/EXISTING_IMPLEMENTATIONS.md) maps the public artifacts that actually exist and the evidence class behind them.
 - [Evidence and Claims](EVIDENCE_AND_CLAIMS.md) and [Public Boundary](PUBLIC_BOUNDARY.md) define what the public body supports, what it does not establish and what remains private.
+- 🛫 [Preflight](docs/PREFLIGHT.md) explains the crown-jewel method for shaping a task before AI execution, including its self-prompt and self-adjusting-prompt metaphors.
 - [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), the [portable registry](registry/PUBLIC_PORTABLES.md) and [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) govern canonical paths, mirrors, freshness and releases.
 - 🧬 [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) is the reusable immaterial-asset protection component for intellectual lineage, content custody, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
 - 🧭 [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) explains reusable methods without turning them into sources of truth.
@@ -77,10 +94,10 @@ Private source corpora, third-party material, deployment state, private resolver
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
 
-Attribution guidance explains how credit should be preserved when a use is otherwise permitted. It does not grant rights beyond the terms stated in a specific portable or other applicable permission. No repository-wide open-source license is ratified in this baseline.
+Moon Source is openly reusable under the applicable standard license: software and automation use Apache-2.0; documentation, methods and public portables use CC-BY-4.0. Attribution and provenance remain important, but the repository does not invent a custom license or silently relicense third-party material. See [LICENSING.md](LICENSING.md) for scope, exceptions and the legal ceiling.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
