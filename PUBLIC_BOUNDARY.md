@@ -19,6 +19,7 @@ The public body may include:
 - public interfaces and QA for separating observation from working inference;
 - bounded Operational Device contracts and a synthetic reference implementation;
 - generic Operational Reliability principles for read-only diagnosis, dependency checks, failure domains, receipts, reversibility and freshness;
+- a connector-aware source-substrate contract for authority, jurisdiction, freshness, targeted versus exhaustive retrieval, mutation boundaries, readback and dated public adapter facts;
 - a bounded Failure Foundry loop for turning recurring failure into the smallest validated reusable mechanism;
 - versioning and public-safe implementation notes.
 
@@ -38,6 +39,7 @@ The public body does not automatically include:
 - enough cross-file detail to reconstruct protected machinery with high fidelity;
 - the fine Skill Foundry compiler, promotion gates, hidden evaluation suites, MRI taxonomy, weights, labels, repair ordering or private corpus;
 - private ingestion, custody or permission ledgers;
+- private connected-app configuration, source IDs, folder or repository topology, access scopes and account-level authorization state;
 - confidential derivative maps, dispute notes, permission-resolution heuristics or third-party attribution material.
 - exact Failure Foundry promotion thresholds, hidden weights, evaluation corpora, compiler logic or source mutation ordering;
 - credentials, cookies, tokens, passwords, authorization headers or account state;
