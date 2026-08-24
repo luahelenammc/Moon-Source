@@ -8,6 +8,8 @@ Moon Source is a public reference architecture for deciding what context should 
 
 This repository is the canonical public body of Moon Source. Setup, MSL and Chat–Work are public projections of that same architecture. Each is an entry point into a different responsibility, not a separate system.
 
+**Preflight is one of Moon Source's crown-jewel mechanisms:** the adaptive pass where the AI reshapes the task before the task shapes the output. It checks intent, authority, missing facts, risk, destination and proportionate form before deciding whether to ask, route, create or act.
+
 ## 📦 Download Moon Source
 
 **Want the whole public architecture offline?**  
@@ -26,6 +28,7 @@ Or download only the portable you need:
 | Situation | Start here | What it helps you do |
 |---|---|---|
 | You want an AI to understand your context more consistently | [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md) | Infer the smallest useful setup for your need, maturity, destination and privacy boundary |
+| A request is vague, high-stakes, destination-sensitive or keeps producing answers to the wrong problem | [Preflight](docs/PREFLIGHT.md) | Shape the task before execution: clarify intent, authority, missing facts, risk, destination and the smallest adequate form |
 | A project or knowledge base has scattered sources, unclear ownership or recurring friction | [Architecture](ARCHITECTURE.md) and [Field to form](docs/FIELD_TO_FORM.md) | Inspect the field, identify authority and responsibility, and choose what deserves to become a source, procedure or other form |
 | You need a structure for recurring context work, updates or handoffs | [Moon Source Language 4.3](portables/msl/MSL_4_3.md) | Choose a proportionate Markdown-native form for sources, skills, handoffs, packets, protocols, registries and archives |
 | Work needs to move between a person, model, thread or project without losing state | [MSL 4.3](portables/msl/MSL_4_3.md) and the [responsibility map](docs/RESPONSIBILITY_MAP.md) | Separate objective, current state, constraints, authority, provenance and next actions |
@@ -42,6 +45,8 @@ Moon Source follows a decision loop:
 
 **field → observation and diagnosis → authority → responsibility → proportional form → operation and transport → feedback, hygiene, lineage and archive**
 
+When the immediate problem is not yet the field's structure but the request itself, begin with [Preflight](docs/PREFLIGHT.md). It is a transversal before-execution gate that may resolve quickly, route into Field to Form or another component, or reroute when the task changes. It is not a mandatory extra stage for every operation.
+
 It is not a compulsory workflow. A materialization can reveal new facts and send the work back to observation, authority or responsibility. The point is to let the situation determine the smallest form that can carry the work without losing provenance, scope or ownership.
 
 Apply the architecture directly through [Architecture](ARCHITECTURE.md), [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [Terminology](docs/TERMINOLOGY.md); each includes a practical way to use that layer and routes to the relevant public portable.
@@ -50,6 +55,7 @@ Apply the architecture directly through [Architecture](ARCHITECTURE.md), [Field 
 
 - [Existing implementations](docs/EXISTING_IMPLEMENTATIONS.md) maps the public artifacts that actually exist and the evidence class behind them.
 - [Evidence and Claims](EVIDENCE_AND_CLAIMS.md) and [Public Boundary](PUBLIC_BOUNDARY.md) define what the public body supports, what it does not establish and what remains private.
+- 🛫 [Preflight](docs/PREFLIGHT.md) explains the crown-jewel method for shaping a task before AI execution, including its self-prompt and self-adjusting-prompt metaphors.
 - [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), the [portable registry](registry/PUBLIC_PORTABLES.md) and [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) govern canonical paths, mirrors, freshness and releases.
 - 🧬 [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) is the reusable immaterial-asset protection component for intellectual lineage, content custody, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
 - 🧭 [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) explains reusable methods without turning them into sources of truth.

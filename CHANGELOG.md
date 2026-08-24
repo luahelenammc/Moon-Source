@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-23 — Preflight public promotion
+
+- Added [Preflight](docs/PREFLIGHT.md) as a first-class public Moon Source mechanism and one of its crown-jewel methods.
+- Reconciled the README, AI Kernel, Architecture, Terminology, public component registry, evidence map, public boundary and download hub around the general before-execution task-shaping contract.
+- Clarified that Setup 3.0's Adaptive Preflight is a specialization of the broader mechanism; Setup remains at 3.0.
+- Added public explanations of Preflight as task shaping, a self-prompt and a self-adjusting prompt, with explicit boundaries against hidden chain-of-thought and autonomous self-modification claims.
+- Kept MSL at 4.3 and did not create a separate Preflight portable family.
+
 ## 2026-08-21 — Signal Calibration
 
 - Added the bounded public [Signal Calibration](docs/SIGNAL_CALIBRATION.md) component for qualitative reasoning from weak, convergent or ambiguous signals.

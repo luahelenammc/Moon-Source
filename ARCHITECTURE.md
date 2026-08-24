@@ -29,10 +29,24 @@ feedback, hygiene, lineage, custody and archive
 
 This is a decision topology, not a universal mandatory lifecycle. A materialization can reveal new facts and send the work back to observation, authority or topology.
 
+## Before the topology: Preflight
+
+When the immediate problem is not yet “what structure should exist?” but “what is the AI actually being asked to do, under what authority, risk, destination and constraints?”, start with [Preflight](docs/PREFLIGHT.md).
+
+Preflight is the adaptive gate before and during execution. It can:
+
+- terminate quickly and let a clear, low-risk task execute directly;
+- route into [Field to Form](docs/FIELD_TO_FORM.md) when the field needs architectural diagnosis;
+- route into another specialized public component when that responsibility is the real problem;
+- reroute when new evidence changes the task, authority, destination or risk.
+
+It is transversal, not a mandatory permanent stage in the topology. **Preflight shapes the task; Field to Form decides what the field deserves to become.**
+
 ## Use this architecture
 
 Choose the public entry point that matches the field in front of you:
 
+- **Request shaping before execution:** start with [Preflight](docs/PREFLIGHT.md) when the request is vague, underspecified, risky, destination-sensitive or likely to activate the wrong source or form.
 - **Personal or project context:** start with [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
 - **Project, team or knowledge field:** run the [Field-to-Form diagnostic](docs/FIELD_TO_FORM.md) before choosing a document type.
 - **Structure, source, handoff or protocol design:** use [MSL 4.3](portables/msl/MSL_4_3.md) after the responsibility is clear.

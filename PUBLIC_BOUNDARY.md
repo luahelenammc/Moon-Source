@@ -11,6 +11,7 @@ The public body may include:
 - public terminology;
 - interfaces and input/output expectations;
 - public portables that are independently usable;
+- public decision contracts for adaptive task shaping and bounded routing;
 - evidence classes and non-claims;
 - public-safe intellectual lineage and content-custody concepts;
 - bounded immaterial-asset protection operations for identity, provenance, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence;
@@ -63,7 +64,7 @@ Existing artifacts may be inspected, versioned and mapped. They must not be rewr
 
 ## Public routes
 
-For practical use, start with [Architecture](ARCHITECTURE.md) or [Field to Form](docs/FIELD_TO_FORM.md). For reusable procedures, use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md); for signal and inference calibration, use [Signal Calibration](docs/SIGNAL_CALIBRATION.md); for corpus diagnosis, use [Source Hygiene](docs/SOURCE_HYGIENE.md); for intellectual lineage, content custody and immaterial-asset protection, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md). Use [Downloads](DOWNLOADS.md) to reach the current public materials.
+For practical use, start with [Preflight](docs/PREFLIGHT.md) when the request itself needs shaping, or use [Architecture](ARCHITECTURE.md) and [Field to Form](docs/FIELD_TO_FORM.md) when the field needs diagnosis. For reusable procedures, use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md); for signal and inference calibration, use [Signal Calibration](docs/SIGNAL_CALIBRATION.md); for corpus diagnosis, use [Source Hygiene](docs/SOURCE_HYGIENE.md); for intellectual lineage, content custody and immaterial-asset protection, use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md). Use [Downloads](DOWNLOADS.md) to reach the current public materials.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

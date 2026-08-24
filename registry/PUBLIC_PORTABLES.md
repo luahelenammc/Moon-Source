@@ -12,6 +12,8 @@ Want everything at once? [**Download the complete Moon Source repository (.zip)*
 
 ## Public components outside the portable registry
 
+[🛫 **Preflight — Adaptive Task Shaping Before AI Execution**](../docs/PREFLIGHT.md) is a public Moon Source component, not a separate portable registry entry. It provides the transversal before-execution decision contract for intent, authority, missing facts, risk, destination, form and question threshold. Setup 3.0 contains its personal/project-context specialization.
+
 [🧬 **Credits & Attribution Ops**](../docs/CREDITS_ATTRIBUTION_OPS.md) is a public Moon Source component, not a portable registry entry. It provides intellectual-lineage, content-custody and immaterial-asset protection across identity, origin, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
 
 `MOON_SOURCE_USE_AND_ATTRIBUTION.md` is not a component. It remains repository/footer governance for Moon Source-specific use framing, project authorship and the compact watermark.
