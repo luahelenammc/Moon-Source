@@ -46,7 +46,7 @@ If the portable is transformed rather than mirrored byte-for-byte, describe the 
 
 ## Reuse
 
-Use of a portable is governed by its own stated terms and any other applicable permission. [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) preserves content identity, lineage, transformation history, permission scope and attribution when a use is otherwise permitted; it does not grant rights by itself. A repository-wide open-source license is not assumed unless one is explicitly added later.
+Current Moon Source portables are Moon-authored open content under CC-BY-4.0 unless a file-level or third-party notice says otherwise. Use, copying, adaptation and redistribution are governed by the applicable standard license and the routes in [LICENSING.md](../LICENSING.md). [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) preserves content identity, lineage, transformation history, permission scope and attribution; it is a provenance layer, not a replacement license. Independent implementations of abstract ideas or methods are not converted into copyright-exclusive works by this statement.
 
 ## Mirror synchronization
 
@@ -62,4 +62,4 @@ Use the [portable registry](../registry/PUBLIC_PORTABLES.md) for canonical files
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
