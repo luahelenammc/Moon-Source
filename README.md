@@ -62,13 +62,13 @@ Public components are responsibility-bearing methods with canonical files. They 
 
 The canonical chronology, status and material-update history of these components lives in the [public registry](registry/PUBLIC_PORTABLES.md); its machine-readable contract is [`registry/public-portables.json`](registry/public-portables.json).
 
-## Examples are illustrations, not application categories
+## Examples
 
-The [hypothetical application-scenario gallery](examples/application-scenarios/) exists to make an abstract architecture concrete across very different kinds of problems.
+The [hypothetical application-scenario gallery](examples/application-scenarios/) makes the architecture easier to inspect by placing the same contextual method inside different kinds of everyday problems.
 
-Its fictional scenarios deliberately range across health, public services, customer journeys, company operations, transparency and audit, people and learning, third-sector coordination, and living knowledge. **Those domains are examples, not a taxonomy of Moon Source products, recommended verticals or claimed deployments.** The method remains the subject; the setting changes only to demonstrate how the same contextual questions can appear in different environments.
+The setting changes from scenario to scenario; the underlying questions stay recognizable: what is happening, what governs, who is responsible, what deserves a durable form, and how that form should stay current.
 
-Every scenario is explicitly hypothetical, fictional and didactic. None is evidence of external adoption, implementation, measured impact, sector validation or independent validation.
+The gallery uses fictional, didactic scenarios so the method can be demonstrated without importing private, client or institutional material.
 
 ## Public portables and downloads
 
