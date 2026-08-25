@@ -12,16 +12,23 @@ Want everything at once? [**Download the complete Moon Source repository (.zip)*
 
 ## Public components outside the portable registry
 
-[🛫 **Preflight — Adaptive Task Shaping Before AI Execution**](../docs/PREFLIGHT.md) is a public Moon Source component, not a separate portable registry entry. It provides the transversal before-execution decision contract for intent, authority, missing facts, risk, destination, form and question threshold. Setup 3.0 contains its personal/project-context specialization.
+These are public components, not portable registry entries. Their chronology is derived from the first canonical public file and the latest material public method change in Git history. A public stamp, typo-only change or merge narration does not automatically count as a material update.
 
-[🧬 **Credits & Attribution Ops**](../docs/CREDITS_ATTRIBUTION_OPS.md) is a public Moon Source component, not a portable registry entry. It provides intellectual-lineage, content-custody and immaterial-asset protection across identity, origin, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
+| Component | Public since | Last material update | Status | Purpose |
+|---|---:|---:|---|---|
+| [Preflight — Adaptive Task Shaping Before AI Execution](../docs/PREFLIGHT.md) | 2026-08-23 | 2026-08-23 | current | Shapes intent, authority, risk, destination and proportionate form before execution |
+| [Credits & Attribution Ops](../docs/CREDITS_ATTRIBUTION_OPS.md) | 2026-08-17 | 2026-08-18 | current | Protects intellectual lineage, content custody and immaterial-asset boundaries |
+| [Operational Devices](../docs/OPERATIONAL_DEVICES.md) | 2026-08-23 | 2026-08-23 | current | Embodies reusable procedures on concrete surfaces with bounded state and receipts |
+| [Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) | 2026-08-23 | 2026-08-23 | current | Structures diagnosis, failure boundaries, reversibility, receipts and freshness |
+| [Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) | 2026-08-23 | 2026-08-23 | current | Turns recurring failure into the smallest validated public mechanism |
+| [Connected Sources](../docs/CONNECTED_SOURCES.md) | 2026-08-23 | 2026-08-23 | current | Governs connector-aware authority, retrieval, freshness, mutation and readback |
+| [Source Hygiene](../docs/SOURCE_HYGIENE.md) | 2026-08-17 | 2026-08-17 | current | Diagnoses stale, duplicated, contradictory or orphaned corpus material |
+| [Signal Calibration](../docs/SIGNAL_CALIBRATION.md) | 2026-08-21 | 2026-08-21 | current | Calibrates weak or convergent signals into bounded working inference |
+| [Procedural Projection](../docs/PROCEDURAL_PROJECTION.md) | 2026-08-17 | 2026-08-17 | current | Projects stable methods into procedures without moving source authority |
 
-The operational layer is also outside the portable registry:
+The component inventory is machine-readable in [`registry/public-portables.json`](public-portables.json), currently at schema `1.1`. A component becoming public does not automatically make it a portable; a component update does not automatically require an MSL, Setup or Chat–Work version bump.
 
-- [Operational Devices](../docs/OPERATIONAL_DEVICES.md) — bounded operational embodiment of a reusable procedure on a concrete surface.
-- [Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) — execution discipline for diagnosis, boundaries, receipts and recovery.
-- [Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) — bounded failure-to-capability projection.
-- [Browser Console Device reference](../examples/browser-console-device/) — experimental synthetic implementation; not a current portable and therefore not assigned a portable fingerprint or mirror.
+The [Browser Console Device reference](../examples/browser-console-device/) remains an experimental bounded implementation, not a current component registry entry or portable, and therefore has no portable fingerprint or mirror contract.
 
 `MOON_SOURCE_USE_AND_ATTRIBUTION.md` is not a component. It remains repository/footer governance for Moon Source-specific use framing, project authorship and the compact watermark.
 

@@ -10,7 +10,74 @@ This repository is the canonical public body of Moon Source. Setup, MSL and Chat
 
 **Preflight is one of Moon Source's crown-jewel mechanisms:** the adaptive pass where the AI reshapes the task before the task shapes the output. It checks intent, authority, missing facts, risk, destination and proportionate form before deciding whether to ask, route, create or act.
 
-## 📦 Download Moon Source
+## Start here
+
+Choose the smallest door that matches the problem:
+
+- **I want an AI to understand my context better.** Start with [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md).
+- **The request is vague, risky or keeps producing the wrong answer.** Start with [Preflight](docs/PREFLIGHT.md).
+- **My sources, memory or handoffs are messy.** Start with [Architecture](ARCHITECTURE.md), [Field to Form](docs/FIELD_TO_FORM.md) and [Source Hygiene](docs/SOURCE_HYGIENE.md).
+- **I need AI to reach living material across tools.** Start with [Connected Sources](docs/CONNECTED_SOURCES.md) and the [Responsibility Map](docs/RESPONSIBILITY_MAP.md).
+
+For recurring work, use [MSL 4.3](portables/msl/MSL_4_3.md). For ChatGPT surface and execution routing, use [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md).
+
+## What problem does it solve?
+
+Moon Source treats context as an organized field rather than a pile of text. A useful context system must identify what is happening, which source or role governs each facet, what deserves materialization, what may be retrieved or changed, and how freshness and readback are handled.
+
+The public architecture loop is:
+
+**field → observation and diagnosis → authority → responsibility → proportional form → operation and transport → feedback, hygiene, lineage and archive**
+
+It is a decision loop, not a compulsory waterfall. A materialization can reveal new facts and send the work back to observation, authority or responsibility.
+
+## Where could it apply?
+
+Moon Source can help organize these kinds of context problems. The wording is intentionally hypothetical: the public repository does not claim sector-specific adoption or measured impact.
+
+| Domain | Possible context problem |
+|---|---|
+| **Customer service & journeys** | Channels, routing and continuity without making raw conversation history the authority |
+| **Health & care** | Sensitive information, team handoffs, current status and proportionate disclosure |
+| **Management & operations** | Real workflow, roles, ownership, exceptions and update responsibility |
+| **Transparency & audit** | Sources, traceability, evidence classes, versions and claim ceilings |
+| **People & learning** | Role-aware onboarding, local language, autonomy and material maintenance |
+| **Knowledge & data** | Living documentation, indicators, source freshness and federated memory |
+| **Companies** | Process clarity, institutional memory and bounded AI adoption work |
+| **Public services** | Citizen guidance, cross-department coordination and transparent handoffs |
+| **Third sector** | Network continuity, partner memory and sustainable coordination under turnover |
+
+The [hypothetical application-scenario gallery](examples/application-scenarios/) works through one fictional example in each family. It is explanation, not evidence.
+
+## Public components
+
+Public components are responsibility-bearing methods with canonical files. They are distinct from the three current public portables and do not automatically create a new version.
+
+- [Preflight](docs/PREFLIGHT.md) — adaptive task shaping before execution.
+- [Connected Sources](docs/CONNECTED_SOURCES.md) — authority, jurisdiction, retrieval, freshness, mutation and readback for connected sources.
+- [Source Hygiene](docs/SOURCE_HYGIENE.md) — bounded diagnosis of stale, duplicated, contradictory or orphaned corpus material.
+- [Signal Calibration](docs/SIGNAL_CALIBRATION.md) — bounded working inference from weak, convergent or ambiguous signals.
+- [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) — projecting a stable method into a procedure without moving source authority.
+- [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) — intellectual lineage, content custody and immaterial-asset protection.
+- [Operational Devices](docs/OPERATIONAL_DEVICES.md) — bounded embodiments of reusable procedures on concrete surfaces.
+- [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) — diagnosis, failure boundaries, receipts, reversibility and freshness.
+- [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) — turning recurring failure into the smallest validated public mechanism.
+
+The complete chronology, public dates, material-update summaries and controlled status values live in the [public registry](registry/PUBLIC_PORTABLES.md). The machine-readable contract is [`registry/public-portables.json`](registry/public-portables.json).
+
+## Recent component changes
+
+<!-- MOON-SOURCE-COMPONENT-DIGEST:START -->
+- **2026-08-23 — Preflight:** Promoted adaptive task shaping as a transversal public mechanism for intent, authority, risk, destination and form.
+- **2026-08-23 — Operational Reliability:** Added read-only-first diagnosis, failure domains, receipts, reversibility and freshness gates.
+- **2026-08-23 — Operational Devices:** Added bounded operational-device contracts for state, guards, failure behavior and receipts.
+- **2026-08-23 — Failure to Capability:** Added a bounded failure-to-capability loop for recurring failure without exposing promotion machinery.
+- **2026-08-23 — Connected Sources:** Added connector-aware authority, retrieval scope, mutation and readback contracts.
+<!-- MOON-SOURCE-COMPONENT-DIGEST:END -->
+
+This is a bounded registry-backed digest, not a commit log. It contains no merge procedure, CI narration or repository hash.
+
+## Public portables and downloads
 
 **Want the whole public architecture offline?**  
 [📦 **Download the complete Moon Source repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
@@ -34,7 +101,7 @@ Moon Source is openly reusable under a mixed standard-license model:
 
 See the full [licensing guide](LICENSING.md), [`NOTICE`](NOTICE), [Moon Source Use & Attribution](MOON_SOURCE_USE_AND_ATTRIBUTION.md) and [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md).
 
-## 🧭 What can I use Moon Source for?
+## More entry points
 
 | Situation | Start here | What it helps you do |
 |---|---|---|
@@ -52,6 +119,12 @@ See the full [licensing guide](LICENSING.md), [`NOTICE`](NOTICE), [Moon Source U
 | Repeated failure keeps generating the same loop | [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Preserve the evidence, separate failure domains and forge the smallest validated reusable mechanism |
 | A context corpus feels stale, contradictory or bloated | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Audit authority, freshness, duplication, contradiction, orphaned decisions, provenance and the smallest safe repair |
 | You have several weak or ambiguous signals and need a useful interpretation without pretending certainty | [🔭 Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Separate observation, convergence, working inference, meaningful alternatives and the evidence needed to update the read |
+
+## Examples and hypothetical applications
+
+The [examples directory](examples/README.md) contains an experimental synthetic Browser Console Device reference and the [hypothetical application-scenario gallery](examples/application-scenarios/).
+
+Every application scenario is explicitly fictional and didactic. It illustrates how Moon Source could be applied to a common context problem; it is not evidence of external adoption, implementation, measured impact or independent validation. No real patient, client, institution, organization, outcome metric or private corpus is used in the gallery.
 
 ## ⚙️ How Moon Source works
 
@@ -83,14 +156,18 @@ Apply the architecture directly through [Architecture](ARCHITECTURE.md), [Field 
 
 ## 📌 Current baseline
 
-- Public architecture baseline: 2026-08-16; current structural grammar: MSL 4.3 (`KEEP_MSL_4_3`).
+- Public architecture baseline: 2026-08-16; additive public components, operational hardening and licensing updates continued through 2026-08-23; public-legibility, registry and facade hardening continued on 2026-08-24.
+- Current structural grammar: MSL 4.3 (`KEEP_MSL_4_3`). Public portables remain Setup 3.0 and Chat–Work 2.0-public.
+- Public component chronology and status are tracked separately from portable versions in the [component registry](registry/PUBLIC_PORTABLES.md).
 - The current public portable family is tracked in the [portable registry](registry/PUBLIC_PORTABLES.md).
 - Human-facing public surface: [luahelena.com.br/moonsource](https://www.luahelena.com.br/moonsource/?lang=en). Professional context: [luahelena.com.br/ia](https://www.luahelena.com.br/ia/?lang=en).
-- This repository remains the semantic and versioning authority; website downloads are convenience mirrors.
+- This repository remains the semantic and versioning authority; the website is a human-facing facade and its downloads are convenience mirrors.
 
 ## 🛡️ Evidence, boundary and terms
 
-The public body is built from existing evidence. It does not manufacture a case study or before-and-after story, and it does not establish external adoption, impact, universal validity, product-market fit, enterprise readiness or a universal standard.
+The public body is built from existing inspectable evidence. It does not manufacture a case study or before-and-after story, and it does not establish external adoption, impact, universal validity, product-market fit, enterprise readiness or a universal standard.
+
+The application-scenario gallery is explicitly hypothetical / fictional / didactic. Its files establish only that explanatory examples exist; they do not establish real implementation, adoption, measured impact, sector validation or independent validation.
 
 Private source corpora, third-party material, deployment state, private resolver and compiler heuristics, detailed reconciliation machinery and enough cross-file detail to reconstruct protected methods remain outside this repository.
 

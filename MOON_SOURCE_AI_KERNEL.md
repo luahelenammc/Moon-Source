@@ -44,11 +44,13 @@ Use each file for the responsibility it actually owns:
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router.
 - `portables/msl/MSL_4_3.md` — current public structural grammar for materialization. MSL remains 4.3.
 - `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md` — ChatGPT surface/model/reasoning-effort routing; product details are date-sensitive.
-- `registry/PUBLIC_PORTABLES.md` — canonical public portable identities, versions and fingerprints.
+- `registry/PUBLIC_PORTABLES.md` — canonical public portable identities, versions and fingerprints, plus the human-readable public component chronology.
+- `registry/public-portables.json` — machine-readable public component and portable inventory; component chronology is Git-derived and does not create new portable versions.
 - `docs/PORTABLE_DESIGN_CONTRACT.md` — portable publication, canonical-path and mirror rules.
 - `docs/VERSIONING_AND_RELEASES.md` — distinction between repository, portable, MSL and website versions.
 - `EVIDENCE_AND_CLAIMS.md` — what public evidence supports and what it does not establish.
 - `PUBLIC_BOUNDARY.md` — what may be public and what remains outside the public body.
+- `examples/application-scenarios/` — explicitly hypothetical / fictional didactic scenarios for explaining possible application; never evidence of adoption or impact.
 - `MOON_SOURCE_USE_AND_ATTRIBUTION.md` — repository/footer governance for Moon Source-specific authorship, use framing and watermark identity; not a Moon Source component.
 - `CHANGELOG.md` — recorded public changes.
 - `archive/` — preserved history. Archive material does not govern the present unless a current authoritative file explicitly promotes it.
@@ -208,6 +210,15 @@ Load:
 Use Credits & Attribution Ops for content identity, custody, transformations, mirror/derivative lineage and evidence; use Moon Source Use & Attribution for Moon Source-specific project use framing and the repository footer/watermark.
 
 Use the applicable standard license declared by [LICENSING.md](LICENSING.md), the file-level SPDX metadata and any third-party notice. Moon Source uses Apache-2.0 for software and automation and CC-BY-4.0 for documentation, methods and public portables. Do not collapse the mixed repository into one homogeneous software license.
+
+### If the user asks where Moon Source could apply
+
+Load:
+- `examples/application-scenarios/README.md` for the hypothetical domain gallery;
+- the smallest scenario file relevant to the user's context;
+- the public component named by that scenario, only as needed.
+
+Keep the status label visible. Treat the scenario as a didactic application sketch, not a case study, adoption example, measured result or validation claim.
 
 ### If the user asks what Moon Source publicly proves
 

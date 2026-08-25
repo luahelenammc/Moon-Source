@@ -1,6 +1,6 @@
 {
-  "registry_version": "1.0",
-  "as_of": "2026-08-23",
+  "registry_version": "1.1",
+  "as_of": "2026-08-24",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
   "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -12,7 +12,11 @@
       "canonical_path": "docs/PREFLIGHT.md",
       "function": "Shape a raw request before execution through intent, authority, missing facts, risk, destination, proportionate form and question threshold",
       "claim_ceiling": "Documented public method integrated with the AI Kernel, Architecture and Setup 3.0; not a uniqueness, adoption, impact or independent-validation claim",
-      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-08-23",
+      "last_material_update_on": "2026-08-23",
+      "last_material_update_summary": "Promoted adaptive task shaping as a transversal public mechanism for intent, authority, risk, destination and form.",
+      "status": "current"
     },
     {
       "id": "credits-attribution-ops",
@@ -21,7 +25,11 @@
       "canonical_path": "docs/CREDITS_ATTRIBUTION_OPS.md",
       "function": "Protect intellectual lineage and content custody across identity, origin, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence",
       "claim_ceiling": "Operational and evidentiary continuity layer; not a licence, legal rights resolver, ownership proof, enforcement mechanism or adoption claim",
-      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-08-17",
+      "last_material_update_on": "2026-08-18",
+      "last_material_update_summary": "Expanded the component into public immaterial-asset protection with custody, transformation and disclosure-boundary rules.",
+      "status": "current"
     },
     {
       "id": "operational-devices",
@@ -30,7 +38,11 @@
       "canonical_path": "docs/OPERATIONAL_DEVICES.md",
       "function": "Define bounded embodiments of reusable procedures on concrete execution surfaces with explicit state, guardrails, failure behavior and receipts",
       "claim_ceiling": "Public responsibility pattern; not a universal runtime, automatic adapter generator, privilege grant or cross-surface stability claim",
-      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-08-23",
+      "last_material_update_on": "2026-08-23",
+      "last_material_update_summary": "Added bounded operational-device contracts for state, guards, failure behavior and receipts.",
+      "status": "current"
     },
     {
       "id": "operational-reliability",
@@ -39,7 +51,11 @@
       "canonical_path": "docs/OPERATIONAL_RELIABILITY.md",
       "function": "Keep bounded execution read-only-first, diagnosable, failure-aware, reversible where possible and supported by receipts and freshness checks",
       "claim_ceiling": "Public execution-discipline method; not a guarantee of safety, diagnosis correctness, autonomous repair or recovery in every environment",
-      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-08-23",
+      "last_material_update_on": "2026-08-23",
+      "last_material_update_summary": "Added read-only-first diagnosis, failure domains, receipts, reversibility and freshness gates.",
+      "status": "current"
     },
     {
       "id": "failure-foundry",
@@ -48,7 +64,63 @@
       "canonical_path": "docs/FAILURE_FOUNDRY.md",
       "function": "Preserve recurring failure evidence and forge the smallest validated reusable mechanism while keeping protected machinery bounded",
       "claim_ceiling": "Bounded public projection; not an autonomous self-improvement engine, compiler, benchmark, universal promotion rule or measured-impact claim",
-      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en"
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-08-23",
+      "last_material_update_on": "2026-08-23",
+      "last_material_update_summary": "Added a bounded failure-to-capability loop for recurring failure without exposing promotion machinery.",
+      "status": "current"
+    },
+    {
+      "id": "connected-sources",
+      "title": "Connected Sources",
+      "class": "connected-source-operation",
+      "canonical_path": "docs/CONNECTED_SOURCES.md",
+      "function": "Define connector-aware authority, jurisdiction, freshness, retrieval scope, mutation boundaries, provenance and readback",
+      "claim_ceiling": "Bounded public method for connector-aware source operation; not universal product support, exhaustive retrieval, automatic synchronization or adoption proof",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-08-23",
+      "last_material_update_on": "2026-08-23",
+      "last_material_update_summary": "Added connector-aware authority, retrieval scope, mutation and readback contracts.",
+      "status": "current"
+    },
+    {
+      "id": "source-hygiene",
+      "title": "Source Hygiene",
+      "class": "source-hygiene-method",
+      "canonical_path": "docs/SOURCE_HYGIENE.md",
+      "function": "Diagnose authority, freshness, duplication, contradiction, orphaned decisions, provenance and the smallest safe corpus repair",
+      "claim_ceiling": "Bounded public corpus-hygiene method; not an autonomous scanner, repair engine or measured-impact claim",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-08-17",
+      "last_material_update_on": "2026-08-17",
+      "last_material_update_summary": "Published bounded corpus-hygiene rules for authority, freshness, duplication, contradiction and provenance.",
+      "status": "current"
+    },
+    {
+      "id": "signal-calibration",
+      "title": "Signal Calibration",
+      "class": "qualitative-signal-calibration",
+      "canonical_path": "docs/SIGNAL_CALIBRATION.md",
+      "function": "Calibrate weak, convergent or ambiguous signals into bounded working inference without certainty inflation",
+      "claim_ceiling": "Bounded public qualitative-calibration method; not proof of motives, diagnostic validity, scientific validation or impact",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-08-21",
+      "last_material_update_on": "2026-08-21",
+      "last_material_update_summary": "Added bounded qualitative calibration for convergent signals, working inference and update conditions.",
+      "status": "current"
+    },
+    {
+      "id": "procedural-projection",
+      "title": "Procedural Projection",
+      "class": "procedural-projection-method",
+      "canonical_path": "docs/PROCEDURAL_PROJECTION.md",
+      "function": "Project a stable method into a reusable procedure while preserving source authority, triggers, guards and QA",
+      "claim_ceiling": "Bounded public source-to-procedure method; not automatic synchronization, native execution everywhere or impact proof",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-08-17",
+      "last_material_update_on": "2026-08-17",
+      "last_material_update_summary": "Published the source-to-procedure projection boundary with triggers, guards and QA.",
+      "status": "current"
     }
   ],
   "portables": [
