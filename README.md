@@ -1,69 +1,84 @@
 # 🌙 Moon Source
 
-AI chat history is not the same thing as governed context.
+**Governed context for AI: decide what should exist, what governs, what travels, and what stays current.**
 
-A conversation can preserve useful memory, but it can also accumulate stale facts, competing instructions, old decisions, private material, unresolved ownership and context that belongs somewhere else. More text does not automatically create continuity.
+AI chat history is not the same thing as governed context. Conversations can retain useful continuity, but they can also accumulate stale facts, competing instructions, private material, unresolved ownership and context that belongs somewhere else.
 
-Moon Source is a public reference architecture for deciding what context should exist, where authority lives, how it travels, and how it stays current. It starts with the field before the form: understand the situation first, then choose a proportionate source, protocol, handoff, skill, registry, archive or other materialization.
+Moon Source is a public reference architecture for organizing that problem. It starts with the field before the form: understand the situation, identify authority and responsibility, then create only the smallest source, protocol, handoff, skill, registry, archive or operational surface the work actually needs.
 
-This repository is the canonical public body of Moon Source. Setup, MSL and Chat–Work are public projections of that same architecture. Each is an entry point into a different responsibility, not a separate system.
+This repository is the canonical public body of Moon Source.
 
-**Preflight is one of Moon Source's crown-jewel mechanisms:** the adaptive pass where the AI reshapes the task before the task shapes the output. It checks intent, authority, missing facts, risk, destination and proportionate form before deciding whether to ask, route, create or act.
+## Why Moon Source exists
 
-## Start here
+AI context can fail in opposite directions: there may be too little context, or far too much of the wrong kind. The harder failures appear when information is reachable but nobody can explain which source governs it, whether it is still current, who may change it, or what should happen when two sources disagree.
 
-Choose the smallest door that matches the problem:
+Moon Source treats context as an organized field rather than a pile of text. Its job is not to maximize memory. Its job is to make context **legible, proportionate, attributable and maintainable** for people and AI.
 
-- **I want an AI to understand my context better.** Start with [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md).
-- **The request is vague, risky or keeps producing the wrong answer.** Start with [Preflight](docs/PREFLIGHT.md).
-- **My sources, memory or handoffs are messy.** Start with [Architecture](ARCHITECTURE.md), [Field to Form](docs/FIELD_TO_FORM.md) and [Source Hygiene](docs/SOURCE_HYGIENE.md).
-- **I need AI to reach living material across tools.** Start with [Connected Sources](docs/CONNECTED_SOURCES.md) and the [Responsibility Map](docs/RESPONSIBILITY_MAP.md).
+## Start with the problem, not the vocabulary
 
-For recurring work, use [MSL 4.3](portables/msl/MSL_4_3.md). For ChatGPT surface and execution routing, use [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md).
+| If you need to… | Start here |
+|---|---|
+| Give an AI the smallest useful setup for a person or project | [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md) |
+| Shape an ambiguous, risky or destination-sensitive request before execution | [Preflight](docs/PREFLIGHT.md) |
+| Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
+| Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
+| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources](docs/CONNECTED_SOURCES.md) |
+| Structure recurring context, continuity or handoffs | [MSL 4.3](portables/msl/MSL_4_3.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
+| Route work across ChatGPT surfaces, models and execution modes | [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) |
 
-## What problem does it solve?
+You do not need to read the whole repository before using Moon Source. The [AI Kernel](MOON_SOURCE_AI_KERNEL.md) is the routing layer for loading the smallest relevant part of the public body.
 
-Moon Source treats context as an organized field rather than a pile of text. A useful context system must identify what is happening, which source or role governs each facet, what deserves materialization, what may be retrieved or changed, and how freshness and readback are handled.
+## The architecture in one minute
 
-The public architecture loop is:
+Moon Source follows a decision loop:
 
 **field → observation and diagnosis → authority → responsibility → proportional form → operation and transport → feedback, hygiene, lineage and archive**
 
-It is a decision loop, not a compulsory waterfall. A materialization can reveal new facts and send the work back to observation, authority or responsibility.
+This is a topology, not a compulsory waterfall. New information can send the work back to observation, authority or responsibility.
 
-## Where could it apply?
+A few principles carry most of the architecture:
 
-Moon Source can help organize these kinds of context problems. The wording is intentionally hypothetical: the public repository does not claim sector-specific adoption or measured impact.
+- **Field before form.** Do not decide the artifact before understanding the situation.
+- **Access is not authority.** A connector, search result or reachable file does not become governing context merely because AI can retrieve it.
+- **Materialize proportionately.** Create the smallest durable form that can carry the responsibility without losing provenance or ownership.
+- **Freshness and readback matter.** A mutation is not complete merely because a write call succeeded.
+- **Preflight can happen before any of this.** One of Moon Source's crown-jewel mechanisms reshapes the task itself by checking intent, authority, missing facts, risk, destination and proportionate form before execution.
 
-| Domain | Possible context problem |
+## Current public components
+
+Public components are responsibility-bearing methods with canonical files. They are not automatically portables and do not create a version bump merely by being updated.
+
+| Component | Responsibility |
 |---|---|
-| **Customer service & journeys** | Channels, routing and continuity without making raw conversation history the authority |
-| **Health & care** | Sensitive information, team handoffs, current status and proportionate disclosure |
-| **Management & operations** | Real workflow, roles, ownership, exceptions and update responsibility |
-| **Transparency & audit** | Sources, traceability, evidence classes, versions and claim ceilings |
-| **People & learning** | Role-aware onboarding, local language, autonomy and material maintenance |
-| **Knowledge & data** | Living documentation, indicators, source freshness and federated memory |
-| **Companies** | Process clarity, institutional memory and bounded AI adoption work |
-| **Public services** | Citizen guidance, cross-department coordination and transparent handoffs |
-| **Third sector** | Network continuity, partner memory and sustainable coordination under turnover |
+| [Preflight](docs/PREFLIGHT.md) | Adaptive task shaping before execution |
+| [Connected Sources](docs/CONNECTED_SOURCES.md) | Authority, jurisdiction, freshness, retrieval, mutation boundaries and readback for connected sources |
+| [Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
+| [Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Useful working inference without certainty inflation |
+| [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Project a stable method into a reusable procedure without moving source authority |
+| [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage, content custody and immaterial-asset protection |
+| [Operational Devices](docs/OPERATIONAL_DEVICES.md) | Bounded embodiments of reusable procedures on concrete execution surfaces |
+| [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Read-only-first diagnosis, failure boundaries, receipts, reversibility and freshness |
+| [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Turn recurring failure into the smallest validated reusable mechanism |
 
-The [hypothetical application-scenario gallery](examples/application-scenarios/) works through one fictional example in each family. It is explanation, not evidence.
+The canonical chronology, status and material-update history of these components lives in the [public registry](registry/PUBLIC_PORTABLES.md); its machine-readable contract is [`registry/public-portables.json`](registry/public-portables.json).
 
-## Public components
+## Examples are illustrations, not application categories
 
-Public components are responsibility-bearing methods with canonical files. They are distinct from the three current public portables and do not automatically create a new version.
+The [hypothetical application-scenario gallery](examples/application-scenarios/) exists to make an abstract architecture concrete across very different kinds of problems.
 
-- [Preflight](docs/PREFLIGHT.md) — adaptive task shaping before execution.
-- [Connected Sources](docs/CONNECTED_SOURCES.md) — authority, jurisdiction, retrieval, freshness, mutation and readback for connected sources.
-- [Source Hygiene](docs/SOURCE_HYGIENE.md) — bounded diagnosis of stale, duplicated, contradictory or orphaned corpus material.
-- [Signal Calibration](docs/SIGNAL_CALIBRATION.md) — bounded working inference from weak, convergent or ambiguous signals.
-- [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) — projecting a stable method into a procedure without moving source authority.
-- [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) — intellectual lineage, content custody and immaterial-asset protection.
-- [Operational Devices](docs/OPERATIONAL_DEVICES.md) — bounded embodiments of reusable procedures on concrete surfaces.
-- [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) — diagnosis, failure boundaries, receipts, reversibility and freshness.
-- [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) — turning recurring failure into the smallest validated public mechanism.
+Its fictional scenarios deliberately range across health, public services, customer journeys, company operations, transparency and audit, people and learning, third-sector coordination, and living knowledge. **Those domains are examples, not a taxonomy of Moon Source products, recommended verticals or claimed deployments.** The method remains the subject; the setting changes only to demonstrate how the same contextual questions can appear in different environments.
 
-The complete chronology, public dates, material-update summaries and controlled status values live in the [public registry](registry/PUBLIC_PORTABLES.md). The machine-readable contract is [`registry/public-portables.json`](registry/public-portables.json).
+Every scenario is explicitly hypothetical, fictional and didactic. None is evidence of external adoption, implementation, measured impact, sector validation or independent validation.
+
+## Public portables and downloads
+
+Setup, MSL and Chat–Work are separately versioned public projections of the architecture, not separate systems.
+
+- 🧭 [**Moon Source Setup 3.0**](portables/setup/MOON_SOURCE_SETUP.md) — adaptive routing to the smallest useful personal or project context setup.
+- 🧱 [**Moon Source Language 4.3**](portables/msl/MSL_4_3.md) — structural grammar for proportionate sources, handoffs, packets, protocols, registries and archives.
+- 🔀 [**Chat–Work Routing Protocol V2**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) — routing across conversational and sustained execution surfaces.
+
+[📦 Download the complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · [🗂️ Open the download hub](DOWNLOADS.md)
 
 ## Recent component changes
 
@@ -75,105 +90,42 @@ The complete chronology, public dates, material-update summaries and controlled 
 - **2026-08-23 — Connected Sources:** Added connector-aware authority, retrieval scope, mutation and readback contracts.
 <!-- MOON-SOURCE-COMPONENT-DIGEST:END -->
 
-This is a bounded registry-backed digest, not a commit log. It contains no merge procedure, CI narration or repository hash.
+This bounded digest is generated from the component registry. It is not a commit log.
 
-## Public portables and downloads
+## Evidence, boundary and reuse
 
-**Want the whole public architecture offline?**  
-[📦 **Download the complete Moon Source repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+Moon Source is deliberately strict about the difference between an artifact existing and a claim being proven.
 
-Or download only the portable you need:
+- [Evidence and Claims](EVIDENCE_AND_CLAIMS.md) defines what current public artifacts actually support and what remains unproven.
+- [Public Boundary](PUBLIC_BOUNDARY.md) defines what is public and what remains reserved, including private corpora and protected operational machinery.
+- [Existing Implementations](docs/EXISTING_IMPLEMENTATIONS.md) maps the inspectable artifacts behind current capability statements.
+- [Licensing](LICENSING.md) governs reuse: code and automation use **Apache-2.0**; documentation, methods and public portables use **CC BY 4.0**, subject to file-level metadata and third-party terms.
 
-- [🧭 **Moon Source Setup 3.0 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) — adaptive routing for proportionate personal and project AI context.
-- [🧱 **Moon Source Language 4.3 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/msl/MSL_4_3.md) — adaptive structural grammar for context work.
-- [🔀 **Chat–Work Routing Protocol V2 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) — routing across ChatGPT surfaces, models and reasoning effort.
+A public artifact is not an adoption claim. A synthetic or hypothetical scenario is not a case study. A tested slice is not proof of a universal runtime. The repository does not claim external adoption, measured impact, enterprise readiness, universal superiority or product-market fit without evidence.
 
-[🗂️ **Open the download hub →**](DOWNLOADS.md) for the standalone AI Kernel, individual files and guidance on which download to choose.
+## Repository map
 
-## 🔓 Open licensing
+Use the README for orientation; use the deeper files when the responsibility actually belongs there.
 
-Moon Source is openly reusable under a mixed standard-license model:
+| Need | Canonical route |
+|---|---|
+| Full architecture | [ARCHITECTURE.md](ARCHITECTURE.md) |
+| AI-side routing through the public corpus | [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md) |
+| Definitions and responsibility boundaries | [Terminology](docs/TERMINOLOGY.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
+| Public components and portable registry | [registry/PUBLIC_PORTABLES.md](registry/PUBLIC_PORTABLES.md) |
+| Versioning and release rules | [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) |
+| Portable publication contract | [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md) |
+| Contributing | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Human-facing website | [luahelena.com.br/moonsource](https://www.luahelena.com.br/moonsource/?lang=en) |
+| Moon's broader professional context | [luahelena.com.br/ia](https://www.luahelena.com.br/ia/?lang=en) |
 
-- **Code and automation:** [Apache License 2.0](LICENSES/Apache-2.0.txt).
-- **Documentation, methods and public portables:** [CC BY 4.0](LICENSES/CC-BY-4.0.txt).
-- **Attribution:** preserve Moon Source authorship, applicable notices and material lineage; adaptations should identify changes.
-- **Third-party material:** remains subject to its own terms.
+## Current baseline
 
-See the full [licensing guide](LICENSING.md), [`NOTICE`](NOTICE), [Moon Source Use & Attribution](MOON_SOURCE_USE_AND_ATTRIBUTION.md) and [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md).
+Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-08-23**; public-legibility and registry hardening continued on **2026-08-24**.
 
-## More entry points
-
-| Situation | Start here | What it helps you do |
-|---|---|---|
-| You want an AI to understand your context more consistently | [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md) | Infer the smallest useful setup for your need, maturity, destination and privacy boundary |
-| A request is vague, high-stakes, destination-sensitive or keeps producing answers to the wrong problem | [Preflight](docs/PREFLIGHT.md) | Shape the task before execution: clarify intent, authority, missing facts, risk, destination and the smallest adequate form |
-| An AI needs durable external memory or must reach a governed source through Drive, GitHub or another connector | [Connected Sources](docs/CONNECTED_SOURCES.md) | Resolve source substrate, authority, jurisdiction, freshness, retrieval scope, mutation authority and readback before treating connected material as context |
-| A project or knowledge base has scattered sources, unclear ownership or recurring friction | [Architecture](ARCHITECTURE.md) and [Field to form](docs/FIELD_TO_FORM.md) | Inspect the field, identify authority and responsibility, and choose what deserves to become a source, procedure or other form |
-| You need a structure for recurring context work, updates or handoffs | [Moon Source Language 4.3](portables/msl/MSL_4_3.md) | Choose a proportionate Markdown-native form for sources, skills, handoffs, packets, protocols, registries and archives |
-| Work needs to move between a person, model, thread or project without losing state | [MSL 4.3](portables/msl/MSL_4_3.md) and the [responsibility map](docs/RESPONSIBILITY_MAP.md) | Separate objective, current state, constraints, authority, provenance and next actions |
-| You work across ChatGPT surfaces and need to decide where a task belongs | [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) | Route a task by surface, model and reasoning effort, with product details bounded by freshness and official references |
-| You want to publish, mirror or adapt one of the public materials | [📐 Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), [🗂️ registry](registry/PUBLIC_PORTABLES.md) and [📚 versioning rules](docs/VERSIONING_AND_RELEASES.md) | Find canonical paths, freshness rules, attribution guidance, mirror rules and release boundaries |
-| Intellectual material needs to retain its identity, authorship and lineage as it moves or changes | [🧬 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Protect content identity and chain of custody across origin, authorship, transformations, permission scope, disclosure boundaries, canonical versions, derivatives, attribution and evidence |
-| A stable method needs to become a reusable procedural capability | [🧭 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Separate governing source, reusable procedure, triggers, guards, QA and native/fallback surfaces |
-| A recurring procedure needs a bounded concrete execution surface | [Operational Devices](docs/OPERATIONAL_DEVICES.md) and [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Embody a procedure with explicit state, guardrails, failure behavior, receipts and recovery |
-| Repeated failure keeps generating the same loop | [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Preserve the evidence, separate failure domains and forge the smallest validated reusable mechanism |
-| A context corpus feels stale, contradictory or bloated | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Audit authority, freshness, duplication, contradiction, orphaned decisions, provenance and the smallest safe repair |
-| You have several weak or ambiguous signals and need a useful interpretation without pretending certainty | [🔭 Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Separate observation, convergence, working inference, meaningful alternatives and the evidence needed to update the read |
-
-## Examples and hypothetical applications
-
-The [examples directory](examples/README.md) contains an experimental synthetic Browser Console Device reference and the [hypothetical application-scenario gallery](examples/application-scenarios/).
-
-Every application scenario is explicitly fictional and didactic. It illustrates how Moon Source could be applied to a common context problem; it is not evidence of external adoption, implementation, measured impact or independent validation. No real patient, client, institution, organization, outcome metric or private corpus is used in the gallery.
-
-## ⚙️ How Moon Source works
-
-Moon Source follows a decision loop:
-
-**field → observation and diagnosis → authority → responsibility → proportional form → operation and transport → feedback, hygiene, lineage and archive**
-
-When the immediate problem is not yet the field's structure but the request itself, begin with [Preflight](docs/PREFLIGHT.md). It is a transversal before-execution gate that may resolve quickly, route into Field to Form or another component, or reroute when the task changes. It is not a mandatory extra stage for every operation.
-
-It is not a compulsory workflow. A materialization can reveal new facts and send the work back to observation, authority or responsibility. The point is to let the situation determine the smallest form that can carry the work without losing provenance, scope or ownership.
-
-Apply the architecture directly through [Architecture](ARCHITECTURE.md), [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [Terminology](docs/TERMINOLOGY.md); each includes a practical way to use that layer and routes to the relevant public portable.
-
-## 🔗 Read deeper
-
-- [Existing implementations](docs/EXISTING_IMPLEMENTATIONS.md) maps the public artifacts that actually exist and the evidence class behind them.
-- [Evidence and Claims](EVIDENCE_AND_CLAIMS.md) and [Public Boundary](PUBLIC_BOUNDARY.md) define what the public body supports, what it does not establish and what remains private.
-- 🛫 [Preflight](docs/PREFLIGHT.md) explains the crown-jewel method for shaping a task before AI execution, including its self-prompt and self-adjusting-prompt metaphors.
-- 🔗 [Connected Sources](docs/CONNECTED_SOURCES.md) explains how an AI reaches living external sources, why Google Drive is the ChatGPT document-source reference, when GitHub governs executable facets and how retrieval returns to authority and readback.
-- [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md), the [portable registry](registry/PUBLIC_PORTABLES.md) and [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) govern canonical paths, mirrors, freshness and releases.
-- 🧬 [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) is the reusable immaterial-asset protection component for intellectual lineage, content custody, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
-- 🧭 [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) explains reusable methods without turning them into sources of truth.
-- ⚙️ [Operational Devices](docs/OPERATIONAL_DEVICES.md) explains when a procedure deserves a bounded concrete execution surface.
-- 🛡️ [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) keeps execution diagnosable, reversible where possible and honest about partial results.
-- 🔧 [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) turns recurring failure into the smallest validated capability without exposing protected machinery.
-- 🧪 [Browser Console Device reference](examples/browser-console-device/) demonstrates that layer on a synthetic `localhost` surface; it is experimental and not a current portable.
-- 🧹 [Source Hygiene](docs/SOURCE_HYGIENE.md) explains bounded corpus diagnosis and conservative repair.
-- 🔭 [Signal Calibration](docs/SIGNAL_CALIBRATION.md) explains how to preserve useful inference without promoting weak signals to fact or flattening them into “we cannot know”.
-
-## 📌 Current baseline
-
-- Public architecture baseline: 2026-08-16; additive public components, operational hardening and licensing updates continued through 2026-08-23; public-legibility, registry and facade hardening continued on 2026-08-24.
-- Current structural grammar: MSL 4.3 (`KEEP_MSL_4_3`). Public portables remain Setup 3.0 and Chat–Work 2.0-public.
-- Public component chronology and status are tracked separately from portable versions in the [component registry](registry/PUBLIC_PORTABLES.md).
-- The current public portable family is tracked in the [portable registry](registry/PUBLIC_PORTABLES.md).
-- Human-facing public surface: [luahelena.com.br/moonsource](https://www.luahelena.com.br/moonsource/?lang=en). Professional context: [luahelena.com.br/ia](https://www.luahelena.com.br/ia/?lang=en).
-- This repository remains the semantic and versioning authority; the website is a human-facing facade and its downloads are convenience mirrors.
-
-## 🛡️ Evidence, boundary and terms
-
-The public body is built from existing inspectable evidence. It does not manufacture a case study or before-and-after story, and it does not establish external adoption, impact, universal validity, product-market fit, enterprise readiness or a universal standard.
-
-The application-scenario gallery is explicitly hypothetical / fictional / didactic. Its files establish only that explanatory examples exist; they do not establish real implementation, adoption, measured impact, sector validation or independent validation.
-
-Private source corpora, third-party material, deployment state, private resolver and compiler heuristics, detailed reconciliation machinery and enough cross-file detail to reconstruct protected methods remain outside this repository.
+Current structural grammar: **MSL 4.3**. Current public portables: **Setup 3.0**, **MSL 4.3** and **Chat–Work 2.0-public**. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
-
-Moon Source is openly reusable under the applicable standard license: software and automation use Apache-2.0; documentation, methods and public portables use CC-BY-4.0. Attribution and provenance remain important, but the repository does not invent a custom license or silently relicense third-party material. See [LICENSING.md](LICENSING.md) for scope, exceptions and the legal ceiling.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
