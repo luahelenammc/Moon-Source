@@ -21,8 +21,16 @@ The repository does not require a CLA or a signed-off-by line as a condition of 
 - preserve the public/private boundary;
 - keep Moon's authorship distinct from your local contribution;
 - mark material adaptations and preserve third-party notices;
+- use the repository's [pull-request template](.github/PULL_REQUEST_TEMPLATE.md);
+- treat a public component and a public portable as different categories;
+- register a new or materially changed component in `registry/public-portables.json` and `registry/PUBLIC_PORTABLES.md` when it meets the component criteria;
+- touch cross-file surfaces only where responsibility, routing, evidence, boundary, licensing or discoverability actually changes;
 - run the local validation commands described in `.github/workflows/validate.yml`;
 - run `reuse lint` when changing licensing or file classes.
+
+New application material must be visibly hypothetical and didactic unless independently supported public evidence exists. Do not present a fictional scenario as a case study, adoption result or validated deployment.
+
+The public component inventory records Git-derived public creation and material-update dates. Do not guess dates from private lineage, and do not create a portable or bump MSL, Setup or Chat–Work merely because a component or facade changed.
 
 Do not add non-commercial, anti-fork, anti-AI, copyleft, share-alike, branding-placement or approval requirements to the repository without a new policy decision.
 

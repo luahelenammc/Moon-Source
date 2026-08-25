@@ -24,6 +24,12 @@ The reference remains **experimental** and is not registered as a current portab
 - [Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md)
 - [Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md)
 
+## Hypothetical application scenarios
+
+[`application-scenarios/`](application-scenarios/) is a fictional didactic gallery showing how Moon Source **could** be applied to common context problems across health and care, public services, customer journeys, company operations, audit, people and learning, third-sector coordination, and living documentation.
+
+Every scenario is explicitly hypothetical and non-evidentiary. It does not describe a real client, organization, implementation, measured impact or independent validation. Read the gallery before adapting an example, and keep private source material, identifiers, credentials and protected operational detail out of public files.
+
 ## Example boundary
 
 The examples use synthetic or local data only. Do not paste private selectors, endpoints, account data, cookies, tokens, passwords or private corpora into a public example. Keep the adapter separate from the generic device and review the public-boundary and claim files before adapting it to another surface.

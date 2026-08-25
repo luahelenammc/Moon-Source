@@ -14,6 +14,7 @@ The public body may include:
 - public decision contracts for adaptive task shaping and bounded routing;
 - evidence classes and non-claims;
 - public-safe intellectual lineage and content-custody concepts;
+- explicitly labeled hypothetical / fictional application scenarios that explain possible use without functioning as evidence;
 - bounded immaterial-asset protection operations for identity, provenance, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence;
 - bounded qualitative signal / inference calibration principles;
 - public interfaces and QA for separating observation from working inference;
@@ -41,6 +42,7 @@ The public body does not automatically include:
 - private ingestion, custody or permission ledgers;
 - private connected-app configuration, source IDs, folder or repository topology, access scopes and account-level authorization state;
 - confidential derivative maps, dispute notes, permission-resolution heuristics or third-party attribution material.
+- real patient, client, collaborator, institution or organization material inside application examples;
 - exact Failure Foundry promotion thresholds, hidden weights, evaluation corpora, compiler logic or source mutation ordering;
 - credentials, cookies, tokens, passwords, authorization headers or account state;
 - bypass machinery for CAPTCHA, paywalls, access controls, CORS, fingerprinting or rate limits.
@@ -70,6 +72,8 @@ If yes, keep the deeper custody record bounded and publish only the lineage need
 ## Public-safe claim rule
 
 Existing artifacts may be inspected, versioned and mapped. They must not be rewritten as adoption stories, validated case studies or successful outcomes when the evidence does not establish those claims.
+
+The public examples gallery is a bounded explanatory surface. Every application scenario must state near its beginning that it is hypothetical, fictional and non-evidentiary. A scenario may show a common problem, a public component route, a smallest materialization, authority and update rules, and validation/readback; it may not imply that Moon Source was implemented for a real organization or produced a measured result.
 
 ## Public routes
 

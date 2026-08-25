@@ -2,6 +2,14 @@
 
 Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
 
+## 2026-08-24 — Public applications, registry integrity and facade hardening
+
+- Added an explicitly hypothetical application-scenario gallery across health and care, public services, customer journeys, company operations, transparency and audit, people and learning, third-sector coordination, and living knowledge.
+- Reconciled the public component inventory with Git-derived creation dates, material-update dates, concise summaries and controlled lifecycle status; kept components distinct from portables.
+- Added deterministic public-component validation and a registry-backed recent-component digest for the central README.
+- Added contribution-template ergonomics, CI validation for registry/stamp/digest contracts and scheduled mirror-drift detection without automatic website mutation.
+- Reformed the public orientation surfaces while preserving evidence ceilings, public-boundary discipline, mixed licensing, MSL 4.3, Setup 3.0 and Chat–Work 2.0-public.
+
 ## 2026-08-23 — Connected Sources
 
 - Added [Connected Sources](docs/CONNECTED_SOURCES.md) as the public connector-aware context-operations component.

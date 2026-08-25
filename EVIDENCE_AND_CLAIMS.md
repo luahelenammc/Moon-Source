@@ -32,6 +32,7 @@ Moon Source is disclosed through existing evidence only. This repository organiz
 - A bounded public Operational Reliability method exists for read-only-first diagnosis, dependency checks, failure-domain separation, receipts, reversibility and freshness gates. Evidence: PUBLIC_ARTIFACT, INTERNAL_SOURCE_USED; this does not guarantee safety, diagnosis correctness, autonomous repair or recovery in every environment.
 - A bounded public Failure to Capability / Failure Foundry projection exists for metabolizing recurring failure into the smallest validated reusable mechanism. Evidence: PUBLIC_ARTIFACT, INTERNAL_SOURCE_USED; this is not an autonomous self-improvement engine, compiler, benchmark or measured-impact claim.
 - A synthetic Browser Console Device reference implementation exists for a narrow `localhost` surface. Evidence: IMPLEMENTED_BOUNDED, TESTED_BOUNDED; this does not establish a production crawler, universal browser runtime, automatic adapter generation, completeness, cross-site stability or external adoption.
+- The public examples gallery contains eight fictional application scenarios. Evidence: PUBLIC_ARTIFACT for the existence of explanatory files only; the scenarios do not establish implementation, adoption, measured impact, sector validation or independent evidence.
 - The website is a human-facing public surface and the professional page is a separate professional context. Evidence: PUBLIC_REPOSITORY and public URLs.
 
 ## What the current public body does not establish
@@ -60,6 +61,12 @@ This repository does not claim:
 - cryptographic proof of authorship merely because a fingerprint is present;
 - reproduction of the full private runtime or source corpus;
 - product-market fit, return on investment or downstream impact.
+
+## Hypothetical application scenarios are not evidence
+
+The files under `examples/application-scenarios/` are intentionally labeled **hypothetical / fictional didactic scenarios**. Each example illustrates how Moon Source could be applied to a common context problem; it is not evidence of external adoption, implementation, measured impact or independent validation.
+
+Do not rename these files as case studies, client cases, proven results, adoption examples or validated deployments. Do not add real patient, client, institution or organization material, realistic identifiers or invented outcome metrics. The gallery explains the method and its boundaries; it does not raise the public claim ceiling.
 
 ## Claim discipline
 

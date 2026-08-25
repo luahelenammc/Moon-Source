@@ -27,6 +27,12 @@ Use it to choose an inspectable public capability. If the question is what shoul
 | Professional context | https://www.luahelena.com.br/ia/?lang=en | PUBLIC_REPOSITORY | The page presents Moon's professional context; it is not a case study of client adoption. |
 | Public reference body | https://github.com/luahelenammc/Moon-Source | PUBLIC_REPOSITORY | The repository versions public-safe architecture and portables; it is not a product or SDK. |
 
+## Hypothetical application gallery
+
+The [application-scenario gallery](../examples/application-scenarios/) is a public explanatory artifact, not an implementation record. It contains eight explicitly hypothetical / fictional didactic scenarios covering health and care, public services, customer journeys, company operations, transparency and audit, people and learning, third-sector coordination, and knowledge/data continuity.
+
+Its evidence class is `PUBLIC_ARTIFACT` only for the existence and inspectability of the scenario files. It does not establish real adoption, implementation, measured impact, sector validation, independent validation or a client case. The scenarios route to actual public components and portables while keeping the claim ceiling unchanged.
+
 ## Bounded internal projections
 
 Internal Local Moon Source and Moon Professional Source materials informed the public terminology, disclosure boundary and MSL version decision. They remain internal sources. Their existence does not establish an external result.
