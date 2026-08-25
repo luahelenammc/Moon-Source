@@ -8,6 +8,9 @@ Moon Source is a public reference architecture for organizing that problem. It s
 
 This repository is the canonical public body of Moon Source.
 
+> 📦 **Want the whole Moon Source at once?**  
+> 🌙⬇️ [**Download the complete repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) — the full public source in one file.
+
 ## Why Moon Source exists
 
 AI context can fail in opposite directions: there may be too little context, or far too much of the wrong kind. The harder failures appear when information is reachable but nobody can explain which source governs it, whether it is still current, who may change it, or what should happen when two sources disagree.
@@ -78,7 +81,7 @@ Setup, MSL and Chat–Work are separately versioned public projections of the ar
 - 🧱 [**Moon Source Language 4.3**](portables/msl/MSL_4_3.md) — structural grammar for proportionate sources, handoffs, packets, protocols, registries and archives.
 - 🔀 [**Chat–Work Routing Protocol V2**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) — routing across conversational and sustained execution surfaces.
 
-[📦 Download the complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · [🗂️ Open the download hub](DOWNLOADS.md)
+🗂️ [**Open the download hub**](DOWNLOADS.md) for the individual public portables.
 
 ## Recent component changes
 
