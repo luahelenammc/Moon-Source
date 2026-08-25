@@ -101,7 +101,7 @@ Moon Source is deliberately strict about the difference between an artifact exis
 - [Existing Implementations](docs/EXISTING_IMPLEMENTATIONS.md) maps the inspectable artifacts behind current capability statements.
 - [Licensing](LICENSING.md) governs reuse: code and automation use **Apache-2.0**; documentation, methods and public portables use **CC BY 4.0**, subject to file-level metadata and third-party terms.
 
-A public artifact is not an adoption claim. A synthetic or hypothetical scenario is not a case study. A tested slice is not proof of a universal runtime. The repository does not claim external adoption, measured impact, enterprise readiness, universal superiority or product-market fit without evidence.
+A public artifact is not an adoption claim. A tested slice is not proof of a universal runtime. The repository does not claim external adoption, measured impact, enterprise readiness, universal superiority or product-market fit without evidence.
 
 ## Repository map
 
