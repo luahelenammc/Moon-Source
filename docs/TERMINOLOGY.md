@@ -13,6 +13,10 @@ Internal names are useful for continuity, but a public reader should be able to 
 | Source substrate | Persistent accessible body that stores and exposes a living source | Vendor-portable contract, not a universal requirement for one provider |
 | Connector / app | Bounded surface that provides access or actions against an external substrate | Capabilities, permissions and write authority vary by product surface and time |
 | Connector Preflight | Adaptive source-access pass that resolves surface, authority, locator, freshness, retrieval scope and verification | A specialization of Preflight, not a mandatory ceremony or competing mechanism |
+| Data authority / instruction authority | Separate whether a source governs content and whether it may direct behavior for a task | Retrieval does not grant instruction authority; a procedure or instruction may be followed when its jurisdiction explicitly grants that role |
+| Context Receipt | Lightweight evidence of the governing context path when provenance or routing materially affects trust | Not mandatory for every lookup and not proof that a source is true by itself |
+| Progressive disclosure / just-in-time context loading | Loading only the next sufficient current context, then expanding when the next decision provides evidence of need | Not relevance-only retrieval or a benchmarked performance guarantee |
+| Agent harness | Common term for software that surrounds a model or agent with loops, tools, orchestration, execution and state | Comparison language, not a Moon Source-owned component or runtime claim |
 | Handoff | Portable transfer of objective, state, constraints and next actions | Not a complete corpus export |
 | Skill | Reusable procedural projection | Not proof of impact |
 | Bridge | Translation across systems or projects | Does not transfer semantic authority |

@@ -19,8 +19,8 @@ The public body may include:
 - bounded qualitative signal / inference calibration principles;
 - public interfaces and QA for separating observation from working inference;
 - bounded Operational Device contracts and a synthetic reference implementation;
-- generic Operational Reliability principles for read-only diagnosis, dependency checks, failure domains, receipts, reversibility and freshness;
-- a connector-aware source-substrate contract for authority, jurisdiction, freshness, targeted versus exhaustive retrieval, mutation boundaries, readback and dated public adapter facts;
+- generic Operational Reliability principles for read-only diagnosis, dependency checks, failure domains, ordinary and Context Receipts, reversibility and freshness;
+- a connector-aware source-substrate contract for source/data and instruction authority, jurisdiction, freshness, targeted versus exhaustive retrieval, progressive loading, mutation boundaries, readback and dated public adapter facts;
 - a bounded Failure Foundry loop for turning recurring failure into the smallest validated reusable mechanism;
 - versioning and public-safe implementation notes.
 

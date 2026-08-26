@@ -29,6 +29,28 @@ feedback, hygiene, lineage, custody and archive
 
 This is a decision topology, not a universal mandatory lifecycle. A materialization can reveal new facts and send the work back to observation, authority or topology.
 
+## Where Moon Source sits in an AI stack
+
+Moon Source is easiest to locate by responsibility rather than by treating the AI ecosystem as a fixed product taxonomy:
+
+| Responsibility | Typical question | Moon Source relationship |
+|---|---|---|
+| Model cognition and generation | What reasoning or generation can be produced from the active context? | The model consumes governed context and produces an output; it does not decide source jurisdiction by itself. |
+| Agent harness / runtime | How does an agent loop, use tools, maintain execution state and act? | A harness may execute procedures and actions. Moon Source can govern the context boundaries around that work, but does not provide the runtime. |
+| Retrieval / memory mechanisms, including RAG | What external material should be retrieved or assembled for this inference? | Retrieval supplies access or assembly. Moon Source adds responsibility for authority, freshness, permission, scope and provenance around that material. |
+| Governed context / source architecture | Which source is allowed to govern, how current is it, what may travel or mutate, and what must remain attributable across time and surfaces? | This is Moon Source's primary responsibility, including the boundaries where context is loaded, transported, changed and verified. |
+
+In compact form:
+
+```text
+RAG asks:         what external material should be retrieved for this inference?
+Harness asks:     how does the agent loop, use tools, maintain state and act?
+Moon Source asks: what may govern, how current is it, what may travel or mutate,
+                  and what must remain attributable across time and surfaces?
+```
+
+These are responsibility-oriented comparisons, not a universal ontology. A harness or retrieval system may implement some governance of its own; Moon Source complements those mechanisms rather than replacing them. It is not an agent harness, RAG engine, orchestration framework, runtime or SDK.
+
 ## Before the topology: Preflight
 
 When the immediate problem is not yet “what structure should exist?” but “what is the AI actually being asked to do, under what authority, risk, destination and constraints?”, start with [Preflight](docs/PREFLIGHT.md).
@@ -138,7 +160,7 @@ The public architecture exposes this responsibility. It does not publish private
 
 ### Connected sources and persistent substrate
 
-A living-source architecture expected to survive sessions needs a persistent source substrate accessible to the AI. The substrate may be a document corpus, repository or equivalent surface; the vendor is not the ontology. Use [Connected Sources](docs/CONNECTED_SOURCES.md) to distinguish reach from authority, targeted retrieval from exhaustive inventory, write capability from mutation authority and write receipts from accepted source state.
+A living-source architecture expected to survive sessions needs a persistent source substrate accessible to the AI. The substrate may be a document corpus, repository or equivalent surface; the vendor is not the ontology. Use [Connected Sources](docs/CONNECTED_SOURCES.md) to distinguish reach from authority, source/data authority from instruction authority, targeted retrieval from exhaustive inventory, write capability from mutation authority and write receipts from accepted source state.
 
 For the ChatGPT reference implementation, Google Drive is the primary document-source substrate for durable living sources. GitHub is complementary and becomes governing when executable or repository state is part of the question. This is a facet-scoped implementation pattern, not a compulsory linear stage or universal Drive-plus-GitHub stack.
 
@@ -229,8 +251,7 @@ Moon Source is not:
 
 - a prompt pack;
 - a single knowledge-base template;
-- a RAG product;
-- a runtime or SDK;
+- an agent harness, RAG engine, orchestration framework, runtime or SDK;
 - a universal ontology;
 - a claim of external adoption;
 - a claim that more context is always better;

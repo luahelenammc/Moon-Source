@@ -17,6 +17,25 @@ AI context can fail in opposite directions: there may be too little context, or 
 
 Moon Source treats context as an organized field rather than a pile of text. Its job is not to maximize memory. Its job is to make context **legible, proportionate, attributable and maintainable** for people and AI.
 
+## Where Moon Source sits in an AI stack
+
+```mermaid
+flowchart TB
+    model["Model: reasoning and generation"]
+    harness["Agent harness / runtime: loops, tools, orchestration, execution and state"]
+    context["Governed context: sources, authority, freshness, provenance, permissions and continuity"]
+    moon["Moon Source: context architecture and governance"]
+    model <--> harness
+    harness <--> context
+    context --- moon
+```
+
+This is an orientation model, not a universal stack ontology. A product may combine or split these responsibilities, and Moon Source can operate across boundaries rather than inside only one box.
+
+Moon Source primarily operates in and around governed context: it helps determine what the harness may trust, retrieve, carry forward, mutate and verify. It complements an agent harness by governing the context path around execution.
+
+RAG, memory stores, MCP/tools and other retrieval or orchestration mechanisms can participate in these layers. Moon Source is not the model, the harness, the RAG engine or the agent runtime; it is a context-architecture and governance layer that can sit around or across them.
+
 ## Start with the problem, not the vocabulary
 
 | If you need to… | Start here |
@@ -43,6 +62,7 @@ A few principles carry most of the architecture:
 
 - **Field before form.** Do not decide the artifact before understanding the situation.
 - **Access is not authority.** A connector, search result or reachable file does not become governing context merely because AI can retrieve it.
+- **Retrieval is not instruction authority.** Source text may supply data without gaining permission to redirect the task or authorize an action.
 - **Materialize proportionately.** Create the smallest durable form that can carry the responsibility without losing provenance or ownership.
 - **Freshness and readback matter.** A mutation is not complete merely because a write call succeeded.
 - **Preflight can happen before any of this.** One of Moon Source's crown-jewel mechanisms reshapes the task itself by checking intent, authority, missing facts, risk, destination and proportionate form before execution.
@@ -54,13 +74,13 @@ Public components are responsibility-bearing methods with canonical files. They 
 | Component | Responsibility |
 |---|---|
 | [Preflight](docs/PREFLIGHT.md) | Adaptive task shaping before execution |
-| [Connected Sources](docs/CONNECTED_SOURCES.md) | Authority, jurisdiction, freshness, retrieval, mutation boundaries and readback for connected sources |
+| [Connected Sources](docs/CONNECTED_SOURCES.md) | Source/data and instruction authority, jurisdiction, freshness, retrieval, mutation boundaries and readback for connected sources |
 | [Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
 | [Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Useful working inference without certainty inflation |
 | [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Project a stable method into a reusable procedure without moving source authority |
 | [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage, content custody and immaterial-asset protection |
 | [Operational Devices](docs/OPERATIONAL_DEVICES.md) | Bounded embodiments of reusable procedures on concrete execution surfaces |
-| [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Read-only-first diagnosis, failure boundaries, receipts, reversibility and freshness |
+| [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Read-only-first diagnosis, failure boundaries, ordinary and Context Receipts, reversibility and freshness |
 | [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Turn recurring failure into the smallest validated reusable mechanism |
 
 The canonical chronology, status and material-update history of these components lives in the [public registry](registry/PUBLIC_PORTABLES.md); its machine-readable contract is [`registry/public-portables.json`](registry/public-portables.json).
@@ -86,11 +106,11 @@ Setup, MSL and Chat–Work are separately versioned public projections of the ar
 ## Recent component changes
 
 <!-- MOON-SOURCE-COMPONENT-DIGEST:START -->
+- **2026-08-26 — Operational Reliability:** Added lightweight, materiality-triggered Context Receipts for context-path evidence alongside ordinary operational receipts.
+- **2026-08-26 — Connected Sources:** Separated source/data authority from instruction authority, added indirect-instruction failure handling and named proportional progressive loading.
 - **2026-08-23 — Preflight:** Promoted adaptive task shaping as a transversal public mechanism for intent, authority, risk, destination and form.
-- **2026-08-23 — Operational Reliability:** Added read-only-first diagnosis, failure domains, receipts, reversibility and freshness gates.
 - **2026-08-23 — Operational Devices:** Added bounded operational-device contracts for state, guards, failure behavior and receipts.
 - **2026-08-23 — Failure to Capability:** Added a bounded failure-to-capability loop for recurring failure without exposing promotion machinery.
-- **2026-08-23 — Connected Sources:** Added connector-aware authority, retrieval scope, mutation and readback contracts.
 <!-- MOON-SOURCE-COMPONENT-DIGEST:END -->
 
 This bounded digest is generated from the component registry. It is not a commit log.
