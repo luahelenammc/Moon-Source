@@ -17,25 +17,6 @@ AI context can fail in opposite directions: there may be too little context, or 
 
 Moon Source treats context as an organized field rather than a pile of text. Its job is not to maximize memory. Its job is to make context **legible, proportionate, attributable and maintainable** for people and AI.
 
-## Where Moon Source sits in an AI stack
-
-```mermaid
-flowchart TB
-    model["Model: reasoning and generation"]
-    harness["Agent harness / runtime: loops, tools, orchestration, execution and state"]
-    context["Governed context: sources, authority, freshness, provenance, permissions and continuity"]
-    moon["Moon Source: context architecture and governance"]
-    model <--> harness
-    harness <--> context
-    context --- moon
-```
-
-This is an orientation model, not a universal stack ontology. A product may combine or split these responsibilities, and Moon Source can operate across boundaries rather than inside only one box.
-
-Moon Source primarily operates in and around governed context: it helps determine what the harness may trust, retrieve, carry forward, mutate and verify. It complements an agent harness by governing the context path around execution.
-
-RAG, memory stores, MCP/tools and other retrieval or orchestration mechanisms can participate in these layers. Moon Source is not the model, the harness, the RAG engine or the agent runtime; it is a context-architecture and governance layer that can sit around or across them.
-
 ## Start with the problem, not the vocabulary
 
 | If you need to… | Start here |
@@ -67,24 +48,6 @@ A few principles carry most of the architecture:
 - **Freshness and readback matter.** A mutation is not complete merely because a write call succeeded.
 - **Preflight can happen before any of this.** One of Moon Source's crown-jewel mechanisms reshapes the task itself by checking intent, authority, missing facts, risk, destination and proportionate form before execution.
 
-## Current public components
-
-Public components are responsibility-bearing methods with canonical files. They are not automatically portables and do not create a version bump merely by being updated.
-
-| Component | Responsibility |
-|---|---|
-| [Preflight](docs/PREFLIGHT.md) | Adaptive task shaping before execution |
-| [Connected Sources](docs/CONNECTED_SOURCES.md) | Source/data and instruction authority, jurisdiction, freshness, retrieval, mutation boundaries and readback for connected sources |
-| [Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
-| [Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Useful working inference without certainty inflation |
-| [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Project a stable method into a reusable procedure without moving source authority |
-| [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage, content custody and immaterial-asset protection |
-| [Operational Devices](docs/OPERATIONAL_DEVICES.md) | Bounded embodiments of reusable procedures on concrete execution surfaces |
-| [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Read-only-first diagnosis, failure boundaries, ordinary and Context Receipts, reversibility and freshness |
-| [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Turn recurring failure into the smallest validated reusable mechanism |
-
-The canonical chronology, status and material-update history of these components lives in the [public registry](registry/PUBLIC_PORTABLES.md); its machine-readable contract is [`registry/public-portables.json`](registry/public-portables.json).
-
 ## Examples
 
 The [hypothetical application-scenario gallery](examples/application-scenarios/) makes the architecture easier to inspect by placing the same contextual method inside different kinds of everyday problems.
@@ -103,17 +66,42 @@ Setup, MSL and Chat–Work are separately versioned public projections of the ar
 
 🗂️ [**Open the download hub**](DOWNLOADS.md) for the individual public portables.
 
-## Recent component changes
+## Where Moon Source sits in an AI stack
 
-<!-- MOON-SOURCE-COMPONENT-DIGEST:START -->
-- **2026-08-26 — Operational Reliability:** Added lightweight, materiality-triggered Context Receipts for context-path evidence alongside ordinary operational receipts.
-- **2026-08-26 — Connected Sources:** Separated source/data authority from instruction authority, added indirect-instruction failure handling and named proportional progressive loading.
-- **2026-08-23 — Preflight:** Promoted adaptive task shaping as a transversal public mechanism for intent, authority, risk, destination and form.
-- **2026-08-23 — Operational Devices:** Added bounded operational-device contracts for state, guards, failure behavior and receipts.
-- **2026-08-23 — Failure to Capability:** Added a bounded failure-to-capability loop for recurring failure without exposing promotion machinery.
-<!-- MOON-SOURCE-COMPONENT-DIGEST:END -->
+```mermaid
+flowchart TB
+    model["Model: reasoning and generation"]
+    harness["Agent harness / runtime: loops, tools, orchestration, execution and state"]
+    context["Governed context: sources, authority, freshness, provenance, permissions and continuity"]
+    moon["Moon Source: context architecture and governance"]
+    model <--> harness
+    harness <--> context
+    context --- moon
+```
 
-This bounded digest is generated from the component registry. It is not a commit log.
+This is an orientation model, not a universal stack ontology. A product may combine or split these responsibilities, and Moon Source can operate across boundaries rather than inside only one box.
+
+Moon Source primarily operates in and around governed context: it helps determine what the harness may trust, retrieve, carry forward, mutate and verify. It complements an agent harness by governing the context path around execution.
+
+RAG, memory stores, MCP/tools and other retrieval or orchestration mechanisms can participate in these layers. Moon Source is not the model, the harness, the RAG engine or the agent runtime; it is a context-architecture and governance layer that can sit around or across them.
+
+## Current public components
+
+Public components are responsibility-bearing methods with canonical files. They are not automatically portables and do not create a version bump merely by being updated.
+
+| Component | Responsibility |
+|---|---|
+| [Preflight](docs/PREFLIGHT.md) | Adaptive task shaping before execution |
+| [Connected Sources](docs/CONNECTED_SOURCES.md) | Source/data and instruction authority, jurisdiction, freshness, retrieval, mutation boundaries and readback for connected sources |
+| [Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
+| [Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Useful working inference without certainty inflation |
+| [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Project a stable method into a reusable procedure without moving source authority |
+| [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage, content custody and immaterial-asset protection |
+| [Operational Devices](docs/OPERATIONAL_DEVICES.md) | Bounded embodiments of reusable procedures on concrete execution surfaces |
+| [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Read-only-first diagnosis, failure boundaries, ordinary and Context Receipts, reversibility and freshness |
+| [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Turn recurring failure into the smallest validated reusable mechanism |
+
+The canonical chronology, status and material-update history of these components lives in the [public registry](registry/PUBLIC_PORTABLES.md); its machine-readable contract is [`registry/public-portables.json`](registry/public-portables.json).
 
 ## Evidence, boundary and reuse
 
@@ -125,6 +113,18 @@ Moon Source is deliberately strict about the difference between an artifact exis
 - [Licensing](LICENSING.md) governs reuse: code and automation use **Apache-2.0**; documentation, methods and public portables use **CC BY 4.0**, subject to file-level metadata and third-party terms.
 
 A public artifact is not an adoption claim. A tested slice is not proof of a universal runtime. The repository does not claim external adoption, measured impact, enterprise readiness, universal superiority or product-market fit without evidence.
+
+## Recent component changes
+
+<!-- MOON-SOURCE-COMPONENT-DIGEST:START -->
+- **2026-08-26 — Operational Reliability:** Added lightweight, materiality-triggered Context Receipts for context-path evidence alongside ordinary operational receipts.
+- **2026-08-26 — Connected Sources:** Separated source/data authority from instruction authority, added indirect-instruction failure handling and named proportional progressive loading.
+- **2026-08-23 — Preflight:** Promoted adaptive task shaping as a transversal public mechanism for intent, authority, risk, destination and form.
+- **2026-08-23 — Operational Devices:** Added bounded operational-device contracts for state, guards, failure behavior and receipts.
+- **2026-08-23 — Failure to Capability:** Added a bounded failure-to-capability loop for recurring failure without exposing promotion machinery.
+<!-- MOON-SOURCE-COMPONENT-DIGEST:END -->
+
+This bounded digest is generated from the component registry. It is not a commit log.
 
 ## Repository map
 
