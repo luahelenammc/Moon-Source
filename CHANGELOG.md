@@ -2,6 +2,14 @@
 
 Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
 
+## 2026-08-26 — Context receipts, loading discipline and stack legibility
+
+- Added lightweight, materiality-triggered Context Receipts to Operational Reliability so a consequential context path can remain inspectable without making every lookup ceremonial.
+- Separated source/data authority from instruction authority in Connected Sources, including a bounded failure mode for instruction-like retrieved content and a proportional Connector Preflight check.
+- Named the existing adaptive loading discipline as progressive disclosure / just-in-time context loading, governed by authority, freshness, permission, consequence and required coverage rather than relevance alone.
+- Added a high-visibility stack-positioning map and a deeper responsibility comparison around models, agent harnesses/runtimes, retrieval or RAG mechanisms and governed context.
+- Created no new component or portable, and preserved MSL 4.3, Setup 3.0, Chat–Work 2.0-public, portable bytes and the public/private boundary.
+
 ## 2026-08-24 — Public applications, registry integrity and facade hardening
 
 - Added an explicitly hypothetical application-scenario gallery across health and care, public services, customer journeys, company operations, transparency and audit, people and learning, third-sector coordination, and living knowledge.

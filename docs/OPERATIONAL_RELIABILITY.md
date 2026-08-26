@@ -147,6 +147,50 @@ A receipt should make the following inspectable when relevant:
 
 Logs are evidence, not authority by themselves. A receipt can show what a tool observed or attempted; it does not prove that the observation was complete, truthful or legally sufficient without the appropriate source and validation.
 
+### Context Receipt
+
+An ordinary operational receipt records what an operation observed, attempted or changed. A **Context Receipt** records the contextual path that justified a conclusion or action when that path materially affects trust. It extends the receipt doctrine from output/action evidence to context-path evidence; it is not a new component or a mandatory field in every response.
+
+Use a Context Receipt when provenance or routing materially affects correctness, auditability, mutation, safety, completeness or trust. Typical triggers include:
+
+- a consequential source mutation or write;
+- multiple legitimate sources with different authority;
+- a source conflict or stale/current ambiguity;
+- a claim of exhaustive or near-exhaustive coverage;
+- a high-consequence decision materially dependent on retrieved context;
+- an explicit request from the user or an auditor for the governing sources;
+- a tempting but non-governing source that had to be excluded;
+- partial connector or search coverage that could otherwise be mistaken for completeness;
+- a retry or recovery path that changes the source or snapshot being relied on.
+
+For a trivial, low-risk and obvious lookup, the Context Receipt may collapse to nothing visible. Do not add ceremony when the context path does not change interpretation. When it is earned, use only the fields that make the route inspectable:
+
+| Field | What it makes visible |
+|---|---|
+| Task / decision | What the context was needed for |
+| Governing sources | Which sources actually governed the result |
+| Authority basis | Why those sources had jurisdiction |
+| Freshness / revision | What currentness was established, when material |
+| Retrieval scope | Targeted, inventory-oriented, exhaustive or bounded/partial retrieval |
+| Conflicts / exclusions | Meaningful disagreement or deliberately non-governing material |
+| Mutation readback | Resulting authoritative state after a write |
+| Coverage / uncertainty | What was not checked or remains unresolved |
+
+This is a proportional field set, not a rigid schema. Omit fields that do not change how the result should be interpreted.
+
+The two receipt types may coexist in one record when both the operation and the contextual route are material.
+
+```text
+ordinary operational receipt → records what the operation observed or changed
+Context Receipt             → records the context path that justified the conclusion or action
+```
+
+Two examples:
+
+**No visible Context Receipt needed.** One known canonical source was read exactly and freshly; there was no conflict, no mutation and no completeness claim. The answer can remain unadorned.
+
+**Context Receipt earned.** A connected living document source governed intent, while a repository governed executable state. Semantic search covered only a partial, bounded slice; one stale snapshot was excluded, and the code mutation was read back and tested. The receipt records those governing sources, the facet-specific authority, bounded coverage, the stale exclusion and the verified mutation without reproducing the entire retrieval transcript.
+
 ## 11. Idempotency and bounded repetition
 
 Where useful, repeated invocation should not duplicate, compound or corrupt an operation. Prefer:

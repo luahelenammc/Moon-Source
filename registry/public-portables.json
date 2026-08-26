@@ -1,6 +1,6 @@
 {
   "registry_version": "1.1",
-  "as_of": "2026-08-24",
+  "as_of": "2026-08-26",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
   "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -49,12 +49,12 @@
       "title": "Operational Reliability",
       "class": "operational-reliability-method",
       "canonical_path": "docs/OPERATIONAL_RELIABILITY.md",
-      "function": "Keep bounded execution read-only-first, diagnosable, failure-aware, reversible where possible and supported by receipts and freshness checks",
+      "function": "Keep bounded execution read-only-first, diagnosable, failure-aware, reversible where possible and supported by ordinary operational receipts, proportional Context Receipts and freshness checks",
       "claim_ceiling": "Public execution-discipline method; not a guarantee of safety, diagnosis correctness, autonomous repair or recovery in every environment",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
       "public_created_on": "2026-08-23",
-      "last_material_update_on": "2026-08-23",
-      "last_material_update_summary": "Added read-only-first diagnosis, failure domains, receipts, reversibility and freshness gates.",
+      "last_material_update_on": "2026-08-26",
+      "last_material_update_summary": "Added lightweight, materiality-triggered Context Receipts for context-path evidence alongside ordinary operational receipts.",
       "status": "current"
     },
     {
@@ -75,12 +75,12 @@
       "title": "Connected Sources",
       "class": "connected-source-operation",
       "canonical_path": "docs/CONNECTED_SOURCES.md",
-      "function": "Define connector-aware authority, jurisdiction, freshness, retrieval scope, mutation boundaries, provenance and readback",
+      "function": "Define connector-aware source/data and instruction authority, jurisdiction, freshness, progressive retrieval scope, mutation boundaries, provenance and readback",
       "claim_ceiling": "Bounded public method for connector-aware source operation; not universal product support, exhaustive retrieval, automatic synchronization or adoption proof",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
       "public_created_on": "2026-08-23",
-      "last_material_update_on": "2026-08-23",
-      "last_material_update_summary": "Added connector-aware authority, retrieval scope, mutation and readback contracts.",
+      "last_material_update_on": "2026-08-26",
+      "last_material_update_summary": "Separated source/data authority from instruction authority, added indirect-instruction failure handling and named proportional progressive loading.",
       "status": "current"
     },
     {
