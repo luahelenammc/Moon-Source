@@ -57,12 +57,6 @@ Use each file for the responsibility it actually owns:
 
 When two files appear to conflict, do not flatten them together. First ask whether they have different jurisdictions. Prefer the file whose declared responsibility governs the disputed state.
 
-## 2.1 Three-body source boundary
-
-For public work, this repository's 'main' branch is the canonical body of **Moon Source Public**. The broader name **Moon Source** refers to the method/ecosystem, not a second repository that should be reconstructed from private material. **Local Moon Source** remains a private operational body, and **Moon Professional Source** remains a professional-operational body; they may supply deliberate, sanitized bridges or public candidates but are not implicit inputs to a public task. **Commercial / Enterprise Reserved** is a protected subtree inside MPS.
-
-The public '/moonsource/' site is a facade/convenience mirror. A future ChatGPT workbench may be used for development or validation, but it is not a public semantic authority unless a later public promotion explicitly says so. Public artifacts must not imply private corpus access, professional adoption or external impact.
-
 Preflight is the general before-execution gate. It may remain silent for a clear, low-risk task, or route to the component that owns the next decision. It does not replace the default operating loop and is not a mandatory permanent stage.
 
 ## 3. Route by user intent

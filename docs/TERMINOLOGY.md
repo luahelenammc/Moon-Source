@@ -36,13 +36,6 @@ Internal names are useful for continuity, but a public reader should be able to 
 | Operational device | Bounded operational embodiment of a reusable procedure on a concrete execution surface | Not a source of authority, automatic privilege or proof of runtime merely because it is documented |
 | Operational reliability | Execution discipline that distinguishes target, instrument, environment, dependencies, guards and receipts | Not a guarantee of safety, correctness or autonomous repair |
 | Failure Foundry | Failure-to-capability loop that preserves evidence and forges the smallest validated reusable mechanism | Not an autonomous self-improvement engine, compiler or universal promotion rule |
-| Moon Source | Broader method and ecosystem identity | Do not use it to imply that every related source body is public |
-| Moon Source Public | Canonical public body of Moon Source, versioned in the public GitHub repository | Not the private Local lab or the professional MPS corpus |
-| Local Moon Source | Private Moon-specific operational laboratory for runtime, modes, engines, overlays and situated corpora | Access or inheritance does not transfer private authority to the public body |
-| Moon Professional Source | Professional-operational corpus for skills, proof, offers, portfolio, outreach and public-facing translation | Not a premium edition or blind mirror of the public body |
-| Commercial / Enterprise Reserved | Protected subtree inside Moon Professional Source for operational advantage, confidential delivery logic or other explicitly reserved material | Not a fourth sovereign body and not a label for all professional material |
-| Public facade | Human-facing site or distribution layer that explains or mirrors a public body | Does not replace the source |
-| Moon Source Project | Historical/legacy label for the broader method or earlier project framing | Do not use it as a current fourth sovereign body; use Moon Source Public, Local Moon Source or Moon Professional Source as applicable |
 
 ## Public language
 

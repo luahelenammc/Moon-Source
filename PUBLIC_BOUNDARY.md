@@ -2,10 +2,6 @@
 
 Moon Source is developed through a larger private and professional corpus. This repository is intentionally narrower.
 
-## Related source bodies
-
-The public body is **Moon Source Public**, versioned in this repository's 'main' branch. **Local Moon Source** is a private operational laboratory; **Moon Professional Source** is a professional-operational corpus; and **Commercial / Enterprise Reserved** is a protected subtree inside MPS, not a fourth public body. The '/moonsource/' website is a human-facing facade, while '/ia/' is a separate professional surface. This repository publishes only the public-safe relationship and does not disclose their private corpora, hidden machinery or account-level topology.
-
 ## Public
 
 The public body may include:

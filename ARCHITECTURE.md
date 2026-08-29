@@ -29,12 +29,6 @@ feedback, hygiene, lineage, custody and archive
 
 This is a decision topology, not a universal mandatory lifecycle. A materialization can reveal new facts and send the work back to observation, authority or topology.
 
-## Public body and sibling source bodies
-
-This repository is the canonical public body, **Moon Source Public**. 'Moon Source' is the broader method and ecosystem identity. **Local Moon Source** and **Moon Professional Source** remain distinct source bodies outside this repository: Local is private and operational; MPS is professional-operational and governs professional proof, offers and public-facing translation. The MPS may contain a **Commercial / Enterprise Reserved** subtree for protected operational advantage; that subtree is not a fourth public body.
-
-The human-facing '/moonsource/' site is a convenience facade for this repository, while '/ia/' is a separate professional surface. Neither replaces the authority of its source body. See the [Three-body source contract](docs/THREE_BODY_SOURCE_CONTRACT.md) for the public-safe synchronization and promotion rules.
-
 ## Where Moon Source sits in an AI stack
 
 Moon Source is easiest to locate by responsibility rather than by treating the AI ecosystem as a fixed product taxonomy:
