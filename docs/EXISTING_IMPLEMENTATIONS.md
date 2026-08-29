@@ -35,7 +35,7 @@ Its evidence class is `PUBLIC_ARTIFACT` only for the existence and inspectabilit
 
 ## Bounded internal projections
 
-Internal Local Moon Source and Moon Professional Source materials informed the public terminology, disclosure boundary and MSL version decision. They remain internal sources. Their existence does not establish an external result.
+Internal Local Moon Source and Moon Professional Source materials informed the public terminology, disclosure boundary and MSL version decision. The GitHub repository is Moon Source Public's public body; Local remains private and MPS remains professional-operational. The 'Commercial / Enterprise Reserved' subtree is a protected MPS route, not a public implementation. These source bodies remain internal; their existence does not establish an external result.
 
 ## What is intentionally absent
 

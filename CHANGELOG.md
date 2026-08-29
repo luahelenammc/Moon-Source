@@ -1,6 +1,13 @@
 # Changelog
 
-Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
+Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md). Architectural eras are summarized in [docs/HISTORY.md](docs/HISTORY.md); this file remains the exact public change log.
+
+## 2026-08-29 — Three-body source topology
+
+- Recorded the public-safe distinction between the broader Moon Source identity, the canonical public body Moon Source Public, the private Local Moon Source laboratory and the professional-operational Moon Professional Source body.
+- Added the public three-body source contract and architectural history; kept the '/moonsource/' site as a facade/convenience mirror and kept any future ChatGPT workbench out of public authority.
+- Added explicit Class A/B/C synchronization and promotion language without exposing private corpora, hidden resolvers, scoring/evaluation machinery, protected operational advantage or external-adoption claims.
+- Kept 'Commercial / Enterprise Reserved' as a protected subtree inside MPS rather than creating a fourth body; preserved MSL 4.3 and did not create a new portable or public component.
 
 ## 2026-08-26 — Context receipts, loading discipline and stack legibility
 

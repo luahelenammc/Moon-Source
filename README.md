@@ -8,6 +8,8 @@ Moon Source is a public reference architecture for organizing that problem. It s
 
 This repository is the canonical public body of Moon Source.
 
+Moon Source is the broader method and ecosystem identity. **Moon Source Public** is the public body here; **Local Moon Source** is a private Moon-specific laboratory; **Moon Professional Source** is the professional-operational body. Those private and professional sources are not contained here and do not need to be mirrored for this repository to be usable. The human-facing `/moonsource/` site is a facade and convenience mirror, not a competing semantic authority.
+
 > 📦 **Want the whole Moon Source at once?**  
 > 🌙⬇️ [**Download the complete repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) — the full public source in one file.
 
@@ -133,6 +135,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 | Need | Canonical route |
 |---|---|
 | Full architecture | [ARCHITECTURE.md](ARCHITECTURE.md) |
+| Public body contract and architectural history | [Three-body source contract](docs/THREE_BODY_SOURCE_CONTRACT.md) + [HISTORY](docs/HISTORY.md) |
 | AI-side routing through the public corpus | [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md) |
 | Definitions and responsibility boundaries | [Terminology](docs/TERMINOLOGY.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
 | Public components and portable registry | [registry/PUBLIC_PORTABLES.md](registry/PUBLIC_PORTABLES.md) |
@@ -144,7 +147,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 ## Current baseline
 
-Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-08-23**; public-legibility and registry hardening continued on **2026-08-24**.
+Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-08-23**; public-legibility and registry hardening continued on **2026-08-24**; the three-body source contract was recorded on **2026-08-29**.
 
 Current structural grammar: **MSL 4.3**. Current public portables: **Setup 3.0**, **MSL 4.3** and **Chat–Work 2.0-public**. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
