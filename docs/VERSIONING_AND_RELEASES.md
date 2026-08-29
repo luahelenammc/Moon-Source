@@ -23,12 +23,6 @@ They should not be collapsed into one number.
 - Website: production public convenience surface; canonical and mapped mirror bytes were verified after promotion on 2026-08-16.
 - Repository: luahelenammc/Moon-Source, public reference and versioning body; software and automation are Apache-2.0, while documentation, methods and public portables are CC-BY-4.0.
 
-## Body authority
-
-The repository's 'main' branch is the canonical public body of **Moon Source Public**. The '/moonsource/' site is a facade and convenience mirror. Local Moon Source remains a private operational source, and Moon Professional Source remains the professional-operational source; the MPS may route protected operational advantage to its 'Commercial / Enterprise Reserved' subtree. These body authorities are facet-scoped and must not be collapsed into one release number or one undifferentiated corpus.
-
-Architectural eras are tracked in [HISTORY](HISTORY.md); exact file chronology remains in [CHANGELOG](../CHANGELOG.md). Public synchronization is additive/candidate-based unless an explicit public release changes the relevant public body.
-
 ## Release rules
 
 1. Every current public portable has one canonical repository path.
