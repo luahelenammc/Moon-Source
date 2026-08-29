@@ -1,48 +1,60 @@
-# Public Architectural History
+# Moon Source — Architectural History
 
-This file records public architectural eras and their governing transitions. It is not a replacement for the exact [CHANGELOG](../CHANGELOG.md), a private source ledger or a proof of adoption.
+This file records the public architectural eras and governing transitions of Moon Source Public. It is not a replacement for the exact CHANGELOG, a private source ledger, a professional operating record or proof of adoption.
 
 ## Scope
 
-The public body is **Moon Source Public**, versioned in the luahelenammc/Moon-Source repository. This history records only public-safe architecture, released public components, bounded projections and explicit non-claims. Private Local Moon Source material, professional MPS corpus detail and protected Commercial / Enterprise Reserved material remain outside this history.
+The public body is Moon Source Public, versioned in the luahelenammc/Moon-Source repository. The broader Moon Source identity includes related local and professional bodies, but this history records only public-safe architecture, released public components, bounded projections and explicit non-claims.
+
+Private Local Moon Source material, professional Moon Professional Source corpus detail and protected Commercial / Enterprise Reserved material remain outside this history. The /moonsource/ website is a public facade and convenience mirror, not a competing semantic authority.
+
+## Evidence rule for pre-repository eras
+
+Before the public repository foundation, this history uses bounded language such as early 2026, before the dedicated public repository and portable-first phase. Exact dates are asserted only where a dated public artifact, repository history or other preserved evidence supports them. This file does not manufacture a precise origin date for private development.
 
 ## Architectural eras
 
-### 1. Field-to-form public baseline — 2026-08-16
+### Era 1 — Private context architecture
 
-The public disclosure was organized around field-to-form context architecture: understand the field, resolve authority and responsibility, choose proportional materialization, then operate, transport, verify, maintain lineage and archive. Existing-evidence-only public disclosure was established as the baseline.
+In the early-2026 pre-repository phase, Moon Source developed as a private context architecture: living sources, authority and responsibility mapping, continuity across sessions, handoffs, source freshness, memory boundaries and the Moon Source Language (MSL). The central problem was how to preserve meaningful human and project context for AI use without flattening it into an undifferentiated prompt.
 
-### 2. Adaptive setup and routing — 2026-08-18
+### Era 2 — Local / Professional differentiation
 
-Moon Source Setup 3.0 became the adaptive personal/project-context router. It added preflight, maturity-aware depth, destination and privacy handling, existing-material checks and update contracts while preserving standalone portability.
+During bounded early-2026 development, two application bodies became distinct. Local Moon Source served as the private operational laboratory for situated work, experiments, runtime protocols and selective inheritance. Moon Professional Source served professional-operational skills, proof, offers, public-facing work and career translation. This differentiation did not yet assert a separate public repository body.
 
-### 3. Bounded calibration — 2026-08-21
+### Era 3 — Portable-first public disclosure
 
-Signal Calibration was added as a public component for working inference from incomplete or ambiguous signals without certainty inflation. Private thresholds, scoring and hidden calibration machinery remained reserved.
+Before the dedicated public repository, public disclosure travelled primarily through portable setup and protocol artifacts and the /moonsource/ facade. These artifacts were useful public projections, not the entire semantic body. The public boundary favored transferable methods, existing evidence and explicit limits while keeping private maps, intimate context and protected mechanisms out of the public surface.
 
-### 4. Operational public layer — 2026-08-23
+### Era 4 — Public repository foundation — 2026-08-16
 
-Preflight, Operational Devices, Operational Reliability, Failure Foundry and Connected Sources were made explicit as bounded public responsibilities. Mixed standard licensing was ratified; MSL 4.3 and the existing public portable family were preserved.
+The public architecture was rebased around field-to-form context work: understand the field, resolve authority and responsibility, choose proportional materialization, then operate, transport, verify, maintain lineage and archive. Existing-evidence-only disclosure became the baseline. The canonical public repository was established as luahelenammc/Moon-Source, the three existing public portables were gathered into one family, and MSL 4.3 was retained after a major-version audit.
 
-### 5. Applications, registry and facade discipline — 2026-08-24
+### Era 5 — Repository-aware public architecture — 2026-08-18
 
-The public application gallery, component registry validation, bounded README digest, CI self-audit, contribution ergonomics and website-facade checks were added. Hypothetical scenarios remained explanatory rather than evidentiary.
+Moon Source Setup 3.0 became an adaptive, repository-aware public router while preserving standalone portability. Public components moved into the repository as linked responsibilities rather than being forced into the Setup artifact. Preflight, maturity-aware depth, destination and privacy handling, existing-material checks and update contracts became part of the public operating route.
 
-### 6. Context receipts and stack legibility — 2026-08-26
+### Era 6 — Public capability expansion and licensing — 2026-08-21 through 2026-08-26
 
-Context Receipts, progressive / just-in-time context loading, separation of source/data authority from instruction authority and a clearer model–harness–retrieval–governed-context position were added without changing MSL 4.3, portable bytes or evidence ceilings.
+Public capability expanded in bounded steps: Signal Calibration on 2026-08-21; Preflight, Operational Devices, Operational Reliability, Failure Foundry and Connected Sources, together with the ratified mixed open-licensing model, on 2026-08-23; public application scenarios, registry integrity and facade hardening on 2026-08-24; and Context Receipts, progressive or just-in-time context loading and stack legibility on 2026-08-26.
 
-### 7. Three-body source rebase — 2026-08-29
+These additions changed public components, procedures, bridges and transport contracts without changing MSL 4.3, the existing portable bytes or the evidence and public-boundary ceilings. The CHANGELOG remains the exact file-level chronology.
 
-The public contract now distinguishes the broader Moon Source identity, the canonical public body Moon Source Public, the private Local Moon Source laboratory and the professional-operational Moon Professional Source body. Commercial / Enterprise Reserved is defined as a protected subtree within MPS, not a fourth body.
+### Era 7 — Three-body source rebase — 2026-08-29
 
-The rebase adds public-safe synchronization classes, candidate-based promotion and explicit non-claims. It does not publish private maps, corpora, resolver/repair/compiler internals, hidden evaluation machinery, confidential client material, reserved operational advantage or external-adoption claims. MSL 4.3 remains current.
+The public contract now distinguishes the broader Moon Source identity, the canonical public body Moon Source Public, the private Local Moon Source laboratory and the professional-operational Moon Professional Source body. Commercial / Enterprise Reserved is a protected subtree inside MPS, not a fourth body.
 
-## Public-history rule
+The rebase records Class A, Class B and Class C synchronization, candidate-based promotion, facet-specific authority, preservation/readback requirements and explicit non-claims. The public repository is the canonical home for the public body; Local and MPS remain sovereign for their own jurisdictions and inherit selectively. The rebase does not publish private maps, corpora, resolver, scoring, evaluation, compiler, repair or reconciliation internals, confidential client material, reserved operational advantage or external-adoption claims. MSL 4.3 remains current.
 
-Future architectural eras belong here only when they change the public body, a public component family, a public portable contract or a public disclosure boundary. File-level chronology, exact commit detail and routine maintenance remain in [CHANGELOG](../CHANGELOG.md). Internal migrations and private-source lineage remain in their sovereign sources.
+## Relation to CHANGELOG
 
-See the [Three-body source contract](THREE_BODY_SOURCE_CONTRACT.md) for the current public synchronization and promotion rules.
+HISTORY records architectural eras and boundary-shaping transitions. CHANGELOG records exact public repository and component chronology. The two files are intentionally complementary rather than duplicative; routine maintenance, file-level detail and exact commit history belong in CHANGELOG.
+
+## Future-history rule
+
+Add a new public era only when a change materially reshapes the public body, a public component family, a public portable contract or a public disclosure boundary. Preserve historical wording and use bounded language when evidence is bounded. Internal migrations, private-source lineage, professional operating detail and reserved material remain in their sovereign sources.
+
+See the Three-body source contract for the current public synchronization and promotion rules: docs/THREE_BODY_SOURCE_CONTRACT.md.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
