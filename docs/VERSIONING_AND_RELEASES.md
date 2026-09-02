@@ -20,20 +20,22 @@ They should not be collapsed into one number.
 - The public component inventory is tracked separately from the portable inventory in `registry/public-portables.json` schema 1.1 and `registry/PUBLIC_PORTABLES.md`.
 - Preflight, Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Connected Sources, Source Hygiene, Signal Calibration and Procedural Projection are public components outside the portable registry.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
-- Website: production public convenience surface; current Chat–Work V3 mirror must remain byte-equal to the canonical V3 portable before mirror status is called verified.
+- Website: production public convenience surface; each current portable mirror must remain byte-equal to its canonical current portable before mirror status is called verified.
 - Repository: luahelenammc/Moon-Source, public reference and versioning body; software and automation are Apache-2.0, while documentation, methods and public portables are CC-BY-4.0.
 
 ## Release rules
 
 1. Every current public portable has one canonical repository path.
-2. Website copies are convenience mirrors, not competing semantic sources.
-3. Superseded versions remain recoverable where feasible.
-4. A version change must state whether it is additive, corrective, incompatible or archival.
-5. A major MSL version requires a semantic grammar change and migration guidance, not a new label.
-6. A public release must pass the public-boundary and claim checks.
-7. A release that changes content identity, authorship, upstream lineage, transformation status, canonical path, permission scope, disclosure boundary, derivative relationship or mirror identity must run the relevant [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) custody checks.
-8. Exact-identity claims should use version/fingerprint evidence when appropriate, without treating a fingerprint as proof of authorship, ownership or permission.
-9. License rights come from the applicable standard license and file-level metadata; they are not broadened beyond those terms by implication.
+2. The active `main` tree exposes only the latest public generation of each portable family.
+3. When a portable is superseded, remove the superseded file from the live repository tree and remove its live website mirror; preserve history through Git history and, when useful, immutable tags or releases.
+4. Website copies are convenience mirrors of current canonical files, not competing semantic sources or compatibility archives.
+5. A version change must state whether it is additive, corrective, incompatible or archival.
+6. A major MSL version requires a semantic grammar change and migration guidance, not a new label.
+7. A public release must pass the public-boundary and claim checks.
+8. A release that changes content identity, authorship, upstream lineage, transformation status, canonical path, permission scope, disclosure boundary, derivative relationship or mirror identity must run the relevant [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) custody checks.
+9. Exact-identity claims should use version/fingerprint evidence when appropriate, without treating a fingerprint as proof of authorship, ownership or permission.
+10. License rights come from the applicable standard license and file-level metadata; they are not broadened beyond those terms by implication.
+11. A user-facing link labeled **Download** must use a route intended to download the file; inline browse/open routes must be labeled as browse/open instead.
 
 ## MSL decision
 
@@ -51,15 +53,15 @@ The 2026-08-26 Context Receipt and stack-legibility refinement is additive. It n
 
 Chat–Work V3 is a **material additive-and-superseding portable release**, not an MSL grammar change.
 
-It preserves V2's separation of surface/model/effort, Work Readiness Gate, Return Contract and Chat acceptance seed, then makes the return path loadbearing through mandatory Chat Postflight, residual dispositions, route-by-remaining-work, bounded Chat repair, explicit cycle completion states, next-step buckets and delta-only Work re-entry.
+It preserves the prior generation's separation of surface/model/effort, Work Readiness Gate, Return Contract and Chat acceptance seed, then makes the return path loadbearing through mandatory Chat Postflight, residual dispositions, route-by-remaining-work, bounded Chat repair, explicit cycle completion states, next-step buckets and delta-only Work re-entry.
 
-V2 remains recoverable and its old path is intentionally retained as a superseded compatibility entrypoint. The V3 release does **not** claim that any native or personal `chat-work-router` skill has independently advanced to V3; skill synchronization remains a separate projection and verification event.
+The superseded V2 file is not part of the current repository tree or current website mirror surface. Its historical contents remain recoverable through Git history. The V3 release does **not** claim that any native or personal `chat-work-router` skill has independently advanced to V3; skill synchronization remains a separate projection and verification event.
 
 MSL remains 4.3 because the structural grammar did not change.
 
 ## Future versions
 
-A future MSL major version would need evidence that the grammar itself has changed: for example, a new invariant, a new form-selection law or a new structural responsibility that cannot remain a procedural projection or protocol. If that happens, publish migration guidance and preserve MSL 4.3 as a prior generation.
+A future MSL major version would need evidence that the grammar itself has changed: for example, a new invariant, a new form-selection law or a new structural responsibility that cannot remain a procedural projection or protocol. If that happens, publish migration guidance, promote the new MSL generation as the only live MSL portable in `main`, and preserve the prior generation through Git history or an immutable release rather than a parallel current-tree file.
 
 ## Public routes
 
