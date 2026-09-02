@@ -1,17 +1,27 @@
-# 🔀 Chat–Work Routing Protocol V2
+# 🔀 Chat–Work Routing Protocol V3
 
-A public, ChatGPT-first protocol for separating surface, model and reasoning-effort decisions.
+A public, ChatGPT-first closed-loop protocol for separating surface, model and reasoning-effort decisions **and** for governing what happens after Work returns.
 
-[⬇️ **Download / open Chat–Work Routing Protocol V2 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md)
+[⬇️ **Download / open Chat–Work Routing Protocol V3 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md)
 
-- 📌 Current version: 2.0-public
-- 🗂️ Canonical file: [CHAT_WORK_ROUTING_PROTOCOL_V2.md](CHAT_WORK_ROUTING_PROTOCOL_V2.md)
+- 📌 Current version: 3.0-public
+- 🗂️ Canonical file: [CHAT_WORK_ROUTING_PROTOCOL_V3.md](CHAT_WORK_ROUTING_PROTOCOL_V3.md)
 - 🌐 Language: English
-- 🕒 Freshness: date-sensitive; recheck product behavior and model calibration
+- 🕒 Freshness: protocol semantics current as of 2026-09-02; product/model calibration remains date-sensitive
 - 🔓 License: [CC BY 4.0](../../LICENSES/CC-BY-4.0.txt); share/adapt with credit and change indication
 - 📜 Licensing route: [LICENSING.md](../../LICENSING.md)
 - 🧬 Credits and attribution operations: [public protocol](../../docs/CREDITS_ATTRIBUTION_OPS.md)
-- 🛡️ Claim ceiling: published routing protocol; not an OpenAI policy or universal benchmark
+- 🛡️ Claim ceiling: published routing protocol V3; not an OpenAI policy, universal benchmark or proof that a native `chat-work-router` V3 skill is installed
+
+## What V3 changes
+
+V2 already had the right seed: Work returned receipts and Chat performed acceptance. V3 closes that loop operationally.
+
+> **Work completion != cycle completion. Work executes; Chat closes the loop.**
+
+After Work, Chat must refresh the real state, audit evidence, classify residuals, repair bounded issues locally when possible, and create a new Work handoff only for an unresolved irreducible delta.
+
+V2 remains at [CHAT_WORK_ROUTING_PROTOCOL_V2.md](CHAT_WORK_ROUTING_PROTOCOL_V2.md) as a superseded compatibility entrypoint with full historical text recoverable through Git history.
 
 Want the whole public architecture instead? [📦 Download the complete Moon Source repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip).
 
