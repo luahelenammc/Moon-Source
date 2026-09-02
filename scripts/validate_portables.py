@@ -46,6 +46,7 @@ TOP_LEVEL_URLS = (
     "professional_context_url",
 )
 URL_RE = re.compile(r"https?://[^)\s>]+")
+PORTABLE_SUPPORT_FILES = {"README.md", "CHANGELOG.md"}
 
 
 def fail(message: str) -> None:
@@ -79,13 +80,43 @@ def main() -> None:
             fail(f"duplicate canonical path: {path_value}")
         seen_paths.add(path_value)
 
+        if portable["status"] != "current":
+            fail(f"{portable['id']} is not current; the live registry exposes only current generations")
+        if portable["archive_paths"]:
+            fail(f"{portable['id']} exposes superseded archive paths in the live registry")
+
+        family_dir = ROOT / "portables" / portable["slug"]
+        if family_dir.is_dir():
+            allowed_names = PORTABLE_SUPPORT_FILES | {path.name}
+            extra_markdown = sorted(
+                candidate.name
+                for candidate in family_dir.glob("*.md")
+                if candidate.name not in allowed_names
+            )
+            if extra_markdown:
+                fail(
+                    f"{portable['id']} exposes non-current portable markdown files: {extra_markdown}"
+                )
+
         content = path.read_text(encoding="utf-8")
         expected_sha256 = portable["canonical_sha256"]
         if not re.fullmatch(r"[0-9a-f]{64}", expected_sha256):
             fail(f"{portable['id']} has an invalid canonical_sha256")
         actual_sha256 = hashlib.sha256(path.read_bytes()).hexdigest()
         if actual_sha256 != expected_sha256:
-            fail(f"{portable['id']} canonical_sha256 does not match its file")
+            fail(
+                f"{portable['id']} canonical_sha256 does not match its file: "
+                f"expected={expected_sha256} actual={actual_sha256}"
+            )
+
+        expected_download_url = (
+            f"{data['canonical_repository']}/raw/refs/heads/main/{path_value}"
+        )
+        if portable["download_url"] != expected_download_url:
+            fail(
+                f"{portable['id']} download_url must use the GitHub raw-download route: "
+                f"{expected_download_url}"
+            )
 
         if not portable["mirror_path"].startswith("moonsource/downloads/"):
             fail(f"{portable['id']} mirror_path is outside the website download surface")
@@ -120,7 +151,7 @@ def main() -> None:
         if not URL_RE.search(content):
             fail(f"{portable['id']} contains no public metadata URL")
 
-    print(f"validated {len(data['portables'])} public portables")
+    print(f"validated {len(data['portables'])} current public portables")
 
 
 if __name__ == "__main__":

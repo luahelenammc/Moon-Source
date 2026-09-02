@@ -20,7 +20,7 @@ Use Preflight to identify the requested outcome and the decision that must be cu
 - [Connected Sources](../../docs/CONNECTED_SOURCES.md) for source hierarchy, freshness and retrieval scope.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for contradiction and stale-state diagnosis.
 - [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) for receipts, retries and readback.
-- [Chat–Work Routing Protocol V2](../../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) when the work moves between AI surfaces.
+- [Chat–Work Routing Protocol V3](../../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) when the work moves between AI surfaces.
 
 ## Possible smallest materialization
 

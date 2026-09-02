@@ -1,14 +1,14 @@
 # Public Portables
 
-These are the current public portables in the Moon Source family. Each has one canonical path in this repository.
+These are the current public portables in the Moon Source family. Each has one canonical path in this repository. The active tree exposes only the latest generation of each portable family.
 
 Want everything at once? [**Download the complete Moon Source repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) or open the [download hub](../DOWNLOADS.md).
 
 | ID | Title | Version | Status | License | Function | Canonical file | Download |
 |---|---|---:|---|---|---|---|---|
-| moon-source-setup | Moon Source Setup | 3.0 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive routing for proportionate personal and project AI context | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md) | [`.md`](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md) |
-| moon-source-language | Moon Source Language | 4.3 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive structural grammar for context work | [MSL_4_3.md](../portables/msl/MSL_4_3.md) | [`.md`](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/msl/MSL_4_3.md) |
-| chat-work-routing | Chat–Work Routing Protocol V3 | 3.0-public | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Closed-loop surface/model/effort routing, Chat Postflight, acceptance and re-entry | [CHAT_WORK_ROUTING_PROTOCOL_V3.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) | [`.md`](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) |
+| moon-source-setup | Moon Source Setup | 3.0 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive routing for proportionate personal and project AI context | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md) | [⬇️ `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/setup/MOON_SOURCE_SETUP.md) |
+| moon-source-language | Moon Source Language | 4.3 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive structural grammar for context work | [MSL_4_3.md](../portables/msl/MSL_4_3.md) | [⬇️ `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/msl/MSL_4_3.md) |
+| chat-work-routing | Chat–Work Routing Protocol V3 | 3.0-public | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Closed-loop surface/model/effort routing, Chat Postflight, acceptance and re-entry | [CHAT_WORK_ROUTING_PROTOCOL_V3.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) | [⬇️ `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) |
 
 ## Public components outside the portable registry
 
@@ -34,27 +34,27 @@ The [Browser Console Device reference](../examples/browser-console-device/) rema
 
 ## Website mirrors
 
-The current branded website keeps convenience copies under:
+The current branded website keeps convenience copies of the current portables under:
 
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_SETUP.md
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_4_3.md
 - https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V3_MSL_4_3.md
 
-The former V2 website path may remain available as a superseded compatibility entrypoint. These paths are mirrors for access. The repository paths above are the canonical semantic sources for the current public family.
+These paths mirror only the current generation. Superseded mirror files are removed from the live surface and remain recoverable through Git history when needed.
 
 ## Freshness
 
 Setup and MSL are general public documents, but their wording can evolve. Chat–Work contains a stable routing/postflight core plus product and model calibration that must be rechecked before volatile product facts are treated as current.
 
-## Legacy policy
+## Historical-version policy
 
-A superseded version should remain recoverable through Git history, an archive path or a preserved website URL where feasible. It should be marked superseded rather than silently deleted.
+The live repository and live mirror surface expose only current portable generations. A superseded portable is removed from `main` and from the website download tree when its successor is promoted.
 
-Chat–Work V2 was superseded by V3 on 2026-09-02. Its old canonical path remains a compatibility entrypoint and its full V2 text remains recoverable through Git history.
+Historical versions remain recoverable through Git history and, when useful, immutable tags or releases. History belongs to version control; it does not remain loaded into the current corpus merely to keep an old deep link alive.
 
 ## Mirror synchronization contract
 
-The repository paths in the table are the only current semantic sources. The branded website paths are convenience mirrors preserved for compatibility.
+The repository paths in the table are the only current semantic sources. The branded website paths are current convenience mirrors, not compatibility archives.
 
 Each registry entry records the mirror path, mirror URL, portable version and canonical SHA-256 fingerprint. Run `python scripts/check_mirror_sync.py` after any portable or mirror change. Historical mirror synchronization and production promotion remain documented in Git history and [MIRROR_SYNCHRONIZATION.md](../docs/MIRROR_SYNCHRONIZATION.md).
 

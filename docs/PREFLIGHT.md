@@ -242,7 +242,7 @@ Preflight routes to specialized safeguards rather than trying to become every sa
 - [Source Hygiene](SOURCE_HYGIENE.md) for stale, contradictory or bloated corpora;
 - [Signal Calibration](SIGNAL_CALIBRATION.md) for weak or ambiguous signals that need a bounded working inference;
 - [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when intellectual lineage, custody, transformation or permission boundaries matter;
-- [Chat–Work Routing Protocol V2](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) when surface, model or reasoning effort materially affects the work;
+- [Chat–Work Routing Protocol V3](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) when surface, model or reasoning effort materially affects the work;
 - [Field to Form](FIELD_TO_FORM.md) when the field itself must be understood before a materialization is chosen.
 
 ## 10. Output and execution contract
@@ -407,7 +407,7 @@ Preflight is transversal, but it does not own every decision it can reveal.
 | [Setup 3.0](../portables/setup/MOON_SOURCE_SETUP.md) | Personal and project-context setup and routing | Setup's Adaptive Preflight is a specialization of this broader mechanism. |
 | [Source Hygiene](SOURCE_HYGIENE.md) | Bounded diagnosis and repair of stale or contradictory corpora | Preflight identifies corpus quality as the real problem; Source Hygiene performs the bounded operation. |
 | [Signal Calibration](SIGNAL_CALIBRATION.md) | Working inference from weak or ambiguous signals | Preflight decides whether inference is materially needed and what evidence bar applies. |
-| [Chat–Work Routing](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) | Surface, model and reasoning-effort routing | Preflight can identify routing as consequential; the protocol performs that specialized choice. |
+| [Chat–Work Routing](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) | Surface, model, reasoning-effort and postflight routing | Preflight can identify routing as consequential; the protocol performs that specialized choice. |
 | [Procedural Projection](PROCEDURAL_PROJECTION.md) | Turning a stable method into reusable procedures and projections | Preflight can be documented as a method; it does not recursively create a second Preflight procedure by default. |
 
 The relationship is therefore:

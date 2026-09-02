@@ -2,7 +2,7 @@
 
 The public portable edition of MSL 4.3, the adaptive structural grammar used to choose proportionate form for context work.
 
-[⬇️ **Download / open Moon Source Language 4.3 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/msl/MSL_4_3.md)
+[⬇️ **Download Moon Source Language 4.3 (.md)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/msl/MSL_4_3.md)
 
 - 📌 Current version: 4.3
 - 🗂️ Canonical file: [MSL_4_3.md](MSL_4_3.md)

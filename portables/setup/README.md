@@ -4,7 +4,7 @@ A public portable that finds the **smallest useful AI context setup for what you
 
 You do not need to decide whether you are a beginner, power user or builder before starting. Setup 3.0 begins from your need, destination and privacy boundary, then infers how much structure is useful.
 
-[⬇️ **Open Moon Source Setup 3.0 (.md)**](https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md)
+[⬇️ **Download Moon Source Setup 3.0 (.md)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/setup/MOON_SOURCE_SETUP.md)
 
 ## Start here
 
