@@ -72,7 +72,7 @@ Choose the public entry point that matches the field in front of you:
 - **Personal or project context:** start with [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
 - **Project, team or knowledge field:** run the [Field-to-Form diagnostic](docs/FIELD_TO_FORM.md) before choosing a document type.
 - **Structure, source, handoff or protocol design:** use [MSL 4.3](portables/msl/MSL_4_3.md) after the responsibility is clear.
-- **ChatGPT execution routing:** use the [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) when surface, model or reasoning effort is the actual decision.
+- **ChatGPT execution routing:** use the [Chat–Work Routing Protocol V3](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) when surface, model or reasoning effort is the actual decision.
 - **Intellectual lineage and immaterial-asset protection:** use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material must retain identity, authorship, canonicality, transformation history, permission scope, disclosure boundaries, derivative lineage and recoverable evidence as it moves or changes.
 - **Licensing and redistribution:** use [LICENSING](LICENSING.md) to route software to Apache-2.0, documentation and public portables to CC-BY-4.0, and third-party material to its own terms.
 - **Reusable procedure:** use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.
