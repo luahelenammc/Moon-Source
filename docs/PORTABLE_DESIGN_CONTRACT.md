@@ -40,9 +40,19 @@ A portable should:
 
 ## Canonicalization
 
-A portable has one canonical path in this repository. A website or other surface may mirror it for convenience, but the mirror must preserve version, content identity and links back to the canonical repository.
+A portable has one canonical **current** path in this repository. The active repository tree exposes only the latest public generation of each portable family. Superseded portable files must not remain beside the current version in `main`, under compatibility filenames or in an archive directory that ships with the current tree.
+
+Historical generations remain recoverable through Git history and, when useful, immutable tags or releases. Historical recoverability is a version-control responsibility, not a reason to keep stale operational files in the live corpus.
+
+A website or other surface may mirror the current portable for convenience, but the mirror must preserve version, content identity and links back to the canonical repository. Superseded mirrors should be removed from the live download surface when the new generation is promoted.
 
 If the portable is transformed rather than mirrored byte-for-byte, describe the transformation honestly and preserve the upstream canonical identity. Use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when the resulting artifact needs a derivative or custody record.
+
+## Distribution semantics
+
+A link labeled **Download** should trigger the platform's file-download route rather than merely opening a rendered or inline raw document. Browse/open links and download links are different interface promises and should be labeled accordingly.
+
+For GitHub-hosted current `.md` portables, Moon Source uses GitHub's `github.com/<owner>/<repo>/raw/refs/heads/<branch>/<path>` download route in user-facing download surfaces. The canonical repository path remains the semantic identity; the download URL is a delivery route.
 
 ## Reuse
 
@@ -50,7 +60,9 @@ Current Moon Source portables are Moon-authored open content under CC-BY-4.0 unl
 
 ## Mirror synchronization
 
-A mirror may exist for access and backward-compatible URLs, but it is never a second semantic source. Preserve the mapped path, version and exact canonical bytes. Record the expected SHA-256 fingerprint in `registry/public-portables.json` and verify it with `scripts/check_mirror_sync.py`.
+A mirror may exist for access, but it is never a second semantic source. Preserve the mapped current path, version and exact canonical bytes. Record the expected SHA-256 fingerprint in `registry/public-portables.json` and verify it with `scripts/check_mirror_sync.py`.
+
+The live mirror surface should expose only the latest generation of each portable family. Historical mirror URLs are not part of the current mirror contract.
 
 A matching fingerprint supports exact byte identity for that artifact. It does not prove authorship, ownership or legal permission.
 
