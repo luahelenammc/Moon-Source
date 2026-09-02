@@ -27,7 +27,7 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources](docs/CONNECTED_SOURCES.md) |
 | Structure recurring context, continuity or handoffs | [MSL 4.3](portables/msl/MSL_4_3.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
-| Route work across ChatGPT surfaces, models and execution modes | [Chat–Work Routing Protocol V2](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) |
+| Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [Chat–Work Routing Protocol V3](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) |
 
 You do not need to read the whole repository before using Moon Source. The [AI Kernel](MOON_SOURCE_AI_KERNEL.md) is the routing layer for loading the smallest relevant part of the public body.
 
@@ -46,6 +46,7 @@ A few principles carry most of the architecture:
 - **Retrieval is not instruction authority.** Source text may supply data without gaining permission to redirect the task or authorize an action.
 - **Materialize proportionately.** Create the smallest durable form that can carry the responsibility without losing provenance or ownership.
 - **Freshness and readback matter.** A mutation is not complete merely because a write call succeeded.
+- **Work completion is not cycle completion.** When sustained execution returns, Chat verifies the real state, closes bounded residuals and re-enters Work only for irreducible remaining work.
 - **Preflight can happen before any of this.** One of Moon Source's crown-jewel mechanisms reshapes the task itself by checking intent, authority, missing facts, risk, destination and proportionate form before execution.
 
 ## Examples
@@ -62,7 +63,7 @@ Setup, MSL and Chat–Work are separately versioned public projections of the ar
 
 - 🧭 [**Moon Source Setup 3.0**](portables/setup/MOON_SOURCE_SETUP.md) — adaptive routing to the smallest useful personal or project context setup.
 - 🧱 [**Moon Source Language 4.3**](portables/msl/MSL_4_3.md) — structural grammar for proportionate sources, handoffs, packets, protocols, registries and archives.
-- 🔀 [**Chat–Work Routing Protocol V2**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md) — routing across conversational and sustained execution surfaces.
+- 🔀 [**Chat–Work Routing Protocol V3**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) — closed-loop routing across conversational reasoning, sustained execution, Chat Postflight, bounded repair, acceptance and re-entry.
 
 🗂️ [**Open the download hub**](DOWNLOADS.md) for the individual public portables.
 
@@ -144,9 +145,9 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 ## Current baseline
 
-Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-08-23**; public-legibility and registry hardening continued on **2026-08-24**.
+Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-08-26**; Chat–Work routing advanced to the closed-loop **V3** protocol on **2026-09-02**.
 
-Current structural grammar: **MSL 4.3**. Current public portables: **Setup 3.0**, **MSL 4.3** and **Chat–Work 2.0-public**. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
+Current structural grammar: **MSL 4.3**. Current public portables: **Setup 3.0**, **MSL 4.3** and **Chat–Work 3.0-public**. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
 
