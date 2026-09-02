@@ -136,7 +136,7 @@
       "function": "Adaptive routing to the smallest useful personal, project or context-transfer setup",
       "best_for": "People who want AI to understand a real need better without being forced through an oversized architecture",
       "canonical_path": "portables/setup/MOON_SOURCE_SETUP.md",
-      "download_url": "https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/setup/MOON_SOURCE_SETUP.md",
+      "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/setup/MOON_SOURCE_SETUP.md",
       "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_SETUP.md",
       "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -166,7 +166,7 @@
       "function": "Choose proportionate structure for context, continuity and transport",
       "best_for": "Recurring projects, governed sources, handoffs, packets, registries and context systems",
       "canonical_path": "portables/msl/MSL_4_3.md",
-      "download_url": "https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/msl/MSL_4_3.md",
+      "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/msl/MSL_4_3.md",
       "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_4_3.md",
       "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -196,7 +196,7 @@
       "function": "Route across Chat and Work as a closed loop: surface/model/effort selection, evidence-bearing return, Chat Postflight, bounded repair, acceptance and delta-only re-entry",
       "best_for": "ChatGPT users working across conversational reasoning and sustained execution surfaces who need auditable post-Work closure",
       "canonical_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md",
-      "download_url": "https://raw.githubusercontent.com/luahelenammc/Moon-Source/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md",
+      "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md",
       "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V3_MSL_4_3.md",
       "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -212,9 +212,7 @@
       "freshness": "protocol semantics as of 2026-09-02; recheck volatile product behavior, model names, prices and usage pools",
       "claim_ceiling": "Published Chat–Work V3 protocol; not an OpenAI policy, universal benchmark or proof that a native chat-work-router V3 skill is installed",
       "supersedes": "2.0-public",
-      "archive_paths": [
-        "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V2.md"
-      ],
+      "archive_paths": [],
       "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V3_MSL_4_3.md",
       "canonical_sha256": "7370deeb60b379e7569cd5ee29392f70ec0ff9283e91ddbd07f0c9d6abf2ef0d"
     }
@@ -224,16 +222,17 @@
     "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
     "mirror_repository": "https://github.com/luahelenammc/LUAHELENA",
     "mirror_branch": "main",
-    "rule": "The repository is the only semantic and versioning source; website downloads are convenience mirrors with preserved legacy paths.",
+    "rule": "The repository is the only semantic and versioning source; the live website download surface mirrors only current portable generations.",
     "update_procedure": [
-      "Update the canonical portable in Moon-Source first.",
+      "Update the canonical current portable in Moon-Source first.",
       "Run scripts/validate_portables.py and scripts/check_links.py.",
-      "Copy the exact canonical UTF-8 bytes to the mapped LUAHELENA moonsource/downloads path on a branch.",
+      "Copy the exact canonical UTF-8 bytes to the mapped current LUAHELENA moonsource/downloads path on a branch.",
+      "Remove any superseded mirror file from the live website download tree.",
       "Run scripts/check_mirror_sync.py against the remote mirror or a local LUAHELENA checkout.",
       "Open and review a website pull request; merge only after SHA-256 equality and production-surface review."
     ],
     "mismatch_detection": "python scripts/check_mirror_sync.py",
-    "current_rebase_note": "Chat–Work V3 was prepared on 2026-09-02 as the current canonical protocol. V2 remains a superseded compatibility path. LUAHELENA PR #32 merged as c2835491d81b2f3170fa68f9e5106f0e28daa493; the V3 canonical and website mirror shared Git blob 66250ec748c11e784be9589e576cdbb5c2c13201 before promotion, confirming byte identity."
+    "current_rebase_note": "Chat–Work V3 is the current canonical protocol. Superseded V2 files are removed from the live Moon-Source and LUAHELENA trees; historical V2 content remains recoverable through Git history. Current portable mirrors remain exact byte copies of their canonical current files."
   },
   "_moon_source_public_stamp": {
     "project": "Moon Source",
