@@ -14,13 +14,13 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive component and operational updates continued through 2026-08-23; public-legibility, registry and facade hardening is recorded on 2026-08-24; Context Receipt, loading-discipline and stack-legibility refinements are recorded on 2026-08-26.
+- Public architecture baseline: 2026-08-16; additive component and operational updates continued through 2026-08-26; Chat–Work closed-loop routing advanced to V3 on 2026-09-02.
 - Current structural grammar: MSL 4.3.
-- Public portables: Setup 3.0, MSL 4.3, Chat–Work Routing Protocol 2.0-public.
+- Public portables: Setup 3.0, MSL 4.3, Chat–Work Routing Protocol 3.0-public.
 - The public component inventory is tracked separately from the portable inventory in `registry/public-portables.json` schema 1.1 and `registry/PUBLIC_PORTABLES.md`.
 - Preflight, Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Connected Sources, Source Hygiene, Signal Calibration and Procedural Projection are public components outside the portable registry.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
-- Website: production public convenience surface; canonical and mapped mirror bytes were verified after promotion on 2026-08-16.
+- Website: production public convenience surface; current Chat–Work V3 mirror must remain byte-equal to the canonical V3 portable before mirror status is called verified.
 - Repository: luahelenammc/Moon-Source, public reference and versioning body; software and automation are Apache-2.0, while documentation, methods and public portables are CC-BY-4.0.
 
 ## Release rules
@@ -43,9 +43,19 @@ The expanded Credits & Attribution Ops component does not by itself require an M
 
 The 2026-08-23 Operational Devices / Operational Reliability / Failure Foundry update is additive. It makes execution, receipts, failure boundaries and failure-to-capability projection explicit without changing the MSL grammar, bumping an existing portable or adding a repository-wide license. The Browser Console Device remains an experimental reference implementation and is not a current portable.
 
-The 2026-08-24 public-legibility hardening is additive. It adds hypothetical application scenarios, Git-derived public component chronology, registry validation, a bounded README digest, contribution ergonomics, CI self-audit and a website facade pass without changing MSL 4.3, Setup 3.0, Chat–Work 2.0-public or portable bytes.
+The 2026-08-24 public-legibility hardening is additive. It adds hypothetical application scenarios, Git-derived public component chronology, registry validation, a bounded README digest, contribution ergonomics, CI self-audit and a website facade pass without changing MSL 4.3, Setup 3.0 or the then-current Chat–Work V2 portable bytes.
 
-The 2026-08-26 Context Receipt and stack-legibility refinement is additive. It names progressive / just-in-time context loading, separates source/data authority from instruction authority, adds proportional context-path evidence to Operational Reliability and clarifies Moon Source's complementary position around model, harness/runtime and retrieval layers without changing MSL 4.3, Setup 3.0, Chat–Work 2.0-public or portable bytes.
+The 2026-08-26 Context Receipt and stack-legibility refinement is additive. It names progressive / just-in-time context loading, separates source/data authority from instruction authority, adds proportional context-path evidence to Operational Reliability and clarifies Moon Source's complementary position around model, harness/runtime and retrieval layers without changing MSL 4.3, Setup 3.0 or the then-current Chat–Work V2 portable bytes.
+
+### Chat–Work V3 release — 2026-09-02
+
+Chat–Work V3 is a **material additive-and-superseding portable release**, not an MSL grammar change.
+
+It preserves V2's separation of surface/model/effort, Work Readiness Gate, Return Contract and Chat acceptance seed, then makes the return path loadbearing through mandatory Chat Postflight, residual dispositions, route-by-remaining-work, bounded Chat repair, explicit cycle completion states, next-step buckets and delta-only Work re-entry.
+
+V2 remains recoverable and its old path is intentionally retained as a superseded compatibility entrypoint. The V3 release does **not** claim that any native or personal `chat-work-router` skill has independently advanced to V3; skill synchronization remains a separate projection and verification event.
+
+MSL remains 4.3 because the structural grammar did not change.
 
 ## Future versions
 
