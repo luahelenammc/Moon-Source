@@ -1,6 +1,6 @@
 {
   "registry_version": "1.1",
-  "as_of": "2026-09-02",
+  "as_of": "2026-09-04",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
   "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -81,6 +81,19 @@
       "public_created_on": "2026-08-23",
       "last_material_update_on": "2026-08-26",
       "last_material_update_summary": "Separated source/data authority from instruction authority, added indirect-instruction failure handling and named proportional progressive loading.",
+      "status": "current"
+    },
+    {
+      "id": "source-operations",
+      "title": "Source Operations — Retrieve, Process, Metabolize and Promote",
+      "class": "source-operations-method",
+      "canonical_path": "docs/SOURCE_OPERATIONS.md",
+      "function": "Define how governed context is retrieved, processed, metabolized within its jurisdiction or deliberately promoted across jurisdictions, with lifecycle, succession, lineage and readback rules",
+      "claim_ceiling": "Bounded public source-operations and lifecycle method; not an autonomous migration, promotion or archive engine, universal standard or adoption claim",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-09-04",
+      "last_material_update_on": "2026-09-04",
+      "last_material_update_summary": "Promoted a public source-operations and lifecycle method for retrieve, process, metabolize, promote, succession, readback and no-delta.",
       "status": "current"
     },
     {

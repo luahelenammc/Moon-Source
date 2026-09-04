@@ -40,6 +40,12 @@ Use the smallest loop that can explain the problem:
 
 A diagnosis can conclude that no mutation is warranted. “No change” is a valid repair when the evidence is insufficient or the risk of rewriting is higher than the gain.
 
+## Relationship to Source Operations
+
+[Source Operations](SOURCE_OPERATIONS.md) owns the operation chosen after a hygiene finding is confirmed: retrieve, process, metabolize or promote. It also defines the smallest sovereign destination, readback, no_delta_with_reason, lifecycle and legacy-successor rules.
+
+Source Hygiene remains the diagnostic owner. A scan may conclude that the source already contains the needed function, that evidence is insufficient, or that no mutation is warranted. In those cases, preserve the finding without cosmetic rewriting and use the appropriate no-delta or incubation disposition.
+
 ## 🧪 Proportional output
 
 A useful finding should be recorded with:

@@ -7,6 +7,7 @@ The following objects can work together, but they do not perform the same job.
 | Field | The real situation | Supply the context that must be understood | A document template |
 | Source | Governed context | Hold facts, decisions, rules or material with an authority boundary | Every note ever written |
 | Living source | Updateable governed context | Keep scope, freshness, owner and active state visible | A chat transcript |
+| Source Operations | Public operation grammar | Distinguish retrieve, process, metabolize and promote, with mutation, lifecycle, succession, readback and no-delta rules | A source of facts, a connector or an autonomous migration engine |
 | Connected source | Reachable governed external context | Expose a source through a connector while preserving authority, jurisdiction, freshness, provenance and verification | Authority merely because it is reachable |
 | Source substrate | Persistent accessible source body | Preserve stable identity, retrieval, freshness, permissions and history for living-source operation | A vendor-specific ontology or automatic source of truth |
 | Connector / app | Bounded access or action surface | Carry read, search or authorized action capability between the AI and a substrate | Mutation authority, exhaustive understanding or semantic ownership |
@@ -49,7 +50,7 @@ System:
 [paste the file list, folder layout, workflow or object descriptions]
 ```
 
-If the field itself is still unclear, begin with [Field to Form](FIELD_TO_FORM.md). If a structural artifact or handoff is needed, use [MSL 4.3](../portables/msl/MSL_4_3.md). If a procedure needs a concrete execution surface, use [Operational Devices](OPERATIONAL_DEVICES.md) with [Operational Reliability](OPERATIONAL_RELIABILITY.md). If intellectual material needs identity, lineage or custody protection while it moves, changes, forks, mirrors or passes through AI, use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md). If the unresolved issue is where ChatGPT work should run, use the [Chat–Work Routing Protocol V3](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md).
+If the field itself is still unclear, begin with [Field to Form](FIELD_TO_FORM.md). For the operation chosen after the field and authority are clear, use [Source Operations](SOURCE_OPERATIONS.md). If a structural artifact or handoff is needed, use [MSL 4.3](../portables/msl/MSL_4_3.md). If a procedure needs a concrete execution surface, use [Operational Devices](OPERATIONAL_DEVICES.md) with [Operational Reliability](OPERATIONAL_RELIABILITY.md). If intellectual material needs identity, lineage or custody protection while it moves, changes, forks, mirrors or passes through AI, use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md). If the unresolved issue is where ChatGPT work should run, use the [Chat–Work Routing Protocol V3](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md).
 
 **Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
 
