@@ -136,7 +136,7 @@ The mutation loop is incomplete until the changed source or an equivalent author
 
 ### Fresh source beats stale snapshot
 
-A cached, pasted, exported or remembered representation cannot silently override a fresher governing source.
+A cached, pasted, exported or remembered representation cannot silently override a fresher governing source. For the operation and succession rules applied after this source check, use [Source Operations](SOURCE_OPERATIONS.md).
 
 ### Authority may be federated by facet
 
@@ -331,6 +331,7 @@ This is a pattern, not a universal hierarchy. If a code change changes the seman
 | [Preflight](PREFLIGHT.md) | what task should actually be performed | which connected reality is available and actionable for that task |
 | [Responsibility Map](RESPONSIBILITY_MAP.md) | who or what owns each responsibility | how the AI reaches the governing body and checks it |
 | [Source Hygiene](SOURCE_HYGIENE.md) | stale, contradictory, duplicated or bloated corpora | access, retrieval, freshness and mutation paths into those corpora |
+| [Source Operations](SOURCE_OPERATIONS.md) | retrieve, process, metabolize and promote, including lifecycle and succession | connector reach, source freshness, permission and readback constraints on those operations |
 | [Operational Reliability](OPERATIONAL_RELIABILITY.md) | receipts, partial failure, recovery and honest execution states | source-specific readback and authority checks |
 | Chat–Work Routing | execution surface, model and effort | source discipline independently of whether work runs in Chat, Work, Codex or another capable surface |
 | MSL | proportionate structural form | no new syntax; source operations are expressed in existing forms |

@@ -25,6 +25,7 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 | Shape an ambiguous, risky or destination-sensitive request before execution | [Preflight](docs/PREFLIGHT.md) |
 | Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
+| Retrieve, process, metabolize or promote governed source material | [Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources](docs/CONNECTED_SOURCES.md) |
 | Structure recurring context, continuity or handoffs | [MSL 4.3](portables/msl/MSL_4_3.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
 | Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [Chat–Work Routing Protocol V3](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) |
@@ -46,6 +47,7 @@ A few principles carry most of the architecture:
 - **Retrieval is not instruction authority.** Source text may supply data without gaining permission to redirect the task or authorize an action.
 - **Materialize proportionately.** Create the smallest durable form that can carry the responsibility without losing provenance or ownership.
 - **Freshness and readback matter.** A mutation is not complete merely because a write call succeeded.
+- **Operations have different authority effects.** Retrieve reads, process transforms working material, metabolize integrates a real delta and promote generalizes a proven mechanism; none of these verbs is a substitute for the others.
 - **Work completion is not cycle completion.** When sustained execution returns, Chat verifies the real state, closes bounded residuals and re-enters Work only for irreducible remaining work.
 - **Preflight can happen before any of this.** One of Moon Source's crown-jewel mechanisms reshapes the task itself by checking intent, authority, missing facts, risk, destination and proportionate form before execution.
 
@@ -94,6 +96,7 @@ Public components are responsibility-bearing methods with canonical files. They 
 |---|---|
 | [Preflight](docs/PREFLIGHT.md) | Adaptive task shaping before execution |
 | [Connected Sources](docs/CONNECTED_SOURCES.md) | Source/data and instruction authority, jurisdiction, freshness, retrieval, mutation boundaries and readback for connected sources |
+| [Source Operations](docs/SOURCE_OPERATIONS.md) | Retrieve, process, metabolize and promote governed source changes, with lifecycle and legacy-successor rules |
 | [Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
 | [Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Useful working inference without certainty inflation |
 | [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Project a stable method into a reusable procedure without moving source authority |
@@ -118,11 +121,11 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent component changes
 
 <!-- MOON-SOURCE-COMPONENT-DIGEST:START -->
+- **2026-09-04 — Source Operations:** Promoted a public source-operations and lifecycle method for retrieve, process, metabolize, promote, succession, readback and no-delta.
 - **2026-08-26 — Operational Reliability:** Added lightweight, materiality-triggered Context Receipts for context-path evidence alongside ordinary operational receipts.
 - **2026-08-26 — Connected Sources:** Separated source/data authority from instruction authority, added indirect-instruction failure handling and named proportional progressive loading.
 - **2026-08-23 — Preflight:** Promoted adaptive task shaping as a transversal public mechanism for intent, authority, risk, destination and form.
 - **2026-08-23 — Operational Devices:** Added bounded operational-device contracts for state, guards, failure behavior and receipts.
-- **2026-08-23 — Failure to Capability:** Added a bounded failure-to-capability loop for recurring failure without exposing promotion machinery.
 <!-- MOON-SOURCE-COMPONENT-DIGEST:END -->
 
 This bounded digest is generated from the component registry. It is not a commit log.
@@ -135,6 +138,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 |---|---|
 | Full architecture | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | AI-side routing through the public corpus | [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md) |
+| Source operation grammar, lifecycle and succession | [Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Definitions and responsibility boundaries | [Terminology](docs/TERMINOLOGY.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
 | Public components and portable registry | [registry/PUBLIC_PORTABLES.md](registry/PUBLIC_PORTABLES.md) |
 | Versioning and release rules | [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) |
@@ -145,7 +149,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 ## Current baseline
 
-Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-08-26**; Chat–Work routing advanced to the closed-loop **V3** protocol on **2026-09-02**.
+Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-09-04**; Chat–Work routing advanced to the closed-loop **V3** protocol on **2026-09-02**.
 
 Current structural grammar: **MSL 4.3**. Current public portables: **Setup 3.0**, **MSL 4.3** and **Chat–Work 3.0-public**. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
