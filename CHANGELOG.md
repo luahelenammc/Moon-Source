@@ -2,6 +2,13 @@
 
 Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
 
+## 2026-09-04 — Source Operations, promotion and legacy succession
+
+- Added [Source Operations](docs/SOURCE_OPERATIONS.md) as the public method surface for retrieve, process, metabolize and promote.
+- Defined the promotion gate, incubation/lifecycle dispositions, smallest sovereign destination, mandatory readback and no_delta_with_reason.
+- Added a reusable legacy-successor contract with timestamped preservation guidance, current-use redirection and Git-history-versus-explicit-archive rules.
+- Reconciled Architecture, AI Kernel, Source Hygiene, Connected Sources, Archive, Responsibility Map, Existing Implementations and registry routing without creating a portable or importing private/local source content.
+
 ## 2026-08-26 — Context receipts, loading discipline and stack legibility
 
 - Added lightweight, materiality-triggered Context Receipts to Operational Reliability so a consequential context path can remain inspectable without making every lookup ceremonial.
