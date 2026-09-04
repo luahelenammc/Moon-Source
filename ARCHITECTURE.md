@@ -211,6 +211,8 @@ Transport may involve:
 
 Transport is not the same as authority. A copy can carry context while the source of truth remains elsewhere.
 
+[Source Operations](docs/SOURCE_OPERATIONS.md) defines the public operation grammar for this layer: retrieve finds governing context; process transforms the working representation without default writeback; metabolize integrates an eligible delta into the current owner; promote generalizes a mature mechanism across jurisdictions. These are distinct operations, not a mandatory pipeline.
+
 When a reusable procedure needs concrete execution, keep the relationship explicit:
 
 ```text
@@ -224,6 +226,8 @@ The device embodies the procedure on a bounded surface; it does not become a sou
 For a bounded public operation, use [Source Hygiene](docs/SOURCE_HYGIENE.md) to distinguish retrieval problems from source-architecture problems. Use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when feedback shows that a recurring method deserves a reusable procedure. Use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material needs a recoverable chain of custody across origin, authorship, canonical identity, transformation, permission, exposure, derivatives and evidence.
 
 A living architecture must account for change.
+
+The source governs; the ledger witnesses. The governing body answers what is current now; a history, checkpoint, changelog or ledger preserves how the state changed without becoming current policy merely because it is newer. Use [Source Operations](docs/SOURCE_OPERATIONS.md) for the mutation, lifecycle and legacy-successor contract that keeps this distinction operational.
 
 Feedback includes:
 
