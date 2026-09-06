@@ -36,8 +36,11 @@ def main() -> None:
         assert check(valid) == []
 
         invalid_download = root / "invalid-download.md"
+        raw_without_download = (
+            "https://github.com/example/repo/" "raw/refs/heads/main/file.md"
+        )
         invalid_download.write_text(
-            "[download](https://github.com/example/repo/raw/refs/heads/main/file.md)\n",
+            f"[download]({raw_without_download})\n",
             encoding="utf-8",
         )
         assert any("must include ?download=1" in item for item in check(invalid_download))
