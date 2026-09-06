@@ -28,11 +28,19 @@ def main() -> None:
                     "[nested](docs/FILE.md#section-name)",
                     "[same document](#same-document-anchor)",
                     "[external](https://example.com/reference)",
+                    "[download](https://github.com/example/repo/raw/refs/heads/main/file.md?download=1)",
                 ]
             ),
             encoding="utf-8",
         )
         assert check(valid) == []
+
+        invalid_download = root / "invalid-download.md"
+        invalid_download.write_text(
+            "[download](https://github.com/example/repo/raw/refs/heads/main/file.md)\n",
+            encoding="utf-8",
+        )
+        assert any("must include ?download=1" in item for item in check(invalid_download))
 
         missing = root / "missing.md"
         missing.write_text("[missing](docs/NOPE.md#section-name)\n", encoding="utf-8")
