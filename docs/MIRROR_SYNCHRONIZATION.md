@@ -33,7 +33,7 @@ A matching fingerprint supports byte identity for the checked artifact. It does 
 
 Historical mirror promotions and their fingerprints remain inspectable in Git history. They do not define the current mirror contract.
 
-On 2026-09-02, the Chat–Work V3 promotion established the latest-only rule explicitly: V3 remains the current Chat–Work portable and mirror, while the superseded V2 files are removed from both live trees. Setup was also refreshed to point directly to V3, preserving exact mirror identity after the reference change.
+The 2026-09-02 Chat–Work V3 promotion is historical. On 2026-09-06, Chat–Work V4 became the current portable and mirror: the superseded V3 files were removed from both live trees, the exact V4 bytes were copied to the mapped mirror path, and the registry fingerprint was refreshed. MSL remains 4.3.
 
 ## Mismatch detection
 
