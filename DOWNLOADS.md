@@ -25,7 +25,7 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 |---|---|---|
 | **Moon Source Setup 3.0** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/setup/MOON_SOURCE_SETUP.md) |
 | **Moon Source Language 4.3** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/msl/MSL_4_3.md) |
-| **Chat–Work Routing Protocol V4** | Closed-loop routing across ChatGPT surfaces, sustained execution, postflight, acceptance and re-entry | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) |
+| **Chat–Work Routing Protocol V4** | Object-routed execution across Chat, Work and Codex with Budget Survivability, postflight, acceptance and delta-only re-entry | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) |
 
 These links use GitHub's raw-download route for the current canonical files. Website copies are convenience mirrors, not separate semantic sources.
 
