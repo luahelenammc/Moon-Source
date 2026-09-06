@@ -201,13 +201,13 @@
       "id": "chat-work-routing",
       "title": "Chat–Work Routing Protocol V4",
       "slug": "chat-work",
-      "version": "4.1-public",
+      "version": "4.2-public",
       "status": "current",
       "class": "operational-routing-protocol",
       "language": "English",
       "difficulty": "advanced",
-      "function": "Route by sovereign object across Chat, Work and Codex using configurable execution profiles, live resource posture, task capability floor, model tier, reasoning effort, budget survival, evidence-bearing return, Chat Postflight and delta-only re-entry",
-      "best_for": "ChatGPT users and builders who need the route to adapt to their own resource posture and quality/throughput preferences while preserving capability floors, budget control and auditable closure across Chat, Work and Codex",
+      "function": "Route by sovereign object and workload shape across Chat, Work and optional Codex using configurable execution profiles, observed surface availability, capability floors, bounded direct actions, operation modes, Budget Survivability, transport capsules, evidence-bearing return, Chat Postflight and delta-only re-entry",
+      "best_for": "ChatGPT users and builders who need first-use routing to adapt to their resource posture, enabled capabilities and quality/throughput preferences while preserving capability floors, budget control and auditable closure across Chat, Work and optional Codex",
       "canonical_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md",
       "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md?download=1",
       "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md",
@@ -220,14 +220,15 @@
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
       "adaptation_policy": "Share or adapt with appropriate credit, a license link and an indication of changes; do not imply endorsement.",
       "dependencies": [
-        "Uses MSL-4.3 terminology; product and model calibration is date-sensitive"
+        "Uses MSL-4.3 terminology; product and model calibration is date-sensitive",
+        "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions"
       ],
       "freshness": "protocol semantics and calibration as of 2026-09-06; recheck volatile product behavior, model names, prices, availability and usage pools",
-      "claim_ceiling": "Published Chat–Work V4 protocol, subversion 4.1-public; not an OpenAI policy, universal benchmark or proof that a native chat-work-router V4 skill is installed",
-      "supersedes": "4.0-public",
+      "claim_ceiling": "Published Chat–Work V4 protocol, subversion 4.2-public; not an OpenAI policy, universal benchmark or proof that a native chat-work-router V4 skill is installed",
+      "supersedes": "4.1-public",
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md",
-      "canonical_sha256": "8292415fce351a83e6805d63f1c6f29111486bb248541fc37251674b8c11592d"
+      "canonical_sha256": "906dcaff3a443e2df827a8f6daa973ea0fd23876fa3d79f8c6dba3a73347d119"
     }
   ],
   "mirror_contract": {
@@ -245,7 +246,7 @@
       "Open and review a website pull request; merge only after SHA-256 equality and production-surface review."
     ],
     "mismatch_detection": "python scripts/check_mirror_sync.py",
-    "current_rebase_note": "Chat–Work V4 subversion 4.1-public is the current canonical protocol. It adds configurable Execution Profiles and live resource posture without changing the V4 public generation or MSL 4.3. Superseded V4.0 and V3 content remain recoverable through Git history; the live Moon-Source and LUAHELENA trees expose only the current V4 file."
+    "current_rebase_note": "Chat–Work V4 subversion 4.2-public is the current canonical protocol. It hardens first use with optional/setup-controlled Codex, bounded direct actions, workload-shape routing, explicit operation modes, shared resource pools and transport capsules without changing the V4 public generation or MSL 4.3. Superseded V4.1, V4.0 and V3 content remain recoverable through Git history; the live Moon-Source and LUAHELENA trees expose only the current V4 file."
   },
   "_moon_source_public_stamp": {
     "project": "Moon Source",
