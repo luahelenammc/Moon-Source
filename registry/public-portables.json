@@ -227,7 +227,7 @@
       "supersedes": "3.0-public",
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md",
-      "canonical_sha256": "14304d42df17030f535b83246ae2a239f27a61261be517cd3cf5f554ce36f448"
+      "canonical_sha256": "aa1b14d2df8bfa573f502af977f242736ddd415a08bcb8b27e6f63581575af98"
     }
   ],
   "mirror_contract": {
@@ -245,7 +245,7 @@
       "Open and review a website pull request; merge only after SHA-256 equality and production-surface review."
     ],
     "mismatch_detection": "python scripts/check_mirror_sync.py",
-    "current_rebase_note": "Chat–Work V3 is the current canonical protocol. Superseded V2 files are removed from the live Moon-Source and LUAHELENA trees; historical V2 content remains recoverable through Git history. Current portable mirrors remain exact byte copies of their canonical current files."
+    "current_rebase_note": "Chat–Work V4 is the current canonical protocol. Superseded V3 files are removed from the live Moon-Source and LUAHELENA trees; historical V3 content remains recoverable through Git history. Current portable mirrors remain exact byte copies of their canonical current files."
   },
   "_moon_source_public_stamp": {
     "project": "Moon Source",
@@ -254,6 +254,5 @@
     "licensing": "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md",
     "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md",
     "full_source": "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip"
-  },
-  "current_rebase_note": "Chat–Work V4 is the current canonical protocol. Superseded V3 files are removed from the live Moon-Source and LUAHELENA trees; historical V3 content remains recoverable through Git history. Current portable mirrors remain exact byte copies of their canonical current files."
+  }
 }
