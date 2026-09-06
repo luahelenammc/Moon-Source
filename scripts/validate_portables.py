@@ -110,7 +110,7 @@ def main() -> None:
             )
 
         expected_download_url = (
-            f"{data['canonical_repository']}/raw/refs/heads/main/{path_value}"
+            f"{data['canonical_repository']}/raw/refs/heads/main/{path_value}?download=1"
         )
         if portable["download_url"] != expected_download_url:
             fail(
