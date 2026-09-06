@@ -165,7 +165,7 @@
       "supersedes": "2.0",
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_SETUP.md",
-      "canonical_sha256": "97b1bd0cb3b70e88f96bb1c2685a5a13ed34b5c81c5b4ef0ba71636974a0bf7f"
+      "canonical_sha256": "ad44fc891064a1d49d5392fd4602b3abe80c82b30356eca6116162b2958a98f3"
     },
     {
       "id": "moon-source-language",
