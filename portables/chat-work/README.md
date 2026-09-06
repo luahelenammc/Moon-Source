@@ -1,27 +1,27 @@
-# 🔀 Chat–Work Routing Protocol V3
+# 🔀 Chat–Work Routing Protocol V4
 
-A public, ChatGPT-first closed-loop protocol for separating surface, model and reasoning-effort decisions **and** for governing what happens after Work returns.
+A public, ChatGPT-first routing and closure protocol for separating the sovereign object, execution surface, capability tier and reasoning effort across **Chat | Work | Codex**.
 
-[⬇️ **Download Chat–Work Routing Protocol V3 (.md)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md)
+[⬇️ **Download Chat–Work Routing Protocol V4 (.md)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md)
 
-- 📌 Current version: 3.0-public
-- 🗂️ Canonical file: [CHAT_WORK_ROUTING_PROTOCOL_V3.md](CHAT_WORK_ROUTING_PROTOCOL_V3.md)
+- 📌 Current version: 4.0-public
+- 🗂️ Canonical file: [CHAT_WORK_ROUTING_PROTOCOL_V4.md](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
 - 🌐 Language: English
-- 🕒 Freshness: protocol semantics current as of 2026-09-02; product/model calibration remains date-sensitive
-- 🔓 License: [CC BY 4.0](../../LICENSES/CC-BY-4.0.txt); share/adapt with credit and change indication
+- 🕒 Freshness: protocol semantics and calibration current as of 2026-09-06; volatile product/model behavior must be rechecked
+- 🧭 Surfaces: Chat understands and decides; Work produces; Codex builds; Chat accepts and integrates
+- 💸 Budget control: qualitative Budget Survivability Gate, Context Diet and Frontier ROI/Burst decisions
+- 🔁 Closure: every executor return goes through Chat Postflight before acceptance or delta-only re-entry
 - 📜 Licensing route: [LICENSING.md](../../LICENSING.md)
 - 🧬 Credits and attribution operations: [public protocol](../../docs/CREDITS_ATTRIBUTION_OPS.md)
-- 🛡️ Claim ceiling: published routing protocol V3; not an OpenAI policy, universal benchmark or proof that a native `chat-work-router` V3 skill is installed
+- 🛡️ Claim ceiling: published Chat–Work V4 protocol; not an OpenAI policy, universal benchmark or proof that a native router skill is installed
 
-## What V3 changes
+## What V4 changes
 
-The previous generation already had the right seed: Work returned receipts and Chat performed acceptance. V3 closes that loop operationally.
+V4 makes Codex a first-class surface and routes by object geometry rather than by the presence of a document or the prestige of a model label. It adds an explicit six-dimension route record, surface availability checks, Budget Survivability, Context Diet, frontier control, repository constitution and native-parallelism gates, executor-neutral handoffs, salvage receipts and a mandatory Chat Postflight.
 
-> **Work completion != cycle completion. Work executes; Chat closes the loop.**
+> **Executor completion is not cycle completion. Execution returns; Chat closes the loop.**
 
-After Work, Chat must refresh the real state, audit evidence, classify residuals, repair bounded issues locally when possible, and create a new Work handoff only for an unresolved irreducible delta.
-
-The current repository tree exposes only the latest portable generation. Prior versions remain recoverable through Git history rather than as parallel files in `main`.
+The live repository tree exposes only the current V4 generation. V3 remains recoverable through Git history rather than as a parallel active file.
 
 Want the whole public architecture instead? [📦 Download the complete Moon Source repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip).
 
