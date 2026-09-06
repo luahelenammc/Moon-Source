@@ -44,7 +44,7 @@ Use each file for the responsibility it actually owns:
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router.
 - `portables/msl/MSL_4_3.md` — current public structural grammar for materialization. MSL remains 4.3.
-- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md` — current closed-loop ChatGPT surface/model/reasoning routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
+- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md` — current closed-loop ChatGPT surface/model/reasoning routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
 - `registry/PUBLIC_PORTABLES.md` — canonical public portable identities, versions and fingerprints, plus the human-readable public component chronology.
 - `registry/public-portables.json` — machine-readable public component and portable inventory; component chronology is Git-derived and does not create new portable versions.
 - `docs/PORTABLE_DESIGN_CONTRACT.md` — portable publication, canonical-path and mirror rules.
@@ -210,9 +210,9 @@ Route current-use questions about superseded artifacts to their active successor
 ### If the user asks where ChatGPT work should run
 
 Load:
-- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md`
+- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`
 
-Apply the V3 closed loop: route surface/model/effort separately, and after any Work return perform Chat Postflight before treating the cycle as complete. Treat model names, prices, usage pools, limits and product behavior as date-sensitive. Re-verify current product facts when the answer depends on them.
+Apply the V4 tri-surface loop: route by sovereign object across Chat, Work and Codex; choose capability and effort separately; run Budget Survivability before expensive work; and after any executor return perform Chat Postflight before treating the cycle as complete. Treat model names, prices, usage pools, limits and product behavior as date-sensitive. Re-verify current product facts when the answer depends on them.
 
 ### If the user wants to publish, mirror, redistribute or version public Moon Source material
 

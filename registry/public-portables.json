@@ -1,6 +1,6 @@
 {
   "registry_version": "1.1",
-  "as_of": "2026-09-04",
+  "as_of": "2026-09-06",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
   "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -165,7 +165,7 @@
       "supersedes": "2.0",
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_SETUP.md",
-      "canonical_sha256": "97b1bd0cb3b70e88f96bb1c2685a5a13ed34b5c81c5b4ef0ba71636974a0bf7f"
+      "canonical_sha256": "ad44fc891064a1d49d5392fd4602b3abe80c82b30356eca6116162b2958a98f3"
     },
     {
       "id": "moon-source-language",
@@ -199,18 +199,18 @@
     },
     {
       "id": "chat-work-routing",
-      "title": "Chat–Work Routing Protocol V3",
+      "title": "Chat–Work Routing Protocol V4",
       "slug": "chat-work",
-      "version": "3.0-public",
+      "version": "4.0-public",
       "status": "current",
       "class": "operational-routing-protocol",
       "language": "English",
       "difficulty": "advanced",
-      "function": "Route across Chat and Work as a closed loop: surface/model/effort selection, evidence-bearing return, Chat Postflight, bounded repair, acceptance and delta-only re-entry",
-      "best_for": "ChatGPT users working across conversational reasoning and sustained execution surfaces who need auditable post-Work closure",
-      "canonical_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md",
-      "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md",
-      "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V3_MSL_4_3.md",
+      "function": "Route by sovereign object across Chat, Work and Codex: surface and harness, capability tier, reasoning effort, continuity, budget survival, evidence-bearing return, Chat Postflight, bounded repair, acceptance and delta-only re-entry",
+      "best_for": "ChatGPT users and builders moving between conversational judgment, sustained knowledge execution and executable-system work who need explicit budget control and auditable closure",
+      "canonical_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md",
+      "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md",
+      "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md",
       "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
       "license": "CC-BY-4.0",
@@ -222,12 +222,12 @@
       "dependencies": [
         "Uses MSL-4.3 terminology; product and model calibration is date-sensitive"
       ],
-      "freshness": "protocol semantics as of 2026-09-02; recheck volatile product behavior, model names, prices and usage pools",
-      "claim_ceiling": "Published Chat–Work V3 protocol; not an OpenAI policy, universal benchmark or proof that a native chat-work-router V3 skill is installed",
-      "supersedes": "2.0-public",
+      "freshness": "protocol semantics and calibration as of 2026-09-06; recheck volatile product behavior, model names, prices, availability and usage pools",
+      "claim_ceiling": "Published Chat–Work V4 protocol; not an OpenAI policy, universal benchmark or proof that a native chat-work-router V4 skill is installed",
+      "supersedes": "3.0-public",
       "archive_paths": [],
-      "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V3_MSL_4_3.md",
-      "canonical_sha256": "550405597bcbff3b3e4db09e81b7a2cb06e370baa020f770761583f9ceb48c74"
+      "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md",
+      "canonical_sha256": "aa1b14d2df8bfa573f502af977f242736ddd415a08bcb8b27e6f63581575af98"
     }
   ],
   "mirror_contract": {
@@ -245,7 +245,7 @@
       "Open and review a website pull request; merge only after SHA-256 equality and production-surface review."
     ],
     "mismatch_detection": "python scripts/check_mirror_sync.py",
-    "current_rebase_note": "Chat–Work V3 is the current canonical protocol. Superseded V2 files are removed from the live Moon-Source and LUAHELENA trees; historical V2 content remains recoverable through Git history. Current portable mirrors remain exact byte copies of their canonical current files."
+    "current_rebase_note": "Chat–Work V4 is the current canonical protocol. Superseded V3 files are removed from the live Moon-Source and LUAHELENA trees; historical V3 content remains recoverable through Git history. Current portable mirrors remain exact byte copies of their canonical current files."
   },
   "_moon_source_public_stamp": {
     "project": "Moon Source",

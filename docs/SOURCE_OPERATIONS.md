@@ -292,7 +292,7 @@ For the dedicated custody and attribution operation, use [Credits & Attribution 
 | [Archive and Legacy](../archive/README.md) | preserved history and non-current artifacts | the reusable successor contract and current-use versus historical-use distinction |
 | [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) | material lineage, custody, permission and attribution | promotion's origin and transformation boundary |
 | [AI Kernel](../MOON_SOURCE_AI_KERNEL.md) | public AI boot and routing | the route into this method surface |
-| [Chat–Work V3](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) | execution-surface routing and post-Work closure | no change to the Chat–Work lifecycle |
+| [Chat–Work V3](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) | object-routed Chat | Work | Codex execution, budget survival and post-execution closure | no change to the Chat–Work lifecycle |
 
 This file owns the operation grammar. The adjacent components remain authoritative for their own responsibilities.
 

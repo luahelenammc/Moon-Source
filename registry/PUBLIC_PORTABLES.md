@@ -8,7 +8,7 @@ Want everything at once? [**Download the complete Moon Source repository (.zip)*
 |---|---|---:|---|---|---|---|---|
 | moon-source-setup | Moon Source Setup | 3.0 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive routing for proportionate personal and project AI context | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md) | [⬇️ `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/setup/MOON_SOURCE_SETUP.md) |
 | moon-source-language | Moon Source Language | 4.3 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive structural grammar for context work | [MSL_4_3.md](../portables/msl/MSL_4_3.md) | [⬇️ `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/msl/MSL_4_3.md) |
-| chat-work-routing | Chat–Work Routing Protocol V3 | 3.0-public | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Closed-loop surface/model/effort routing, Chat Postflight, acceptance and re-entry | [CHAT_WORK_ROUTING_PROTOCOL_V3.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) | [⬇️ `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V3.md) |
+| chat-work-routing | Chat–Work Routing Protocol V4 | 4.0-public | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Object-routed Chat, Work and Codex execution with budget survival, Chat Postflight, acceptance and delta-only re-entry | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) | [⬇️ `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) |
 
 ## Public components outside the portable registry
 
@@ -39,7 +39,7 @@ The current branded website keeps convenience copies of the current portables un
 
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_SETUP.md
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_4_3.md
-- https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V3_MSL_4_3.md
+- https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md
 
 These paths mirror only the current generation. Superseded mirror files are removed from the live surface and remain recoverable through Git history when needed.
 
