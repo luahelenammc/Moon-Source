@@ -201,13 +201,13 @@
       "id": "chat-work-routing",
       "title": "Chat–Work Routing Protocol V4",
       "slug": "chat-work",
-      "version": "4.0-public",
+      "version": "4.1-public",
       "status": "current",
       "class": "operational-routing-protocol",
       "language": "English",
       "difficulty": "advanced",
-      "function": "Route by sovereign object across Chat, Work and Codex: surface and harness, capability tier, reasoning effort, continuity, budget survival, evidence-bearing return, Chat Postflight, bounded repair, acceptance and delta-only re-entry",
-      "best_for": "ChatGPT users and builders moving between conversational judgment, sustained knowledge execution and executable-system work who need explicit budget control and auditable closure",
+      "function": "Route by sovereign object across Chat, Work and Codex using configurable execution profiles, live resource posture, task capability floor, model tier, reasoning effort, budget survival, evidence-bearing return, Chat Postflight and delta-only re-entry",
+      "best_for": "ChatGPT users and builders who need the route to adapt to their own resource posture and quality/throughput preferences while preserving capability floors, budget control and auditable closure across Chat, Work and Codex",
       "canonical_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md",
       "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md",
       "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md",
@@ -223,11 +223,11 @@
         "Uses MSL-4.3 terminology; product and model calibration is date-sensitive"
       ],
       "freshness": "protocol semantics and calibration as of 2026-09-06; recheck volatile product behavior, model names, prices, availability and usage pools",
-      "claim_ceiling": "Published Chat–Work V4 protocol; not an OpenAI policy, universal benchmark or proof that a native chat-work-router V4 skill is installed",
-      "supersedes": "3.0-public",
+      "claim_ceiling": "Published Chat–Work V4 protocol, subversion 4.1-public; not an OpenAI policy, universal benchmark or proof that a native chat-work-router V4 skill is installed",
+      "supersedes": "4.0-public",
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md",
-      "canonical_sha256": "aa1b14d2df8bfa573f502af977f242736ddd415a08bcb8b27e6f63581575af98"
+      "canonical_sha256": "8292415fce351a83e6805d63f1c6f29111486bb248541fc37251674b8c11592d"
     }
   ],
   "mirror_contract": {
@@ -245,7 +245,7 @@
       "Open and review a website pull request; merge only after SHA-256 equality and production-surface review."
     ],
     "mismatch_detection": "python scripts/check_mirror_sync.py",
-    "current_rebase_note": "Chat–Work V4 is the current canonical protocol. Superseded V3 files are removed from the live Moon-Source and LUAHELENA trees; historical V3 content remains recoverable through Git history. Current portable mirrors remain exact byte copies of their canonical current files."
+    "current_rebase_note": "Chat–Work V4 subversion 4.1-public is the current canonical protocol. It adds configurable Execution Profiles and live resource posture without changing the V4 public generation or MSL 4.3. Superseded V4.0 and V3 content remain recoverable through Git history; the live Moon-Source and LUAHELENA trees expose only the current V4 file."
   },
   "_moon_source_public_stamp": {
     "project": "Moon Source",
