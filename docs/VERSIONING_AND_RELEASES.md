@@ -14,9 +14,9 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive component and operational updates continued through 2026-08-26; Chat–Work closed-loop routing advanced to V3 on 2026-09-02.
+- Public architecture baseline: 2026-08-16; additive component and operational updates continued through 2026-09-04; Chat–Work tri-surface routing advanced to V4 on 2026-09-06.
 - Current structural grammar: MSL 4.3.
-- Public portables: Setup 3.0, MSL 4.3, Chat–Work Routing Protocol 3.0-public.
+- Public portables: Setup 3.0, MSL 4.3, Chat–Work Routing Protocol 4.0-public.
 - The public component inventory is tracked separately from the portable inventory in `registry/public-portables.json` schema 1.1 and `registry/PUBLIC_PORTABLES.md`.
 - Preflight, Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Connected Sources, Source Hygiene, Signal Calibration and Procedural Projection are public components outside the portable registry.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -56,6 +56,16 @@ Chat–Work V3 is a **material additive-and-superseding portable release**, not 
 It preserves the prior generation's separation of surface/model/effort, Work Readiness Gate, Return Contract and Chat acceptance seed, then makes the return path loadbearing through mandatory Chat Postflight, residual dispositions, route-by-remaining-work, bounded Chat repair, explicit cycle completion states, next-step buckets and delta-only Work re-entry.
 
 The superseded V2 file is not part of the current repository tree or current website mirror surface. Its historical contents remain recoverable through Git history. The V3 release does **not** claim that any native or personal `chat-work-router` skill has independently advanced to V3; skill synchronization remains a separate projection and verification event.
+
+MSL remains 4.3 because the structural grammar did not change.
+
+### Chat–Work V4 release — 2026-09-06
+
+Chat–Work V4 is a **material additive-and-superseding portable release**, not an MSL grammar change.
+
+It promotes Codex to a first-class execution surface beside Chat and Work, routes by sovereign object and six independent dimensions, adds availability and Budget Survivability gates, Context Diet, frontier ROI/burst control, repository constitution and native-parallelism rules, executor-neutral handoffs, salvage receipts and mandatory Chat Postflight.
+
+The superseded V3 file is removed from the current repository and website trees. Its historical contents remain recoverable through Git history. V4 does **not** claim that any native or personal routing skill has independently advanced; skill synchronization remains a separate projection and verification event.
 
 MSL remains 4.3 because the structural grammar did not change.
 
