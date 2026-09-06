@@ -2,7 +2,7 @@
 
 A public, ChatGPT-first routing and closure protocol for separating **Execution Profile**, sovereign object, execution surface, capability tier and reasoning effort across **Chat | Work | Codex**.
 
-[⬇️ **Download Chat–Work Routing Protocol V4 (.md)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md)
+[⬇️ **Download Chat–Work Routing Protocol V4 (.md)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md?download=1)
 
 - 📌 Current subversion: 4.1-public
 - 🗂️ Canonical file: [CHAT_WORK_ROUTING_PROTOCOL_V4.md](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
