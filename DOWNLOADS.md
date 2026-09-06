@@ -15,7 +15,7 @@ The distribution is mixed-license: software and automation use Apache-2.0; docum
 
 ## Download the AI Kernel by itself
 
-[**⬇️ Download Moon Source AI Kernel (.md)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/MOON_SOURCE_AI_KERNEL.md)
+[**⬇️ Download Moon Source AI Kernel (.md)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/MOON_SOURCE_AI_KERNEL.md?download=1)
 
 Use the standalone kernel when you want to give an AI only selected Moon Source files rather than the entire repository. It defines the public boot sequence, authority map, task routing, context-loading discipline, freshness rules and public-boundary behavior.
 
@@ -23,9 +23,9 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 
 | Portable | Best for | Direct download |
 |---|---|---|
-| **Moon Source Setup 3.0** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/setup/MOON_SOURCE_SETUP.md) |
-| **Moon Source Language 4.3** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/msl/MSL_4_3.md) |
-| **Chat–Work Routing Protocol V4** | Configurable execution across Chat, Work and Codex using Execution Profiles, live Run State, capability floors, Budget Survivability and Chat Postflight | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) |
+| **Moon Source Setup 3.0** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/setup/MOON_SOURCE_SETUP.md?download=1) |
+| **Moon Source Language 4.3** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/msl/MSL_4_3.md?download=1) |
+| **Chat–Work Routing Protocol V4** | Configurable execution across Chat, Work and Codex using Execution Profiles, live Run State, capability floors, Budget Survivability and Chat Postflight | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md?download=1) |
 
 The current Chat–Work V4 subversion is **4.1-public**. Its setup can optimize for constrained allowance, balanced use, quality-first use or bounded frontier bursts without treating any commercial plan as a universal routing policy.
 
