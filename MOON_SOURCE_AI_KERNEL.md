@@ -13,7 +13,7 @@ If you received the full repository or ZIP:
 1. Read this file first.
 2. Read `README.md` for orientation and public entry points.
 3. Reconstruct the user's actual intended task before loading more files.
-4. If the human meaning is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally, apply [Preflight V2](portables/preflight/PREFLIGHT_V2.md). If the reconstructed task has material source, freshness, public, sensitive or mutation consequences, let Preflight route only to the guardrails that consequence requires.
+4. If the human meaning is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally, apply [Preflight](portables/preflight/PREFLIGHT_V2.md). If the reconstructed task has material source, freshness, public, sensitive or mutation consequences, let Preflight route only to the guardrails that consequence requires.
 5. Load only the smallest set of Moon Source modules that can answer or execute that task. This is Moon Source's **progressive disclosure**, or **just-in-time context loading**, discipline: load the next sufficient context rather than the whole repository by reflex.
 6. Use the authority map below when files overlap.
 7. Preserve the distinction between current state, historical material, public claims and private/non-disclosed machinery.
@@ -27,7 +27,7 @@ Use each file for the responsibility it actually owns:
 
 - `README.md` — orientation, public entry points and top-level routing.
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
-- `portables/preflight/PREFLIGHT_V2.md` — Preflight V2: human-intent reconstruction before execution, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
+- `portables/preflight/PREFLIGHT_V2.md` — Preflight: human-intent reconstruction before execution, currently version 2.0, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
 - `docs/BE_MY_EYES.md` — canonical public Be My Eyes method: contextual scene reading, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection.
 - `portables/be-my-eyes/BE_MY_EYES.md` — independently readable Be My Eyes 1.0-public transportable projection.
 - `docs/CONNECTED_SOURCES.md` — connector-aware source access: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
@@ -60,7 +60,7 @@ Use each file for the responsibility it actually owns:
 
 When two files appear to conflict, do not flatten them together. First ask whether they have different jurisdictions. Prefer the file whose declared responsibility governs the disputed state.
 
-Preflight V2 is the general human-intent reconstruction layer before execution. It may remain almost invisible when the intended task is already clear. It is not a mandatory questionnaire, and it does not replace specialized governance: it activates those layers only when the reconstructed task materially earns them.
+Preflight is the general human-intent reconstruction layer before execution. It may remain almost invisible when the intended task is already clear. It is not a mandatory questionnaire, and it does not replace specialized governance: it activates those layers only when the reconstructed task materially earns them.
 
 ## 3. Route by user intent
 
@@ -69,12 +69,12 @@ Preflight V2 is the general human-intent reconstruction layer before execution. 
 Load:
 - `portables/preflight/PREFLIGHT_V2.md`
 
-Use Preflight V2 when the person is thinking aloud, mixing examples with requirements, correcting themselves, relying on context, expressing what they want to avoid more clearly than what they want, or otherwise risks being misunderstood by literal execution. Reconstruct the intended task first. Ask only if consequential ambiguity remains. Then load a specialized component only if the reconstructed task materially requires source authority, freshness, provenance, public/sensitive boundaries, form selection, execution routing or mutation safeguards.
+Use Preflight when the person is thinking aloud, mixing examples with requirements, correcting themselves, relying on context, expressing what they want to avoid more clearly than what they want, or otherwise risks being misunderstood by literal execution. Reconstruct the intended task first. Ask only if consequential ambiguity remains. Then load a specialized component only if the reconstructed task materially requires source authority, freshness, provenance, public/sensitive boundaries, form selection, execution routing or mutation safeguards.
 
 ### If the user wants AI to understand them more consistently
 
 Load:
-- `portables/setup/MOON_SOURCE_SETUP.md` — Setup 3.0
+- `portables/setup/MOON_SOURCE_SETUP.md` — Moon Source Setup, currently version 3.0
 
 Optionally load:
 - `ARCHITECTURE.md` if the user's context is already distributed across several sources or roles.
@@ -260,7 +260,7 @@ Do not manufacture case studies, adoption, impact, product-market fit, enterpris
 
 ## 4. Default operating loop
 
-For a general Moon Source application, reconstruct the user's intended task through Preflight V2 whenever human meaning is the unresolved problem. Then use this loop only to the depth the task needs; skip layers that do not affect the decision:
+For a general Moon Source application, reconstruct the user's intended task through Preflight whenever human meaning is the unresolved problem. Then use this loop only to the depth the task needs; skip layers that do not affect the decision:
 
 1. **Field** — What is actually happening before a container is chosen?
 2. **Observation** — Which sources, actors, routines, decisions, constraints, weak signals and uncertainties matter?
@@ -420,7 +420,7 @@ If time is limited, do this:
 
 1. Read this kernel.
 2. Read `README.md`.
-3. Reconstruct the user's intended task; use Preflight V2 when literal wording is not enough.
+3. Reconstruct the user's intended task; use Preflight when literal wording is not enough.
 4. Open only the relevant module(s) from section 3.
 5. Apply the smallest adequate operation.
 6. Check evidence/public-boundary files before making public claims.

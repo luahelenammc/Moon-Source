@@ -1,8 +1,8 @@
-# Preflight V2
+# Preflight
 
-**Human Intent Reconstruction Before AI Execution**
+*Human Intent Reconstruction Before AI Execution*
 
-Preflight V2 is the Moon Source portable for reconstructing what a person is actually trying to accomplish before an AI acts on the literal wording of their message.
+Preflight is the Moon Source portable for reconstructing what a person is actually trying to accomplish before an AI acts on the literal wording of their message. The current portable version is **2.0**.
 
 > Humans should not have to prompt like machines.
 
@@ -27,10 +27,10 @@ The portable is independently usable. The larger Moon Source repository adds opt
 
 ## Family relationship
 
-- **Setup 3.0** helps AI understand a person or project across time.
-- **Preflight V2** helps AI understand what the human means now.
-- **MSL 4.3** structures context that has earned persistence.
-- **Chat–Work V4** routes sustained execution across surfaces and models.
+- **Moon Source Setup** helps AI understand a person or project across time; its current public version is **3.0**.
+- **Preflight** helps AI understand what the human means now.
+- **Moon Source Language** structures context that has earned persistence.
+- **Chat–Work Routing Protocol** routes sustained execution across surfaces and models.
 
 ## Canonical identity
 
