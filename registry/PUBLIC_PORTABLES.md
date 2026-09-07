@@ -17,6 +17,7 @@ These are public components, not portable registry entries. Their chronology is 
 | Component | Public since | Last material update | Status | Purpose |
 |---|---:|---:|---|---|
 | [Preflight — Adaptive Task Shaping Before AI Execution](../docs/PREFLIGHT.md) | 2026-08-23 | 2026-08-23 | current | Shapes intent, authority, risk, destination and proportionate form before execution |
+| [Be My Eyes — Contextual Scene Reading](../docs/BE_MY_EYES.md) | 2026-09-07 | 2026-09-07 | current | Reads human communication as a scene while separating observation from inference and mapping relationships, subtext, risk, opportunity, overread and likely reception |
 | [Credits & Attribution Ops](../docs/CREDITS_ATTRIBUTION_OPS.md) | 2026-08-17 | 2026-08-18 | current | Protects intellectual lineage, content custody and immaterial-asset boundaries |
 | [Operational Devices](../docs/OPERATIONAL_DEVICES.md) | 2026-08-23 | 2026-08-23 | current | Embodies reusable procedures on concrete surfaces with bounded state and receipts |
 | [Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) | 2026-08-23 | 2026-08-26 | current | Structures diagnosis, failure boundaries, reversibility, ordinary and Context Receipts, and freshness |
