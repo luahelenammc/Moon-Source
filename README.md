@@ -23,6 +23,7 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 |---|---|
 | Give an AI the smallest useful setup for a person or project | [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md) |
 | Shape an ambiguous, risky or destination-sensitive request before execution | [Preflight](docs/PREFLIGHT.md) |
+| Read a human exchange as a scene — actors, relationships, subtext, risk, opportunity, overread and likely reception | [Be My Eyes](docs/BE_MY_EYES.md) |
 | Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Retrieve, process, metabolize or promote governed source material | [Source Operations](docs/SOURCE_OPERATIONS.md) |
@@ -95,6 +96,7 @@ Public components are responsibility-bearing methods with canonical files. They 
 | Component | Responsibility |
 |---|---|
 | [Preflight](docs/PREFLIGHT.md) | Adaptive task shaping before execution |
+| [Be My Eyes](docs/BE_MY_EYES.md) | Contextual scene reading across actors, relationships, subtext, risk, opportunity, overread and likely reception |
 | [Connected Sources](docs/CONNECTED_SOURCES.md) | Source/data and instruction authority, jurisdiction, freshness, retrieval, mutation boundaries and readback for connected sources |
 | [Source Operations](docs/SOURCE_OPERATIONS.md) | Retrieve, process, metabolize and promote governed source changes, with lifecycle and legacy-successor rules |
 | [Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
@@ -121,11 +123,11 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent component changes
 
 <!-- MOON-SOURCE-COMPONENT-DIGEST:START -->
+- **2026-09-07 — Be My Eyes:** Promoted a public contextual scene-reading method that separates observation from inference while mapping relationships, subtext, risk, opportunity, overread and likely reception.
 - **2026-09-04 — Source Operations:** Promoted a public source-operations and lifecycle method for retrieve, process, metabolize, promote, succession, readback and no-delta.
 - **2026-08-26 — Operational Reliability:** Added lightweight, materiality-triggered Context Receipts for context-path evidence alongside ordinary operational receipts.
 - **2026-08-26 — Connected Sources:** Separated source/data authority from instruction authority, added indirect-instruction failure handling and named proportional progressive loading.
 - **2026-08-23 — Preflight:** Promoted adaptive task shaping as a transversal public mechanism for intent, authority, risk, destination and form.
-- **2026-08-23 — Operational Devices:** Added bounded operational-device contracts for state, guards, failure behavior and receipts.
 <!-- MOON-SOURCE-COMPONENT-DIGEST:END -->
 
 This bounded digest is generated from the component registry. It is not a commit log.
@@ -149,7 +151,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 ## Current baseline
 
-Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-09-04**; Chat–Work routing advanced to the tri-surface **V4** protocol on **2026-09-06**.
+Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-09-07**; Chat–Work routing advanced to the tri-surface **V4** protocol on **2026-09-06**.
 
 Current structural grammar: **MSL 4.3**. Current public portables: **Setup 3.0**, **MSL 4.3** and **Chat–Work 4.0-public**. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
