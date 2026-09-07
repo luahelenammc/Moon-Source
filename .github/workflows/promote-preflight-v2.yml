@@ -48,6 +48,8 @@ jobs:
               if 'docs/PREFLIGHT.md' in (root / path).read_text(encoding='utf-8'):
                   raise SystemExit(f'stale current Preflight path remains in {path}')
           PY
+      - name: Preserve Setup 3.0 canonical bytes
+        run: git checkout HEAD -- portables/setup/MOON_SOURCE_SETUP.md
       - name: Remove one-shot migration machinery before validation
         run: rm scripts/promote_preflight_v2.py .github/workflows/promote-preflight-v2.yml
       - name: Refresh generated component digest
