@@ -2,6 +2,15 @@
 
 Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
 
+## 2026-09-07 — Be My Eyes public method and portable
+
+- Promoted **Be My Eyes — Contextual Scene Reading** from repeated Local Moon Source use into the canonical public method at `docs/BE_MY_EYES.md`.
+- Generalized the reusable function around scene reconstruction, observation versus inference, relational structure and power, plausible subtext, risk, opportunity, overread, likely reception and response-axis selection without importing private examples or identity-specific assumptions.
+- Added the independently readable **Be My Eyes 1.0-public** portable at `portables/be-my-eyes/BE_MY_EYES.md`, including forward and inverse/reception modes, compact/full outputs, drafting contract, anti-overread rules, high-stakes boundary and quality gate.
+- Added the deterministic `downloads/be-my-eyes-1.0-public.zip` package containing the exact canonical Markdown bytes and registered canonical SHA-256 `74f05f85f5e664530bec30283cc9bb0e9bfdc3786d55927fbbc821e76c7fb1e8`.
+- Routed the method and portable through the AI Kernel, README, download hub, public registries and Existing Implementations while preserving Preflight V2, Setup 3.0, MSL 4.3 and Chat–Work 4.2-public.
+- Preserved the claim ceiling: publication does not establish mind-reading, diagnosis, scientifically validated interpersonal prediction, guaranteed recipient reaction, external adoption or measured impact.
+
 ## 2026-09-07 — Preflight V2 portable promotion
 
 - Promoted Preflight V2 from a repository component into a standalone public portable at `portables/preflight/PREFLIGHT_V2.md`.

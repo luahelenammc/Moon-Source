@@ -8,12 +8,13 @@ Want everything at once? [**Download the complete Moon Source repository (.zip)*
 |---|---|---:|---|---|---|---|---|
 | preflight | Preflight V2 | 2.0 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Human-intent reconstruction before execution, with consequence-triggered guardrails | [PREFLIGHT_V2.md](../portables/preflight/PREFLIGHT_V2.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
 | moon-source-setup | Moon Source Setup | 3.0 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive routing for proportionate personal and project AI context | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.0.zip) |
+| be-my-eyes | Be My Eyes — Contextual Scene Reading | 1.0-public | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Reads human communication as a scene, separating observation from inference and checking subtext, overread, reception and response posture | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip) |
 | moon-source-language | Moon Source Language | 4.3 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive structural grammar for context work | [MSL_4_3.md](../portables/msl/MSL_4_3.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
 | chat-work-routing | Chat–Work Routing Protocol V4 | 4.2-public | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | First-use-hardened routing by object and workload shape across Chat, Work and optional Codex with capability floors, bounded direct actions, operation modes, budget survival, transport, Chat Postflight, acceptance and delta-only re-entry | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
 ## Public components outside the portable registry
 
-These are public components outside the portable registry. Preflight moved into the portable registry on 2026-09-07; its earlier component-only lineage remains in Git history. Their chronology is derived from the first canonical public file and the latest material public method change in Git history. A public stamp, typo-only change or merge narration does not automatically count as a material update.
+These are public components outside the portable registry. Preflight moved into the portable registry on 2026-09-07; its earlier component-only lineage remains in Git history. Be My Eyes keeps a canonical method source in `docs/` and a separately versioned transportable projection in the portable registry. Their chronology is derived from the first canonical public file and the latest material public method change in Git history. A public stamp, typo-only change or merge narration does not automatically count as a material update.
 
 | Component | Public since | Last material update | Status | Purpose |
 |---|---:|---:|---|---|
@@ -25,9 +26,12 @@ These are public components outside the portable registry. Preflight moved into 
 | [Source Operations — Retrieve, Process, Metabolize and Promote](../docs/SOURCE_OPERATIONS.md) | 2026-09-04 | 2026-09-04 | current | Defines source-operation grammar, promotion gates, lifecycle, legacy succession, readback and no-delta |
 | [Source Hygiene](../docs/SOURCE_HYGIENE.md) | 2026-08-17 | 2026-08-17 | current | Diagnoses stale, duplicated, contradictory or orphaned corpus material |
 | [Signal Calibration](../docs/SIGNAL_CALIBRATION.md) | 2026-08-21 | 2026-08-21 | current | Calibrates weak or convergent signals into bounded working inference |
+| [Be My Eyes — Contextual Scene Reading](../docs/BE_MY_EYES.md) | 2026-09-07 | 2026-09-07 | current | Reads human communication as a scene while separating observation, inference, subtext, overread, plausible reception and proportionate action |
 | [Procedural Projection](../docs/PROCEDURAL_PROJECTION.md) | 2026-08-17 | 2026-08-17 | current | Projects stable methods into procedures without moving source authority |
 
 Preflight V2 is now portable version **2.0**. Its earlier component-only lineage and V1 remain recoverable through Git history; current use routes to `portables/preflight/PREFLIGHT_V2.md`.
+
+Be My Eyes is portable version **1.0-public**. `docs/BE_MY_EYES.md` owns the public method; `portables/be-my-eyes/BE_MY_EYES.md` is the independently readable transportable edition.
 
 The component inventory is machine-readable in [`registry/public-portables.json`](public-portables.json), currently at schema `1.1`. A component becoming public does not automatically make it a portable; a component update does not automatically require an MSL, Setup or Chat–Work version bump.
 
@@ -41,6 +45,7 @@ The current branded website keeps convenience copies of the current portables un
 
 - https://www.luahelena.com.br/moonsource/downloads/PREFLIGHT_V2.md
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_SETUP.md
+- https://www.luahelena.com.br/moonsource/downloads/BE_MY_EYES.md
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_4_3.md
 - https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md
 
@@ -48,7 +53,7 @@ These paths mirror only the current generation. Superseded mirror files are remo
 
 ## Freshness
 
-Preflight V2, Setup and MSL are general public documents, but their wording can evolve. Chat–Work contains a stable routing/postflight core plus product and model calibration that must be rechecked before volatile product facts are treated as current. Chat–Work subversion 4.2 additionally hardens first use, optional surface setup, workload-shape routing, bounded direct actions, explicit operation modes, shared resource pools and cross-surface transport while resolving a configurable Execution Profile separately from live Run State and task capability requirements.
+Preflight V2, Setup, Be My Eyes and MSL are general public documents, but their wording can evolve. Be My Eyes is structurally stable as a contextual-reading method; it should be rechecked when its public source or portable changes. Chat–Work contains a stable routing/postflight core plus product and model calibration that must be rechecked before volatile product facts are treated as current. Chat–Work subversion 4.2 additionally hardens first use, optional surface setup, workload-shape routing, bounded direct actions, explicit operation modes, shared resource pools and cross-surface transport while resolving a configurable Execution Profile separately from live Run State and task capability requirements.
 
 ## Historical-version policy
 
