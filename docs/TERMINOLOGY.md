@@ -4,15 +4,15 @@ Internal names are useful for continuity, but a public reader should be able to 
 
 | Moon Source term | Public explanation | Use with care |
 |---|---|---|
-| Preflight V2 | Human-intent reconstruction before execution: turn ordinary, incomplete, conversational or self-correcting expression into a faithful working task, then activate heavier execution guardrails only when consequence requires them | Not mind-reading, a compulsory questionnaire, hidden reasoning transcript, prompt-engineering homework or autonomous self-modification |
-| Adaptive Preflight | Setup 3.0's specialization of the broader Preflight V2 portable for personal and project-context setup | Do not treat Setup as the owner of all Preflight behavior |
+| Preflight | Human-intent reconstruction before execution: turn ordinary, incomplete, conversational or self-correcting expression into a faithful working task, then activate heavier execution guardrails only when consequence requires them; current public version 2.0 | Not mind-reading, a compulsory questionnaire, hidden reasoning transcript, prompt-engineering homework or autonomous self-modification |
+| Adaptive Preflight | Moon Source Setup's specialization of the broader Preflight portable for personal and project-context setup | Do not treat Setup as the owner of all Preflight behavior |
 | Self-prompt / reconstructed working prompt | Explanatory metaphor for the working task produced after the AI reconstructs intended meaning, desired outcome, corrections and constraints | Not canonical ontology; does not imply hidden chain-of-thought, literal system-prompt editing or persistent self-modification |
-| Source jurisdiction | Which source has authority over which claim or state | A conditional execution concern in Preflight V2; do not publish private resolver heuristics by default |
+| Source jurisdiction | Which source has authority over which claim or state | A conditional execution concern in Preflight; do not publish private resolver heuristics by default |
 | Living source | Governed, updateable context with explicit scope and freshness | Not a promise of automatic synchronization |
 | Connected source | External governed context made reachable through a connector or app | Reach is not authority, jurisdiction or exhaustive reading |
 | Source substrate | Persistent accessible body that stores and exposes a living source | Vendor-portable contract, not a universal requirement for one provider |
 | Connector / app | Bounded surface that provides access or actions against an external substrate | Capabilities, permissions and write authority vary by product surface and time |
-| Connector Preflight | Conditional source-access guardrail that resolves surface, authority, locator, freshness, retrieval scope and verification when external source access materially matters | A specialization triggered by execution consequence, not the semantic core of Preflight V2 and not a mandatory ceremony |
+| Connector Preflight | Conditional source-access guardrail that resolves surface, authority, locator, freshness, retrieval scope and verification when external source access materially matters | A specialization triggered by execution consequence, not the semantic core of Preflight and not a mandatory ceremony |
 | Data authority / instruction authority | Separate whether a source governs content and whether it may direct behavior for a task | Retrieval does not grant instruction authority; a procedure or instruction may be followed when its jurisdiction explicitly grants that role |
 | Context Receipt | Lightweight evidence of the governing context path when provenance or routing materially affects trust | Not mandatory for every lookup and not proof that a source is true by itself |
 | Progressive disclosure / just-in-time context loading | Loading only the next sufficient current context, then expanding when the next decision provides evidence of need | Not relevance-only retrieval or a benchmarked performance guarantee |
@@ -24,7 +24,7 @@ Internal names are useful for continuity, but a public reader should be able to 
 | Source hygiene | Maintenance of active truth, freshness, duplication, contradiction and archive boundaries | Not a claim of perfect automation |
 | Signal calibration | Using incomplete or ambiguous cues proportionally without promoting them to fact or discarding them because certainty is unavailable | Not proof of motive, diagnosis or causality |
 | Working inference | The current best-supported interpretation kept explicitly distinct from established fact | Not a public claim or a substitute for domain evidence standards |
-| MSL | Adaptive structural grammar | Current public version is MSL 4.3 |
+| MSL | Adaptive structural grammar | Current public version is 4.3 |
 | Runtime | Callable operating layer | Use only where real executable capacity is evidenced |
 | Public surface | Human-facing portal or distribution layer | Does not replace the source |
 | Archive | Preserved historical material | Historical does not mean current |
@@ -41,7 +41,7 @@ Internal names are useful for continuity, but a public reader should be able to 
 
 Prefer responsibility-first language:
 
-- “human-intent reconstruction” before “Preflight V2”;
+- “human-intent reconstruction” before “Preflight”;
 - “governed context” before “living source”;
 - “reusable procedure” before “skill”;
 - “portable transfer” before “handoff”;
@@ -73,7 +73,7 @@ System:
 [paste project docs, folder layout, workflow, AI setup or knowledge-base vocabulary]
 ```
 
-Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when the translation exposes overloaded roles, [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when intellectual material risks losing identity, lineage, custody or transformation history, and [Architecture](../ARCHITECTURE.md) when it exposes a missing field or authority decision. Use [MSL 4.3](../portables/msl/MSL_4_3.md) only when a structural materialization is warranted.
+Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when the translation exposes overloaded roles, [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when intellectual material risks losing identity, lineage, custody or transformation history, and [Architecture](../ARCHITECTURE.md) when it exposes a missing field or authority decision. Use [Moon Source Language](../portables/msl/MSL_4_3.md) only when a structural materialization is warranted.
 
 **Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
 

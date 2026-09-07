@@ -1,4 +1,6 @@
-# Be My Eyes — Contextual Scene Reading
+# Be My Eyes
+
+*Contextual Scene Reading*
 
 ## Public Portable Edition · 1.0-public
 

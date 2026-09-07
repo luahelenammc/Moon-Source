@@ -1,4 +1,6 @@
-# Be My Eyes — Contextual Scene Reading
+# Be My Eyes
+
+*Contextual Scene Reading*
 
 **Be My Eyes** is a Moon Source method for reading human communication as a scene rather than as isolated text.
 

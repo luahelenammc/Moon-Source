@@ -1,8 +1,8 @@
-# 🔀 Chat–Work Routing Protocol V4
+# 🔀 Chat–Work Routing Protocol
 
 A public, ChatGPT-first routing and closure protocol for separating **Execution Profile**, sovereign object, execution surface, capability tier and reasoning effort across **Chat | Work | Codex**.
 
-[⬇️ **Download Chat–Work Routing Protocol V4 package (.zip)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip)
+[⬇️ **Download Chat–Work Routing Protocol package (.zip)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip)
 
 - 📌 Current subversion: 4.2-public
 - 🗂️ Canonical file: [CHAT_WORK_ROUTING_PROTOCOL_V4.md](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
@@ -16,7 +16,7 @@ A public, ChatGPT-first routing and closure protocol for separating **Execution 
 - 🔁 Closure: every executor return goes through Chat Postflight before acceptance or delta-only re-entry
 - 📜 Licensing route: [LICENSING.md](../../LICENSING.md)
 - 🧬 Credits and attribution operations: [public protocol](../../docs/CREDITS_ATTRIBUTION_OPS.md)
-- 🛡️ Claim ceiling: published Chat–Work V4 protocol; not an OpenAI policy, universal benchmark or proof that a native router skill is installed
+- 🛡️ Claim ceiling: published Chat–Work Routing Protocol, version 4.2-public; not an OpenAI policy, universal benchmark or proof that a native router skill is installed
 
 ## What the current V4 adds
 

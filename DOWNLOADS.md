@@ -23,19 +23,19 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 
 | Portable | Best for | Direct download |
 |---|---|---|
-| **Moon Source Setup 3.0** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.0.zip) |
-| **Preflight V2** | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
+| **Moon Source Setup** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.0.zip) |
+| **Preflight** | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
 | **Be My Eyes** | Reading messages, threads, screenshots, notes and drafts as human scenes; checking subtext, overread, likely reception and response posture | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip) |
-| **Moon Source Language 4.3** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
-| **Chat–Work Routing Protocol V4** | First-use-hardened routing across Chat, Work and optional Codex using workload shape, Execution Profiles, live Run State, capability floors, operation modes, Budget Survivability and Chat Postflight | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
+| **Moon Source Language** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
+| **Chat–Work Routing Protocol** | First-use-hardened routing across Chat, Work and optional Codex using workload shape, Execution Profiles, live Run State, capability floors, operation modes, Budget Survivability and Chat Postflight | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
-The current Be My Eyes portable version is **1.0-public**. The current Chat–Work V4 subversion is **4.2-public**. It adds first-use hardening, optional/setup-controlled Codex, bounded direct actions, workload-shape routing, explicit operation modes, Route Cards, shared resource-pool state and transport capsules without treating any commercial plan as a universal routing policy.
+The current Be My Eyes portable version is **1.0-public**. The current Chat–Work Routing Protocol version is **4.2-public**. It adds first-use hardening, optional/setup-controlled Codex, bounded direct actions, workload-shape routing, explicit operation modes, Route Cards, shared resource-pool state and transport capsules without treating any commercial plan as a universal routing policy.
 
 GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each package contains the exact canonical `.md` file; website copies are convenience mirrors, not separate semantic sources.
 
 ## Preflight is now a portable
 
-[**Preflight V2 — Human Intent Reconstruction Before AI Execution**](portables/preflight/PREFLIGHT_V2.md) is now a standalone public portable with its own packaged download above. The former `docs/PREFLIGHT.md` path remains only as a succession pointer.
+[**Preflight — Human Intent Reconstruction Before AI Execution**](portables/preflight/PREFLIGHT_V2.md) is now a standalone public portable, currently at version **2.0**, with its own packaged download above. The former `docs/PREFLIGHT.md` path remains only as a succession pointer.
 
 ## Be My Eyes is a portable and a method source
 
@@ -45,12 +45,12 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 
 - [Moon Source AI Kernel](MOON_SOURCE_AI_KERNEL.md)
 - [Moon Source Setup guide](portables/setup/README.md)
-- [🛫 Preflight V2](portables/preflight/PREFLIGHT_V2.md)
-- [Preflight V2 guide](portables/preflight/README.md)
+- [🛫 Preflight](portables/preflight/PREFLIGHT_V2.md)
+- [Preflight guide](portables/preflight/README.md)
 - [👁️ Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md)
 - [Be My Eyes guide](portables/be-my-eyes/README.md)
 - [Be My Eyes method source](docs/BE_MY_EYES.md)
-- [MSL 4.3 guide](portables/msl/README.md)
+- [Moon Source Language guide](portables/msl/README.md)
 - [Chat–Work Routing guide](portables/chat-work/README.md)
 - [Public portable registry](registry/PUBLIC_PORTABLES.md)
 - [🏛️ Moon Source architecture](ARCHITECTURE.md)
@@ -66,11 +66,11 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 ## Which download should I choose?
 
 - **Giving Moon Source files to an AI?** Download the **Moon Source AI Kernel**.
-- **Just want AI to understand you better?** Download **Moon Source Setup 3.0**.
-- **Want AI to reconstruct what you mean before it acts?** Download **Preflight V2**.
+- **Just want AI to understand you better?** Download **Moon Source Setup** (version **3.0**).
+- **Want AI to reconstruct what you mean before it acts?** Download **Preflight** (version **2.0**).
 - **Want AI to read what is happening between people, or predict how your message may land without pretending to read minds?** Download **Be My Eyes**.
-- **Want the structural grammar?** Download **MSL 4.3**.
-- **Want configurable Chat ↔ Work ↔ Codex routing?** Download **Chat–Work Routing Protocol V4**.
+- **Want the structural grammar?** Download **Moon Source Language** (version **4.3**).
+- **Want configurable Chat ↔ Work ↔ Codex routing?** Download **Chat–Work Routing Protocol** (version **4.2-public**).
 - **Need a bounded operational execution pattern?** Browse **Operational Devices** and **Operational Reliability**.
 - **Need to metabolize recurring failure?** Browse **Failure to Capability — Failure Foundry**.
 - **Want the synthetic browser reference?** Browse **Browser Console Device**; it is an experimental example, not a current portable download.

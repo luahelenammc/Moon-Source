@@ -1,6 +1,6 @@
 # 🧬 Credits & Attribution Ops
 
-## Intellectual lineage, content custody & immaterial-asset protection · MSL 4.3
+## Intellectual lineage, content custody & immaterial-asset protection
 
 - **distributed with:** Moon Source
 - **canonical repository:** https://github.com/luahelenammc/Moon-Source

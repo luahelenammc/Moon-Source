@@ -23,6 +23,7 @@ The repository does not require a CLA or a signed-off-by line as a condition of 
 - mark material adaptations and preserve third-party notices;
 - use the repository's [pull-request template](.github/PULL_REQUEST_TEMPLATE.md);
 - treat a public component and a public portable as different categories;
+- keep human-facing titles stable and record release state in dedicated version metadata; follow the [repository naming and versioning policy](docs/REPOSITORY_NAMING_AND_VERSIONING.md) and its reusable [template](templates/REPOSITORY_NAMING_AND_VERSIONING.md);
 - register a new or materially changed component in `registry/public-portables.json` and `registry/PUBLIC_PORTABLES.md` when it meets the component criteria;
 - touch cross-file surfaces only where responsibility, routing, evidence, boundary, licensing or discoverability actually changes;
 - run the local validation commands described in `.github/workflows/validate.yml`;

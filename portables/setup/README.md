@@ -1,10 +1,10 @@
-# 🧭 Moon Source Setup 3.0
+# 🧭 Moon Source Setup
 
 A public portable that finds the **smallest useful AI context setup for what you actually want to do**.
 
-You do not need to decide whether you are a beginner, power user or builder before starting. Setup 3.0 begins from your need, destination and privacy boundary, then infers how much structure is useful.
+You do not need to decide whether you are a beginner, power user or builder before starting. Moon Source Setup begins from your need, destination and privacy boundary, then infers how much structure is useful. The current public version is **3.0**.
 
-[⬇️ **Download Moon Source Setup 3.0 package (.zip)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.0.zip)
+[⬇️ **Download Moon Source Setup package (.zip)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.0.zip)
 
 ## Start here
 

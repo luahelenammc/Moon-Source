@@ -1,5 +1,7 @@
 # Versioning and Releases
 
+The repository-wide rule for public names and release state is [Repository Naming and Versioning](REPOSITORY_NAMING_AND_VERSIONING.md). Human-facing titles identify a stable capability; versions describe its current state in metadata, registries and release records.
+
 ## Layers
 
 Moon Source has several versioned layers with different responsibilities:
@@ -15,8 +17,8 @@ They should not be collapsed into one number.
 ## Current baseline
 
 - Public architecture baseline: 2026-08-16; additive component and operational updates continued through 2026-09-04; Chat–Work tri-surface routing advanced to V4 on 2026-09-06.
-- Current structural grammar: MSL 4.3.
-- Public portables: Setup 3.0, MSL 4.3, Chat–Work Routing Protocol 4.0-public.
+- Current structural grammar: Moon Source Language, version 4.3.
+- Public portables: Moon Source Setup (version 3.0), Preflight (version 2.0), Be My Eyes (version 1.0-public), Moon Source Language (version 4.3) and Chat–Work Routing Protocol (version 4.2-public).
 - The public component inventory is tracked separately from the portable inventory in `registry/public-portables.json` schema 1.1 and `registry/PUBLIC_PORTABLES.md`.
 - Preflight, Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Connected Sources, Source Hygiene, Signal Calibration and Procedural Projection are public components outside the portable registry.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -36,6 +38,15 @@ They should not be collapsed into one number.
 9. Exact-identity claims should use version/fingerprint evidence when appropriate, without treating a fingerprint as proof of authorship, ownership or permission.
 10. License rights come from the applicable standard license and file-level metadata; they are not broadened beyond those terms by implication.
 11. A user-facing link labeled **Download** must use a route intended to download the file; inline browse/open routes must be labeled as browse/open instead.
+
+## Title–version separation
+
+The public title of a capability is its stable human-facing identity. A release version is separate state. Do not rename a current title merely because the portable, protocol or repository has advanced from one release to another.
+
+- Keep human-facing titles, first-level headings, registry `title` values and website card labels free of release markers such as `V2`, `V4`, `3.0`, `4.3`, `1.0-public`, `beta` or `rc1`.
+- Record release state in dedicated `version` metadata, registry fields, release notes, package names, filenames, paths and other technical coordinates where it is useful or required.
+- Historical prose may name an earlier generation when the version is part of the fact being preserved; phrase current use with the stable title and an explicit version field or sentence.
+- Reusable Moon Source-family repositories should copy the policy template and run the title/version separation guard before promotion.
 
 ## MSL decision
 

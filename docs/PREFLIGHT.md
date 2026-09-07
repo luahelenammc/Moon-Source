@@ -1,6 +1,6 @@
-# Preflight V2 — canonical portable moved
+# Preflight — canonical portable moved
 
-Preflight V2 is now a standalone Moon Source public portable.
+Preflight is now a standalone Moon Source public portable, currently at version **2.0**.
 
 **Current canonical path:** [`portables/preflight/PREFLIGHT_V2.md`](../portables/preflight/PREFLIGHT_V2.md)  
 **Current version:** 2.0  

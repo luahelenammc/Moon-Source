@@ -51,11 +51,11 @@ Moon Source asks: what may govern, how current is it, what may travel or mutate,
 
 These are responsibility-oriented comparisons, not a universal ontology. A harness or retrieval system may implement some governance of its own; Moon Source complements those mechanisms rather than replacing them. It is not an agent harness, RAG engine, orchestration framework, runtime or SDK.
 
-## Before the topology: Preflight V2
+## Before the topology: Preflight
 
 Before asking what structure the field deserves, the AI may need to solve a more human problem: **what is the person actually trying to accomplish?**
 
-[Preflight V2](portables/preflight/PREFLIGHT_V2.md) is the human-intent reconstruction layer before execution. It reads raw human expression as a whole, distinguishes request from context, example, hesitation and correction, reconstructs the desired outcome and constraints, and asks only when a consequential ambiguity remains.
+[Preflight](portables/preflight/PREFLIGHT_V2.md) is the human-intent reconstruction layer before execution. Its current public version is **2.0**. It reads raw human expression as a whole, distinguishes request from context, example, hesitation and correction, reconstructs the desired outcome and constraints, and asks only when a consequential ambiguity remains.
 
 Its core loop is intentionally simpler than the architectural topology:
 
@@ -86,11 +86,11 @@ It is transversal, not a mandatory permanent stage in the topology. **Preflight 
 
 Choose the public entry point that matches the field in front of you:
 
-- **Human-intent reconstruction before execution:** start with [Preflight V2](portables/preflight/PREFLIGHT_V2.md) when the request is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally. Consequence-triggered execution guardrails remain available when the resulting task is risky, public, source-governed or mutable.
-- **Personal or project context:** start with [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
+- **Human-intent reconstruction before execution:** start with [Preflight](portables/preflight/PREFLIGHT_V2.md) when the request is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally. Consequence-triggered execution guardrails remain available when the resulting task is risky, public, source-governed or mutable.
+- **Personal or project context:** start with [Moon Source Setup](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
 - **Project, team or knowledge field:** run the [Field-to-Form diagnostic](docs/FIELD_TO_FORM.md) before choosing a document type.
-- **Structure, source, handoff or protocol design:** use [MSL 4.3](portables/msl/MSL_4_3.md) after the responsibility is clear.
-- **ChatGPT execution routing:** use the [Chat–Work Routing Protocol V4](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) when surface, model or reasoning effort is the actual decision.
+- **Structure, source, handoff or protocol design:** use [Moon Source Language](portables/msl/MSL_4_3.md) after the responsibility is clear.
+- **ChatGPT execution routing:** use the [Chat–Work Routing Protocol](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) when surface, model or reasoning effort is the actual decision.
 - **Intellectual lineage and immaterial-asset protection:** use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material must retain identity, authorship, canonicality, transformation history, permission scope, disclosure boundaries, derivative lineage and recoverable evidence as it moves or changes.
 - **Licensing and redistribution:** use [LICENSING](LICENSING.md) to route software to Apache-2.0, documentation and public portables to CC-BY-4.0, and third-party material to its own terms.
 - **Reusable procedure:** use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.
@@ -124,7 +124,7 @@ Situation:
 [describe or attach the material]
 ```
 
-For the supporting decisions, use [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [MSL 4.3](portables/msl/MSL_4_3.md).
+For the supporting decisions, use [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [Moon Source Language](portables/msl/MSL_4_3.md).
 
 **Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](DOWNLOADS.md). For reuse rights, use [LICENSING](LICENSING.md).
 
