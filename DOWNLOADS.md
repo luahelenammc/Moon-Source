@@ -15,7 +15,7 @@ The distribution is mixed-license: software and automation use Apache-2.0; docum
 
 ## Download the AI Kernel by itself
 
-[**⬇️ Download Moon Source AI Kernel (.md)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/MOON_SOURCE_AI_KERNEL.md?download=1)
+[**⬇️ Download Moon Source AI Kernel package (.zip)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-ai-kernel.zip)
 
 Use the standalone kernel when you want to give an AI only selected Moon Source files rather than the entire repository. It defines the public boot sequence, authority map, task routing, context-loading discipline, freshness rules and public-boundary behavior.
 
@@ -23,13 +23,13 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 
 | Portable | Best for | Direct download |
 |---|---|---|
-| **Moon Source Setup 3.0** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/setup/MOON_SOURCE_SETUP.md?download=1) |
-| **Moon Source Language 4.3** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/msl/MSL_4_3.md?download=1) |
-| **Chat–Work Routing Protocol V4** | First-use-hardened routing across Chat, Work and optional Codex using workload shape, Execution Profiles, live Run State, capability floors, operation modes, Budget Survivability and Chat Postflight | [⬇️ Download `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md?download=1) |
+| **Moon Source Setup 3.0** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.0.zip) |
+| **Moon Source Language 4.3** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
+| **Chat–Work Routing Protocol V4** | First-use-hardened routing across Chat, Work and optional Codex using workload shape, Execution Profiles, live Run State, capability floors, operation modes, Budget Survivability and Chat Postflight | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
 The current Chat–Work V4 subversion is **4.2-public**. It adds first-use hardening, optional/setup-controlled Codex, bounded direct actions, workload-shape routing, explicit operation modes, Route Cards, shared resource-pool state and transport capsules without treating any commercial plan as a universal routing policy.
 
-These links use GitHub's raw-download route for the current canonical files. Website copies are convenience mirrors, not separate semantic sources.
+GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each package contains the exact canonical `.md` file; website copies are convenience mirrors, not separate semantic sources.
 
 ## Open a public component
 
