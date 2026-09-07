@@ -2,13 +2,20 @@
 
 Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
 
+## 2026-09-07 — Chat–Work V4.3 IDL promotion
+
+- Promoted the reusable Intelligence Distillation Ladder from the Local Moon Source experimental module into the public Chat–Work V4 protocol as subversion **4.3-public**.
+- Generalized bounded escalation across `efficient | balanced | strong | frontier` with irreducible-delta detection, effort-versus-capability discrimination, Decision/Return Capsules, direct tier jumps, bounded micro-bursts, lower-tier re-entry and qualitative observability.
+- Reclassified Frontier Burst as the frontier-tier specialization of IDL while keeping the public layer model-neutral and preserving the claim ceiling: no benchmark, guaranteed savings, guaranteed quality gain, universal model ranking or private profile default.
+- Updated the canonical portable, package, public registries, download hub and website mirror; MSL remains 4.3 and the V4 title/filename remain stable.
+
 ## 2026-09-07 — Be My Eyes public method and portable
 
 - Promoted **Be My Eyes — Contextual Scene Reading** from repeated Local Moon Source use into the canonical public method at `docs/BE_MY_EYES.md`.
 - Generalized the reusable function around scene reconstruction, observation versus inference, relational structure and power, plausible subtext, risk, opportunity, overread, likely reception and response-axis selection without importing private examples or identity-specific assumptions.
 - Added the independently readable **Be My Eyes 1.0-public** portable at `portables/be-my-eyes/BE_MY_EYES.md`, including forward and inverse/reception modes, compact/full outputs, drafting contract, anti-overread rules, high-stakes boundary and quality gate.
 - Added the deterministic `downloads/be-my-eyes-1.0-public.zip` package containing the exact canonical Markdown bytes and registered canonical SHA-256 `74f05f85f5e664530bec30283cc9bb0e9bfdc3786d55927fbbc821e76c7fb1e8`.
-- Routed the method and portable through the AI Kernel, README, download hub, public registries and Existing Implementations while preserving Preflight V2, Setup 3.0, MSL 4.3 and Chat–Work 4.2-public.
+- Routed the method and portable through the AI Kernel, README, download hub, public registries and Existing Implementations while preserving Preflight V2, Setup 3.0 and MSL 4.3; Chat–Work advanced to 4.3-public in the IDL promotion recorded above.
 - Preserved the claim ceiling: publication does not establish mind-reading, diagnosis, scientifically validated interpersonal prediction, guaranteed recipient reaction, external adoption or measured impact.
 
 ## 2026-09-07 — Preflight V2 portable promotion

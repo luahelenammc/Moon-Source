@@ -263,13 +263,13 @@
       "id": "chat-work-routing",
       "title": "Chat–Work Routing Protocol",
       "slug": "chat-work",
-      "version": "4.2-public",
+      "version": "4.3-public",
       "status": "current",
       "class": "operational-routing-protocol",
       "language": "English",
       "difficulty": "advanced",
-      "function": "Route by sovereign object and workload shape across Chat, Work and optional Codex using configurable execution profiles, observed surface availability, capability floors, bounded direct actions, operation modes, Budget Survivability, transport capsules, evidence-bearing return, Chat Postflight and delta-only re-entry",
-      "best_for": "ChatGPT users and builders who need first-use routing to adapt to their resource posture, enabled capabilities and quality/throughput preferences while preserving capability floors, budget control and auditable closure across Chat, Work and optional Codex",
+      "function": "Route by sovereign object and workload shape across Chat, Work and optional Codex using configurable execution profiles, observed surface availability, capability floors, Budget Survivability, the model-neutral Intelligence Distillation Ladder, bounded micro-bursts, decision-bearing return capsules, Chat Postflight and delta-only re-entry",
+      "best_for": "ChatGPT users and builders who need routing to adapt to resource posture, enabled capabilities and quality/throughput preferences while isolating hard reasoning deltas, preserving capability floors and closing work audibly across Chat, Work and optional Codex",
       "canonical_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md",
       "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip",
       "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md",
@@ -285,12 +285,12 @@
         "Uses MSL-4.3 terminology; product and model calibration is date-sensitive",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions"
       ],
-      "freshness": "protocol semantics and calibration as of 2026-09-06; recheck volatile product behavior, model names, prices, availability and usage pools",
-      "claim_ceiling": "Published Chat–Work V4 protocol, subversion 4.2-public; not an OpenAI policy, universal benchmark or proof that a native chat-work-router V4 skill is installed",
-      "supersedes": "4.1-public",
+      "freshness": "protocol semantics as of 2026-09-07; product/model calibration as of 2026-09-06; recheck volatile product behavior, model names, prices, availability and usage pools",
+      "claim_ceiling": "Published Chat–Work V4 protocol, subversion 4.3-public; operational routing heuristic only, not an OpenAI policy, benchmark, guaranteed savings/quality claim or proof that a native chat-work-router V4 skill is installed",
+      "supersedes": "4.2-public",
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md",
-  "canonical_sha256": "2a4ba82acc5e913fa21681b7e187415484dce7f6432cad3129e5d9b0a1e62bbb"
+  "canonical_sha256": "bdd075de088add69d7c4c0b65c13420b241e9e3aeef6ffd7cf55006a9dee6a54"
     }
   ],
   "mirror_contract": {
@@ -308,7 +308,7 @@
       "Open and review a website pull request; merge only after SHA-256 equality and production-surface review."
     ],
     "mismatch_detection": "python scripts/check_mirror_sync.py",
-    "current_rebase_note": "Preflight version 2.0 and Be My Eyes version 1.0-public are current standalone portables. Be My Eyes is projected from docs/BE_MY_EYES.md and mirrored at moonsource/downloads/BE_MY_EYES.md. The former docs/PREFLIGHT.md component body is superseded by a succession pointer, while Preflight is mirrored at moonsource/downloads/PREFLIGHT_V2.md. Chat–Work Routing Protocol version 4.2-public remains the current canonical routing protocol; Moon Source Language remains version 4.3. Superseded portable generations remain recoverable through Git history rather than the live tree."
+    "current_rebase_note": "Preflight version 2.0 and Be My Eyes version 1.0-public are current standalone portables. Be My Eyes is projected from docs/BE_MY_EYES.md and mirrored at moonsource/downloads/BE_MY_EYES.md. The former docs/PREFLIGHT.md component body is superseded by a succession pointer, while Preflight is mirrored at moonsource/downloads/PREFLIGHT_V2.md. Chat–Work Routing Protocol version 4.3-public is the current canonical routing protocol with the model-neutral Intelligence Distillation Ladder; Moon Source Language remains version 4.3. Superseded portable generations remain recoverable through Git history rather than the live tree."
   },
   "_moon_source_public_stamp": {
     "project": "Moon Source",
