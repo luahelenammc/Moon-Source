@@ -19,7 +19,7 @@ Moon Source is disclosed through existing evidence only. This repository organiz
 ## What the current public body supports
 
 - Moon Source is a public context-architecture method and reference architecture. Evidence: PUBLIC_ARTIFACT, PUBLIC_REPOSITORY.
-- Moon Source includes independently readable public portables for setup, adaptive structural grammar and Chat–Work routing. Evidence: PUBLIC_ARTIFACT.
+- Moon Source includes independently readable public portables for setup, human-intent reconstruction, adaptive structural grammar and Chat–Work routing. Evidence: PUBLIC_ARTIFACT.
 - MSL 4.3 is the current public structural standard in this repository. Evidence: PUBLIC_ARTIFACT, INTERNAL_SOURCE_USED.
 - The repository is a public versioning and reference body. Evidence: PUBLIC_REPOSITORY.
 - The public body includes **Preflight V2**, a documented human-intent reconstruction method that converts ordinary, incomplete, conversational or self-correcting expression into a faithful working task before execution and activates heavier source/freshness/provenance/risk/destination/mutation guardrails only when consequence materially requires them. Evidence: PUBLIC_ARTIFACT, PUBLIC_REPOSITORY. This establishes the existence and inspectability of the method, not mind-reading, scientific validation, uniqueness, universal superiority, external adoption, independently measured prompting improvement or downstream impact.

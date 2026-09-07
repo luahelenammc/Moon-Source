@@ -6,20 +6,6 @@
   "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
   "public_components": [
     {
-      "id": "preflight",
-      "title": "Preflight V2 — Human Intent Reconstruction Before AI Execution",
-      "version": "2.0",
-      "class": "human-intent-reconstruction",
-      "canonical_path": "docs/PREFLIGHT.md",
-      "function": "Reconstruct a human's intended task from ordinary, incomplete, conversational or self-correcting expression, then activate source, freshness, provenance, risk, destination, mutation and readback guardrails only when execution consequence materially requires them",
-      "claim_ceiling": "Documented public human-intent reconstruction method integrated with the AI Kernel, Architecture and Setup 3.0; not mind-reading, scientific validation, uniqueness, adoption, measured improvement or independent-validation claim",
-      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
-      "public_created_on": "2026-08-23",
-      "last_material_update_on": "2026-09-07",
-      "last_material_update_summary": "Rebased Preflight as V2 around human-intent reconstruction; authority, provenance, freshness, risk, destination and mutation checks now operate as conditional execution guardrails rather than the semantic core.",
-      "status": "current"
-    },
-    {
       "id": "credits-attribution-ops",
       "title": "Credits & Attribution Ops",
       "class": "immaterial-asset-protection",
@@ -169,6 +155,36 @@
       "canonical_sha256": "ad44fc891064a1d49d5392fd4602b3abe80c82b30356eca6116162b2958a98f3"
     },
     {
+      "id": "preflight",
+      "title": "Preflight V2",
+      "slug": "preflight",
+      "version": "2.0",
+      "status": "current",
+      "class": "human-intent-reconstruction",
+      "language": "English with language-sensitive execution",
+      "difficulty": "beginner to advanced",
+      "function": "Reconstruct a human's intended task from ordinary, incomplete, conversational or self-correcting expression before execution, activating heavier authority, freshness, provenance, safety, destination, mutation and readback guardrails only when consequence requires them",
+      "best_for": "People who want to speak naturally to AI without translating themselves into prompt-engineering language, especially when a request contains examples, corrections, implicit constraints, negative requirements or tangled context",
+      "canonical_path": "portables/preflight/PREFLIGHT_V2.md",
+      "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip",
+      "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/PREFLIGHT_V2.md",
+      "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "license": "CC-BY-4.0",
+      "license_class": "open-content",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "licensing_url": "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md",
+      "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+      "adaptation_policy": "Share or adapt with appropriate credit, a license link and an indication of changes; do not imply endorsement.",
+      "dependencies": [],
+      "freshness": "general interpretation method; external facts and product-specific routes remain date-sensitive when a reconstructed task requires them",
+      "claim_ceiling": "Published human-intent reconstruction portable; not mind-reading, scientific validation, uniqueness, adoption, measured improvement, universal superiority or independent validation",
+      "supersedes": null,
+      "archive_paths": [],
+      "mirror_path": "moonsource/downloads/PREFLIGHT_V2.md",
+      "canonical_sha256": "8f24364376ce6de10fc8dd3f390691870c7d8af1f793784ca85b7f835ea37dda"
+    },
+    {
       "id": "moon-source-language",
       "title": "Moon Source Language",
       "slug": "msl",
@@ -247,7 +263,7 @@
       "Open and review a website pull request; merge only after SHA-256 equality and production-surface review."
     ],
     "mismatch_detection": "python scripts/check_mirror_sync.py",
-    "current_rebase_note": "Chat–Work V4 subversion 4.2-public is the current canonical protocol. It hardens first use with optional/setup-controlled Codex, bounded direct actions, workload-shape routing, explicit operation modes, shared resource pools and transport capsules without changing the V4 public generation or MSL 4.3. Superseded V4.1, V4.0 and V3 content remain recoverable through Git history; the live Moon-Source and LUAHELENA trees expose only the current V4 file."
+    "current_rebase_note": "Preflight V2 2.0 is now a current standalone portable; the former docs/PREFLIGHT.md component body is superseded by a succession pointer, while the canonical portable is mirrored at moonsource/downloads/PREFLIGHT_V2.md. Chat–Work V4 subversion 4.2-public is the current canonical protocol. It hardens first use with optional/setup-controlled Codex, bounded direct actions, workload-shape routing, explicit operation modes, shared resource pools and transport capsules without changing the V4 public generation or MSL 4.3. Superseded V4.1, V4.0 and V3 content remain recoverable through Git history; the live Moon-Source and LUAHELENA trees expose only the current V4 file."
   },
   "_moon_source_public_stamp": {
     "project": "Moon Source",

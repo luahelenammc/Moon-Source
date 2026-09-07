@@ -5,7 +5,7 @@ Internal names are useful for continuity, but a public reader should be able to 
 | Moon Source term | Public explanation | Use with care |
 |---|---|---|
 | Preflight V2 | Human-intent reconstruction before execution: turn ordinary, incomplete, conversational or self-correcting expression into a faithful working task, then activate heavier execution guardrails only when consequence requires them | Not mind-reading, a compulsory questionnaire, hidden reasoning transcript, prompt-engineering homework or autonomous self-modification |
-| Adaptive Preflight | Setup 3.0's specialization of the broader Preflight mechanism for personal and project-context setup | Do not treat Setup as the owner of all Preflight behavior |
+| Adaptive Preflight | Setup 3.0's specialization of the broader Preflight V2 portable for personal and project-context setup | Do not treat Setup as the owner of all Preflight behavior |
 | Self-prompt / reconstructed working prompt | Explanatory metaphor for the working task produced after the AI reconstructs intended meaning, desired outcome, corrections and constraints | Not canonical ontology; does not imply hidden chain-of-thought, literal system-prompt editing or persistent self-modification |
 | Source jurisdiction | Which source has authority over which claim or state | A conditional execution concern in Preflight V2; do not publish private resolver heuristics by default |
 | Living source | Governed, updateable context with explicit scope and freshness | Not a promise of automatic synchronization |
