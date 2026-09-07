@@ -22,7 +22,32 @@ jobs:
         with:
           python-version: "3.x"
       - name: Run portable promotion migration
+        continue-on-error: true
         run: python scripts/promote_preflight_v2.py
+      - name: Close known lineage residue and require promoted artifacts
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          root = Path('.')
+          portable = root / 'portables/preflight/PREFLIGHT_V2.md'
+          package = root / 'downloads/preflight-v2.zip'
+          if not portable.is_file() or not package.is_file():
+              raise SystemExit('promotion did not materialize canonical portable/package')
+          p = root / 'registry/PUBLIC_PORTABLES.md'
+          t = p.read_text(encoding='utf-8')
+          t = t.replace(
+              "Preflight's component version is **2.0**. This is a rebase of the existing public component at the same canonical path, not a new portable family. V1 remains recoverable through Git history.",
+              "Preflight V2 is now portable version **2.0**. Its earlier component-only lineage and V1 remain recoverable through Git history; current use routes to `portables/preflight/PREFLIGHT_V2.md`."
+          )
+          t = t.replace(
+              "Public components follow the same active-state principle unless a current governing file explicitly creates a separate archive artifact. Preflight V1 is preserved by repository history while `docs/PREFLIGHT.md` now governs V2.",
+              "Public components follow the same active-state principle unless a current governing file explicitly creates a separate archive artifact. Preflight V1 and the component-only V2 body remain recoverable through repository history; `portables/preflight/PREFLIGHT_V2.md` governs current portable use."
+          )
+          p.write_text(t, encoding='utf-8', newline='\n')
+          for path in ['README.md','ARCHITECTURE.md','MOON_SOURCE_AI_KERNEL.md','PUBLIC_BOUNDARY.md','EVIDENCE_AND_CLAIMS.md','registry/PUBLIC_PORTABLES.md']:
+              if 'docs/PREFLIGHT.md' in (root / path).read_text(encoding='utf-8'):
+                  raise SystemExit(f'stale current Preflight path remains in {path}')
+          PY
       - name: Remove one-shot migration machinery before validation
         run: rm scripts/promote_preflight_v2.py .github/workflows/promote-preflight-v2.yml
       - name: Refresh generated component digest
