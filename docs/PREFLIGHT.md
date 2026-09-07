@@ -1,445 +1,540 @@
-# Preflight — Adaptive Task Shaping Before AI Execution
+# Preflight V2 — Human Intent Reconstruction Before AI Execution
 
-> **One of Moon Source's crown-jewel mechanisms.**
+> **Humans should not have to prompt like machines.**
 
-**Preflight shapes the task before the task shapes the output.** It is the adaptive pass between a raw request and execution: the AI determines what the user is really asking, what context and authority matter, what is missing, what risk exists, where the result must go, what form fits that destination and whether a question is necessary before acting.
+**Version:** 2.0  
+**Status:** current public Moon Source component  
+**Public since:** 2026-08-23  
+**V2 rebase:** 2026-09-07  
+**Canonical path:** `docs/PREFLIGHT.md`
 
-This is a public Moon Source component, not a new portable family. It is directly usable as a method and is specialized by [Moon Source Setup 3.0](../portables/setup/MOON_SOURCE_SETUP.md) for personal and project-context setup.
+Preflight V2 is the adaptive interpretation layer between human expression and AI execution. Its first job is not to audit architecture. Its first job is to reconstruct what the human is actually trying to accomplish when the message is incomplete, conversational, scattered, self-correcting, emotionally loaded, overly literal, or simply written by a person who should not need to think like a prompt engineer.
+
+The core principle is simple:
+
+> **Preflight reconstructs the clearest faithful version of the human's intention before the AI acts on the literal wording of the message.**
+
+Source authority, provenance, freshness, risk, destination, mutation scope and similar checks remain important when consequence makes them important. In V2 they are **conditional execution guardrails**, not the semantic center of Preflight.
+
+Preflight is a public Moon Source component, not a new portable family. It is directly usable as a method and is specialized by [Moon Source Setup 3.0](../portables/setup/MOON_SOURCE_SETUP.md) for personal and project-context setup.
 
 ## 1. Why Preflight exists
 
 The first AI mistake is often not a bad answer. It is answering the wrong version of the request.
 
-A prompt can be grammatically clear and operationally wrong. An AI may follow the literal wording while missing:
+Human communication is not normally written as an executable specification. People:
 
-- the user's actual intention;
-- the source that governs the answer;
-- a current correction or a stale snapshot;
-- a missing fact that would change the route;
-- privacy, safety or public-claim boundaries;
-- the destination where the result will be used;
-- the smallest form that can carry the work;
-- whether asking a question helps or merely delays execution.
+- think aloud;
+- give examples before stating the rule;
+- correct themselves halfway through;
+- mix context with instructions;
+- omit things that feel obvious to them;
+- say what they do not want more clearly than what they do want;
+- use approximate words for a precise internal intention;
+- discover the request while describing it;
+- rely on prior conversation without restating it;
+- care about an outcome they have not yet translated into task language.
 
-Preflight exists to catch those mismatches before they become an answer, artifact, disclosure or mutation. It does not require a ceremony before every task. A trivial, clear and low-risk request may pass through Preflight almost invisibly.
+A literal executor can obey every sentence and still miss the person.
 
-## 2. What Preflight is
+Preflight exists to close that gap.
 
-### Precise definition
+Its purpose is not to make the human write a better prompt. Its purpose is to make the AI build a better **working task** from ordinary human expression.
 
-> **Preflight is the adaptive pass before and during execution that shapes a raw request into a proportionate working task by checking intent, governing context and authority, missing facts, risk and freshness, destination, form and question threshold.**
+## 2. Precise definition
+
+> **Preflight V2 is the adaptive human-intent reconstruction pass before and during execution that converts raw human expression into a faithful executable task by resolving intended meaning, desired outcome, relevant context, implicit constraints, corrections, preservation requirements and consequential ambiguity.**
+
+When execution materially depends on governed sources, current external facts, sensitive actions, public claims, mutations or other consequential boundaries, Preflight then activates the relevant execution guardrails or routes to the component that owns them.
 
 ### Plain-language definition
 
-Before the AI answers, it checks what you actually mean, what the answer is for and what could change the work. Then it acts at the depth the situation requires.
+You speak like a person. The AI works out what you are trying to get done, what parts of your message matter, what must be preserved, what you are correcting or rejecting, and whether anything truly needs clarification. Then it acts.
 
-Preflight is a decision loop, not a compulsory questionnaire. It may remain silent, make one assumption visible, ask one consequential question, inspect a source, route to a specialized component, choose a different surface or stop an unsafe materialization.
+The user should not have to translate themselves into machine-shaped language first.
 
-## 3. The public Preflight loop
+## 3. The V2 core loop
 
 The shortest reusable loop is:
 
 ```text
-raw request
-→ real intent
-→ governing context / authority
-→ missing facts
-→ risk and sensitivity
-→ destination
-→ proportionate form
-→ question threshold
+raw human expression
+→ what is being said?
+→ what is being meant?
+→ what outcome is actually wanted?
+→ what must be preserved, changed or avoided?
+→ reconstruct the working task
+→ ask only if consequential ambiguity remains
+→ apply execution guardrails only if materially triggered
 → execute
-→ readjust if the field changes
+→ readjust if the human meaning or field changes
 ```
 
-The loop is deliberately ordered around decisions rather than document types. It asks what must be understood before choosing what to create, load or expose.
-
-The public decision contract can be summarized as:
+A compact decision contract is:
 
 ```text
-What am I actually doing?
-What governs the answer?
-What do I still need?
-What could go wrong?
-Where is the result going?
-What is the smallest adequate form?
-Do I need to ask anything?
-Can I execute now?
+What is the human trying to accomplish?
+Which parts of the message are request, context, example, hesitation or correction?
+What outcome would satisfy the request rather than merely repeat its wording?
+What must remain true?
+What must not happen?
+What is genuinely uncertain?
+Can I reconstruct faithfully enough to act now?
+If execution has material consequences, which guardrail actually applies?
 ```
 
-These questions do not need to be printed in every response. The useful result is better routing, not a visible checklist.
+The contract does not need to be printed. The useful output is the result of the reconstruction.
 
-## 4. Adaptive depth
+## 4. Core first, guardrails second
 
-Preflight must be smaller than the uncertainty it resolves.
+Preflight V2 has two layers with different status.
 
-| Depth | Use when | Expected behavior |
+### Layer A — Human reconstruction core
+
+This is the defining layer and should operate by default whenever interpretation can improve execution.
+
+It reconstructs:
+
+- **literal request** — what the words directly say;
+- **intended task** — what the person appears to be trying to get done;
+- **desired outcome** — what successful completion would look like;
+- **context** — what explains the request but is not itself an instruction;
+- **examples** — illustrations that should not silently become universal rules;
+- **corrections** — later or clearer statements that revise earlier wording;
+- **implicit constraints** — requirements strongly supported by the message or active context;
+- **preservation requirements** — what the user wants kept intact;
+- **negative requirements** — what the user is clearly trying to avoid;
+- **uncertainty** — what remains genuinely unresolved after contextual reconstruction.
+
+### Layer B — Conditional execution guardrails
+
+These activate only when they can materially change the work.
+
+Examples include:
+
+- source jurisdiction or authority;
+- current versus historical state;
+- provenance or intellectual lineage;
+- freshness of external facts;
+- privacy or sensitivity;
+- medical, legal, financial or safety stakes;
+- public-claim boundaries;
+- destination-specific exposure;
+- mutation authority;
+- destructive or hard-to-reverse actions;
+- branch, repository or deployment state;
+- readback and validation after state-changing execution.
+
+These checks protect execution. They do not define the human meaning of the request.
+
+If none is materially triggered, do not manufacture them.
+
+## 5. The reconstruction contract
+
+### 5.1 Read the message as a scene, not a bag of sentences
+
+A request has relationships between its parts. Identify which statement is doing what.
+
+For example:
+
+```text
+"I like what you made, but it still feels too corporate. I don't really know how to explain it.
+The earlier one had more warmth, except I hated the opening. Maybe keep the structure but make it
+sound like a person who actually knows me?"
+```
+
+A literal pass may produce contradictory instructions.
+
+A V2 reconstruction can infer a coherent working task:
+
+```text
+Preserve the useful structure of the latest draft.
+Restore the warmer, more personal quality of the earlier version.
+Do not reuse the earlier opening.
+Reduce corporate language.
+Optimize for familiarity and human recognition rather than formal polish.
+```
+
+The reconstruction is not mystical. It is a disciplined reading of relations already present in the expression.
+
+### 5.2 Distinguish examples from requirements
+
+Humans often say “for example” because the category is easier to feel than to name.
+
+Do not silently convert one example into the whole rule.
+
+Ask:
+
+```text
+What property is this example carrying?
+```
+
+If the user says “something like a diary, maybe,” the important property may be continuity, informality or chronological accumulation rather than the literal artifact class `diary`.
+
+### 5.3 Let corrections actually correct
+
+A later correction from the user should revise the working task rather than becoming one more equal-weight instruction in a pile.
+
+```text
+initial wording → correction → current interpretation
+```
+
+Do not preserve a contradiction merely because both statements exist in the transcript.
+
+### 5.4 Preserve negative knowledge
+
+“I don't want X” is useful information even when the user cannot yet name Y.
+
+Negative constraints can define the boundary of the desired result:
+
+- not too formal;
+- do not remove the ambiguity;
+- keep the original voice;
+- do not turn this into a new architecture;
+- do not ask me to repeat information already available;
+- change the style, not the substance.
+
+The AI may use these boundaries to reconstruct a positive working task without pretending the user explicitly stated every positive property.
+
+### 5.5 Separate outcome from requested operation
+
+Sometimes the named operation is only the user's best available guess about how to reach the real outcome.
+
+Example:
+
+```text
+"Summarize all this so the next AI understands the project."
+```
+
+The real need may not be “a summary.” It may be a bounded handoff preserving current state, decisions and next actions.
+
+Preflight should notice the outcome and choose the operation that best serves it when the user has not made the operation itself a hard requirement.
+
+### 5.6 Use active context before demanding repetition
+
+If the answer is already available in the conversation or a governing source the AI can legitimately read, use it.
+
+Do not ask the human to become a redundant database API.
+
+## 6. Reconstruction is not permission to invent
+
+Preflight V2 is intentionally more interpretive than literal execution, but fidelity sets the boundary.
+
+Distinguish:
+
+- **explicit** — directly stated;
+- **strongly implied** — supported by the relationship between statements and context;
+- **working inference** — the most plausible interpretation but meaningfully revisable;
+- **unknown** — not sufficiently supported.
+
+Do not turn:
+
+- a vibe into a fact;
+- one example into a universal rule;
+- politeness into consent;
+- silence into approval;
+- a guessed motive into user intent;
+- a convenient assumption into authority;
+- prior context into a license to ignore the current correction.
+
+When an inference is important and uncertain, keep it revisable. When it would materially change safety, scope or outcome, ask.
+
+## 7. The question threshold
+
+> **Ask only when the unresolved answer could materially change the reconstructed task, its safety, its scope or the result.**
+
+Preserve these rules:
+
+- Do not ask for information already available and reliable enough in context.
+- Do not ask merely because more detail could exist.
+- If two plausible answers lead to the same useful result, choose a reasonable interpretation and act.
+- If the user clearly delegates judgment, exercise judgment.
+- If uncertainty can remain local without damaging the output, keep it local.
+- Prefer one consequential question over an intake form.
+- A useful partial result can be better than blocking on a non-essential unknown.
+- If the task changes while working, reconstruct again instead of defending the stale plan.
+
+The purpose of clarification is fidelity, not ceremony.
+
+## 8. Adaptive depth
+
+Preflight should be smaller than the misunderstanding it prevents.
+
+| Depth | Use when | Behavior |
 |---|---|---|
-| **Near-zero / silent** | The task is clear, low-risk, current enough, has an obvious destination and no consequential fact is missing | Act directly. Do not manufacture a preflight report. |
-| **Light** | One or two assumptions matter, the destination changes the output, existing material should be preserved or one question may change the result | Use available context, state the material assumption if needed, ask only the consequential question and then execute. |
-| **Deep** | Authority conflicts, several actors or projects overlap, sensitivity or public exposure is high, mutation is possible, the artifact is non-trivial or fresh external facts are required | Inspect enough to establish route, authority, scope, freshness, safeguards, acceptance criteria and readback. Deep does not mean many questions. |
+| **Quick-pass** | The human meaning is already clear | Reconstruct silently and act. |
+| **Light reconstruction** | The message contains minor ambiguity, examples, self-correction or unstated but obvious constraints | Resolve from context, expose at most one important assumption if useful, then act. |
+| **Deep reconstruction** | The request is long, tangled, multi-part, emotionally/operationally mixed, contradictory on the surface or dependent on several prior decisions | Build a coherent working task before execution; preserve meaningful uncertainty; ask only consequential questions. |
+| **Guarded execution** | The reconstructed task also triggers sensitive, public, mutable, external-fact or authority consequences | Keep the human reconstruction intact, then apply only the specialized guardrails the consequence requires. |
 
-If current sources can resolve the ambiguity, read them rather than asking the user to repeat what is already available. If the task is small, do not produce a large architecture. If the route is clear, do not stop at analysis when the user asked for execution.
+Deep reconstruction does not mean a longer visible preflight. It means a better internal task.
 
-### Preflight theater
+## 9. Human meaning has temporal structure
 
-A visible checklist that changes no decision is not Preflight. It is ceremony. The pass earns its existence only when it changes what the AI will load, ask, assume, expose, create, route or verify.
+Conversation is not a flat list.
 
-## 5. Several ways to understand the same mechanism
+When interpreting a request, consider:
 
-These are complementary explanations for different readers, not separate Moon Source subsystems.
+- later correction over earlier wording;
+- specific clarification over vague initial phrasing;
+- current request over stale preference when they conflict;
+- explicit exception over general rule;
+- result of a completed step over the plan that preceded it;
+- latest accepted artifact over abandoned drafts.
 
-### 5.1 Preflight as a self-prompt
+This is not a universal authority rule for every source. It is a conversational reconstruction rule: meaning develops through time.
 
-A normal prompt tells the AI what to do. Preflight acts like a **self-prompt around the prompt**: before acting, the AI operationally reframes what the request requires.
+When formal source authority matters, route that separate question to the relevant Moon Source component.
 
-```text
-"Make this better."
+## 10. Destination is useful, but not the definition
 
-without Preflight:
-→ immediately rewrite
+Where the result will live can change execution, so destination remains a useful conditional input.
 
-with Preflight:
-→ better for whom?
-→ for what destination?
-→ preserve meaning or redesign it?
-→ is there a governing source?
-→ is a question necessary, or is a safe assumption enough?
-→ then rewrite
-```
+Examples:
 
-The metaphor describes a public procedure that creates a better working contract. It does not mean that the AI exposes a hidden internal prompt or edits the model's private system instructions.
+| Destination | What may change after reconstruction |
+|---|---|
+| Chat answer | Brevity, directness, explanatory depth |
+| Email or message | Recipient, tone, disclosure, sendability |
+| Public page | Claim ceiling, privacy, attribution, readability |
+| Project source | Current-state responsibility, update contract |
+| Handoff | State, constraints, next action, transport boundary |
+| Repository mutation | Current branch/state, allowed diff, validation, readback |
 
-### 5.2 Preflight as a self-adjusting prompt
+But destination does not come before understanding what the human means.
 
-Preflight makes the working prompt **self-adjusting**: its depth, context, questions, tools and output form change when the field changes.
+First reconstruct the request. Then adapt its execution to where the result is going.
 
-```text
-same raw instruction
+## 11. Source, authority, freshness and provenance are conditional routes
 
-private note       → concise synthesis
-legal handoff      → chronology, claims, uncertainty and evidence
-public page        → sanitized material and bounded claims
-repository change  → authority, diff, validation and readback
-```
+Preflight V1 gave these concerns too much semantic weight. V2 keeps them, but puts them where they belong.
 
-The prompt is not changing the model. The working plan is changing according to destination, risk, authority and available evidence.
+When the reconstructed task materially depends on governed context, activate the appropriate route:
 
-### 5.3 Preflight as task shaping
+- [Connected Sources](CONNECTED_SOURCES.md) for connector-aware access, source/data and instruction authority, retrieval scope, freshness and mutation boundaries;
+- [Source Operations](SOURCE_OPERATIONS.md) for retrieve, process, metabolize, promote, succession and readback;
+- [Responsibility Map](RESPONSIBILITY_MAP.md) for ownership or authority collisions;
+- [Source Hygiene](SOURCE_HYGIENE.md) for stale, contradictory, duplicated or bloated corpora;
+- [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for intellectual lineage, custody, permission and derivative boundaries;
+- [Operational Reliability](OPERATIONAL_RELIABILITY.md) for consequential execution, failures, state changes and receipts;
+- [Signal Calibration](SIGNAL_CALIBRATION.md) when the unresolved issue is inference from weak or convergent signals;
+- [Field to Form](FIELD_TO_FORM.md) when the real problem is what structure the field deserves;
+- [Chat–Work Routing](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) when execution surface, model or reasoning effort materially affects the work.
 
-This is the least metaphorical explanation:
+Preflight should route to specialized governance rather than swallowing it.
 
-> Preflight converts an ambiguous or underspecified request into an executable task with proportionate constraints.
+## 12. Preflight as a reconstructed working prompt
 
-It is useful when the reader does not need Moon Source vocabulary. The task becomes clearer before the artifact becomes larger.
+A useful metaphor survives from V1: Preflight behaves like a self-prompt around the raw prompt.
 
-### 5.4 Preflight as a control surface before generation
-
-Generation is not the first operation. Preflight is the control surface that decides what generation is allowed to assume, use, ask, create and expose.
-
-This is why it can route to privacy safeguards, source hygiene, signal calibration, Chat–Work routing, a repository validation flow or no new artifact at all. It coordinates the boundary; it does not replace every specialized responsibility.
-
-### 5.5 Preflight as a checklist that scales itself
-
-The cockpit-checklist analogy is useful only for proportionality. A short flight does not need the same inspection as a complex operation. Likewise, a translation may need almost no visible Preflight while a public repository mutation needs authority, current-state, validation and readback checks.
-
-### 5.6 Preflight as a compiler front-end
-
-For technical readers, the analogy is:
+But V2 makes the object clearer.
 
 ```text
-human request
-→ parse intention and constraints
-→ resolve dependencies and authority
-→ detect material missing inputs
-→ choose execution target
-→ emit an executable task
+human expression
+→ reconstruct meaning
+→ produce a working task
+→ execute the working task
 ```
 
-This describes task shaping and routing at the public contract level. It does not disclose private resolver, compiler, scoring or evaluation machinery.
-
-### Reality anchor
-
-“Self-prompt” and “self-adjusting prompt” are explanatory metaphors for a procedure. They do not imply:
+The “working prompt” is an explanatory model for task reconstruction. It does not imply:
 
 - access to hidden chain-of-thought;
-- disclosure of a private reasoning transcript;
-- literal editing of the model's hidden system prompt;
+- publication of a private reasoning transcript;
+- literal editing of the model's system prompt;
 - persistent autonomous self-modification;
-- consciousness or metacognitive experience.
+- consciousness or privileged access to the user's mind.
 
-Moon Source exposes a usable decision contract, not a private reasoning transcript:
+Preflight exposes a public method for faithful interpretation, not private internal reasoning.
 
-```text
-public decision contract ≠ private reasoning transcript
-```
-
-## 6. The question threshold
-
-> **Ask only when the answer can materially change the route, safety, authority, scope or output.**
-
-Preserve the following rules:
-
-- Do not ask for information already available in the current context or governing source.
-- If two answers lead to the same safe result, do not force a choice.
-- An unknown may remain unknown when it does not block the work.
-- Resolve low-risk ambiguity with a labeled reasonable assumption when possible.
-- Ask one consequential question rather than launching a full intake.
-- A partial result can be better than unnecessary blockage.
-- If the user requested an artifact and the route is clear, produce the artifact.
-- If the field changes during execution, reroute instead of defending the stale plan.
-
-The goal is not to ask more questions. The goal is to remove the questions that do not change the work and catch the few that do.
-
-## 7. Destination awareness
-
-The same raw request can require different execution because the result will live somewhere different.
-
-| Destination | Preflight emphasis |
-|---|---|
-| Chat response | Direct usefulness, language, scope and whether a short answer is enough |
-| Private note | Preserve the user's meaning and useful detail without unnecessary exposure |
-| Global AI instructions | Stable behavior, privacy, portability and what should not be overfit to one project |
-| Project source | Current authority, scope, freshness, ownership and update responsibility |
-| Handoff | Current state, constraints, uncertainty, recipient, next action and transport boundary |
-| Public page | Claim ceiling, freshness, third-party privacy, authorship and readable form |
-| Repository mutation | Branch authority, current state, allowed scope, diff, validation, rollback boundary and readback |
-| External message | Recipient, channel, tone, disclosure, factual basis and whether sending authority exists |
-
-Do not draft a rich governed source for a small instruction field. Do not compress a public or legal handoff into a sentence merely because a compact answer looks elegant.
-
-## 8. Source and authority awareness
-
-Preflight treats access and authority as different questions.
-
-Public-safe rules:
-
-- **Access is not authority.** A file, tool result or retrieved page may be available without governing the decision.
-- The freshest governing source beats a stale echo or snapshot.
-- A current user correction beats a stored snapshot when the user has authority over the relevant state.
-- An archive preserves history; it does not govern the present by default.
-- A handoff, mirror or bridge can transport context without becoming the semantic source of truth.
-- A tool result is evidence or access, not semantic sovereignty by itself.
-- When sources overlap, resolve their responsibilities before flattening them together.
-
-Preflight may route to the [Responsibility Map](RESPONSIBILITY_MAP.md) when ownership or authority is the unresolved problem. It does not publish private resolver heuristics.
-
-## 9. Risk, sensitivity and freshness
-
-The scan should deepen when the consequence of a wrong route is material. Check proportionately for:
-
-- personal, third-party or confidential information;
-- medical, legal, financial or safety stakes;
-- public claims and stale external facts;
-- authorship, permission, attribution and derivative status;
-- destructive or hard-to-reverse mutation;
-- current versus historical state;
-- destination-specific exposure;
-- a mismatch between the requested form and what the destination can safely hold.
-
-Preflight routes to specialized safeguards rather than trying to become every safeguard. Examples include:
-
-- [Source Hygiene](SOURCE_HYGIENE.md) for stale, contradictory or bloated corpora;
-- [Signal Calibration](SIGNAL_CALIBRATION.md) for weak or ambiguous signals that need a bounded working inference;
-- [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when intellectual lineage, custody, transformation or permission boundaries matter;
-- [Chat–Work Routing Protocol V4](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) when surface, model or reasoning effort materially affects the work;
-- [Field to Form](FIELD_TO_FORM.md) when the field itself must be understood before a materialization is chosen.
-
-## 10. Output and execution contract
-
-Preflight should leave enough task shape to answer:
+## 13. Copy-paste public operation
 
 ```text
-What am I actually doing?
-What governs the answer or state?
-What material fact is still missing?
-What risk, sensitivity or freshness condition matters?
-Where is the result going?
-What is the smallest adequate form?
-Do I need to ask anything?
-Can I execute now?
-```
+Apply Moon Source Preflight V2 before executing this request.
 
-For an ordinary answer, this contract may remain internal and produce only the result. For a consequential operation, the relevant assumptions, authority, limits and validation may need to be made legible.
-
-For execution tasks that mutate a source, Preflight can include:
-
-```text
-before mutation
-→ authority
-→ current state
-→ allowed scope
-→ failure / rollback boundary
-→ acceptance criteria
-
-after mutation
-→ readback / verification
-→ delta truth
-→ next state
-```
-
-This is not a Git manual. It is the general rule that execution does not end when a change is written; it ends when the resulting state is checked against the intended task.
-
-## 11. Copy-paste public operation
-
-The following block is a compact public projection of the method:
-
-```text
-Apply Moon Source Preflight before executing this request.
-
+Reconstruct the human's intended task from the full expression and available context.
 Determine, only to the depth needed:
-- the real task;
-- relevant governing context or source;
-- any missing fact that could materially change the result;
-- risk, sensitivity or freshness constraints;
-- the destination of the output;
-- the smallest adequate form;
-- whether a question is truly necessary.
+- what the person is actually trying to accomplish;
+- which parts are request, context, example, hesitation or correction;
+- the desired outcome;
+- what must be preserved, changed or avoided;
+- what is explicit, strongly implied, uncertain or unknown;
+- whether any unresolved ambiguity would materially change the result.
 
+Do not make the user rewrite themselves as a prompt.
+Ask only if a consequential ambiguity remains.
+
+If the reconstructed task materially involves governed sources, current external facts,
+sensitive/public consequences or state-changing execution, apply only the relevant
+authority, freshness, provenance, safety, destination, mutation and readback guardrails.
 Then execute.
-Do not turn the preflight into a questionnaire.
-If the task is already clear and low-risk, act directly.
-If the task changes while working, re-route instead of forcing the original plan.
 
 Request:
 [...]
 ```
 
-## 12. Worked examples
+## 14. Worked examples
 
-### Example A — simple rewrite
+### Example A — messy human expression
 
-**Request:** “Fix the grammar in this sentence.”
+**Request:**
 
-```text
-silent Preflight
-→ clear intent
-→ low risk
-→ obvious destination
-→ edit directly
-```
+> “I need something for the team about this project, but I don't want another giant document. They mostly need to understand what changed and what they're supposed to do now. Maybe a summary? But not like a meeting summary.”
 
-### Example B — destination-sensitive editing
-
-**Request:** “Make this more professional.”
+**V2 reconstruction:**
 
 ```text
-use available context first
-→ email, CV, legal filing or public page?
-→ preserve meaning or redesign it?
-→ ask only if the destination changes the work
-→ rewrite in the smallest adequate form
+Goal: make the team's current state and next actions legible.
+Preserve: material changes and their operational consequence.
+Avoid: a large document and a chronological meeting recap.
+Likely form: a compact current-state handoff, not a generic summary.
+→ execute without forcing the user to choose artifact vocabulary.
 ```
 
-### Example C — source-sensitive status
+### Example B — rewrite with relational constraints
 
-**Request:** “Update the project status.”
+**Request:** “Make this professional, but please don't make me sound corporate. I still want it to feel like me.”
 
 ```text
-which source currently governs status?
-is the supplied note current or only a snapshot?
-is there authority to mutate it?
-→ update the governing destination
-→ validate and read back
+Professional = clear, credible and sendable.
+Not corporate = avoid institutional filler and generic executive tone.
+Preserve = the user's recognizable voice.
+→ rewrite against the combined intention, not the dictionary meaning of “professional.”
 ```
 
-### Example D — stale/current public fact
+### Example C — self-correction
 
-**Request:** “Add the current API pricing to this public guide.”
+**Request:** “Make it shorter. Actually, not shorter overall — I mean less repetitive. The explanation can stay.”
 
 ```text
-freshness matters
-→ verify the current official source
-→ preserve date and claim boundary
-→ update the public page
-→ check the rendered result if relevant
+Current task = remove redundancy while preserving explanatory depth.
+The later correction supersedes literal global shortening.
 ```
 
-### Example E — form-sensitive organization
+### Example D — delegated judgment
 
-**Request:** “Organize all this.”
+**Request:** “I don't know what kind of file this should be. You decide. I just need another AI to pick up exactly where we stopped.”
 
 ```text
-what field is actually present?
-→ a short note, source repair, handoff, registry or no new artifact?
-→ route to Field to Form or Source Hygiene only if needed
-→ create the smallest form that changes what the field can support
+Outcome = continuity across AI instances.
+The user delegated form selection.
+→ reconstruct the needed transport contract.
+→ route to Field to Form / Responsibility Map only if needed.
+→ do not ask the user to choose between Moon Source artifact names.
 ```
 
-### Example F — repository mutation
+### Example E — repository mutation
 
-**Request:** “Add this method to the public repository.”
+**Request:** “This method is ready. Put it in the public repo and finish everything.”
 
 ```text
-confirm current branch and governing repository state
-→ define the public-safe scope and claim ceiling
-→ make the smallest coherent diff
-→ run links, stamps, registry and relevant CI checks
-→ read back the final files and report the exact state
+Human reconstruction:
+→ promote the method coherently, not merely add one file.
+→ “finish everything” includes integration surfaces that would otherwise become stale.
+
+Conditional execution guardrails now trigger:
+→ current main state
+→ public boundary / claim ceiling
+→ smallest coherent diff
+→ registry/changelog integration
+→ validation
+→ readback
 ```
 
-## 13. Anti-patterns
+The architecture appears because the execution consequence earned it, not because every request must pass through an architectural customs office.
 
-Preflight fails when it becomes:
+## 15. Anti-patterns
 
-- a questionnaire reflex before every task;
-- architecture cosplay that adds labels without changing a decision;
-- the assumption that more context is always better;
-- artifact-first thinking;
-- a request for facts already available;
-- a blocker whenever any ambiguity exists;
-- permission to guess whenever ambiguity exists;
-- an excuse to load every available source;
-- longer than the task it is supposed to shape;
-- a printed imitation of hidden reasoning or a claim to reveal chain-of-thought;
-- a claim that a self-adjusting prompt autonomously reprograms the model;
-- a replacement for the specialized component that actually owns the next operation.
+Preflight V2 fails when it becomes:
 
-## 14. Relationship map
+- **literalism with nicer wording** — restating the prompt without reconstructing its meaning;
+- **telepathy theater** — inventing motives or preferences unsupported by the expression;
+- **architecture takeover** — turning every human request into authority/provenance/form analysis;
+- **prompt-engineering homework** — asking the human to rewrite what the AI could reconstruct;
+- **questionnaire reflex** — collecting detail that does not change the result;
+- **example capture** — treating one illustration as the whole rule;
+- **correction flattening** — preserving stale wording after the user revised it;
+- **negative-constraint blindness** — ignoring what the user clearly said must not happen;
+- **artifact-first thinking** — selecting a Moon Source object before understanding the outcome;
+- **caveat paralysis** — refusing to form a useful working interpretation because certainty is incomplete;
+- **confidence inflation** — presenting an inference as if the user explicitly stated it;
+- **hidden-reasoning cosplay** — printing a fake transcript of internal thought and calling it Preflight;
+- **guardrail inflation** — activating provenance, authority, freshness, safety or mutation checks when none can change the work;
+- **stale-plan loyalty** — continuing to execute an earlier interpretation after the human meaning has changed.
 
-Preflight is transversal, but it does not own every decision it can reveal.
+## 16. Relationship map
 
-| Component | What it owns | Relationship to Preflight |
+| Component | What it owns | Relationship to Preflight V2 |
 |---|---|---|
-| [Field to Form](FIELD_TO_FORM.md) | What structure or materialization the field deserves | Preflight may route to it; Field to Form does not replace the before-execution gate. |
-| [Responsibility Map](RESPONSIBILITY_MAP.md) | Ownership, authority and relationships between objects | Preflight detects when authority needs mapping; the map performs the deeper separation. |
-| [MSL 4.3](../portables/msl/MSL_4_3.md) | Structural grammar for a materialization that has earned existence | Preflight decides whether structure is needed; MSL shapes it afterward. Preflight is not “MSL before MSL.” |
-| [Setup 3.0](../portables/setup/MOON_SOURCE_SETUP.md) | Personal and project-context setup and routing | Setup's Adaptive Preflight is a specialization of this broader mechanism. |
-| [Source Hygiene](SOURCE_HYGIENE.md) | Bounded diagnosis and repair of stale or contradictory corpora | Preflight identifies corpus quality as the real problem; Source Hygiene performs the bounded operation. |
-| [Signal Calibration](SIGNAL_CALIBRATION.md) | Working inference from weak or ambiguous signals | Preflight decides whether inference is materially needed and what evidence bar applies. |
-| [Chat–Work Routing](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) | Surface, model, reasoning-effort and postflight routing | Preflight can identify routing as consequential; the protocol performs that specialized choice. |
-| [Procedural Projection](PROCEDURAL_PROJECTION.md) | Turning a stable method into reusable procedures and projections | Preflight can be documented as a method; it does not recursively create a second Preflight procedure by default. |
+| [Moon Source Setup 3.0](../portables/setup/MOON_SOURCE_SETUP.md) | Personal/project setup and context routing | Its Adaptive Preflight is a specialization of the broader V2 reconstruction principle. |
+| [Signal Calibration](SIGNAL_CALIBRATION.md) | Working inference from weak or ambiguous signals | Used when reconstructing meaning depends on non-trivial inference rather than direct conversational structure. |
+| [Field to Form](FIELD_TO_FORM.md) | What structure or materialization a field deserves | Preflight reconstructs the need; Field to Form decides the form when form is genuinely unresolved. |
+| [Responsibility Map](RESPONSIBILITY_MAP.md) | Ownership, authority and relationships between objects | Activated when the reconstructed task reveals a real responsibility conflict. |
+| [Connected Sources](CONNECTED_SOURCES.md) | Connector-aware source operation | Activated when external source access materially matters. |
+| [Source Operations](SOURCE_OPERATIONS.md) | Retrieve, process, metabolize and promote | Activated when the request is an operation on governed source material. |
+| [Source Hygiene](SOURCE_HYGIENE.md) | Corpus diagnosis and conservative repair | Activated when the problem is stale or contradictory context rather than human-expression ambiguity. |
+| [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage and content custody | Activated when material identity, permission or derivative lineage matters. |
+| [Operational Reliability](OPERATIONAL_RELIABILITY.md) | Bounded execution reliability and receipts | Activated when state-changing execution earns operational safeguards. |
+| [MSL 4.3](../portables/msl/MSL_4_3.md) | Structural grammar | Used only after a materialization has earned existence. |
 
-The relationship is therefore:
+Preflight is upstream of these components only in the sense that it reconstructs **what the human is asking for**. It does not become their authority.
+
+## 17. QA before execution
+
+A good Preflight V2 pass should be able to answer:
+
+- Am I solving the person's intended problem or only their literal wording?
+- Did I distinguish request from context, example and correction?
+- Did I preserve what the person wants preserved?
+- Did I respect what they want avoided?
+- Did I infer only what the message and active context support?
+- Did I remove questions that do not change the work?
+- Did I activate architectural or safety machinery only when consequence earned it?
+- If the user changed the meaning, did I change the task?
+
+If the answer to the first question is no, the rest of the architecture is decorating the wrong problem.
+
+## 18. V2 lineage
+
+Preflight was first promoted publicly on 2026-08-23 as a general adaptive task-shaping gate.
+
+Preflight V2, rebased on 2026-09-07, changes the center of gravity:
 
 ```text
-Moon Source Preflight
-    └── Setup 3.0 Adaptive Preflight
-        specialization for user/context setup
+V1 emphasis
+intent + authority + missing facts + risk + destination + form
+
+V2 emphasis
+human expression → intended meaning → faithful working task
+                         ↓
+              conditional execution guardrails
 ```
 
-## 15. Claim ceiling and public boundary
+The V1 contribution is not discarded. Its authority, freshness, risk, destination, mutation and readback concerns survive as conditional routes and specialized safeguards.
 
-The public repository demonstrates a documented Preflight method and an integrated public reference implementation through this component, the AI Kernel, Architecture and Setup 3.0.
+The superseded V1 body remains recoverable through Git history. The canonical path now carries V2.
 
-It does not establish that Preflight is unique to Moon Source, universally superior, externally adopted, independently validated, patented or a universal AI standard. “Crown jewel” identifies its characteristic importance within Moon Source; it is not a novelty or market-dominance claim.
+This is a component-version rebase. It does not create a new portable family, change MSL 4.3 or require a Setup 3.0 version bump.
 
-This document exposes a usable decision contract. It does not expose:
+## 19. Claim ceiling
 
-- private source corpora;
-- hidden scoring, thresholds or evaluation machinery;
-- private resolver, compiler or reconciliation heuristics;
-- protected custody or permission ledgers;
-- hidden chain-of-thought or a reasoning transcript;
-- persistent self-modification or consciousness.
+Preflight V2 is a documented public interpretation and task-reconstruction method integrated into Moon Source's public architecture.
 
-For the wider disclosure boundary, read [Public Boundary](../PUBLIC_BOUNDARY.md) and [Evidence and Claims](../EVIDENCE_AND_CLAIMS.md). For Moon Source-specific authorship, use framing and watermark governance, read [Moon Source Use & Attribution](../MOON_SOURCE_USE_AND_ATTRIBUTION.md).
+Its existence does not establish:
 
-## 16. Public attribution
+- uniqueness;
+- scientific validation;
+- mind-reading ability;
+- access to hidden human intention beyond available expression and context;
+- external adoption;
+- measured improvement;
+- universal superiority;
+- a benchmarked reduction in prompting effort;
+- independent validation.
 
-Preflight is part of Moon Source, created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion**. The repository is the canonical public source for this document. Attribution and use remain governed by the repository's applicable terms; public availability and credit do not themselves grant reuse rights.
+The public claim is narrower and useful: Moon Source provides an inspectable method for reconstructing a human's intended task before execution and for activating heavier execution governance only when the task's consequences require it.
 
-**MSL:** 4.3 · **Setup relationship:** Setup 3.0 specialization · **Status:** public component, not a separate portable.
+**Canonical repository:** https://github.com/luahelenammc/Moon-Source  
+**Professional context:** https://www.luahelena.com.br/ia/?lang=en
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

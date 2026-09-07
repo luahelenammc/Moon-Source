@@ -12,8 +12,8 @@ If you received the full repository or ZIP:
 
 1. Read this file first.
 2. Read `README.md` for orientation and public entry points.
-3. Identify the user's actual task before loading more files.
-4. If the request itself is ambiguous, underspecified, risky, destination-sensitive or likely to activate the wrong source or form, apply [Preflight](docs/PREFLIGHT.md) before loading more modules.
+3. Reconstruct the user's actual intended task before loading more files.
+4. If the human meaning is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally, apply [Preflight V2](docs/PREFLIGHT.md). If the reconstructed task has material source, freshness, public, sensitive or mutation consequences, let Preflight route only to the guardrails that consequence requires.
 5. Load only the smallest set of Moon Source modules that can answer or execute that task. This is Moon Source's **progressive disclosure**, or **just-in-time context loading**, discipline: load the next sufficient context rather than the whole repository by reflex.
 6. Use the authority map below when files overlap.
 7. Preserve the distinction between current state, historical material, public claims and private/non-disclosed machinery.
@@ -27,7 +27,7 @@ Use each file for the responsibility it actually owns:
 
 - `README.md` — orientation, public entry points and top-level routing.
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
-- `docs/PREFLIGHT.md` — adaptive task shaping before execution: intent, authority, missing facts, risk, destination, form and question threshold.
+- `docs/PREFLIGHT.md` — Preflight V2: human-intent reconstruction before execution, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
 - `docs/CONNECTED_SOURCES.md` — connector-aware source access: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
 - `docs/SOURCE_OPERATIONS.md` — public source-operation grammar: retrieve, process, metabolize, promote, promotion gate, lifecycle, legacy succession, current-state versus history, smallest sovereign destination, readback and no-delta.
 - `ARCHITECTURE.md` — public Moon Source architecture and field-to-form topology.
@@ -58,16 +58,16 @@ Use each file for the responsibility it actually owns:
 
 When two files appear to conflict, do not flatten them together. First ask whether they have different jurisdictions. Prefer the file whose declared responsibility governs the disputed state.
 
-Preflight is the general before-execution gate. It may remain silent for a clear, low-risk task, or route to the component that owns the next decision. It does not replace the default operating loop and is not a mandatory permanent stage.
+Preflight V2 is the general human-intent reconstruction layer before execution. It may remain almost invisible when the intended task is already clear. It is not a mandatory questionnaire, and it does not replace specialized governance: it activates those layers only when the reconstructed task materially earns them.
 
 ## 3. Route by user intent
 
-### If the request itself is unclear, risky or likely to activate the wrong source or form
+### If the human meaning itself needs reconstruction
 
 Load:
 - `docs/PREFLIGHT.md`
 
-Use it when the immediate problem is task shaping rather than a known domain operation: the user's real intention, governing authority, missing facts, freshness, sensitivity, destination, question threshold or smallest adequate form may change the route. After the pass, load only the specialized component that the shaped task actually needs.
+Use Preflight V2 when the person is thinking aloud, mixing examples with requirements, correcting themselves, relying on context, expressing what they want to avoid more clearly than what they want, or otherwise risks being misunderstood by literal execution. Reconstruct the intended task first. Ask only if consequential ambiguity remains. Then load a specialized component only if the reconstructed task materially requires source authority, freshness, provenance, public/sensitive boundaries, form selection, execution routing or mutation safeguards.
 
 ### If the user wants AI to understand them more consistently
 
@@ -205,8 +205,6 @@ Use **retrieve** to locate current governing context without mutation. Use **pro
 
 Route current-use questions about superseded artifacts to their active successor. Keep legacy bodies available only for historical, provenance or recovery questions. Treat bridges, mirrors, snapshots and ledgers as non-authoritative for current state unless a governing source explicitly assigns them that facet.
 
-
-
 ### If the user asks where ChatGPT work should run
 
 Load:
@@ -251,7 +249,7 @@ Do not manufacture case studies, adoption, impact, product-market fit, enterpris
 
 ## 4. Default operating loop
 
-For a general Moon Source application, enter through Preflight when task shaping is the unresolved problem. Then use this loop only to the depth the task needs; skip layers that do not affect the decision:
+For a general Moon Source application, reconstruct the user's intended task through Preflight V2 whenever human meaning is the unresolved problem. Then use this loop only to the depth the task needs; skip layers that do not affect the decision:
 
 1. **Field** — What is actually happening before a container is chosen?
 2. **Observation** — Which sources, actors, routines, decisions, constraints, weak signals and uncertainties matter?
@@ -262,7 +260,7 @@ For a general Moon Source application, enter through Preflight when task shaping
 7. **Operation / transport** — How will it actually be used, moved or invoked?
 8. **Hygiene, lineage and custody** — What must remain current, what is superseded, what identity and provenance must remain recoverable, which boundaries must travel, and what belongs in archive?
 
-This is a decision loop, not a compulsory waterfall.
+This is a decision loop, not a compulsory waterfall. The architectural loop begins only when the reconstructed task actually needs architecture.
 
 ### Connected-source pass
 
@@ -399,7 +397,7 @@ The default question is not:
 
 It is:
 
-> What does this field actually need, who or what should own it, and what is the smallest form that can carry it without losing authority, provenance or freshness?
+> What is this human actually trying to accomplish, and if that need becomes a context-architecture problem, what should own it and what is the smallest form that can carry it without losing authority, provenance or freshness?
 
 If the answer is "nothing new needs to be created," that is a valid Moon Source result.
 
@@ -411,7 +409,7 @@ If time is limited, do this:
 
 1. Read this kernel.
 2. Read `README.md`.
-3. Determine the user's intent.
+3. Reconstruct the user's intended task; use Preflight V2 when literal wording is not enough.
 4. Open only the relevant module(s) from section 3.
 5. Apply the smallest adequate operation.
 6. Check evidence/public-boundary files before making public claims.

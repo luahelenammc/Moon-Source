@@ -22,7 +22,7 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 | If you need to… | Start here |
 |---|---|
 | Give an AI the smallest useful setup for a person or project | [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md) |
-| Shape an ambiguous, risky or destination-sensitive request before execution | [Preflight](docs/PREFLIGHT.md) |
+| Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [Preflight V2](docs/PREFLIGHT.md) |
 | Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Retrieve, process, metabolize or promote governed source material | [Source Operations](docs/SOURCE_OPERATIONS.md) |
@@ -49,7 +49,7 @@ A few principles carry most of the architecture:
 - **Freshness and readback matter.** A mutation is not complete merely because a write call succeeded.
 - **Operations have different authority effects.** Retrieve reads, process transforms working material, metabolize integrates a real delta and promote generalizes a proven mechanism; none of these verbs is a substitute for the others.
 - **Work completion is not cycle completion.** When sustained execution returns, Chat verifies the real state, closes bounded residuals and re-enters Work only for irreducible remaining work.
-- **Preflight can happen before any of this.** One of Moon Source's crown-jewel mechanisms reshapes the task itself by checking intent, authority, missing facts, risk, destination and proportionate form before execution.
+- **Humans should not have to prompt like machines.** [Preflight V2](docs/PREFLIGHT.md) reconstructs intended meaning, desired outcome, corrections and constraints before execution; authority, provenance, freshness, risk and mutation checks activate only when consequence makes them material.
 
 ## Examples
 
@@ -94,7 +94,7 @@ Public components are responsibility-bearing methods with canonical files. They 
 
 | Component | Responsibility |
 |---|---|
-| [Preflight](docs/PREFLIGHT.md) | Adaptive task shaping before execution |
+| [Preflight V2](docs/PREFLIGHT.md) | Human-intent reconstruction before execution, with consequence-triggered execution guardrails |
 | [Connected Sources](docs/CONNECTED_SOURCES.md) | Source/data and instruction authority, jurisdiction, freshness, retrieval, mutation boundaries and readback for connected sources |
 | [Source Operations](docs/SOURCE_OPERATIONS.md) | Retrieve, process, metabolize and promote governed source changes, with lifecycle and legacy-successor rules |
 | [Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
@@ -121,10 +121,10 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent component changes
 
 <!-- MOON-SOURCE-COMPONENT-DIGEST:START -->
+- **2026-09-07 — Preflight V2:** Rebased Preflight around human-intent reconstruction; authority, provenance, freshness, risk, destination and mutation checks now operate as conditional execution guardrails rather than the method's semantic core.
 - **2026-09-04 — Source Operations:** Promoted a public source-operations and lifecycle method for retrieve, process, metabolize, promote, succession, readback and no-delta.
 - **2026-08-26 — Operational Reliability:** Added lightweight, materiality-triggered Context Receipts for context-path evidence alongside ordinary operational receipts.
 - **2026-08-26 — Connected Sources:** Separated source/data authority from instruction authority, added indirect-instruction failure handling and named proportional progressive loading.
-- **2026-08-23 — Preflight:** Promoted adaptive task shaping as a transversal public mechanism for intent, authority, risk, destination and form.
 - **2026-08-23 — Operational Devices:** Added bounded operational-device contracts for state, guards, failure behavior and receipts.
 <!-- MOON-SOURCE-COMPONENT-DIGEST:END -->
 
@@ -149,9 +149,9 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 ## Current baseline
 
-Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-09-04**; Chat–Work routing advanced to the tri-surface **V4** protocol on **2026-09-06**.
+Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-09-07**; Preflight advanced to **V2** on **2026-09-07**, and Chat–Work routing remains the tri-surface **V4** protocol.
 
-Current structural grammar: **MSL 4.3**. Current public portables: **Setup 3.0**, **MSL 4.3** and **Chat–Work 4.0-public**. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
+Current structural grammar: **MSL 4.3**. Current public portables: **Setup 3.0**, **MSL 4.3** and **Chat–Work 4.2-public**. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
 

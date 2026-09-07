@@ -51,24 +51,42 @@ Moon Source asks: what may govern, how current is it, what may travel or mutate,
 
 These are responsibility-oriented comparisons, not a universal ontology. A harness or retrieval system may implement some governance of its own; Moon Source complements those mechanisms rather than replacing them. It is not an agent harness, RAG engine, orchestration framework, runtime or SDK.
 
-## Before the topology: Preflight
+## Before the topology: Preflight V2
 
-When the immediate problem is not yet “what structure should exist?” but “what is the AI actually being asked to do, under what authority, risk, destination and constraints?”, start with [Preflight](docs/PREFLIGHT.md).
+Before asking what structure the field deserves, the AI may need to solve a more human problem: **what is the person actually trying to accomplish?**
 
-Preflight is the adaptive gate before and during execution. It can:
+[Preflight V2](docs/PREFLIGHT.md) is the human-intent reconstruction layer before execution. It reads raw human expression as a whole, distinguishes request from context, example, hesitation and correction, reconstructs the desired outcome and constraints, and asks only when a consequential ambiguity remains.
 
-- terminate quickly and let a clear, low-risk task execute directly;
-- route into [Field to Form](docs/FIELD_TO_FORM.md) when the field needs architectural diagnosis;
-- route into another specialized public component when that responsibility is the real problem;
-- reroute when new evidence changes the task, authority, destination or risk.
+Its core loop is intentionally simpler than the architectural topology:
 
-It is transversal, not a mandatory permanent stage in the topology. **Preflight shapes the task; Field to Form decides what the field deserves to become.**
+```text
+human expression
+→ intended meaning
+→ desired outcome
+→ preserve / change / avoid
+→ faithful working task
+→ execute
+```
+
+When the reconstructed task materially involves governed sources, fresh external facts, sensitive/public consequences or state-changing execution, Preflight activates the relevant authority, provenance, freshness, risk, destination, mutation and readback guardrails or routes to the component that owns them.
+
+This ordering matters. **Preflight first understands the human; architecture enters when the work earns architecture.**
+
+Preflight can therefore:
+
+- terminate quickly and let a clear request execute directly;
+- resolve conversational ambiguity without forcing the user to rewrite themselves as a prompt;
+- route into [Field to Form](docs/FIELD_TO_FORM.md) when the reconstructed need is genuinely architectural;
+- route into a specialized public component when the consequence, not the wording, requires authority, freshness, provenance, safety or execution safeguards;
+- reroute when the user corrects the meaning or new evidence changes the field.
+
+It is transversal, not a mandatory permanent stage in the topology. **Preflight reconstructs the task; Field to Form decides what the field deserves to become.**
 
 ## Use this architecture
 
 Choose the public entry point that matches the field in front of you:
 
-- **Request shaping before execution:** start with [Preflight](docs/PREFLIGHT.md) when the request is vague, underspecified, risky, destination-sensitive or likely to activate the wrong source or form.
+- **Human-intent reconstruction before execution:** start with [Preflight V2](docs/PREFLIGHT.md) when the request is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally. Consequence-triggered execution guardrails remain available when the resulting task is risky, public, source-governed or mutable.
 - **Personal or project context:** start with [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
 - **Project, team or knowledge field:** run the [Field-to-Form diagnostic](docs/FIELD_TO_FORM.md) before choosing a document type.
 - **Structure, source, handoff or protocol design:** use [MSL 4.3](portables/msl/MSL_4_3.md) after the responsibility is clear.

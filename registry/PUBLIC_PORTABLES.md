@@ -16,7 +16,7 @@ These are public components, not portable registry entries. Their chronology is 
 
 | Component | Public since | Last material update | Status | Purpose |
 |---|---:|---:|---|---|
-| [Preflight — Adaptive Task Shaping Before AI Execution](../docs/PREFLIGHT.md) | 2026-08-23 | 2026-08-23 | current | Shapes intent, authority, risk, destination and proportionate form before execution |
+| [Preflight V2 — Human Intent Reconstruction Before AI Execution](../docs/PREFLIGHT.md) | 2026-08-23 | 2026-09-07 | current | Reconstructs intended human meaning into a faithful working task; source authority, provenance, freshness, risk, destination and mutation checks activate as conditional execution guardrails when consequence requires them |
 | [Credits & Attribution Ops](../docs/CREDITS_ATTRIBUTION_OPS.md) | 2026-08-17 | 2026-08-18 | current | Protects intellectual lineage, content custody and immaterial-asset boundaries |
 | [Operational Devices](../docs/OPERATIONAL_DEVICES.md) | 2026-08-23 | 2026-08-23 | current | Embodies reusable procedures on concrete surfaces with bounded state and receipts |
 | [Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) | 2026-08-23 | 2026-08-26 | current | Structures diagnosis, failure boundaries, reversibility, ordinary and Context Receipts, and freshness |
@@ -26,6 +26,8 @@ These are public components, not portable registry entries. Their chronology is 
 | [Source Hygiene](../docs/SOURCE_HYGIENE.md) | 2026-08-17 | 2026-08-17 | current | Diagnoses stale, duplicated, contradictory or orphaned corpus material |
 | [Signal Calibration](../docs/SIGNAL_CALIBRATION.md) | 2026-08-21 | 2026-08-21 | current | Calibrates weak or convergent signals into bounded working inference |
 | [Procedural Projection](../docs/PROCEDURAL_PROJECTION.md) | 2026-08-17 | 2026-08-17 | current | Projects stable methods into procedures without moving source authority |
+
+Preflight's component version is **2.0**. This is a rebase of the existing public component at the same canonical path, not a new portable family. V1 remains recoverable through Git history.
 
 The component inventory is machine-readable in [`registry/public-portables.json`](public-portables.json), currently at schema `1.1`. A component becoming public does not automatically make it a portable; a component update does not automatically require an MSL, Setup or Chat–Work version bump.
 
@@ -52,6 +54,8 @@ Setup and MSL are general public documents, but their wording can evolve. Chat�
 The live repository and live mirror surface expose only current portable generations. A superseded portable is removed from `main` and from the website download tree when its successor is promoted.
 
 Historical versions remain recoverable through Git history and, when useful, immutable tags or releases. History belongs to version control; it does not remain loaded into the current corpus merely to keep an old deep link alive.
+
+Public components follow the same active-state principle unless a current governing file explicitly creates a separate archive artifact. Preflight V1 is preserved by repository history while `docs/PREFLIGHT.md` now governs V2.
 
 ## Mirror synchronization contract
 

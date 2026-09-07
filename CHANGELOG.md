@@ -2,6 +2,15 @@
 
 Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
 
+## 2026-09-07 — Preflight V2 human-intent rebase
+
+- Rebased [Preflight](docs/PREFLIGHT.md) to **Preflight V2 — Human Intent Reconstruction Before AI Execution**.
+- Moved the semantic center from equal-weight task governance to human-intent reconstruction: literal wording, intended meaning, desired outcome, examples, corrections, preservation requirements, negative constraints and consequential ambiguity.
+- Reclassified authority, provenance, freshness, risk, destination, mutation scope and readback as **conditional execution guardrails** that activate only when the reconstructed task materially requires them.
+- Added explicit protection against prompt-engineering homework, questionnaire reflex, example capture, correction flattening, telepathy theater, architecture takeover and guardrail inflation.
+- Reconciled README, Architecture, AI Kernel, Terminology, Evidence and Claims, Existing Implementations and both public component registries around the V2 contract.
+- Recorded Preflight component version `2.0` without creating a new portable family, changing Setup 3.0, changing MSL 4.3 or changing Chat–Work V4. Preflight V1 remains recoverable through Git history.
+
 ## 2026-09-07 — Reliable Markdown downloads
 
 - Replaced user-facing raw Markdown download links with small ZIP packages that contain the exact canonical `.md` bytes, so browsers download the portable instead of opening it inline.

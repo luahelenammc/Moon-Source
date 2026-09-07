@@ -4,15 +4,15 @@ Internal names are useful for continuity, but a public reader should be able to 
 
 | Moon Source term | Public explanation | Use with care |
 |---|---|---|
-| Preflight | Adaptive pass before execution that shapes the actual task through intent, authority, missing facts, risk, destination, form and question threshold | Not a compulsory questionnaire, hidden reasoning transcript or autonomous self-modification |
+| Preflight V2 | Human-intent reconstruction before execution: turn ordinary, incomplete, conversational or self-correcting expression into a faithful working task, then activate heavier execution guardrails only when consequence requires them | Not mind-reading, a compulsory questionnaire, hidden reasoning transcript, prompt-engineering homework or autonomous self-modification |
 | Adaptive Preflight | Setup 3.0's specialization of the broader Preflight mechanism for personal and project-context setup | Do not treat Setup as the owner of all Preflight behavior |
-| Self-prompt / self-adjusting prompt | Explanatory metaphor for a prompt or procedure that first reshapes its working task according to context, risk and destination | Not canonical ontology; does not imply hidden chain-of-thought, literal system-prompt editing or persistent self-modification |
-| Source jurisdiction | Which source has authority over which claim or state | Do not publish private resolver heuristics by default |
+| Self-prompt / reconstructed working prompt | Explanatory metaphor for the working task produced after the AI reconstructs intended meaning, desired outcome, corrections and constraints | Not canonical ontology; does not imply hidden chain-of-thought, literal system-prompt editing or persistent self-modification |
+| Source jurisdiction | Which source has authority over which claim or state | A conditional execution concern in Preflight V2; do not publish private resolver heuristics by default |
 | Living source | Governed, updateable context with explicit scope and freshness | Not a promise of automatic synchronization |
 | Connected source | External governed context made reachable through a connector or app | Reach is not authority, jurisdiction or exhaustive reading |
 | Source substrate | Persistent accessible body that stores and exposes a living source | Vendor-portable contract, not a universal requirement for one provider |
 | Connector / app | Bounded surface that provides access or actions against an external substrate | Capabilities, permissions and write authority vary by product surface and time |
-| Connector Preflight | Adaptive source-access pass that resolves surface, authority, locator, freshness, retrieval scope and verification | A specialization of Preflight, not a mandatory ceremony or competing mechanism |
+| Connector Preflight | Conditional source-access guardrail that resolves surface, authority, locator, freshness, retrieval scope and verification when external source access materially matters | A specialization triggered by execution consequence, not the semantic core of Preflight V2 and not a mandatory ceremony |
 | Data authority / instruction authority | Separate whether a source governs content and whether it may direct behavior for a task | Retrieval does not grant instruction authority; a procedure or instruction may be followed when its jurisdiction explicitly grants that role |
 | Context Receipt | Lightweight evidence of the governing context path when provenance or routing materially affects trust | Not mandatory for every lookup and not proof that a source is true by itself |
 | Progressive disclosure / just-in-time context loading | Loading only the next sufficient current context, then expanding when the next decision provides evidence of need | Not relevance-only retrieval or a benchmarked performance guarantee |
@@ -41,6 +41,7 @@ Internal names are useful for continuity, but a public reader should be able to 
 
 Prefer responsibility-first language:
 
+- “human-intent reconstruction” before “Preflight V2”;
 - “governed context” before “living source”;
 - “reusable procedure” before “skill”;
 - “portable transfer” before “handoff”;

@@ -1,21 +1,22 @@
 {
   "registry_version": "1.1",
-  "as_of": "2026-09-06",
+  "as_of": "2026-09-07",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
   "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
   "public_components": [
     {
       "id": "preflight",
-      "title": "Preflight — Adaptive Task Shaping Before AI Execution",
-      "class": "adaptive-task-shaping",
+      "title": "Preflight V2 — Human Intent Reconstruction Before AI Execution",
+      "version": "2.0",
+      "class": "human-intent-reconstruction",
       "canonical_path": "docs/PREFLIGHT.md",
-      "function": "Shape a raw request before execution through intent, authority, missing facts, risk, destination, proportionate form and question threshold",
-      "claim_ceiling": "Documented public method integrated with the AI Kernel, Architecture and Setup 3.0; not a uniqueness, adoption, impact or independent-validation claim",
+      "function": "Reconstruct a human's intended task from ordinary, incomplete, conversational or self-correcting expression, then activate source, freshness, provenance, risk, destination, mutation and readback guardrails only when execution consequence materially requires them",
+      "claim_ceiling": "Documented public human-intent reconstruction method integrated with the AI Kernel, Architecture and Setup 3.0; not mind-reading, scientific validation, uniqueness, adoption, measured improvement or independent-validation claim",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
       "public_created_on": "2026-08-23",
-      "last_material_update_on": "2026-08-23",
-      "last_material_update_summary": "Promoted adaptive task shaping as a transversal public mechanism for intent, authority, risk, destination and form.",
+      "last_material_update_on": "2026-09-07",
+      "last_material_update_summary": "Rebased Preflight as V2 around human-intent reconstruction; authority, provenance, freshness, risk, destination and mutation checks now operate as conditional execution guardrails rather than the semantic core.",
       "status": "current"
     },
     {
