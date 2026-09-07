@@ -7,6 +7,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from zipfile import BadZipFile, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "registry" / "public-portables.json"
@@ -109,13 +110,42 @@ def main() -> None:
                 f"expected={expected_sha256} actual={actual_sha256}"
             )
 
-        expected_download_url = (
-            f"{data['canonical_repository']}/raw/refs/heads/main/{path_value}?download=1"
-        )
-        if portable["download_url"] != expected_download_url:
+        download_prefix = f"{data['canonical_repository']}/raw/refs/heads/main/"
+        download_url = portable["download_url"]
+        if not isinstance(download_url, str) or not download_url.startswith(download_prefix):
             fail(
-                f"{portable['id']} download_url must use the GitHub raw-download route: "
-                f"{expected_download_url}"
+                f"{portable['id']} download_url must use the canonical GitHub package route: "
+                f"{download_prefix}downloads/<package>.zip"
+            )
+
+        package_value = download_url[len(download_prefix):]
+        if (
+            "?" in package_value
+            or "#" in package_value
+            or not package_value.startswith("downloads/")
+            or not package_value.endswith(".zip")
+        ):
+            fail(f"{portable['id']} download_url must point to a .zip package under downloads/")
+
+        package_path = ROOT / package_value
+        if not package_path.is_file():
+            fail(f"{portable['id']} download package missing: {package_value}")
+
+        try:
+            with ZipFile(package_path) as package:
+                package_files = [name for name in package.namelist() if not name.endswith("/")]
+                if package_files != [path.name]:
+                    fail(
+                        f"{portable['id']} download package must contain only {path.name}: "
+                        f"{package_files}"
+                    )
+                packaged_bytes = package.read(path.name)
+        except (BadZipFile, KeyError, OSError) as exc:
+            fail(f"{portable['id']} has an invalid download package: {exc}")
+
+        if packaged_bytes != path.read_bytes():
+            fail(
+                f"{portable['id']} download package does not contain the exact canonical bytes"
             )
 
         if not portable["mirror_path"].startswith("moonsource/downloads/"):
