@@ -1,14 +1,14 @@
 # Public Portables
 
-These are the current public portables in the Moon Source family. Each has one canonical path in this repository. The active tree exposes only the latest generation of each portable family.
+These are the current public portables in the Moon Source family. Each has one canonical path in this repository. The active tree exposes only the latest generation of each portable family. Individual download links use small ZIP packages containing the exact canonical file so browsers save it instead of opening Markdown inline.
 
 Want everything at once? [**Download the complete Moon Source repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) or open the [download hub](../DOWNLOADS.md).
 
 | ID | Title | Version | Status | License | Function | Canonical file | Download |
 |---|---|---:|---|---|---|---|---|
-| moon-source-setup | Moon Source Setup | 3.0 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive routing for proportionate personal and project AI context | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md) | [⬇️ `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/setup/MOON_SOURCE_SETUP.md?download=1) |
-| moon-source-language | Moon Source Language | 4.3 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive structural grammar for context work | [MSL_4_3.md](../portables/msl/MSL_4_3.md) | [⬇️ `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/msl/MSL_4_3.md?download=1) |
-| chat-work-routing | Chat–Work Routing Protocol V4 | 4.2-public | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | First-use-hardened routing by object and workload shape across Chat, Work and optional Codex with capability floors, bounded direct actions, operation modes, budget survival, transport, Chat Postflight, acceptance and delta-only re-entry | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) | [⬇️ `.md`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md?download=1) |
+| moon-source-setup | Moon Source Setup | 3.0 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive routing for proportionate personal and project AI context | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.0.zip) |
+| moon-source-language | Moon Source Language | 4.3 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive structural grammar for context work | [MSL_4_3.md](../portables/msl/MSL_4_3.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
+| chat-work-routing | Chat–Work Routing Protocol V4 | 4.2-public | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | First-use-hardened routing by object and workload shape across Chat, Work and optional Codex with capability floors, bounded direct actions, operation modes, budget survival, transport, Chat Postflight, acceptance and delta-only re-entry | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
 ## Public components outside the portable registry
 
