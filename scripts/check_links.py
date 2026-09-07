@@ -5,15 +5,15 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
-from urllib.parse import parse_qs, unquote, urlsplit
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 LINK_RE = re.compile(r"\[([^\]\n]+)\]\(([^)\n]+)\)")
 DOWNLOAD_LABEL_RE = re.compile(r"\b(?:download|baixar)\b", re.IGNORECASE)
 
 
-def is_direct_download_target(target: str) -> bool:
-    """Return whether a target is a GitHub raw-file download endpoint."""
+def is_inline_markdown_target(target: str) -> bool:
+    """Return whether a target opens a GitHub raw Markdown file inline."""
 
     parsed = urlsplit(target.strip())
     host = parsed.netloc.lower()
@@ -21,9 +21,8 @@ def is_direct_download_target(target: str) -> bool:
         parsed.scheme in {"http", "https"}
         and host in {"github.com", "www.github.com", "raw.githubusercontent.com"}
         and "/raw/" in parsed.path
+        and parsed.path.lower().endswith((".md", ".markdown"))
     )
-
-
 def local_target(path: Path, target: str) -> Path | None:
     """Return the filesystem target for a relative Markdown link."""
 
@@ -52,12 +51,11 @@ def check(path: Path) -> list[str]:
         if target_path is not None and not target_path.exists():
             failures.append(f"{path}: missing relative link {target}")
 
-        if DOWNLOAD_LABEL_RE.search(label) and is_direct_download_target(target):
-            query = parse_qs(urlsplit(target.strip()).query)
-            if query.get("download") != ["1"]:
-                failures.append(
-                    f"{path}: direct GitHub download link must include ?download=1 {target}"
-                )
+        if DOWNLOAD_LABEL_RE.search(label) and is_inline_markdown_target(target):
+            failures.append(
+                f"{path}: Markdown download link must target a downloadable package/archive "
+                f"instead of inline raw text {target}"
+            )
 
     return failures
 
