@@ -24,6 +24,7 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 | Portable | Best for | Direct download |
 |---|---|---|
 | **Moon Source Setup 3.0** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.0.zip) |
+| **Preflight V2** | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
 | **Moon Source Language 4.3** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
 | **Chat–Work Routing Protocol V4** | First-use-hardened routing across Chat, Work and optional Codex using workload shape, Execution Profiles, live Run State, capability floors, operation modes, Budget Survivability and Chat Postflight | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
@@ -31,9 +32,9 @@ The current Chat–Work V4 subversion is **4.2-public**. It adds first-use harde
 
 GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each package contains the exact canonical `.md` file; website copies are convenience mirrors, not separate semantic sources.
 
-## Open a public component
+## Preflight is now a portable
 
-[**Preflight — Adaptive Task Shaping Before AI Execution**](docs/PREFLIGHT.md) is a directly usable public component for shaping a request before generation. It is not a separate portable family; [Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md) contains its personal/project-context specialization.
+[**Preflight V2 — Human Intent Reconstruction Before AI Execution**](portables/preflight/PREFLIGHT_V2.md) is now a standalone public portable with its own packaged download above. The former `docs/PREFLIGHT.md` path remains only as a succession pointer.
 
 ## Browse before downloading
 
@@ -43,7 +44,8 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 - [Chat–Work Routing guide](portables/chat-work/README.md)
 - [Public portable registry](registry/PUBLIC_PORTABLES.md)
 - [🏛️ Moon Source architecture](ARCHITECTURE.md)
-- [🛫 Preflight](docs/PREFLIGHT.md)
+- [🛫 Preflight V2](portables/preflight/PREFLIGHT_V2.md)
+- [Preflight V2 guide](portables/preflight/README.md)
 - [🧬 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md)
 - [🔓 Licensing](LICENSING.md)
 - [🧭 Procedural Projection](docs/PROCEDURAL_PROJECTION.md)
@@ -57,6 +59,7 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 
 - **Giving Moon Source files to an AI?** Download the **Moon Source AI Kernel**.
 - **Just want AI to understand you better?** Download **Moon Source Setup 3.0**.
+- **Want AI to reconstruct what you mean before it acts?** Download **Preflight V2**.
 - **Want the structural grammar?** Download **MSL 4.3**.
 - **Want configurable Chat ↔ Work ↔ Codex routing?** Download **Chat–Work Routing Protocol V4**.
 - **Need a bounded operational execution pattern?** Browse **Operational Devices** and **Operational Reliability**.

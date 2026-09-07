@@ -55,7 +55,7 @@ These are responsibility-oriented comparisons, not a universal ontology. A harne
 
 Before asking what structure the field deserves, the AI may need to solve a more human problem: **what is the person actually trying to accomplish?**
 
-[Preflight V2](docs/PREFLIGHT.md) is the human-intent reconstruction layer before execution. It reads raw human expression as a whole, distinguishes request from context, example, hesitation and correction, reconstructs the desired outcome and constraints, and asks only when a consequential ambiguity remains.
+[Preflight V2](portables/preflight/PREFLIGHT_V2.md) is the human-intent reconstruction layer before execution. It reads raw human expression as a whole, distinguishes request from context, example, hesitation and correction, reconstructs the desired outcome and constraints, and asks only when a consequential ambiguity remains.
 
 Its core loop is intentionally simpler than the architectural topology:
 
@@ -86,7 +86,7 @@ It is transversal, not a mandatory permanent stage in the topology. **Preflight 
 
 Choose the public entry point that matches the field in front of you:
 
-- **Human-intent reconstruction before execution:** start with [Preflight V2](docs/PREFLIGHT.md) when the request is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally. Consequence-triggered execution guardrails remain available when the resulting task is risky, public, source-governed or mutable.
+- **Human-intent reconstruction before execution:** start with [Preflight V2](portables/preflight/PREFLIGHT_V2.md) when the request is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally. Consequence-triggered execution guardrails remain available when the resulting task is risky, public, source-governed or mutable.
 - **Personal or project context:** start with [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
 - **Project, team or knowledge field:** run the [Field-to-Form diagnostic](docs/FIELD_TO_FORM.md) before choosing a document type.
 - **Structure, source, handoff or protocol design:** use [MSL 4.3](portables/msl/MSL_4_3.md) after the responsibility is clear.

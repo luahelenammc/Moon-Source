@@ -13,7 +13,7 @@ If you received the full repository or ZIP:
 1. Read this file first.
 2. Read `README.md` for orientation and public entry points.
 3. Reconstruct the user's actual intended task before loading more files.
-4. If the human meaning is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally, apply [Preflight V2](docs/PREFLIGHT.md). If the reconstructed task has material source, freshness, public, sensitive or mutation consequences, let Preflight route only to the guardrails that consequence requires.
+4. If the human meaning is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally, apply [Preflight V2](portables/preflight/PREFLIGHT_V2.md). If the reconstructed task has material source, freshness, public, sensitive or mutation consequences, let Preflight route only to the guardrails that consequence requires.
 5. Load only the smallest set of Moon Source modules that can answer or execute that task. This is Moon Source's **progressive disclosure**, or **just-in-time context loading**, discipline: load the next sufficient context rather than the whole repository by reflex.
 6. Use the authority map below when files overlap.
 7. Preserve the distinction between current state, historical material, public claims and private/non-disclosed machinery.
@@ -27,7 +27,7 @@ Use each file for the responsibility it actually owns:
 
 - `README.md` — orientation, public entry points and top-level routing.
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
-- `docs/PREFLIGHT.md` — Preflight V2: human-intent reconstruction before execution, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
+- `portables/preflight/PREFLIGHT_V2.md` — Preflight V2: human-intent reconstruction before execution, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
 - `docs/CONNECTED_SOURCES.md` — connector-aware source access: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
 - `docs/SOURCE_OPERATIONS.md` — public source-operation grammar: retrieve, process, metabolize, promote, promotion gate, lifecycle, legacy succession, current-state versus history, smallest sovereign destination, readback and no-delta.
 - `ARCHITECTURE.md` — public Moon Source architecture and field-to-form topology.
@@ -65,7 +65,7 @@ Preflight V2 is the general human-intent reconstruction layer before execution. 
 ### If the human meaning itself needs reconstruction
 
 Load:
-- `docs/PREFLIGHT.md`
+- `portables/preflight/PREFLIGHT_V2.md`
 
 Use Preflight V2 when the person is thinking aloud, mixing examples with requirements, correcting themselves, relying on context, expressing what they want to avoid more clearly than what they want, or otherwise risks being misunderstood by literal execution. Reconstruct the intended task first. Ask only if consequential ambiguity remains. Then load a specialized component only if the reconstructed task materially requires source authority, freshness, provenance, public/sensitive boundaries, form selection, execution routing or mutation safeguards.
 

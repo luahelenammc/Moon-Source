@@ -2,6 +2,14 @@
 
 Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
 
+## 2026-09-07 — Preflight V2 portable promotion
+
+- Promoted Preflight V2 from a repository component into a standalone public portable at `portables/preflight/PREFLIGHT_V2.md`.
+- Added explicit operating modes (`Preflight`, `Silent Preflight`, `Preflight only`, `Show reconstructed task`, `Deep Preflight`) while preserving the human-intent reconstruction core and consequence-triggered guardrails.
+- Added a deterministic `.zip` download package containing the exact canonical Markdown bytes, plus canonical SHA-256 identity and website mirror mapping in the portable registry.
+- Replaced the former `docs/PREFLIGHT.md` body with a lightweight succession pointer so the active tree keeps one semantic source while historical bodies remain recoverable through Git history.
+- Reconciled README, download hub, AI Kernel, Architecture, evidence, implementation map, public boundary, terminology and Setup routing without changing MSL 4.3, Setup 3.0 or Chat–Work V4.
+
 ## 2026-09-07 — Preflight V2 human-intent rebase
 
 - Rebased [Preflight](docs/PREFLIGHT.md) to **Preflight V2 — Human Intent Reconstruction Before AI Execution**.
