@@ -52,6 +52,8 @@ jobs:
           PY
       - name: Install validation dependencies
         run: python -m pip install --disable-pip-version-check --no-input reuse cffconvert
+      - name: Remove one-shot workflow before validating final tree
+        run: rm .github/workflows/fix-preflight-v2-heading.yml
       - name: Validate repository
         run: |
           python scripts/check_licensing.py
@@ -64,10 +66,8 @@ jobs:
           python scripts/check_public_stamps.py
           python scripts/test_public_stamps.py
           python scripts/update_component_digest.py --check
-      - name: Remove one-shot machinery and runner caches
-        run: |
-          rm .github/workflows/fix-preflight-v2-heading.yml
-          find scripts -type d -name __pycache__ -prune -exec rm -rf {} +
+      - name: Remove runner caches
+        run: find scripts -type d -name __pycache__ -prune -exec rm -rf {} +
       - name: Commit clean repair
         run: |
           git config user.name "Lua H. Moon M. C."
