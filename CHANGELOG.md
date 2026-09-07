@@ -2,6 +2,10 @@
 
 Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
 
+## 2026-09-07 — Reliable Markdown downloads
+
+- Replaced user-facing raw Markdown download links with small ZIP packages that contain the exact canonical `.md` bytes, so browsers download the portable instead of opening it inline.
+
 ## 2026-09-04 — Source Operations, promotion and legacy succession
 
 - Added [Source Operations](docs/SOURCE_OPERATIONS.md) as the public method surface for retrieve, process, metabolize and promote.
