@@ -182,7 +182,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/PREFLIGHT_V2.md",
-      "canonical_sha256": "8f24364376ce6de10fc8dd3f390691870c7d8af1f793784ca85b7f835ea37dda"
+      "canonical_sha256": "71066c752c03032cf73c7f0c0470159ee63001b513643402cf1b78ade6fa0fb5"
     },
     {
       "id": "moon-source-language",
