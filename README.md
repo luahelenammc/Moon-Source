@@ -121,7 +121,7 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent component changes
 
 <!-- MOON-SOURCE-COMPONENT-DIGEST:START -->
-- **2026-09-07 — Preflight V2:** Rebased Preflight around human-intent reconstruction; authority, provenance, freshness, risk, destination and mutation checks now operate as conditional execution guardrails rather than the method's semantic core.
+- **2026-09-07 — Preflight V2:** Rebased Preflight as V2 around human-intent reconstruction; authority, provenance, freshness, risk, destination and mutation checks now operate as conditional execution guardrails rather than the semantic core.
 - **2026-09-04 — Source Operations:** Promoted a public source-operations and lifecycle method for retrieve, process, metabolize, promote, succession, readback and no-delta.
 - **2026-08-26 — Operational Reliability:** Added lightweight, materiality-triggered Context Receipts for context-path evidence alongside ordinary operational receipts.
 - **2026-08-26 — Connected Sources:** Separated source/data authority from instruction authority, added indirect-instruction failure handling and named proportional progressive loading.
