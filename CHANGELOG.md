@@ -1,12 +1,21 @@
 # Changelog
 
+## 2026-09-07 — Single-canonical-body rebase
+
+- Adopted the invariant **one capability, one active semantic body**: portability is a distribution role, not a second method authority.
+- Consolidated the unique current public Connected Sources doctrine into `portables/connected-sources/CONNECTED_SOURCES.md`, promoted it to **1.1-public**, and retired `docs/CONNECTED_SOURCES.md` from the active tree without keeping a compatibility copy.
+- Isolated dated ChatGPT product/reference facts in the subordinate `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` file; it is not a registry entry and is not auto-loaded for generic source governance.
+- Retired `docs/BE_MY_EYES.md` after the semantic comparison found no material current method responsibility absent from the unchanged **1.0-public** portable.
+- Removed the Connected Sources and Be My Eyes duplicates from the non-portable component inventory, normalized Kernel authority declarations, refreshed the registry, package, mirror, website copy and current-reference routes, and added a registry/Kernel duplication guard.
+- Removed the active `downloads/connected-sources-1.0-public.zip`; history preserves the superseded generation.
+
 Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
 
 ## 2026-09-07 — Connected Sources crown-jewel integration
 
 - Promoted Connected Sources into a transversal public capability spanning source substrate, source/data and instruction authority, jurisdiction, freshness, capability probing, retrieval, mutation, readback and fallback.
 - Added explicit **Standalone**, **Connected Read**, **Living Source** and **Federated** operating modes plus implementation-neutral source locator/reference contracts.
-- Added the independently readable **Connected Sources 1.0-public** portable at `portables/connected-sources/CONNECTED_SOURCES.md`, its guide and deterministic ZIP package; `docs/CONNECTED_SOURCES.md` remains the broader canonical method source.
+- Added the independently readable **Connected Sources 1.0-public** portable at `portables/connected-sources/CONNECTED_SOURCES.md`, its guide and deterministic ZIP package; the broader canonical method source was then consolidated into that portable in the later rebase above.
 - Rebased Moon Source Setup to **3.1** with a capability-probed persistent-source route, Google Drive as the recommended ChatGPT document-source substrate when available, GitHub as complementary executable substrate and a standalone fallback.
 - Advanced Chat–Work to **4.4-public** with connector-aware source transport in handoff and return contracts; preserved the V4 title/filename, MSL 4.3, Preflight 2.0, Be My Eyes 1.0-public and the existing public claim ceiling.
 - Updated the registry, download hub, Kernel, Source Operations boundary, evidence/implementation maps, examples, website facade and exact-byte mirrors.
@@ -73,7 +82,7 @@ Historical entries describe the repository state at their recorded date. The cur
 
 ## 2026-08-23 — Connected Sources
 
-- Added [Connected Sources](docs/CONNECTED_SOURCES.md) as the public connector-aware context-operations component.
+- Added [Connected Sources](portables/connected-sources/CONNECTED_SOURCES.md) as the public connector-aware context-operations component.
 - Defined the universal persistent-source-substrate requirement while positioning Google Drive as the ChatGPT document-source reference and GitHub as a complementary executable-source substrate.
 - Added public laws for authority, jurisdiction, freshness, targeted versus exhaustive retrieval, mutation authority, readback, provenance and cross-source reconciliation.
 - Integrated the component into README, Architecture, AI Kernel, Responsibility Map, Terminology, Existing Implementations, Evidence and Claims and Public Boundary.

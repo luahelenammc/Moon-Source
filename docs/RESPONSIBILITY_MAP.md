@@ -29,6 +29,10 @@ The following objects can work together, but they do not perform the same job.
 | Archive / legacy | Preserved history | Retain prior states without governing the present | The current active source |
 | MSL | Adaptive structural grammar | Choose proportionate form and preserve structural laws | A container, runtime or universal ontology |
 
+## Canonicalization rule
+
+One capability has one active semantic body. A portable may also own a structural responsibility; portability describes how that body travels, not a second copy of what it means. Mirrors and packages are delivery surfaces, adapters own only genuinely volatile or surface-specific facts, and history belongs to Git rather than an active compatibility twin.
+
 ## Use the responsibility map
 
 Apply the map to an existing set of files, objects or workflows before creating new categories:

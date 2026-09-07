@@ -27,7 +27,7 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 | Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Retrieve, process, metabolize or promote governed source material | [Source Operations](docs/SOURCE_OPERATIONS.md) |
-| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources method](docs/CONNECTED_SOURCES.md) + [portable](portables/connected-sources/CONNECTED_SOURCES.md) |
+| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources portable](portables/connected-sources/CONNECTED_SOURCES.md) |
 | Structure recurring context, continuity or handoffs | [Moon Source Language](portables/msl/MSL_4_3.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
 | Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [Chat–Work Routing Protocol](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) |
 
@@ -68,7 +68,7 @@ Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are separat
 - 🧭 [**Moon Source Setup**](portables/setup/MOON_SOURCE_SETUP.md) — adaptive routing to the smallest useful personal or project context setup, including a probed persistent-source route; current version **3.1**.
 - 🛫 [**Preflight**](portables/preflight/PREFLIGHT_V2.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them; current version **2.0**.
 - 👁️ [**Be My Eyes**](portables/be-my-eyes/BE_MY_EYES.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
-- 🔗 [**Connected Sources**](portables/connected-sources/CONNECTED_SOURCES.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.0-public**.
+- 🔗 [**Connected Sources**](portables/connected-sources/CONNECTED_SOURCES.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.1-public**.
 - 🧱 [**Moon Source Language**](portables/msl/MSL_4_3.md) — structural grammar for proportionate sources, handoffs, packets, protocols, registries and archives; current version **4.3**.
 - 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Intelligence Distillation Ladder, connector-aware source transport, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.4-public**.
 
@@ -95,22 +95,20 @@ RAG, memory stores, MCP/tools and other retrieval or orchestration mechanisms ca
 
 ## Current public components
 
-Public components are responsibility-bearing methods with canonical files. They are not automatically portables and do not create a version bump merely by being updated. A method may also earn a separately versioned portable projection when independent transport is useful.
+Public components are responsibility-bearing methods with canonical files. They are not automatically portables and do not create a version bump merely by being updated. A current portable may also own a structural responsibility; portability is a distribution role, not a second semantic body. The non-portable component table below contains only the eight additional public components outside the portable registry.
 
 | Component | Responsibility |
 |---|---|
-| [Connected Sources](docs/CONNECTED_SOURCES.md) + [portable](portables/connected-sources/CONNECTED_SOURCES.md) | Source/data and instruction authority, jurisdiction, freshness, retrieval, mutation boundaries and readback for connected sources; public portable projection is 1.0-public |
 | [Source Operations](docs/SOURCE_OPERATIONS.md) | Retrieve, process, metabolize and promote governed source changes, with lifecycle and legacy-successor rules |
 | [Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
 | [Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Useful working inference without certainty inflation |
-| [Be My Eyes](docs/BE_MY_EYES.md) | Contextual scene reading: observation versus inference, actors, relationship and power, subtext, overread, plausible reception and proportionate response axis |
 | [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Project a stable method into a reusable procedure without moving source authority |
 | [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage, content custody and immaterial-asset protection |
 | [Operational Devices](docs/OPERATIONAL_DEVICES.md) | Bounded embodiments of reusable procedures on concrete execution surfaces |
 | [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Read-only-first diagnosis, failure boundaries, ordinary and Context Receipts, reversibility and freshness |
 | [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Turn recurring failure into the smallest validated reusable mechanism |
 
-The canonical chronology, status and material-update history of these components lives in the [public registry](registry/PUBLIC_PORTABLES.md); its machine-readable contract is [`registry/public-portables.json`](registry/public-portables.json).
+The canonical chronology, status and material-update history of these eight non-portable components lives in the [public registry](registry/PUBLIC_PORTABLES.md); its machine-readable contract is [`registry/public-portables.json`](registry/public-portables.json). Be My Eyes (1.0-public) and Connected Sources (1.1-public) are current portable-capable structural responsibilities represented in the portable table, not duplicate component rows. Connected Sources' dated ChatGPT product facts are subordinate to [its adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md).
 
 ## Evidence, boundary and reuse
 
@@ -126,11 +124,11 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent component changes
 
 <!-- MOON-SOURCE-COMPONENT-DIGEST:START -->
-- **2026-09-07 — Connected Sources:** Promoted Connected Sources into a crown-jewel transversal capability with explicit operating modes, source references, capability probing and a standalone public portable projection.
-- **2026-09-07 — Be My Eyes:** Promoted Be My Eyes from repeated local use into a public contextual scene-reading method while removing private identity and relationship dependencies.
 - **2026-09-04 — Source Operations:** Promoted a public source-operations and lifecycle method for retrieve, process, metabolize, promote, succession, readback and no-delta.
 - **2026-08-26 — Operational Reliability:** Added lightweight, materiality-triggered Context Receipts for context-path evidence alongside ordinary operational receipts.
 - **2026-08-23 — Operational Devices:** Added bounded operational-device contracts for state, guards, failure behavior and receipts.
+- **2026-08-23 — Failure to Capability:** Added a bounded failure-to-capability loop for recurring failure without exposing promotion machinery.
+- **2026-08-21 — Signal Calibration:** Added bounded qualitative calibration for convergent signals, working inference and update conditions.
 <!-- MOON-SOURCE-COMPONENT-DIGEST:END -->
 
 This bounded digest is generated from the component registry. It is not a commit log.
@@ -143,8 +141,8 @@ Use the README for orientation; use the deeper files when the responsibility act
 |---|---|
 | Full architecture | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | AI-side routing through the public corpus | [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md) |
-| Contextual scene-reading method | [Be My Eyes](docs/BE_MY_EYES.md) + [portable](portables/be-my-eyes/BE_MY_EYES.md) |
-| Connected source method and portable | [Connected Sources](docs/CONNECTED_SOURCES.md) + [portable](portables/connected-sources/CONNECTED_SOURCES.md) |
+| Contextual scene-reading portable | [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) |
+| Connected source method and portable | [Connected Sources](portables/connected-sources/CONNECTED_SOURCES.md) |
 | Source operation grammar, lifecycle and succession | [Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Definitions and responsibility boundaries | [Terminology](docs/TERMINOLOGY.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
 | Public components and portable registry | [registry/PUBLIC_PORTABLES.md](registry/PUBLIC_PORTABLES.md) |

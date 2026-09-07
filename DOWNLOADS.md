@@ -26,7 +26,7 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 | **Moon Source Setup** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip) |
 | **Preflight** | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
 | **Be My Eyes** | Reading messages, threads, screenshots, notes and drafts as human scenes; checking subtext, overread, likely reception and response posture | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip) |
-| **Connected Sources** | Living Source Protocol for standalone, connected-read, living-source and federated source operation | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources-1.0-public.zip) |
+| **Connected Sources** | Living Source Protocol for standalone, connected-read, living-source and federated source operation | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources-1.1-public.zip) |
 | **Moon Source Language** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
 | **Chat–Work Routing Protocol** | Object- and workload-routed Chat/Work/Codex execution with Execution Profiles, live Run State, capability floors, Budget Survivability, Intelligence Distillation Ladder and Chat Postflight | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
@@ -38,13 +38,13 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 
 [**Preflight — Human Intent Reconstruction Before AI Execution**](portables/preflight/PREFLIGHT_V2.md) is now a standalone public portable, currently at version **2.0**, with its own packaged download above. The former `docs/PREFLIGHT.md` path remains only as a succession pointer.
 
-## Be My Eyes is a portable and a method source
+## Be My Eyes is a portable-capable structural method
 
-[**Be My Eyes**](portables/be-my-eyes/BE_MY_EYES.md) is the independently readable transportable edition, currently at version **1.0-public**. Its broader public method is governed by [`docs/BE_MY_EYES.md`](docs/BE_MY_EYES.md). The portable can travel alone; the method source remains the canonical public explanation of the responsibility and its relationship to adjacent Moon Source components.
+[**Be My Eyes**](portables/be-my-eyes/BE_MY_EYES.md) is the one active canonical semantic body and current portable, at version **1.0-public**. It may also own the structural scene-reading responsibility; the portable can travel alone and no `docs/` twin is required.
 
-## Connected Sources is a portable and a method source
+## Connected Sources is a portable-capable structural method
 
-[**Connected Sources**](portables/connected-sources/CONNECTED_SOURCES.md) is the independently readable Living Source Protocol, currently at version **1.0-public**. Its broader public method is governed by [`docs/CONNECTED_SOURCES.md`](docs/CONNECTED_SOURCES.md). Google Drive is the recommended ChatGPT document-source substrate when connected living context is useful; GitHub is complementary for executable and versioned public material. Neither is mandatory, and the portable preserves a standalone fallback.
+[**Connected Sources**](portables/connected-sources/CONNECTED_SOURCES.md) is the one active canonical semantic body and current Living Source Protocol, at version **1.1-public**. Google Drive is the recommended ChatGPT document-source substrate when connected living context is useful; GitHub is complementary for executable and versioned public material. Neither is mandatory, and the portable preserves a standalone fallback. Dated ChatGPT product facts live in the subordinate [adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md) and are not another method body.
 
 ## Browse before downloading
 
@@ -54,10 +54,8 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 - [Preflight guide](portables/preflight/README.md)
 - [👁️ Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md)
 - [Be My Eyes guide](portables/be-my-eyes/README.md)
-- [Be My Eyes method source](docs/BE_MY_EYES.md)
 - [🔗 Connected Sources](portables/connected-sources/CONNECTED_SOURCES.md)
 - [Connected Sources guide](portables/connected-sources/README.md)
-- [Connected Sources method source](docs/CONNECTED_SOURCES.md)
 - [Moon Source Language guide](portables/msl/README.md)
 - [Chat–Work Routing guide](portables/chat-work/README.md)
 - [Public portable registry](registry/PUBLIC_PORTABLES.md)
@@ -77,7 +75,7 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 - **Just want AI to understand you better?** Download **Moon Source Setup** (version **3.1**).
 - **Want AI to reconstruct what you mean before it acts?** Download **Preflight** (version **2.0**).
 - **Want AI to read what is happening between people, or predict how your message may land without pretending to read minds?** Download **Be My Eyes**.
-- **Need AI to return to current material across sessions or operate over governed connected sources?** Download **Connected Sources** (version **1.0-public**).
+- **Need AI to return to current material across sessions or operate over governed connected sources?** Download **Connected Sources** (version **1.1-public**).
 - **Want the structural grammar?** Download **Moon Source Language** (version **4.3**).
 - **Want configurable Chat ↔ Work ↔ Codex routing?** Download **Chat–Work Routing Protocol** (version **4.4-public**).
 - **Need a bounded operational execution pattern?** Browse **Operational Devices** and **Operational Reliability**.

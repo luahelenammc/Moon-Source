@@ -17,7 +17,7 @@ Use Preflight to identify the requested outcome and the decision that must be cu
 ## Relevant components and portables
 
 - [Preflight](../../docs/PREFLIGHT.md) for the current task and audience.
-- [Connected Sources](../../docs/CONNECTED_SOURCES.md) for source hierarchy, freshness and retrieval scope.
+- [Connected Sources](../../portables/connected-sources/CONNECTED_SOURCES.md) for source hierarchy, freshness and retrieval scope.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for contradiction and stale-state diagnosis.
 - [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) for receipts, retries and readback.
 - [Chat–Work Routing Protocol V4](../../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) when the work moves between AI surfaces.

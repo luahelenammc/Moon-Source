@@ -21,14 +21,14 @@ Each scenario uses the same public contract:
 
 | Domain | Common context problem | Scenario | Relevant public routes |
 |---|---|---|---|
-| Health & care | Sensitive continuity split across teams and handoffs | [Multi-team continuity](health-care-continuity.md) | [Preflight](../../docs/PREFLIGHT.md), [Connected Sources](../../docs/CONNECTED_SOURCES.md), [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) |
-| Public services | A citizen journey crosses departments and systems | [Citizen journey across departments](public-service-journey.md) | [Field to Form](../../docs/FIELD_TO_FORM.md), [Connected Sources](../../docs/CONNECTED_SOURCES.md), [Source Hygiene](../../docs/SOURCE_HYGIENE.md) |
-| Customer journeys | Chat, email and tickets disagree | [Omnichannel continuity](customer-journey-continuity.md) | [Connected Sources](../../docs/CONNECTED_SOURCES.md), [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) |
+| Health & care | Sensitive continuity split across teams and handoffs | [Multi-team continuity](health-care-continuity.md) | [Preflight](../../portables/preflight/PREFLIGHT_V2.md), [Connected Sources](../../portables/connected-sources/CONNECTED_SOURCES.md), [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) |
+| Public services | A citizen journey crosses departments and systems | [Citizen journey across departments](public-service-journey.md) | [Field to Form](../../docs/FIELD_TO_FORM.md), [Connected Sources](../../portables/connected-sources/CONNECTED_SOURCES.md), [Source Hygiene](../../docs/SOURCE_HYGIENE.md) |
+| Customer journeys | Chat, email and tickets disagree | [Omnichannel continuity](customer-journey-continuity.md) | [Connected Sources](../../portables/connected-sources/CONNECTED_SOURCES.md), [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) |
 | Company operations | Process knowledge is fragmented and contradictory | [Process memory and AI adoption](company-process-memory.md) | [Source Hygiene](../../docs/SOURCE_HYGIENE.md), [Procedural Projection](../../docs/PROCEDURAL_PROJECTION.md) |
 | Transparency & audit | Decisions and supporting evidence are hard to reconstruct | [Evidence trail](audit-evidence-trail.md) | [Evidence & Claims](../../EVIDENCE_AND_CLAIMS.md), [Signal Calibration](../../docs/SIGNAL_CALIBRATION.md), [Credits & Attribution Ops](../../docs/CREDITS_ATTRIBUTION_OPS.md) |
 | People & learning | Onboarding depends on individual memory | [Onboarding and capability continuity](people-learning-onboarding.md) | [Moon Source Setup](../../portables/setup/MOON_SOURCE_SETUP.md), [Field to Form](../../docs/FIELD_TO_FORM.md) |
 | Third sector | Turnover erases network memory | [Network continuity through turnover](third-sector-network-memory.md) | [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md), [MSL 4.3](../../portables/msl/MSL_4_3.md) |
-| Knowledge & data | Documents, chats, spreadsheets and code drift apart | [Living documentation](living-knowledge-base.md) | [Connected Sources](../../docs/CONNECTED_SOURCES.md), [Source Hygiene](../../docs/SOURCE_HYGIENE.md), [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) |
+| Knowledge & data | Documents, chats, spreadsheets and code drift apart | [Living documentation](living-knowledge-base.md) | [Connected Sources](../../portables/connected-sources/CONNECTED_SOURCES.md), [Source Hygiene](../../docs/SOURCE_HYGIENE.md), [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) |
 
 The examples are intentionally not registered as public components or portables. They are a bounded didactic gallery attached to the public examples surface.
 

@@ -50,6 +50,18 @@ If the portable is transformed rather than mirrored byte-for-byte, describe the 
 
 ## Distribution semantics
 
+Portability is a distribution role, not a second semantic authority. When a capability is both structural and portable, the portable may be the single canonical active body and must not require a `docs/` twin. The registry represents that capability in the portable inventory, while the non-portable component inventory remains for capabilities that are not current portables.
+
+Use this canonicalization guard:
+
+```text
+one capability
+→ one active semantic body
+→ optional structural, portable, mirror, package and adapter surfaces
+```
+
+A distinct adapter is permitted only when it owns volatile or surface-specific implementation facts that should not become stable doctrine. Mirrors and packages carry exact current bytes for delivery; history belongs to version control.
+
 A link labeled **Download** should trigger the platform's file-download route rather than merely opening a rendered or inline raw document. Browse/open links and download links are different interface promises and should be labeled accordingly.
 
 For GitHub-hosted current `.md` portables, Moon Source uses GitHub's `github.com/<owner>/<repo>/raw/refs/heads/<branch>/<path>` download route in user-facing download surfaces. The canonical repository path remains the semantic identity; the download URL is a delivery route.

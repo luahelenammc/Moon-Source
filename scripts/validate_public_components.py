@@ -13,6 +13,9 @@ HUMAN_REGISTRY = ROOT / "registry" / "PUBLIC_PORTABLES.md"
 KERNEL = ROOT / "MOON_SOURCE_AI_KERNEL.md"
 IMPLEMENTATIONS = ROOT / "docs" / "EXISTING_IMPLEMENTATIONS.md"
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+AUTHORITY_START = "<!-- MOON-SOURCE-CANONICAL-AUTHORITY:START -->"
+AUTHORITY_END = "<!-- MOON-SOURCE-CANONICAL-AUTHORITY:END -->"
+IDENTITY_SUFFIX_RE = re.compile(r"(?:[-_\s]+)(?:method|portable|protocol|projection|component)$", re.IGNORECASE)
 VALID_STATUSES = {"current", "experimental", "deprecated", "archived"}
 REQUIRED_FIELDS = {
     "id",
@@ -34,6 +37,35 @@ def fail(message: str) -> None:
 
 def text(path: Path) -> str:
     return path.read_text(encoding="utf-8")
+
+
+def capability_identity(value: str) -> str:
+    """Normalize registry labels without attempting semantic prose classification."""
+
+    identity = re.sub(r"[^a-z0-9]+", "-", value.casefold()).strip("-")
+    while True:
+        reduced = IDENTITY_SUFFIX_RE.sub("", identity).strip("-")
+        if reduced == identity:
+            return identity
+        identity = reduced
+
+
+def declared_authorities(kernel: str) -> dict[str, str]:
+    if AUTHORITY_START not in kernel or AUTHORITY_END not in kernel:
+        fail("kernel is missing the canonical-authority map")
+
+    block = kernel.split(AUTHORITY_START, 1)[1].split(AUTHORITY_END, 1)[0]
+    entries = re.findall(r"^- ([^→\n]+?) → `([^`]+)`", block, flags=re.MULTILINE)
+    if not entries:
+        fail("kernel canonical-authority map has no entries")
+
+    authorities: dict[str, str] = {}
+    for title, path in entries:
+        identity = capability_identity(title.strip())
+        if identity in authorities:
+            fail(f"kernel declares more than one active authority for {title.strip()}")
+        authorities[identity] = path
+    return authorities
 
 
 def main() -> None:
@@ -59,6 +91,32 @@ def main() -> None:
     component_paths: set[str] = set()
     portable_ids = {entry.get("id") for entry in portables}
     portable_paths = {entry.get("canonical_path") for entry in portables}
+    portable_identities: dict[str, str] = {}
+    for index, portable in enumerate(portables):
+        if not isinstance(portable, dict):
+            fail(f"portable {index} is not an object")
+        entry_identities: set[str] = set()
+        for label in (portable.get("id"), portable.get("title")):
+            if not isinstance(label, str) or not label.strip():
+                fail(f"portable {index} has an empty identity label")
+            identity = capability_identity(label)
+            if identity in entry_identities:
+                continue
+            entry_identities.add(identity)
+            previous = portable_identities.get(identity)
+            if previous is not None:
+                fail(f"portable identity {identity} is duplicated by {previous} and {label}")
+            portable_identities[identity] = label
+
+    kernel_authorities = declared_authorities(kernel)
+    for portable in portables:
+        identity = capability_identity(portable["title"])
+        declared_path = kernel_authorities.get(identity)
+        if declared_path != portable["canonical_path"]:
+            fail(
+                f"kernel authority for {portable['title']} must name only "
+                f"{portable['canonical_path']}; found {declared_path!r}"
+            )
 
     for index, component in enumerate(components):
         if not isinstance(component, dict):
@@ -85,6 +143,18 @@ def main() -> None:
             fail(f"component {component_id} is silently duplicated in the portable array")
         if component_id in portable_ids:
             fail(f"component id {component_id} is duplicated in the portable array")
+        component_identity = capability_identity(component_id)
+        title_identity = capability_identity(component["title"])
+        duplicate_identities = {
+            identity
+            for identity in (component_identity, title_identity)
+            if identity in portable_identities
+        }
+        if duplicate_identities:
+            fail(
+                f"component {component_id} duplicates current portable capability identity: "
+                f"{', '.join(sorted(duplicate_identities))}"
+            )
 
         for field in ("function", "claim_ceiling", "last_material_update_summary"):
             value = component[field]
@@ -123,7 +193,7 @@ def main() -> None:
             fail(f"{component_id} is not represented in docs/EXISTING_IMPLEMENTATIONS.md")
 
     print(
-        f"validated {len(components)} public components; "
+        f"validated {len(components)} non-portable public components; "
         f"registry_version={data.get('registry_version', 'missing')}"
     )
 

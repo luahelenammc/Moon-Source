@@ -19,7 +19,7 @@ Begin with Preflight and Field to Form: identify the citizen-facing question, th
 - [Preflight](../../docs/PREFLIGHT.md) for entry-point diagnosis and question threshold.
 - [Field to Form](../../docs/FIELD_TO_FORM.md) for bounded public and internal forms.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for departmental jurisdiction.
-- [Connected Sources](../../docs/CONNECTED_SOURCES.md) for provenance and targeted retrieval.
+- [Connected Sources](../../portables/connected-sources/CONNECTED_SOURCES.md) for provenance and targeted retrieval.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for stale and duplicated material.
 - [MSL 4.3](../../portables/msl/MSL_4_3.md) for a handoff or status packet.
 

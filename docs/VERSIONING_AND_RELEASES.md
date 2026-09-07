@@ -18,9 +18,9 @@ They should not be collapsed into one number.
 
 - Public architecture baseline: 2026-08-16; additive component and operational updates continued through 2026-09-07; Chat–Work tri-surface routing advanced to V4 on 2026-09-06 and its IDL/source-transport subversions to 4.4-public on 2026-09-07.
 - Current structural grammar: Moon Source Language, version 4.3.
-- Public portables: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.0-public), Moon Source Language (version 4.3) and Chat–Work Routing Protocol (version 4.4-public).
+- Public portables: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 4.3) and Chat–Work Routing Protocol (version 4.4-public).
 - The public component inventory is tracked separately from the portable inventory in `registry/public-portables.json` schema 1.1 and `registry/PUBLIC_PORTABLES.md`.
-- Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Connected Sources method, Source Hygiene, Signal Calibration and Procedural Projection are public method components outside the portable registry; Connected Sources also has an explicit portable projection in the registry.
+- Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are the eight additional public method components outside the portable registry. Be My Eyes and Connected Sources are current portables that may also own structural responsibilities; they are not duplicated as component rows.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
 - Website: production public convenience surface; each current portable mirror must remain byte-equal to its canonical current portable before mirror status is called verified.
 - Repository: luahelenammc/Moon-Source, public reference and versioning body; software and automation are Apache-2.0, while documentation, methods and public portables are CC-BY-4.0.
@@ -38,6 +38,7 @@ They should not be collapsed into one number.
 9. Exact-identity claims should use version/fingerprint evidence when appropriate, without treating a fingerprint as proof of authorship, ownership or permission.
 10. License rights come from the applicable standard license and file-level metadata; they are not broadened beyond those terms by implication.
 11. A user-facing link labeled **Download** must use a route intended to download the file; inline browse/open routes must be labeled as browse/open instead.
+12. One capability has one active semantic body. A portable may also be structural; it is not duplicated in the non-portable component inventory. Mirrors and packages are delivery surfaces, and a distinct adapter is allowed only for volatile or surface-specific facts.
 
 ## Title–version separation
 
@@ -99,6 +100,14 @@ Moon Source Setup 3.1 is a **material additive portable release**, not an MSL gr
 Connected Sources 1.0-public is a **material method-plus-portable promotion**. The canonical method remains `docs/CONNECTED_SOURCES.md`; `portables/connected-sources/CONNECTED_SOURCES.md` is its independently readable public projection. The portable makes Standalone, Connected Read, Living Source and Federated modes explicit, carries source locator/reference and capability-probing rules, and preserves authority, freshness, mutation, readback, fallback and claim-ceiling boundaries.
 
 This promotion does not claim universal connector support, automatic synchronization, exhaustive retrieval, authority by locator, private-source disclosure or adoption. MSL remains 4.3 because the structural grammar did not change.
+
+### Connected Sources 1.1-public canonical-body rebase — 2026-09-07
+
+Connected Sources 1.1-public is a **material canonical-identity and method-plus-portable rebase**, not an MSL grammar change. The portable at `portables/connected-sources/CONNECTED_SOURCES.md` is now the single active semantic body and may serve both structural and transport roles. It absorbs the unique current public doctrine from the retired `docs/CONNECTED_SOURCES.md` body without concatenating the two files, including Connector Preflight, the substrate contract, retrieval coverage, failure modes, facet-scoped authority and acceptance boundaries.
+
+The retired docs body is removed from the live tree; Git history preserves it. Dated ChatGPT product facts are isolated in the subordinate `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` reference and are not auto-loaded for generic source governance. The current package is `downloads/connected-sources-1.1-public.zip`, the website mirror remains the same mapped filename, and the former 1.0 package is removed from active `main`.
+
+Be My Eyes remains **1.0-public** because its portable already contains the material current method responsibilities found in the retired docs body; the duplicate docs body is removed without changing portable bytes. MSL remains 4.3 because the structural grammar did not change.
 
 ### Chat–Work V4.4-public release — 2026-09-07
 

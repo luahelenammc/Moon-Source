@@ -51,6 +51,18 @@ Moon Source asks: what may govern, how current is it, what may travel or mutate,
 
 These are responsibility-oriented comparisons, not a universal ontology. A harness or retrieval system may implement some governance of its own; Moon Source complements those mechanisms rather than replacing them. It is not an agent harness, RAG engine, orchestration framework, runtime or SDK.
 
+## One canonical body, multiple roles
+
+Moon Source keeps one active semantic body for each capability. A portable is a distribution and transport status, not a second method authority:
+
+```text
+one capability
+→ one active canonical semantic body
+→ optional structural, portable, mirror, package and adapter roles
+```
+
+A portable may own a structural responsibility directly, including a crown-jewel capability. A mirror or ZIP package carries the body for delivery. A distinct adapter is allowed only when it owns volatile or surface-specific implementation facts that should not become stable doctrine. History belongs to Git; it does not require an active compatibility twin.
+
 ## Before the topology: Preflight
 
 Before asking what structure the field deserves, the AI may need to solve a more human problem: **what is the person actually trying to accomplish?**
@@ -98,7 +110,7 @@ Choose the public entry point that matches the field in front of you:
 - **Recurring or costly failure:** use [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) when a failure pattern may have earned a smaller reusable rule, gate, procedure or device.
 - **Ambiguous or convergent signals:** use [Signal Calibration](docs/SIGNAL_CALIBRATION.md) when weak or incomplete cues need a useful working inference without being promoted to fact or discarded through caveats.
 - **Stale or contradictory corpus:** use [Source Hygiene](docs/SOURCE_HYGIENE.md) when retrieval is not the real problem.
-- **Connected source operation:** use [Connected Sources](docs/CONNECTED_SOURCES.md) when an AI must reach persistent external memory or resolve authority, freshness, retrieval scope and mutation boundaries through a connector; use its [independently readable portable](portables/connected-sources/CONNECTED_SOURCES.md) when that bounded method must travel alone.
+- **Connected source operation:** use the canonical [Connected Sources portable](portables/connected-sources/CONNECTED_SOURCES.md) when an AI must reach persistent external memory or resolve authority, freshness, retrieval scope and mutation boundaries through a connector. Load the dated [ChatGPT adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md) only when current product behavior materially matters.
 
 ### Apply this architecture now
 
@@ -178,9 +190,9 @@ The public architecture exposes this responsibility. It does not publish private
 
 ### Connected sources and persistent substrate
 
-A living-source architecture expected to survive sessions needs a persistent source substrate accessible to the AI. The substrate may be a document corpus, repository or equivalent surface; the vendor is not the ontology. Use [Connected Sources](docs/CONNECTED_SOURCES.md) to distinguish reach from authority, source/data authority from instruction authority, targeted retrieval from exhaustive inventory, write capability from mutation authority and write receipts from accepted source state.
+A living-source architecture expected to survive sessions needs a persistent source substrate accessible to the AI. The substrate may be a document corpus, repository or equivalent surface; the vendor is not the ontology. Use the canonical [Connected Sources](portables/connected-sources/CONNECTED_SOURCES.md) body to distinguish reach from authority, source/data authority from instruction authority, targeted retrieval from exhaustive inventory, write capability from mutation authority and write receipts from accepted source state.
 
-For the ChatGPT reference implementation, Google Drive is the primary document-source substrate for durable living sources. GitHub is complementary and becomes governing when executable or repository state is part of the question. This is a facet-scoped implementation pattern, not a compulsory linear stage or universal Drive-plus-GitHub stack. The method has an independently readable [Connected Sources portable](portables/connected-sources/CONNECTED_SOURCES.md); its portable projection does not create a second authority.
+For the ChatGPT reference implementation, Google Drive is the primary document-source substrate for durable living sources. GitHub is complementary and becomes governing when executable or repository state is part of the question. This is a facet-scoped implementation pattern, not a compulsory linear stage or universal Drive-plus-GitHub stack. Product-specific details belong in the subordinate [ChatGPT adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md).
 
 ## 4. Topology and responsibility map
 
@@ -214,6 +226,8 @@ A field may need one materialization or several. Common choices include:
 - an archive for history that should not govern the present.
 
 The materialization earns its existence by changing what the field can support. A new file that only repeats another file is not an architectural improvement.
+
+When one capability needs both structural reach and independent transport, give both roles to the same canonical body. Do not create a `docs/` twin merely because the body is portable. Register a current portable in the portable registry, and keep non-portable component inventory rows for capabilities that are not current portables.
 
 ## 6. Operation and transport
 

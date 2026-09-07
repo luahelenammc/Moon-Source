@@ -6,7 +6,7 @@ Be My Eyes is the standalone Moon Source portable for **contextual scene reading
 
 - **Version:** 1.0-public
 - **Canonical file:** [`BE_MY_EYES.md`](BE_MY_EYES.md)
-- **Method source:** [`docs/BE_MY_EYES.md`](../../docs/BE_MY_EYES.md)
+- **Canonical active semantic body:** this file is both the structural method authority and the portable distribution surface
 - **Download package:** [⬇️ `be-my-eyes-1.0-public.zip`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip)
 - **License:** CC BY 4.0
 
@@ -32,7 +32,7 @@ Be My Eyes separates observation from inference and preserves uncertainty. It is
 
 ## Canonicality
 
-`portables/be-my-eyes/BE_MY_EYES.md` is the canonical current portable. `docs/BE_MY_EYES.md` owns the broader public method. Website copies are convenience mirrors, not semantic authorities.
+`portables/be-my-eyes/BE_MY_EYES.md` is the one active canonical Be My Eyes body. It may serve both structural and portable roles. Website copies are convenience mirrors, not semantic authorities.
 
 For version identity and fingerprint, use [`registry/PUBLIC_PORTABLES.md`](../../registry/PUBLIC_PORTABLES.md) and [`registry/public-portables.json`](../../registry/public-portables.json).
 

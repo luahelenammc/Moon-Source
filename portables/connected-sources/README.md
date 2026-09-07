@@ -2,7 +2,7 @@
 
 A public portable for living-source continuity: reach the current source, resolve what it governs, act within permission and verify the resulting state.
 
-[⬇️ **Download Connected Sources package (.zip)**](../../downloads/connected-sources-1.0-public.zip)
+[⬇️ **Download Connected Sources package (.zip)**](../../downloads/connected-sources-1.1-public.zip)
 
 ## Start here
 
@@ -25,14 +25,15 @@ Google Drive is the recommended ChatGPT document-source reference for durable li
 
 ## Current identity
 
-- **Version:** 1.0-public
+- **Version:** 1.1-public
 - **Canonical file:** [CONNECTED_SOURCES.md](CONNECTED_SOURCES.md)
-- **Method source:** [docs/CONNECTED_SOURCES.md](../../docs/CONNECTED_SOURCES.md)
+- **Canonical active semantic body:** this file is both the structural method authority and the portable distribution surface
+- **ChatGPT product adapter:** [dated adapter notes](../../docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md), loaded only when volatile product behavior materially matters
 - **Standalone dependencies:** none
 - **License:** [CC BY 4.0](../../LICENSES/CC-BY-4.0.txt)
 - **Claim ceiling:** bounded living-source protocol; not universal connector support, automatic synchronization, exhaustive retrieval, autonomous mutation, adoption or impact proof
 
-The ZIP contains only the exact canonical portable file. The repository remains the semantic and versioning authority; the website copy is a convenience mirror.
+The ZIP contains only the exact canonical portable file. The repository remains the semantic and versioning authority; the website copy is a convenience mirror. A portable may also own a structural responsibility; portability is a delivery role, not a second semantic body.
 
 Return to the [🗂️ download hub](../../DOWNLOADS.md) or [📚 portable registry](../../registry/PUBLIC_PORTABLES.md).
 
@@ -41,4 +42,3 @@ Return to the [🗂️ download hub](../../DOWNLOADS.md) or [📚 portable regis
 ---
 
 > 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
-
