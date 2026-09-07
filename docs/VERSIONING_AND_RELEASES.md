@@ -16,9 +16,9 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive component and operational updates continued through 2026-09-04; Chat–Work tri-surface routing advanced to V4 on 2026-09-06.
+- Public architecture baseline: 2026-08-16; additive component and operational updates continued through 2026-09-07; Chat–Work tri-surface routing advanced to V4 on 2026-09-06 and its IDL subversion to 4.3-public on 2026-09-07.
 - Current structural grammar: Moon Source Language, version 4.3.
-- Public portables: Moon Source Setup (version 3.0), Preflight (version 2.0), Be My Eyes (version 1.0-public), Moon Source Language (version 4.3) and Chat–Work Routing Protocol (version 4.2-public).
+- Public portables: Moon Source Setup (version 3.0), Preflight (version 2.0), Be My Eyes (version 1.0-public), Moon Source Language (version 4.3) and Chat–Work Routing Protocol (version 4.3-public).
 - The public component inventory is tracked separately from the portable inventory in `registry/public-portables.json` schema 1.1 and `registry/PUBLIC_PORTABLES.md`.
 - Preflight, Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Connected Sources, Source Hygiene, Signal Calibration and Procedural Projection are public components outside the portable registry.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -77,6 +77,16 @@ Chat–Work V4 is a **material additive-and-superseding portable release**, not 
 It promotes Codex to a first-class execution surface beside Chat and Work, routes by sovereign object and six independent dimensions, adds availability and Budget Survivability gates, Context Diet, frontier ROI/burst control, repository constitution and native-parallelism rules, executor-neutral handoffs, salvage receipts and mandatory Chat Postflight.
 
 The superseded V3 file is removed from the current repository and website trees. Its historical contents remain recoverable through Git history. V4 does **not** claim that any native or personal routing skill has independently advanced; skill synchronization remains a separate projection and verification event.
+
+MSL remains 4.3 because the structural grammar did not change.
+
+### Chat–Work V4.3-public release — 2026-09-07
+
+Chat–Work V4.3-public is a **material additive-and-superseding portable release**, not an MSL grammar change.
+
+It promotes the model-neutral Intelligence Distillation Ladder across `efficient | balanced | strong | frontier`: isolate the irreducible delta, distinguish reasoning effort from capability, allow justified direct tier jumps, use bounded micro-bursts, return only the decision-bearing ruling and re-enter the lower sufficient tier for implementation and verification. Frontier Burst is retained as the frontier-tier specialization of this general pattern.
+
+The superseded 4.2-public portable remains recoverable through Git history; the live repository and website continue to expose one canonical V4 file. The release does not claim an OpenAI policy, benchmark, guaranteed savings or quality gain, universal model ranking, native skill advancement or a private profile default.
 
 MSL remains 4.3 because the structural grammar did not change.
 

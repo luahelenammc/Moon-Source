@@ -69,7 +69,7 @@ Setup, Preflight, Be My Eyes, MSL and Chat–Work are separately versioned publi
 - 🛫 [**Preflight**](portables/preflight/PREFLIGHT_V2.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them; current version **2.0**.
 - 👁️ [**Be My Eyes**](portables/be-my-eyes/BE_MY_EYES.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
 - 🧱 [**Moon Source Language**](portables/msl/MSL_4_3.md) — structural grammar for proportionate sources, handoffs, packets, protocols, registries and archives; current version **4.3**.
-- 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.2-public**.
+- 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Intelligence Distillation Ladder, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.3-public**.
 
 🗂️ [**Open the download hub**](DOWNLOADS.md) for the individual public portables.
 
@@ -157,7 +157,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-09-07**; Preflight advanced to **V2** and Be My Eyes was promoted as method + **1.0-public** portable on **2026-09-07**, while Chat–Work routing remains the tri-surface **V4** protocol.
 
-Current structural grammar: **Moon Source Language**, version **4.3**. Current public portables: **Moon Source Setup** (version **3.0**), **Preflight** (version **2.0**), **Be My Eyes** (version **1.0-public**), **Moon Source Language** (version **4.3**) and **Chat–Work Routing Protocol** (version **4.2-public**). This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
+Current structural grammar: **Moon Source Language**, version **4.3**. Current public portables: **Moon Source Setup** (version **3.0**), **Preflight** (version **2.0**), **Be My Eyes** (version **1.0-public**), **Moon Source Language** (version **4.3**) and **Chat–Work Routing Protocol** (version **4.3-public**). This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
 
