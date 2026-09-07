@@ -7,14 +7,15 @@ Want everything at once? [**Download the complete Moon Source repository (.zip)*
 | ID | Title | Version | Status | License | Function | Canonical file | Download |
 |---|---|---:|---|---|---|---|---|
 | preflight | Preflight | 2.0 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Human-intent reconstruction before execution, with consequence-triggered guardrails | [PREFLIGHT_V2.md](../portables/preflight/PREFLIGHT_V2.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
-| moon-source-setup | Moon Source Setup | 3.0 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive routing for proportionate personal and project AI context | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.0.zip) |
+| moon-source-setup | Moon Source Setup | 3.1 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive routing for proportionate personal and project AI context, including a probed persistent-source route | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip) |
 | be-my-eyes | Be My Eyes | 1.0-public | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Reads human communication as a scene, separating observation from inference and checking subtext, overread, reception and response posture | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip) |
+| connected-sources-portable | Connected Sources | 1.0-public | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Living Source Protocol for standalone, connected-read, living-source and federated source operation with authority, freshness, mutation, readback and fallback boundaries | [CONNECTED_SOURCES.md](../portables/connected-sources/CONNECTED_SOURCES.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources-1.0-public.zip) |
 | moon-source-language | Moon Source Language | 4.3 | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Adaptive structural grammar for context work | [MSL_4_3.md](../portables/msl/MSL_4_3.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
-| chat-work-routing | Chat–Work Routing Protocol | 4.3-public | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Object- and workload-routed execution across Chat, Work and optional Codex with capability floors, Budget Survivability, model-neutral Intelligence Distillation Ladder, bounded micro-bursts, decision-bearing returns, Chat Postflight, acceptance and delta-only re-entry | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
+| chat-work-routing | Chat–Work Routing Protocol | 4.4-public | current | [CC BY 4.0](../LICENSES/CC-BY-4.0.txt) | Object- and workload-routed execution across Chat, Work and optional Codex with capability floors, Budget Survivability, model-neutral Intelligence Distillation Ladder, connector-aware source transport, bounded micro-bursts, decision-bearing returns, Chat Postflight, acceptance and delta-only re-entry | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) | [⬇️ package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
 ## Public components outside the portable registry
 
-These are public components outside the portable registry. Preflight moved into the portable registry on 2026-09-07; its earlier component-only lineage remains in Git history. Be My Eyes keeps a canonical method source in `docs/` and a separately versioned transportable projection in the portable registry. Their chronology is derived from the first canonical public file and the latest material public method change in Git history. A public stamp, typo-only change or merge narration does not automatically count as a material update.
+These are public method components outside the portable registry. Preflight moved into the portable registry on 2026-09-07; its earlier component-only lineage remains in Git history. Be My Eyes and Connected Sources each keep a canonical method source in `docs/` and a separately versioned transportable projection in the portable registry. Their chronology is derived from the first canonical public file and the latest material public method change in Git history. A public stamp, typo-only change or merge narration does not automatically count as a material update.
 
 | Component | Public since | Last material update | Status | Purpose |
 |---|---:|---:|---|---|
@@ -22,7 +23,7 @@ These are public components outside the portable registry. Preflight moved into 
 | [Operational Devices](../docs/OPERATIONAL_DEVICES.md) | 2026-08-23 | 2026-08-23 | current | Embodies reusable procedures on concrete surfaces with bounded state and receipts |
 | [Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) | 2026-08-23 | 2026-08-26 | current | Structures diagnosis, failure boundaries, reversibility, ordinary and Context Receipts, and freshness |
 | [Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) | 2026-08-23 | 2026-08-23 | current | Turns recurring failure into the smallest validated public mechanism |
-| [Connected Sources](../docs/CONNECTED_SOURCES.md) | 2026-08-23 | 2026-08-26 | current | Governs connector-aware source/data and instruction authority, progressive retrieval, freshness, mutation and readback |
+| [Connected Sources](../docs/CONNECTED_SOURCES.md) | 2026-08-23 | 2026-09-07 | current | Governs connector-aware source/data and instruction authority, progressive retrieval, freshness, mutation, readback and portable projection |
 | [Source Operations — Retrieve, Process, Metabolize and Promote](../docs/SOURCE_OPERATIONS.md) | 2026-09-04 | 2026-09-04 | current | Defines source-operation grammar, promotion gates, lifecycle, legacy succession, readback and no-delta |
 | [Source Hygiene](../docs/SOURCE_HYGIENE.md) | 2026-08-17 | 2026-08-17 | current | Diagnoses stale, duplicated, contradictory or orphaned corpus material |
 | [Signal Calibration](../docs/SIGNAL_CALIBRATION.md) | 2026-08-21 | 2026-08-21 | current | Calibrates weak or convergent signals into bounded working inference |
@@ -33,7 +34,9 @@ Preflight is now portable version **2.0**. Its earlier component-only lineage an
 
 Be My Eyes is portable version **1.0-public**. `docs/BE_MY_EYES.md` owns the public method; `portables/be-my-eyes/BE_MY_EYES.md` is the independently readable transportable edition.
 
-The component inventory is machine-readable in [`registry/public-portables.json`](public-portables.json), currently at schema `1.1`. A component becoming public does not automatically make it a portable; a component update does not automatically require an MSL, Setup or Chat–Work version bump.
+Connected Sources is portable version **1.0-public**. `docs/CONNECTED_SOURCES.md` owns the broader method; `portables/connected-sources/CONNECTED_SOURCES.md` is the independently readable Living Source Protocol projection.
+
+The component inventory is machine-readable in [`registry/public-portables.json`](public-portables.json), currently at schema `1.1`. A component becoming public does not automatically make it a portable; Connected Sources is an explicit exception here because this release promotes both its method and its independently transportable projection. A component update does not automatically require an MSL, Setup or Chat–Work version bump.
 
 The [Browser Console Device reference](../examples/browser-console-device/) remains an experimental bounded implementation, not a current component registry entry or portable, and therefore has no portable fingerprint or mirror contract.
 
@@ -46,14 +49,15 @@ The current branded website keeps convenience copies of the current portables un
 - https://www.luahelena.com.br/moonsource/downloads/PREFLIGHT_V2.md
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_SETUP.md
 - https://www.luahelena.com.br/moonsource/downloads/BE_MY_EYES.md
+- https://www.luahelena.com.br/moonsource/downloads/CONNECTED_SOURCES.md
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_4_3.md
-- https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md
+- https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_4.md
 
 These paths mirror only the current generation. Superseded mirror files are removed from the live surface and remain recoverable through Git history when needed.
 
 ## Freshness
 
-Preflight, Setup, Be My Eyes and Moon Source Language are general public documents, but their wording can evolve. Be My Eyes is structurally stable as a contextual-reading method; it should be rechecked when its public source or portable changes. Chat–Work Routing Protocol contains a stable routing/postflight core plus product and model calibration that must be rechecked before volatile product facts are treated as current. Its version 4.3-public subversion additionally promotes the model-neutral Intelligence Distillation Ladder: effort-versus-capability discrimination, irreducible-delta capsules, no mandatory staircase, bounded micro-bursts, decision-bearing returns and lower-tier re-entry with verification.
+Preflight, Setup, Be My Eyes, Connected Sources and Moon Source Language are general public documents, but their wording can evolve. Be My Eyes is structurally stable as a contextual-reading method; Connected Sources is structurally stable around source authority, capability probing and bounded source operations; both should be rechecked when their public source or portable changes. Chat–Work Routing Protocol contains a stable routing/postflight core plus product and model calibration that must be rechecked before volatile product facts are treated as current. Its version 4.4-public subversion retains the model-neutral Intelligence Distillation Ladder and adds connector-aware source transport with authority, freshness, mutation, readback and fallback fields.
 
 ## Historical-version policy
 

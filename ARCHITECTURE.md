@@ -98,7 +98,7 @@ Choose the public entry point that matches the field in front of you:
 - **Recurring or costly failure:** use [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) when a failure pattern may have earned a smaller reusable rule, gate, procedure or device.
 - **Ambiguous or convergent signals:** use [Signal Calibration](docs/SIGNAL_CALIBRATION.md) when weak or incomplete cues need a useful working inference without being promoted to fact or discarded through caveats.
 - **Stale or contradictory corpus:** use [Source Hygiene](docs/SOURCE_HYGIENE.md) when retrieval is not the real problem.
-- **Connected source operation:** use [Connected Sources](docs/CONNECTED_SOURCES.md) when an AI must reach persistent external memory or resolve authority, freshness, retrieval scope and mutation boundaries through a connector.
+- **Connected source operation:** use [Connected Sources](docs/CONNECTED_SOURCES.md) when an AI must reach persistent external memory or resolve authority, freshness, retrieval scope and mutation boundaries through a connector; use its [independently readable portable](portables/connected-sources/CONNECTED_SOURCES.md) when that bounded method must travel alone.
 
 ### Apply this architecture now
 
@@ -180,7 +180,7 @@ The public architecture exposes this responsibility. It does not publish private
 
 A living-source architecture expected to survive sessions needs a persistent source substrate accessible to the AI. The substrate may be a document corpus, repository or equivalent surface; the vendor is not the ontology. Use [Connected Sources](docs/CONNECTED_SOURCES.md) to distinguish reach from authority, source/data authority from instruction authority, targeted retrieval from exhaustive inventory, write capability from mutation authority and write receipts from accepted source state.
 
-For the ChatGPT reference implementation, Google Drive is the primary document-source substrate for durable living sources. GitHub is complementary and becomes governing when executable or repository state is part of the question. This is a facet-scoped implementation pattern, not a compulsory linear stage or universal Drive-plus-GitHub stack.
+For the ChatGPT reference implementation, Google Drive is the primary document-source substrate for durable living sources. GitHub is complementary and becomes governing when executable or repository state is part of the question. This is a facet-scoped implementation pattern, not a compulsory linear stage or universal Drive-plus-GitHub stack. The method has an independently readable [Connected Sources portable](portables/connected-sources/CONNECTED_SOURCES.md); its portable projection does not create a second authority.
 
 ## 4. Topology and responsibility map
 

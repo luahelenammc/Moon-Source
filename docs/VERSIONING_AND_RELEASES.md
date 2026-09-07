@@ -16,11 +16,11 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive component and operational updates continued through 2026-09-07; Chat–Work tri-surface routing advanced to V4 on 2026-09-06 and its IDL subversion to 4.3-public on 2026-09-07.
+- Public architecture baseline: 2026-08-16; additive component and operational updates continued through 2026-09-07; Chat–Work tri-surface routing advanced to V4 on 2026-09-06 and its IDL/source-transport subversions to 4.4-public on 2026-09-07.
 - Current structural grammar: Moon Source Language, version 4.3.
-- Public portables: Moon Source Setup (version 3.0), Preflight (version 2.0), Be My Eyes (version 1.0-public), Moon Source Language (version 4.3) and Chat–Work Routing Protocol (version 4.3-public).
+- Public portables: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.0-public), Moon Source Language (version 4.3) and Chat–Work Routing Protocol (version 4.4-public).
 - The public component inventory is tracked separately from the portable inventory in `registry/public-portables.json` schema 1.1 and `registry/PUBLIC_PORTABLES.md`.
-- Preflight, Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Connected Sources, Source Hygiene, Signal Calibration and Procedural Projection are public components outside the portable registry.
+- Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Connected Sources method, Source Hygiene, Signal Calibration and Procedural Projection are public method components outside the portable registry; Connected Sources also has an explicit portable projection in the registry.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
 - Website: production public convenience surface; each current portable mirror must remain byte-equal to its canonical current portable before mirror status is called verified.
 - Repository: luahelenammc/Moon-Source, public reference and versioning body; software and automation are Apache-2.0, while documentation, methods and public portables are CC-BY-4.0.
@@ -87,6 +87,24 @@ Chat–Work V4.3-public is a **material additive-and-superseding portable releas
 It promotes the model-neutral Intelligence Distillation Ladder across `efficient | balanced | strong | frontier`: isolate the irreducible delta, distinguish reasoning effort from capability, allow justified direct tier jumps, use bounded micro-bursts, return only the decision-bearing ruling and re-enter the lower sufficient tier for implementation and verification. Frontier Burst is retained as the frontier-tier specialization of this general pattern.
 
 The superseded 4.2-public portable remains recoverable through Git history; the live repository and website continue to expose one canonical V4 file. The release does not claim an OpenAI policy, benchmark, guaranteed savings or quality gain, universal model ranking, native skill advancement or a private profile default.
+
+MSL remains 4.3 because the structural grammar did not change.
+
+### Moon Source Setup 3.1 release — 2026-09-07
+
+Moon Source Setup 3.1 is a **material additive portable release**, not an MSL grammar change. It adds an adaptive persistent-source route for durable continuity and current living context, recommends Google Drive as the default ChatGPT document-source substrate when available, keeps GitHub complementary, probes actual capability and preserves a standalone fallback. It does not make connector access mandatory or create a connector-onboarding questionnaire.
+
+### Connected Sources 1.0-public release — 2026-09-07
+
+Connected Sources 1.0-public is a **material method-plus-portable promotion**. The canonical method remains `docs/CONNECTED_SOURCES.md`; `portables/connected-sources/CONNECTED_SOURCES.md` is its independently readable public projection. The portable makes Standalone, Connected Read, Living Source and Federated modes explicit, carries source locator/reference and capability-probing rules, and preserves authority, freshness, mutation, readback, fallback and claim-ceiling boundaries.
+
+This promotion does not claim universal connector support, automatic synchronization, exhaustive retrieval, authority by locator, private-source disclosure or adoption. MSL remains 4.3 because the structural grammar did not change.
+
+### Chat–Work V4.4-public release — 2026-09-07
+
+Chat–Work V4.4-public is a **material additive-and-superseding portable release**, not an MSL grammar change. It retains the V4.3-public Intelligence Distillation Ladder and adds a connector-aware source transport contract for governing source/family, locator, facet, requested operation, coverage, freshness/revision, mutation authorization, readback and fallback. A locator is transported as a reference, never as authority.
+
+The superseded 4.3-public portable remains recoverable through Git history; the live repository and website expose one current V4 file and one current mirror. The release does not claim an OpenAI policy, benchmark, automatic source synchronization, native skill advancement, guaranteed savings/quality or product entitlement.
 
 MSL remains 4.3 because the structural grammar did not change.
 

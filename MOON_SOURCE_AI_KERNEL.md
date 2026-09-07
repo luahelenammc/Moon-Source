@@ -31,6 +31,7 @@ Use each file for the responsibility it actually owns:
 - `docs/BE_MY_EYES.md` — canonical public Be My Eyes method: contextual scene reading, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection.
 - `portables/be-my-eyes/BE_MY_EYES.md` — independently readable Be My Eyes 1.0-public transportable projection.
 - `docs/CONNECTED_SOURCES.md` — connector-aware source access: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
+- `portables/connected-sources/CONNECTED_SOURCES.md` — independently readable Connected Sources 1.0-public projection of the same bounded method.
 - `docs/SOURCE_OPERATIONS.md` — public source-operation grammar: retrieve, process, metabolize, promote, promotion gate, lifecycle, legacy succession, current-state versus history, smallest sovereign destination, readback and no-delta.
 - `ARCHITECTURE.md` — public Moon Source architecture and field-to-form topology.
 - `docs/FIELD_TO_FORM.md` — deciding what should exist before choosing a container or artifact type.
@@ -44,9 +45,9 @@ Use each file for the responsibility it actually owns:
 - `examples/browser-console-device/README.md` — experimental synthetic Browser Console Device reference implementation.
 - `docs/SIGNAL_CALIBRATION.md` — bounded qualitative calibration for weak, convergent or ambiguous signals and working inference.
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
-- `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router.
+- `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router, currently version 3.1.
 - `portables/msl/MSL_4_3.md` — current public structural grammar for materialization. MSL remains 4.3.
-- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md` — current closed-loop ChatGPT surface/model/reasoning routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
+- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md` — current 4.4-public closed-loop ChatGPT surface/model/reasoning and source-transport routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
 - `registry/PUBLIC_PORTABLES.md` — canonical public portable identities, versions and fingerprints, plus the human-readable public component chronology.
 - `registry/public-portables.json` — machine-readable public component and portable inventory; component chronology is Git-derived and does not create new portable versions.
 - `docs/PORTABLE_DESIGN_CONTRACT.md` — portable publication, canonical-path and mirror rules.
@@ -74,7 +75,7 @@ Use Preflight when the person is thinking aloud, mixing examples with requiremen
 ### If the user wants AI to understand them more consistently
 
 Load:
-- `portables/setup/MOON_SOURCE_SETUP.md` — Moon Source Setup, currently version 3.0
+- `portables/setup/MOON_SOURCE_SETUP.md` — Moon Source Setup, currently version 3.1
 
 Optionally load:
 - `ARCHITECTURE.md` if the user's context is already distributed across several sources or roles.
@@ -193,6 +194,7 @@ If intellectual material is also changing custody or becoming a derivative, load
 
 Load:
 - `docs/CONNECTED_SOURCES.md`
+- `portables/connected-sources/CONNECTED_SOURCES.md` when an independently transportable method surface is useful
 - `docs/RESPONSIBILITY_MAP.md` when authority or ownership is unclear
 - `docs/SOURCE_HYGIENE.md` when the corpus itself may be stale, contradictory or bloated
 - `docs/OPERATIONAL_RELIABILITY.md` when the operation includes mutation, retries, partial failure or recovery

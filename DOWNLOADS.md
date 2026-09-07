@@ -23,13 +23,14 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 
 | Portable | Best for | Direct download |
 |---|---|---|
-| **Moon Source Setup** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.0.zip) |
+| **Moon Source Setup** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip) |
 | **Preflight** | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
 | **Be My Eyes** | Reading messages, threads, screenshots, notes and drafts as human scenes; checking subtext, overread, likely reception and response posture | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip) |
+| **Connected Sources** | Living Source Protocol for standalone, connected-read, living-source and federated source operation | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources-1.0-public.zip) |
 | **Moon Source Language** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
 | **Chat–Work Routing Protocol** | Object- and workload-routed Chat/Work/Codex execution with Execution Profiles, live Run State, capability floors, Budget Survivability, Intelligence Distillation Ladder and Chat Postflight | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
-The current Be My Eyes portable version is **1.0-public**. The current Chat–Work Routing Protocol version is **4.3-public**. It adds a model-neutral Intelligence Distillation Ladder: effort-versus-capability discrimination, irreducible-delta capsules, justified direct tier jumps, bounded micro-bursts, decision-bearing returns and lower-tier re-entry with verification, while preserving the V4 title, canonical filename and MSL 4.3.
+The current Be My Eyes portable version is **1.0-public**. The current Connected Sources portable version is **1.0-public**. The current Chat–Work Routing Protocol version is **4.4-public**. It retains the model-neutral Intelligence Distillation Ladder and adds a connector-aware source transport contract for governing source/family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback, while preserving the V4 title, canonical filename and MSL 4.3.
 
 GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each package contains the exact canonical `.md` file; website copies are convenience mirrors, not separate semantic sources.
 
@@ -41,6 +42,10 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 
 [**Be My Eyes**](portables/be-my-eyes/BE_MY_EYES.md) is the independently readable transportable edition, currently at version **1.0-public**. Its broader public method is governed by [`docs/BE_MY_EYES.md`](docs/BE_MY_EYES.md). The portable can travel alone; the method source remains the canonical public explanation of the responsibility and its relationship to adjacent Moon Source components.
 
+## Connected Sources is a portable and a method source
+
+[**Connected Sources**](portables/connected-sources/CONNECTED_SOURCES.md) is the independently readable Living Source Protocol, currently at version **1.0-public**. Its broader public method is governed by [`docs/CONNECTED_SOURCES.md`](docs/CONNECTED_SOURCES.md). Google Drive is the recommended ChatGPT document-source substrate when connected living context is useful; GitHub is complementary for executable and versioned public material. Neither is mandatory, and the portable preserves a standalone fallback.
+
 ## Browse before downloading
 
 - [Moon Source AI Kernel](MOON_SOURCE_AI_KERNEL.md)
@@ -50,6 +55,9 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 - [👁️ Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md)
 - [Be My Eyes guide](portables/be-my-eyes/README.md)
 - [Be My Eyes method source](docs/BE_MY_EYES.md)
+- [🔗 Connected Sources](portables/connected-sources/CONNECTED_SOURCES.md)
+- [Connected Sources guide](portables/connected-sources/README.md)
+- [Connected Sources method source](docs/CONNECTED_SOURCES.md)
 - [Moon Source Language guide](portables/msl/README.md)
 - [Chat–Work Routing guide](portables/chat-work/README.md)
 - [Public portable registry](registry/PUBLIC_PORTABLES.md)
@@ -66,11 +74,12 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 ## Which download should I choose?
 
 - **Giving Moon Source files to an AI?** Download the **Moon Source AI Kernel**.
-- **Just want AI to understand you better?** Download **Moon Source Setup** (version **3.0**).
+- **Just want AI to understand you better?** Download **Moon Source Setup** (version **3.1**).
 - **Want AI to reconstruct what you mean before it acts?** Download **Preflight** (version **2.0**).
 - **Want AI to read what is happening between people, or predict how your message may land without pretending to read minds?** Download **Be My Eyes**.
+- **Need AI to return to current material across sessions or operate over governed connected sources?** Download **Connected Sources** (version **1.0-public**).
 - **Want the structural grammar?** Download **Moon Source Language** (version **4.3**).
-- **Want configurable Chat ↔ Work ↔ Codex routing?** Download **Chat–Work Routing Protocol** (version **4.3-public**).
+- **Want configurable Chat ↔ Work ↔ Codex routing?** Download **Chat–Work Routing Protocol** (version **4.4-public**).
 - **Need a bounded operational execution pattern?** Browse **Operational Devices** and **Operational Reliability**.
 - **Need to metabolize recurring failure?** Browse **Failure to Capability — Failure Foundry**.
 - **Want the synthetic browser reference?** Browse **Browser Console Device**; it is an experimental example, not a current portable download.

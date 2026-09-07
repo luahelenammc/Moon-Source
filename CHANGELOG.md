@@ -2,6 +2,15 @@
 
 Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
 
+## 2026-09-07 — Connected Sources crown-jewel integration
+
+- Promoted Connected Sources into a transversal public capability spanning source substrate, source/data and instruction authority, jurisdiction, freshness, capability probing, retrieval, mutation, readback and fallback.
+- Added explicit **Standalone**, **Connected Read**, **Living Source** and **Federated** operating modes plus implementation-neutral source locator/reference contracts.
+- Added the independently readable **Connected Sources 1.0-public** portable at `portables/connected-sources/CONNECTED_SOURCES.md`, its guide and deterministic ZIP package; `docs/CONNECTED_SOURCES.md` remains the broader canonical method source.
+- Rebased Moon Source Setup to **3.1** with a capability-probed persistent-source route, Google Drive as the recommended ChatGPT document-source substrate when available, GitHub as complementary executable substrate and a standalone fallback.
+- Advanced Chat–Work to **4.4-public** with connector-aware source transport in handoff and return contracts; preserved the V4 title/filename, MSL 4.3, Preflight 2.0, Be My Eyes 1.0-public and the existing public claim ceiling.
+- Updated the registry, download hub, Kernel, Source Operations boundary, evidence/implementation maps, examples, website facade and exact-byte mirrors.
+
 ## 2026-09-07 — Chat–Work V4.3 IDL promotion
 
 - Promoted the reusable Intelligence Distillation Ladder from the Local Moon Source experimental module into the public Chat–Work V4 protocol as subversion **4.3-public**.

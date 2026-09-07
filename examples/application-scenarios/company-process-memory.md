@@ -12,7 +12,7 @@ Ingesting every conversation preserves local exceptions without deciding whether
 
 ## Moon Source reading of the field
 
-Use Source Hygiene to inventory authority, freshness, duplication and orphaned decisions. Use Responsibility Map to distinguish source, procedure, device and owner. Use Procedural Projection when a stable method deserves a reusable procedure. Use Connected Sources for targeted retrieval and Operational Reliability for bounded mutation. Setup 3.0 can route a smaller personal or project context when the team is not ready for a larger corpus.
+Use Source Hygiene to inventory authority, freshness, duplication and orphaned decisions. Use Responsibility Map to distinguish source, procedure, device and owner. Use Procedural Projection when a stable method deserves a reusable procedure. Use Connected Sources for targeted retrieval and Operational Reliability for bounded mutation. Moon Source Setup 3.1 can route a smaller personal or project context when the team is not ready for a larger corpus.
 
 ## Relevant components and portables
 
@@ -21,7 +21,7 @@ Use Source Hygiene to inventory authority, freshness, duplication and orphaned d
 - [Procedural Projection](../../docs/PROCEDURAL_PROJECTION.md) for source-to-procedure separation.
 - [Connected Sources](../../docs/CONNECTED_SOURCES.md) for retrieval scope and freshness.
 - [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) for safe execution and receipts.
-- [Setup 3.0](../../portables/setup/MOON_SOURCE_SETUP.md) for proportionate entry.
+- [Moon Source Setup](../../portables/setup/MOON_SOURCE_SETUP.md) for proportionate entry and capability-probed persistent-source routing.
 
 ## Possible smallest materialization
 

@@ -2,9 +2,9 @@
 
 A public portable that finds the **smallest useful AI context setup for what you actually want to do**.
 
-You do not need to decide whether you are a beginner, power user or builder before starting. Moon Source Setup begins from your need, destination and privacy boundary, then infers how much structure is useful. The current public version is **3.0**.
+You do not need to decide whether you are a beginner, power user or builder before starting. Moon Source Setup begins from your need, destination and privacy boundary, then infers how much structure is useful. The current public version is **3.1**. It also routes durable continuity or current-source needs to Connected Sources when a persistent substrate is actually available, while retaining a standalone fallback.
 
-[⬇️ **Download Moon Source Setup package (.zip)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.0.zip)
+[⬇️ **Download Moon Source Setup package (.zip)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip)
 
 ## Start here
 
@@ -41,13 +41,18 @@ The rule is simple:
 
 Only the smallest relevant component set should be loaded for the actual task.
 
+### Persistent source route
+
+When the need is a current living source or durable cross-session continuity, probe the available source surface before promising connected behavior. Google Drive is the recommended ChatGPT document-source substrate; GitHub is complementary for executable, versioned public material. Neither is mandatory, and an unresolved or unauthorized source falls back to bounded standalone context. See [Connected Sources](../connected-sources/CONNECTED_SOURCES.md).
+
 ## Current identity
 
-- 📌 **Version:** 3.0
+- 📌 **Version:** 3.1
 - 🗂️ **Canonical file:** [MOON_SOURCE_SETUP.md](MOON_SOURCE_SETUP.md)
 - 🌐 **Language:** English-first portable; execution follows the user's language
 - 🧩 **Standalone dependencies:** none
 - 🧭 **Routing model:** need × inferred maturity × destination × sensitivity
+- 🔗 **Persistent source route:** Connected Sources when current or durable context earns a source substrate
 - 🔧 **Default with existing material:** inspect → diagnose → preserve what works → repair only what is needed
 - 🔓 **License:** [CC BY 4.0](../../LICENSES/CC-BY-4.0.txt); share/adapt with credit and change indication
 - 📜 **Licensing route:** [LICENSING.md](../../LICENSING.md)

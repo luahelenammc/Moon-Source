@@ -2,7 +2,7 @@
 
 *Cross-surface execution routing and closure across Chat, Work and Codex*
 
-## Public Portable Edition · Version 4.3-public
+## Public Portable Edition · Version 4.4-public
 
 ## Meta
 
@@ -10,17 +10,17 @@
 - **canonical path:** portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md
 - **Moon Source public surface:** https://www.luahelena.com.br/moonsource/?lang=en
 - **professional context:** https://www.luahelena.com.br/ia/?lang=en
-- **website mirror:** https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_3.md
+- **website mirror:** https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_4.md
 - **public boundary:** standalone protocol; product and model calibration is date-sensitive; this document does not imply that a native Chat–Work router skill is installed
 - **status:** public portable protocol
-- **version:** 4.3-public
+- **version:** 4.4-public
 - **language:** English
 - **protocol semantics as of:** 2026-09-07
 - **product/model calibration as of:** 2026-09-06; recheck official documentation before relying on volatile names, availability, limits or pricing
 - **primary implementation:** ChatGPT Chat, Work and Codex surfaces, where available
 - **Codex boundary:** optional execution capability; never assumed installed, enabled, available or desired
 - **governed dimensions:** execution profile, object geometry, execution surface, capability tier, reasoning effort, continuity/locality, execution envelope, budget survival, distillation, return closure and claim ceiling
-- **supersedes:** Chat–Work Routing Protocol V4, version 4.2-public, while retaining the V4 public generation and canonical filename
+- **supersedes:** Chat–Work Routing Protocol V4, version 4.3-public, while retaining the V4 public generation and canonical filename
 - **MSL dependency:** Moon Source Language 4.3; MSL remains unchanged by this subversion
 - **license:** CC BY 4.0; see [LICENSING.md](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md)
 - **license URL:** https://creativecommons.org/licenses/by/4.0/
@@ -49,9 +49,11 @@ The stable sentence is:
 
 > **Chat understands and decides. Work produces. Codex builds when available and enabled. Chat accepts and integrates.**
 
-The V4.2 subversion added the profile-conditioned route principle. V4.3 adds a distillation principle:
+The V4.2 subversion added the profile-conditioned route principle. V4.3 added a distillation principle. V4.4 adds a connector-aware source transport contract:
 
 > **Escalate only the irreducible delta; return only the decision-bearing delta.**
+
+> **Transport source references with authority, freshness and fallback; a locator is not authority.**
 
 This is a routing and closure protocol. It does not grant permissions, invent unavailable tools, guarantee a model result, or turn a plan, surface label or model preference into a capability that the current environment does not expose.
 
@@ -793,6 +795,7 @@ A ready handoff contains:
 - capability floor;
 - Budget Survivability outcome;
 - context diet, tools, fanout, checkpoints and fallback;
+- when sources are involved, a source transport contract with governing source or family, locator, facet, requested operation, coverage, freshness, mutation authorization and readback;
 - exact delivery and verification;
 - return contract and claim ceiling;
 - transport capsule sufficient for the next surface to continue without hidden context.
@@ -877,6 +880,18 @@ execution_handoff:
     return_capsule: null
     reentry_owner: null
 
+  sources:
+    mode: standalone | connected_read | living_source | federated
+    governing_source_or_family: null
+    locator: null
+    facet: null
+    requested_operation: retrieve | process | metabolize | promote
+    coverage: targeted | inventory_exhaustive_where_supported
+    freshness_or_revision: null
+    mutation_authorization: unknown
+    readback_required: true
+    fallback: bounded_context | standalone | blocked_external_condition
+
   transport:
     destination: null
     context_shared: unknown
@@ -888,6 +903,8 @@ execution_handoff:
       - profile_snapshot
       - run_state
       - selected_route
+      - sources
+      - source_reference
       - evidence
       - acceptance_criteria
       - claim_ceiling
@@ -921,6 +938,7 @@ Every executor returns an evidence-bearing receipt with:
 - next route;
 - `new_execution_required`;
 - **profile snapshot, persistence status, operation mode, Route Card and material run overrides used for routing**;
+- when a source transport was used, the governing source or family, locator/facet, requested operation, coverage, freshness or revision, mutation authorization, readback result and fallback state;
 - when an IDL cycle was active, the Return Capsule, ruling boundary and downstream re-entry state.
 
 A successful tool response proves only that tool response, not completion of the objective.
@@ -1006,9 +1024,9 @@ The smallest unresolved delta determines re-entry.
 ## 22. Lifecycle and succession
 
 - Chat–Work Routing Protocol remains the current public generation;
-- `4.3-public` is the current semantic subversion of that generation, not a new V5 title or filename;
-- `4.2-public` is superseded by this subversion and remains recoverable through Git history;
-- `4.1-public` and earlier 4.x subversions remain historical lineage recoverable through Git history;
+- `4.4-public` is the current semantic subversion of that generation, not a new V5 title or filename;
+- `4.3-public` is superseded by this subversion and remains recoverable through Git history;
+- `4.2-public`, `4.1-public` and earlier 4.x subversions remain historical lineage recoverable through Git history;
 - `4.0-public` and V3 remain historical lineage;
 - the live repository and website each expose one canonical V4 file;
 - MSL remains 4.3;
@@ -1027,6 +1045,8 @@ The smallest unresolved delta determines re-entry.
 - Apply IDL: isolate the irreducible delta, choose the least-expensive sufficient target, allow justified direct tier jumps and return only the decision-bearing ruling.
 - Treat capability tiers as non-ritual; do not force a mandatory staircase.
 - Treat connector access as access, not authority.
+- When source-backed work is routed, transport governing source/family, locator, facet, operation, coverage, freshness, mutation authorization, readback and an explicit fallback; never treat a locator as authority.
+- Probe source reach and capability before promising connected continuity; use bounded context when the source cannot be resolved.
 - Prefer smallest sufficient context and reversible delta.
 - Use physical fanout only when independence and ROI justify it.
 - Keep volatile product calibration outside stable protocol law.
@@ -1041,7 +1061,7 @@ The smallest unresolved delta determines re-entry.
 
 Attach or paste this file into ChatGPT and say:
 
-> Use Chat–Work Routing Protocol. Start in AUTO setup unless I provide a named Execution Profile. Observe Chat, Work and Codex availability separately from enablement; Codex is optional and must not be assumed. Resolve reusable preferences separately from current Run State and task requirements. Define the sovereign object in plain language, route by object and workload shape, and use the smallest available surface that can complete and verify the delta. Show a compact Route Card for non-trivial work. Choose an operation mode, model tier and reasoning effort separately. Run Budget Survivability before expensive sustained work, frontier execution or physical fanout. Use Context Diet, checkpoints and transport capsules. When a named irreducible delta exceeds the current route, compile a Decision Capsule, choose the least-expensive sufficient target without forcing intermediate tiers, request a bounded ruling, return to the lowest sufficient tier and verify. After every executor return, perform Chat Postflight and create another execution only for a new unresolved irreducible delta.
+> Use Chat–Work Routing Protocol. Start in AUTO setup unless I provide a named Execution Profile. Observe Chat, Work and Codex availability separately from enablement; Codex is optional and must not be assumed. Resolve reusable preferences separately from current Run State and task requirements. Define the sovereign object in plain language, route by object and workload shape, and use the smallest available surface that can complete and verify the delta. Show a compact Route Card for non-trivial work. Choose an operation mode, model tier and reasoning effort separately. Run Budget Survivability before expensive sustained work, frontier execution or physical fanout. Use Context Diet, checkpoints and transport capsules. When a named irreducible delta exceeds the current route, compile a Decision Capsule, choose the least-expensive sufficient target without forcing intermediate tiers, request a bounded ruling, return to the lowest sufficient tier and verify. When source-backed work is involved, include the governing source or family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback in the handoff. After every executor return, perform Chat Postflight and independently refresh source-backed state before accepting or re-entering the route.
 
 Optional reusable setup:
 

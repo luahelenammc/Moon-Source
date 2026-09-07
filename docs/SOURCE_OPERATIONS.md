@@ -30,6 +30,8 @@ It is not:
 
 The method is portable because the function survives changes of vendor, connector, repository, document format or private vocabulary.
 
+Connected Sources answers whether and how a source can be reached, refreshed or safely written through an available substrate. Source Operations answers what to do with the reached material: retrieve, process, metabolize or promote. A source locator or connector capability never grants mutation authority, instruction authority or ownership of the destination.
+
 ## 1. The operation family
 
 | Operation | Governing question | Default effect |
@@ -292,7 +294,7 @@ For the dedicated custody and attribution operation, use [Credits & Attribution 
 | [Archive and Legacy](../archive/README.md) | preserved history and non-current artifacts | the reusable successor contract and current-use versus historical-use distinction |
 | [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) | material lineage, custody, permission and attribution | promotion's origin and transformation boundary |
 | [AI Kernel](../MOON_SOURCE_AI_KERNEL.md) | public AI boot and routing | the route into this method surface |
-| [Chat–Work V3](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) | object-routed Chat | Work | Codex execution, budget survival and post-execution closure | no change to the Chat–Work lifecycle |
+| [Chat–Work Routing Protocol](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) | object-routed Chat, Work and Codex execution, budget survival and post-execution closure | no change to the Chat–Work lifecycle |
 
 This file owns the operation grammar. The adjacent components remain authoritative for their own responsibilities.
 
