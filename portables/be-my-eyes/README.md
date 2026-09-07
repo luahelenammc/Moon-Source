@@ -1,10 +1,10 @@
-# Be My Eyes portable
+# Be My Eyes
 
 Be My Eyes is the standalone Moon Source portable for **contextual scene reading**: helping an AI understand human communication as a relational scene rather than reducing it to literal wording.
 
 ## Current portable
 
-- **Version:** 1.0-public
+- **Version:** `1.0-public`
 - **Canonical file:** [`BE_MY_EYES.md`](BE_MY_EYES.md)
 - **Method source:** [`docs/BE_MY_EYES.md`](../../docs/BE_MY_EYES.md)
 - **Download package:** [⬇️ `be-my-eyes-1.0-public.zip`](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip)
