@@ -23,7 +23,7 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 |---|---|
 | Give an AI the smallest useful setup for a person or project | [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md) |
 | Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [Preflight V2](portables/preflight/PREFLIGHT_V2.md) |
-| Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [Be My Eyes 1.0-public](portables/be-my-eyes/BE_MY_EYES.md) |
+| Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) |
 | Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Retrieve, process, metabolize or promote governed source material | [Source Operations](docs/SOURCE_OPERATIONS.md) |
@@ -67,7 +67,7 @@ Setup, Preflight, Be My Eyes, MSL and Chat–Work are separately versioned publi
 
 - 🧭 [**Moon Source Setup 3.0**](portables/setup/MOON_SOURCE_SETUP.md) — adaptive routing to the smallest useful personal or project context setup.
 - 🛫 [**Preflight V2**](portables/preflight/PREFLIGHT_V2.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them.
-- 👁️ [**Be My Eyes 1.0-public**](portables/be-my-eyes/BE_MY_EYES.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
+- 👁️ [**Be My Eyes**](portables/be-my-eyes/BE_MY_EYES.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
 - 🧱 [**Moon Source Language 4.3**](portables/msl/MSL_4_3.md) — structural grammar for proportionate sources, handoffs, packets, protocols, registries and archives.
 - 🔀 [**Chat–Work Routing Protocol V4**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Chat Postflight, bounded repair, acceptance and delta-only re-entry.
 
@@ -156,7 +156,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-09-07**; Preflight advanced to **V2** and Be My Eyes was promoted as method + **1.0-public** portable on **2026-09-07**, while Chat–Work routing remains the tri-surface **V4** protocol.
 
-Current structural grammar: **MSL 4.3**. Current public portables: **Setup 3.0**, **Preflight 2.0**, **Be My Eyes 1.0-public**, **MSL 4.3** and **Chat–Work 4.2-public**. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
+Current structural grammar: **MSL 4.3**. Current public portables: **Setup 3.0**, **Preflight 2.0**, **Be My Eyes** (version **1.0-public**), **MSL 4.3** and **Chat–Work 4.2-public**. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
 
