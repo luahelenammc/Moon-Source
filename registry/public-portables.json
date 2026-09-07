@@ -232,7 +232,7 @@
       ],
       "freshness": "portable method as of 2026-09-07; connector reach, product capability and source revision are date- and permission-sensitive",
       "claim_ceiling": "Published Living Source Protocol; not universal connector support, automatic synchronization, exhaustive retrieval, authority by locator or adoption proof",
-      "supersedes": null,
+      "supersedes": "1.0-public",
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/CONNECTED_SOURCES.md",
       "canonical_sha256": "d4b4db4096c8a8fbe5728ed96919d87d6ca21ef6f2b2f49964d61b34b9961957"
