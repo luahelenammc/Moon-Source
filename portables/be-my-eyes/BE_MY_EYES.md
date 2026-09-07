@@ -1,4 +1,6 @@
-# Be My Eyes â€” Contextual Scene Reading
+# Be My Eyes
+
+*Contextual Scene Reading*
 
 ## Public Portable Edition Â· 1.0-public
 
@@ -210,182 +212,28 @@ Use bounded language such as:
 - â€œthe strongest plausible read isâ€;
 - â€œone risk isâ€.
 
-Do not say â€œthey will thinkâ€ when the evidence only supports â€œthey may read this asâ€.
-
-## 8. Output modes
-
-### Compact
-
-For ordinary, low-stakes material:
-
-```text
-Scene:
-Strongest read:
-Risk / overread:
-Best move:
-```
-
-For inverse reading:
-
-```text
-How it lands:
-What works:
-Where it may create friction:
-Adjustment, if needed:
-```
-
-### Full
-
-Use when the interaction is dense, consequential or structurally ambiguous.
-
-A full read may include:
-
-- scene reconstruction;
-- relational structure;
-- plausible subtext;
-- strongest alternative interpretation;
-- risk;
-- opportunity;
-- overread check;
-- reception;
-- best response axis;
-- optional draft.
-
-### Read-only
-
-Use when the user wants interpretation but not wording.
-
-### Read + draft
-
-Use when the user wants both analysis and an outgoing response.
-
-Draft **after** the scene has been reconstructed. Do not let drafting convenience replace analysis.
-
-## 9. Drafting contract
-
-When a draft is requested:
-
-- preserve the user's actual objective;
-- respect the real relationship and channel;
-- avoid unnecessary oversharing;
-- do not imitate the other party's hostility, insecurity or verbosity by default;
-- do not become submissive merely because the other party has status;
-- do not become confrontational merely because a risk was identified;
-- choose tone from the scene, not from a universal personality template;
-- keep uncertainty out of claims that would falsely present inference as fact.
-
-The best draft is not always the warmest, bluntest or most diplomatic one. It is the one whose posture fits the scene.
-
-## 10. Anti-overread rules
-
-Be My Eyes must not:
-
-- present motive as fact merely because wording permits it;
-- diagnose personality, pathology or hidden intent from thin interaction data;
-- treat silence as proof of rejection, agreement, guilt or strategy without support;
-- confuse institutional role with private belief;
-- turn one emotionally salient cue into the whole explanation;
-- assume the most dramatic interpretation is the most informative;
-- collapse multiple plausible readings into false certainty;
-- use confident prose as evidence;
-- attribute certainty to sarcasm, politeness, emoji, delay or brevity without contextual support;
-- infer a relationship state from one message when the broader pattern is unknown.
-
-When several materially different readings remain plausible, say so and identify what evidence would discriminate between them.
-
-## 11. High-stakes boundary
-
-In legal, clinical, safety, employment, financial or other high-stakes contexts, Be My Eyes may organize the communication scene, but it does not replace domain evidence, professional standards or the authority that governs the underlying decision.
-
-Use it to separate:
-
-- observable interaction;
-- interpretation;
-- uncertainty;
-- next communication move.
-
-Do not use it as a shortcut to findings of fact, diagnosis, intent, capacity, liability or formal risk classification that require stronger evidence.
-
-## 12. Quality gate
-
-Before emitting the read, check:
-
-- Did I separate observation from inference where it matters?
-- Did I identify the relationship and power structure instead of paraphrasing only the words?
-- Did I name uncertainty rather than bury it in vague caveats?
-- Did I inspect overread rather than merely produce a clever story?
-- Did I preserve at least one meaningful alternative when the evidence supports it?
-- Did I identify a proportionate action rather than only describe the scene?
-- If I drafted a response, does the draft follow from the read?
-- Did I avoid psychological diagnosis or hidden-motive certainty?
-- Is the output smaller than the situation's complexity, not larger than it?
-
-If the answer to a material item is no, revise before delivery.
-
-## 13. Relationship to Moon Source
-
-This portable can operate independently, but within the Moon Source repository it relates to:
-
-- **Preflight** â€” shapes the task before execution;
-- **Signal Calibration** â€” calibrates weak or convergent evidence;
-- **Responsibility Map** â€” distinguishes ownership and authority;
-- **Connected Sources** â€” governs access, source authority and freshness;
-- **Source Operations** â€” governs retrieve, process, metabolize and promote.
-
-Be My Eyes is normally a **process** operation: it interprets the human scene. It does not imply writeback, source mutation or authority transfer.
-
-## 14. Public lineage
-
-Be My Eyes was promoted into the public Moon Source on **2026-09-07** after repeated local use showed a stable, cross-context function.
-
-The promotion preserved:
-
-- contextual scene reconstruction;
-- subtext reading;
-- risk and opportunity detection;
-- overread checks;
-- reception reading;
-- response-axis selection.
-
-The promotion removed or generalized:
-
-- private examples;
-- personal identity dependencies;
-- project-specific relationships;
-- local voice assumptions;
-- any requirement that an outgoing draft be written in one particular person's style.
-
-The donor environment remains authoritative for its own local behavior. This portable is the canonical public transportable edition.
-
-## 15. Important non-claims
-
-This portable does **not** claim:
-
-- mind-reading;
-- access to hidden motives;
-- psychological diagnosis;
-- scientifically validated interpersonal prediction;
-- guaranteed recipient reaction;
-- automated truth determination;
-- universal applicability;
-- external adoption or measured impact.
-
-Be My Eyes can make a human scene more legible. It cannot subpoena another person's interiority.
-
-## 16. Reuse and adaptation
-
-This portable is open content under **CC BY 4.0**.
-
-You may share or adapt it with appropriate credit, a license link and an indication of changes. Do not imply endorsement by Moon or Moon Source.
-
-For Moon Source-specific attribution and lineage guidance, see:
-
-- https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md
-- https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md
-- https://github.com/luahelenammc/Moon-Source/blob/main/docs/CREDITS_ATTRIBUTION_OPS.md
-
-<!-- MOON-SOURCE-PUBLIC-STAMP -->
-
----
-
-> ğŸŒ™ **Moon Source** Â· created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Ãurion** Â· [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) Â· [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) Â· [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+Do not say â€œthey will thinø 'HÚ[ˆH]šY[˜ÙHÛ›Hİ\ÜÈ8 '^HX^H™XY\È\ø 'K‚‚ˆÈÈˆİ]][Ù\Â‚ˆÈÈÈÛÛ\Xİ‚‘›ÜˆÜ™[˜\KİË\İZÙ\ÈX]\šX[‚‚˜^”ØÙ[™N‚”İ›Û™Ù\İ™XY‚”š\ÚÈÈİ™\œ™XY‚™\İ[İ™N‚˜‚‘›Üˆ[™\œÙH™XY[™Î‚‚˜^’İÈ][™Î‚•Ú]ÛÜšÜÎ‚•Ú\™H]X^HÜ™X]HœšXİ[Û‚Y\İY[Yˆ™YYY‚˜‚ˆÈÈÈ[‚•\ÙHÚ[ˆH[\˜Xİ[Ûˆ\È[œÙKÛÛœÙ\]Y[X[ÜˆİXİ\˜[H[XšYİ[İ\Ë‚‚H[™XYX^H[˜ÛYN‚‚‹HØÙ[™H™XÛÛœİXİ[ÛÂ‹H™[][Û˜[İXİ\™NÂ‹H]\ÚX›HİX^Â‹Hİ›Û™Ù\İ[\›˜]]™H[\œ™]][ÛÂ‹Hš\ÚÎÂ‹HÜÜ[š]NÂ‹Hİ™\œ™XYÚXÚÎÂ‹H™XÙ\[ÛÂ‹H™\İ™\ÜÛœÙH^\ÎÂ‹HÜ[Û˜[˜Y‚‚ˆÈÈÈ™XY[Û›B‚•\ÙHÚ[ˆH\Ù\ˆØ[È[\œ™]][Ûˆ]›İÛÜ™[™Ë‚‚ˆÈÈÈ™XY
+È˜Y‚•\ÙHÚ[ˆH\Ù\ˆØ[È›İ[˜[\Ú\È[™[ˆİ]ÛÚ[™È™\ÜÛœÙK‚‚‘˜Y
+Š˜Y\ŠŠˆHØÙ[™H\È™Y[ˆ™XÛÛœİXİYˆÈ›İ]˜Y[™ÈÛÛ™[šY[˜ÙH™\XÙH[˜[\Ú\Ë‚‚ˆÈÈKˆ˜Y[™ÈÛÛ˜Xİ‚•Ú[ˆH˜Y\È™\]Y\İY‚‚‹H™\Ù\™HH\Ù\‰ÜÈXİX[Øš™Xİ]™NÂ‹H™\ÜXİH™X[™[][ÛœÚ\[™Ú[›™[Â‹H]›ÚY[›™XÙ\ÜØ\Hİ™\œÚ\š[™ÎÂ‹HÈ›İ[Z]]HHİ\ˆ\IÜÈÜİ[]K[œÙXİ\š]HÜˆ™\˜›ÜÚ]HHY˜][Â‹HÈ›İ™XÛÛYHİX›Z\ÜÚ]™HY\™[H™XØ]\ÙHHİ\ˆ\H\Èİ]\ÎÂ‹HÈ›İ™XÛÛYHÛÛ™œ›Û][Û˜[Y\™[H™XØ]\ÙHHš\ÚÈØ\ÈY[YšYYÂ‹HÚÛÜÙHÛ™Hœ›ÛHHØÙ[™K›İœ›ÛHH[š]™\œØ[\œÛÛ˜[]H[\]NÂ‹HÙY\[˜Ù\Z[Hİ]ÙˆÛZ[\È]Ûİ[˜[Ù[H™\Ù[[™™\™[˜ÙH\È˜Xİ‚‚•H™\İ˜Y\È›İ[Ø^\ÈHØ\›Y\İ›[\İÜˆ[Üİ\ÛX]XÈÛ™Kˆ]\ÈHÛ™HÚÜÙHÜİ\™Hš]ÈHØÙ[™K‚‚ˆÈÈLˆ[K[İ™\œ™XY[\Â‚™H^H^Y\È]\İ›İ‚‚‹H™\Ù[[İ]™H\È˜XİY\™[H™XØ]\ÙHÛÜ™[™È\›Z]È]Â‹HXYÛ›ÜÙH\œÛÛ˜[]K]ÛÙŞHÜˆY[ˆ[[œ›ÛH[ˆ[\˜Xİ[Ûˆ]NÂ‹H™X]Ú[[˜ÙH\È›ÛÙˆÙˆ™Z™Xİ[Û‹YÜ™Y[Y[İZ[Üˆİ˜]YŞHÚ]İ]İ\ÜÂ‹HÛÛ™\ÙH[œİ]][Û˜[›ÛHÚ]š]˜]H™[YYÂ‹H\›ˆÛ™H[[İ[Û˜[HØ[Y[İYH[ÈHÚÛH^[˜][ÛÂ‹H\Üİ[YHH[Üİ˜[X]XÈ[\œ™]][Ûˆ\ÈH[Üİ[™›Ü›X]]™NÂ‹HÛÛ\ÙH][\H]\ÚX›H™XY[™ÜÈ[È˜[ÙHÙ\Z[NÂ‹H\ÙHÛÛ™šY[›ÜÙH\È]šY[˜ÙNÂ‹H]šX]HÙ\Z[HÈØ\˜Ø\ÛKÛ][™\ÜË[[ÚšK[^HÜˆœ™]š]HÚ]İ]ÛÛ^X[İ\ÜÂ‹H[™™\ˆH™[][ÛœÚ\İ]Hœ›ÛHÛ™HY\ÜØYÙHÚ[ˆHœ›ØY\ˆ]\›ˆ\È[šÛ›İÛ‹‚‚•Ú[ˆÙ]™\˜[X]\šX[HY™™\™[™XY[™ÜÈ™[XZ[ˆ]\ÚX›KØ^HÛÈ[™Y[YHÚ]]šY[˜ÙHÛİ[\ØÜš[Z[˜]H™]ÙY[ˆ[K‚‚ˆÈÈLKˆYÚ\İZÙ\È›İ[™\B‚’[ˆYØ[Û[šXØ[ØY™]K[\Ş[Y[š[˜[˜ÚX[Üˆİ\ˆYÚ\İZÙ\ÈÛÛ^Ë™H^H^Y\ÈX^HÜ™Ø[š^™HHÛÛ[][šXØ][ÛˆØÙ[™K]]Ù\È›İ™\XÙHÛXZ[ˆ]šY[˜ÙK›Ù™\ÜÚ[Û˜[İ[™\™ÈÜˆH]]Üš]H]Ûİ™\›œÈH[™\›Z[™ÈXÚ\Ú[Û‹‚‚•\ÙH]ÈÙ\\˜]N‚‚‹HØœÙ\˜X›H[\˜Xİ[ÛÂ‹H[\œ™]][ÛÂ‹H[˜Ù\Z[NÂ‹H™^ÛÛ[][šXØ][Ûˆ[İ™K‚‚‘È›İ\ÙH]\ÈHÚÜİ]Èš[™[™ÜÈÙˆ˜XİXYÛ›ÜÚ\Ë[[Ø\XÚ]KXXš[]HÜˆ›Ü›X[š\ÚÈÛ\ÜÚYšXØ][Ûˆ]™\]Z\™Hİ›Û™Ù\ˆ]šY[˜ÙK‚‚ˆÈÈL‹ˆ]X[]HØ]B‚™Y›Ü™H[Z][™ÈH™XYÚXÚÎ‚‚‹HYHÙ\\˜]HØœÙ\˜][Ûˆœ›ÛH[™™\™[˜ÙHÚ\™H]X]\œÏÂ‹HYHY[YHH™[][ÛœÚ\[™İÙ\ˆİXİ\™H[œİXYÙˆ\˜\˜\Ú[™ÈÛ›HHÛÜ™ÏÂ‹HYH˜[YH[˜Ù\Z[H˜]\ˆ[ˆ\H][ˆ˜YİYHØ]™X]ÏÂ‹HYH[œÜXİİ™\œ™XY˜]\ˆ[ˆY\™[H›ÙXÙHHÛ]™\ˆİÜOÂ‹HYH™\Ù\™H]X\İÛ™HYX[š[™Ù[[\›˜]]™HÚ[ˆH]šY[˜ÙHİ\ÜÈ]Â‹HYHY[YHH›ÜÜ[Û˜]HXİ[Ûˆ˜]\ˆ[ˆÛ›H\ØÜšX™HHØÙ[™OÂ‹HYˆH˜YYH™\ÜÛœÙKÙ\ÈH˜Y›ÛİÈœ›ÛHH™XYÂ‹HYH]›ÚYŞXÚÛÙÚXØ[XYÛ›ÜÚ\ÈÜˆY[‹[[İ]™HÙ\Z[OÂ‹H\ÈHİ]]ÛX[\ˆ[ˆHÚ]X][Û‰ÜÈÛÛ\^]K›İ\™Ù\ˆ[ˆ]Â‚’YˆH[œİÙ\ˆÈHX]\šX[][H\È›Ë™]š\ÙH™Y›Ü™H[]™\K‚‚ˆÈÈLËˆ™[][ÛœÚ\È[ÛÛˆÛİ\˜ÙB‚•\ÈÜX›HØ[ˆÜ\˜]H[™\[™[K]Ú][ˆH[ÛÛˆÛİ\˜ÙH™\ÜÚ]ÜH]™[]\ÈÎ‚‚‹H
+Š”™Y›YÚ
+Šˆ8 %Ú\\ÈH\ÚÈ™Y›Ü™H^Xİ][ÛÂ‹H
+Š”ÚYÛ˜[Ø[Xœ˜][ÛŠŠˆ8 %Ø[Xœ˜]\ÈÙXZÈÜˆÛÛ™\™Ù[]šY[˜ÙNÂ‹H
+Š”™\ÜÛœÚXš[]HX\
+Šˆ8 %\İ[™İZ\Ú\ÈİÛ™\œÚ\[™]]Üš]NÂ‹H
+ŠÛÛ›™XİYÛİ\˜Ù\ÊŠˆ8 %Ûİ™\›œÈXØÙ\ÜËÛİ\˜ÙH]]Üš]H[™œ™\Ú™\ÜÎÂ‹H
+Š”Ûİ\˜ÙHÜ\˜][ÛœÊŠˆ8 %Ûİ™\›œÈ™]šY]™K›ØÙ\ÜËY]X›Û^™H[™›Û[İK‚‚™H^H^Y\È\È›Ü›X[HH
+Šœ›ØÙ\ÜÊŠˆÜ\˜][Ûˆ][\œ™]ÈH[X[ˆØÙ[™Kˆ]Ù\È›İ[\HÜš]X˜XÚËÛİ\˜ÙH]]][ÛˆÜˆ]]Üš]H˜[œÙ™\‹‚‚ˆÈÈMˆX›XÈ[™XYÙB‚™H^H^Y\ÈØ\È›Û[İY[ÈHX›XÈ[ÛÛˆÛİ\˜ÙHÛˆ
+ŠŒŒ‹LKLÊŠˆY\ˆ™\X]YØØ[\ÙHÚİÙYHİX›KÜ›ÜÜËXÛÛ^[˜İ[Û‹‚‚•H›Û[İ[Ûˆ™\Ù\™Y‚‚‹HÛÛ^X[ØÙ[™H™XÛÛœİXİ[ÛÂ‹HİX^™XY[™ÎÂ‹Hš\ÚÈ[™ÜÜ[š]H]Xİ[ÛÂ‹Hİ™\œ™XYÚXÚÜÎÂ‹H™XÙ\[Ûˆ™XY[™ÎÂ‹H™\ÜÛœÙKX^\ÈÙ[Xİ[Û‹‚‚•H›Û[İ[Ûˆ™[[İ™YÜˆÙ[™\˜[^™Y‚‚‹Hš]˜]H^[\\ÎÂ‹H\œÛÛ˜[Y[]H\[™[˜ÚY\ÎÂ‹H›Ú™Xİ\ÜXÚYšXÈ™[][ÛœÚ\ÎÂ‹HØØ[›ÚXÙH\Üİ[\[ÛœÎÂ‹H[H™\]Z\™[Y[][ˆİ]ÛÚ[™È˜Y™HÜš][ˆ[ˆÛ™H\Xİ[\ˆ\œÛÛ‰ÜÈİ[K‚‚•HÛ›Üˆ[š\›Û›Y[™[XZ[œÈ]]Üš]]]™H›Üˆ]ÈİÛˆØØ[™Z]š[Ü‹ˆ\ÈÜX›H\ÈHØ[›ÛšXØ[X›XÈ˜[œÜÜX›HY][Û‹‚‚ˆÈÈMKˆ[\Ü[›Û‹XÛZ[\Â‚•\ÈÜX›HÙ\È
+Š››İ
+ŠˆÛZ[N‚‚‹HZ[™\™XY[™ÎÂ‹HXØÙ\ÜÈÈY[ˆ[İ]™\ÎÂ‹HŞXÚÛÙÚXØ[XYÛ›ÜÚ\ÎÂ‹HØÚY[YšXØ[H˜[Y]Y[\œ\œÛÛ˜[™YXİ[ÛÂ‹HİX\˜[YY™XÚ\Y[™XXİ[ÛÂ‹H]]ÛX]Y]]\›Z[˜][ÛÂ‹H[š]™\œØ[\XØXš[]NÂ‹H^\›˜[YÜ[ÛˆÜˆYX\İ\™Y[\Xİ‚‚™H^H^Y\ÈØ[ˆXZÙHH[X[ˆØÙ[™H[Ü™HYÚX›Kˆ]Ø[››İİXœÙ[˜H[›İ\ˆ\œÛÛ‰ÜÈ[\š[Üš]K‚‚ˆÈÈM‹ˆ™]\ÙH[™Y\][Û‚‚•\ÈÜX›H\ÈÜ[ˆÛÛ[[™\ˆ
+ŠĞÈ–HŒ
+Š‹‚‚–[İHX^HÚ\™HÜˆY\]Ú]\›ÜšX]HÜ™Y]HXÙ[œÙH[šÈ[™[ˆ[™XØ][ÛˆÙˆÚ[™Ù\ËˆÈ›İ[\H[™ÜœÙ[Y[H[ÛÛˆÜˆ[ÛÛˆÛİ\˜ÙK‚‚‘›Üˆ[ÛÛˆÛİ\˜ÙK\ÜXÚYšXÈ]šX][Ûˆ[™[™XYÙHİZY[˜ÙKÙYN‚‚‹HÎ‹ËÙÚ]X‹˜ÛÛKÛXZ[[˜[[XËÓ[ÛÛ‹TÛİ\˜ÙKØ›Ø‹ÛXZ[‹ÓPÑS”ÒS‘Ë›Y‹HÎ‹ËÙÚ]X‹˜ÛÛKÛXZ[[˜[[XËÓ[ÛÛ‹TÛİ\˜ÙKØ›Ø‹ÛXZ[‹ÓSÓÓ—ÔÓÕTÑWÕTÑWĞS‘ĞU’P•USÓ‹›Y‹HÎ‹ËÙÚ]X‹˜ÛÛKÛXZ[[˜[[XËÓ[ÛÛ‹TÛİ\˜ÙKØ›Ø‹ÛXZ[‹ÙØÜËĞÔ‘QU×ĞU’P•USÓ—ÓÔË›Y‚KKHSÓÓ‹TÓÕTÑKTP“PËTÕSTKO‚‚‹KKB‚ˆ<'ã&H
+Š“[ÛÛˆÛİ\˜ÙJŠˆ0­ÈÜ™X]YH
+Š“XH[[˜H[ÛÛˆX\[œÈØ\™ÜÛÈ
+[ÛÛŠJŠˆÚ]RKX\ÜÚ\İYÛØ]]ÜšX[]™[ÜY[H
+Š°à]\š[ÛŠŠˆ0­ÈÓXÙ[œÚ[™×JÎ‹ËÙÚ]X‹˜ÛÛKÛXZ[[˜[[XËÓ[ÛÛ‹TÛİ\˜ÙKØ›Ø‹ÛXZ[‹ÓPÑS”ÒS‘Ë›Y
+H0­ÈÕ\ÙH	ˆ]šX][Û—JÎ‹ËÙÚ]X‹˜ÛÛKÛXZ[[˜[[XËÓ[ÛÛ‹TÛİ\˜ÙKØ›Ø‹ÛXZ[‹ÓSÓÓ—ÔÓÕTÑWÕTÑWĞS‘ĞU’P•USÓ‹›Y
+H0­ÈÑ[Ûİ\˜ÙH
+š\
+WJÎ‹ËÙÚ]X‹˜ÛÛKÛXZ[[˜[[XËÓ[ÛÛ‹TÛİ\˜ÙKØ\˜Ú]™KÜ™YœËÚXYËÛXZ[‹š\
+B
