@@ -23,6 +23,7 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 |---|---|
 | Give an AI the smallest useful setup for a person or project | [Moon Source Setup 3.0](portables/setup/MOON_SOURCE_SETUP.md) |
 | Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [Preflight V2](portables/preflight/PREFLIGHT_V2.md) |
+| Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [Be My Eyes 1.0-public](portables/be-my-eyes/BE_MY_EYES.md) |
 | Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Retrieve, process, metabolize or promote governed source material | [Source Operations](docs/SOURCE_OPERATIONS.md) |
@@ -50,6 +51,7 @@ A few principles carry most of the architecture:
 - **Operations have different authority effects.** Retrieve reads, process transforms working material, metabolize integrates a real delta and promote generalizes a proven mechanism; none of these verbs is a substitute for the others.
 - **Work completion is not cycle completion.** When sustained execution returns, Chat verifies the real state, closes bounded residuals and re-enters Work only for irreducible remaining work.
 - **Humans should not have to prompt like machines.** [Preflight V2](portables/preflight/PREFLIGHT_V2.md) reconstructs intended meaning, desired outcome, corrections and constraints before execution; authority, provenance, freshness, risk and mutation checks activate only when consequence makes them material.
+- **Read the scene, not only the sentence.** [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) reconstructs actors, relationship and plausible subtext while keeping observation, inference and overread distinct.
 
 ## Examples
 
@@ -61,10 +63,11 @@ The gallery uses fictional, didactic scenarios so the method can be demonstrated
 
 ## Public portables and downloads
 
-Setup, Preflight, MSL and Chat–Work are separately versioned public projections of the architecture, not separate systems.
+Setup, Preflight, Be My Eyes, MSL and Chat–Work are separately versioned public projections of the architecture, not separate systems.
 
 - 🧭 [**Moon Source Setup 3.0**](portables/setup/MOON_SOURCE_SETUP.md) — adaptive routing to the smallest useful personal or project context setup.
 - 🛫 [**Preflight V2**](portables/preflight/PREFLIGHT_V2.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them.
+- 👁️ [**Be My Eyes 1.0-public**](portables/be-my-eyes/BE_MY_EYES.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
 - 🧱 [**Moon Source Language 4.3**](portables/msl/MSL_4_3.md) — structural grammar for proportionate sources, handoffs, packets, protocols, registries and archives.
 - 🔀 [**Chat–Work Routing Protocol V4**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Chat Postflight, bounded repair, acceptance and delta-only re-entry.
 
@@ -91,7 +94,7 @@ RAG, memory stores, MCP/tools and other retrieval or orchestration mechanisms ca
 
 ## Current public components
 
-Public components are responsibility-bearing methods with canonical files. They are not automatically portables and do not create a version bump merely by being updated.
+Public components are responsibility-bearing methods with canonical files. They are not automatically portables and do not create a version bump merely by being updated. A method may also earn a separately versioned portable projection when independent transport is useful.
 
 | Component | Responsibility |
 |---|---|
@@ -99,6 +102,7 @@ Public components are responsibility-bearing methods with canonical files. They 
 | [Source Operations](docs/SOURCE_OPERATIONS.md) | Retrieve, process, metabolize and promote governed source changes, with lifecycle and legacy-successor rules |
 | [Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
 | [Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Useful working inference without certainty inflation |
+| [Be My Eyes](docs/BE_MY_EYES.md) | Contextual scene reading: observation versus inference, actors, relationship and power, subtext, overread, plausible reception and proportionate response axis |
 | [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Project a stable method into a reusable procedure without moving source authority |
 | [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage, content custody and immaterial-asset protection |
 | [Operational Devices](docs/OPERATIONAL_DEVICES.md) | Bounded embodiments of reusable procedures on concrete execution surfaces |
@@ -121,11 +125,11 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent component changes
 
 <!-- MOON-SOURCE-COMPONENT-DIGEST:START -->
+- **2026-09-07 — Be My Eyes:** Promoted Be My Eyes from repeated local use into a public contextual scene-reading method while removing private identity and relationship dependencies.
 - **2026-09-04 — Source Operations:** Promoted a public source-operations and lifecycle method for retrieve, process, metabolize, promote, succession, readback and no-delta.
 - **2026-08-26 — Operational Reliability:** Added lightweight, materiality-triggered Context Receipts for context-path evidence alongside ordinary operational receipts.
 - **2026-08-26 — Connected Sources:** Separated source/data authority from instruction authority, added indirect-instruction failure handling and named proportional progressive loading.
 - **2026-08-23 — Operational Devices:** Added bounded operational-device contracts for state, guards, failure behavior and receipts.
-- **2026-08-23 — Failure to Capability:** Added a bounded failure-to-capability loop for recurring failure without exposing promotion machinery.
 <!-- MOON-SOURCE-COMPONENT-DIGEST:END -->
 
 This bounded digest is generated from the component registry. It is not a commit log.
@@ -138,6 +142,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 |---|---|
 | Full architecture | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | AI-side routing through the public corpus | [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md) |
+| Contextual scene-reading method | [Be My Eyes](docs/BE_MY_EYES.md) + [portable](portables/be-my-eyes/BE_MY_EYES.md) |
 | Source operation grammar, lifecycle and succession | [Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Definitions and responsibility boundaries | [Terminology](docs/TERMINOLOGY.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
 | Public components and portable registry | [registry/PUBLIC_PORTABLES.md](registry/PUBLIC_PORTABLES.md) |
@@ -149,9 +154,9 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 ## Current baseline
 
-Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-09-07**; Preflight advanced to **V2** on **2026-09-07**, and Chat–Work routing remains the tri-surface **V4** protocol.
+Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-09-07**; Preflight advanced to **V2** and Be My Eyes was promoted as method + **1.0-public** portable on **2026-09-07**, while Chat–Work routing remains the tri-surface **V4** protocol.
 
-Current structural grammar: **MSL 4.3**. Current public portables: **Setup 3.0**, **Preflight 2.0**, **MSL 4.3** and **Chat–Work 4.2-public**. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
+Current structural grammar: **MSL 4.3**. Current public portables: **Setup 3.0**, **Preflight 2.0**, **Be My Eyes 1.0-public**, **MSL 4.3** and **Chat–Work 4.2-public**. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
 

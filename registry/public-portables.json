@@ -110,6 +110,19 @@
       "status": "current"
     },
     {
+      "id": "be-my-eyes-method",
+      "title": "Be My Eyes — Contextual Scene Reading",
+      "class": "contextual-scene-reading-method",
+      "canonical_path": "docs/BE_MY_EYES.md",
+      "function": "Read human communication as a scene by separating observation from inference, mapping actors and relationships, examining subtext, risk, opportunity, overread and plausible reception, then selecting a proportionate response axis",
+      "claim_ceiling": "Bounded contextual-reading method; not mind-reading, psychological diagnosis, scientifically validated interpersonal prediction, guaranteed recipient reaction or domain-specific finding of fact",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-09-07",
+      "last_material_update_on": "2026-09-07",
+      "last_material_update_summary": "Promoted Be My Eyes from repeated local use into a public contextual scene-reading method while removing private identity and relationship dependencies.",
+      "status": "current"
+    },
+    {
       "id": "procedural-projection",
       "title": "Procedural Projection",
       "class": "procedural-projection-method",
@@ -183,6 +196,38 @@
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/PREFLIGHT_V2.md",
       "canonical_sha256": "71066c752c03032cf73c7f0c0470159ee63001b513643402cf1b78ade6fa0fb5"
+    },
+    {
+      "id": "be-my-eyes",
+      "title": "Be My Eyes — Contextual Scene Reading",
+      "slug": "be-my-eyes",
+      "version": "1.0-public",
+      "status": "current",
+      "class": "contextual-scene-reading-protocol",
+      "language": "English with language-sensitive execution",
+      "difficulty": "beginner to advanced",
+      "function": "Read messages, threads, screenshots, notes, posts and drafts as human scenes by separating observation from inference, mapping relationship and power, testing subtext and overread, estimating plausible reception and choosing a proportionate response axis",
+      "best_for": "People who want AI to understand what is happening in a human interaction, check whether they are overreading it, anticipate how an outgoing message may land, or choose the right response posture before drafting",
+      "canonical_path": "portables/be-my-eyes/BE_MY_EYES.md",
+      "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip",
+      "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/BE_MY_EYES.md",
+      "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "license": "CC-BY-4.0",
+      "license_class": "open-content",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "licensing_url": "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md",
+      "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+      "adaptation_policy": "Share or adapt with appropriate credit, a license link and an indication of changes; do not imply endorsement.",
+      "dependencies": [
+        "No required dependency; Signal Calibration is optional when several weak signals need explicit confidence calibration"
+      ],
+      "freshness": "structurally stable as of 2026-09-07; recheck when the Be My Eyes public source or portable changes",
+      "claim_ceiling": "Published contextual scene-reading portable; not mind-reading, psychological diagnosis, scientifically validated interpersonal prediction, guaranteed recipient reaction, automated truth determination or external adoption proof",
+      "supersedes": null,
+      "archive_paths": [],
+      "mirror_path": "moonsource/downloads/BE_MY_EYES.md",
+      "canonical_sha256": "74f05f85f5e664530bec30283cc9bb0e9bfdc3786d55927fbbc821e76c7fb1e8"
     },
     {
       "id": "moon-source-language",
@@ -263,7 +308,7 @@
       "Open and review a website pull request; merge only after SHA-256 equality and production-surface review."
     ],
     "mismatch_detection": "python scripts/check_mirror_sync.py",
-    "current_rebase_note": "Preflight V2 2.0 is now a current standalone portable; the former docs/PREFLIGHT.md component body is superseded by a succession pointer, while the canonical portable is mirrored at moonsource/downloads/PREFLIGHT_V2.md. Chat–Work V4 subversion 4.2-public is the current canonical protocol. It hardens first use with optional/setup-controlled Codex, bounded direct actions, workload-shape routing, explicit operation modes, shared resource pools and transport capsules without changing the V4 public generation or MSL 4.3. Superseded V4.1, V4.0 and V3 content remain recoverable through Git history; the live Moon-Source and LUAHELENA trees expose only the current V4 file."
+    "current_rebase_note": "Preflight V2 2.0 and Be My Eyes 1.0-public are current standalone portables. Be My Eyes is projected from docs/BE_MY_EYES.md and mirrored at moonsource/downloads/BE_MY_EYES.md. The former docs/PREFLIGHT.md component body is superseded by a succession pointer, while Preflight V2 is mirrored at moonsource/downloads/PREFLIGHT_V2.md. Chat–Work V4 subversion 4.2-public remains the current canonical routing protocol; MSL remains 4.3. Superseded portable generations remain recoverable through Git history rather than the live tree."
   },
   "_moon_source_public_stamp": {
     "project": "Moon Source",

@@ -28,6 +28,8 @@ Use each file for the responsibility it actually owns:
 - `README.md` — orientation, public entry points and top-level routing.
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
 - `portables/preflight/PREFLIGHT_V2.md` — Preflight V2: human-intent reconstruction before execution, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
+- `docs/BE_MY_EYES.md` — canonical public Be My Eyes method: contextual scene reading, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection.
+- `portables/be-my-eyes/BE_MY_EYES.md` — independently readable Be My Eyes 1.0-public transportable projection.
 - `docs/CONNECTED_SOURCES.md` — connector-aware source access: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
 - `docs/SOURCE_OPERATIONS.md` — public source-operation grammar: retrieve, process, metabolize, promote, promotion gate, lifecycle, legacy succession, current-state versus history, smallest sovereign destination, readback and no-delta.
 - `ARCHITECTURE.md` — public Moon Source architecture and field-to-form topology.
@@ -154,6 +156,15 @@ Use it for:
 - avoiding both hallucinated certainty and caveat paralysis.
 
 Use Signal Calibration for a bounded working inference. Use `EVIDENCE_AND_CLAIMS.md` when making public claims about Moon Source, use domain-specific evidence requirements when the stakes demand them, and use `docs/SOURCE_HYGIENE.md` when the unresolved problem is corpus quality, authority or provenance rather than inference.
+
+### If the user wants a human interaction, message, thread or draft read as a scene
+
+Load:
+- `portables/be-my-eyes/BE_MY_EYES.md`
+
+Use Be My Eyes when the literal words are not the whole object: the user wants to understand what is happening between people, map relationship or power, identify plausible subtext, check whether they are overreading, estimate how an outgoing message may land, or choose the right response posture before drafting.
+
+Use the **forward read** for received or observed material and the **inverse read** for likely reception of material the user created. Keep observation, relational inference, working hypothesis and unknown distinct. If several weak cues need explicit confidence calibration, also load `docs/SIGNAL_CALIBRATION.md`. In high-stakes contexts, Be My Eyes organizes the communication scene but does not replace domain evidence or findings of fact.
 
 ### If intellectual material needs protection while it is created, shared, transformed or generated
 
