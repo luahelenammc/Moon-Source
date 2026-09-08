@@ -37,7 +37,7 @@ Moon Source is a public context architecture: a set of reusable methods for deci
 
 Usually nothing is installed. Markdown gives a person or an AI inspectable instructions and methods; it does not create access, activation, synchronization or authority by itself.
 
-If you are a human exploring the full repository, read this section, choose the smallest route in the map below and then open that portable README's `## First use` section. If you give the full repository to an AI, use [`MOON_SOURCE_AI_KERNEL.md`](MOON_SOURCE_AI_KERNEL.md) for AI-side routing. For one concrete need, start with the smallest portable README instead of loading the whole repository.
+If you are a human exploring the full repository, read this section, choose the smallest route in the map below and then open that portable README's embedded onboarding section. If you give the full repository to an AI, use [`MOON_SOURCE_AI_KERNEL.md`](MOON_SOURCE_AI_KERNEL.md) for AI-side routing. For one concrete need, start with the smallest portable README instead of loading the whole repository.
 
 The portable README is the identity and onboarding surface. Its canonical `.md` file is the semantic authority. A portable package contains those two files: the exact canonical body plus the README that explains how to begin.
 
