@@ -1,10 +1,8 @@
 # Changelog
 
-## 2026-09-08 — Architecture / Field-to-Form coagulation and title normalization
+## 2026-09-08 — Field-to-Form route synchronization
 
-- Coagulated Field to Form into the canonical `ARCHITECTURE.md#field-to-form` body and reduced `docs/FIELD_TO_FORM.md` to a non-authoritative compatibility route; the duplicate method body was removed.
-- Normalized the primary human-facing titles of the fourteen public capabilities and the architecture entry point with stable leading emojis.
-- Preserved capability count, IDs, filenames, package and mirror contracts, registry schema 2.0 and semantic versions; this is an architectural/presentation hygiene change, not a method-version bump.
+- Updated the two canonical standalone bodies to route directly to `ARCHITECTURE.md#field-to-form`; rebuilt their exact-byte ZIPs, refreshed the registry hashes and synchronized the website mirrors without changing semantic versions.
 
 ## 2026-09-08 — Public capability registry rebase
 
