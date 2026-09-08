@@ -1,6 +1,6 @@
 # Public Portables
 
-These are the current public portables in the Moon Source family. Each has one canonical path in this repository. The active tree exposes only the latest generation of each portable family. Individual download links use small ZIP packages containing the exact canonical file, `README.md` and `FIRST_USE.md` support material so browsers save the portable instead of opening Markdown inline.
+These are the current public portables in the Moon Source family. Each has one canonical path in this repository. The active tree exposes only the latest generation of each portable family. Individual download links use small ZIP packages containing the exact canonical file and `README.md`; the README's embedded `## First use` section carries newcomer support so browsers save the portable instead of opening Markdown inline.
 
 Want everything at once? [**Download the complete Moon Source repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) or open the [download hub](../DOWNLOADS.md).
 
