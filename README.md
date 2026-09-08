@@ -24,9 +24,9 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 | Give an AI the smallest useful setup for a person or project | [🧭 Moon Source Setup](portables/setup/README.md) |
 | Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [🛫 Preflight](portables/preflight/README.md) |
 | Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [👁️ Be My Eyes](portables/be-my-eyes/README.md) |
-| Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
-| Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
-| Retrieve, process, metabolize or promote governed source material | [Source Operations](docs/SOURCE_OPERATIONS.md) |
+| Decide what deserves to become a source, handoff, procedure or other form | [🏗️ Moon Source Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
+| Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) |
+| Retrieve, process, metabolize or promote governed source material | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [🔗 Connected Sources](portables/connected-sources/README.md) |
 | Structure recurring context, continuity or handoffs | [🧱 Moon Source Language](portables/msl/README.md) |
 | Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [🔀 Chat–Work](portables/chat-work/README.md) |
@@ -135,14 +135,14 @@ Moon Source publishes public capabilities with one canonical semantic body each.
 
 | Repository-only capability | Responsibility |
 |---|---|
-| [Source Operations](docs/SOURCE_OPERATIONS.md) | Retrieve, process, metabolize and promote governed source changes, with lifecycle and legacy-successor rules |
-| [Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
-| [Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Useful working inference without certainty inflation |
-| [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Project a stable method into a reusable procedure without moving source authority |
-| [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage, content custody and immaterial-asset protection |
-| [Operational Devices](docs/OPERATIONAL_DEVICES.md) | Bounded embodiments of reusable procedures on concrete execution surfaces |
-| [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Read-only-first diagnosis, failure boundaries, ordinary and Context Receipts, reversibility and freshness |
-| [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Turn recurring failure into the smallest validated reusable mechanism |
+| [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) | Retrieve, process, metabolize and promote governed source changes, with lifecycle and legacy-successor rules |
+| [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
+| [🎚️ Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Useful working inference without certainty inflation |
+| [🧩 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Project a stable method into a reusable procedure without moving source authority |
+| [🧾 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage, content custody and immaterial-asset protection |
+| [🛠️ Operational Devices](docs/OPERATIONAL_DEVICES.md) | Bounded embodiments of reusable procedures on concrete execution surfaces |
+| [🛡️ Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Read-only-first diagnosis, failure boundaries, ordinary and Context Receipts, reversibility and freshness |
+| [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Turn recurring failure into the smallest validated reusable mechanism |
 
 The canonical chronology, roles, status and material-update history of all fourteen capabilities lives in the [public capability registry](registry/PUBLIC_CAPABILITIES.md); its machine-readable contract is [registry/public-capabilities.json](registry/public-capabilities.json). The six standalone distributions are a filtered distribution view. Connected Sources is a structural crown jewel at [docs/CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md), with dated ChatGPT product facts subordinate to [its adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md).
 
@@ -175,11 +175,11 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 | Need | Canonical route |
 |---|---|
-| Full architecture | [ARCHITECTURE.md](ARCHITECTURE.md) |
+| Full architecture and Field-to-Form diagnostic | [🏗️ Moon Source Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
 | AI-side routing through the public corpus | [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md) |
 | Contextual scene-reading capability | [Be My Eyes](portables/be-my-eyes/README.md) |
 | Connected source capability | [Connected Sources](portables/connected-sources/README.md) |
-| Source operation grammar, lifecycle and succession | [Source Operations](docs/SOURCE_OPERATIONS.md) |
+| Source operation grammar, lifecycle and succession | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Definitions and responsibility boundaries | [Terminology](docs/TERMINOLOGY.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
 | Unified public capability registry | [registry/PUBLIC_CAPABILITIES.md](registry/PUBLIC_CAPABILITIES.md) |
 | Versioning and release rules | [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) |

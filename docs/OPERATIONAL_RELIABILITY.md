@@ -1,4 +1,4 @@
-# Operational Reliability
+# 🛡️ Operational Reliability
 
 Operational reliability is the discipline of making execution diagnosable, bounded, reversible where possible and honest about what the evidence shows.
 

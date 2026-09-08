@@ -71,13 +71,13 @@ Connected Sources remains the structural crown jewel at `docs/CONNECTED_SOURCES.
 
 - [Moon Source AI Kernel](MOON_SOURCE_AI_KERNEL.md)
 - [Unified public capability registry](registry/PUBLIC_CAPABILITIES.md)
-- [🏛️ Moon Source architecture](ARCHITECTURE.md)
-- [🧬 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md)
+- [🏗️ Moon Source Architecture — Field to Form](ARCHITECTURE.md#field-to-form)
+- [🧾 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md)
 - [🔓 Licensing](LICENSING.md)
-- [🧭 Procedural Projection](docs/PROCEDURAL_PROJECTION.md)
-- [⚙️ Operational Devices](docs/OPERATIONAL_DEVICES.md)
+- [🧩 Procedural Projection](docs/PROCEDURAL_PROJECTION.md)
+- [🛠️ Operational Devices](docs/OPERATIONAL_DEVICES.md)
 - [🛡️ Operational Reliability](docs/OPERATIONAL_RELIABILITY.md)
-- [🔧 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md)
+- [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md)
 - [🧪 Browser Console Device reference](examples/browser-console-device/)
 - [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md)
 

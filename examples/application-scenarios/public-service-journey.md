@@ -12,12 +12,12 @@ Putting every document into one long summary does not resolve jurisdiction. It c
 
 ## Moon Source reading of the field
 
-Begin with Preflight and Field to Form: identify the citizen-facing question, the internal decisions and the smallest public response. Apply the Responsibility Map by facet rather than by a single “owner” for the entire journey. Connected Sources can map the systems without treating search reach as authority. Source Hygiene can surface duplicates and stale handoff notes.
+Begin with Preflight and the Field-to-Form diagnostic: identify the citizen-facing question, the internal decisions and the smallest public response. Apply the Responsibility Map by facet rather than by a single “owner” for the entire journey. Connected Sources can map the systems without treating search reach as authority. Source Hygiene can surface duplicates and stale handoff notes.
 
 ## Relevant components and portables
 
 - [Preflight](../../docs/PREFLIGHT.md) for entry-point diagnosis and question threshold.
-- [Field to Form](../../docs/FIELD_TO_FORM.md) for bounded public and internal forms.
+- [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for bounded public and internal forms.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for departmental jurisdiction.
 - [Connected Sources](../../docs/CONNECTED_SOURCES.md) for provenance and targeted retrieval.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for stale and duplicated material.

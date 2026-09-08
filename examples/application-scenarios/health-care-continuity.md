@@ -20,7 +20,7 @@ Use Preflight to identify the actual decision, audience, sensitivity and questio
 
 - [Preflight](../../docs/PREFLIGHT.md) for task shaping before retrieval.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for authority and ownership.
-- [Field to Form](../../docs/FIELD_TO_FORM.md) for choosing what deserves materialization.
+- [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for choosing what deserves materialization.
 - [Connected Sources](../../docs/CONNECTED_SOURCES.md) for source reach, freshness and mutation boundaries.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for contradiction, duplication and stale-state review.
 - [MSL 4.3](../../portables/msl/MSL_4_3.md) for a proportionate continuity packet or handoff.

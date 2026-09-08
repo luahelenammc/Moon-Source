@@ -12,13 +12,13 @@ A large training archive does not tell a learner what applies to their role or w
 
 ## Moon Source reading of the field
 
-Use Moon Source Setup 3.1 to infer the learner's actual need and maturity. Use Field to Form to choose a compact onboarding surface. Use Procedural Projection when a stable method should become a reusable procedure, while keeping the governing source distinct. Preflight handles questions that are ambiguous, sensitive or likely to route to the wrong material.
+Use Moon Source Setup 3.1 to infer the learner's actual need and maturity. Use the Field-to-Form diagnostic to choose a compact onboarding surface. Use Procedural Projection when a stable method should become a reusable procedure, while keeping the governing source distinct. Preflight handles questions that are ambiguous, sensitive or likely to route to the wrong material.
 
 ## Relevant components and portables
 
 - [Moon Source Setup](../../portables/setup/MOON_SOURCE_SETUP.md) for adaptive entry, use-case routing and a capability-probed persistent-source route.
 - [Preflight](../../docs/PREFLIGHT.md) for task shaping.
-- [Field to Form](../../docs/FIELD_TO_FORM.md) for the smallest useful learning artifact.
+- [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for the smallest useful learning artifact.
 - [Procedural Projection](../../docs/PROCEDURAL_PROJECTION.md) for method-to-procedure separation.
 - [MSL 4.3](../../portables/msl/MSL_4_3.md) for a role-bounded onboarding packet.
 
