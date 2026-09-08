@@ -31,6 +31,8 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 | Structure recurring context, continuity or handoffs | [Moon Source Language](portables/msl/MSL_4_3.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
 | Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [Chat–Work Routing Protocol](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) |
 
+> 🚦 **First time with Chat–Work?** It is an instruction-level routing protocol, not a native ChatGPT plugin or privileged OpenAI integration. It can recommend model, reasoning and Chat/Work/Codex transitions and structure the handoff, but when the current interface does not expose an actionable switch, you make that change manually. Read the required [First-Use Guide](portables/chat-work/FIRST_USE.md) before starting.
+
 You do not need to read the whole repository before using Moon Source. The [AI Kernel](MOON_SOURCE_AI_KERNEL.md) is the routing layer for loading the smallest relevant part of the public body.
 
 ## The architecture in one minute
