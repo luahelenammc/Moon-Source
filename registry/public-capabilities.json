@@ -311,7 +311,7 @@
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip",
         "mirror_path": "moonsource/downloads/PREFLIGHT_V2.md",
         "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/PREFLIGHT_V2.md",
-        "canonical_sha256": "17d604bdf8df9f758b6a07bafec715b5f9e96e824a6a29ecb6e21ad5202a3ed",
+        "canonical_sha256": "17d604bdf8df9f758b6a07bafec715b5f9e96e824a6a29ecb6e21ad5202a3ed4",
         "embedded_first_use": true
       }
     },
