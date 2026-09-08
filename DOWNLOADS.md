@@ -30,11 +30,11 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 | **Moon Source Language** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
 | **Chat–Work Routing Protocol** | Object- and workload-routed Chat/Work/Codex execution with Execution Profiles, live Run State, capability floors, Budget Survivability, Intelligence Distillation Ladder and Chat Postflight | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
-> 🚦 First-time Chat–Work users should read the bundled [FIRST_USE.md](portables/chat-work/FIRST_USE.md) before loading the protocol. It explains what is and is not installed and how manual switching works.
+> 🌱 **First time with Moon Source?** Read the [root FIRST_USE.md](FIRST_USE.md) first. Before loading any specific portable, read that family's `FIRST_USE.md`; it explains the first action, the starter prompt and any manual boundary. Every current portable package includes its canonical body plus `README.md` and `FIRST_USE.md` support files.
 
 The current Be My Eyes portable version is **1.0-public**. The current Connected Sources portable version is **1.0-public**. The current Chat–Work Routing Protocol version is **4.4-public**. It retains the model-neutral Intelligence Distillation Ladder and adds a connector-aware source transport contract for governing source/family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback, while preserving the V4 title, canonical filename and MSL 4.3.
 
-GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each package contains the exact canonical `.md` file. Some packages also include small support files—such as `README.md` or Chat–Work’s `FIRST_USE.md`—to make first use clearer; these files do not replace the canonical semantic body. Website copies are convenience mirrors, not separate semantic sources.
+GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each current portable package contains the exact canonical `.md` file plus `README.md` and `FIRST_USE.md`; these support files improve first use but do not replace the canonical semantic body. Website copies are convenience mirrors, not separate semantic sources.
 
 ## Preflight is now a portable
 
