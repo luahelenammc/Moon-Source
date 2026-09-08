@@ -7,6 +7,8 @@ A public, ChatGPT-first routing and closure protocol for separating **Execution 
 > 🚦 **First time using Chat–Work? Read [FIRST_USE.md](FIRST_USE.md) first.**
 >
 > Chat–Work is an instruction-level router, not a native installation. If the current UI/runtime does not expose a direct switch, model and surface changes are made manually.
+>
+> For Moon Source-wide orientation, start with the [root FIRST_USE.md](../../FIRST_USE.md).
 
 - 📌 Current subversion: 4.4-public
 - 🗂️ Canonical file: [CHAT_WORK_ROUTING_PROTOCOL_V4.md](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
