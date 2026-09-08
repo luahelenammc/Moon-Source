@@ -229,7 +229,7 @@
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip",
         "mirror_path": "moonsource/downloads/MOON_SOURCE_SETUP.md",
         "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_SETUP.md",
-        "canonical_sha256": "1f99c3978458d704625cbc57cf6e1b3eac084eb50a00d88b3310bff5f21c4ddc",
+        "canonical_sha256": "218193f4e937b954d337e123e5f15208456113008cbe8c34363e7876aaab9b97",
         "embedded_first_use": true
       }
     },
@@ -311,7 +311,7 @@
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip",
         "mirror_path": "moonsource/downloads/PREFLIGHT_V2.md",
         "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/PREFLIGHT_V2.md",
-        "canonical_sha256": "929fc9783847d540f46843040db70f5d753d5805deb3f289039dd52ce4e9271b",
+        "canonical_sha256": "17d604bdf8df9f758b6a07bafec715b5f9e96e824a6a29ecb6e21ad5202a3ed4",
         "embedded_first_use": true
       }
     },
