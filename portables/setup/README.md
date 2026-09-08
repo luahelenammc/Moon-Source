@@ -6,46 +6,80 @@ You do not need to decide whether you are a beginner, power user or builder befo
 
 [⬇️ **Download Moon Source Setup package (.zip)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip)
 
-> 🌱 **New here? Read [FIRST_USE.md](FIRST_USE.md) before using this portable.** It explains the first action, starter prompt and manual boundaries.
+## First use
 
-## Start here
+Moon Source Setup is the smallest useful starting point when you want an AI to understand a person, project or working context without making you learn a vocabulary first. It is a public method portable, not an installed application or background memory service.
 
-Paste `MOON_SOURCE_SETUP.md` into an AI conversation and say:
+For repository-wide orientation, return to [Moon Source first use](../../README.md#first-use).
+
+### Nothing is installed
+
+Reading or pasting [`MOON_SOURCE_SETUP.md`](MOON_SOURCE_SETUP.md) does not install software, create persistent memory, connect a source or change the AI globally. The portable can work by itself from material you provide. If a source or connector is available, it must be identified, authorized and checked in the current environment.
+
+### Say this first
+
+Paste the canonical file into an AI conversation and say:
 
 ```text
 Execute.
 ```
 
-The Setup should then:
+If you want to make the boundary explicit, say:
+
+```text
+Use Moon Source Setup for this task.
+Inspect what I already have, infer the smallest useful context setup,
+and tell me what should remain standalone or become persistent.
+Do not make me learn the vocabulary before giving me a useful next step.
+Task: [describe what you want AI to do better]
+```
+
+### What happens next
+
+The Setup should:
 
 1. understand what you want AI to do better;
 2. inspect useful context or instructions you already have;
 3. infer how much structure the situation actually needs;
 4. separate general behavior from project-specific context when useful;
-5. produce an output sized for its real destination;
+5. produce an output sized for its real destination; and
 6. test the result and tell you what would justify updating it later.
 
-It should **not** make you learn Moon Source vocabulary before receiving value, restart from zero when working material already exists, or create advanced artifacts simply because they are available.
+It should preserve working material where possible, avoid restarting from zero and avoid creating advanced artifacts simply because they are available. Repository-aware does not mean that the whole repository must be loaded; the smallest relevant set is enough.
 
-## Two operating modes
+### Persistent source and manual boundary
 
-### Standalone
+When the need is a current living source or durable cross-session continuity, ask the AI to probe the available source surface before promising connected behavior. Google Drive is the recommended ChatGPT document-source route; GitHub can complement it for executable or versioned public material. Neither is mandatory or assumed. An unavailable or unauthorized source falls back to bounded standalone context. See [Connected Sources](../connected-sources/CONNECTED_SOURCES.md).
 
-`MOON_SOURCE_SETUP.md` works by itself. No other Moon Source file is required for ordinary personal, work, writing, project or repair setups.
+You may still need to choose a destination, attach existing material, connect an account, approve a scope or save the resulting artifact yourself. Access is not activation, and the Setup cannot perform an unavailable action merely because a route was described.
 
-### Repository-aware
+### Minimal example
 
-If the AI also has the full Moon Source repository or ZIP, the Setup detects that broader context and defers repository loading to `MOON_SOURCE_AI_KERNEL.md`.
+For notes such as “the team has a new launch date, the owner is unclear and the existing instructions are partly stale,” provide the notes and ask Setup to inspect what already exists. A useful result may be a small project context note plus one explicit unknown, not a complete architecture.
 
-The rule is simple:
+### What this portable does not claim
 
-> **Access is not activation.** Moon Source components are capability references, not mandatory context.
+- It does not require a parser, runtime, connector or whole-repository load.
+- It does not create permanent memory, authority or synchronization by itself.
+- It does not assume that reachable material is current or governing.
+- It does not promise adoption, impact or enterprise readiness.
+- It does not replace human authorization, privacy judgment or source ownership.
 
-Only the smallest relevant component set should be loaded for the actual task.
+### Troubleshooting
 
-### Persistent source route
+For a quick ordinary-language pass, say:
 
-When the need is a current living source or durable cross-session continuity, probe the available source surface before promising connected behavior. Google Drive is the recommended ChatGPT document-source substrate; GitHub is complementary for executable, versioned public material. Neither is mandatory, and an unresolved or unauthorized source falls back to bounded standalone context. See [Connected Sources](../connected-sources/CONNECTED_SOURCES.md).
+```text
+Use Moon Source Setup in standalone mode.
+Inspect only the material I provide and recommend the smallest useful next step.
+```
+
+For repair of existing material, say:
+
+```text
+Inspect what already works, diagnose only the material problems,
+preserve the useful parts and show the smallest repair before changing anything.
+```
 
 ## Current identity
 

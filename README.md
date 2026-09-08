@@ -21,17 +21,49 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 
 | If you need to… | Start here |
 |---|---|
-| Give an AI the smallest useful setup for a person or project | [Moon Source Setup](portables/setup/MOON_SOURCE_SETUP.md) |
-| Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [Preflight](portables/preflight/PREFLIGHT_V2.md) |
-| Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) |
+| Give an AI the smallest useful setup for a person or project | [Moon Source Setup first use](portables/setup/README.md#first-use) |
+| Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [Preflight first use](portables/preflight/README.md#first-use) |
+| Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [Be My Eyes first use](portables/be-my-eyes/README.md#first-use) |
 | Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Retrieve, process, metabolize or promote governed source material | [Source Operations](docs/SOURCE_OPERATIONS.md) |
-| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources portable](portables/connected-sources/CONNECTED_SOURCES.md) |
-| Structure recurring context, continuity or handoffs | [Moon Source Language](portables/msl/MSL_4_3.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
-| Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [Chat–Work Routing Protocol](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) |
+| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources first use](portables/connected-sources/README.md#first-use) |
+| Structure recurring context, continuity or handoffs | [Moon Source Language first use](portables/msl/README.md#first-use) |
+| Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [Chat–Work first use](portables/chat-work/README.md#first-use) |
 
-> 🌱 **New to Moon Source? Start with [FIRST_USE.md](FIRST_USE.md).** It explains what Moon Source is, what you do and do not “install,” what a human should read first, what an AI should read first, and which portable fits your need.
+## First use
+
+Moon Source is a public context architecture: a set of reusable methods for deciding what should exist, what governs, what travels and what stays current. It is not an application that installs a background service, memory system, connector, model switch or hidden permission.
+
+Usually nothing is installed. Markdown gives a person or an AI inspectable instructions and methods; it does not create access, activation, synchronization or authority by itself.
+
+If you are a human exploring the full repository, read this section, choose the smallest route in the map below and then open that portable README's embedded onboarding section. If you give the full repository to an AI, use [`MOON_SOURCE_AI_KERNEL.md`](MOON_SOURCE_AI_KERNEL.md) for AI-side routing. For one concrete need, start with the smallest portable README instead of loading the whole repository.
+
+The portable README is the identity and onboarding surface. Its canonical `.md` file is the semantic authority. A portable package contains those two files: the exact canonical body plus the README that explains how to begin.
+
+### A small first run
+
+Ask the AI:
+
+```text
+I need help with [describe the real need].
+Recommend the smallest Moon Source portable for it.
+Do not load the whole repository unless necessary.
+Tell me the canonical file, the first action, what happens next,
+and any step I must perform manually.
+```
+
+For example, if a messy request needs clarification before execution, choose Preflight and say:
+
+```text
+Use Preflight before acting.
+Reconstruct my intended outcome, corrections and constraints in ordinary language,
+then show me the task you would execute.
+```
+
+Access is not activation. The repository does not silently grant a connector, account, model, permission, memory or write capability; a reachable source is not automatically authoritative; and a successful write is not accepted until the relevant readback succeeds.
+
+If the answer becomes more architectural than useful, say: “Use the smallest relevant portable, ordinary language, and give me the next concrete action. Do not load the whole repository.”
 
 You do not need to read the whole repository before using Moon Source. The [AI Kernel](MOON_SOURCE_AI_KERNEL.md) is the routing layer for loading the smallest relevant part of the public body.
 

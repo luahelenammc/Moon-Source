@@ -4,11 +4,62 @@ A public, ChatGPT-first routing and closure protocol for separating **Execution 
 
 [⬇️ **Download Chat–Work Routing Protocol package (.zip)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip)
 
-> 🚦 **First time using Chat–Work? Read [FIRST_USE.md](FIRST_USE.md) first.**
->
-> Chat–Work is an instruction-level router, not a native installation. If the current UI/runtime does not expose a direct switch, model and surface changes are made manually.
->
-> For Moon Source-wide orientation, start with the [root FIRST_USE.md](../../FIRST_USE.md).
+## First use
+
+Chat–Work is an instruction-level routing and closure protocol. It helps an AI read the task, separate surface, model, reasoning effort and context, and coordinate execution and return across Chat, Work and optional Codex. It is inspectable policy material, not a native installation or privileged OpenAI integration.
+
+For repository-wide orientation, return to [Moon Source first use](../../README.md#first-use).
+
+### Nothing is installed
+
+Loading or attaching [`CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md) does not install software, create a native ChatGPT router or grant privileged access to OpenAI's internal routing. Moon Source has no hidden integration with internal ChatGPT systems. Chat–Work can only work with the capabilities and actions that the current product surface actually exposes.
+
+### Choose a sustainable start
+
+You do not need a frontier model just to initialize Chat–Work. Start in Chat with a normal, sufficiently capable general model available to you. Prefer a sustainable default tier rather than pre-escalating to the most expensive or scarce option. Let the protocol recommend escalation only when the task's capability floor or reasoning demand actually requires it.
+
+Model names, plans and availability change. Tier language such as “efficient,” “balanced,” “strong” or “frontier” is therefore more durable than assuming one product label.
+
+`AUTO` means “let the protocol route this task after reading it”; it does not mean that the interface will switch itself. If a different surface, model or reasoning setting is needed and the product does not expose a direct action, you make the change manually in the UI.
+
+### Say this first
+
+Read the canonical file and use this starter prompt:
+
+```text
+Read and apply the Chat–Work Routing Protocol to this task.
+Start in AUTO.
+Before execution, tell me the recommended surface/model/reasoning route and clearly tell me if I need to make any manual switch in the UI.
+
+Task: [describe what you want done]
+```
+
+The README teaches the first run; [`CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md) remains the semantic authority.
+
+### What happens next
+
+`Chat understands/routes → you make any required manual switch → Work/Codex/another available model executes → the result returns to Chat → Chat verifies and closes`
+
+### Minimal example
+
+For a multi-file documentation change, ask Chat–Work to recommend the execution surface and model/reasoning route, make any UI switch it identifies, let the available executor perform the bounded edit and return the result to Chat for verification and closure.
+
+### Manual boundary and audit troubleshooting
+
+Chat–Work can recommend the best available surface, model tier, reasoning effort and context route; explain why; prepare a handoff; tell you when a manual UI change is needed; and structure the return to Chat for verification, acceptance and closure. It cannot physically switch models, reasoning levels or Chat/Work/Codex by itself unless the current environment explicitly exposes an actionable switch. If an environment does expose a direct action, the protocol must still distinguish a requested switch from a switch that actually occurred.
+
+If the response only audited the session, that may be because the file was loaded without a real task or the request asked for an audit. Give it a concrete task and explicitly ask it to apply the routing protocol operationally. If a recommended surface or model is unavailable, it must say so and give the closest honest route; it must not pretend that a switch happened.
+
+### What Chat–Work does not claim
+
+- no hidden or privileged OpenAI integration;
+- no guaranteed access to Work, Codex or frontier models;
+- no automatic entitlement, plan or allowance changes;
+- no guaranteed automatic model or surface switching;
+- no universal token-savings or quality guarantee;
+- no claim that model routing itself was invented here.
+
+## Current identity
 
 - 📌 Current subversion: 4.4-public
 - 🗂️ Canonical file: [CHAT_WORK_ROUTING_PROTOCOL_V4.md](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
