@@ -1,0 +1,193 @@
+name: Restore readable surfaces
+
+on:
+  push:
+    branches:
+      - restore/readable-readme-surfaces-20260908
+    paths:
+      - .github/workflows/restore-readable-surfaces.yml
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: restore/readable-readme-surfaces-20260908
+      - name: Apply presentation-surface routing
+        shell: python
+        run: |
+          from pathlib import Path
+
+          def replace(path, old, new, count=None):
+              p = Path(path)
+              text = p.read_text(encoding='utf-8')
+              found = text.count(old)
+              if count is not None and found != count:
+                  raise SystemExit(f'{path}: expected {count} occurrences, found {found}: {old[:80]!r}')
+              if found == 0:
+                  raise SystemExit(f'{path}: missing expected text: {old[:80]!r}')
+              p.write_text(text.replace(old, new), encoding='utf-8')
+
+          readme_routes = {
+              'portables/setup/MOON_SOURCE_SETUP.md#first-use': 'portables/setup/README.md',
+              'portables/preflight/PREFLIGHT_V2.md#first-use': 'portables/preflight/README.md',
+              'portables/be-my-eyes/BE_MY_EYES.md#first-use': 'portables/be-my-eyes/README.md',
+              'docs/CONNECTED_SOURCES.md#first-use': 'portables/connected-sources/README.md',
+              'portables/msl/MSL_4_3.md#first-use': 'portables/msl/README.md',
+              'portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use': 'portables/chat-work/README.md',
+          }
+          root = Path('README.md')
+          text = root.read_text(encoding='utf-8')
+          # Only the opening human-routing table gets facade routes here; deeper semantic links stay canonical.
+          head, tail = text.split('\n## First use\n', 1)
+          for old, new in readme_routes.items():
+              head = head.replace(old, new)
+          text = head + '\n## First use\n' + tail
+          text = text.replace(
+              "If you are a human exploring the full repository, read this section, choose the smallest route in the map below and then open that capability's canonical body. If it has a supported standalone distribution, the same canonical body carries its embedded onboarding section.",
+              "If you are a human exploring the full repository, read this section, choose the smallest route in the map below and open that capability's readable README surface. Its **Start** link leads to the canonical body's embedded onboarding section."
+          )
+          text = text.replace(
+              "Each public capability has one canonical semantic body. A standalone package or website mirror may distribute that body, but distribution does not create another identity or authority.",
+              "Each public capability has one canonical semantic body. A lightweight README may present that body for human browsing, and a standalone package or website mirror may distribute it, but none of those surfaces creates another identity, authority or version."
+          )
+          standalone_links = {
+              '[**Moon Source Setup**](portables/setup/MOON_SOURCE_SETUP.md)': '[**Moon Source Setup**](portables/setup/README.md)',
+              '[**Preflight**](portables/preflight/PREFLIGHT_V2.md)': '[**Preflight**](portables/preflight/README.md)',
+              '[**Be My Eyes**](portables/be-my-eyes/BE_MY_EYES.md)': '[**Be My Eyes**](portables/be-my-eyes/README.md)',
+              '[**Connected Sources**](docs/CONNECTED_SOURCES.md)': '[**Connected Sources**](portables/connected-sources/README.md)',
+              '[**Moon Source Language**](portables/msl/MSL_4_3.md)': '[**Moon Source Language**](portables/msl/README.md)',
+              '[**Chat–Work Routing Protocol**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md)': '[**Chat–Work Routing Protocol**](portables/chat-work/README.md)',
+          }
+          for old, new in standalone_links.items():
+              text = text.replace(old, new, 1)
+          text = text.replace(
+              '| Contextual scene-reading capability | [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) |',
+              '| Contextual scene-reading capability | [Be My Eyes](portables/be-my-eyes/README.md) |'
+          )
+          text = text.replace(
+              '| Connected source capability | [Connected Sources](docs/CONNECTED_SOURCES.md) |',
+              '| Connected source capability | [Connected Sources](portables/connected-sources/README.md) |'
+          )
+          root.write_text(text, encoding='utf-8')
+
+          # Download hub: browsing, authority and transport become visibly distinct.
+          p = Path('DOWNLOADS.md')
+          text = p.read_text(encoding='utf-8')
+          text = text.replace(
+              '- **Human reader:** start with [README first use](README.md#first-use), then open the smallest relevant canonical capability for the task.',
+              '- **Human reader:** start with [README first use](README.md#first-use), then open the readable surface for the smallest relevant capability; its **Start** link leads to the canonical body.'
+          )
+          old_table = '''| Capability | Best for | Direct download |
+|---|---|---|
+| **Moon Source Setup** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip) |
+| **Preflight** | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
+| **Be My Eyes** | Reading messages, threads, screenshots, notes and drafts as human scenes; checking subtext, overread, likely reception and response posture | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip) |
+| **Connected Sources** | Living Source Protocol for standalone, connected-read, living-source and federated source operation | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources-1.1-public.zip) |
+| **Moon Source Language** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
+| **Chat–Work Routing Protocol** | Object- and workload-routed Chat/Work/Codex execution with Execution Profiles, live Run State, capability floors, Budget Survivability, Intelligence Distillation Ladder and Chat Postflight | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |'''
+          new_table = '''| Capability | Canonical body | Best for | Direct download |
+|---|---|---|---|
+| [🧭 **Moon Source Setup**](portables/setup/README.md) | [MOON_SOURCE_SETUP.md](portables/setup/MOON_SOURCE_SETUP.md#first-use) | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip) |
+| [🛫 **Preflight**](portables/preflight/README.md) | [PREFLIGHT_V2.md](portables/preflight/PREFLIGHT_V2.md#first-use) | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
+| [👁️ **Be My Eyes**](portables/be-my-eyes/README.md) | [BE_MY_EYES.md](portables/be-my-eyes/BE_MY_EYES.md#first-use) | Reading messages, threads, screenshots, notes and drafts as human scenes | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip) |
+| [🔗 **Connected Sources**](portables/connected-sources/README.md) | [CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md#first-use) | Governed operation over persistent connected sources | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources-1.1-public.zip) |
+| [🧱 **Moon Source Language**](portables/msl/README.md) | [MSL_4_3.md](portables/msl/MSL_4_3.md#first-use) | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
+| [🔀 **Chat–Work Routing Protocol**](portables/chat-work/README.md) | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) | Object- and workload-routed Chat/Work/Codex execution | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |'''
+          if old_table not in text:
+              raise SystemExit('DOWNLOADS.md: standalone table drifted')
+          text = text.replace(old_table, new_table)
+          start = text.index('## Browse before downloading\n')
+          end = text.index('\n## Which download should I choose?', start)
+          browse = '''## Browse before downloading
+
+The table above deliberately separates three roles: **README = readable presentation**, **canonical body = semantic authority**, **ZIP = transport**. For repository-level architecture, also browse the [AI Kernel](MOON_SOURCE_AI_KERNEL.md), [public capability registry](registry/PUBLIC_CAPABILITIES.md), [Architecture](ARCHITECTURE.md), [Licensing](LICENSING.md) and [Source Hygiene](docs/SOURCE_HYGIENE.md).
+'''
+          text = text[:start] + browse + text[end:]
+          p.write_text(text, encoding='utf-8')
+
+          # Human registry: capability-name links may route to the facade; canonical-body column remains authoritative.
+          p = Path('registry/PUBLIC_CAPABILITIES.md')
+          text = p.read_text(encoding='utf-8')
+          replacements = {
+              '| be-my-eyes | Be My Eyes |': '| be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) |',
+              '| chat-work-routing | Chat–Work Routing Protocol |': '| chat-work-routing | [Chat–Work Routing Protocol](../portables/chat-work/README.md) |',
+              '| connected-sources | Connected Sources |': '| connected-sources | [Connected Sources](../portables/connected-sources/README.md) |',
+              '| moon-source-language | Moon Source Language |': '| moon-source-language | [Moon Source Language](../portables/msl/README.md) |',
+              '| moon-source-setup | Moon Source Setup |': '| moon-source-setup | [Moon Source Setup](../portables/setup/README.md) |',
+              '| preflight | Preflight |': '| preflight | [Preflight](../portables/preflight/README.md) |',
+          }
+          for old, new in replacements.items():
+              if old not in text:
+                  raise SystemExit(f'PUBLIC_CAPABILITIES.md drifted: {old}')
+              text = text.replace(old, new, 1)
+          p.write_text(text, encoding='utf-8')
+
+          # Portable contract: restore presentation surfaces without restoring semantic twins.
+          p = Path('docs/PORTABLE_DESIGN_CONTRACT.md')
+          text = p.read_text(encoding='utf-8')
+          text = text.replace(
+              '→ zero or more distribution, package, mirror and adapter surfaces',
+              '→ zero or more non-authoritative presentation, distribution, package, mirror and adapter surfaces'
+          )
+          old = '''canonical portable body = semantic authority + human and AI first-use entry
+package = canonical body
+README = only for a higher-level container that genuinely owns navigation'''
+          new = '''canonical body = semantic authority + embedded human and AI first-use entry
+README = human-facing presentation / discoverability surface
+package = canonical body
+website mirror = exact canonical delivery mirror'''
+          if old not in text:
+              raise SystemExit('Portable Design Contract first-use block drifted')
+          text = text.replace(old, new)
+          old = '''First-use guidance belongs on the smallest sovereign surface a newcomer is
+already expected to open. For a single-file standalone distribution, that
+surface is the canonical body itself. A separate onboarding file is justified
+only when it owns a genuinely independent audience, lifecycle, transport
+contract or responsibility. A repository-level README remains appropriate
+because the repository is a multi-child navigation surface.
+
+Do not create a second file merely to explain the first file. Do not preserve an obsolete sibling README merely to avoid migrating links; use Git history for historical recovery and move live links to canonical anchors.'''
+          new = '''First-use guidance belongs to the canonical body because it is operative semantics and must travel with the standalone artifact. Human browse legibility is a separate responsibility. A lightweight sibling `README.md` is legitimate when it presents identity, relevance, version/status and clear Start/Download routes without reproducing the method, starter prompt, troubleshooting or operational rules.
+
+Use this distinction:
+
+```text
+semantic singularity ≠ surface singularity
+
+README = presentation facade
+canonical body = semantic authority + embedded First use
+package / mirror = delivery surface
+```
+
+Do not create a second **semantic body** merely to explain the first. A README facade does not create another capability, canonical path or version, does not earn a semantic bump and must never override the canonical body. Use Git history for superseded semantics rather than keeping compatibility twins in the live tree.'''
+          if old not in text:
+              raise SystemExit('Portable Design Contract anti-fragmentation block drifted')
+          text = text.replace(old, new)
+          p.write_text(text, encoding='utf-8')
+
+          # Contributor rule follows the same facade != authority distinction.
+          p = Path('CONTRIBUTING.md')
+          text = p.read_text(encoding='utf-8')
+          old = '- for a new or materially revised standalone distribution, follow the [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md): the canonical body is the human and AI first-use surface and must embed a usable `## First use` path; do not create a second file merely to explain it;'
+          new = '- for a new or materially revised standalone distribution, follow the [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md): the canonical body remains semantic authority and must embed a usable `## First use` path; a lightweight README facade is welcome for human discoverability when it routes to — rather than duplicates — that authority;'
+          if old not in text:
+              raise SystemExit('CONTRIBUTING.md rule drifted')
+          p.write_text(text.replace(old, new), encoding='utf-8')
+      - name: Remove temporary workflow
+        run: rm .github/workflows/restore-readable-surfaces.yml
+      - name: Commit applied surfaces
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md DOWNLOADS.md registry/PUBLIC_CAPABILITIES.md docs/PORTABLE_DESIGN_CONTRACT.md CONTRIBUTING.md .github/workflows/restore-readable-surfaces.yml
+          git commit -m "docs: route humans through readable capability surfaces"
+          git push origin HEAD:restore/readable-readme-surfaces-20260908
+
+# MOON-SOURCE-PUBLIC-STAMP
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted)
