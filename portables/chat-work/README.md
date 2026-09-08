@@ -4,6 +4,10 @@ A public, ChatGPT-first routing and closure protocol for separating **Execution 
 
 [⬇️ **Download Chat–Work Routing Protocol package (.zip)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip)
 
+> 🚦 **First time using Chat–Work? Read [FIRST_USE.md](FIRST_USE.md) first.**
+>
+> Chat–Work is an instruction-level router, not a native installation. If the current UI/runtime does not expose a direct switch, model and surface changes are made manually.
+
 - 📌 Current subversion: 4.4-public
 - 🗂️ Canonical file: [CHAT_WORK_ROUTING_PROTOCOL_V4.md](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
 - 🌐 Language: English
