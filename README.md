@@ -37,11 +37,11 @@ Moon Source is a public context architecture: a set of reusable methods for deci
 
 Usually nothing is installed. Markdown gives a person or an AI inspectable instructions and methods; it does not create access, activation, synchronization or authority by itself.
 
-If you are a human exploring the full repository, read this section, choose the smallest route in the map below and then open that portable's embedded onboarding section. If you give the full repository to an AI, use [`MOON_SOURCE_AI_KERNEL.md`](MOON_SOURCE_AI_KERNEL.md) for AI-side routing. For one concrete need, start with the smallest canonical portable instead of loading the whole repository.
+If you are a human exploring the full repository, read this section, choose the smallest route in the map below and then open that capability's canonical body. If it has a supported standalone distribution, the same canonical body carries its embedded onboarding section. If you give the full repository to an AI, use [`MOON_SOURCE_AI_KERNEL.md`](MOON_SOURCE_AI_KERNEL.md) for AI-side routing. For one concrete need, start with the smallest relevant canonical capability instead of loading the whole repository.
 
-Each single-file portable is its own identity, semantic authority and onboarding surface. Its package carries the exact canonical body; the repository root remains the higher-level navigation surface.
+Each public capability has one canonical semantic body. A standalone package or website mirror may distribute that body, but distribution does not create another identity or authority.
 
-> **One entry, not necessarily one file.** A single-file portable teaches its own first use. Composite systems may retain deeper files when those files own real responsibilities.
+> **One entry, not necessarily one file.** A single-file standalone distribution teaches its own first use. Composite systems may retain deeper files when those files own real responsibilities.
 
 ### A small first run
 
@@ -49,7 +49,7 @@ Ask the AI:
 
 ```text
 I need help with [describe the real need].
-Recommend the smallest Moon Source portable for it.
+Recommend the smallest Moon Source capability for it.
 Do not load the whole repository unless necessary.
 Tell me the canonical file, the first action, what happens next,
 and any step I must perform manually.
@@ -65,7 +65,7 @@ then show me the task you would execute.
 
 Access is not activation. The repository does not silently grant a connector, account, model, permission, memory or write capability; a reachable source is not automatically authoritative; and a successful write is not accepted until the relevant readback succeeds.
 
-If the answer becomes more architectural than useful, say: “Use the smallest relevant portable, ordinary language, and give me the next concrete action. Do not load the whole repository.”
+If the answer becomes more architectural than useful, say: “Use the smallest relevant capability, ordinary language, and give me the next concrete action. Do not load the whole repository.”
 
 You do not need to read the whole repository before using Moon Source. The [AI Kernel](MOON_SOURCE_AI_KERNEL.md) is the routing layer for loading the smallest relevant part of the public body.
 
@@ -97,9 +97,9 @@ The setting changes from scenario to scenario; the underlying questions stay rec
 
 The gallery uses fictional, didactic scenarios so the method can be demonstrated without importing private, client or institutional material.
 
-## Public portables and downloads
+## Standalone distributions and downloads
 
-Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are separately versioned public projections of the architecture, not separate systems.
+Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are public capabilities that currently support standalone distribution. Their architectural roles remain independent of the fact that they can travel as self-contained packages.
 
 - 🧭 [**Moon Source Setup**](portables/setup/MOON_SOURCE_SETUP.md) — adaptive routing to the smallest useful personal or project context setup, including a probed persistent-source route; current version **3.1**.
 - 🛫 [**Preflight**](portables/preflight/PREFLIGHT_V2.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them; current version **2.0**.
@@ -108,7 +108,7 @@ Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are separat
 - 🧱 [**Moon Source Language**](portables/msl/MSL_4_3.md) — structural grammar for proportionate sources, handoffs, packets, protocols, registries and archives; current version **4.3**.
 - 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Intelligence Distillation Ladder, connector-aware source transport, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.4-public**.
 
-🗂️ [**Open the download hub**](DOWNLOADS.md) for the individual public portables.
+🗂️ [**Open the download hub**](DOWNLOADS.md) for the supported standalone distributions.
 
 ## Where Moon Source sits in an AI stack
 
@@ -153,7 +153,7 @@ Moon Source is deliberately strict about the difference between an artifact exis
 - [Evidence and Claims](EVIDENCE_AND_CLAIMS.md) defines what current public artifacts actually support and what remains unproven.
 - [Public Boundary](PUBLIC_BOUNDARY.md) defines what is public and what remains reserved, including private corpora and protected operational machinery.
 - [Existing Implementations](docs/EXISTING_IMPLEMENTATIONS.md) maps the inspectable artifacts behind current capability statements.
-- [Licensing](LICENSING.md) governs reuse: code and automation use **Apache-2.0**; documentation, methods and public portables use **CC BY 4.0**, subject to file-level metadata and third-party terms.
+- [Licensing](LICENSING.md) governs reuse: code and automation use **Apache-2.0**; documentation, methods and supported standalone distributions use **CC BY 4.0**, subject to file-level metadata and third-party terms.
 
 A public artifact is not an adoption claim. A tested slice is not proof of a universal runtime. The repository does not claim external adoption, measured impact, enterprise readiness, universal superiority or product-market fit without evidence.
 
@@ -177,7 +177,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 |---|---|
 | Full architecture | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | AI-side routing through the public corpus | [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md) |
-| Contextual scene-reading portable | [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) |
+| Contextual scene-reading capability | [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) |
 | Connected source capability | [Connected Sources](docs/CONNECTED_SOURCES.md) |
 | Source operation grammar, lifecycle and succession | [Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Definitions and responsibility boundaries | [Terminology](docs/TERMINOLOGY.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |

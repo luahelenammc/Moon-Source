@@ -88,7 +88,7 @@ human expression
 → execute
 ```
 
-When the reconstructed task materially involves governed sources, fresh external facts, sensitive/public consequences or state-changing execution, Preflight activates the relevant authority, provenance, freshness, risk, destination, mutation and readback guardrails or routes to the component that owns them.
+When the reconstructed task materially involves governed sources, fresh external facts, sensitive/public consequences or state-changing execution, Preflight activates the relevant authority, provenance, freshness, risk, destination, mutation and readback guardrails or routes to the capability that owns them.
 
 This ordering matters. **Preflight first understands the human; architecture enters when the work earns architecture.**
 
@@ -97,7 +97,7 @@ Preflight can therefore:
 - terminate quickly and let a clear request execute directly;
 - resolve conversational ambiguity without forcing the user to rewrite themselves as a prompt;
 - route into [Field to Form](docs/FIELD_TO_FORM.md) when the reconstructed need is genuinely architectural;
-- route into a specialized public component when the consequence, not the wording, requires authority, freshness, provenance, safety or execution safeguards;
+- route into a specialized public capability when the consequence, not the wording, requires authority, freshness, provenance, safety or execution safeguards;
 - reroute when the user corrects the meaning or new evidence changes the field.
 
 It is transversal, not a mandatory permanent stage in the topology. **Preflight reconstructs the task; Field to Form decides what the field deserves to become.**
@@ -112,13 +112,13 @@ Choose the public entry point that matches the field in front of you:
 - **Structure, source, handoff or protocol design:** use [Moon Source Language](portables/msl/MSL_4_3.md) after the responsibility is clear.
 - **ChatGPT execution routing:** use the [Chat–Work Routing Protocol](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) when surface, model or reasoning effort is the actual decision.
 - **Intellectual lineage and immaterial-asset protection:** use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material must retain identity, authorship, canonicality, transformation history, permission scope, disclosure boundaries, derivative lineage and recoverable evidence as it moves or changes.
-- **Licensing and redistribution:** use [LICENSING](LICENSING.md) to route software to Apache-2.0, documentation and public portables to CC-BY-4.0, and third-party material to its own terms.
+- **Licensing and redistribution:** use [LICENSING](LICENSING.md) to route software to Apache-2.0, documentation and public capability distributions to CC-BY-4.0, and third-party material to its own terms.
 - **Reusable procedure:** use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.
 - **Concrete recurring execution:** use [Operational Devices](docs/OPERATIONAL_DEVICES.md) when a procedure needs a named surface, state, guards and receipts; use [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) to keep that execution diagnosable and bounded.
 - **Recurring or costly failure:** use [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) when a failure pattern may have earned a smaller reusable rule, gate, procedure or device.
 - **Ambiguous or convergent signals:** use [Signal Calibration](docs/SIGNAL_CALIBRATION.md) when weak or incomplete cues need a useful working inference without being promoted to fact or discarded through caveats.
 - **Stale or contradictory corpus:** use [Source Hygiene](docs/SOURCE_HYGIENE.md) when retrieval is not the real problem.
-+ **Connected source operation:** use the canonical [Connected Sources capability](docs/CONNECTED_SOURCES.md) when an AI must reach persistent external memory or resolve authority, freshness, retrieval scope and mutation boundaries through a connector. Load the dated [ChatGPT adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md) only when current product behavior materially matters.
+- **Connected source operation:** use the canonical [Connected Sources capability](docs/CONNECTED_SOURCES.md) when an AI must reach persistent external memory or resolve authority, freshness, retrieval scope and mutation boundaries through a connector. Load the dated [ChatGPT adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md) only when current product behavior materially matters.
 
 ### Apply this architecture now
 
@@ -146,7 +146,7 @@ Situation:
 
 For the supporting decisions, use [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [Moon Source Language](portables/msl/MSL_4_3.md).
 
-**Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](DOWNLOADS.md). For reuse rights, use [LICENSING](LICENSING.md).
+**Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and standalone distributions, use the [download hub](DOWNLOADS.md). For reuse rights, use [LICENSING](LICENSING.md).
 
 ## 1. Field
 
@@ -235,7 +235,7 @@ A field may need one materialization or several. Common choices include:
 
 The materialization earns its existence by changing what the field can support. A new file that only repeats another file is not an architectural improvement.
 
-When one capability needs both structural reach and independent transport, give both roles to the same canonical body. Do not create a `docs/` twin merely because the body is portable. Register a current portable in the portable registry, and keep non-portable component inventory rows for capabilities that are not current portables.
+When one capability needs both structural responsibility and independent transport, keep one canonical semantic body and describe transport as a distribution role. Canonical placement follows architectural responsibility; standalone distribution neither creates a second registry identity nor requires a semantic twin.
 
 ## 6. Operation and transport
 
@@ -243,7 +243,7 @@ A materialization becomes useful when it can travel without losing its purpose, 
 
 Transport may involve:
 
-- a standalone public portable;
+- a supported standalone distribution;
 - a handoff with current state and next actions;
 - a packet with explicit scope and exclusions;
 - a bridge that translates without transferring semantic authority;
@@ -299,11 +299,11 @@ Moon Source is not:
 - a universal ontology;
 - a claim of external adoption;
 - a claim that more context is always better;
-- a promise that a public portable exposes the full private method.
+- a promise that a standalone distribution exposes the full private method.
 
 ## Claim ceiling
 
-This repository is a public reference architecture and a versioned home for public portables. It does not by itself prove impact, adoption, product-market fit, universal validity or enterprise readiness.
+This repository is a public reference architecture and a versioned home for public capabilities and their supported distributions. It does not by itself prove impact, adoption, product-market fit, universal validity or enterprise readiness.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

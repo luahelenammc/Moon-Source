@@ -6,11 +6,11 @@ Choose the smallest download that matches what you need.
 
 [**Download the complete Moon Source repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
 
-The ZIP contains the current public architecture, documentation, registry, validation scripts, all public portables and the Moon Source AI Kernel in one offline snapshot of `main`.
+The ZIP contains the current public architecture, documentation, unified capability registry, validation scripts, canonical capability bodies and the Moon Source AI Kernel in one offline snapshot of `main`.
 
-The distribution is mixed-license: software and automation use Apache-2.0; documentation, methods and public portables use CC-BY-4.0. Read the [licensing guide](LICENSING.md) and [`NOTICE`](NOTICE) before redistributing detached files.
+The distribution is mixed-license: software and automation use Apache-2.0; documentation, methods and supported standalone distributions use CC-BY-4.0. Read the [licensing guide](LICENSING.md) and [`NOTICE`](NOTICE) before redistributing detached files.
 
-- **Human reader:** start with [README first use](README.md#first-use), then open the smallest canonical portable for the task.
+- **Human reader:** start with [README first use](README.md#first-use), then open the smallest relevant canonical capability for the task.
 - **AI receiving the repository or ZIP:** start with `MOON_SOURCE_AI_KERNEL.md`.
 
 ## Download the AI Kernel by itself
@@ -30,15 +30,15 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 | **Moon Source Language** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
 | **Chat–Work Routing Protocol** | Object- and workload-routed Chat/Work/Codex execution with Execution Profiles, live Run State, capability floors, Budget Survivability, Intelligence Distillation Ladder and Chat Postflight | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
-> 🌱 **First time with Moon Source?** Start with [README.md#first-use](README.md#first-use). Before loading a specific capability, open its canonical body's [embedded First use section](portables/setup/MOON_SOURCE_SETUP.md#first-use); it explains the first action, starter prompt and manual boundary. Every current standalone package contains exactly the self-onboarding canonical body.
+> 🌱 **First time with Moon Source?** Start with [README.md#first-use](README.md#first-use). Before loading a specific capability, open its canonical body's embedded First use section; it explains the first action, starter prompt and manual boundary. Every current standalone package contains exactly the self-onboarding canonical body.
 
-The current Be My Eyes portable version is **1.0-public**. The current Connected Sources portable version is **1.1-public**. The current Chat–Work Routing Protocol version is **4.4-public**. It retains the model-neutral Intelligence Distillation Ladder and adds a connector-aware source transport contract for governing source/family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback, while preserving the V4 title, canonical filename and MSL 4.3.
+The current Be My Eyes capability version is **1.0-public**. The current Connected Sources capability version is **1.1-public**. The current Chat–Work Routing Protocol version is **4.4-public**. It retains the model-neutral Intelligence Distillation Ladder and adds a connector-aware source transport contract for governing source/family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback, while preserving the V4 title, canonical filename and MSL 4.3.
 
 GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each current standalone package contains exactly its canonical `.md` file, which carries both the semantic body and its first-use entry. Website copies are convenience mirrors, not separate semantic sources.
 
-## Preflight is now a portable
+## Preflight has a supported standalone distribution
 
-[**Preflight — Human Intent Reconstruction Before AI Execution**](portables/preflight/PREFLIGHT_V2.md) is now a standalone public portable, currently at version **2.0**, with its own packaged download above. The former `docs/PREFLIGHT.md` path remains only as a succession pointer.
+[**Preflight — Human Intent Reconstruction Before AI Execution**](portables/preflight/PREFLIGHT_V2.md) is a public capability with a supported standalone distribution, currently at version **2.0**, with its packaged download above. The former `docs/PREFLIGHT.md` path remains only as a succession pointer.
 
 ## Be My Eyes is a standalone-capable structural method
 
@@ -56,11 +56,11 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 - [Preflight](portables/preflight/PREFLIGHT_V2.md#first-use)
 - [👁️ Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md)
 - [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md#first-use)
-+ [🔗 Connected Sources](docs/CONNECTED_SOURCES.md)
-+ [Connected Sources](docs/CONNECTED_SOURCES.md#first-use)
+- [🔗 Connected Sources](docs/CONNECTED_SOURCES.md)
+- [Connected Sources](docs/CONNECTED_SOURCES.md#first-use)
 - [Moon Source Language](portables/msl/MSL_4_3.md#first-use)
 - [Chat–Work Routing](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use)
-+ [Unified public capability registry](registry/PUBLIC_CAPABILITIES.md)
+- [Unified public capability registry](registry/PUBLIC_CAPABILITIES.md)
 - [🏛️ Moon Source architecture](ARCHITECTURE.md)
 - [🧬 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md)
 - [🔓 Licensing](LICENSING.md)
@@ -82,7 +82,7 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 - **Want configurable Chat ↔ Work ↔ Codex routing?** Download **Chat–Work Routing Protocol** (version **4.4-public**).
 - **Need a bounded operational execution pattern?** Browse **Operational Devices** and **Operational Reliability**.
 - **Need to metabolize recurring failure?** Browse **Failure to Capability — Failure Foundry**.
-- **Want the synthetic browser reference?** Browse **Browser Console Device**; it is an experimental example, not a current portable download.
+- **Want the synthetic browser reference?** Browse **Browser Console Device**; it is an experimental example, not a supported standalone distribution.
 - **Want to inspect or keep the whole public architecture locally?** Download the **full repository ZIP**.
 
 The full ZIP is a distribution snapshot. The live `main` branch remains the current canonical public repository state.

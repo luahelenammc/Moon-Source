@@ -28,8 +28,8 @@ Use each file for the responsibility it actually owns:
 - `README.md` — orientation, public entry points and top-level routing.
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
 - `portables/preflight/PREFLIGHT_V2.md` — Preflight: human-intent reconstruction before execution, currently version 2.0, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
-- `portables/be-my-eyes/BE_MY_EYES.md` — canonical active Be My Eyes method and 1.0-public portable: contextual scene reading, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection.
-+ `docs/CONNECTED_SOURCES.md` — canonical Connected Sources structural crown jewel and 1.1-public standalone distribution: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
+- `portables/be-my-eyes/BE_MY_EYES.md` — canonical active Be My Eyes method and 1.0-public standalone distribution: contextual scene reading, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection.
+- `docs/CONNECTED_SOURCES.md` — canonical Connected Sources structural crown jewel and 1.1-public standalone distribution: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
 - `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` — subordinate dated ChatGPT product/reference facts; load only when current product behavior is materially relevant.
 - `docs/SOURCE_OPERATIONS.md` — public source-operation grammar: retrieve, process, metabolize, promote, promotion gate, lifecycle, legacy succession, current-state versus history, smallest sovereign destination, readback and no-delta.
 - `ARCHITECTURE.md` — public Moon Source architecture and field-to-form topology.
@@ -47,14 +47,14 @@ Use each file for the responsibility it actually owns:
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router, currently version 3.1.
 - `portables/msl/MSL_4_3.md` — current public structural grammar for materialization. MSL remains 4.3.
 - `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md` — current 4.4-public closed-loop ChatGPT surface/model/reasoning and source-transport routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
-+ `registry/PUBLIC_CAPABILITIES.md` — human-readable unified public capability identities, roles, versions, status and standalone-distribution routes.
-+ `registry/public-capabilities.json` — machine-readable one-record-per-capability registry; standalone distribution is nested metadata and does not create a second semantic inventory.
+- `registry/PUBLIC_CAPABILITIES.md` — human-readable unified public capability identities, roles, versions, status and standalone-distribution routes.
+- `registry/public-capabilities.json` — machine-readable one-record-per-capability registry; standalone distribution is nested metadata and does not create a second semantic inventory.
 - `docs/PORTABLE_DESIGN_CONTRACT.md` — portable publication, canonical-path and mirror rules.
-- `docs/VERSIONING_AND_RELEASES.md` — distinction between repository, portable, MSL and website versions.
+- `docs/VERSIONING_AND_RELEASES.md` — distinction between repository, capability/distribution, MSL and website versions.
 - `EVIDENCE_AND_CLAIMS.md` — what public evidence supports and what it does not establish.
 - `PUBLIC_BOUNDARY.md` — what may be public and what remains outside the public body.
 - `examples/application-scenarios/` — explicitly hypothetical / fictional didactic scenarios for explaining possible application; never evidence of adoption or impact.
-- `MOON_SOURCE_USE_AND_ATTRIBUTION.md` — repository/footer governance for Moon Source-specific authorship, use framing and watermark identity; not a Moon Source component.
+- `MOON_SOURCE_USE_AND_ATTRIBUTION.md` — repository/footer governance for Moon Source-specific authorship, use framing and watermark identity; not a Moon Source capability.
 - `CHANGELOG.md` — recorded public changes.
 - `archive/` — preserved history. Archive material does not govern the present unless a current authoritative file explicitly promotes it.
 
@@ -77,7 +77,7 @@ When two files appear to conflict, do not flatten them together. First ask wheth
 - Preflight → `portables/preflight/PREFLIGHT_V2.md`
 <!-- MOON-SOURCE-CANONICAL-AUTHORITY:END -->
 
-The canonical-authority map has one active semantic body per current portable capability. A portable may also carry a structural responsibility. Mirrors, ZIP packages and subordinate adapters are delivery or reference surfaces, not additional authorities.
+The canonical-authority map has one active semantic body per current public capability. Architectural responsibility and standalone distribution are independent metadata: a capability may be structural and distributable at the same time. Mirrors, ZIP packages and subordinate adapters are delivery or reference surfaces, not additional authorities.
 
 Preflight is the general human-intent reconstruction layer before execution. It may remain almost invisible when the intended task is already clear. It is not a mandatory questionnaire, and it does not replace specialized governance: it activates those layers only when the reconstructed task materially earns them.
 
@@ -88,7 +88,7 @@ Preflight is the general human-intent reconstruction layer before execution. It 
 Load:
 - `portables/preflight/PREFLIGHT_V2.md`
 
-Use Preflight when the person is thinking aloud, mixing examples with requirements, correcting themselves, relying on context, expressing what they want to avoid more clearly than what they want, or otherwise risks being misunderstood by literal execution. Reconstruct the intended task first. Ask only if consequential ambiguity remains. Then load a specialized component only if the reconstructed task materially requires source authority, freshness, provenance, public/sensitive boundaries, form selection, execution routing or mutation safeguards.
+Use Preflight when the person is thinking aloud, mixing examples with requirements, correcting themselves, relying on context, expressing what they want to avoid more clearly than what they want, or otherwise risks being misunderstood by literal execution. Reconstruct the intended task first. Ask only if consequential ambiguity remains. Then load a specialized capability only if the reconstructed task materially requires source authority, freshness, provenance, public/sensitive boundaries, form selection, execution routing or mutation safeguards.
 
 ### If the user wants AI to understand them more consistently
 
@@ -97,7 +97,7 @@ Load:
 
 Optionally load:
 - `ARCHITECTURE.md` if the user's context is already distributed across several sources or roles.
-- `portables/msl/MSL_4_3.md` only if the setup needs a custom governed structure beyond the portable itself.
+- `portables/msl/MSL_4_3.md` only if the setup needs a custom governed structure beyond the standalone distribution itself.
 
 Do not load the whole architecture merely to run Setup.
 
@@ -128,7 +128,7 @@ Choose the smallest form that creates a real capability. Do not generate a sourc
 Load:
 - `docs/PROCEDURAL_PROJECTION.md`
 
-Then load the governing source or procedure only as needed. Keep live state in the source; do not imply automatic synchronization or native execution where only a portable or mirror is available.
+Then load the governing source or procedure only as needed. Keep live state in the source; do not imply automatic synchronization or native execution where only a standalone distribution or mirror is available.
 
 ### If a recurring procedure needs a concrete bounded execution surface
 
@@ -153,7 +153,7 @@ Load:
 - `docs/OPERATIONAL_DEVICES.md`
 - `docs/OPERATIONAL_RELIABILITY.md`
 
-Keep the run read-only by default, use only a legitimate same-origin session, preserve partial results and never bypass CAPTCHA, paywalls, access controls, CORS or rate limits. The synthetic example is experimental and is not a current portable.
+Keep the run read-only by default, use only a legitimate same-origin session, preserve partial results and never bypass CAPTCHA, paywalls, access controls, CORS or rate limits. The synthetic example is experimental and is not a current standalone distribution.
 
 ### If the user needs to audit a stale, contradictory or bloated context corpus
 
@@ -211,7 +211,7 @@ If intellectual material is also changing custody or becoming a derivative, load
 ### If the user needs to reach a connected living source or external-memory substrate
 
 Load:
-+ `docs/CONNECTED_SOURCES.md` — canonical structural crown jewel and standalone-capable method, currently version 1.1-public
+- `docs/CONNECTED_SOURCES.md` — canonical structural crown jewel and standalone-capable method, currently version 1.1-public
 - `docs/RESPONSIBILITY_MAP.md` when authority or ownership is unclear
 - `docs/SOURCE_HYGIENE.md` when the corpus itself may be stale, contradictory or bloated
 - `docs/OPERATIONAL_RELIABILITY.md` when the operation includes mutation, retries, partial failure or recovery
@@ -226,7 +226,7 @@ Load:
 - `docs/SOURCE_OPERATIONS.md`
 
 Also load:
-+ `docs/CONNECTED_SOURCES.md` when the source is external or connector-backed;
+- `docs/CONNECTED_SOURCES.md` when the source is external or connector-backed;
 - `docs/SOURCE_HYGIENE.md` when the corpus may be stale, contradictory, duplicated or bloated;
 - `docs/RESPONSIBILITY_MAP.md` when ownership or authority is unclear;
 - `docs/CREDITS_ATTRIBUTION_OPS.md` when material lineage, custody, permission or disclosure changes.
@@ -245,7 +245,7 @@ Apply the V4 tri-surface loop: route by sovereign object across Chat, Work and C
 ### If the user wants to publish, mirror, redistribute or version public Moon Source material
 
 Load:
-+ `registry/PUBLIC_CAPABILITIES.md`
+- `registry/PUBLIC_CAPABILITIES.md`
 - `LICENSING.md`
 - `THIRD_PARTY_NOTICES.md`
 - `docs/PORTABLE_DESIGN_CONTRACT.md`
@@ -264,7 +264,7 @@ Use the applicable standard license declared by [LICENSING.md](LICENSING.md), th
 Load:
 - `examples/application-scenarios/README.md` for the hypothetical domain gallery;
 - the smallest scenario file relevant to the user's context;
-+ the public capability named by that scenario, only as needed.
+- the public capability named by that scenario, only as needed.
 
 Keep the status label visible. Treat the scenario as a didactic application sketch, not a case study, adoption example, measured result or validation claim.
 
@@ -353,7 +353,7 @@ Do:
 - preserve exact names, versions and paths when they matter;
 - re-check authority when new evidence appears;
 - treat archives as lineage rather than active truth;
-+ use standalone distributions as operational projections, not as the whole Moon Source;
+- use standalone distributions as operational projections, not as the whole Moon Source;
 - use `DOWNLOADS.md` when the user needs distribution/access rather than architecture.
 
 Do not:
@@ -399,7 +399,7 @@ The public Moon Source may expose:
 - public architecture;
 - public structural laws;
 - public-safe diagnostics;
-- public portable procedures;
+- public standalone procedures and distributions;
 - public responsibility distinctions;
 - public versioning, lineage and distribution rules;
 - bounded intellectual-lineage, content-custody and immaterial-asset protection operations.
