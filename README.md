@@ -21,15 +21,15 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 
 | If you need to… | Start here |
 |---|---|
-| Give an AI the smallest useful setup for a person or project | [Moon Source Setup first use](portables/setup/MOON_SOURCE_SETUP.md#first-use) |
-| Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [Preflight first use](portables/preflight/PREFLIGHT_V2.md#first-use) |
-| Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [Be My Eyes first use](portables/be-my-eyes/BE_MY_EYES.md#first-use) |
+| Give an AI the smallest useful setup for a person or project | [Moon Source Setup](portables/setup/MOON_SOURCE_SETUP.md#first-use) |
+| Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [Preflight](portables/preflight/PREFLIGHT_V2.md#first-use) |
+| Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md#first-use) |
 | Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Retrieve, process, metabolize or promote governed source material | [Source Operations](docs/SOURCE_OPERATIONS.md) |
-| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources first use](portables/connected-sources/CONNECTED_SOURCES.md#first-use) |
-| Structure recurring context, continuity or handoffs | [Moon Source Language first use](portables/msl/MSL_4_3.md#first-use) |
-| Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [Chat–Work first use](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) |
+| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources](portables/connected-sources/CONNECTED_SOURCES.md#first-use) |
+| Structure recurring context, continuity or handoffs | [Moon Source Language](portables/msl/MSL_4_3.md#first-use) |
+| Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [Chat–Work](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) |
 
 ## First use
 
