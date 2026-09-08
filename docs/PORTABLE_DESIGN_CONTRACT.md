@@ -65,6 +65,7 @@ A distinct adapter is permitted only when it owns volatile or surface-specific i
 A link labeled **Download** should trigger the platform's file-download route rather than merely opening a rendered or inline raw document. Browse/open links and download links are different interface promises and should be labeled accordingly.
 
 For GitHub-hosted current `.md` portables, Moon Source uses GitHub's `github.com/<owner>/<repo>/raw/refs/heads/<branch>/<path>` download route in user-facing download surfaces. The canonical repository path remains the semantic identity; the download URL is a delivery route.
+
 ## First-use contract
 
 A public portable is distribution-complete only when a newcomer can use it correctly without already understanding Moon Source.
