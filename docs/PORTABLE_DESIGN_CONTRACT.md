@@ -94,6 +94,24 @@ Each embedded section must include a copy-paste starter prompt, a minimal exampl
 
 The validator and package contract enforce the presence of `README.md`, its `## First use` section and the byte identity of the canonical file and README inside the package. Future portables should not be promoted as distribution-complete without a usable embedded entry path.
 
+### Onboarding locality and anti-fragmentation
+
+First-use guidance belongs on the surface a newcomer is already expected to open. For Moon Source portables, that surface is the family `README.md`. A separate onboarding file is an exception, not a default pattern.
+
+Do not split first use into another file merely because the explanation grew longer, because a recent bug deserves a note, or because the repository can technically carry another document. Create a separate onboarding surface only when it has a genuinely independent audience, lifecycle, transport contract or responsibility that cannot remain coherent inside the README.
+
+When feedback exposes a mismatch between what the user thinks is happening and what the portable can actually do, classify the failure before editing semantics:
+
+```text
+misunderstood installation / integration / manual action
+→ onboarding or interface delta
+
+wrong routing law / wrong capability contract / wrong semantic behavior
+→ canonical semantic delta
+```
+
+The first case should normally improve the README without changing the canonical body or version. The second may justify a semantic patch and version decision. Confusion is evidence about the interface; it is not automatically evidence that the method itself is wrong.
+
 ## Reuse
 
 Current Moon Source portables are Moon-authored open content under CC-BY-4.0 unless a file-level or third-party notice says otherwise. Use, copying, adaptation and redistribution are governed by the applicable standard license and the routes in [LICENSING.md](../LICENSING.md). [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) preserves content identity, lineage, transformation history, permission scope and attribution; it is a provenance layer, not a replacement license. Independent implementations of abstract ideas or methods are not converted into copyright-exclusive works by this statement.
