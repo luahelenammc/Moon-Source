@@ -21,15 +21,15 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 
 | If you need to… | Start here |
 |---|---|
-| Give an AI the smallest useful setup for a person or project | [Moon Source Setup](portables/setup/MOON_SOURCE_SETUP.md#first-use) |
-| Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [Preflight](portables/preflight/PREFLIGHT_V2.md#first-use) |
-| Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md#first-use) |
+| Give an AI the smallest useful setup for a person or project | [🧭 Moon Source Setup](portables/setup/README.md) |
+| Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [🛫 Preflight](portables/preflight/README.md) |
+| Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [👁️ Be My Eyes](portables/be-my-eyes/README.md) |
 | Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Retrieve, process, metabolize or promote governed source material | [Source Operations](docs/SOURCE_OPERATIONS.md) |
-| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources](docs/CONNECTED_SOURCES.md#first-use) |
-| Structure recurring context, continuity or handoffs | [Moon Source Language](portables/msl/MSL_4_3.md#first-use) |
-| Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [Chat–Work](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) |
+| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [🔗 Connected Sources](portables/connected-sources/README.md) |
+| Structure recurring context, continuity or handoffs | [🧱 Moon Source Language](portables/msl/README.md) |
+| Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [🔀 Chat–Work](portables/chat-work/README.md) |
 
 ## First use
 
@@ -37,11 +37,11 @@ Moon Source is a public context architecture: a set of reusable methods for deci
 
 Usually nothing is installed. Markdown gives a person or an AI inspectable instructions and methods; it does not create access, activation, synchronization or authority by itself.
 
-If you are a human exploring the full repository, read this section, choose the smallest route in the map below and then open that capability's canonical body. If it has a supported standalone distribution, the same canonical body carries its embedded onboarding section. If you give the full repository to an AI, use [`MOON_SOURCE_AI_KERNEL.md`](MOON_SOURCE_AI_KERNEL.md) for AI-side routing. For one concrete need, start with the smallest relevant canonical capability instead of loading the whole repository.
+If you are a human exploring the full repository, read this section, choose the smallest route in the map above and open that capability's readable README surface. Its prominent **Start** link leads to the canonical body's embedded onboarding section. If you give the full repository to an AI, use [`MOON_SOURCE_AI_KERNEL.md`](MOON_SOURCE_AI_KERNEL.md) for AI-side routing. For one concrete need, start with the smallest relevant capability instead of loading the whole repository.
 
-Each public capability has one canonical semantic body. A standalone package or website mirror may distribute that body, but distribution does not create another identity or authority.
+Each public capability has one canonical semantic body. A lightweight README may present that body for human browsing, and a standalone package or website mirror may distribute it, but none of those surfaces creates another identity, authority or version.
 
-> **One entry, not necessarily one file.** A single-file standalone distribution teaches its own first use. Composite systems may retain deeper files when those files own real responsibilities.
+> **One canonical body, multiple legitimate surfaces.** The README makes a capability legible. The canonical body remains the semantic authority and carries operative First use. Packages and mirrors carry the canonical artifact for transport.
 
 ### A small first run
 
@@ -101,14 +101,14 @@ The gallery uses fictional, didactic scenarios so the method can be demonstrated
 
 Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are public capabilities that currently support standalone distribution. Their architectural roles remain independent of the fact that they can travel as self-contained packages.
 
-- 🧭 [**Moon Source Setup**](portables/setup/MOON_SOURCE_SETUP.md) — adaptive routing to the smallest useful personal or project context setup, including a probed persistent-source route; current version **3.1**.
-- 🛫 [**Preflight**](portables/preflight/PREFLIGHT_V2.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them; current version **2.0**.
-- 👁️ [**Be My Eyes**](portables/be-my-eyes/BE_MY_EYES.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
-- 🔗 [**Connected Sources**](docs/CONNECTED_SOURCES.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.1-public**.
-- 🧱 [**Moon Source Language**](portables/msl/MSL_4_3.md) — structural grammar for proportionate sources, handoffs, packets, protocols, registries and archives; current version **4.3**.
-- 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Intelligence Distillation Ladder, connector-aware source transport, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.4-public**.
+- 🧭 [**Moon Source Setup**](portables/setup/README.md) — adaptive routing to the smallest useful personal or project context setup, including a probed persistent-source route; current version **3.1**.
+- 🛫 [**Preflight**](portables/preflight/README.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them; current version **2.0**.
+- 👁️ [**Be My Eyes**](portables/be-my-eyes/README.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
+- 🔗 [**Connected Sources**](portables/connected-sources/README.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.1-public**. Its canonical semantic body remains in [`docs/CONNECTED_SOURCES.md`](docs/CONNECTED_SOURCES.md).
+- 🧱 [**Moon Source Language**](portables/msl/README.md) — structural grammar for proportionate sources, handoffs, packets, protocols, registries and archives; current version **4.3**.
+- 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/README.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Intelligence Distillation Ladder, connector-aware source transport, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.4-public**.
 
-🗂️ [**Open the download hub**](DOWNLOADS.md) for the supported standalone distributions.
+🗂️ [**Open the download hub**](DOWNLOADS.md) to browse readable surfaces, open canonical bodies or download the supported standalone packages.
 
 ## Where Moon Source sits in an AI stack
 
@@ -177,8 +177,8 @@ Use the README for orientation; use the deeper files when the responsibility act
 |---|---|
 | Full architecture | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | AI-side routing through the public corpus | [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md) |
-| Contextual scene-reading capability | [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) |
-| Connected source capability | [Connected Sources](docs/CONNECTED_SOURCES.md) |
+| Contextual scene-reading capability | [Be My Eyes](portables/be-my-eyes/README.md) |
+| Connected source capability | [Connected Sources](portables/connected-sources/README.md) |
 | Source operation grammar, lifecycle and succession | [Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Definitions and responsibility boundaries | [Terminology](docs/TERMINOLOGY.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
 | Unified public capability registry | [registry/PUBLIC_CAPABILITIES.md](registry/PUBLIC_CAPABILITIES.md) |
