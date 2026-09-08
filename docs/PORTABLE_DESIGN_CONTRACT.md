@@ -65,6 +65,34 @@ A distinct adapter is permitted only when it owns volatile or surface-specific i
 A link labeled **Download** should trigger the platform's file-download route rather than merely opening a rendered or inline raw document. Browse/open links and download links are different interface promises and should be labeled accordingly.
 
 For GitHub-hosted current `.md` portables, Moon Source uses GitHub's `github.com/<owner>/<repo>/raw/refs/heads/<branch>/<path>` download route in user-facing download surfaces. The canonical repository path remains the semantic identity; the download URL is a delivery route.
+## First-use contract
+
+A public portable is distribution-complete only when a newcomer can use it correctly without already understanding Moon Source.
+
+Every current and future public portable must ship this layered entry path:
+
+~~~text
+canonical portable body = semantic authority
+README.md = family orientation and identity
+FIRST_USE.md = newcomer onboarding and practical first run
+package = canonical body + README.md + FIRST_USE.md
+~~~
+
+`FIRST_USE.md` is support material, not a second semantic body. It may explain current use, boundaries, manual actions and product-sensitive expectations, but it cannot silently change the portable's semantic contract. Operational claims remain subordinate to the canonical body and to dated adapter notes where applicable.
+
+Each guide must tell a newcomer, in plain language:
+
+- what the portable is for;
+- whether anything is installed;
+- which exact canonical file to provide to an AI;
+- what to say first;
+- what should happen next;
+- what may require a manual action or unavailable capability;
+- what the portable does not claim or do.
+
+Each guide must include a copy-paste starter prompt, a minimal example, a short troubleshooting path, a link to the canonical body and a link back to the root `FIRST_USE.md`. If the portable depends on an external capability, the guide must distinguish an instruction from an actually available integration. If the interface cannot perform a step, the guide must say so.
+
+The validator and package contract enforce the presence and byte identity of `README.md` and `FIRST_USE.md` for every current portable. Future portables should not be promoted as distribution-complete without both support surfaces.
 
 ## Reuse
 
