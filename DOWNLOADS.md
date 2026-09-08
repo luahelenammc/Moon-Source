@@ -10,7 +10,7 @@ The ZIP contains the current public architecture, documentation, registry, valid
 
 The distribution is mixed-license: software and automation use Apache-2.0; documentation, methods and public portables use CC-BY-4.0. Read the [licensing guide](LICENSING.md) and [`NOTICE`](NOTICE) before redistributing detached files.
 
-- **Human reader:** start with `README.md`.
+- **Human reader:** start with `FIRST_USE.md`, then use `README.md` for repository orientation.
 - **AI receiving the repository or ZIP:** start with `MOON_SOURCE_AI_KERNEL.md`.
 
 ## Download the AI Kernel by itself
