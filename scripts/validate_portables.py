@@ -47,7 +47,9 @@ TOP_LEVEL_URLS = (
     "professional_context_url",
 )
 URL_RE = re.compile(r"https?://[^)\s>]+")
-PORTABLE_SUPPORT_FILES = {"README.md", "CHANGELOG.md", "FIRST_USE.md"}
+REQUIRED_PORTABLE_SUPPORT_FILES = {"README.md", "FIRST_USE.md"}
+OPTIONAL_PORTABLE_SUPPORT_FILES = {"CHANGELOG.md"}
+PORTABLE_SUPPORT_FILES = REQUIRED_PORTABLE_SUPPORT_FILES | OPTIONAL_PORTABLE_SUPPORT_FILES
 
 
 def fail(message: str) -> None:
@@ -87,17 +89,29 @@ def main() -> None:
             fail(f"{portable['id']} exposes superseded archive paths in the live registry")
 
         family_dir = ROOT / "portables" / portable["slug"]
-        if family_dir.is_dir():
-            allowed_names = PORTABLE_SUPPORT_FILES | {path.name}
-            extra_markdown = sorted(
-                candidate.name
-                for candidate in family_dir.glob("*.md")
-                if candidate.name not in allowed_names
+        if not family_dir.is_dir():
+            fail(f"portable family directory missing: {portable['slug']}")
+
+        missing_support = sorted(
+            support_name
+            for support_name in REQUIRED_PORTABLE_SUPPORT_FILES
+            if not (family_dir / support_name).is_file()
+        )
+        if missing_support:
+            fail(
+                f"{portable['id']} is missing required support files: {missing_support}"
             )
-            if extra_markdown:
-                fail(
-                    f"{portable['id']} exposes non-current portable markdown files: {extra_markdown}"
-                )
+
+        allowed_names = PORTABLE_SUPPORT_FILES | {path.name}
+        extra_markdown = sorted(
+            candidate.name
+            for candidate in family_dir.glob("*.md")
+            if candidate.name not in allowed_names
+        )
+        if extra_markdown:
+            fail(
+                f"{portable['id']} exposes non-current portable markdown files: {extra_markdown}"
+            )
 
         content = path.read_text(encoding="utf-8")
         expected_sha256 = portable["canonical_sha256"]
@@ -134,12 +148,19 @@ def main() -> None:
         try:
             with ZipFile(package_path) as package:
                 package_files = [name for name in package.namelist() if not name.endswith("/")]
+                package_file_set = set(package_files)
+                required_package_files = {path.name} | REQUIRED_PORTABLE_SUPPORT_FILES
                 allowed_package_files = {path.name} | PORTABLE_SUPPORT_FILES
-                unexpected_files = sorted(set(package_files) - allowed_package_files)
-                if path.name not in package_files or unexpected_files:
+                missing_package_files = sorted(required_package_files - package_file_set)
+                unexpected_files = sorted(package_file_set - allowed_package_files)
+                if (
+                    len(package_file_set) != len(package_files)
+                    or missing_package_files
+                    or unexpected_files
+                ):
                     fail(
-                        f"{portable['id']} download package must contain {path.name} "
-                        f"and only recognized support files: {package_files}"
+                        f"{portable['id']} download package must contain the canonical file, "
+                        f"README.md and FIRST_USE.md, with no unexpected files: {package_files}"
                     )
                 packaged_bytes = package.read(path.name)
                 for support_name in sorted(set(package_files) - {path.name}):
