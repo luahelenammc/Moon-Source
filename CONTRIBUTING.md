@@ -24,6 +24,7 @@ The repository does not require a CLA or a signed-off-by line as a condition of 
 - use the repository's [pull-request template](.github/PULL_REQUEST_TEMPLATE.md);
 - treat a public component and a public portable as different categories;
 - keep human-facing titles stable and record release state in dedicated version metadata; follow the [repository naming and versioning policy](docs/REPOSITORY_NAMING_AND_VERSIONING.md) and its reusable [template](templates/REPOSITORY_NAMING_AND_VERSIONING.md);
+- for a new or materially revised portable, follow the [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md): the family `README.md` is the primary human-facing surface and must embed a usable `## First use` path; do not create a detached onboarding file by default;
 - register a new or materially changed component in `registry/public-portables.json` and `registry/PUBLIC_PORTABLES.md` when it meets the component criteria;
 - touch cross-file surfaces only where responsibility, routing, evidence, boundary, licensing or discoverability actually changes;
 - run the local validation commands described in `.github/workflows/validate.yml`;
@@ -32,6 +33,8 @@ The repository does not require a CLA or a signed-off-by line as a condition of 
 New application material must be visibly hypothetical and didactic unless independently supported public evidence exists. Do not present a fictional scenario as a case study, adoption result or validated deployment.
 
 The public component inventory records Git-derived public creation and material-update dates. Do not guess dates from private lineage, and do not create a portable or bump MSL, Setup or Chat–Work merely because a component or facade changed.
+
+When user feedback exposes a first-use misunderstanding — for example, confusing an instruction layer with an installed integration, assuming an unavailable capability, or not knowing the first manual step — treat that as a documentation/interface delta first. Change the canonical semantic body only when the semantic contract itself is wrong. Onboarding clarity alone does not earn a protocol version bump.
 
 Do not add non-commercial, anti-fork, anti-AI, copyleft, share-alike, branding-placement or approval requirements to the repository without a new policy decision.
 
