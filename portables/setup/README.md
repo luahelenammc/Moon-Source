@@ -6,6 +6,8 @@ You do not need to decide whether you are a beginner, power user or builder befo
 
 [⬇️ **Download Moon Source Setup package (.zip)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip)
 
+> 🌱 **New here? Read [FIRST_USE.md](FIRST_USE.md) before using this portable.** It explains the first action, starter prompt and manual boundaries.
+
 ## Start here
 
 Paste `MOON_SOURCE_SETUP.md` into an AI conversation and say:

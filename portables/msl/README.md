@@ -4,6 +4,9 @@ The public portable edition of Moon Source Language, currently version **4.3**, 
 
 [⬇️ **Download Moon Source Language package (.zip)**](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip)
 
+> 🌱 **New here? Read [FIRST_USE.md](FIRST_USE.md) before using this portable.** It explains the first action, starter prompt and manual boundaries.
+
+
 - 📌 Current version: 4.3
 - 🗂️ Canonical file: [MSL_4_3.md](MSL_4_3.md)
 - 🌐 Language: English
