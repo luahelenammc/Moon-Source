@@ -139,7 +139,7 @@
       "supersedes": "3.0",
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_SETUP.md",
-      "canonical_sha256": "1e481d87f40b000596b511f76e324a3e58a9a4383427409636093216d135c977"
+      "canonical_sha256": "15b4c29fef3182ee951b91be50ce085442aeebaa68240769c900a4432af5a7a4"
     },
     {
       "id": "preflight",
@@ -169,7 +169,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/PREFLIGHT_V2.md",
-      "canonical_sha256": "a0a4ab7f1bd4466ff25728ca9b465569734ba50d720bf3ec78a24bc0a30304e6"
+      "canonical_sha256": "e8cd5fe8194685b798d4341137728906ee4735bb008cb0cf542448b9df3f1201"
     },
     {
       "id": "be-my-eyes",
@@ -201,7 +201,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/BE_MY_EYES.md",
-  "canonical_sha256": "a685d648feac9f9fc9a38a4bfcb578e2a02aec4f824a36e6591dcf2a79db18a1"
+      "canonical_sha256": "708fc4d158a6833aad42f4fed1e1f818cf3f4c380c82c4ea657dfe8054d35265"
     },
     {
       "id": "connected-sources",
@@ -235,7 +235,7 @@
       "supersedes": "1.0-public",
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/CONNECTED_SOURCES.md",
-      "canonical_sha256": "d4b4db4096c8a8fbe5728ed96919d87d6ca21ef6f2b2f49964d61b34b9961957"
+      "canonical_sha256": "b6cb02068d20bbc4599601f4c3eae6722a8cf107f245e99cbb121845c9c17095"
     },
     {
       "id": "moon-source-language",
@@ -265,7 +265,7 @@
       "supersedes": null,
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_4_3.md",
-  "canonical_sha256": "f0f30baf295a8a7aa1faefada566b5eab4f95f3696c00be1ffbaf3435c6da9d1"
+      "canonical_sha256": "df180e08fd7543e5e7167cfe0da188d122431d05f9529848a4f77eb3f71b70fd"
     },
     {
       "id": "chat-work-routing",
@@ -299,7 +299,7 @@
       "supersedes": "4.3-public",
       "archive_paths": [],
       "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_4.md",
-  "canonical_sha256": "2596fd11acd0b2e4a4be8c17fea09b41c5e97aaae6dc91c7408ac9c88cfeea59"
+      "canonical_sha256": "75e90ddb541d765f6503da077ff874cac7cd6364400c79200094408eb2a0ea59"
     }
   ],
   "mirror_contract": {
@@ -317,7 +317,7 @@
       "Open and review a website pull request; merge only after SHA-256 equality and production-surface review."
     ],
     "mismatch_detection": "python scripts/check_mirror_sync.py",
-    "current_rebase_note": "Six current portables are registered in schema 1.1, including Be My Eyes version 1.0-public and Connected Sources version 1.1-public. Each capability has one active canonical semantic body: portables/be-my-eyes/BE_MY_EYES.md and portables/connected-sources/CONNECTED_SOURCES.md; a portable may also own a structural responsibility and is not duplicated in public_components. Connected Sources' dated ChatGPT product facts live only in the subordinate docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md. Their current mirrors are moonsource/downloads/BE_MY_EYES.md and moonsource/downloads/CONNECTED_SOURCES.md. The former docs/PREFLIGHT.md component body is superseded by a succession pointer, while Preflight is mirrored at moonsource/downloads/PREFLIGHT_V2.md. Moon Source Setup version 3.1 adds a capability-probed persistent-source route without making a connector mandatory. Chat–Work Routing Protocol version 4.4-public is the current canonical routing protocol with connector-aware source transport and the model-neutral Intelligence Distillation Ladder; Moon Source Language remains version 4.3. Superseded portable generations remain recoverable through Git history rather than the live tree."
+      "current_rebase_note": "Six current portables are registered in schema 1.1, including Be My Eyes version 1.0-public and Connected Sources version 1.1-public. Each capability has one active self-onboarding canonical semantic body and its package contains only that body; a portable may also own a structural responsibility and is not duplicated in public_components. Connected Sources' dated ChatGPT product facts live only in the subordinate docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md. Their current mirrors are moonsource/downloads/BE_MY_EYES.md and moonsource/downloads/CONNECTED_SOURCES.md. The former docs/PREFLIGHT.md component body is superseded by a succession pointer, while Preflight is mirrored at moonsource/downloads/PREFLIGHT_V2.md. Moon Source Setup version 3.1 adds a capability-probed persistent-source route without making a connector mandatory. Chat–Work Routing Protocol version 4.4-public is the current canonical routing protocol with connector-aware source transport and the model-neutral Intelligence Distillation Ladder; Moon Source Language remains version 4.3. Onboarding integration changes canonical hashes and package bytes without earning semantic version bumps. Superseded portable generations remain recoverable through Git history rather than the live tree."
   },
   "_moon_source_public_stamp": {
     "project": "Moon Source",

@@ -68,19 +68,17 @@ For GitHub-hosted current `.md` portables, Moon Source uses GitHub's `github.com
 
 ## First-use contract
 
-A public portable is distribution-complete only when a newcomer can use it correctly without already understanding Moon Source.
-
-Every current and future public portable must expose this embedded entry path:
+A public portable is distribution-complete only when a newcomer can use it correctly without already understanding Moon Source. For a single-file portable, the canonical artifact itself is that entry surface:
 
 ~~~text
-canonical portable body = semantic authority
-README.md = family identity, orientation and newcomer onboarding
-package = canonical body + README.md
+canonical portable body = semantic authority + human and AI first-use entry
+package = canonical body
+README = only for a higher-level container that genuinely owns navigation
 ~~~
 
-The README's `## First use` section is support material, not a second semantic body. It may explain current use, boundaries, manual actions and product-sensitive expectations, but it cannot silently change the portable's semantic contract. Operational claims remain subordinate to the canonical body and to dated adapter notes where applicable.
+This is an onboarding locality rule, not a demand that every system become one file. A composite public system may retain deeper files when they own real responsibilities; it should still expose one unmistakable canonical entry artifact.
 
-Each README's embedded section must tell a newcomer, in plain language:
+Every current and future public portable canonical body must include a `## First use` section or an equivalent standardized entry layer that tells a newcomer, in plain language:
 
 - what the portable is for;
 - whether anything is installed;
@@ -90,27 +88,27 @@ Each README's embedded section must tell a newcomer, in plain language:
 - what may require a manual action or unavailable capability;
 - what the portable does not claim or do.
 
-Each embedded section must include a copy-paste starter prompt, a minimal example, a short troubleshooting path, a link to the canonical body and a route back to the root README's `#first-use` anchor. If the portable depends on an external capability, the section must distinguish an instruction from an actually available integration. If the interface cannot perform a step, the section must say so.
+The entry layer must also include a copy-paste starter prompt, a minimal example and a short troubleshooting path. If the portable depends on an external capability, it must distinguish an instruction from an actually available integration. If the interface cannot perform a step, it must say so.
 
-The validator and package contract enforce the presence of `README.md`, its `## First use` section and the byte identity of the canonical file and README inside the package. Future portables should not be promoted as distribution-complete without a usable embedded entry path.
+The validator and package contract enforce the presence of the canonical file, its embedded first-use entry and the byte identity of that canonical file inside the package. Future portables should not be promoted as distribution-complete without a usable self-onboarding entry.
 
 ### Onboarding locality and anti-fragmentation
 
-First-use guidance belongs on the surface a newcomer is already expected to open. For Moon Source portables, that surface is the family `README.md`. A separate onboarding file is an exception, not a default pattern.
+First-use guidance belongs on the smallest sovereign surface a newcomer is already expected to open. For a single-file Moon Source portable, that surface is the canonical portable itself. A separate onboarding file is justified only when it owns a genuinely independent audience, lifecycle, transport contract or responsibility. A repository-level README remains appropriate because the repository is a multi-child navigation surface.
 
-Do not split first use into another file merely because the explanation grew longer, because a recent bug deserves a note, or because the repository can technically carry another document. Create a separate onboarding surface only when it has a genuinely independent audience, lifecycle, transport contract or responsibility that cannot remain coherent inside the README.
+Do not create a second file merely to explain the first file. Do not preserve an obsolete sibling README merely to avoid migrating links; use Git history for historical recovery and move live links to canonical anchors.
 
 When feedback exposes a mismatch between what the user thinks is happening and what the portable can actually do, classify the failure before editing semantics:
 
 ```text
 misunderstood installation / integration / manual action
-→ onboarding or interface delta
+→ embedded onboarding or interface delta
 
 wrong routing law / wrong capability contract / wrong semantic behavior
 → canonical semantic delta
 ```
 
-The first case should normally improve the README without changing the canonical body or version. The second may justify a semantic patch and version decision. Confusion is evidence about the interface; it is not automatically evidence that the method itself is wrong.
+The first case may change the canonical bytes because onboarding belongs there, but it does not by itself earn a semantic version bump. The second may justify a semantic patch and version decision. Confusion is evidence about the interface; it is not automatically evidence that the method itself is wrong.
 
 ## Reuse
 

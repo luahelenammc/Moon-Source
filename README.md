@@ -21,15 +21,15 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 
 | If you need to… | Start here |
 |---|---|
-| Give an AI the smallest useful setup for a person or project | [Moon Source Setup first use](portables/setup/README.md#first-use) |
-| Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [Preflight first use](portables/preflight/README.md#first-use) |
-| Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [Be My Eyes first use](portables/be-my-eyes/README.md#first-use) |
+| Give an AI the smallest useful setup for a person or project | [Moon Source Setup first use](portables/setup/MOON_SOURCE_SETUP.md#first-use) |
+| Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [Preflight first use](portables/preflight/PREFLIGHT_V2.md#first-use) |
+| Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [Be My Eyes first use](portables/be-my-eyes/BE_MY_EYES.md#first-use) |
 | Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Retrieve, process, metabolize or promote governed source material | [Source Operations](docs/SOURCE_OPERATIONS.md) |
-| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources first use](portables/connected-sources/README.md#first-use) |
-| Structure recurring context, continuity or handoffs | [Moon Source Language first use](portables/msl/README.md#first-use) |
-| Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [Chat–Work first use](portables/chat-work/README.md#first-use) |
+| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources first use](portables/connected-sources/CONNECTED_SOURCES.md#first-use) |
+| Structure recurring context, continuity or handoffs | [Moon Source Language first use](portables/msl/MSL_4_3.md#first-use) |
+| Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [Chat–Work first use](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) |
 
 ## First use
 
@@ -37,9 +37,11 @@ Moon Source is a public context architecture: a set of reusable methods for deci
 
 Usually nothing is installed. Markdown gives a person or an AI inspectable instructions and methods; it does not create access, activation, synchronization or authority by itself.
 
-If you are a human exploring the full repository, read this section, choose the smallest route in the map below and then open that portable README's embedded onboarding section. If you give the full repository to an AI, use [`MOON_SOURCE_AI_KERNEL.md`](MOON_SOURCE_AI_KERNEL.md) for AI-side routing. For one concrete need, start with the smallest portable README instead of loading the whole repository.
+If you are a human exploring the full repository, read this section, choose the smallest route in the map below and then open that portable's embedded onboarding section. If you give the full repository to an AI, use [`MOON_SOURCE_AI_KERNEL.md`](MOON_SOURCE_AI_KERNEL.md) for AI-side routing. For one concrete need, start with the smallest canonical portable instead of loading the whole repository.
 
-The portable README is the identity and onboarding surface. Its canonical `.md` file is the semantic authority. A portable package contains those two files: the exact canonical body plus the README that explains how to begin.
+Each single-file portable is its own identity, semantic authority and onboarding surface. Its package carries the exact canonical body; the repository root remains the higher-level navigation surface.
+
+> **One entry, not necessarily one file.** A single-file portable teaches its own first use. Composite systems may retain deeper files when those files own real responsibilities.
 
 ### A small first run
 
