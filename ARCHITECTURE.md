@@ -1,4 +1,4 @@
-# Moon Source: Context Architecture from Field to Form
+# 🏗️ Moon Source Architecture — Field to Form
 
 Moon Source is a way to decide what kind of context a human, team, project or institution actually needs before forcing the material into a fixed container.
 
@@ -96,57 +96,81 @@ Preflight can therefore:
 
 - terminate quickly and let a clear request execute directly;
 - resolve conversational ambiguity without forcing the user to rewrite themselves as a prompt;
-- route into [Field to Form](docs/FIELD_TO_FORM.md) when the reconstructed need is genuinely architectural;
+- route into the [Field-to-Form diagnostic](#field-to-form) when the reconstructed need is genuinely architectural;
 - route into a specialized public capability when the consequence, not the wording, requires authority, freshness, provenance, safety or execution safeguards;
 - reroute when the user corrects the meaning or new evidence changes the field.
 
 It is transversal, not a mandatory permanent stage in the topology. **Preflight reconstructs the task; Field to Form decides what the field deserves to become.**
 
-## Use this architecture
+<a id="field-to-form"></a>
+## Field-to-Form diagnostic
 
-Choose the public entry point that matches the field in front of you:
+Field to Form is the practical diagnostic inside the canonical Moon Source architecture. Use it when the field is real but its durable form, ownership or operating boundary is still unresolved. It moves through **field → observation → diagnosis → jurisdiction → topology → materialization → operation → hygiene, lineage and custody**. The loop may return to an earlier decision when new evidence changes the field.
 
-- **Human-intent reconstruction before execution:** start with [Preflight](portables/preflight/PREFLIGHT_V2.md) when the request is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally. Consequence-triggered execution guardrails remain available when the resulting task is risky, public, source-governed or mutable.
-- **Personal or project context:** start with [Moon Source Setup](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
-- **Project, team or knowledge field:** run the [Field-to-Form diagnostic](docs/FIELD_TO_FORM.md) before choosing a document type.
-- **Structure, source, handoff or protocol design:** use [Moon Source Language](portables/msl/MSL_4_3.md) after the responsibility is clear.
-- **ChatGPT execution routing:** use the [Chat–Work Routing Protocol](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) when surface, model or reasoning effort is the actual decision.
-- **Intellectual lineage and immaterial-asset protection:** use [Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material must retain identity, authorship, canonicality, transformation history, permission scope, disclosure boundaries, derivative lineage and recoverable evidence as it moves or changes.
+### Choose the public entry point
+
+- **Human-intent reconstruction before execution:** start with [🛫 Preflight](portables/preflight/PREFLIGHT_V2.md) when the request is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally. Consequence-triggered execution guardrails remain available when the resulting task is risky, public, source-governed or mutable.
+- **Personal or project context:** start with [🧭 Moon Source Setup](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
+- **Project, team or knowledge field:** run this Field-to-Form diagnostic before choosing a document type.
+- **Structure, source, handoff or protocol design:** use [🧱 Moon Source Language](portables/msl/MSL_4_3.md) after the responsibility is clear.
+- **ChatGPT execution routing:** use the [🔀 Chat–Work Routing Protocol](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) when surface, model or reasoning effort is the actual decision.
+- **Intellectual lineage and immaterial-asset protection:** use [🧾 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material must retain identity, authorship, canonicality, transformation history, permission scope, disclosure boundaries, derivative lineage and recoverable evidence as it moves or changes.
 - **Licensing and redistribution:** use [LICENSING](LICENSING.md) to route software to Apache-2.0, documentation and public capability distributions to CC-BY-4.0, and third-party material to its own terms.
-- **Reusable procedure:** use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.
-- **Concrete recurring execution:** use [Operational Devices](docs/OPERATIONAL_DEVICES.md) when a procedure needs a named surface, state, guards and receipts; use [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) to keep that execution diagnosable and bounded.
-- **Recurring or costly failure:** use [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) when a failure pattern may have earned a smaller reusable rule, gate, procedure or device.
-- **Ambiguous or convergent signals:** use [Signal Calibration](docs/SIGNAL_CALIBRATION.md) when weak or incomplete cues need a useful working inference without being promoted to fact or discarded through caveats.
-- **Stale or contradictory corpus:** use [Source Hygiene](docs/SOURCE_HYGIENE.md) when retrieval is not the real problem.
-- **Connected source operation:** use the canonical [Connected Sources capability](docs/CONNECTED_SOURCES.md) when an AI must reach persistent external memory or resolve authority, freshness, retrieval scope and mutation boundaries through a connector. Load the dated [ChatGPT adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md) only when current product behavior materially matters.
+- **Reusable procedure:** use [🧩 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.
+- **Concrete recurring execution:** use [🛠️ Operational Devices](docs/OPERATIONAL_DEVICES.md) when a procedure needs a named surface, state, guards and receipts; use [🛡️ Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) to keep that execution diagnosable and bounded.
+- **Recurring or costly failure:** use [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) when a failure pattern may have earned a smaller reusable rule, gate, procedure or device.
+- **Ambiguous or convergent signals:** use [🎚️ Signal Calibration](docs/SIGNAL_CALIBRATION.md) when weak or incomplete cues need a useful working inference without being promoted to fact or discarded through caveats.
+- **Stale or contradictory corpus:** use [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) when retrieval is not the real problem.
+- **Connected source operation:** use the canonical [🔗 Connected Sources capability](docs/CONNECTED_SOURCES.md) when an AI must reach persistent external memory or resolve authority, freshness, retrieval scope and mutation boundaries through a connector. Load the dated [ChatGPT adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md) only when current product behavior materially matters.
 
-### Apply this architecture now
+### Run it
 
 Copy the operation below into an AI conversation or use it as a worksheet:
 
 ```text
-Use the Moon Source public field-to-form architecture on the situation below.
+Use the Moon Source public Field-to-Form architecture on the situation below.
 
-Identify:
-1. the field as it exists before choosing a document type;
-2. relevant sources, actors and current pressures;
-3. contradiction, freshness, friction and uncertainty;
-4. which source or role has authority over each important claim or state;
-5. responsibilities and relationships that must remain distinct;
-6. the smallest materialization that would create a real capability;
-7. how that materialization should operate, travel and be updated;
-8. what belongs in active state, lineage or archive.
+Return only what is needed to choose a proportionate form:
+- Field as it exists before choosing a document type
+- Observed pressures, friction, relevant sources and actors
+- Authority / jurisdiction for each important claim or state
+- Responsibilities, owners and relationships that must remain distinct
+- Candidate materializations
+- Smallest adequate form, with the reason it earns existence
+- What is intentionally not being created
+- Operation / transport
+- Freshness or update trigger
+- Active state, lineage, custody or archive boundary
+- Next action
 
-Keep observed material separate from inference when the distinction changes a decision.
-Do not force every Moon Source artifact family into the result. Use only forms that earn a real function.
+Keep facts, inference and uncertainty distinct where that distinction could change the choice.
+Do not require every Moon Source artifact family. The form comes from the field.
 
 Situation:
 [describe or attach the material]
 ```
 
-For the supporting decisions, use [Field to Form](docs/FIELD_TO_FORM.md), the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [Moon Source Language](portables/msl/MSL_4_3.md).
+### Practical test
 
-**Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and standalone distributions, use the [download hub](DOWNLOADS.md). For reuse rights, use [LICENSING](LICENSING.md).
+Before creating a new artifact, ask:
+
+- What capability would exist after this artifact exists?
+- Which source, role or responsibility becomes clearer?
+- Who will use it?
+- What is its freshness contract?
+- What is its authority?
+- What is explicitly outside its scope?
+- What evidence can support its public claims?
+- What intellectual identity, lineage, canonical path, permission or disclosure boundary must remain recoverable if the material travels or changes?
+- What is the smallest form that can carry the answer?
+
+If the answer is only “the project will look more complete,” the artifact probably does not deserve to exist yet.
+
+An operational device earns existence only when a simple procedure, protocol, handoff or checklist does not adequately carry the recurring execution. Its surface, trigger, state, limits, failure behavior, receipts and recovery path must be inspectable. A device is not generated by default and does not become a source of authority merely because it can be invoked.
+
+For supporting decisions, use the [Responsibility Map](docs/RESPONSIBILITY_MAP.md) and [🧱 Moon Source Language](portables/msl/MSL_4_3.md).
+
+**Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and standalone distributions, use the [download hub](DOWNLOADS.md).
 
 ## 1. Field
 

@@ -1,4 +1,4 @@
-# Operational Devices
+# 🛠️ Operational Devices
 
 An **operational device** is a bounded operational embodiment of a reusable procedure on a concrete execution surface.
 

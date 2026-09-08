@@ -32,8 +32,7 @@ Use each file for the responsibility it actually owns:
 - `docs/CONNECTED_SOURCES.md` — canonical Connected Sources structural crown jewel and 1.1-public standalone distribution: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
 - `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` — subordinate dated ChatGPT product/reference facts; load only when current product behavior is materially relevant.
 - `docs/SOURCE_OPERATIONS.md` — public source-operation grammar: retrieve, process, metabolize, promote, promotion gate, lifecycle, legacy succession, current-state versus history, smallest sovereign destination, readback and no-delta.
-- `ARCHITECTURE.md` — public Moon Source architecture and field-to-form topology.
-- `docs/FIELD_TO_FORM.md` — deciding what should exist before choosing a container or artifact type.
+- `ARCHITECTURE.md#field-to-form` — canonical public architecture and Field-to-Form diagnostic: decide what should exist before choosing a container or artifact type.
 - `docs/RESPONSIBILITY_MAP.md` — separating responsibilities, ownership, authority and transport between objects.
 - `docs/TERMINOLOGY.md` — responsibility-first translation between ordinary language and Moon Source vocabulary.
 - `docs/CREDITS_ATTRIBUTION_OPS.md` — intellectual-lineage, content-custody and immaterial-asset protection across identity, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
@@ -104,8 +103,7 @@ Do not load the whole architecture merely to run Setup.
 ### If the user has a messy project, knowledge base, team or workflow
 
 Load:
-- `ARCHITECTURE.md`
-- `docs/FIELD_TO_FORM.md`
+- `ARCHITECTURE.md#field-to-form`
 
 Then load only as needed:
 - `docs/RESPONSIBILITY_MAP.md` for ownership/authority collisions.
@@ -117,7 +115,7 @@ The form comes from the field. Do not begin by choosing a document type.
 ### If the user asks what kind of Moon Source artifact to create
 
 Load:
-- `docs/FIELD_TO_FORM.md`
+- `ARCHITECTURE.md#field-to-form`
 - `docs/RESPONSIBILITY_MAP.md`
 - `portables/msl/MSL_4_3.md`
 

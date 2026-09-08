@@ -12,11 +12,11 @@ Copying every message into a shared archive creates administrative weight withou
 
 ## Moon Source reading of the field
 
-Use Field to Form to materialize only what the network repeatedly needs. Use Responsibility Map to distinguish partner, activity, source and handoff ownership. Use MSL 4.3 for continuity packets and archive boundaries. Use Credits & Attribution Ops when partner material, authorship or permission travels with a report.
+Use the Field-to-Form diagnostic to materialize only what the network repeatedly needs. Use Responsibility Map to distinguish partner, activity, source and handoff ownership. Use MSL 4.3 for continuity packets and archive boundaries. Use Credits & Attribution Ops when partner material, authorship or permission travels with a report.
 
 ## Relevant components and portables
 
-- [Field to Form](../../docs/FIELD_TO_FORM.md) for proportional materialization.
+- [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for proportional materialization.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for network ownership.
 - [Credits & Attribution Ops](../../docs/CREDITS_ATTRIBUTION_OPS.md) for lineage and permissions.
 - [MSL 4.3](../../portables/msl/MSL_4_3.md) for packets, handoffs and archives.
