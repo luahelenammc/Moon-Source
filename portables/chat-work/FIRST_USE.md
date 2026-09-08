@@ -56,7 +56,10 @@ Task: [describe what you want done]
 
 Then replace the bracketed line with a real task. A real task gives the protocol something operational to route; a question about the protocol itself may produce only an explanation or audit.
 
-Minimal example: `Task: Help me route a multi-file documentation change and tell me whether I need to switch surfaces manually.`
+## Minimal example
+
+Task: Help me route a multi-file documentation change and tell me whether I need to switch surfaces manually.
+
 
 ## What happens next?
 
