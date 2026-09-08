@@ -2,6 +2,8 @@
 
 _Read this before using Chat–Work for the first time._
 
+## What this is for
+
 Chat–Work is a portable instruction-level routing protocol. It helps an AI read the task, separate surface, model, reasoning effort and context, and coordinate execution and return across Chat, Work and optional Codex.
 
 For Moon Source-wide orientation, start with the [root FIRST_USE.md](../../FIRST_USE.md).
