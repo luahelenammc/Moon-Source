@@ -47,7 +47,7 @@ TOP_LEVEL_URLS = (
     "professional_context_url",
 )
 URL_RE = re.compile(r"https?://[^)\s>]+")
-PORTABLE_SUPPORT_FILES = {"README.md", "CHANGELOG.md"}
+PORTABLE_SUPPORT_FILES = {"README.md", "CHANGELOG.md", "FIRST_USE.md"}
 
 
 def fail(message: str) -> None:
@@ -134,12 +134,26 @@ def main() -> None:
         try:
             with ZipFile(package_path) as package:
                 package_files = [name for name in package.namelist() if not name.endswith("/")]
-                if package_files != [path.name]:
+                allowed_package_files = {path.name} | PORTABLE_SUPPORT_FILES
+                unexpected_files = sorted(set(package_files) - allowed_package_files)
+                if path.name not in package_files or unexpected_files:
                     fail(
-                        f"{portable['id']} download package must contain only {path.name}: "
-                        f"{package_files}"
+                        f"{portable['id']} download package must contain {path.name} "
+                        f"and only recognized support files: {package_files}"
                     )
                 packaged_bytes = package.read(path.name)
+                for support_name in sorted(set(package_files) - {path.name}):
+                    support_path = family_dir / support_name
+                    if not support_path.is_file():
+                        fail(
+                            f"{portable['id']} package support file is missing from the "
+                            f"portable directory: {support_name}"
+                        )
+                    if package.read(support_name) != support_path.read_bytes():
+                        fail(
+                            f"{portable['id']} package support file does not match the "
+                            f"portable directory: {support_name}"
+                        )
         except (BadZipFile, KeyError, OSError) as exc:
             fail(f"{portable['id']} has an invalid download package: {exc}")
 
