@@ -4,6 +4,8 @@ _Read this before using Chat–Work for the first time._
 
 Chat–Work is a portable instruction-level routing protocol. It helps an AI read the task, separate surface, model, reasoning effort and context, and coordinate execution and return across Chat, Work and optional Codex.
 
+For Moon Source-wide orientation, start with the [root FIRST_USE.md](../../FIRST_USE.md).
+
 ## First, the important boundary
 
 Nothing is installed.
@@ -53,6 +55,8 @@ Task: [describe what you want done]
 ```
 
 Then replace the bracketed line with a real task. A real task gives the protocol something operational to route; a question about the protocol itself may produce only an explanation or audit.
+
+Minimal example: `Task: Help me route a multi-file documentation change and tell me whether I need to switch surfaces manually.`
 
 ## What happens next?
 
