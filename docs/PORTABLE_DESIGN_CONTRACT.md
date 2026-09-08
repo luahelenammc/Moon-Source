@@ -68,10 +68,12 @@ Use this canonicalization guard:
 one capability
 → one canonical semantic body
 → one architectural responsibility
-→ zero or more distribution, package, mirror and adapter surfaces
+→ zero or more non-authoritative presentation, distribution, package, mirror and adapter surfaces
 ```
 
 A distinct adapter is permitted only when it owns volatile or surface-specific implementation facts that should not become stable doctrine. Mirrors and packages carry exact current bytes for delivery; history belongs to version control.
+
+A lightweight `README.md` may exist beside or above a canonical body when it owns a real human-facing responsibility: presentation, discoverability, visual orientation and routing. That README is not a second semantic body. It must point clearly to the canonical body, preserve the current identity and version, and avoid reproducing the method's operative rules.
 
 A link labeled **Download** should trigger the platform's file-download route rather than merely opening a rendered or inline raw document. Browse/open links and download links are different interface promises and should be labeled accordingly.
 
@@ -79,12 +81,13 @@ For GitHub-hosted current `.md` portables, Moon Source uses GitHub's `github.com
 
 ## First-use contract
 
-A public portable is distribution-complete only when a newcomer can use it correctly without already understanding Moon Source. For a single-file portable, the canonical artifact itself is that entry surface:
+A public portable is distribution-complete only when a newcomer can use it correctly without already understanding Moon Source. For a single-file portable, the canonical artifact itself carries the operative onboarding:
 
 ~~~text
-canonical portable body = semantic authority + human and AI first-use entry
+canonical body = semantic authority + embedded human and AI First use
+README = human-facing presentation / discoverability surface
 package = canonical body
-README = only for a higher-level container that genuinely owns navigation
+website mirror = exact canonical delivery mirror
 ~~~
 
 This is an onboarding locality rule, not a demand that every system become one file. A composite public system may retain deeper files when they own real responsibilities; it should still expose one unmistakable canonical entry artifact.
@@ -108,26 +111,31 @@ distribution-complete without a usable self-onboarding entry.
 
 ### Onboarding locality and anti-fragmentation
 
-First-use guidance belongs on the smallest sovereign surface a newcomer is
-already expected to open. For a single-file standalone distribution, that
-surface is the canonical body itself. A separate onboarding file is justified
-only when it owns a genuinely independent audience, lifecycle, transport
-contract or responsibility. A repository-level README remains appropriate
-because the repository is a multi-child navigation surface.
+First-use guidance belongs to the canonical body because it is operative semantics and must travel with the standalone artifact. Human browse legibility is a separate responsibility. A lightweight sibling `README.md` is legitimate when it presents identity, relevance, version/status and clear Start/Download routes without reproducing the method, starter prompt, troubleshooting or operational rules.
 
-Do not create a second file merely to explain the first file. Do not preserve an obsolete sibling README merely to avoid migrating links; use Git history for historical recovery and move live links to canonical anchors.
+Use this distinction:
+
+```text
+semantic singularity ≠ surface singularity
+
+README = presentation facade
+canonical body = semantic authority + embedded First use
+package / mirror = delivery surface
+```
+
+Do not create a second **semantic body** merely to explain the first. A README facade does not create another capability, canonical path or version, does not earn a semantic bump and must never override the canonical body. Use Git history for superseded semantics rather than keeping compatibility twins in the live tree.
 
 When feedback exposes a mismatch between what the user thinks is happening and what the portable can actually do, classify the failure before editing semantics:
 
 ```text
 misunderstood installation / integration / manual action
-→ embedded onboarding or interface delta
+→ embedded onboarding or presentation-surface delta
 
 wrong routing law / wrong capability contract / wrong semantic behavior
 → canonical semantic delta
 ```
 
-The first case may change the canonical bytes because onboarding belongs there, but it does not by itself earn a semantic version bump. The second may justify a semantic patch and version decision. Confusion is evidence about the interface; it is not automatically evidence that the method itself is wrong.
+The first case may often be repaired in the README facade when the confusion is about discoverability or orientation; if the operative onboarding itself is wrong, change the canonical body's embedded First use. Neither case by itself earns a semantic version bump. The second may justify a semantic patch and version decision. Confusion is evidence about the interface; it is not automatically evidence that the method itself is wrong.
 
 ## Reuse
 
