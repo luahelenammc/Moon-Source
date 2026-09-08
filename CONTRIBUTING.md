@@ -24,7 +24,7 @@ The repository does not require a CLA or a signed-off-by line as a condition of 
 - use the repository's [pull-request template](.github/PULL_REQUEST_TEMPLATE.md);
 - treat architectural role and standalone distribution as different dimensions of the same capability;
 - keep human-facing titles stable and record release state in dedicated version metadata; follow the [repository naming and versioning policy](docs/REPOSITORY_NAMING_AND_VERSIONING.md) and its reusable [template](templates/REPOSITORY_NAMING_AND_VERSIONING.md);
-- for a new or materially revised standalone distribution, follow the [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md): the canonical body is the human and AI first-use surface and must embed a usable `## First use` path; do not create a second file merely to explain it;
+- for a new or materially revised standalone distribution, follow the [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md): the canonical body remains semantic authority and must embed a usable `## First use` path; a lightweight README facade is welcome for human discoverability when it routes to — rather than duplicates — that authority;
 - register every new or materially changed public capability in `registry/public-capabilities.json` and `registry/PUBLIC_CAPABILITIES.md`, recording architectural role and distribution independently;
 - touch cross-file surfaces only where responsibility, routing, evidence, boundary, licensing or discoverability actually changes;
 - run the local validation commands described in `.github/workflows/validate.yml`;
