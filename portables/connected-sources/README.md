@@ -4,6 +4,8 @@ A public portable for living-source continuity: reach the current source, resolv
 
 [⬇️ **Download Connected Sources package (.zip)**](../../downloads/connected-sources-1.1-public.zip)
 
+> 🌱 **New here? Read [FIRST_USE.md](FIRST_USE.md) before using this portable.** It explains the first action, starter prompt and manual boundaries.
+
 ## Start here
 
 Paste `CONNECTED_SOURCES.md` into an AI conversation and say:
@@ -33,7 +35,7 @@ Google Drive is the recommended ChatGPT document-source reference for durable li
 - **License:** [CC BY 4.0](../../LICENSES/CC-BY-4.0.txt)
 - **Claim ceiling:** bounded living-source protocol; not universal connector support, automatic synchronization, exhaustive retrieval, autonomous mutation, adoption or impact proof
 
-The ZIP contains only the exact canonical portable file. The repository remains the semantic and versioning authority; the website copy is a convenience mirror. A portable may also own a structural responsibility; portability is a delivery role, not a second semantic body.
+The ZIP contains the exact canonical portable file plus `README.md` and `FIRST_USE.md` onboarding support. The repository remains the semantic and versioning authority; the website copy is a convenience mirror. A portable may also own a structural responsibility; portability is a delivery role, not a second semantic body.
 
 Return to the [🗂️ download hub](../../DOWNLOADS.md) or [📚 portable registry](../../registry/PUBLIC_PORTABLES.md).
 
