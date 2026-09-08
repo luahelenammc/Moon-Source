@@ -29,7 +29,7 @@ Use each file for the responsibility it actually owns:
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
 - `portables/preflight/PREFLIGHT_V2.md` — Preflight: human-intent reconstruction before execution, currently version 2.0, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
 - `portables/be-my-eyes/BE_MY_EYES.md` — canonical active Be My Eyes method and 1.0-public portable: contextual scene reading, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection.
-- `portables/connected-sources/CONNECTED_SOURCES.md` — canonical active Connected Sources method and 1.1-public portable: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
++ `docs/CONNECTED_SOURCES.md` — canonical Connected Sources structural crown jewel and 1.1-public standalone distribution: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
 - `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` — subordinate dated ChatGPT product/reference facts; load only when current product behavior is materially relevant.
 - `docs/SOURCE_OPERATIONS.md` — public source-operation grammar: retrieve, process, metabolize, promote, promotion gate, lifecycle, legacy succession, current-state versus history, smallest sovereign destination, readback and no-delta.
 - `ARCHITECTURE.md` — public Moon Source architecture and field-to-form topology.
@@ -47,8 +47,8 @@ Use each file for the responsibility it actually owns:
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router, currently version 3.1.
 - `portables/msl/MSL_4_3.md` — current public structural grammar for materialization. MSL remains 4.3.
 - `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md` — current 4.4-public closed-loop ChatGPT surface/model/reasoning and source-transport routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
-- `registry/PUBLIC_PORTABLES.md` — canonical public portable identities, versions and fingerprints, plus the human-readable public component chronology.
-- `registry/public-portables.json` — machine-readable public component and portable inventory; component chronology is Git-derived and does not create new portable versions.
++ `registry/PUBLIC_CAPABILITIES.md` — human-readable unified public capability identities, roles, versions, status and standalone-distribution routes.
++ `registry/public-capabilities.json` — machine-readable one-record-per-capability registry; standalone distribution is nested metadata and does not create a second semantic inventory.
 - `docs/PORTABLE_DESIGN_CONTRACT.md` — portable publication, canonical-path and mirror rules.
 - `docs/VERSIONING_AND_RELEASES.md` — distinction between repository, portable, MSL and website versions.
 - `EVIDENCE_AND_CLAIMS.md` — what public evidence supports and what it does not establish.
@@ -61,12 +61,20 @@ Use each file for the responsibility it actually owns:
 When two files appear to conflict, do not flatten them together. First ask whether they have different jurisdictions. Prefer the file whose declared responsibility governs the disputed state.
 
 <!-- MOON-SOURCE-CANONICAL-AUTHORITY:START -->
+- Credits & Attribution Ops → `docs/CREDITS_ATTRIBUTION_OPS.md`
+- Failure to Capability — Failure Foundry → `docs/FAILURE_FOUNDRY.md`
+- Operational Devices → `docs/OPERATIONAL_DEVICES.md`
+- Operational Reliability → `docs/OPERATIONAL_RELIABILITY.md`
+- Procedural Projection → `docs/PROCEDURAL_PROJECTION.md`
+- Signal Calibration → `docs/SIGNAL_CALIBRATION.md`
+- Source Hygiene → `docs/SOURCE_HYGIENE.md`
+- Source Operations — Retrieve, Process, Metabolize and Promote → `docs/SOURCE_OPERATIONS.md`
+- Connected Sources → `docs/CONNECTED_SOURCES.md`
+- Be My Eyes → `portables/be-my-eyes/BE_MY_EYES.md`
+- Chat–Work Routing Protocol → `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`
+- Moon Source Language → `portables/msl/MSL_4_3.md`
 - Moon Source Setup → `portables/setup/MOON_SOURCE_SETUP.md`
 - Preflight → `portables/preflight/PREFLIGHT_V2.md`
-- Connected Sources → `portables/connected-sources/CONNECTED_SOURCES.md`
-- Be My Eyes → `portables/be-my-eyes/BE_MY_EYES.md`
-- Moon Source Language → `portables/msl/MSL_4_3.md`
-- Chat–Work Routing Protocol → `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`
 <!-- MOON-SOURCE-CANONICAL-AUTHORITY:END -->
 
 The canonical-authority map has one active semantic body per current portable capability. A portable may also carry a structural responsibility. Mirrors, ZIP packages and subordinate adapters are delivery or reference surfaces, not additional authorities.
@@ -203,7 +211,7 @@ If intellectual material is also changing custody or becoming a derivative, load
 ### If the user needs to reach a connected living source or external-memory substrate
 
 Load:
-- `portables/connected-sources/CONNECTED_SOURCES.md` — canonical active method and portable, currently version 1.1-public
++ `docs/CONNECTED_SOURCES.md` — canonical structural crown jewel and standalone-capable method, currently version 1.1-public
 - `docs/RESPONSIBILITY_MAP.md` when authority or ownership is unclear
 - `docs/SOURCE_HYGIENE.md` when the corpus itself may be stale, contradictory or bloated
 - `docs/OPERATIONAL_RELIABILITY.md` when the operation includes mutation, retries, partial failure or recovery
@@ -218,7 +226,7 @@ Load:
 - `docs/SOURCE_OPERATIONS.md`
 
 Also load:
-- `portables/connected-sources/CONNECTED_SOURCES.md` when the source is external or connector-backed;
++ `docs/CONNECTED_SOURCES.md` when the source is external or connector-backed;
 - `docs/SOURCE_HYGIENE.md` when the corpus may be stale, contradictory, duplicated or bloated;
 - `docs/RESPONSIBILITY_MAP.md` when ownership or authority is unclear;
 - `docs/CREDITS_ATTRIBUTION_OPS.md` when material lineage, custody, permission or disclosure changes.
@@ -237,7 +245,7 @@ Apply the V4 tri-surface loop: route by sovereign object across Chat, Work and C
 ### If the user wants to publish, mirror, redistribute or version public Moon Source material
 
 Load:
-- `registry/PUBLIC_PORTABLES.md`
++ `registry/PUBLIC_CAPABILITIES.md`
 - `LICENSING.md`
 - `THIRD_PARTY_NOTICES.md`
 - `docs/PORTABLE_DESIGN_CONTRACT.md`
@@ -249,14 +257,14 @@ Load:
 
 Use Credits & Attribution Ops for content identity, custody, transformations, mirror/derivative lineage and evidence; use Moon Source Use & Attribution for Moon Source-specific project use framing and the repository footer/watermark.
 
-Use the applicable standard license declared by [LICENSING.md](LICENSING.md), the file-level SPDX metadata and any third-party notice. Moon Source uses Apache-2.0 for software and automation and CC-BY-4.0 for documentation, methods and public portables. Do not collapse the mixed repository into one homogeneous software license.
+Use the applicable standard license declared by [LICENSING.md](LICENSING.md), the file-level SPDX metadata and any third-party notice. Moon Source uses Apache-2.0 for software and automation and CC-BY-4.0 for documentation, methods and standalone distributions. Do not collapse the mixed repository into one homogeneous software license.
 
 ### If the user asks where Moon Source could apply
 
 Load:
 - `examples/application-scenarios/README.md` for the hypothetical domain gallery;
 - the smallest scenario file relevant to the user's context;
-- the public component named by that scenario, only as needed.
++ the public capability named by that scenario, only as needed.
 
 Keep the status label visible. Treat the scenario as a didactic application sketch, not a case study, adoption example, measured result or validation claim.
 
@@ -345,7 +353,7 @@ Do:
 - preserve exact names, versions and paths when they matter;
 - re-check authority when new evidence appears;
 - treat archives as lineage rather than active truth;
-- use public portables as operational projections, not as the whole Moon Source;
++ use standalone distributions as operational projections, not as the whole Moon Source;
 - use `DOWNLOADS.md` when the user needs distribution/access rather than architecture.
 
 Do not:
@@ -381,7 +389,7 @@ The live `main` branch is the current public repository state unless a specific 
 
 Website copies are convenience mirrors, not separate semantic authorities.
 
-For public portables, use `registry/PUBLIC_PORTABLES.md` to confirm identity/version/fingerprint.
+For public capability identity, role, version and distribution fingerprints, use `registry/PUBLIC_CAPABILITIES.md`.
 
 For date-sensitive product facts in Chat–Work, verify current official sources before presenting those facts as current.
 

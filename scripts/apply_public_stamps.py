@@ -2,7 +2,7 @@
 """Normalize the compact Moon Source identity watermark across tracked public text files.
 
 The operation is idempotent. Markdown, Python/YAML, JavaScript and HTML stamps are
-replaced in place; JSON receives equivalent structured metadata. Portable SHA-256 values
+replaced in place; JSON receives equivalent structured metadata. Standalone-distribution SHA-256 values
 are refreshed after stamp changes so registry fingerprints continue to describe the
 canonical bytes.
 """
@@ -95,14 +95,17 @@ def stamp_json(path: Path) -> bool:
 
 
 def refresh_portable_hashes() -> bool:
-    registry_path = ROOT / "registry" / "public-portables.json"
+    registry_path = ROOT / "registry" / "public-capabilities.json"
     data = json.loads(registry_path.read_text(encoding="utf-8"))
     changed = False
-    for portable in data.get("portables", []):
-        canonical_path = ROOT / portable["canonical_path"]
+    for capability in data.get("capabilities", []):
+        distribution = capability.get("distribution", {})
+        if distribution.get("standalone") is not True:
+            continue
+        canonical_path = ROOT / capability["canonical_path"]
         digest = hashlib.sha256(canonical_path.read_bytes()).hexdigest()
-        if portable.get("canonical_sha256") != digest:
-            portable["canonical_sha256"] = digest
+        if distribution.get("canonical_sha256") != digest:
+            distribution["canonical_sha256"] = digest
             changed = True
     if data.get("_moon_source_public_stamp") != JSON_STAMP:
         data["_moon_source_public_stamp"] = JSON_STAMP
@@ -122,7 +125,7 @@ def main() -> None:
         if not path.is_file() or path.suffix.lower() not in TEXT_SUFFIXES:
             continue
         rel = path.relative_to(ROOT).as_posix()
-        if rel == "registry/public-portables.json":
+        if rel == "registry/public-capabilities.json":
             continue
         if path.suffix.lower() == ".md":
             did_change = normalize_text_stamp(path, MARKDOWN_STAMP, MARKDOWN_MARKER)
@@ -138,7 +141,7 @@ def main() -> None:
             changed.append(rel)
 
     if refresh_portable_hashes():
-        changed.append("registry/public-portables.json")
+        changed.append("registry/public-capabilities.json")
 
     print(f"compact public stamp normalized; changed={len(changed)}")
     for item in changed:

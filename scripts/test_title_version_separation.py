@@ -31,16 +31,16 @@ def main() -> None:
     assert normalize_heading("# 🧭 Moon Source Setup") == "Moon Source Setup"
 
     data = json.loads(
-        (ROOT / "registry" / "public-portables.json").read_text(encoding="utf-8")
+        (ROOT / "registry" / "public-capabilities.json").read_text(encoding="utf-8")
     )
     assert not validation_errors(data)
 
     fixture = copy.deepcopy(data)
-    fixture["portables"][0]["title"] = "Moon Source Setup 3.0"
+    fixture["capabilities"][0]["title"] = "Be My Eyes 1.0-public"
     errors = validation_errors(
         fixture,
         root=ROOT,
-        human_registry=(ROOT / "registry" / "PUBLIC_PORTABLES.md").read_text(
+        human_registry=(ROOT / "registry" / "PUBLIC_CAPABILITIES.md").read_text(
             encoding="utf-8"
         ),
     )

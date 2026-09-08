@@ -27,7 +27,7 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 | Decide what deserves to become a source, handoff, procedure or other form | [Architecture](ARCHITECTURE.md) + [Field to Form](docs/FIELD_TO_FORM.md) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Retrieve, process, metabolize or promote governed source material | [Source Operations](docs/SOURCE_OPERATIONS.md) |
-| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources](portables/connected-sources/CONNECTED_SOURCES.md#first-use) |
+| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [Connected Sources](docs/CONNECTED_SOURCES.md#first-use) |
 | Structure recurring context, continuity or handoffs | [Moon Source Language](portables/msl/MSL_4_3.md#first-use) |
 | Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [Chat–Work](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) |
 
@@ -104,7 +104,7 @@ Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are separat
 - 🧭 [**Moon Source Setup**](portables/setup/MOON_SOURCE_SETUP.md) — adaptive routing to the smallest useful personal or project context setup, including a probed persistent-source route; current version **3.1**.
 - 🛫 [**Preflight**](portables/preflight/PREFLIGHT_V2.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them; current version **2.0**.
 - 👁️ [**Be My Eyes**](portables/be-my-eyes/BE_MY_EYES.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
-- 🔗 [**Connected Sources**](portables/connected-sources/CONNECTED_SOURCES.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.1-public**.
+- 🔗 [**Connected Sources**](docs/CONNECTED_SOURCES.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.1-public**.
 - 🧱 [**Moon Source Language**](portables/msl/MSL_4_3.md) — structural grammar for proportionate sources, handoffs, packets, protocols, registries and archives; current version **4.3**.
 - 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Intelligence Distillation Ladder, connector-aware source transport, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.4-public**.
 
@@ -129,11 +129,11 @@ Moon Source primarily operates in and around governed context: it helps determin
 
 RAG, memory stores, MCP/tools and other retrieval or orchestration mechanisms can participate in these layers. Moon Source is not the model, the harness, the RAG engine or the agent runtime; it is a context-architecture and governance layer that can sit around or across them.
 
-## Current public components
+## Current public capabilities
 
-Public components are responsibility-bearing methods with canonical files. They are not automatically portables and do not create a version bump merely by being updated. A current portable may also own a structural responsibility; portability is a distribution role, not a second semantic body. The non-portable component table below contains only the eight additional public components outside the portable registry.
+Moon Source publishes public capabilities with one canonical semantic body each. The architectural role says what a capability is responsible for; an optional standalone distribution says how that body can travel. A registry view may filter repository-only capabilities or standalone distributions, but neither filter is a second semantic inventory.
 
-| Component | Responsibility |
+| Repository-only capability | Responsibility |
 |---|---|
 | [Source Operations](docs/SOURCE_OPERATIONS.md) | Retrieve, process, metabolize and promote governed source changes, with lifecycle and legacy-successor rules |
 | [Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
@@ -144,7 +144,7 @@ Public components are responsibility-bearing methods with canonical files. They 
 | [Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Read-only-first diagnosis, failure boundaries, ordinary and Context Receipts, reversibility and freshness |
 | [Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Turn recurring failure into the smallest validated reusable mechanism |
 
-The canonical chronology, status and material-update history of these eight non-portable components lives in the [public registry](registry/PUBLIC_PORTABLES.md); its machine-readable contract is [`registry/public-portables.json`](registry/public-portables.json). Be My Eyes (1.0-public) and Connected Sources (1.1-public) are current portable-capable structural responsibilities represented in the portable table, not duplicate component rows. Connected Sources' dated ChatGPT product facts are subordinate to [its adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md).
+The canonical chronology, roles, status and material-update history of all fourteen capabilities lives in the [public capability registry](registry/PUBLIC_CAPABILITIES.md); its machine-readable contract is [registry/public-capabilities.json](registry/public-capabilities.json). The six standalone distributions are a filtered distribution view. Connected Sources is a structural crown jewel at [docs/CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md), with dated ChatGPT product facts subordinate to [its adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md).
 
 ## Evidence, boundary and reuse
 
@@ -157,17 +157,17 @@ Moon Source is deliberately strict about the difference between an artifact exis
 
 A public artifact is not an adoption claim. A tested slice is not proof of a universal runtime. The repository does not claim external adoption, measured impact, enterprise readiness, universal superiority or product-market fit without evidence.
 
-## Recent component changes
+## Recent capability changes
 
-<!-- MOON-SOURCE-COMPONENT-DIGEST:START -->
-- **2026-09-04 — Source Operations:** Promoted a public source-operations and lifecycle method for retrieve, process, metabolize, promote, succession, readback and no-delta.
-- **2026-08-26 — Operational Reliability:** Added lightweight, materiality-triggered Context Receipts for context-path evidence alongside ordinary operational receipts.
-- **2026-08-23 — Operational Devices:** Added bounded operational-device contracts for state, guards, failure behavior and receipts.
-- **2026-08-23 — Failure to Capability:** Added a bounded failure-to-capability loop for recurring failure without exposing promotion machinery.
-- **2026-08-21 — Signal Calibration:** Added bounded qualitative calibration for convergent signals, working inference and update conditions.
-<!-- MOON-SOURCE-COMPONENT-DIGEST:END -->
+<!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
+- **2026-09-08 — Preflight:** Embedded self-onboarding in the canonical body and refreshed the supported distribution without changing Preflight semantics or version.
+- **2026-09-08 — Moon Source Setup:** Embedded self-onboarding in the canonical body and refreshed the supported distribution without changing Setup semantics or version.
+- **2026-09-08 — Moon Source Language:** Embedded self-onboarding in the canonical body and refreshed the supported distribution without changing MSL semantics or version.
+- **2026-09-08 — Connected Sources:** Moved the canonical Connected Sources body to its structural home while preserving its 1.1-public standalone distribution.
+- **2026-09-08 — Chat–Work Routing Protocol:** Embedded self-onboarding in the canonical body and refreshed the supported distribution without changing method semantics or version.
+<!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
-This bounded digest is generated from the component registry. It is not a commit log.
+This bounded digest is generated from the unified capability registry. It is not a commit log.
 
 ## Repository map
 
@@ -178,10 +178,10 @@ Use the README for orientation; use the deeper files when the responsibility act
 | Full architecture | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | AI-side routing through the public corpus | [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md) |
 | Contextual scene-reading portable | [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) |
-| Connected source method and portable | [Connected Sources](portables/connected-sources/CONNECTED_SOURCES.md) |
+| Connected source capability | [Connected Sources](docs/CONNECTED_SOURCES.md) |
 | Source operation grammar, lifecycle and succession | [Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Definitions and responsibility boundaries | [Terminology](docs/TERMINOLOGY.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
-| Public components and portable registry | [registry/PUBLIC_PORTABLES.md](registry/PUBLIC_PORTABLES.md) |
+| Unified public capability registry | [registry/PUBLIC_CAPABILITIES.md](registry/PUBLIC_CAPABILITIES.md) |
 | Versioning and release rules | [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) |
 | Public naming and title/version separation | [Repository Naming and Versioning](docs/REPOSITORY_NAMING_AND_VERSIONING.md) |
 | Portable publication contract | [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md) |
@@ -191,9 +191,9 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 ## Current baseline
 
-Public architecture baseline: **2026-08-16**. Additive public components, operational hardening and licensing updates continued through **2026-09-07**; Preflight advanced to **V2**, Be My Eyes was promoted as method + **1.0-public** portable, and Connected Sources was promoted as method + **1.0-public** portable on **2026-09-07**, while Chat–Work routing remains the tri-surface **V4** protocol.
+Public architecture baseline: **2026-08-16**. Additive public capabilities, operational hardening and licensing updates continued through **2026-09-08**; Preflight advanced to **V2**, Be My Eyes was promoted as **1.0-public**, Connected Sources was established as a structural crown jewel at its canonical docs path, and the public registry became unified schema **2.0** while Chat–Work routing remains the tri-surface **V4** protocol.
 
-Current structural grammar: **Moon Source Language**, version **4.3**. Current public portables: **Moon Source Setup** (version **3.1**), **Preflight** (version **2.0**), **Be My Eyes** (version **1.0-public**), **Connected Sources** (version **1.0-public**), **Moon Source Language** (version **4.3**) and **Chat–Work Routing Protocol** (version **4.4-public**). This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
+Current structural grammar: **Moon Source Language**, version **4.3**. Current standalone distributions: **Moon Source Setup** (version **3.1**), **Preflight** (version **2.0**), **Be My Eyes** (version **1.0-public**), **Connected Sources** (version **1.1-public**), **Moon Source Language** (version **4.3**) and **Chat–Work Routing Protocol** (version **4.4-public**). This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
 

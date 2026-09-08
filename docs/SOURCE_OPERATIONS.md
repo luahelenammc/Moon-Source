@@ -281,14 +281,14 @@ A newer ledger entry does not automatically supersede the governing source. A le
 - **Canonical home is not defined by circulation.** Mirrors, exports, references and convenience surfaces do not become canonical because they are easier to reach.
 - **External influence is not blind import.** Preserve origin and credit, extract the functional delta, distinguish adopted, adapted and rejected elements, and keep donor identity and private habitat outside the public mechanism.
 
-For the dedicated custody and attribution operation, use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md). For connected-source access, freshness, permissions and connector readback, use the canonical [Connected Sources](../portables/connected-sources/CONNECTED_SOURCES.md) portable.
+For the dedicated custody and attribution operation, use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md). For connected-source access, freshness, permissions and connector readback, use the canonical [Connected Sources](CONNECTED_SOURCES.md) capability.
 
 ## 7. Relationship to adjacent components
 
 | Component | Owns | Source Operations adds |
 |---|---|---|
 | [Preflight](PREFLIGHT.md) | task shaping before execution | the operation chosen after intent, authority, destination and risk are clear |
-| [Connected Sources](../portables/connected-sources/CONNECTED_SOURCES.md) | connector reach, source/data authority, freshness, scope and readback | the semantics of retrieve, process, metabolize and promote once a source is reached |
+| [Connected Sources](CONNECTED_SOURCES.md) | connector reach, source/data authority, freshness, scope and readback | the semantics of retrieve, process, metabolize and promote once a source is reached |
 | [Source Hygiene](SOURCE_HYGIENE.md) | diagnosis of stale, contradictory, duplicated or bloated corpus material | mutation, succession and no-delta rules after a finding is confirmed |
 | [Responsibility Map](RESPONSIBILITY_MAP.md) | ownership and authority between objects | the operation contract that moves a delta through the owning source |
 | [Archive and Legacy](../archive/README.md) | preserved history and non-current artifacts | the reusable successor contract and current-use versus historical-use distinction |

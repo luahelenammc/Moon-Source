@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-08 — Public capability registry rebase
+
+- Replaced the orthogonal component/portable inventories with one public capability registry at schema **2.0**, keeping `architectural_role` independent from the optional `distribution` profile.
+- Promoted Connected Sources to the structural crown jewel at `docs/CONNECTED_SOURCES.md`; retired the active `portables/connected-sources/` semantic path without a compatibility twin.
+- Rebuilt the standalone Connected Sources and Moon Source Setup packages from their canonical Markdown bytes, synchronized the public website mirrors, and replaced the split validators with the unified capability validator.
+- Preserved all existing method versions, including Connected Sources **1.1-public**, MSL **4.3**, Setup **3.1**, Preflight **2.0**, Be My Eyes **1.0-public** and Chat–Work **4.4-public**.
+
 ## 2026-09-08 — Self-onboarding canonical portable rebase
 
 - moved first-use onboarding into the six canonical portable bodies so each single-file portable is both semantic authority and human/AI entry surface;
@@ -90,7 +97,7 @@ Historical entries describe the repository state at their recorded date. The cur
 
 ## 2026-08-23 — Connected Sources
 
-- Added [Connected Sources](portables/connected-sources/CONNECTED_SOURCES.md) as the public connector-aware context-operations component.
+- Added [Connected Sources](https://github.com/luahelenammc/Moon-Source/blob/900b5b2632730487f83b8ee74ecd08bb1e3499ca/portables/connected-sources/CONNECTED_SOURCES.md) as the public connector-aware context-operations component.
 - Defined the universal persistent-source-substrate requirement while positioning Google Drive as the ChatGPT document-source reference and GitHub as a complementary executable-source substrate.
 - Added public laws for authority, jurisdiction, freshness, targeted versus exhaustive retrieval, mutation authority, readback, provenance and cross-source reconciliation.
 - Integrated the component into README, Architecture, AI Kernel, Responsibility Map, Terminology, Existing Implementations, Evidence and Claims and Public Boundary.

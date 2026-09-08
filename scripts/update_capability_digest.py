@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the bounded README digest from the public component registry."""
+"""Render the bounded README digest from the unified capability registry."""
 
 from __future__ import annotations
 
@@ -8,15 +8,15 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-REGISTRY = ROOT / "registry" / "public-portables.json"
+REGISTRY = ROOT / "registry" / "public-capabilities.json"
 README = ROOT / "README.md"
-START = "<!-- MOON-SOURCE-COMPONENT-DIGEST:START -->"
-END = "<!-- MOON-SOURCE-COMPONENT-DIGEST:END -->"
+START = "<!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->"
+END = "<!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->"
 DEFAULT_LIMIT = 5
 
 
 def fail(message: str) -> None:
-    raise SystemExit(f"component digest update failed: {message}")
+    raise SystemExit(f"capability digest update failed: {message}")
 
 
 def render() -> str:
@@ -25,24 +25,23 @@ def render() -> str:
     except json.JSONDecodeError as error:
         fail(f"registry JSON is invalid: {error}")
 
-    components = data.get("public_components")
-    if not isinstance(components, list):
-        fail("public_components is not an array")
+    capabilities = data.get("capabilities")
+    if not isinstance(capabilities, list):
+        fail("capabilities is not an array")
 
     ordered = sorted(
-        components,
-        key=lambda component: (
-            component.get("last_material_update_on", ""),
-            component.get("id", ""),
+        capabilities,
+        key=lambda capability: (
+            capability.get("last_material_update_on", ""),
+            capability.get("id", ""),
         ),
         reverse=True,
     )
     lines = []
-    for component in ordered[:DEFAULT_LIMIT]:
-        title = component["title"].split(" — ", 1)[0]
+    for capability in ordered[:DEFAULT_LIMIT]:
         lines.append(
-            f"- **{component['last_material_update_on']} — {title}:** "
-            f"{component['last_material_update_summary']}"
+            f"- **{capability['last_material_update_on']} — {capability['title']}:** "
+            f"{capability['last_material_update_summary']}"
         )
     return "\n".join(lines)
 
@@ -66,15 +65,15 @@ def main() -> None:
 
     if args.check:
         if actual != expected:
-            fail("README component digest is stale; run python scripts/update_component_digest.py")
-        print("README component digest is current")
+            fail("README capability digest is stale; run python scripts/update_capability_digest.py")
+        print("README capability digest is current")
         return
 
     if rendered != current:
         README.write_text(rendered, encoding="utf-8", newline="\n")
-        print("updated README component digest")
+        print("updated README capability digest")
     else:
-        print("README component digest already current")
+        print("README capability digest already current")
 
 
 if __name__ == "__main__":
