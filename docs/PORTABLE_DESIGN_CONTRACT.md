@@ -70,18 +70,17 @@ For GitHub-hosted current `.md` portables, Moon Source uses GitHub's `github.com
 
 A public portable is distribution-complete only when a newcomer can use it correctly without already understanding Moon Source.
 
-Every current and future public portable must ship this layered entry path:
+Every current and future public portable must expose this embedded entry path:
 
 ~~~text
 canonical portable body = semantic authority
-README.md = family orientation and identity
-FIRST_USE.md = newcomer onboarding and practical first run
-package = canonical body + README.md + FIRST_USE.md
+README.md = family identity, orientation and newcomer onboarding
+package = canonical body + README.md
 ~~~
 
-`FIRST_USE.md` is support material, not a second semantic body. It may explain current use, boundaries, manual actions and product-sensitive expectations, but it cannot silently change the portable's semantic contract. Operational claims remain subordinate to the canonical body and to dated adapter notes where applicable.
+The README's `## First use` section is support material, not a second semantic body. It may explain current use, boundaries, manual actions and product-sensitive expectations, but it cannot silently change the portable's semantic contract. Operational claims remain subordinate to the canonical body and to dated adapter notes where applicable.
 
-Each guide must tell a newcomer, in plain language:
+Each README's embedded section must tell a newcomer, in plain language:
 
 - what the portable is for;
 - whether anything is installed;
@@ -91,9 +90,9 @@ Each guide must tell a newcomer, in plain language:
 - what may require a manual action or unavailable capability;
 - what the portable does not claim or do.
 
-Each guide must include a copy-paste starter prompt, a minimal example, a short troubleshooting path, a link to the canonical body and a link back to the root `FIRST_USE.md`. If the portable depends on an external capability, the guide must distinguish an instruction from an actually available integration. If the interface cannot perform a step, the guide must say so.
+Each embedded section must include a copy-paste starter prompt, a minimal example, a short troubleshooting path, a link to the canonical body and a route back to the root README's `#first-use` anchor. If the portable depends on an external capability, the section must distinguish an instruction from an actually available integration. If the interface cannot perform a step, the section must say so.
 
-The validator and package contract enforce the presence and byte identity of `README.md` and `FIRST_USE.md` for every current portable. Future portables should not be promoted as distribution-complete without both support surfaces.
+The validator and package contract enforce the presence of `README.md`, its `## First use` section and the byte identity of the canonical file and README inside the package. Future portables should not be promoted as distribution-complete without a usable embedded entry path.
 
 ## Reuse
 
