@@ -44,7 +44,7 @@ The minimum operational file is:
 
 You should read this `FIRST_USE.md` yourself before starting. If convenient, attach both files to the conversation. This guide explains how to use the protocol; it does not replace it, override it or change its authority.
 
-## What should I say after uploading it?
+## Say this first
 
 Use this simple starter prompt:
 
