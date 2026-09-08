@@ -10,6 +10,7 @@ on:
       - "**/*.md"
       - "registry/**"
       - "scripts/**"
+      - "downloads/moon-source-ai-kernel.zip"
       - "LICENSE"
       - "LICENSES/**"
       - "LICENSING.md"
@@ -26,6 +27,7 @@ on:
       - "**/*.md"
       - "registry/**"
       - "scripts/**"
+      - "downloads/moon-source-ai-kernel.zip"
       - "LICENSE"
       - "LICENSES/**"
       - "LICENSING.md"
@@ -53,6 +55,7 @@ jobs:
       - run: cffconvert --validate --infile CITATION.cff
       - run: python scripts/check_links.py
       - run: python scripts/validate_public_capabilities.py
+      - run: python scripts/check_kernel_package.py
       - run: python scripts/check_title_version_separation.py
       - run: python scripts/test_title_version_separation.py
       - run: python scripts/test_check_links.py
