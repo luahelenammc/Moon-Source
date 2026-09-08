@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-08 — Self-onboarding canonical portable rebase
+
+- moved first-use onboarding into the six canonical portable bodies so each single-file portable is both semantic authority and human/AI entry surface;
+- retired the six redundant portable `README.md` files and changed the public portable package contract to canonical-body-only transport;
+- rebuilt the six portable ZIPs without semantic version bumps, refreshed the portable registry hashes and migrated root, download-hub, registry and contribution links to canonical `#first-use` anchors;
+- updated the Portable Design Contract and validator to enforce embedded first use, reject sibling README reintroduction and preserve the distinction between a single-file portable and a composite system;
+- retained repository-level README navigation and the existing MSL changelog as higher-level/history surfaces.
+
 ## 2026-09-07 — Single-canonical-body rebase
 
 - Adopted the invariant **one capability, one active semantic body**: portability is a distribution role, not a second method authority.

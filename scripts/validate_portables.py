@@ -47,8 +47,7 @@ TOP_LEVEL_URLS = (
     "professional_context_url",
 )
 URL_RE = re.compile(r"https?://[^)\s>]+")
-OPTIONAL_PORTABLE_SUPPORT_FILES = {"CHANGELOG.md"}
-PORTABLE_SUPPORT_FILES = {"README.md"} | OPTIONAL_PORTABLE_SUPPORT_FILES
+OPTIONAL_PORTABLE_FAMILY_FILES = {"CHANGELOG.md"}
 
 
 def fail(message: str) -> None:
@@ -92,13 +91,13 @@ def main() -> None:
             fail(f"portable family directory missing: {portable['slug']}")
 
         readme_path = family_dir / "README.md"
-        if not readme_path.is_file():
-            fail(f"{portable['id']} is missing required README.md")
-        readme_content = readme_path.read_text(encoding="utf-8")
-        if not re.search(r"(?m)^## First use\s*$", readme_content):
-            fail(f"{portable['id']} README.md is missing the embedded ## First use section")
+        if readme_path.exists():
+            fail(
+                f"{portable['id']} retains README.md beside its canonical body; "
+                "portable onboarding must live in the canonical artifact"
+            )
 
-        allowed_names = PORTABLE_SUPPORT_FILES | {path.name}
+        allowed_names = OPTIONAL_PORTABLE_FAMILY_FILES | {path.name}
         extra_markdown = sorted(
             candidate.name
             for candidate in family_dir.glob("*.md")
@@ -110,6 +109,8 @@ def main() -> None:
             )
 
         content = path.read_text(encoding="utf-8")
+        if not re.search(r"(?m)^## First use\s*$", content):
+            fail(f"{portable['id']} canonical file is missing the embedded ## First use section")
         expected_sha256 = portable["canonical_sha256"]
         if not re.fullmatch(r"[0-9a-f]{64}", expected_sha256):
             fail(f"{portable['id']} has an invalid canonical_sha256")
@@ -145,8 +146,8 @@ def main() -> None:
             with ZipFile(package_path) as package:
                 package_files = [name for name in package.namelist() if not name.endswith("/")]
                 package_file_set = set(package_files)
-                required_package_files = {path.name, "README.md"}
-                allowed_package_files = {path.name} | PORTABLE_SUPPORT_FILES
+                required_package_files = {path.name}
+                allowed_package_files = {path.name}
                 missing_package_files = sorted(required_package_files - package_file_set)
                 unexpected_files = sorted(package_file_set - allowed_package_files)
                 if (
@@ -155,22 +156,10 @@ def main() -> None:
                     or unexpected_files
                 ):
                     fail(
-                        f"{portable['id']} download package must contain the canonical file "
-                        f"and README.md, with no unexpected files: {package_files}"
+                        f"{portable['id']} download package must contain exactly the canonical "
+                        f"file, with no support README or unexpected files: {package_files}"
                     )
                 packaged_bytes = package.read(path.name)
-                for support_name in sorted(set(package_files) - {path.name}):
-                    support_path = family_dir / support_name
-                    if not support_path.is_file():
-                        fail(
-                            f"{portable['id']} package support file is missing from the "
-                            f"portable directory: {support_name}"
-                        )
-                    if package.read(support_name) != support_path.read_bytes():
-                        fail(
-                            f"{portable['id']} package support file does not match the "
-                            f"portable directory: {support_name}"
-                        )
         except (BadZipFile, KeyError, OSError) as exc:
             fail(f"{portable['id']} has an invalid download package: {exc}")
 
