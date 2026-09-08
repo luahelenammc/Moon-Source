@@ -6,12 +6,14 @@ Preflight is the Moon Source portable for reconstructing what a person is actual
 
 > Humans should not have to prompt like machines.
 
+> 🌱 **New here? Read [FIRST_USE.md](FIRST_USE.md) before using this portable.** It explains the first action, starter prompt and manual boundaries.
+
 ## Use it
 
 - Open the canonical portable: [`PREFLIGHT_V2.md`](PREFLIGHT_V2.md)
 - Download the packaged current portable: [`preflight-v2.zip`](../../downloads/preflight-v2.zip)
 
-The ZIP contains only the exact canonical `PREFLIGHT_V2.md` bytes.
+The ZIP contains the exact canonical `PREFLIGHT_V2.md` bytes plus `README.md` and `FIRST_USE.md` onboarding support.
 
 ## Quick commands
 
