@@ -19,7 +19,7 @@ Use Source Hygiene to inventory authority, freshness, duplication and orphaned d
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for corpus diagnosis.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for authority and ownership.
 - [Procedural Projection](../../docs/PROCEDURAL_PROJECTION.md) for source-to-procedure separation.
-- [Connected Sources](../../portables/connected-sources/CONNECTED_SOURCES.md) for retrieval scope and freshness.
+- [Connected Sources](../../docs/CONNECTED_SOURCES.md) for retrieval scope and freshness.
 - [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) for safe execution and receipts.
 - [Moon Source Setup](../../portables/setup/MOON_SOURCE_SETUP.md) for proportionate entry and capability-probed persistent-source routing.
 

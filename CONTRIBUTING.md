@@ -22,17 +22,17 @@ The repository does not require a CLA or a signed-off-by line as a condition of 
 - keep Moon's authorship distinct from your local contribution;
 - mark material adaptations and preserve third-party notices;
 - use the repository's [pull-request template](.github/PULL_REQUEST_TEMPLATE.md);
-- treat a public component and a public portable as different categories;
+- treat architectural role and standalone distribution as different dimensions of the same capability;
 - keep human-facing titles stable and record release state in dedicated version metadata; follow the [repository naming and versioning policy](docs/REPOSITORY_NAMING_AND_VERSIONING.md) and its reusable [template](templates/REPOSITORY_NAMING_AND_VERSIONING.md);
-- for a new or materially revised portable, follow the [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md): the canonical portable body is the human and AI first-use surface and must embed a usable `## First use` path; do not create a second file merely to explain it;
-- register a new or materially changed component in `registry/public-portables.json` and `registry/PUBLIC_PORTABLES.md` when it meets the component criteria;
+- for a new or materially revised standalone distribution, follow the [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md): the canonical body is the human and AI first-use surface and must embed a usable `## First use` path; do not create a second file merely to explain it;
+- register every new or materially changed public capability in `registry/public-capabilities.json` and `registry/PUBLIC_CAPABILITIES.md`, recording architectural role and distribution independently;
 - touch cross-file surfaces only where responsibility, routing, evidence, boundary, licensing or discoverability actually changes;
 - run the local validation commands described in `.github/workflows/validate.yml`;
 - run `reuse lint` when changing licensing or file classes.
 
 New application material must be visibly hypothetical and didactic unless independently supported public evidence exists. Do not present a fictional scenario as a case study, adoption result or validated deployment.
 
-The public component inventory records Git-derived public creation and material-update dates. Do not guess dates from private lineage, and do not create a portable or bump MSL, Setup or Chat–Work merely because a component or facade changed.
+The public capability registry records Git-derived public creation and material-update dates. Do not guess dates from private lineage, and do not create a standalone distribution or bump MSL, Setup or Chat–Work merely because another capability or facade changed.
 
 When user feedback exposes a first-use misunderstanding — for example, confusing an instruction layer with an installed integration, assuming an unavailable capability, or not knowing the first manual step — treat that as a documentation/interface delta first. Change the canonical semantic body only when the semantic contract itself is wrong. Onboarding clarity alone does not earn a protocol version bump.
 

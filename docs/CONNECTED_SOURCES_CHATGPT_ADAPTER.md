@@ -1,6 +1,6 @@
 # Connected Sources — ChatGPT Adapter Notes
 
-This is a subordinate, dated reference adapter for applying the stable [Connected Sources](../portables/connected-sources/CONNECTED_SOURCES.md) method to ChatGPT product surfaces. It owns volatile product facts only. It is not a second Connected Sources method, a vendor ontology, a registry identity or a source of universal connector support.
+This is a subordinate, dated reference adapter for applying the stable [Connected Sources](CONNECTED_SOURCES.md) method to ChatGPT product surfaces. It owns volatile product facts only. It is not a second Connected Sources method, a vendor ontology, a registry identity or a source of universal connector support.
 
 **Current-product check:** 2026-08-23. Verify again before relying on any product-specific detail.
 

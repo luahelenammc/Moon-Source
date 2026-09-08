@@ -16,11 +16,11 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive component and operational updates continued through 2026-09-07; Chat–Work tri-surface routing advanced to V4 on 2026-09-06 and its IDL/source-transport subversions to 4.4-public on 2026-09-07.
+- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-08; Chat–Work tri-surface routing advanced to V4 on 2026-09-06 and its IDL/source-transport subversions to 4.4-public on 2026-09-07.
 - Current structural grammar: Moon Source Language, version 4.3.
-- Public portables: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 4.3) and Chat–Work Routing Protocol (version 4.4-public).
-- The public component inventory is tracked separately from the portable inventory in `registry/public-portables.json` schema 1.1 and `registry/PUBLIC_PORTABLES.md`.
-- Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are the eight additional public method components outside the portable registry. Be My Eyes and Connected Sources are current portables that may also own structural responsibilities; they are not duplicated as component rows.
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 4.3) and Chat–Work Routing Protocol (version 4.4-public).
+- All fourteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry.
+- Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
 - Website: production public convenience surface; each current portable mirror must remain byte-equal to its canonical current portable before mirror status is called verified.
 - Repository: luahelenammc/Moon-Source, public reference and versioning body; software and automation are Apache-2.0, while documentation, methods and public portables are CC-BY-4.0.
@@ -38,7 +38,7 @@ They should not be collapsed into one number.
 9. Exact-identity claims should use version/fingerprint evidence when appropriate, without treating a fingerprint as proof of authorship, ownership or permission.
 10. License rights come from the applicable standard license and file-level metadata; they are not broadened beyond those terms by implication.
 11. A user-facing link labeled **Download** must use a route intended to download the file; inline browse/open routes must be labeled as browse/open instead.
-12. One capability has one active semantic body. A portable may also be structural; it is not duplicated in the non-portable component inventory. Mirrors and packages are delivery surfaces, and a distinct adapter is allowed only for volatile or surface-specific facts.
+12. One capability has one canonical semantic body. Architectural role and standalone distribution are independent dimensions. Mirrors and packages are delivery surfaces, and a distinct adapter is allowed only for volatile or surface-specific facts.
 
 ## Title–version separation
 
@@ -118,12 +118,24 @@ The superseded 4.3-public portable remains recoverable through Git history; the 
 MSL remains 4.3 because the structural grammar did not change.
 
 ## Future versions
+### Public capability registry rebase — 2026-09-08
+
+The previous component-versus-portable split was an orthogonal-dimension error.
+The registry now records one capability per record with independent
+architectural role and distribution metadata. Standalone distribution remains
+supported without creating a second semantic inventory.
+
+Connected Sources remains version 1.1-public, but its canonical body now lives
+at docs/CONNECTED_SOURCES.md because its primary responsibility is structural
+source governance. Its ZIP and website mirror remain exact delivery surfaces.
+The registry schema advanced to 2.0; no capability method version was bumped.
+
 
 A future MSL major version would need evidence that the grammar itself has changed: for example, a new invariant, a new form-selection law or a new structural responsibility that cannot remain a procedural projection or protocol. If that happens, publish migration guidance, promote the new MSL generation as the only live MSL portable in `main`, and preserve the prior generation through Git history or an immutable release rather than a parallel current-tree file.
 
 ## Public routes
 
-Inspect the current public family in the [portable registry](../registry/PUBLIC_PORTABLES.md), use the [download hub](../DOWNLOADS.md) for access, consult [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for intellectual lineage and content-custody changes, or return to [Architecture](../ARCHITECTURE.md) for the governing model.
+Inspect the current public capabilities in the [unified registry](../registry/PUBLIC_CAPABILITIES.md), use the [download hub](../DOWNLOADS.md) for standalone access, consult [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for intellectual lineage and content-custody changes, or return to [Architecture](../ARCHITECTURE.md) for the governing model.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

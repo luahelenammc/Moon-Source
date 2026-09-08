@@ -10,7 +10,7 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
-REGISTRY = ROOT / "registry" / "public-portables.json"
+REGISTRY = ROOT / "registry" / "public-capabilities.json"
 
 
 def sha256(data: bytes) -> str:
@@ -40,28 +40,35 @@ def main() -> None:
     data = json.loads(REGISTRY.read_text(encoding="utf-8"))
     failures: list[str] = []
 
-    for portable in data["portables"]:
-        canonical_path = ROOT / portable["canonical_path"]
+    standalone = [
+        capability
+        for capability in data["capabilities"]
+        if capability.get("distribution", {}).get("standalone") is True
+    ]
+
+    for capability in standalone:
+        distribution = capability["distribution"]
+        canonical_path = ROOT / capability["canonical_path"]
         canonical_bytes = canonical_path.read_bytes()
         actual_canonical = sha256(canonical_bytes)
-        expected = portable["canonical_sha256"]
+        expected = distribution["canonical_sha256"]
 
         if actual_canonical != expected:
             failures.append(
-                f"{portable['id']}: canonical fingerprint mismatch "
+                f"{capability['id']}: canonical fingerprint mismatch "
                 f"(registry={expected}, file={actual_canonical})"
             )
 
         try:
-            mirror_bytes = read_mirror(portable, args.mirror_root)
+            mirror_bytes = read_mirror(distribution, args.mirror_root)
         except Exception as error:
-            failures.append(f"{portable['id']}: could not read mirror: {error}")
+            failures.append(f"{capability['id']}: could not read mirror: {error}")
             continue
 
         actual_mirror = sha256(mirror_bytes)
         if actual_mirror != actual_canonical:
             failures.append(
-                f"{portable['id']}: mirror drift "
+                f"{capability['id']}: mirror drift "
                 f"(canonical={actual_canonical}, mirror={actual_mirror})"
             )
 
@@ -69,7 +76,7 @@ def main() -> None:
         print("\n".join(failures))
         raise SystemExit(1)
 
-    print(f"mirror synchronization validated for {len(data['portables'])} public portables")
+    print(f"mirror synchronization validated for {len(standalone)} standalone distributions")
 
 
 if __name__ == "__main__":

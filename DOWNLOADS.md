@@ -19,9 +19,9 @@ The distribution is mixed-license: software and automation use Apache-2.0; docum
 
 Use the standalone kernel when you want to give an AI only selected Moon Source files rather than the entire repository. It defines the public boot sequence, authority map, task routing, context-loading discipline, freshness rules and public-boundary behavior.
 
-## Download one public portable
+## Download one public standalone distribution
 
-| Portable | Best for | Direct download |
+| Capability | Best for | Direct download |
 |---|---|---|
 | **Moon Source Setup** | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip) |
 | **Preflight** | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
@@ -30,23 +30,23 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 | **Moon Source Language** | Structuring recurring context, sources, handoffs and governed knowledge | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-4.3.zip) |
 | **Chat–Work Routing Protocol** | Object- and workload-routed Chat/Work/Codex execution with Execution Profiles, live Run State, capability floors, Budget Survivability, Intelligence Distillation Ladder and Chat Postflight | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
-> 🌱 **First time with Moon Source?** Start with [README.md#first-use](README.md#first-use). Before loading a specific portable, open that canonical file's [embedded First use section](portables/setup/MOON_SOURCE_SETUP.md#first-use); it explains the first action, starter prompt and manual boundary. Every current portable package contains exactly the self-onboarding canonical body.
+> 🌱 **First time with Moon Source?** Start with [README.md#first-use](README.md#first-use). Before loading a specific capability, open its canonical body's [embedded First use section](portables/setup/MOON_SOURCE_SETUP.md#first-use); it explains the first action, starter prompt and manual boundary. Every current standalone package contains exactly the self-onboarding canonical body.
 
 The current Be My Eyes portable version is **1.0-public**. The current Connected Sources portable version is **1.1-public**. The current Chat–Work Routing Protocol version is **4.4-public**. It retains the model-neutral Intelligence Distillation Ladder and adds a connector-aware source transport contract for governing source/family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback, while preserving the V4 title, canonical filename and MSL 4.3.
 
-GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each current portable package contains exactly the canonical `.md` file, which carries both the semantic body and its first-use entry. Website copies are convenience mirrors, not separate semantic sources.
+GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each current standalone package contains exactly its canonical `.md` file, which carries both the semantic body and its first-use entry. Website copies are convenience mirrors, not separate semantic sources.
 
 ## Preflight is now a portable
 
 [**Preflight — Human Intent Reconstruction Before AI Execution**](portables/preflight/PREFLIGHT_V2.md) is now a standalone public portable, currently at version **2.0**, with its own packaged download above. The former `docs/PREFLIGHT.md` path remains only as a succession pointer.
 
-## Be My Eyes is a portable-capable structural method
+## Be My Eyes is a standalone-capable structural method
 
-[**Be My Eyes**](portables/be-my-eyes/BE_MY_EYES.md) is the one active canonical semantic body and current portable, at version **1.0-public**. It may also own the structural scene-reading responsibility; the portable can travel alone and no `docs/` twin is required.
+[**Be My Eyes**](portables/be-my-eyes/BE_MY_EYES.md) is the one active canonical semantic body and a supported standalone distribution, at version **1.0-public**. It owns the structural scene-reading responsibility; the body can travel alone and no docs twin is required.
 
-## Connected Sources is a portable-capable structural method
+## Connected Sources is a structural crown jewel with a standalone distribution
 
-[**Connected Sources**](portables/connected-sources/CONNECTED_SOURCES.md) is the one active canonical semantic body and current Living Source Protocol, at version **1.1-public**. Google Drive is the recommended ChatGPT document-source substrate when connected living context is useful; GitHub is complementary for executable and versioned public material. Neither is mandatory, and the portable preserves a standalone fallback. Dated ChatGPT product facts live in the subordinate [adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md) and are not another method body.
+[**Connected Sources**](docs/CONNECTED_SOURCES.md) is the canonical Living Source Protocol and structural crown jewel, with a supported standalone distribution at version **1.1-public**. Google Drive is the recommended ChatGPT document-source substrate when connected living context is useful; GitHub is complementary for executable and versioned public material. Neither is mandatory, and the capability preserves a standalone fallback. Dated ChatGPT product facts live in the subordinate [adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md) and are not another method body.
 
 ## Browse before downloading
 
@@ -56,11 +56,11 @@ GitHub renders raw Markdown inline, so the individual download links use small Z
 - [Preflight](portables/preflight/PREFLIGHT_V2.md#first-use)
 - [👁️ Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md)
 - [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md#first-use)
-- [🔗 Connected Sources](portables/connected-sources/CONNECTED_SOURCES.md)
-- [Connected Sources](portables/connected-sources/CONNECTED_SOURCES.md#first-use)
++ [🔗 Connected Sources](docs/CONNECTED_SOURCES.md)
++ [Connected Sources](docs/CONNECTED_SOURCES.md#first-use)
 - [Moon Source Language](portables/msl/MSL_4_3.md#first-use)
 - [Chat–Work Routing](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use)
-- [Public portable registry](registry/PUBLIC_PORTABLES.md)
++ [Unified public capability registry](registry/PUBLIC_CAPABILITIES.md)
 - [🏛️ Moon Source architecture](ARCHITECTURE.md)
 - [🧬 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md)
 - [🔓 Licensing](LICENSING.md)

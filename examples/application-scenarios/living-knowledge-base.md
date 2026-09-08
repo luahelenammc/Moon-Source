@@ -16,7 +16,7 @@ Use Connected Sources to map the source substrate, jurisdiction, retrieval scope
 
 ## Relevant components and portables
 
-- [Connected Sources](../../portables/connected-sources/CONNECTED_SOURCES.md) for federated source access.
+- [Connected Sources](../../docs/CONNECTED_SOURCES.md) for federated source access.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for staleness and duplication.
 - [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) for safe operation and readback.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for facet-level ownership.

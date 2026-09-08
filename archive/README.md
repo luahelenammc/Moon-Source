@@ -1,6 +1,6 @@
 # 🗄️ Archive and Legacy
 
-The active public family lives under the canonical paths in [🗂️ registry](../registry/PUBLIC_PORTABLES.md).
+The active public family lives under the canonical paths in [🗂️ registry](../registry/PUBLIC_CAPABILITIES.md).
 
 Historical and superseded material should be preserved through Git history or an explicit archive path when that preservation adds retrieval value. It should not remain an accidental competing authority.
 
