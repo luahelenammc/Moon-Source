@@ -113,16 +113,6 @@ if __name__ == "__main__":
     main()
 '''
     (ROOT / "scripts/check_version_visibility.py").write_text(guard, encoding="utf-8")
-    workflow = ROOT / ".github/workflows/validate.yml"
-    text = workflow.read_text(encoding="utf-8")
-    needle = "      - run: python scripts/check_title_version_separation.py\n"
-    if "python scripts/check_version_visibility.py" not in text:
-        if needle not in text:
-            raise SystemExit("could not patch validate.yml")
-        workflow.write_text(
-            text.replace(needle, needle + "      - run: python scripts/check_version_visibility.py\n", 1),
-            encoding="utf-8",
-        )
 
 
 def rebuild_registered_packages() -> set[Path]:
