@@ -1,0 +1,77 @@
+name: Temporary MSL 5.1 current-label coherence
+
+on:
+  push:
+    branches:
+      - chat/msl-5.1-link-coherence-20260909
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reconcile current release labels
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          # README: only the current MSL distribution line.
+          p = Path('README.md')
+          lines = []
+          for line in p.read_text(encoding='utf-8').splitlines():
+              if 'Moon Source Language' in line and 'current version **5.0**' in line:
+                  line = line.replace('current version **5.0**', 'current version **5.1**')
+              lines.append(line)
+          p.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+          # Architecture: only present-tense current-baseline statements.
+          p = Path('ARCHITECTURE.md')
+          lines = []
+          for line in p.read_text(encoding='utf-8').splitlines():
+              if ('Current structural grammar:' in line or 'Current standalone distributions:' in line) and 'Moon Source Language' in line:
+                  line = line.replace('version **5.0**', 'version **5.1**').replace('version 5.0', 'version 5.1')
+              lines.append(line)
+          p.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+          # Evidence surface: current claims only, not release history.
+          p = Path('EVIDENCE_AND_CLAIMS.md')
+          lines = []
+          for line in p.read_text(encoding='utf-8').splitlines():
+              if line.startswith('- Moon Source Language is the current public structural/context language'):
+                  line = line.replace('version 5.0', 'version 5.1').replace('MSL 5.0', 'MSL 5.1')
+              if line.startswith('- The public body includes **Preflight**, currently version 2.0'):
+                  line = line.replace('currently version 2.0', 'currently version 2.1')
+              lines.append(line)
+          p.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+          PY
+
+      - name: Validate current state
+        shell: bash
+        run: |
+          python scripts/check_links.py
+          python scripts/validate_public_capabilities.py
+          python scripts/update_capability_digest.py --check
+          python - <<'PY'
+          from pathlib import Path
+          assert 'current version **5.0**' not in '\n'.join(line for line in Path('README.md').read_text(encoding='utf-8').splitlines() if 'Moon Source Language' in line)
+          assert 'version **5.0**' not in '\n'.join(line for line in Path('ARCHITECTURE.md').read_text(encoding='utf-8').splitlines() if 'Current structural grammar:' in line or 'Current standalone distributions:' in line)
+          evidence = Path('EVIDENCE_AND_CLAIMS.md').read_text(encoding='utf-8')
+          assert '- Moon Source Language is the current public structural/context language in this repository, at version 5.0.' not in evidence
+          assert '- The public body includes **Preflight**, currently version 2.0' not in evidence
+          print('current MSL 5.1 / Preflight 2.1 labels verified')
+          PY
+
+      - name: Commit fix and remove temporary workflow
+        shell: bash
+        run: |
+          rm .github/workflows/msl51_current_labels_tmp.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Align current MSL 5.1 and Preflight 2.1 labels [skip ci]"
+          git push origin HEAD
