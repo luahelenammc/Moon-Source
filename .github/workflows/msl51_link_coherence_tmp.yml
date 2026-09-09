@@ -14,12 +14,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Repair stale current MSL routes
+
+      - name: Repair stale MSL routes and release Preflight 2.1
         shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
+          import hashlib
+          import json
+          import zipfile
 
+          # Non-versioned documentation/examples: current route only.
           targets = [
               'docs/EXISTING_IMPLEMENTATIONS.md',
               'docs/RESPONSIBILITY_MAP.md',
@@ -31,7 +36,6 @@ jobs:
               'examples/application-scenarios/living-knowledge-base.md',
               'examples/application-scenarios/README.md',
               'examples/application-scenarios/people-learning-onboarding.md',
-              'portables/preflight/PREFLIGHT_V2.md',
           ]
           for name in targets:
               p = Path(name)
@@ -40,13 +44,112 @@ jobs:
               if new == text:
                   raise SystemExit(f'expected stale MSL route not found: {name}')
               p.write_text(new, encoding='utf-8', newline='\n')
+
+          # Preflight is independently versioned. Its canonical body must change to
+          # point at the live MSL generation, so the repository +0.1 rule makes
+          # this a 2.1 dependency-coherence release rather than an invisible edit.
+          preflight = Path('portables/preflight/PREFLIGHT_V2.md')
+          text = preflight.read_text(encoding='utf-8')
+          if 'MSL_5_0.md' not in text:
+              raise SystemExit('expected Preflight stale MSL route not found')
+          text = text.replace('MSL_5_0.md', 'MSL_5_1.md')
+          text = text.replace('**Version:** 2.0  ', '**Version:** 2.1  ', 1)
+          text = text.replace('Its current public version is **2.0**.', 'Its current public version is **2.1**.', 1)
+          preflight.write_text(text, encoding='utf-8', newline='\n')
+          preflight_bytes = preflight.read_bytes()
+          preflight_sha = hashlib.sha256(preflight_bytes).hexdigest()
+
+          # Rebuild stable V2 package deterministically with updated canonical bytes.
+          package = Path('downloads/preflight-v2.zip')
+          info = zipfile.ZipInfo('PREFLIGHT_V2.md', date_time=(1980, 1, 1, 0, 0, 0))
+          info.create_system = 3
+          info.external_attr = 0o100644 << 16
+          info.compress_type = zipfile.ZIP_DEFLATED
+          with zipfile.ZipFile(package, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
+              archive.writestr(info, preflight_bytes)
+
+          # Preflight readable facade: release state only, stable V2 identity/path.
+          preflight_readme = Path('portables/preflight/README.md')
+          r = preflight_readme.read_text(encoding='utf-8')
+          r = r.replace('**Version:** 2.0', '**Version:** 2.1')
+          r = r.replace('version **2.0**', 'version **2.1**')
+          r = r.replace('version 2.0', 'version 2.1')
+          preflight_readme.write_text(r, encoding='utf-8', newline='\n')
+
+          # Registry: update only the Preflight release record/fingerprint.
+          registry_path = Path('registry/public-capabilities.json')
+          registry = json.loads(registry_path.read_text(encoding='utf-8'))
+          pf = next(c for c in registry['capabilities'] if c.get('title') == 'Preflight')
+          pf['version'] = '2.1'
+          pf['last_material_update_on'] = '2026-09-09'
+          pf['last_material_update_summary'] = (
+              'Dependency-coherence release: updates the canonical MSL route from the superseded 5.0 path to current 5.1; Preflight method semantics are unchanged.'
+          )
+          pf['distribution']['canonical_sha256'] = preflight_sha
+          registry_path.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+          # Human registry current release state.
+          human = Path('registry/PUBLIC_CAPABILITIES.md')
+          h = human.read_text(encoding='utf-8')
+          lines = []
+          for line in h.splitlines():
+              if line.startswith('| preflight |'):
+                  parts = line.split('|')
+                  # Replace the visible current version only; title/path/package stay stable.
+                  line = line.replace('| 2.0 | current |', '| 2.1 | current |')
+              lines.append(line)
+          human.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+          # Current version lists/surfaces. No semantic rewrite of unrelated bodies.
+          for name in ('README.md', 'DOWNLOADS.md', 'docs/VERSIONING_AND_RELEASES.md'):
+              p = Path(name)
+              t = p.read_text(encoding='utf-8')
+              if name == 'docs/VERSIONING_AND_RELEASES.md':
+                  t = t.replace('Preflight (version 2.0)', 'Preflight (version 2.1)', 1)
+                  section = '''### Preflight 2.1 dependency-coherence release — 2026-09-09\n\nPreflight 2.1 updates the canonical dependency route from the retired `MSL_5_0.md` path to the current `MSL_5_1.md` path. The Preflight reconstruction method is unchanged. Because the canonical Preflight body changed, the repository +0.1 rule advances its release state from 2.0 to 2.1; the stable V2 human title, canonical filename and package family remain unchanged.\n\n'''
+                  if '### Preflight 2.1 dependency-coherence release' not in t:
+                      anchor = '## Future versions'
+                      if anchor in t:
+                          t = t.replace(anchor, section + anchor, 1)
+                      else:
+                          t += '\n' + section
+              else:
+                  lines2 = []
+                  for line in t.splitlines():
+                      if 'Preflight' in line and ('2.0' in line or 'version 2.0' in line):
+                          line = line.replace('2.0', '2.1')
+                      lines2.append(line)
+                  t = '\n'.join(lines2) + '\n'
+              p.write_text(t, encoding='utf-8', newline='\n')
+
+          # Root changelog records the dependency release explicitly.
+          ch = Path('CHANGELOG.md')
+          t = ch.read_text(encoding='utf-8')
+          entry = '''## 2026-09-09 — Preflight 2.1 dependency coherence\n\n- Updated Preflight's canonical MSL route from the retired 5.0 path to the current 5.1 path.\n- Kept Preflight reconstruction semantics unchanged.\n- Advanced Preflight from 2.0 to 2.1 because the canonical body changed under the repository +0.1 rule; rebuilt its stable V2 package and fingerprint.\n\n'''
+          if '## 2026-09-09 — Preflight 2.1 dependency coherence' not in t:
+              t = t.replace('# Changelog\n\n', '# Changelog\n\n' + entry, 1)
+          ch.write_text(t, encoding='utf-8', newline='\n')
+
+          print('preflight_sha256=' + preflight_sha)
+          print('preflight_zip_sha256=' + hashlib.sha256(package.read_bytes()).hexdigest())
           PY
 
-      - name: Verify links and capability registry
+      - name: Refresh digest and verify repository coherence
+        shell: bash
         run: |
+          python scripts/update_capability_digest.py
           python scripts/check_links.py
           python scripts/validate_public_capabilities.py
           python scripts/update_capability_digest.py --check
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          p = Path('portables/preflight/PREFLIGHT_V2.md')
+          with ZipFile('downloads/preflight-v2.zip') as z:
+              assert z.namelist() == ['PREFLIGHT_V2.md']
+              assert z.read('PREFLIGHT_V2.md') == p.read_bytes()
+          print('Preflight 2.1 package identity verified')
+          PY
 
       - name: Commit repair and remove temporary workflow
         shell: bash
@@ -55,5 +158,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Repair stale MSL 5.1 routes [skip ci]"
+          git commit -m "Repair MSL 5.1 dependency routes and release Preflight 2.1 [skip ci]"
           git push origin HEAD
