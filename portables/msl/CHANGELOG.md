@@ -1,5 +1,11 @@
 # MSL Changelog
 
+## 5.0 corrective pass — Formatting continuity
+
+- Makes semantic quality and surface quality one explicit MSL contract.
+- Restores Markdown-native, no-fence-by-default, object dissolving, exceptional tables, vertical hygiene, human naming and one-H1 rules.
+- Retains MSL 5.0 as the single active authority; MSL-4.x remains recoverable lineage and no parallel version is introduced.
+
 ## 5.0 — Sovereign Semantic Passage
 
 - Promotes MSL from an adaptive form grammar to a grammar of governed semantic passage.

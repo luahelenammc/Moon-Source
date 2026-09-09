@@ -56,6 +56,10 @@ MSL 5.0 — Sovereign Semantic Passage is a major public portable release. MSL-4
 The release preserves MSL-4.3 as the previous public portable and MSL-4.4 as internal lineage. MSL remains a structural/context language, not executable code, a universal ontology, a runtime, a product or proof of external adoption.
 
 Public release coherence requires the canonical body, readable README, registry, changelog, package, SHA256, links, mirrors and validators to agree. The public repository and website expose MSL 5.0 as current only after that set is synchronized.
+### MSL 5.0 corrective postflight — formatting continuity
+
+The corrective postflight pass restores formatting continuity as an explicit part of the same MSL 5.0 grammar: Markdown-native/no-fence defaults, object dissolving, literal-only fences with real syntax labels, exceptional tables, vertical hygiene, human naming and one-H1 discipline. It is a corrective content release within 5.0, not a new semantic generation or parallel 5.0.x authority; the canonical path and filename remain `portables/msl/MSL_5_0.md`.
+
 ## Historical MSL decision
 
 The 2026-08-16 promotion audit returns KEEP_MSL_4_3. Source jurisdiction, procedural skills, handoffs and bridges are important architectural layers, but the live MSL 4.3 source already provides the structural grammar needed to express them. They remain separate responsibilities rather than being absorbed into MSL 5.

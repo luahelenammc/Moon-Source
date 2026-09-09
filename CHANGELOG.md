@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-09 — MSL 5.0 formatting continuity repair
+
+- Restored explicit formatting as part of the MSL contract: Markdown-native default, literal-only fences with real syntax labels, object dissolving, exceptional tables, vertical hygiene, human naming and one-H1 discipline.
+- Reconciled Local MSL, Kernel and Runtime around MSL 5.0 as the only active authority while preserving MSL-4.x history.
+- Kept MSL at 5.0: this is a corrective content release, not a new semantic generation or parallel patch authority.
+
 ## 2026-09-09 — MSL 5.0 reference coherence
 
 - Aligned active architecture, setup, Preflight, Chat–Work, examples and mirror-policy references with the current MSL 5.0 release.

@@ -177,7 +177,7 @@
       "versioning_mode": "independent_public_capability_version",
       "public_created_on": "2026-08-16",
       "last_material_update_on": "2026-09-09",
-      "last_material_update_summary": "Major release: evolved MSL from adaptive form grammar into Sovereign Semantic Passage with source/body sovereignty, preserved interfaces, donor generalization, reception/readback and release coherence.",
+      "last_material_update_summary": "Corrective 5.0 pass: restored formatting as a first-class MSL responsibility with Markdown-native/no-fence defaults, object dissolving, proportional tables, vertical hygiene and release-surface coherence.",
       "dependencies": [],
       "freshness": "structural passage grammar; audit source, authority, boundary and recipient before adopting a later version",
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
@@ -195,7 +195,7 @@
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-5.0.zip",
         "mirror_path": "moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_5_0.md",
         "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_5_0.md",
-        "canonical_sha256": "e8d000e3a2b517b50a46417318964e4bcebf32edb3e5ecc3b9ef7cc8d12fd061",
+        "canonical_sha256": "7cfebbfabd51e1b5a1d78043f1ed953a0642d9458b6990a8a4c90ee692c9151f",
         "embedded_first_use": true
       }
     },
