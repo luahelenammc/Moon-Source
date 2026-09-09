@@ -16,9 +16,9 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to the bounded-exhaustiveness, calibration, Decision Trace and Sprint subversions through 5.0 on 2026-09-09.
+- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to the bounded-exhaustiveness, calibration, Decision Trace, Sprint and strategy-adapter subversions through 5.1 on 2026-09-09.
 - Current structural grammar: Moon Source Language, version 5.1.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.1), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 5.0).
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.1), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 5.1).
 - All fourteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry.
 - Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -166,6 +166,14 @@ Chat–Work 5.0 is a **material additive-and-superseding portable release**, not
 The release adds a narrow **Decision Sprint** sibling-delta exception to the ordinary singular IDL default. The exception requires one sovereign objective and authority/context, a finite pre-named docket, material cross-item consistency, meaningful repeated-context or coherence cost, independent item statuses, an explicit stop condition, lower-tier/Postflight re-entry and explicit user activation or confirmation. Each item uses `DECIDE_NOW`, `DEFER_TO_EVIDENCE`, `ALREADY_FROZEN` or `OUT_OF_SCOPE`; material items retain their own Decision Traces. Sprint Receipts are evidence-bearing and require Chat Postflight.
 
 The public human title remains **Chat–Work Routing Protocol**, the canonical filename remains `CHAT_WORK_ROUTING_PROTOCOL_V4.md`, and 5.0 remains within the V4 generation rather than creating a V5 title or parallel canonical file. The superseded 4.9 release remains recoverable through Git history; the MSL 5.1 dependency and ordinary authority, evidence and claim-ceiling boundaries remain unchanged.
+
+### Chat–Work 5.1 release — 2026-09-09
+
+Chat–Work 5.1 is a **material additive-and-superseding portable release**, not an MSL grammar change. It adds a compact, model-neutral **Model Strategy Adapter Boundary** and promotes the subordinate Astra Strategy Adapter from architectural candidate to current optional guidance.
+
+The boundary keeps the core generic while allowing model-specific strategy to compose role, autonomy, context/corpus geometry, coverage topology, direction-constraint density, mutation authority, reasoning effort, return geometry, checkpoints and dated calibration. Capability does not prescribe autonomy; capsules remain optional; Sprint and Decision Trace remain generic; and an adapter cannot override authority, safety, scope, evidence, verification, the Native Parallelism Gate or Chat Postflight.
+
+The release removes Astra-specific product calibration from stable core prose and isolates it in dated, replaceable adapter notes with current official references and a qualified anecdotal field observation. The public human title, V4 canonical filename and package path remain stable; the package bytes, registry fingerprint, README/registry/changelog state and mapped website mirror advance to 5.1. The superseded 5.0 release remains recoverable through Git history.
 
 ### Preflight 2.1 dependency-coherence release — 2026-09-09
 

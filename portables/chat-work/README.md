@@ -11,6 +11,28 @@
 - a Work result must return to Chat for verification and bounded closure;
 - expensive execution needs a survivability check before spending the budget.
 
+## Astra strategy, not Astra mode
+
+Astra is an optional capability target, not a prescribed work style. When it
+is actually available, Chat–Work can compile it as a judgment brain, broad
+reviewer, co-architect, bounded executor or sustained full-run surface. Role,
+autonomy, reasoning depth, context breadth and mutation authority remain
+separate.
+
+Examples of valid requests:
+
+- “Use Astra only for the hard ruling; return the decision to Chat.”
+- “Have Astra review this bounded corpus without mutating it.”
+- “Use Astra as co-architect and allow only these bounded patches.”
+- “Give Astra a sustained run for this finite objective, with checkpoints and verification.”
+- “Run a Decision Sprint across this finite docket.”
+
+Capsules are useful for bounded judgment, but they are not mandatory for broad
+review, co-architecture or execution. The user may override the compiled
+strategy; authority, scope, safety and verification still govern. See the
+[optional Astra Strategy Adapter](../../docs/CHAT_WORK_ASTRA_ADAPTER.md) for
+the date-sensitive subordinate guidance.
+
 ## What it does
 
 Chat–Work defines an object-routed execution loop across Chat, Work and Codex, including execution profiles, connector-aware source transport, Budget Survivability, the Intelligence Distillation Ladder, bounded exhaustiveness, an auditable Decision Trace for material higher-tier rulings, optional explicitly activated ephemeral Sprint Mode with a bounded Decision Sprint exception, and Chat Postflight.
@@ -23,9 +45,10 @@ It does not itself create access to a model, tool, connector or execution surfac
 
 ## Current identity
 
-- **Version:** 5.0
+- **Version:** 5.1
 - **Protocol family:** V4
 - **Status:** current · supported standalone distribution
+- **Optional strategy adapter:** [`docs/CHAT_WORK_ASTRA_ADAPTER.md`](../../docs/CHAT_WORK_ASTRA_ADAPTER.md)
 - **Canonical body:** [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
 - **Package:** [`downloads/chat-work-routing-protocol-v4.zip`](../../downloads/chat-work-routing-protocol-v4.zip)
 - **License:** CC BY 4.0 · see [Licensing](../../LICENSING.md)
