@@ -55,7 +55,7 @@
       "last_material_update_on": "2026-09-08",
       "last_material_update_summary": "Embedded self-onboarding in the canonical body and refreshed the supported distribution without changing method semantics or version.",
       "dependencies": [
-        "Uses MSL-4.3 terminology; product and model calibration is date-sensitive",
+        "Uses MSL-5.0 terminology; product and model calibration is date-sensitive",
         "Source transport records governing source or family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback; a locator is not authority",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions"
       ],
