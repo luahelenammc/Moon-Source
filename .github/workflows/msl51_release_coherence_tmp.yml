@@ -30,11 +30,10 @@ jobs:
           canonical = root / 'portables/msl/MSL_5_1.md'
           if not canonical.is_file():
               raise SystemExit('missing MSL_5_1.md')
-
           body = canonical.read_bytes()
           canonical_sha = hashlib.sha256(body).hexdigest()
 
-          # Latest-only standalone package.
+          # Deterministic latest-only MSL package.
           downloads = root / 'downloads'
           downloads.mkdir(exist_ok=True)
           package = downloads / 'moon-source-language-5.1.zip'
@@ -49,7 +48,7 @@ jobs:
               if old.exists():
                   old.unlink()
 
-          # Unified registry is the machine-readable release authority.
+          # Unified machine-readable registry.
           registry_path = root / 'registry/public-capabilities.json'
           registry = json.loads(registry_path.read_text(encoding='utf-8'))
           msl = next(c for c in registry['capabilities'] if c.get('title') == 'Moon Source Language')
@@ -68,65 +67,54 @@ jobs:
           dist['canonical_sha256'] = canonical_sha
           registry_path.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
-          # Live route tokens must never point at superseded portable coordinates.
-          historical = {
-              'CHANGELOG.md',
-              'docs/VERSIONING_AND_RELEASES.md',
-              'portables/msl/CHANGELOG.md',
-              'portables/msl/MSL_5_1.md',
-          }
-          suffixes = {'.md', '.json', '.toml', '.yml', '.yaml', '.py', '.txt', '.html', '.js', '.css'}
+          # Only current routing/release surfaces may receive coordinate replacement.
+          # Other independently versioned canonical bodies are intentionally untouched.
+          route_files = [
+              root / 'registry/PUBLIC_CAPABILITIES.md',
+              root / 'README.md',
+              root / 'DOWNLOADS.md',
+              root / 'ARCHITECTURE.md',
+              root / 'MOON_SOURCE_AI_KERNEL.md',
+              root / 'docs/MIRROR_SYNCHRONIZATION.md',
+              root / 'REUSE.toml',
+          ]
           replacements = {
               'portables/msl/MSL_5_0.md': 'portables/msl/MSL_5_1.md',
               'MSL_5_0.md': 'MSL_5_1.md',
               'moon-source-language-5.0.zip': 'moon-source-language-5.1.zip',
               'MOON_SOURCE_PUBLIC_PORTABLE_MSL_5_0.md': 'MOON_SOURCE_PUBLIC_PORTABLE_MSL_5_1.md',
           }
-          for path in root.rglob('*'):
-              if not path.is_file() or '.git' in path.parts or path.suffix.lower() not in suffixes:
-                  continue
-              rel = path.as_posix()
-              if rel in historical:
-                  continue
-              try:
-                  text = path.read_text(encoding='utf-8')
-              except UnicodeDecodeError:
-                  continue
-              new = text
-              for old, fresh in replacements.items():
-                  new = new.replace(old, fresh)
-              if new != text:
-                  path.write_text(new, encoding='utf-8', newline='\n')
-
-          # Human registry: route + visible current version, without touching unrelated histories.
-          human = root / 'registry/PUBLIC_CAPABILITIES.md'
-          text = human.read_text(encoding='utf-8')
-          lines = []
-          for line in text.splitlines():
-              if 'Moon Source Language' in line:
-                  line = line.replace('5.0', '5.1')
-              lines.append(line)
-          human.write_text('\n'.join(lines) + '\n', encoding='utf-8')
-
-          # Current-facing release surfaces only. No cross-capability semantic cascade.
-          current_surfaces = [
-              root / 'README.md',
-              root / 'DOWNLOADS.md',
-              root / 'ARCHITECTURE.md',
-              root / 'MOON_SOURCE_AI_KERNEL.md',
-          ]
-          for path in current_surfaces:
+          for path in route_files:
               if not path.exists():
                   continue
               text = path.read_text(encoding='utf-8')
+              new = text
+              for old, fresh in replacements.items():
+                  new = new.replace(old, fresh)
+              # Only lines that describe Moon Source Language/current grammar get the visible version bump.
               lines = []
-              for line in text.splitlines():
-                  if ('Moon Source Language' in line or 'current structural grammar' in line.lower() or 'Current MSL' in line) and ('5.0' in line or 'MSL-5.0' in line):
+              for line in new.splitlines():
+                  if ('Moon Source Language' in line or 'current structural grammar' in line.lower()) and ('5.0' in line or 'MSL-5.0' in line):
                       line = line.replace('MSL 5.0', 'MSL 5.1').replace('MSL-5.0', 'MSL-5.1').replace('version 5.0', 'version 5.1')
                   lines.append(line)
               path.write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
-          # Version policy: current baseline + explicit non-recursive bookkeeping rationale.
+          # Human registry: ensure the MSL record carries current 5.1 release state.
+          human = root / 'registry/PUBLIC_CAPABILITIES.md'
+          text = human.read_text(encoding='utf-8')
+          lines = []
+          in_msl = False
+          for line in text.splitlines():
+              if line.startswith('## ') and 'Moon Source Language' in line:
+                  in_msl = True
+              elif line.startswith('## ') and in_msl:
+                  in_msl = False
+              if in_msl:
+                  line = line.replace('MSL 5.0', 'MSL 5.1').replace('MSL-5.0', 'MSL-5.1').replace('Version: 5.0', 'Version: 5.1').replace('**Version:** 5.0', '**Version:** 5.1')
+              lines.append(line)
+          human.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+          # Version policy: update only current baseline and add explicit non-recursive bookkeeping rationale.
           versioning = root / 'docs/VERSIONING_AND_RELEASES.md'
           text = versioning.read_text(encoding='utf-8')
           text = text.replace(
@@ -138,17 +126,15 @@ jobs:
               'Moon Source Language (version 5.1)',
               1,
           )
-          marker = '### MSL 5.0 corrective postflight — formatting continuity\n\nThe corrective postflight pass restores formatting continuity as an explicit part of the same MSL 5.0 grammar: Markdown-native/no-fence defaults, object dissolving, literal-only fences with real syntax labels, exceptional tables, vertical hygiene, human naming and one-H1 discipline. It is a corrective content release within 5.0, not a new semantic generation or parallel 5.0.x authority; the canonical path and filename remain `portables/msl/MSL_5_0.md`.\n'
-          section = '''\n### MSL 5.1 release-coherence correction — 2026-09-09\n\nMSL 5.1 is the correctly numbered release state of the already accepted MSL 5.0 formatting-continuity update. Repository policy now requires every accepted material update to an independently versioned capability body or operative contract to advance that capability by +0.1. The formatting-continuity pass changed the MSL canonical body and operative formatting contract, so that accepted delta earns 5.1.\n\nThe 5.1 promotion is bookkeeping/release coherence, not another semantic grammar change: it therefore does not recursively trigger 5.2. The active tree exposes only `portables/msl/MSL_5_1.md`; MSL 5.0, internal 4.4 and public 4.3 remain recoverable lineage through repository history rather than parallel live portables.\n'''
+          section = '''### MSL 5.1 release-coherence correction — 2026-09-09\n\nMSL 5.1 is the correctly numbered release state of the already accepted MSL 5.0 formatting-continuity update. Repository policy requires every accepted material update to an independently versioned capability body or operative contract to advance that capability by +0.1. The formatting-continuity pass changed the MSL canonical body and operative formatting contract, so that accepted delta earns 5.1.\n\nThe 5.1 promotion is bookkeeping/release coherence, not another semantic grammar change: it therefore does not recursively trigger 5.2. The active tree exposes only `portables/msl/MSL_5_1.md`; MSL 5.0, internal 4.4 and public 4.3 remain recoverable lineage through repository history rather than parallel live portables.\n\n'''
           if '### MSL 5.1 release-coherence correction' not in text:
-              if marker in text:
-                  text = text.replace(marker, marker + section)
-              else:
-                  anchor = '## Historical MSL decision'
-                  text = text.replace(anchor, section + '\n' + anchor, 1)
+              anchor = '## Historical MSL decision'
+              if anchor not in text:
+                  raise SystemExit('versioning historical anchor missing')
+              text = text.replace(anchor, section + anchor, 1)
           versioning.write_text(text, encoding='utf-8', newline='\n')
 
-          # Root changelog records the release without rewriting history.
+          # Root changelog: append a new release fact without rewriting history.
           changelog = root / 'CHANGELOG.md'
           text = changelog.read_text(encoding='utf-8')
           entry = '''## 2026-09-09 — MSL 5.1 release coherence\n\n- Correctly numbered the accepted MSL formatting-continuity update as 5.1 under the +0.1-per-material-update rule.\n- Kept the MSL 5 semantic grammar unchanged; this bookkeeping correction does not trigger 5.2.\n- Retired live MSL 4.3 and 5.0 portable generations from `main`, preserving lineage through repository history.\n- Re-synchronized canonical body, README, registry, package, fingerprint and mirror coordinates around 5.1.\n\n'''
@@ -156,12 +142,7 @@ jobs:
               text = text.replace('# Changelog\n\n', '# Changelog\n\n' + entry, 1)
           changelog.write_text(text, encoding='utf-8', newline='\n')
 
-          # Portable changelog already carries the 5.1 entry from Chat; normalize live coordinates if needed.
-          pch = root / 'portables/msl/CHANGELOG.md'
-          text = pch.read_text(encoding='utf-8')
-          pch.write_text(text.replace('`MSL_5_0.md`', '`MSL_5_1.md`'), encoding='utf-8', newline='\n')
-
-          # Ensure latest-only live MSL tree.
+          # Latest-only live MSL tree.
           for old in (root / 'portables/msl/MSL_4_3.md', root / 'portables/msl/MSL_5_0.md'):
               if old.exists():
                   old.unlink()
@@ -176,11 +157,12 @@ jobs:
       - name: Validate public capability registry
         run: python scripts/validate_public_capabilities.py
 
-      - name: Verify MSL package identity
+      - name: Verify MSL package identity and latest-only tree
         shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
+          import hashlib
           from zipfile import ZipFile
           p = Path('portables/msl/MSL_5_1.md')
           z = Path('downloads/moon-source-language-5.1.zip')
@@ -189,8 +171,18 @@ jobs:
               assert a.read('MSL_5_1.md') == p.read_bytes()
           assert not Path('portables/msl/MSL_4_3.md').exists()
           assert not Path('portables/msl/MSL_5_0.md').exists()
+          print('canonical_sha256=' + hashlib.sha256(p.read_bytes()).hexdigest())
+          print('zip_sha256=' + hashlib.sha256(z.read_bytes()).hexdigest())
           print('MSL 5.1 latest-only package identity verified')
           PY
+
+      - name: Verify no cross-capability canonical drift
+        shell: bash
+        run: |
+          git diff --exit-code origin/main -- portables/setup portables/preflight portables/chat-work portables/connected-sources portables/be-my-eyes || {
+            echo 'Unexpected independently versioned canonical-body drift detected.' >&2
+            exit 1
+          }
 
       - name: Commit reconciled release and remove temporary workflow
         shell: bash
