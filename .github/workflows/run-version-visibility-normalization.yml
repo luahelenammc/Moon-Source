@@ -32,17 +32,9 @@ jobs:
       - run: python scripts/update_capability_digest.py --check
       - name: Commit normalized Moon Source branch
         run: |
+          find scripts -type d -name __pycache__ -prune -exec rm -rf {} +
           git config user.name "Lua H. Moon M. C."
           git config user.email "luahelenammc@gmail.com"
           git add -A
           git commit -m "meta: make version tokens visibility-neutral"
           git push origin HEAD:meta/drop-public-version-suffix-20260909
-      - name: Retire runner from main
-        run: |
-          git fetch origin main
-          git checkout -B main origin/main
-          git rm .github/workflows/run-version-visibility-normalization.yml
-          git config user.name "Lua H. Moon M. C."
-          git config user.email "luahelenammc@gmail.com"
-          git commit -m "chore: retire one-shot version normalization workflow"
-          git push origin main
