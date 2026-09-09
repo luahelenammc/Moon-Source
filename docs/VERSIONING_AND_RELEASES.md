@@ -16,9 +16,9 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to bounded-exhaustiveness subversion 4.7-public on 2026-09-09.
+- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to the bounded-exhaustiveness, calibration and Decision Trace subversions through 4.9 on 2026-09-09.
 - Current structural grammar: Moon Source Language, version 5.1.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.1), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 4.7-public).
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.1), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 4.9).
 - All fourteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry.
 - Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -144,6 +144,20 @@ The release also adds `scope_amplification_failure` and a constrain-before-escal
 The superseded 4.4-public portable remains recoverable through Git history. MSL remains 5.0 because this release changes the routing/distillation protocol, not the structural passage grammar.
 
 **Lineage correction:** the last correctly numbered Chat–Work release was 4.4-public. The self-onboarding canonical-body integration is counted as 4.5, the MSL 5.0 canonical dependency/reference alignment as 4.6, and the bounded-exhaustiveness update as 4.7. The repository had preserved 4.4 across the first two updates under an older semantic-only bump convention; this correction restores the project's +0.1-per-module-update rule without fabricating parallel historical artifacts.
+
+### Chat–Work 4.8 release — 2026-09-09
+
+Chat–Work 4.8 is a **material additive-and-superseding portable release**, not an MSL grammar change. It adds a dated calibration disclaimer: when frontier execution becomes materially cheaper or more efficient per verified useful delta, later releases may relax distillation pressure without weakening scope, stop or capability-floor invariants. It does not claim current product economics, automatic allowance detection or guaranteed savings.
+
+The public human title remains **Chat–Work Routing Protocol**, the canonical filename remains `CHAT_WORK_ROUTING_PROTOCOL_V4.md`, and the release stays within the V4 generation.
+
+### Chat–Work 4.9 release — 2026-09-09
+
+Chat–Work 4.9 is a **material additive-and-superseding portable release**, not an MSL grammar change. It adds a bounded **Decision Trace** for material higher-tier rulings. The trace preserves only the decision-bearing boundary: live alternatives, decisive comparison, material rejection reasons, adversarial correction, falsifier or discriminating test, uncertainty, assumptions changed and next action.
+
+Decision Trace is explicitly not hidden chain-of-thought, a private scratchpad, a token-by-token rationale or a claim of access to unavailable internal model state. Routine judgments may omit it; material rulings must remain auditable before they govern route, architecture, governance, policy, acceptance or stop conditions.
+
+The superseded 4.8 release remains recoverable through Git history. The stable human title, V4 canonical filename, MSL 5.1 dependency and ordinary Chat Postflight/authority/evidence boundaries remain unchanged.
 
 ### Preflight 2.1 dependency-coherence release — 2026-09-09
 
