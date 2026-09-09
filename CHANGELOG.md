@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-09 — Chat–Work 5.1 · Astra Strategy Adapter boundary
+
+- Added a compact, model-neutral Model Strategy Adapter Boundary so model-specific strategy can remain subordinate to Chat–Work's core laws.
+- Promoted the Astra Strategy Adapter from candidate to current optional guidance, with independent role, autonomy, context breadth, coverage topology, direction-constraint density, mutation authority, reasoning effort and return geometry.
+- Kept Brain Burst, Decision/Return Capsules, Sprint, Decision Trace, Native Parallelism, authority, evidence, verification and Chat Postflight generic; capsules remain optional and capability does not prescribe autonomy.
+- Isolated dated Astra/product calibration in replaceable adapter notes, refreshed the canonical release surfaces and advanced Chat–Work from 5.0 to 5.1 under the repository's +0.1 rule while preserving the stable V4 title, filename and package path.
+
 ## 2026-09-09 — Chat–Work 5.0 · optional Sprint Mode
 
 - Added optional, explicitly activated and ephemeral Sprint Mode as a run-level resource/pacing overlay; it is not a new operation mode, model, tier, persistent profile or native product feature.

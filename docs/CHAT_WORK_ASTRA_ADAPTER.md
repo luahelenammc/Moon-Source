@@ -1,15 +1,15 @@
 # Chat–Work Astra Strategy Adapter
 
-*Candidate subordinate adapter for model-specific frontier strategy without changing Chat–Work's model-neutral core*
+*Optional subordinate adapter for model-specific frontier strategy without changing Chat–Work's model-neutral core*
 
-## Candidate status
+## Public status
 
-- **status:** upstream candidate; not a current public release
-- **candidate target:** Chat–Work Routing Protocol 5.1
-- **candidate date:** 2026-09-09
+- **status:** current subordinate adapter; optional public guidance
+- **applies to:** Chat–Work Routing Protocol 5.1
+- **effective date:** 2026-09-09
 - **governing canonical body:** `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`
-- **current released Chat–Work version at candidate creation:** 5.0
-- **MSL dependency:** remains 5.1
+- **canonical release:** Chat–Work 5.1; the stable human title and V4 filename remain unchanged
+- **MSL dependency:** Moon Source Language 5.1
 - **authority:** subordinate adapter only; the Chat–Work canonical body governs on conflict
 - **scope:** Astra-specific strategy geometry, reusable presets and volatile model/surface calibration
 - **non-scope:** general routing law, universal model ranking, entitlement inference, benchmarks, pricing guarantees, hidden reasoning access or automatic autonomy
@@ -305,7 +305,27 @@ Likewise, Astra can be used in any strategy above without Sprint.
 
 ## Adapter calibration boundary
 
-Date-sensitive Astra facts belong here, not in the stable router, when they become necessary for routing. Examples include:
+This section is empirical and replaceable. It never overrides the canonical
+Chat–Work body, the active authority envelope or the claim ceiling.
+
+**Last checked:** 2026-09-09
+
+**Source class:** official product documentation for product behavior; dated
+field reports for operational hypotheses.
+
+The current official product documentation distinguishes Chat, Work and Codex
+as different experiences and makes model, plan, workspace, rollout, tool and
+surface availability conditional. It also treats model usage and resource
+burden as task-, input/output-, settings- and mode-sensitive. These are live
+calibration inputs, not permissions or stable protocol laws. The router must
+probe the actual surface and model before routing work to Astra.
+
+The name `Astra` in this document is a strategy-adapter target/alias. It does
+not prove that a user has access to a model, surface, CLI, desktop capability,
+connector, allowance, credit pool or any particular product configuration.
+
+Date-sensitive Astra facts belong here, not in the stable router, when they
+become necessary for routing. Examples include:
 
 - where Astra is exposed;
 - product-specific effort controls;
@@ -316,7 +336,24 @@ Date-sensitive Astra facts belong here, not in the stable router, when they beco
 
 Every volatile fact must be dated and sourced to appropriate current evidence. Anecdotes may inform a risk hypothesis but must not become a universal model property, benchmark or fixed cost law.
 
-The current public Chat–Work core should therefore retain only a model-neutral capability taxonomy and an adapter boundary. Astra-specific dated calibration should be routed here during the eventual promotion.
+A trusted community field report dated 2026-09-09 described Astra expanding
+open-ended completeness instructions into very large edge-case and test
+sweeps. Treat this as anecdotal operational evidence, not a benchmark or
+universal model property. When Astra is selected for sustained or frontier
+execution, prefer explicit scope ceilings and stop conditions over vague
+requests to “be balanced.”
+
+Useful current references:
+
+- [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex)
+- [ChatGPT models](https://learn.chatgpt.com/docs/models)
+- [Reasoning models](https://developers.openai.com/api/docs/guides/reasoning)
+- [Custom instructions with AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)
+- [Codex CLI](https://learn.chatgpt.com/docs/codex/cli)
+
+The adapter keeps this calibration outside stable Chat–Work law so that a
+future model, surface or product change can replace these notes without
+redesigning the routing core.
 
 ## Failure classes specific to strategy selection
 
@@ -333,35 +370,15 @@ The adapter may classify failures such as:
 
 These are routing diagnoses, not claims about the model's private internals.
 
-## Promotion projection for Chat–Work 5.1
+## Relationship to Chat–Work 5.1
 
-If this candidate is approved, the public promotion should remain small and topological.
+Chat–Work 5.1 adds only the generic boundary that makes this adapter
+legitimate. The canonical body retains the stable routing laws; this document
+supplies optional Astra-specific strategy geometry and calibration. The
+adapter is not a new capability, a second registry identity or a replacement
+for the canonical portable.
 
-### Minimal canonical change
-
-The Chat–Work canonical body should:
-
-1. add a short **Model Strategy Adapter Boundary** defining subordinate adapters and precedence;
-2. preserve all general laws as model-neutral;
-3. route Astra-specific dated calibration and Astra-specific strategy guidance to this adapter;
-4. state explicitly that capability tier does not prescribe autonomy geometry;
-5. state that Decision Capsule / Return Capsule is one strategy pattern, not a mandatory frontier wrapper;
-6. link to this adapter as optional, date-sensitive guidance;
-7. keep the stable human-facing title and canonical filename.
-
-### Adapter promotion
-
-This file would change status from candidate to subordinate current adapter and receive a freshness/calibration header backed by current official product sources.
-
-### Release surfaces
-
-Only after approval should release engineering update the canonical body, README, registry summary/fingerprint, package, changelog/version records, public mirror and validators required by current repository policy.
-
-The candidate branch intentionally does **not** mutate those release surfaces yet.
-
-## Promotion gates
-
-Promote only if all are true:
+The release is coherent only when:
 
 - an unknown user can choose Astra as brain, reviewer, co-architect, executor or mixed without contradicting the core;
 - role, autonomy and mutation authority remain independent;
@@ -374,10 +391,20 @@ Promote only if all are true:
 - no native feature, entitlement, benchmark or guaranteed-economics claim is introduced;
 - the canonical Chat–Work body remains the single semantic authority.
 
-## Candidate claim ceiling
+## Claim ceiling
 
-This adapter is a proposed routing and strategy layer. It does not claim that Astra has one correct use, that Astra is always the best frontier route, that any user has access to it, that hidden reasoning can be exposed, that high autonomy is always beneficial, that broad context always improves results, or that any specific strategy guarantees better quality or lower cost.
+This adapter is a routing and strategy layer. It does not claim that Astra has
+one correct use, that Astra is always the best frontier route, that any user has
+access to it, that hidden reasoning can be exposed, that high autonomy is
+always beneficial, that broad context always improves results, or that any
+specific strategy guarantees better quality or lower cost.
 
 Its purpose is narrower:
 
 > **Preserve Astra's plurality of legitimate work styles while keeping Chat–Work's core model-neutral, auditable and user-configurable.**
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).
