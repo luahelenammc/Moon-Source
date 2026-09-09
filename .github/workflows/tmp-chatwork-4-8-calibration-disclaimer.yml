@@ -1,0 +1,122 @@
+name: Temporary Chat-Work 4.8 calibration disclaimer
+
+on:
+  push:
+    branches:
+      - chat/chat-work-4-8-calibration-disclaimer-20260909
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chat/chat-work-4-8-calibration-disclaimer-20260909
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Apply micro patch
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import re
+          from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
+
+          canonical = Path('portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md')
+          text = canonical.read_text(encoding='utf-8')
+
+          text = text.replace('## Public Portable Edition · Version 4.7-public', '## Public Portable Edition · Version 4.8')
+          text = text.replace('- **version:** 4.7-public', '- **version:** 4.8')
+          text = text.replace(
+              '- **supersedes:** Chat–Work Routing Protocol V4, published label 4.5-public; this 4.7-public correction restores two previously skipped +0.1 lineage increments while retaining the V4 public generation and canonical filename',
+              '- **supersedes:** Chat–Work Routing Protocol 4.7; 4.8 adds a dated calibration disclaimer for future relaxation of distillation pressure as frontier economics improve, while preserving hard scope and stopping invariants'
+          )
+          text = text.replace(
+              '- **MSL dependency:** Moon Source Language 5.0; the protocol remains independently versioned at 4.7-public.',
+              '- **MSL dependency:** Moon Source Language 5.1; the protocol remains independently versioned at 4.8.'
+          )
+          text = text.replace(
+              'The V4.2 subversion added the profile-conditioned route principle. V4.3 added a distillation principle. V4.4 added a connector-aware source transport contract. Under the corrected +0.1 lineage, V4.5 accounts for the self-onboarding canonical-body integration, V4.6 for the MSL 5.0 canonical dependency/reference alignment, and V4.7 adds bounded exhaustiveness and scope-amplification recovery:',
+              'The V4.2 subversion added the profile-conditioned route principle. V4.3 added a distillation principle. V4.4 added a connector-aware source transport contract. Under the corrected +0.1 lineage, V4.5 accounts for the self-onboarding canonical-body integration, V4.6 for the MSL 5.0 canonical dependency/reference alignment, V4.7 adds bounded exhaustiveness and scope-amplification recovery, and V4.8 adds a dated calibration disclaimer so economic guardrails can relax when frontier economics materially improve without weakening structural scope controls:'
+          )
+
+          anchor = 'As a dated field calibration on 2026-09-09, a trusted community report described Astra expanding open-ended completeness instructions into very large edge-case and test sweeps. Treat this as anecdotal operational evidence, not a benchmark or universal model property. When Astra is selected for sustained or frontier execution, prefer explicit scope ceilings and stop conditions over vague requests to "be balanced."'
+          disclaimer = '**Calibration disclaimer:** distillation pressure is not permanent doctrine. If Astra or a successor frontier tier becomes materially cheaper or more efficient per verified useful delta, later dated revisions may loosen compression or coverage ceilings while preserving explicit stop conditions, scope authorization and capability-floor discipline.'
+          if disclaimer not in text:
+              if anchor not in text:
+                  raise SystemExit('calibration anchor not found')
+              text = text.replace(anchor, anchor + '\n\n' + disclaimer)
+
+          start = text.index('## 22. Lifecycle and succession')
+          end = text.index('## 23. Safe operating rules')
+          lifecycle = '''## 22. Lifecycle and succession
+
+- Chat–Work Routing Protocol remains the current public generation;
+- `4.8` is the current semantic subversion of that generation, not a new V5 title or filename;
+- `4.7` is superseded by this subversion and remains recoverable through Git history;
+- earlier 4.x subversions remain historical lineage recoverable through Git history;
+- the live repository exposes one canonical V4 file; website delivery is a separate mirror surface and may lag until its own verified sync;
+- MSL is currently 5.1; this protocol remains independently versioned at 4.8;
+- an installed native skill, if any, is a separate object requiring its own update and verification.
+
+'''
+          text = text[:start] + lifecycle + text[end:]
+          text = re.sub(r'(?<=\d)-public\b', '', text)
+          canonical.write_text(text, encoding='utf-8')
+
+          readme = Path('portables/chat-work/README.md')
+          r = readme.read_text(encoding='utf-8')
+          r = r.replace('**Version:** 4.7-public', '**Version:** 4.8')
+          readme.write_text(r, encoding='utf-8')
+
+          registry_path = Path('registry/public-capabilities.json')
+          registry = json.loads(registry_path.read_text(encoding='utf-8'))
+          entry = next(c for c in registry['capabilities'] if c['id'] == 'chat-work-routing')
+          entry['version'] = '4.8'
+          entry['claim_ceiling'] = 'Published Chat–Work V4 protocol, subversion 4.8; operational routing heuristic only, not an OpenAI policy, benchmark, guaranteed savings/quality claim or proof that a native chat-work-router V4 skill is installed'
+          entry['last_material_update_on'] = '2026-09-09'
+          entry['last_material_update_summary'] = 'Released 4.8 with a minimal calibration disclaimer: distillation pressure may relax when frontier execution becomes materially cheaper or more efficient per verified useful delta, while hard scope, stop and capability-floor invariants remain.'
+          entry['dependencies'][0] = 'Uses MSL-5.1 terminology; product and model calibration is date-sensitive'
+          entry['supersedes'] = '4.7'
+          registry_path.write_text(json.dumps(registry, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+
+          human = Path('registry/PUBLIC_CAPABILITIES.md')
+          h = human.read_text(encoding='utf-8')
+          h = h.replace('| chat-work-routing | [Chat–Work Routing Protocol](../portables/chat-work/README.md) | operational routing protocol | 4.7-public | current |', '| chat-work-routing | [Chat–Work Routing Protocol](../portables/chat-work/README.md) | operational routing protocol | 4.8 | current |')
+          h = h.replace('Chat–Work at 4.7-public', 'Chat–Work at 4.8')
+          human.write_text(h, encoding='utf-8')
+
+          package = Path('downloads/chat-work-routing-protocol-v4.zip')
+          info = ZipInfo(canonical.name, date_time=(1980, 1, 1, 0, 0, 0))
+          info.create_system = 3
+          info.external_attr = 0o100644 << 16
+          info.compress_type = ZIP_DEFLATED
+          with ZipFile(package, 'w', compression=ZIP_DEFLATED) as archive:
+              archive.writestr(info, canonical.read_bytes())
+          PY
+      - name: Refresh digest
+        run: python scripts/update_capability_digest.py
+      - name: Validate
+        run: |
+          python scripts/check_links.py
+          python scripts/validate_public_capabilities.py
+          python scripts/check_kernel_package.py
+          python scripts/check_title_version_separation.py
+          python scripts/test_title_version_separation.py
+          python scripts/test_check_links.py
+          python scripts/check_public_stamps.py
+          python scripts/test_public_stamps.py
+          python scripts/update_capability_digest.py --check
+      - name: Commit result and retire temporary workflow
+        run: |
+          git config user.name "Lua H. Moon M. C."
+          git config user.email "luahelenammc@gmail.com"
+          git rm .github/workflows/tmp-chatwork-4-8-calibration-disclaimer.yml
+          git add -A
+          git commit -m "docs: release Chat-Work 4.8 calibration disclaimer"
+          git push origin HEAD:chat/chat-work-4-8-calibration-disclaimer-20260909
