@@ -1,10 +1,18 @@
 # MSL Changelog
 
+## 5.1 — Release coherence
+
+- Correctly numbers the already accepted formatting-continuity update under the repository's +0.1-per-material-update rule.
+- Keeps the MSL 5 semantic grammar unchanged while making the restored formatting contract part of the current 5.1 release identity.
+- Retires superseded live portable files from the active tree; MSL 5.0, MSL-4.4 and MSL-4.3 remain recoverable lineage through repository history.
+- Re-synchronizes canonical body, README, registry, package, fingerprint and public mirror around one current release.
+- This bookkeeping correction does not create another material update and therefore does not trigger 5.2.
+
 ## 5.0 corrective pass — Formatting continuity
 
 - Makes semantic quality and surface quality one explicit MSL contract.
 - Restores Markdown-native, no-fence-by-default, object dissolving, exceptional tables, vertical hygiene, human naming and one-H1 rules.
-- Retains MSL 5.0 as the single active authority; MSL-4.x remains recoverable lineage and no parallel version is introduced.
+- This accepted material update is released correctly as MSL 5.1 under the current +0.1 capability-version rule.
 
 ## 5.0 — Sovereign Semantic Passage
 
