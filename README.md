@@ -105,7 +105,7 @@ Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are public 
 - 🛫 [**Preflight**](portables/preflight/README.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them; current version **2.1**.
 - 👁️ [**Be My Eyes**](portables/be-my-eyes/README.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
 - 🔗 [**Connected Sources**](portables/connected-sources/README.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.1-public**. Its canonical semantic body remains in [`docs/CONNECTED_SOURCES.md`](docs/CONNECTED_SOURCES.md).
-- 🧱 [**Moon Source Language**](portables/msl/README.md) — structural grammar for governed semantic passage across sources, capabilities, interfaces and surfaces; current version **5.0**.
+- 🧱 [**Moon Source Language**](portables/msl/README.md) — structural grammar for governed semantic passage across sources, capabilities, interfaces and surfaces; current version **5.1**.
 - 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/README.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.7-public**.
 
 🗂️ [**Open the download hub**](DOWNLOADS.md) to browse readable surfaces, open canonical bodies or download the supported standalone packages.
