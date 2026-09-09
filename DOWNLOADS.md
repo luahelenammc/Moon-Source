@@ -30,6 +30,8 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 | [🧱 **Moon Source Language**](portables/msl/README.md) | [MSL_5_0.md](portables/msl/MSL_5_0.md#first-use) | Governing semantic passage across sources, capabilities, interfaces and surfaces | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-5.0.zip) |
 | [🔀 **Chat–Work Routing Protocol**](portables/chat-work/README.md) | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) | Object- and workload-routed Chat/Work/Codex execution | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
+The MSL 5.0 package carries the exact canonical body, including its explicit formatting contract; the README is a routing facade.
+
 > 🌱 **First time with Moon Source?** Start with [README.md#first-use](README.md#first-use). Each readable capability surface has a prominent **Start** route into the canonical body's embedded First use section. Every current standalone package still contains exactly the self-onboarding canonical body — not the README facade.
 
 The current Be My Eyes capability version is **1.0-public**. The current Connected Sources capability version is **1.1-public**. The current Chat–Work Routing Protocol version is **4.4-public**. It retains the model-neutral Intelligence Distillation Ladder and adds a connector-aware source transport contract for governing source/family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback, while preserving the V4 title, canonical filename and current MSL 5.0.
