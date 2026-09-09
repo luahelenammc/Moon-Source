@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-09-09 — Chat–Work 4.9 · auditable Decision Trace
+
+- Added a bounded Decision Trace for material higher-tier rulings: live alternatives, decisive comparison, material rejected paths, adversarial correction, falsifier or discriminating test, uncertainty and next action.
+- Kept the trace decision-bearing and auditable without requesting hidden chain-of-thought, private scratchpads or unavailable internal model state.
+- Advanced Chat–Work from 4.8 to 4.9 under the repository's +0.1 rule, preserving the stable V4 title and canonical filename; rebuilt the standalone package, registry fingerprint and mapped website mirror.
+
+## 2026-09-09 — Chat–Work 4.8 · calibration disclaimer
+
+- Added a dated calibration disclaimer allowing future economic guardrails to relax when frontier execution becomes materially cheaper or more efficient per verified useful delta, while preserving hard scope, stop and capability-floor invariants.
+- Kept the stable V4 title and canonical filename and recorded 4.8 as the independently versioned release state.
+
 ## 2026-09-09 — Preflight 2.1 dependency coherence
 
 - Updated Preflight's canonical MSL route from the retired 5.0 path to the current 5.1 path.

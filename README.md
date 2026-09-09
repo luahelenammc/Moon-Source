@@ -105,8 +105,8 @@ Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are public 
 - 🛫 [**Preflight**](portables/preflight/README.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them; current version **2.1**.
 - 👁️ [**Be My Eyes**](portables/be-my-eyes/README.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
 - 🔗 [**Connected Sources**](portables/connected-sources/README.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.1-public**. Its canonical semantic body remains in [`docs/CONNECTED_SOURCES.md`](docs/CONNECTED_SOURCES.md).
-- 🧱 [**Moon Source Language**](portables/msl/README.md) — structural grammar for governed semantic passage across sources, capabilities, interfaces and surfaces; current version **5.0**.
-- 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/README.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.7-public**.
+- 🧱 [**Moon Source Language**](portables/msl/README.md) — structural grammar for governed semantic passage across sources, capabilities, interfaces and surfaces; current version **5.1**.
+- 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/README.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, auditable Decision Trace for material higher-tier rulings, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.9**.
 
 🗂️ [**Open the download hub**](DOWNLOADS.md) to browse readable surfaces, open canonical bodies or download the supported standalone packages.
 
@@ -163,7 +163,7 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 - **2026-09-09 — Preflight:** Dependency-coherence release: updates the canonical MSL route from the superseded 5.0 path to current 5.1; Preflight method semantics are unchanged.
 - **2026-09-09 — Moon Source Setup:** Aligned active MSL references with the current 5.0 structural/context grammar without changing Moon Source Setup semantics or version.
 - **2026-09-09 — Moon Source Language:** Release-coherence correction: correctly numbers the accepted formatting-continuity update as 5.1, keeps the MSL 5 semantic grammar unchanged, and retires superseded live generations.
-- **2026-09-09 — Chat–Work Routing Protocol:** Released 4.8 with a minimal calibration disclaimer: distillation pressure may relax when frontier execution becomes materially cheaper or more efficient per verified useful delta, while hard scope, stop and capability-floor invariants remain.
+- **2026-09-09 — Chat–Work Routing Protocol:** Released 4.9 with a bounded auditable Decision Trace for material higher-tier rulings while preserving the privacy boundary against hidden chain-of-thought, private scratchpads and unavailable internal model state.
 - **2026-09-08 — Connected Sources:** Moved the canonical Connected Sources body to its structural home while preserving its 1.1-public standalone distribution.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
@@ -191,9 +191,9 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 ## Current baseline
 
-Public architecture baseline: **2026-08-16**. Additive public capabilities, operational hardening and licensing updates continued through **2026-09-08**; Preflight advanced to **V2**, Be My Eyes was promoted as **1.0-public**, Connected Sources was established as a structural crown jewel at its canonical docs path, and the public registry became unified schema **2.1** while Chat–Work routing remains the tri-surface **V4** protocol.
+Public architecture baseline: **2026-08-16**. Additive public capabilities, operational hardening and licensing updates continued through **2026-09-09**; Preflight advanced to **2.1**, Be My Eyes remains **1.0-public**, Connected Sources remains a structural crown jewel at its canonical docs path, and the public registry is unified schema **2.0** while Chat–Work routing remains the tri-surface **V4** protocol.
 
-Current structural grammar: **Moon Source Language**, version **5.0**. Current standalone distributions: **Moon Source Setup** (version **3.1**), **Preflight** (version **2.1**), **Be My Eyes** (version **1.0-public**), **Connected Sources** (version **1.1-public**), **Moon Source Language** (version **5.0**) and **Chat–Work Routing Protocol** (version **4.4-public**). This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
+Current structural grammar: **Moon Source Language**, version **5.1**. Current standalone distributions: **Moon Source Setup** (version **3.1**), **Preflight** (version **2.1**), **Be My Eyes** (version **1.0-public**), **Connected Sources** (version **1.1-public**), **Moon Source Language** (version **5.1**) and **Chat–Work Routing Protocol** (version **4.9**). This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
 
