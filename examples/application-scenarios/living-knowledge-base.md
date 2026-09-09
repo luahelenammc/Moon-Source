@@ -12,7 +12,7 @@ A single mega-summary flattens repository, document and conversation responsibil
 
 ## Moon Source reading of the field
 
-Use Connected Sources to map the source substrate, jurisdiction, retrieval scope, freshness and mutation authority. Use Source Hygiene to identify duplicated summaries and orphaned decisions. Use Operational Reliability for read-only diagnosis, bounded writes, receipts and recovery. Use MSL 4.3 when a packet or registry is actually needed.
+Use Connected Sources to map the source substrate, jurisdiction, retrieval scope, freshness and mutation authority. Use Source Hygiene to identify duplicated summaries and orphaned decisions. Use Operational Reliability for read-only diagnosis, bounded writes, receipts and recovery. Use MSL 5.0 when a packet or registry is actually needed.
 
 ## Relevant components and portables
 
@@ -20,7 +20,7 @@ Use Connected Sources to map the source substrate, jurisdiction, retrieval scope
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for staleness and duplication.
 - [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) for safe operation and readback.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for facet-level ownership.
-- [MSL 4.3](../../portables/msl/MSL_4_3.md) for a bounded registry or continuity packet.
+- [MSL 5.0](../../portables/msl/MSL_5_0.md) for a bounded registry or continuity packet.
 
 ## Possible smallest materialization
 

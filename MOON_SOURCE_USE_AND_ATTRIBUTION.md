@@ -1,6 +1,6 @@
 # 🌙 Moon Source Use & Attribution
 
-## Repository footer governance · MSL 4.3
+## Repository footer governance · MSL 5.0
 
 - **canonical repository:** https://github.com/luahelenammc/Moon-Source
 - **canonical path:** `MOON_SOURCE_USE_AND_ATTRIBUTION.md`
