@@ -19,7 +19,7 @@ Use the Field-to-Form diagnostic to materialize only what the network repeatedly
 - [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for proportional materialization.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for network ownership.
 - [Credits & Attribution Ops](../../docs/CREDITS_ATTRIBUTION_OPS.md) for lineage and permissions.
-- [MSL 5.0](../../portables/msl/MSL_5_0.md) for packets, handoffs and archives.
+- [MSL 5.0](../../portables/msl/MSL_5_1.md) for packets, handoffs and archives.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for bounded review as the corpus grows.
 
 ## Possible smallest materialization

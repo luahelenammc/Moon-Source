@@ -73,7 +73,7 @@ System:
 [paste project docs, folder layout, workflow, AI setup or knowledge-base vocabulary]
 ```
 
-Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when the translation exposes overloaded roles, [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when intellectual material risks losing identity, lineage, custody or transformation history, and [Architecture](../ARCHITECTURE.md) when it exposes a missing field or authority decision. Use [Moon Source Language](../portables/msl/MSL_5_0.md) only when a structural materialization is warranted.
+Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when the translation exposes overloaded roles, [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when intellectual material risks losing identity, lineage, custody or transformation history, and [Architecture](../ARCHITECTURE.md) when it exposes a missing field or authority decision. Use [Moon Source Language](../portables/msl/MSL_5_1.md) only when a structural materialization is warranted.
 
 **Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
 

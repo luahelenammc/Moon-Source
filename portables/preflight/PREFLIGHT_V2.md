@@ -4,7 +4,7 @@
 
 > **Humans should not have to prompt like machines.**
 
-**Version:** 2.0  
+**Version:** 2.1  
 **Status:** current public portable  
 **Public since:** 2026-08-23  
 **V2 rebase:** 2026-09-07  
@@ -25,7 +25,7 @@ The core principle is simple:
 
 Source authority, provenance, freshness, risk, destination, mutation scope and similar checks remain important when consequence makes them important. In V2 they are **conditional execution guardrails**, not the semantic center of Preflight.
 
-Preflight is a standalone public Moon Source portable. Its current public version is **2.0**. Its reconstruction core is independently usable without the rest of the repository. When the full Moon Source body is available, it may route to specialized components for consequence-sensitive governance. [Moon Source Setup](../setup/MOON_SOURCE_SETUP.md) specializes the same reconstruction principle for personal and project-context setup.
+Preflight is a standalone public Moon Source portable. Its current public version is **2.1**. Its reconstruction core is independently usable without the rest of the repository. When the full Moon Source body is available, it may route to specialized components for consequence-sensitive governance. [Moon Source Setup](../setup/MOON_SOURCE_SETUP.md) specializes the same reconstruction principle for personal and project-context setup.
 
 
 ## First use
@@ -536,7 +536,7 @@ Preflight fails when it becomes:
 | [Source Hygiene](../../docs/SOURCE_HYGIENE.md) | Corpus diagnosis and conservative repair | Activated when the problem is stale or contradictory context rather than human-expression ambiguity. |
 | [Credits & Attribution Ops](../../docs/CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage and content custody | Activated when material identity, permission or derivative lineage matters. |
 | [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) | Bounded execution reliability and receipts | Activated when state-changing execution earns operational safeguards. |
-| [Moon Source Language](../msl/MSL_5_0.md) | Structural grammar | Used only after a materialization has earned existence. |
+| [Moon Source Language](../msl/MSL_5_1.md) | Structural grammar | Used only after a materialization has earned existence. |
 
 Preflight is upstream of these components only in the sense that it reconstructs **what the human is asking for**. It does not become their authority.
 

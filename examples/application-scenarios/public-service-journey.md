@@ -21,7 +21,7 @@ Begin with Preflight and the Field-to-Form diagnostic: identify the citizen-faci
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for departmental jurisdiction.
 - [Connected Sources](../../docs/CONNECTED_SOURCES.md) for provenance and targeted retrieval.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for stale and duplicated material.
-- [MSL 5.0](../../portables/msl/MSL_5_0.md) for a handoff or status packet.
+- [MSL 5.0](../../portables/msl/MSL_5_1.md) for a handoff or status packet.
 
 ## Possible smallest materialization
 

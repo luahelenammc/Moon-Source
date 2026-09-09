@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-09 — Preflight 2.1 dependency coherence
+
+- Updated Preflight's canonical MSL route from the retired 5.0 path to the current 5.1 path.
+- Kept Preflight reconstruction semantics unchanged.
+- Advanced Preflight from 2.0 to 2.1 because the canonical body changed under the repository +0.1 rule; rebuilt its stable V2 package and fingerprint.
+
 ## 2026-09-09 — MSL 5.1 release coherence
 
 - Correctly numbered the accepted MSL formatting-continuity update as 5.1 under the +0.1-per-material-update rule.

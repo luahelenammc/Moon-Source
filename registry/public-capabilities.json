@@ -289,11 +289,11 @@
       "canonical_path": "portables/preflight/PREFLIGHT_V2.md",
       "function": "Reconstruct a human's intended task from ordinary, incomplete, conversational or self-correcting expression before execution, activating heavier authority, freshness, provenance, safety, destination, mutation and readback guardrails only when consequence requires them",
       "claim_ceiling": "Published human-intent reconstruction portable; not mind-reading, scientific validation, uniqueness, adoption, measured improvement, universal superiority or independent validation",
-      "version": "2.0",
+      "version": "2.1",
       "versioning_mode": "independent_public_capability_version",
       "public_created_on": "2026-08-23",
       "last_material_update_on": "2026-09-09",
-      "last_material_update_summary": "Aligned active MSL references with the current 5.0 structural/context grammar without changing Preflight semantics or version.",
+      "last_material_update_summary": "Dependency-coherence release: updates the canonical MSL route from the superseded 5.0 path to current 5.1; Preflight method semantics are unchanged.",
       "dependencies": [],
       "freshness": "general interpretation method; external facts and product-specific routes remain date-sensitive when a reconstructed task requires them",
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
@@ -311,7 +311,7 @@
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip",
         "mirror_path": "moonsource/downloads/PREFLIGHT_V2.md",
         "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/PREFLIGHT_V2.md",
-        "canonical_sha256": "f88c171c6064481ae7ee77cecf7b7fce55f81f86cdea040e079d2b0d5640f624",
+        "canonical_sha256": "b0bc8d5ee02fc5fcd49b2fd62d2c8dd86ac6742037df9e2c9b12d029e03b5459",
         "embedded_first_use": true
       }
     },
