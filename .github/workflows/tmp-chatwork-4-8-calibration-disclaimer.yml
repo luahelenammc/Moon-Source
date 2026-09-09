@@ -91,17 +91,24 @@ jobs:
           PY
       - name: Refresh digest
         run: python scripts/update_capability_digest.py
-      - name: Validate
-        run: |
-          python scripts/check_links.py
-          python scripts/validate_public_capabilities.py
-          python scripts/check_kernel_package.py
-          python scripts/check_title_version_separation.py
-          python scripts/test_title_version_separation.py
-          python scripts/test_check_links.py
-          python scripts/check_public_stamps.py
-          python scripts/test_public_stamps.py
-          python scripts/update_capability_digest.py --check
+      - name: Check links
+        run: python scripts/check_links.py
+      - name: Validate public capabilities
+        run: python scripts/validate_public_capabilities.py
+      - name: Check kernel package
+        run: python scripts/check_kernel_package.py
+      - name: Check title-version separation
+        run: python scripts/check_title_version_separation.py
+      - name: Test title-version separation
+        run: python scripts/test_title_version_separation.py
+      - name: Test links
+        run: python scripts/test_check_links.py
+      - name: Check public stamps
+        run: python scripts/check_public_stamps.py
+      - name: Test public stamps
+        run: python scripts/test_public_stamps.py
+      - name: Check capability digest
+        run: python scripts/update_capability_digest.py --check
       - name: Commit result and retire temporary workflow
         run: |
           git config user.name "Lua H. Moon M. C."
