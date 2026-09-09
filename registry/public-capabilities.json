@@ -195,7 +195,7 @@
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-5.0.zip",
         "mirror_path": "moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_5_0.md",
         "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_5_0.md",
-        "canonical_sha256": "8d08e525ddf75c811c164594792f392beffa00e0b375a5d883f2275e7f2061f4",
+        "canonical_sha256": "e8d000e3a2b517b50a46417318964e4bcebf32edb3e5ecc3b9ef7cc8d12fd061",
         "embedded_first_use": true
       }
     },
