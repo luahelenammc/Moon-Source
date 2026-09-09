@@ -1,34 +1,36 @@
-# 🧱 Moon Source Language
+# 🧱 Moon Source Language 5.0
 
-**A structural grammar for turning recurring context into proportionate sources, handoffs, packets, protocols, registries and archives.**
+**Sovereign Semantic Passage** — a structural language for moving situated context across sources, systems and surfaces without losing meaning, provenance, authority or boundaries.
 
-[▶️ Start here](MSL_4_3.md#first-use) · [⬇️ Download package](../../downloads/moon-source-language-4.3.zip) · [🌙 Moon Source](../../README.md)
+[▶️ Start here](MSL_5_0.md#first-use) · [⬇️ Download package](../../downloads/moon-source-language-5.0.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 
-- recurring context needs a durable form instead of another chat-only explanation;
-- several responsibilities need clear ownership and routing;
-- a handoff, packet, protocol, registry or archive needs disciplined structure;
-- you need a shared grammar without forcing every field into the same template.
+- context needs to travel between a source and a recipient;
+- a summary risks losing authority, uncertainty or scope;
+- a bridge, handoff, packet, profile or public surface needs clear boundaries;
+- a capability is wider than the role or headline currently used to describe it;
+- a donor mechanism may be generalizable, but the original case must remain private;
+- a release needs one coherent version across body, registry, package, hash and mirror.
 
 ## What it does
 
-Moon Source Language (MSL) is the public structural grammar used to materialize context proportionately while preserving continuity, provenance and active-state hygiene.
+MSL 5.0 helps identify the field, locate the sovereign source/body, choose a proportionate form, define the passage contract and read back what the recipient is likely to infer.
 
 ## What it does not do
 
-MSL is not the whole Moon Source architecture, a universal ontology or a runtime. It helps structure material after the field and responsibility are sufficiently understood.
+MSL is not executable code, a runtime, a connector, a universal ontology, a product or proof of external adoption. It does not grant access or mutation authority.
 
 ## Current identity
 
-- **Version:** 4.3
+- **Version:** 5.0
 - **Status:** current · supported standalone distribution
-- **Canonical body:** [`portables/msl/MSL_4_3.md`](MSL_4_3.md)
-- **Package:** [`downloads/moon-source-language-4.3.zip`](../../downloads/moon-source-language-4.3.zip)
-- **Local lineage:** [`CHANGELOG.md`](CHANGELOG.md)
-- **License:** CC BY 4.0 · see [Licensing](../../LICENSING.md)
+- **Canonical body:** [`MSL_5_0.md`](MSL_5_0.md)
+- **Previous lineage:** [`MSL_4_3.md`](MSL_4_3.md)
+- **Package:** [`moon-source-language-5.0.zip`](../../downloads/moon-source-language-5.0.zip)
+- **License:** [CC BY 4.0](../../LICENSING.md)
 
-> **Authority:** This README is the human-facing presentation surface. [`MSL_4_3.md`](MSL_4_3.md) remains the semantic authority and contains the operative **First use** instructions.
+The canonical body contains the operative First use section. This README is a readable routing surface, not a second source of truth.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

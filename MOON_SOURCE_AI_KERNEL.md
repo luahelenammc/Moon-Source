@@ -44,7 +44,7 @@ Use each file for the responsibility it actually owns:
 - `docs/SIGNAL_CALIBRATION.md` — bounded qualitative calibration for weak, convergent or ambiguous signals and working inference.
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router, currently version 3.1.
-- `portables/msl/MSL_4_3.md` — current public structural grammar for materialization. MSL remains 4.3.
+- `portables/msl/MSL_5_0.md` — current public structural grammar for semantic passage and materialization. MSL is currently 5.0.
 - `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md` — current 4.4-public closed-loop ChatGPT surface/model/reasoning and source-transport routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
 - `registry/PUBLIC_CAPABILITIES.md` — human-readable unified public capability identities, roles, versions, status and standalone-distribution routes.
 - `registry/public-capabilities.json` — machine-readable one-record-per-capability registry; standalone distribution is nested metadata and does not create a second semantic inventory.
@@ -71,7 +71,7 @@ When two files appear to conflict, do not flatten them together. First ask wheth
 - Connected Sources → `docs/CONNECTED_SOURCES.md`
 - Be My Eyes → `portables/be-my-eyes/BE_MY_EYES.md`
 - Chat–Work Routing Protocol → `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`
-- Moon Source Language → `portables/msl/MSL_4_3.md`
+- Moon Source Language → `portables/msl/MSL_5_0.md`
 - Moon Source Setup → `portables/setup/MOON_SOURCE_SETUP.md`
 - Preflight → `portables/preflight/PREFLIGHT_V2.md`
 <!-- MOON-SOURCE-CANONICAL-AUTHORITY:END -->
@@ -96,7 +96,7 @@ Load:
 
 Optionally load:
 - `ARCHITECTURE.md` if the user's context is already distributed across several sources or roles.
-- `portables/msl/MSL_4_3.md` only if the setup needs a custom governed structure beyond the standalone distribution itself.
+- `portables/msl/MSL_5_0.md` only if the setup needs a custom governed structure beyond the standalone distribution itself.
 
 Do not load the whole architecture merely to run Setup.
 
@@ -108,7 +108,7 @@ Load:
 Then load only as needed:
 - `docs/RESPONSIBILITY_MAP.md` for ownership/authority collisions.
 - `docs/TERMINOLOGY.md` for translation or unclear vocabulary.
-- `portables/msl/MSL_4_3.md` once a materialization actually earns existence.
+- `portables/msl/MSL_5_0.md` once a materialization actually earns existence.
 
 The form comes from the field. Do not begin by choosing a document type.
 
@@ -117,7 +117,7 @@ The form comes from the field. Do not begin by choosing a document type.
 Load:
 - `ARCHITECTURE.md#field-to-form`
 - `docs/RESPONSIBILITY_MAP.md`
-- `portables/msl/MSL_4_3.md`
+- `portables/msl/MSL_5_0.md`
 
 Choose the smallest form that creates a real capability. Do not generate a source, skill, handoff, protocol, registry, bridge and archive just because those categories exist.
 
@@ -200,7 +200,7 @@ Do not infer permission or ownership from public availability, attribution or mo
 
 Load:
 - `docs/RESPONSIBILITY_MAP.md`
-- `portables/msl/MSL_4_3.md`
+- `portables/msl/MSL_5_0.md`
 
 Determine whether the transfer is actually a handoff, packet/capsule, bridge or another form. Transport does not automatically inherit source authority.
 

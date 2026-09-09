@@ -20,7 +20,7 @@ Moon Source is disclosed through existing evidence only. This repository organiz
 
 - Moon Source is a public context-architecture method and reference architecture. Evidence: PUBLIC_ARTIFACT, PUBLIC_REPOSITORY.
 - Moon Source includes independently readable public portables for setup, human-intent reconstruction, contextual scene reading, connected sources, adaptive structural grammar and Chat–Work routing. Evidence: PUBLIC_ARTIFACT.
-- Moon Source Language is the current public structural standard in this repository, at version 4.3. Evidence: PUBLIC_ARTIFACT, INTERNAL_SOURCE_USED.
+- Moon Source Language is the current public structural/context language in this repository, at version 5.0. Evidence: PUBLIC_ARTIFACT, INTERNAL_SOURCE_USED. MSL 5.0 is not an executable language, universal ontology, runtime or adoption claim.
 - The repository is a public versioning and reference body. Evidence: PUBLIC_REPOSITORY.
 - The public body includes **Preflight**, currently version 2.0, a documented human-intent reconstruction method that converts ordinary, incomplete, conversational or self-correcting expression into a faithful working task before execution and activates heavier source/freshness/provenance/risk/destination/mutation guardrails only when consequence materially requires them. Evidence: PUBLIC_ARTIFACT, PUBLIC_REPOSITORY. This establishes the existence and inspectability of the method, not mind-reading, scientific validation, uniqueness, universal superiority, external adoption, independently measured prompting improvement or downstream impact.
 - A bounded public procedural-projection method exists. Evidence: PUBLIC_ARTIFACT; this does not establish automatic Source ↔ Skill synchronization or native execution in every environment.

@@ -1,14 +1,19 @@
 # MSL Changelog
 
-## 4.3 — current public portable
+## 5.0 — Sovereign Semantic Passage
 
-- Preserves adaptive morphology and Field Profile.
-- Preserves Markdown-native structural defaults.
-- Preserves preventive source hygiene and continuous active-state hygiene.
-- Keeps public terminology, packets, ledgers, archives and runbooks as distinct forms.
-- Does not promote jurisdiction, skills, bridges or runtime into a new MSL major version.
+- Promotes MSL from an adaptive form grammar to a grammar of governed semantic passage.
+- Adds source/body sovereignty and the distinction between canonical bodies and derived surfaces.
+- Adds semantic sufficiency, capability-field reasoning and orthogonal state axes.
+- Adds preserved-interface contracts for bridges, handoffs and cross-system passage.
+- Adds donor-to-method and donor-to-capability tests for sanitized generalization.
+- Separates traceability from formality and adds reception/readback before transfer.
+- Makes public release coherence a version law across body, metadata, registry, packages, hashes, links and mirrors.
+- Preserves MSL-4.3 as the previous public portable and MSL-4.4 as internal lineage.
 
-For the cross-component authorship, lineage, adaptation and reuse operation, see the [Credits & Attribution Ops Protocol](../../docs/CREDITS_ATTRIBUTION_OPS.md).
+MSL remains a structural/context language, not executable code, a universal schema, a runtime or an AI product.
+
+For authorship, lineage, adaptation and reuse, see the [Credits & Attribution Ops Protocol](../../docs/CREDITS_ATTRIBUTION_OPS.md).
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

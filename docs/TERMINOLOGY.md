@@ -24,7 +24,7 @@ Internal names are useful for continuity, but a public reader should be able to 
 | Source hygiene | Maintenance of active truth, freshness, duplication, contradiction and archive boundaries | Not a claim of perfect automation |
 | Signal calibration | Using incomplete or ambiguous cues proportionally without promoting them to fact or discarding them because certainty is unavailable | Not proof of motive, diagnosis or causality |
 | Working inference | The current best-supported interpretation kept explicitly distinct from established fact | Not a public claim or a substitute for domain evidence standards |
-| MSL | Adaptive structural grammar | Current public version is 4.3 |
+| MSL | Structural/context grammar for governed semantic passage | Current public version is 5.0 |
 | Runtime | Callable operating layer | Use only where real executable capacity is evidenced |
 | Public surface | Human-facing portal or distribution layer | Does not replace the source |
 | Archive | Preserved historical material | Historical does not mean current |
@@ -73,7 +73,7 @@ System:
 [paste project docs, folder layout, workflow, AI setup or knowledge-base vocabulary]
 ```
 
-Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when the translation exposes overloaded roles, [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when intellectual material risks losing identity, lineage, custody or transformation history, and [Architecture](../ARCHITECTURE.md) when it exposes a missing field or authority decision. Use [Moon Source Language](../portables/msl/MSL_4_3.md) only when a structural materialization is warranted.
+Use the [Responsibility Map](RESPONSIBILITY_MAP.md) when the translation exposes overloaded roles, [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) when intellectual material risks losing identity, lineage, custody or transformation history, and [Architecture](../ARCHITECTURE.md) when it exposes a missing field or authority decision. Use [Moon Source Language](../portables/msl/MSL_5_0.md) only when a structural materialization is warranted.
 
 **Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
 
