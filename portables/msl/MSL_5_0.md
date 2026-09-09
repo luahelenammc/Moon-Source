@@ -1,6 +1,6 @@
-# Moon Source Language 5.0 — Sovereign Semantic Passage
+# Moon Source Language
 
-*A structural language for moving situated context across sources, systems and surfaces without losing its meaning or authority.*
+*MSL 5.0 — Sovereign Semantic Passage: a structural language for moving situated context across sources, systems and surfaces without losing its meaning or authority.*
 
 **Status:** public portable  
 **Language:** English  
