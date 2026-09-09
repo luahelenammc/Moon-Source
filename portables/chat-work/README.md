@@ -21,7 +21,7 @@ It does not itself create access to a model, tool, connector or execution surfac
 
 ## Current identity
 
-- **Version:** 4.7-public
+- **Version:** 4.8
 - **Protocol family:** V4
 - **Status:** current · supported standalone distribution
 - **Canonical body:** [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
