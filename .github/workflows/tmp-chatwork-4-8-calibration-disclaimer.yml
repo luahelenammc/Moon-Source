@@ -91,6 +91,14 @@ jobs:
           PY
       - name: Refresh digest
         run: python scripts/update_capability_digest.py
+      - name: Preserve candidate and retire temporary workflow
+        run: |
+          git config user.name "Lua H. Moon M. C."
+          git config user.email "luahelenammc@gmail.com"
+          git rm .github/workflows/tmp-chatwork-4-8-calibration-disclaimer.yml
+          git add -A
+          git commit -m "docs: stage Chat-Work 4.8 calibration disclaimer"
+          git push origin HEAD:chat/chat-work-4-8-calibration-disclaimer-20260909
       - name: Check links
         run: python scripts/check_links.py
       - name: Validate public capabilities
@@ -109,11 +117,3 @@ jobs:
         run: python scripts/test_public_stamps.py
       - name: Check capability digest
         run: python scripts/update_capability_digest.py --check
-      - name: Commit result and retire temporary workflow
-        run: |
-          git config user.name "Lua H. Moon M. C."
-          git config user.email "luahelenammc@gmail.com"
-          git rm .github/workflows/tmp-chatwork-4-8-calibration-disclaimer.yml
-          git add -A
-          git commit -m "docs: release Chat-Work 4.8 calibration disclaimer"
-          git push origin HEAD:chat/chat-work-4-8-calibration-disclaimer-20260909
