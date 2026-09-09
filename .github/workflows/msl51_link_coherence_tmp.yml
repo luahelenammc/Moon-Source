@@ -1,0 +1,59 @@
+name: Temporary MSL 5.1 link coherence
+
+on:
+  push:
+    branches:
+      - chat/msl-5.1-link-coherence-20260909
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repair stale current MSL routes
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          targets = [
+              'docs/EXISTING_IMPLEMENTATIONS.md',
+              'docs/RESPONSIBILITY_MAP.md',
+              'docs/TERMINOLOGY.md',
+              'examples/application-scenarios/third-sector-network-memory.md',
+              'examples/application-scenarios/audit-evidence-trail.md',
+              'examples/application-scenarios/health-care-continuity.md',
+              'examples/application-scenarios/public-service-journey.md',
+              'examples/application-scenarios/living-knowledge-base.md',
+              'examples/application-scenarios/README.md',
+              'examples/application-scenarios/people-learning-onboarding.md',
+              'portables/preflight/PREFLIGHT_V2.md',
+          ]
+          for name in targets:
+              p = Path(name)
+              text = p.read_text(encoding='utf-8')
+              new = text.replace('MSL_5_0.md', 'MSL_5_1.md')
+              if new == text:
+                  raise SystemExit(f'expected stale MSL route not found: {name}')
+              p.write_text(new, encoding='utf-8', newline='\n')
+          PY
+
+      - name: Verify links and capability registry
+        run: |
+          python scripts/check_links.py
+          python scripts/validate_public_capabilities.py
+          python scripts/update_capability_digest.py --check
+
+      - name: Commit repair and remove temporary workflow
+        shell: bash
+        run: |
+          rm .github/workflows/msl51_link_coherence_tmp.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Repair stale MSL 5.1 routes [skip ci]"
+          git push origin HEAD
