@@ -17,8 +17,8 @@ They should not be collapsed into one number.
 ## Current baseline
 
 - Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to bounded-exhaustiveness subversion 4.7-public on 2026-09-09.
-- Current structural grammar: Moon Source Language, version 5.0.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.0) and Chat–Work Routing Protocol (version 4.7-public).
+- Current structural grammar: Moon Source Language, version 5.1.
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 4.7-public).
 - All fourteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry.
 - Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -60,6 +60,12 @@ Public release coherence requires the canonical body, readable README, registry,
 ### MSL 5.0 corrective postflight — formatting continuity
 
 The corrective postflight pass restores formatting continuity as an explicit part of the same MSL 5.0 grammar: Markdown-native/no-fence defaults, object dissolving, literal-only fences with real syntax labels, exceptional tables, vertical hygiene, human naming and one-H1 discipline. It is a corrective content release within 5.0, not a new semantic generation or parallel 5.0.x authority; the canonical path and filename remain `portables/msl/MSL_5_0.md`.
+
+### MSL 5.1 release-coherence correction — 2026-09-09
+
+MSL 5.1 is the correctly numbered release state of the already accepted MSL 5.0 formatting-continuity update. Repository policy requires every accepted material update to an independently versioned capability body or operative contract to advance that capability by +0.1. The formatting-continuity pass changed the MSL canonical body and operative formatting contract, so that accepted delta earns 5.1.
+
+The 5.1 promotion is bookkeeping/release coherence, not another semantic grammar change: it therefore does not recursively trigger 5.2. The active tree exposes only `portables/msl/MSL_5_1.md`; MSL 5.0, internal 4.4 and public 4.3 remain recoverable lineage through repository history rather than parallel live portables.
 
 ## Historical MSL decision
 
