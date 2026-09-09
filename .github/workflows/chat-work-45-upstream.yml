@@ -25,6 +25,11 @@ jobs:
       - name: Refresh capability digest
         run: python scripts/update_capability_digest.py
 
+      - name: Remove one-shot release machinery before validation
+        run: |
+          rm .github/workflows/chat-work-45-upstream.yml
+          rm .github/scripts/release_chat_work_45.py
+
       - name: Validate release invariants
         run: |
           python scripts/validate_public_capabilities.py
@@ -32,10 +37,8 @@ jobs:
           python scripts/check_public_stamps.py
           python scripts/check_links.py
 
-      - name: Commit release to branch and remove one-shot machinery
+      - name: Commit release to branch
         run: |
-          rm .github/workflows/chat-work-45-upstream.yml
-          rm .github/scripts/release_chat_work_45.py
           git config user.name "moon-source-release-bot"
           git config user.email "actions@users.noreply.github.com"
           git add -A
