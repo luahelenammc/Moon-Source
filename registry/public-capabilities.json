@@ -52,8 +52,8 @@
       "version": "4.4-public",
       "versioning_mode": "independent_public_capability_version",
       "public_created_on": "2026-09-06",
-      "last_material_update_on": "2026-09-08",
-      "last_material_update_summary": "Embedded self-onboarding in the canonical body and refreshed the supported distribution without changing method semantics or version.",
+      "last_material_update_on": "2026-09-09",
+      "last_material_update_summary": "Aligned the MSL dependency pointer with the current 5.0 structural/context grammar without changing Chat–Work semantics or version.",
       "dependencies": [
         "Uses MSL-5.0 terminology; product and model calibration is date-sensitive",
         "Source transport records governing source or family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback; a locator is not authority",
@@ -75,7 +75,7 @@
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip",
         "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_4.md",
         "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_4.md",
-        "canonical_sha256": "75e90ddb541d765f6503da077ff874cac7cd6364400c79200094408eb2a0ea59",
+        "canonical_sha256": "a06174d43b64e6cec56d47b6b708e7d356ab5274740f411972ce24f771dd97cc",
         "embedded_first_use": true
       }
     },
@@ -210,8 +210,8 @@
       "version": "3.1",
       "versioning_mode": "independent_public_capability_version",
       "public_created_on": "2026-08-16",
-      "last_material_update_on": "2026-09-08",
-      "last_material_update_summary": "Embedded self-onboarding in the canonical body and refreshed the supported distribution without changing Setup semantics or version.",
+      "last_material_update_on": "2026-09-09",
+      "last_material_update_summary": "Aligned active MSL references with the current 5.0 structural/context grammar without changing Moon Source Setup semantics or version.",
       "dependencies": [],
       "freshness": "general; review wording when the public setup changes; source-substrate and product routes remain capability- and date-sensitive",
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
@@ -229,7 +229,7 @@
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip",
         "mirror_path": "moonsource/downloads/MOON_SOURCE_SETUP.md",
         "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_SETUP.md",
-        "canonical_sha256": "218193f4e937b954d337e123e5f15208456113008cbe8c34363e7876aaab9b97",
+        "canonical_sha256": "83a8afe0a90823704fbb78018e2730d79a8764438fa03298c7049b63c0e3d673",
         "embedded_first_use": true
       }
     },
@@ -292,8 +292,8 @@
       "version": "2.0",
       "versioning_mode": "independent_public_capability_version",
       "public_created_on": "2026-08-23",
-      "last_material_update_on": "2026-09-08",
-      "last_material_update_summary": "Embedded self-onboarding in the canonical body and refreshed the supported distribution without changing Preflight semantics or version.",
+      "last_material_update_on": "2026-09-09",
+      "last_material_update_summary": "Aligned active MSL references with the current 5.0 structural/context grammar without changing Preflight semantics or version.",
       "dependencies": [],
       "freshness": "general interpretation method; external facts and product-specific routes remain date-sensitive when a reconstructed task requires them",
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
@@ -311,7 +311,7 @@
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip",
         "mirror_path": "moonsource/downloads/PREFLIGHT_V2.md",
         "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/PREFLIGHT_V2.md",
-        "canonical_sha256": "17d604bdf8df9f758b6a07bafec715b5f9e96e824a6a29ecb6e21ad5202a3ed4",
+        "canonical_sha256": "f88c171c6064481ae7ee77cecf7b7fce55f81f86cdea040e079d2b0d5640f624",
         "embedded_first_use": true
       }
     },

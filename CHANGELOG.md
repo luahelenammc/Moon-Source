@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-09 — MSL 5.0 reference coherence
+
+- Aligned active architecture, setup, Preflight, Chat–Work, examples and mirror-policy references with the current MSL 5.0 release.
+- Refreshed exact standalone package bytes and registry fingerprints without changing Setup, Preflight or Chat–Work versions.
+
 ## 2026-09-09 — Moon Source Language 5.0 · Sovereign Semantic Passage
 
 - Promoted MSL from an adaptive form grammar to a grammar of governed semantic passage across source/bodies, capabilities, surfaces, interfaces and continuity.

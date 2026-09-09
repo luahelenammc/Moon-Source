@@ -20,7 +20,7 @@ Use Evidence & Claims to set the ceiling for each public statement. Use Signal C
 - [Signal Calibration](../../docs/SIGNAL_CALIBRATION.md) for bounded interpretation.
 - [Credits & Attribution Ops](../../docs/CREDITS_ATTRIBUTION_OPS.md) for lineage and custody.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for provenance and version diagnosis.
-- [MSL 4.3](../../portables/msl/MSL_4_3.md) for a compact evidence ledger.
+- [MSL 5.0](../../portables/msl/MSL_5_0.md) for a compact evidence ledger.
 
 ## Possible smallest materialization
 
