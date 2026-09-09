@@ -33,7 +33,7 @@ ACTIVE_AUTHORITIES = (
     "registry/PUBLIC_CAPABILITIES.md",
     "docs/CONNECTED_SOURCES.md",
     "portables/setup/MOON_SOURCE_SETUP.md",
-    "portables/msl/MSL_4_3.md",
+    "portables/msl/MSL_5_1.md",
     "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md",
 )
 
