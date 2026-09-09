@@ -57,6 +57,7 @@ jobs:
       - run: python scripts/validate_public_capabilities.py
       - run: python scripts/check_kernel_package.py
       - run: python scripts/check_title_version_separation.py
+      - run: python scripts/check_version_visibility.py
       - run: python scripts/test_title_version_separation.py
       - run: python scripts/test_check_links.py
       - run: python scripts/check_public_stamps.py
