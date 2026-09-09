@@ -172,7 +172,7 @@
       "architectural_role": "structural_grammar",
       "canonical_path": "portables/msl/MSL_5_1.md",
       "function": "Govern semantic passage from situated context to sources, capabilities, surfaces, interfaces and continuity while preserving meaning, provenance, authority and boundaries",
-      "claim_ceiling": "Published MSL 5.0 structural/context language; not executable code, universal ontology, runtime, product or proof of external adoption",
+      "claim_ceiling": "Published MSL 5.1 structural/context language; not executable code, universal ontology, runtime, product or proof of external adoption",
       "version": "5.1",
       "versioning_mode": "independent_public_capability_version",
       "public_created_on": "2026-08-16",
