@@ -16,9 +16,9 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06 and its IDL/source-transport subversions to 4.4-public on 2026-09-07.
+- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to bounded-exhaustiveness subversion 4.5-public on 2026-09-09.
 - Current structural grammar: Moon Source Language, version 5.0.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.0) and Chat–Work Routing Protocol (version 4.4-public).
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.0) and Chat–Work Routing Protocol (version 4.5-public).
 - All fourteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry.
 - Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -127,6 +127,14 @@ Chat–Work V4.4-public is a **material additive-and-superseding portable releas
 The superseded 4.3-public portable remains recoverable through Git history; the live repository and website expose one current V4 file and one current mirror. The release does not claim an OpenAI policy, benchmark, automatic source synchronization, native skill advancement, guaranteed savings/quality or product entitlement.
 
 MSL remains 4.3 because the structural grammar did not change.
+
+### Chat–Work V4.5-public release — 2026-09-09
+
+Chat–Work V4.5-public is a **material additive-and-superseding portable release**, not an MSL grammar change. It retains the V4.4 connector-aware source transport contract and adds a Bounded Exhaustiveness Guard to the Intelligence Distillation Ladder so open-ended completeness language is compiled into explicit coverage ceilings, stop conditions and scope-expansion rules before expensive sustained or frontier execution.
+
+The release also adds `scope_amplification_failure` and a constrain-before-escalate recovery path. The Astra behavior that motivated the calibration is retained only as dated anecdotal field evidence, not as a benchmark, universal model property or fixed cost claim. The public human title remains **Chat–Work Routing Protocol** and the canonical filename remains `CHAT_WORK_ROUTING_PROTOCOL_V4.md`; 4.5-public is release state, not title identity.
+
+The superseded 4.4-public portable remains recoverable through Git history. MSL remains 5.0 because this release changes the routing/distillation protocol, not the structural passage grammar.
 
 ## Future versions
 ### Public capability registry rebase — 2026-09-08

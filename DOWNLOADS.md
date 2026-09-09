@@ -34,7 +34,7 @@ The MSL 5.0 package carries the exact canonical body, including its explicit for
 
 > 🌱 **First time with Moon Source?** Start with [README.md#first-use](README.md#first-use). Each readable capability surface has a prominent **Start** route into the canonical body's embedded First use section. Every current standalone package still contains exactly the self-onboarding canonical body — not the README facade.
 
-The current Be My Eyes capability version is **1.0-public**. The current Connected Sources capability version is **1.1-public**. The current Chat–Work Routing Protocol version is **4.4-public**. It retains the model-neutral Intelligence Distillation Ladder and adds a connector-aware source transport contract for governing source/family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback, while preserving the V4 title, canonical filename and current MSL 5.0.
+The current Be My Eyes capability version is **1.0-public**. The current Connected Sources capability version is **1.1-public**. The current Chat–Work Routing Protocol version is **4.5-public**. It retains the model-neutral Intelligence Distillation Ladder and connector-aware source transport, and now adds bounded exhaustiveness plus scope-amplification recovery, while preserving the unversioned human title, V4 canonical filename and current MSL 5.0.
 
 GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each current standalone package contains its canonical body and the readable package surfaces required by that distribution; the canonical body carries the operative First use entry. Website copies are convenience mirrors, not separate semantic sources.
 
@@ -91,7 +91,7 @@ Connected Sources remains the structural crown jewel at `docs/CONNECTED_SOURCES.
 - **Want AI to read what is happening between people, or predict how your message may land without pretending to read minds?** Download **Be My Eyes**.
 - **Need AI to return to current material across sessions or operate over governed connected sources?** Download **Connected Sources** (version **1.1-public**).
 - **Want the structural grammar?** Download **Moon Source Language** (version **5.0**).
-- **Want configurable Chat ↔ Work ↔ Codex routing?** Download **Chat–Work Routing Protocol** (version **4.4-public**).
+- **Want configurable Chat ↔ Work ↔ Codex routing?** Download **Chat–Work Routing Protocol** (version **4.5-public**).
 - **Need a bounded operational execution pattern?** Browse **Operational Devices** and **Operational Reliability**.
 - **Need to metabolize recurring failure?** Browse **Failure to Capability — Failure Foundry**.
 - **Want the synthetic browser reference?** Browse **Browser Console Device**; it is an experimental example, not a supported standalone distribution.
