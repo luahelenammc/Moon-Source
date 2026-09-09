@@ -75,7 +75,7 @@
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip",
         "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_7.md",
         "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_7.md",
-        "canonical_sha256": "25f6625fba8eadf3bdd0e9b62dbf054b838f7c406c18a694fef961b5f9106f25",
+        "canonical_sha256": "f9a98bbfd521a712fb75f562e7e9e6fd487b11bca0f80b8075961cb222138b8e",
         "embedded_first_use": true
       }
     },
