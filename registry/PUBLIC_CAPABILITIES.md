@@ -16,7 +16,7 @@ The table below is a human-readable view of the same fourteen records.
 | connected-sources | [Connected Sources](../portables/connected-sources/README.md) | structural crown jewel | 1.1-public | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources-1.1-public.zip) |
 | credits-attribution-ops | 🧾 Credits & Attribution Ops | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
 | failure-foundry | 🏭 Failure to Capability — Failure Foundry | failure-to-capability method | — | current | [FAILURE_FOUNDRY.md](../docs/FAILURE_FOUNDRY.md) | — |
-| moon-source-language | [Moon Source Language](../portables/msl/README.md) | sovereign semantic passage grammar | 5.0 | current | [MSL_5_0.md](../portables/msl/MSL_5_0.md#first-use) | [ZIP](../downloads/moon-source-language-5.0.zip) |
+| moon-source-language | [Moon Source Language](../portables/msl/README.md) | sovereign semantic passage grammar | 5.1 | current | [MSL_5_1.md](../portables/msl/MSL_5_1.md#first-use) | [ZIP](../downloads/moon-source-language-5.1.zip) |
 | moon-source-setup | [Moon Source Setup](../portables/setup/README.md) | adaptive context router | 3.1 | current | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md#first-use) | [ZIP](../downloads/moon-source-setup-3.1.zip) |
 | operational-devices | 🛠️ Operational Devices | operational-device pattern | — | current | [OPERATIONAL_DEVICES.md](../docs/OPERATIONAL_DEVICES.md) | — |
 | operational-reliability | 🛡️ Operational Reliability | operational-reliability method | — | current | [OPERATIONAL_RELIABILITY.md](../docs/OPERATIONAL_RELIABILITY.md) | — |
@@ -68,7 +68,7 @@ capabilities under:
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_SETUP.md
 - https://www.luahelena.com.br/moonsource/downloads/BE_MY_EYES.md
 - https://www.luahelena.com.br/moonsource/downloads/CONNECTED_SOURCES.md
-- https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_5_0.md
+- https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_5_1.md
 - https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_7.md
 
 These are delivery surfaces, not semantic authorities. Each mirror must remain

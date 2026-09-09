@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-09 — MSL 5.1 release coherence
+
+- Correctly numbered the accepted MSL formatting-continuity update as 5.1 under the +0.1-per-material-update rule.
+- Kept the MSL 5 semantic grammar unchanged; this bookkeeping correction does not trigger 5.2.
+- Retired live MSL 4.3 and 5.0 portable generations from `main`, preserving lineage through repository history.
+- Re-synchronized canonical body, README, registry, package, fingerprint and mirror coordinates around 5.1.
+
 ## 2026-09-09 — MSL 5.0 formatting continuity repair
 
 - Restored explicit formatting as part of the MSL contract: Markdown-native default, literal-only fences with real syntax labels, object dissolving, exceptional tables, vertical hygiene, human naming and one-H1 discipline.
