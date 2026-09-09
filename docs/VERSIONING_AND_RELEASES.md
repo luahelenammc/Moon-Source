@@ -17,8 +17,8 @@ They should not be collapsed into one number.
 ## Current baseline
 
 - Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-08; Chat–Work tri-surface routing advanced to V4 on 2026-09-06 and its IDL/source-transport subversions to 4.4-public on 2026-09-07.
-- Current structural grammar: Moon Source Language, version 4.3.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 4.3) and Chat–Work Routing Protocol (version 4.4-public).
+- Current structural grammar: Moon Source Language, version 5.0.
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.0) and Chat–Work Routing Protocol (version 4.4-public).
 - All fourteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry.
 - Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -49,7 +49,14 @@ The public title of a capability is its stable human-facing identity. A release 
 - Historical prose may name an earlier generation when the version is part of the fact being preserved; phrase current use with the stable title and an explicit version field or sentence.
 - Reusable Moon Source-family repositories should copy the policy template and run the title/version separation guard before promotion.
 
-## MSL decision
+## MSL 5.0 release — 2026-09-09
+
+MSL 5.0 — Sovereign Semantic Passage is a major public portable release. MSL-4.3 established adaptive Markdown-native form; internal MSL-4.4 work added semantic sufficiency and surface projection. MSL 5.0 makes the passage layer explicit: source/body sovereignty, capability-field reasoning, orthogonal state, preserved interfaces, donor-to-method generalization, traceability/formality separation, reception/readback and release coherence.
+
+The release preserves MSL-4.3 as the previous public portable and MSL-4.4 as internal lineage. MSL remains a structural/context language, not executable code, a universal ontology, a runtime, a product or proof of external adoption.
+
+Public release coherence requires the canonical body, readable README, registry, changelog, package, SHA256, links, mirrors and validators to agree. The public repository and website expose MSL 5.0 as current only after that set is synchronized.
+## Historical MSL decision
 
 The 2026-08-16 promotion audit returns KEEP_MSL_4_3. Source jurisdiction, procedural skills, handoffs and bridges are important architectural layers, but the live MSL 4.3 source already provides the structural grammar needed to express them. They remain separate responsibilities rather than being absorbed into MSL 5.
 

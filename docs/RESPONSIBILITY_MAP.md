@@ -27,7 +27,7 @@ The following objects can work together, but they do not perform the same job.
 | Runtime | Callable operating capacity | Execute a bounded operation and return observable state or receipts | A synonym for documentation |
 | Public surface | Human-facing entry point | Explain, distribute or route public material | The semantic source of truth |
 | Archive / legacy | Preserved history | Retain prior states without governing the present | The current active source |
-| MSL | Adaptive structural grammar | Choose proportionate form and preserve structural laws | A container, runtime or universal ontology |
+| MSL | Structural/context grammar for governed semantic passage | Choose proportionate form and preserve passage laws | Executable code, a runtime or a universal ontology |
 
 ## Canonicalization rule
 
@@ -54,7 +54,7 @@ System:
 [paste the file list, folder layout, workflow or object descriptions]
 ```
 
-If the field itself is still unclear, begin with the [Field-to-Form diagnostic](../ARCHITECTURE.md#field-to-form). For the operation chosen after the field and authority are clear, use [Source Operations](SOURCE_OPERATIONS.md). If a structural artifact or handoff is needed, use [Moon Source Language](../portables/msl/MSL_4_3.md). If a procedure needs a concrete execution surface, use [Operational Devices](OPERATIONAL_DEVICES.md) with [Operational Reliability](OPERATIONAL_RELIABILITY.md). If intellectual material needs identity, lineage or custody protection while it moves, changes, forks, mirrors or passes through AI, use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md). If the unresolved issue is where ChatGPT work should run, use the [Chat–Work Routing Protocol](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md).
+If the field itself is still unclear, begin with the [Field-to-Form diagnostic](../ARCHITECTURE.md#field-to-form). For the operation chosen after the field and authority are clear, use [Source Operations](SOURCE_OPERATIONS.md). If a structural artifact or handoff is needed, use [Moon Source Language](../portables/msl/MSL_5_0.md). If a procedure needs a concrete execution surface, use [Operational Devices](OPERATIONAL_DEVICES.md) with [Operational Reliability](OPERATIONAL_RELIABILITY.md). If intellectual material needs identity, lineage or custody protection while it moves, changes, forks, mirrors or passes through AI, use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md). If the unresolved issue is where ChatGPT work should run, use the [Chat–Work Routing Protocol](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md).
 
 **Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
 

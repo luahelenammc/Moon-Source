@@ -105,7 +105,7 @@ Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are public 
 - 🛫 [**Preflight**](portables/preflight/README.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them; current version **2.0**.
 - 👁️ [**Be My Eyes**](portables/be-my-eyes/README.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
 - 🔗 [**Connected Sources**](portables/connected-sources/README.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.1-public**. Its canonical semantic body remains in [`docs/CONNECTED_SOURCES.md`](docs/CONNECTED_SOURCES.md).
-- 🧱 [**Moon Source Language**](portables/msl/README.md) — structural grammar for proportionate sources, handoffs, packets, protocols, registries and archives; current version **4.3**.
+- 🧱 [**Moon Source Language**](portables/msl/README.md) — structural grammar for governed semantic passage across sources, capabilities, interfaces and surfaces; current version **5.0**.
 - 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/README.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Intelligence Distillation Ladder, connector-aware source transport, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.4-public**.
 
 🗂️ [**Open the download hub**](DOWNLOADS.md) to browse readable surfaces, open canonical bodies or download the supported standalone packages.
@@ -162,7 +162,7 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
 - **2026-09-08 — Preflight:** Embedded self-onboarding in the canonical body and refreshed the supported distribution without changing Preflight semantics or version.
 - **2026-09-08 — Moon Source Setup:** Embedded self-onboarding in the canonical body and refreshed the supported distribution without changing Setup semantics or version.
-- **2026-09-08 — Moon Source Language:** Embedded self-onboarding in the canonical body and refreshed the supported distribution without changing MSL semantics or version.
+- **2026-09-09 — Moon Source Language:** Promoted MSL to 5.0, adding sovereign semantic passage, preserved interfaces, capability-field reasoning, reception/readback and coherent release-state checks.
 - **2026-09-08 — Connected Sources:** Moved the canonical Connected Sources body to its structural home while preserving its 1.1-public standalone distribution.
 - **2026-09-08 — Chat–Work Routing Protocol:** Embedded self-onboarding in the canonical body and refreshed the supported distribution without changing method semantics or version.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
@@ -193,7 +193,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 Public architecture baseline: **2026-08-16**. Additive public capabilities, operational hardening and licensing updates continued through **2026-09-08**; Preflight advanced to **V2**, Be My Eyes was promoted as **1.0-public**, Connected Sources was established as a structural crown jewel at its canonical docs path, and the public registry became unified schema **2.0** while Chat–Work routing remains the tri-surface **V4** protocol.
 
-Current structural grammar: **Moon Source Language**, version **4.3**. Current standalone distributions: **Moon Source Setup** (version **3.1**), **Preflight** (version **2.0**), **Be My Eyes** (version **1.0-public**), **Connected Sources** (version **1.1-public**), **Moon Source Language** (version **4.3**) and **Chat–Work Routing Protocol** (version **4.4-public**). This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
+Current structural grammar: **Moon Source Language**, version **5.0**. Current standalone distributions: **Moon Source Setup** (version **3.1**), **Preflight** (version **2.0**), **Be My Eyes** (version **1.0-public**), **Connected Sources** (version **1.1-public**), **Moon Source Language** (version **5.0**) and **Chat–Work Routing Protocol** (version **4.4-public**). This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
 

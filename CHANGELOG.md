@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-09 — Moon Source Language 5.0 · Sovereign Semantic Passage
+
+- Promoted MSL from an adaptive form grammar to a grammar of governed semantic passage across source/bodies, capabilities, surfaces, interfaces and continuity.
+- Added source/body sovereignty, semantic sufficiency, capability-field reasoning, orthogonal state axes and preserved-interface contracts.
+- Added donor-to-method / donor-to-capability generalization, traceability/formality separation and reception/readback before transfer.
+- Added public release coherence as a version law across canonical body, README, registry, changelog, package, SHA256, links, mirrors and validation.
+- Preserved portables/msl/MSL_4_3.md as lineage; no private, institutional or reserved donor material was promoted.
+- MSL remains a structural/context language, not executable code, a runtime, an enterprise platform or proof of external adoption.
 ## 2026-09-08 — Architecture / Field-to-Form coagulation and title normalization
 
 - Coagulated Field to Form into the canonical `ARCHITECTURE.md#field-to-form` body and reduced `docs/FIELD_TO_FORM.md` to a non-authoritative compatibility route; the duplicate method body was removed.

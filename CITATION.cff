@@ -10,8 +10,8 @@ message: >-
   holder.
 title: "Moon Source"
 type: software
-version: "2026-08-23"
-date-released: 2026-08-23
+version: "2026-09-09"
+date-released: 2026-09-09
 authors:
   - given-names: "Lua Helena Moon"
     family-names: "Martins Cardoso"
@@ -23,7 +23,7 @@ license: "CC-BY-4.0"
 license-url: "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md"
 abstract: >-
   Moon Source is a public reference architecture for deciding what context
-  should exist, where authority lives, how it travels, and how it stays current.
+  should exist, where authority lives, how it travels, and how it stays current. The repository's current structural/context grammar is Moon Source Language 5.0 — Sovereign Semantic Passage.
   This is a mixed-license repository: software and automation use Apache-2.0;
   documentation, methods and public portables use CC-BY-4.0.
 keywords:
