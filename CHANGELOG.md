@@ -6,12 +6,12 @@
 - Reconciled Local MSL, Kernel and Runtime around MSL 5.0 as the only active authority while preserving MSL-4.x history.
 - Kept MSL at 5.0: this is a corrective content release, not a new semantic generation or parallel patch authority.
 
-## 2026-09-09 — Chat–Work 4.5 · bounded exhaustiveness
+## 2026-09-09 — Chat–Work 4.7 · bounded exhaustiveness + lineage correction
 
 - Added a Bounded Exhaustiveness Guard to the Intelligence Distillation Ladder so open-ended completeness requests are compiled into explicit coverage, stop and scope-expansion boundaries before expensive execution.
 - Added `scope_amplification_failure` and a constrain-before-escalate recovery path, separating runaway scope from genuine cognitive insufficiency or raw budget failure.
 - Added dated Astra field calibration as anecdotal operational evidence without promoting community reports into a benchmark or universal model law.
-- Kept the V4 canonical filename and stable human title while advancing the independently versioned public protocol to 4.5-public.
+- Kept the V4 canonical filename and stable human title while correcting the independently versioned public protocol to 4.7-public. The audit counts the self-onboarding canonical-body integration as 4.5, the MSL 5.0 canonical dependency/reference alignment as 4.6, and this bounded-exhaustiveness update as 4.7.
 
 ## 2026-09-09 — MSL 5.0 reference coherence
 

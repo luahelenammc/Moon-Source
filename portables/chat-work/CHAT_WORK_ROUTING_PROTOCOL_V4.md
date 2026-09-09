@@ -2,7 +2,7 @@
 
 *Cross-surface execution routing and closure across Chat, Work and Codex*
 
-## Public Portable Edition · Version 4.5-public
+## Public Portable Edition · Version 4.7-public
 
 ## Meta
 
@@ -10,18 +10,18 @@
 - **canonical path:** portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md
 - **Moon Source public surface:** https://www.luahelena.com.br/moonsource/?lang=en
 - **professional context:** https://www.luahelena.com.br/ia/?lang=en
-- **website mirror:** https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_5.md
+- **website mirror:** https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_7.md
 - **public boundary:** standalone protocol; product and model calibration is date-sensitive; this document does not imply that a native Chat–Work router skill is installed
 - **status:** public portable protocol
-- **version:** 4.5-public
+- **version:** 4.7-public
 - **language:** English
 - **protocol semantics as of:** 2026-09-09
 - **product/model calibration as of:** 2026-09-09; recheck official documentation before relying on volatile names, availability, limits or pricing
 - **primary implementation:** ChatGPT Chat, Work and Codex surfaces, where available
 - **Codex boundary:** optional execution capability; never assumed installed, enabled, available or desired
 - **governed dimensions:** execution profile, object geometry, execution surface, capability tier, reasoning effort, continuity/locality, execution envelope, budget survival, distillation, bounded exhaustiveness, return closure and claim ceiling
-- **supersedes:** Chat–Work Routing Protocol V4, version 4.4-public, while retaining the V4 public generation and canonical filename
-- **MSL dependency:** Moon Source Language 5.0; the protocol remains independently versioned at 4.5-public.
+- **supersedes:** Chat–Work Routing Protocol V4, published label 4.5-public; this 4.7-public correction restores two previously skipped +0.1 lineage increments while retaining the V4 public generation and canonical filename
+- **MSL dependency:** Moon Source Language 5.0; the protocol remains independently versioned at 4.7-public.
 - **license:** CC BY 4.0; see [LICENSING.md](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md)
 - **license URL:** https://creativecommons.org/licenses/by/4.0/
 - **creator:** Lua Helena Moon Martins Cardoso (Moon)
@@ -93,7 +93,7 @@ The stable sentence is:
 
 > **Chat understands and decides. Work produces. Codex builds when available and enabled. Chat accepts and integrates.**
 
-The V4.2 subversion added the profile-conditioned route principle. V4.3 added a distillation principle. V4.4 added a connector-aware source transport contract. V4.5 adds bounded exhaustiveness and scope-amplification recovery:
+The V4.2 subversion added the profile-conditioned route principle. V4.3 added a distillation principle. V4.4 added a connector-aware source transport contract. Under the corrected +0.1 lineage, V4.5 accounts for the self-onboarding canonical-body integration, V4.6 for the MSL 5.0 canonical dependency/reference alignment, and V4.7 adds bounded exhaustiveness and scope-amplification recovery:
 
 > **Escalate only the irreducible delta; return only the decision-bearing delta.**
 

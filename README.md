@@ -106,7 +106,7 @@ Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are public 
 - 👁️ [**Be My Eyes**](portables/be-my-eyes/README.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
 - 🔗 [**Connected Sources**](portables/connected-sources/README.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.1-public**. Its canonical semantic body remains in [`docs/CONNECTED_SOURCES.md`](docs/CONNECTED_SOURCES.md).
 - 🧱 [**Moon Source Language**](portables/msl/README.md) — structural grammar for governed semantic passage across sources, capabilities, interfaces and surfaces; current version **5.0**.
-- 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/README.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.5-public**.
+- 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/README.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **4.7-public**.
 
 🗂️ [**Open the download hub**](DOWNLOADS.md) to browse readable surfaces, open canonical bodies or download the supported standalone packages.
 
@@ -163,7 +163,7 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 - **2026-09-09 — Preflight:** Aligned active MSL references with the current 5.0 structural/context grammar without changing Preflight semantics or version.
 - **2026-09-09 — Moon Source Setup:** Aligned active MSL references with the current 5.0 structural/context grammar without changing Moon Source Setup semantics or version.
 - **2026-09-09 — Moon Source Language:** Corrective 5.0 pass: restored formatting as a first-class MSL responsibility with Markdown-native/no-fence defaults, object dissolving, proportional tables, vertical hygiene and release-surface coherence.
-- **2026-09-09 — Chat–Work Routing Protocol:** Added bounded exhaustiveness and scope-amplification recovery to the Intelligence Distillation Ladder, with Astra-specific behavior retained as dated anecdotal calibration rather than universal model law.
+- **2026-09-09 — Chat–Work Routing Protocol:** Lineage-corrected to 4.7-public after auditing two previously skipped +0.1 canonical-body updates; current semantics retain bounded exhaustiveness and scope-amplification recovery with Astra behavior treated as dated anecdotal calibration.
 - **2026-09-08 — Connected Sources:** Moved the canonical Connected Sources body to its structural home while preserving its 1.1-public standalone distribution.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
