@@ -32,7 +32,7 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 
 > 🌱 **First time with Moon Source?** Start with [README.md#first-use](README.md#first-use). Each readable capability surface has a prominent **Start** route into the canonical body's embedded First use section. Every current standalone package still contains exactly the self-onboarding canonical body — not the README facade.
 
-The current Be My Eyes capability version is **1.0-public**. The current Connected Sources capability version is **1.1-public**. The current Chat–Work Routing Protocol version is **4.4-public**. It retains the model-neutral Intelligence Distillation Ladder and adds a connector-aware source transport contract for governing source/family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback, while preserving the V4 title, canonical filename and MSL 4.3.
+The current Be My Eyes capability version is **1.0-public**. The current Connected Sources capability version is **1.1-public**. The current Chat–Work Routing Protocol version is **4.4-public**. It retains the model-neutral Intelligence Distillation Ladder and adds a connector-aware source transport contract for governing source/family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback, while preserving the V4 title, canonical filename and current MSL 5.0.
 
 GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each current standalone package contains its canonical body and the readable package surfaces required by that distribution; the canonical body carries the operative First use entry. Website copies are convenience mirrors, not separate semantic sources.
 
