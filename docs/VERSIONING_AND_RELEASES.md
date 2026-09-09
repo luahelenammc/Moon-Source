@@ -16,9 +16,9 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to bounded-exhaustiveness subversion 4.5-public on 2026-09-09.
+- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to bounded-exhaustiveness subversion 4.7-public on 2026-09-09.
 - Current structural grammar: Moon Source Language, version 5.0.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.0) and Chat–Work Routing Protocol (version 4.5-public).
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.0) and Chat–Work Routing Protocol (version 4.7-public).
 - All fourteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry.
 - Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -39,6 +39,7 @@ They should not be collapsed into one number.
 10. License rights come from the applicable standard license and file-level metadata; they are not broadened beyond those terms by implication.
 11. A user-facing link labeled **Download** must use a route intended to download the file; inline browse/open routes must be labeled as browse/open instead.
 12. One capability has one canonical semantic body. Architectural role and standalone distribution are independent dimensions. Mirrors and packages are delivery surfaces, and a distinct adapter is allowed only for volatile or surface-specific facts.
+13. Every accepted update to an independently versioned capability's canonical body or operative contract advances that capability by **+0.1**. A bookkeeping-only correction that restores previously skipped version increments does not recursively create another bump.
 
 ## Title–version separation
 
@@ -128,13 +129,15 @@ The superseded 4.3-public portable remains recoverable through Git history; the 
 
 MSL remains 4.3 because the structural grammar did not change.
 
-### Chat–Work V4.5-public release — 2026-09-09
+### Chat–Work V4.7-public release — 2026-09-09
 
-Chat–Work V4.5-public is a **material additive-and-superseding portable release**, not an MSL grammar change. It retains the V4.4 connector-aware source transport contract and adds a Bounded Exhaustiveness Guard to the Intelligence Distillation Ladder so open-ended completeness language is compiled into explicit coverage ceilings, stop conditions and scope-expansion rules before expensive sustained or frontier execution.
+Chat–Work V4.7-public is a **material additive-and-superseding portable release**, not an MSL grammar change. It retains the V4.4 connector-aware source transport contract and adds a Bounded Exhaustiveness Guard to the Intelligence Distillation Ladder so open-ended completeness language is compiled into explicit coverage ceilings, stop conditions and scope-expansion rules before expensive sustained or frontier execution.
 
-The release also adds `scope_amplification_failure` and a constrain-before-escalate recovery path. The Astra behavior that motivated the calibration is retained only as dated anecdotal field evidence, not as a benchmark, universal model property or fixed cost claim. The public human title remains **Chat–Work Routing Protocol** and the canonical filename remains `CHAT_WORK_ROUTING_PROTOCOL_V4.md`; 4.5-public is release state, not title identity.
+The release also adds `scope_amplification_failure` and a constrain-before-escalate recovery path. The Astra behavior that motivated the calibration is retained only as dated anecdotal field evidence, not as a benchmark, universal model property or fixed cost claim. The public human title remains **Chat–Work Routing Protocol** and the canonical filename remains `CHAT_WORK_ROUTING_PROTOCOL_V4.md`; 4.7-public is release state, not title identity.
 
 The superseded 4.4-public portable remains recoverable through Git history. MSL remains 5.0 because this release changes the routing/distillation protocol, not the structural passage grammar.
+
+**Lineage correction:** the last correctly numbered Chat–Work release was 4.4-public. The self-onboarding canonical-body integration is counted as 4.5, the MSL 5.0 canonical dependency/reference alignment as 4.6, and the bounded-exhaustiveness update as 4.7. The repository had preserved 4.4 across the first two updates under an older semantic-only bump convention; this correction restores the project's +0.1-per-module-update rule without fabricating parallel historical artifacts.
 
 ## Future versions
 ### Public capability registry rebase — 2026-09-08
