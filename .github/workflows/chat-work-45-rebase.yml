@@ -1,0 +1,60 @@
+name: Chat-Work 4.5 bounded exhaustiveness rebase
+
+on:
+  push:
+    branches:
+      - chat-work-4.5-bounded-exhaustiveness-rebase-20260909
+    paths:
+      - .github/workflows/chat-work-45-rebase.yml
+
+permissions:
+  contents: write
+
+jobs:
+  rebase-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: chat-work-4.5-bounded-exhaustiveness-rebase-20260909
+          fetch-depth: 0
+
+      - name: Bring validated 4.5 canonical artifacts onto current main
+        run: |
+          git show origin/chat-work-4.5-bounded-exhaustiveness-20260909:portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md > portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md
+          git show origin/chat-work-4.5-bounded-exhaustiveness-20260909:portables/chat-work/README.md > portables/chat-work/README.md
+          git show origin/chat-work-4.5-bounded-exhaustiveness-20260909:downloads/chat-work-routing-protocol-v4.zip > downloads/chat-work-routing-protocol-v4.zip
+
+      - name: Reconcile current release surfaces
+        run: python .github/scripts/release_chat_work_45_rebase.py
+
+      - name: Refresh capability digest
+        run: python scripts/update_capability_digest.py
+
+      - name: Remove one-shot release machinery before validation
+        run: |
+          rm .github/workflows/chat-work-45-rebase.yml
+          rm .github/scripts/release_chat_work_45_rebase.py
+
+      - name: Validate rebased release
+        run: |
+          python scripts/check_licensing.py
+          python scripts/check_links.py
+          python scripts/validate_public_capabilities.py
+          python scripts/check_kernel_package.py
+          python scripts/check_title_version_separation.py
+          python scripts/test_title_version_separation.py
+          python scripts/test_check_links.py
+          python scripts/check_public_stamps.py
+          python scripts/test_public_stamps.py
+          python scripts/update_capability_digest.py --check
+
+      - name: Commit rebased release
+        run: |
+          git config user.name "moon-source-release-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Release Chat–Work 4.5 on current main"
+          git push origin HEAD:chat-work-4.5-bounded-exhaustiveness-rebase-20260909
+
+# trigger after fixed main
