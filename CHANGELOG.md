@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-09 — Chat–Work 5.0 · optional Sprint Mode
+
+- Added optional, explicitly activated and ephemeral Sprint Mode as a run-level resource/pacing overlay; it is not a new operation mode, model, tier, persistent profile or native product feature.
+- Added the bounded Decision Sprint sibling-delta exception for one sovereign objective, one authority/context, a finite pre-named docket, material cross-item consistency and meaningful reconstruction cost, with independent item statuses and explicit stop conditions.
+- Added qualitative perishable-capacity handling, Sprint Receipts and mandatory Chat Postflight checks without claiming allowance visibility, reset access, prices, guaranteed savings, quota use or fuller use.
+- Advanced Chat–Work from 4.9 to 5.0 under the repository's +0.1 rule, preserving the stable V4 title and canonical filename; rebuilt the standalone package, registry fingerprint and mapped website mirror.
+
 ## 2026-09-09 — Chat–Work 4.9 · auditable Decision Trace
 
 - Added a bounded Decision Trace for material higher-tier rulings: live alternatives, decisive comparison, material rejected paths, adversarial correction, falsifier or discriminating test, uncertainty and next action.

@@ -13,17 +13,17 @@
 
 ## What it does
 
-Chat–Work defines an object-routed execution loop across Chat, Work and Codex, including execution profiles, connector-aware source transport, Budget Survivability, the Intelligence Distillation Ladder, bounded exhaustiveness, an auditable Decision Trace for material higher-tier rulings, and Chat Postflight.
+Chat–Work defines an object-routed execution loop across Chat, Work and Codex, including execution profiles, connector-aware source transport, Budget Survivability, the Intelligence Distillation Ladder, bounded exhaustiveness, an auditable Decision Trace for material higher-tier rulings, optional explicitly activated ephemeral Sprint Mode with a bounded Decision Sprint exception, and Chat Postflight.
 
 The Decision Trace exposes the smallest decision-bearing comparison needed to audit a material ruling — alternatives, decisive reasons, adversarial correction, falsifier/test and uncertainty — **not** hidden chain-of-thought or private scratchpad content.
 
 ## What it does not do
 
-It does not itself create access to a model, tool, connector or execution surface. Product names, limits and availability are date-sensitive and must be rechecked when they matter.
+It does not itself create access to a model, tool, connector or execution surface. Sprint Mode does not expose allowance/reset state, create a native product feature or persist across runs. Product names, limits and availability are date-sensitive and must be rechecked when they matter.
 
 ## Current identity
 
-- **Version:** 4.9
+- **Version:** 5.0
 - **Protocol family:** V4
 - **Status:** current · supported standalone distribution
 - **Canonical body:** [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
