@@ -13,7 +13,7 @@
 
 ## What it does
 
-Chat–Work defines an object-routed execution loop across Chat, Work and Codex, including execution profiles, connector-aware source transport, Budget Survivability, the Intelligence Distillation Ladder and Chat Postflight.
+Chat–Work defines an object-routed execution loop across Chat, Work and Codex, including execution profiles, connector-aware source transport, Budget Survivability, the Intelligence Distillation Ladder, bounded exhaustiveness and Chat Postflight.
 
 ## What it does not do
 
@@ -21,7 +21,7 @@ It does not itself create access to a model, tool, connector or execution surfac
 
 ## Current identity
 
-- **Version:** 4.4-public
+- **Version:** 4.5-public
 - **Protocol family:** V4
 - **Status:** current · supported standalone distribution
 - **Canonical body:** [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md)

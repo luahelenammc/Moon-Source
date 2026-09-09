@@ -163,7 +163,7 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 - **2026-09-09 — Preflight:** Aligned active MSL references with the current 5.0 structural/context grammar without changing Preflight semantics or version.
 - **2026-09-09 — Moon Source Setup:** Aligned active MSL references with the current 5.0 structural/context grammar without changing Moon Source Setup semantics or version.
 - **2026-09-09 — Moon Source Language:** Major release: evolved MSL from adaptive form grammar into Sovereign Semantic Passage with source/body sovereignty, preserved interfaces, donor generalization, reception/readback and release coherence.
-- **2026-09-09 — Chat–Work Routing Protocol:** Aligned the MSL dependency pointer with the current 5.0 structural/context grammar without changing Chat–Work semantics or version.
+- **2026-09-09 — Chat–Work Routing Protocol:** Added bounded exhaustiveness and scope-amplification recovery to the Intelligence Distillation Ladder, with Astra-specific behavior retained as dated anecdotal calibration rather than universal model law.
 - **2026-09-08 — Connected Sources:** Moved the canonical Connected Sources body to its structural home while preserving its 1.1-public standalone distribution.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 

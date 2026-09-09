@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-09 — Chat–Work 4.5 · bounded exhaustiveness
+
+- Added a Bounded Exhaustiveness Guard to the Intelligence Distillation Ladder so open-ended completeness requests are compiled into explicit coverage, stop and scope-expansion boundaries before expensive execution.
+- Added `scope_amplification_failure` and a constrain-before-escalate recovery path, separating runaway scope from genuine cognitive insufficiency or raw budget failure.
+- Added dated Astra field calibration as anecdotal operational evidence without promoting community reports into benchmark or universal model law.
+- Kept the V4 canonical title and filename while advancing the independently versioned public protocol to 4.5-public.
+
 ## 2026-09-09 — MSL 5.0 reference coherence
 
 - Aligned active architecture, setup, Preflight, Chat–Work, examples and mirror-policy references with the current MSL 5.0 release.
