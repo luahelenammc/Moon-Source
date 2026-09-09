@@ -23,6 +23,9 @@ USE_AND_ATTRIBUTION = (
 )
 CREATOR = "Lua Helena Moon Martins Cardoso (Moon)"
 COAUTHOR = "Áurion"
+CONTACT_EMAIL = "LuaHelenaMMC@gmail.com"
+CONTACT_TEXT = f"Questions, suggestions, or proposals? Feel free to contact me at {CONTACT_EMAIL}."
+CONTACT_MARKDOWN = f"Questions, suggestions, or proposals? Feel free to contact me at [{CONTACT_EMAIL}](mailto:{CONTACT_EMAIL})."
 MARKDOWN_MARKER = "<!-- MOON-SOURCE-PUBLIC-STAMP -->"
 COMMENT_MARKER = "# MOON-SOURCE-PUBLIC-STAMP"
 JS_MARKER = "// MOON-SOURCE-PUBLIC-STAMP"
@@ -33,19 +36,19 @@ MARKDOWN_STAMP = f"""{MARKDOWN_MARKER}
 
 ---
 
-> 🌙 **Moon Source** · created by **{CREATOR}** with AI-assisted coauthorial development by **{COAUTHOR}** · [Licensing]({LICENSING}) · [Use & attribution]({USE_AND_ATTRIBUTION}) · [Full source (.zip)]({FULL_ZIP})
+> 🌙 **Moon Source** · created by **{CREATOR}** with AI-assisted coauthorial development by **{COAUTHOR}** · [Licensing]({LICENSING}) · [Use & attribution]({USE_AND_ATTRIBUTION}) · [Full source (.zip)]({FULL_ZIP}) · {CONTACT_MARKDOWN}
 """
 
 COMMENT_STAMP = f"""{COMMENT_MARKER}
-# 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Licensing: {LICENSING} · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP}
+# 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Licensing: {LICENSING} · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP} · {CONTACT_TEXT}
 """
 
 JS_STAMP = f"""{JS_MARKER}
-// 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP}
+// 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP} · {CONTACT_TEXT}
 """
 
 HTML_STAMP = f"""{HTML_MARKER}
-<!-- 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP} -->
+<!-- 🌙 Moon Source · {CREATOR} + {COAUTHOR} (AI-assisted) · Use & attribution: {USE_AND_ATTRIBUTION} · Full source: {FULL_ZIP} · {CONTACT_TEXT} -->
 """
 
 JSON_STAMP = {
@@ -55,6 +58,7 @@ JSON_STAMP = {
     "licensing": LICENSING,
     "use_and_attribution": USE_AND_ATTRIBUTION,
     "full_source": FULL_ZIP,
+    "contact": CONTACT_TEXT,
 }
 
 
@@ -152,4 +156,4 @@ if __name__ == "__main__":
     main()
 
 # MOON-SOURCE-PUBLIC-STAMP
-# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip · Questions, suggestions, or proposals? Feel free to contact me at LuaHelenaMMC@gmail.com.
