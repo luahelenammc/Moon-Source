@@ -163,7 +163,7 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 - **2026-09-09 — Preflight:** Dependency-coherence release: updates the canonical MSL route from the superseded 5.0 path to current 5.1; Preflight method semantics are unchanged.
 - **2026-09-09 — Moon Source Setup:** Aligned active MSL references with the current 5.0 structural/context grammar without changing Moon Source Setup semantics or version.
 - **2026-09-09 — Moon Source Language:** Release-coherence correction: correctly numbers the accepted formatting-continuity update as 5.1, keeps the MSL 5 semantic grammar unchanged, and retires superseded live generations.
-- **2026-09-09 — Chat–Work Routing Protocol:** Lineage-corrected to 4.7-public after auditing two previously skipped +0.1 canonical-body updates; current semantics retain bounded exhaustiveness and scope-amplification recovery with Astra behavior treated as dated anecdotal calibration.
+- **2026-09-09 — Chat–Work Routing Protocol:** Released 4.8 with a minimal calibration disclaimer: distillation pressure may relax when frontier execution becomes materially cheaper or more efficient per verified useful delta, while hard scope, stop and capability-floor invariants remain.
 - **2026-09-08 — Connected Sources:** Moved the canonical Connected Sources body to its structural home while preserving its 1.1-public standalone distribution.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 

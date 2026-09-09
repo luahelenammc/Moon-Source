@@ -2,7 +2,7 @@
 
 *Cross-surface execution routing and closure across Chat, Work and Codex*
 
-## Public Portable Edition · Version 4.7-public
+## Public Portable Edition · Version 4.8
 
 ## Meta
 
@@ -13,15 +13,15 @@
 - **website mirror:** https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_7.md
 - **public boundary:** standalone protocol; product and model calibration is date-sensitive; this document does not imply that a native Chat–Work router skill is installed
 - **status:** public portable protocol
-- **version:** 4.7-public
+- **version:** 4.8
 - **language:** English
 - **protocol semantics as of:** 2026-09-09
 - **product/model calibration as of:** 2026-09-09; recheck official documentation before relying on volatile names, availability, limits or pricing
 - **primary implementation:** ChatGPT Chat, Work and Codex surfaces, where available
 - **Codex boundary:** optional execution capability; never assumed installed, enabled, available or desired
 - **governed dimensions:** execution profile, object geometry, execution surface, capability tier, reasoning effort, continuity/locality, execution envelope, budget survival, distillation, bounded exhaustiveness, return closure and claim ceiling
-- **supersedes:** Chat–Work Routing Protocol V4, published label 4.5-public; this 4.7-public correction restores two previously skipped +0.1 lineage increments while retaining the V4 public generation and canonical filename
-- **MSL dependency:** Moon Source Language 5.0; the protocol remains independently versioned at 4.7-public.
+- **supersedes:** Chat–Work Routing Protocol 4.7; 4.8 adds a dated calibration disclaimer for future relaxation of distillation pressure as frontier economics improve, while preserving hard scope and stopping invariants
+- **MSL dependency:** Moon Source Language 5.1; the protocol remains independently versioned at 4.8.
 - **license:** CC BY 4.0; see [LICENSING.md](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md)
 - **license URL:** https://creativecommons.org/licenses/by/4.0/
 - **creator:** Lua Helena Moon Martins Cardoso (Moon)
@@ -93,7 +93,7 @@ The stable sentence is:
 
 > **Chat understands and decides. Work produces. Codex builds when available and enabled. Chat accepts and integrates.**
 
-The V4.2 subversion added the profile-conditioned route principle. V4.3 added a distillation principle. V4.4 added a connector-aware source transport contract. Under the corrected +0.1 lineage, V4.5 accounts for the self-onboarding canonical-body integration, V4.6 for the MSL 5.0 canonical dependency/reference alignment, and V4.7 adds bounded exhaustiveness and scope-amplification recovery:
+The V4.2 subversion added the profile-conditioned route principle. V4.3 added a distillation principle. V4.4 added a connector-aware source transport contract. Under the corrected +0.1 lineage, V4.5 accounts for the self-onboarding canonical-body integration, V4.6 for the MSL 5.0 canonical dependency/reference alignment, V4.7 adds bounded exhaustiveness and scope-amplification recovery, and V4.8 adds a dated calibration disclaimer so economic guardrails can relax when frontier economics materially improve without weakening structural scope controls:
 
 > **Escalate only the irreducible delta; return only the decision-bearing delta.**
 
@@ -621,6 +621,8 @@ Community reports can reveal operational failure modes such as unexpectedly rapi
 
 As a dated field calibration on 2026-09-09, a trusted community report described Astra expanding open-ended completeness instructions into very large edge-case and test sweeps. Treat this as anecdotal operational evidence, not a benchmark or universal model property. When Astra is selected for sustained or frontier execution, prefer explicit scope ceilings and stop conditions over vague requests to "be balanced."
 
+**Calibration disclaimer:** distillation pressure is not permanent doctrine. If Astra or a successor frontier tier becomes materially cheaper or more efficient per verified useful delta, later dated revisions may loosen compression or coverage ceilings while preserving explicit stop conditions, scope authorization and capability-floor discipline.
+
 ## 11. Reasoning Effort Law
 
 Reasoning effort follows irreducible reasoning density, not emotional importance or model prestige.
@@ -1115,12 +1117,11 @@ The smallest unresolved delta determines re-entry.
 ## 22. Lifecycle and succession
 
 - Chat–Work Routing Protocol remains the current public generation;
-- `4.5-public` is the current semantic subversion of that generation, not a new V5 title or filename;
-- `4.4-public` is superseded by this subversion and remains recoverable through Git history;
-- `4.3-public`, `4.2-public`, `4.1-public` and earlier 4.x subversions remain historical lineage recoverable through Git history;
-- `4.0-public` and V3 remain historical lineage;
-- the live repository and website each expose one canonical V4 file;
-- MSL is currently 5.0; this protocol remains independently versioned at 4.5-public;
+- `4.8` is the current semantic subversion of that generation, not a new V5 title or filename;
+- `4.7` is superseded by this subversion and remains recoverable through Git history;
+- earlier 4.x subversions remain historical lineage recoverable through Git history;
+- the live repository exposes one canonical V4 file; website delivery is a separate mirror surface and may lag until its own verified sync;
+- MSL is currently 5.1; this protocol remains independently versioned at 4.8;
 - an installed native skill, if any, is a separate object requiring its own update and verification.
 
 ## 23. Safe operating rules

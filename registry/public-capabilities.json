@@ -48,14 +48,14 @@
       "architectural_role": "operational_routing_protocol",
       "canonical_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md",
       "function": "Route by sovereign object and workload shape across Chat, Work and optional Codex using configurable execution profiles, observed surface availability, capability floors, Budget Survivability, the model-neutral Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, bounded micro-bursts, decision-bearing return capsules, Chat Postflight and delta-only re-entry",
-      "claim_ceiling": "Published Chat–Work V4 protocol, subversion 4.7-public; operational routing heuristic only, not an OpenAI policy, benchmark, guaranteed savings/quality claim or proof that a native chat-work-router V4 skill is installed",
-      "version": "4.7-public",
+      "claim_ceiling": "Published Chat–Work V4 protocol, subversion 4.8; operational routing heuristic only, not an OpenAI policy, benchmark, guaranteed savings/quality claim or proof that a native chat-work-router V4 skill is installed",
+      "version": "4.8",
       "versioning_mode": "independent_public_capability_version",
       "public_created_on": "2026-09-06",
       "last_material_update_on": "2026-09-09",
-      "last_material_update_summary": "Lineage-corrected to 4.7-public after auditing two previously skipped +0.1 canonical-body updates; current semantics retain bounded exhaustiveness and scope-amplification recovery with Astra behavior treated as dated anecdotal calibration.",
+      "last_material_update_summary": "Released 4.8 with a minimal calibration disclaimer: distillation pressure may relax when frontier execution becomes materially cheaper or more efficient per verified useful delta, while hard scope, stop and capability-floor invariants remain.",
       "dependencies": [
-        "Uses MSL-5.0 terminology; product and model calibration is date-sensitive",
+        "Uses MSL-5.1 terminology; product and model calibration is date-sensitive",
         "Source transport records governing source or family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback; a locator is not authority",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions"
       ],
@@ -68,7 +68,7 @@
       "language": "English",
       "difficulty": "advanced",
       "best_for": "ChatGPT users and builders who need routing to adapt to resource posture, enabled capabilities and quality/throughput preferences while isolating hard reasoning deltas, preserving capability floors and closing work audibly across Chat, Work and optional Codex",
-      "supersedes": "4.5-public",
+      "supersedes": "4.7",
       "distribution": {
         "standalone": true,
         "package_path": "downloads/chat-work-routing-protocol-v4.zip",
