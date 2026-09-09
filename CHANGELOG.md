@@ -11,7 +11,7 @@
 - Added a Bounded Exhaustiveness Guard to the Intelligence Distillation Ladder so open-ended completeness requests are compiled into explicit coverage, stop and scope-expansion boundaries before expensive execution.
 - Added `scope_amplification_failure` and a constrain-before-escalate recovery path, separating runaway scope from genuine cognitive insufficiency or raw budget failure.
 - Added dated Astra field calibration as anecdotal operational evidence without promoting community reports into a benchmark or universal model law.
-- Kept the V4 canonical filename and stable human title while correcting the independently versioned public protocol to 4.7-public. The audit counts the self-onboarding canonical-body integration as 4.5, the MSL 5.0 canonical dependency/reference alignment as 4.6, and this bounded-exhaustiveness update as 4.7.
+- Kept the V4 canonical filename and stable human title while correcting the independently versioned public protocol to 4.7. The audit counts the self-onboarding canonical-body integration as 4.5, the MSL 5.0 canonical dependency/reference alignment as 4.6, and this bounded-exhaustiveness update as 4.7.
 
 ## 2026-09-09 — MSL 5.0 reference coherence
 
@@ -41,7 +41,7 @@
 - Replaced the orthogonal component/portable inventories with one public capability registry at schema **2.0**, keeping `architectural_role` independent from the optional `distribution` profile.
 - Promoted Connected Sources to the structural crown jewel at `docs/CONNECTED_SOURCES.md`; retired the active `portables/connected-sources/` semantic path without a compatibility twin.
 - Rebuilt the standalone Connected Sources and Moon Source Setup packages from their canonical Markdown bytes, synchronized the public website mirrors, and replaced the split validators with the unified capability validator.
-- Preserved all existing method versions, including Connected Sources **1.1-public**, MSL **4.3**, Setup **3.1**, Preflight **2.0**, Be My Eyes **1.0-public** and Chat–Work **4.4-public**.
+- Preserved all existing method versions, including Connected Sources **1.1**, MSL **4.3**, Setup **3.1**, Preflight **2.0**, Be My Eyes **1.0** and Chat–Work **4.4**.
 
 ## 2026-09-08 — Self-onboarding canonical portable rebase
 
@@ -54,11 +54,11 @@
 ## 2026-09-07 — Single-canonical-body rebase
 
 - Adopted the invariant **one capability, one active semantic body**: portability is a distribution role, not a second method authority.
-- Consolidated the unique current public Connected Sources doctrine into `portables/connected-sources/CONNECTED_SOURCES.md`, promoted it to **1.1-public**, and retired `docs/CONNECTED_SOURCES.md` from the active tree without keeping a compatibility copy.
+- Consolidated the unique current public Connected Sources doctrine into `portables/connected-sources/CONNECTED_SOURCES.md`, promoted it to **1.1**, and retired `docs/CONNECTED_SOURCES.md` from the active tree without keeping a compatibility copy.
 - Isolated dated ChatGPT product/reference facts in the subordinate `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` file; it is not a registry entry and is not auto-loaded for generic source governance.
-- Retired `docs/BE_MY_EYES.md` after the semantic comparison found no material current method responsibility absent from the unchanged **1.0-public** portable.
+- Retired `docs/BE_MY_EYES.md` after the semantic comparison found no material current method responsibility absent from the unchanged **1.0** portable.
 - Removed the Connected Sources and Be My Eyes duplicates from the non-portable component inventory, normalized Kernel authority declarations, refreshed the registry, package, mirror, website copy and current-reference routes, and added a registry/Kernel duplication guard.
-- Removed the active `downloads/connected-sources-1.0-public.zip`; history preserves the superseded generation.
+- Removed the active `downloads/connected-sources-1.0.zip`; history preserves the superseded generation.
 
 Historical entries describe the repository state at their recorded date. The current licensing authority is [LICENSING.md](LICENSING.md).
 
@@ -66,14 +66,14 @@ Historical entries describe the repository state at their recorded date. The cur
 
 - Promoted Connected Sources into a transversal public capability spanning source substrate, source/data and instruction authority, jurisdiction, freshness, capability probing, retrieval, mutation, readback and fallback.
 - Added explicit **Standalone**, **Connected Read**, **Living Source** and **Federated** operating modes plus implementation-neutral source locator/reference contracts.
-- Added the independently readable **Connected Sources 1.0-public** portable at `portables/connected-sources/CONNECTED_SOURCES.md`, its guide and deterministic ZIP package; the broader canonical method source was then consolidated into that portable in the later rebase above.
+- Added the independently readable **Connected Sources 1.0** portable at `portables/connected-sources/CONNECTED_SOURCES.md`, its guide and deterministic ZIP package; the broader canonical method source was then consolidated into that portable in the later rebase above.
 - Rebased Moon Source Setup to **3.1** with a capability-probed persistent-source route, Google Drive as the recommended ChatGPT document-source substrate when available, GitHub as complementary executable substrate and a standalone fallback.
-- Advanced Chat–Work to **4.4-public** with connector-aware source transport in handoff and return contracts; preserved the V4 title/filename, MSL 4.3, Preflight 2.0, Be My Eyes 1.0-public and the existing public claim ceiling.
+- Advanced Chat–Work to **4.4** with connector-aware source transport in handoff and return contracts; preserved the V4 title/filename, MSL 4.3, Preflight 2.0, Be My Eyes 1.0 and the existing public claim ceiling.
 - Updated the registry, download hub, Kernel, Source Operations boundary, evidence/implementation maps, examples, website facade and exact-byte mirrors.
 
 ## 2026-09-07 — Chat–Work V4.3 IDL promotion
 
-- Promoted the reusable Intelligence Distillation Ladder from the Local Moon Source experimental module into the public Chat–Work V4 protocol as subversion **4.3-public**.
+- Promoted the reusable Intelligence Distillation Ladder from the Local Moon Source experimental module into the public Chat–Work V4 protocol as subversion **4.3**.
 - Generalized bounded escalation across `efficient | balanced | strong | frontier` with irreducible-delta detection, effort-versus-capability discrimination, Decision/Return Capsules, direct tier jumps, bounded micro-bursts, lower-tier re-entry and qualitative observability.
 - Reclassified Frontier Burst as the frontier-tier specialization of IDL while keeping the public layer model-neutral and preserving the claim ceiling: no benchmark, guaranteed savings, guaranteed quality gain, universal model ranking or private profile default.
 - Updated the canonical portable, package, public registries, download hub and website mirror; MSL remains 4.3 and the V4 title/filename remain stable.
@@ -82,9 +82,9 @@ Historical entries describe the repository state at their recorded date. The cur
 
 - Promoted **Be My Eyes — Contextual Scene Reading** from repeated Local Moon Source use into the canonical public method at `docs/BE_MY_EYES.md`.
 - Generalized the reusable function around scene reconstruction, observation versus inference, relational structure and power, plausible subtext, risk, opportunity, overread, likely reception and response-axis selection without importing private examples or identity-specific assumptions.
-- Added the independently readable **Be My Eyes 1.0-public** portable at `portables/be-my-eyes/BE_MY_EYES.md`, including forward and inverse/reception modes, compact/full outputs, drafting contract, anti-overread rules, high-stakes boundary and quality gate.
-- Added the deterministic `downloads/be-my-eyes-1.0-public.zip` package containing the exact canonical Markdown bytes and registered canonical SHA-256 `74f05f85f5e664530bec30283cc9bb0e9bfdc3786d55927fbbc821e76c7fb1e8`.
-- Routed the method and portable through the AI Kernel, README, download hub, public registries and Existing Implementations while preserving Preflight V2, Setup 3.0 and MSL 4.3; Chat–Work advanced to 4.3-public in the IDL promotion recorded above.
+- Added the independently readable **Be My Eyes 1.0** portable at `portables/be-my-eyes/BE_MY_EYES.md`, including forward and inverse/reception modes, compact/full outputs, drafting contract, anti-overread rules, high-stakes boundary and quality gate.
+- Added the deterministic `downloads/be-my-eyes-1.0.zip` package containing the exact canonical Markdown bytes and registered canonical SHA-256 `74f05f85f5e664530bec30283cc9bb0e9bfdc3786d55927fbbc821e76c7fb1e8`.
+- Routed the method and portable through the AI Kernel, README, download hub, public registries and Existing Implementations while preserving Preflight V2, Setup 3.0 and MSL 4.3; Chat–Work advanced to 4.3 in the IDL promotion recorded above.
 - Preserved the claim ceiling: publication does not establish mind-reading, diagnosis, scientifically validated interpersonal prediction, guaranteed recipient reaction, external adoption or measured impact.
 
 ## 2026-09-07 — Preflight V2 portable promotion
@@ -121,7 +121,7 @@ Historical entries describe the repository state at their recorded date. The cur
 - Separated source/data authority from instruction authority in Connected Sources, including a bounded failure mode for instruction-like retrieved content and a proportional Connector Preflight check.
 - Named the existing adaptive loading discipline as progressive disclosure / just-in-time context loading, governed by authority, freshness, permission, consequence and required coverage rather than relevance alone.
 - Added a high-visibility stack-positioning map and a deeper responsibility comparison around models, agent harnesses/runtimes, retrieval or RAG mechanisms and governed context.
-- Created no new component or portable, and preserved MSL 4.3, Setup 3.0, Chat–Work 2.0-public, portable bytes and the public/private boundary.
+- Created no new component or portable, and preserved MSL 4.3, Setup 3.0, Chat–Work 2.0, portable bytes and the public/private boundary.
 
 ## 2026-08-24 — Public applications, registry integrity and facade hardening
 
@@ -129,7 +129,7 @@ Historical entries describe the repository state at their recorded date. The cur
 - Reconciled the public component inventory with Git-derived creation dates, material-update dates, concise summaries and controlled lifecycle status; kept components distinct from portables.
 - Added deterministic public-component validation and a registry-backed recent-component digest for the central README.
 - Added contribution-template ergonomics, CI validation for registry/stamp/digest contracts and scheduled mirror-drift detection without automatic website mutation.
-- Reformed the public orientation surfaces while preserving evidence ceilings, public-boundary discipline, mixed licensing, MSL 4.3, Setup 3.0 and Chat–Work 2.0-public.
+- Reformed the public orientation surfaces while preserving evidence ceilings, public-boundary discipline, mixed licensing, MSL 4.3, Setup 3.0 and Chat–Work 2.0.
 
 ## 2026-08-23 — Connected Sources
 

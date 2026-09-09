@@ -16,9 +16,9 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to bounded-exhaustiveness subversion 4.7-public on 2026-09-09.
+- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4 on 2026-09-07, and to bounded-exhaustiveness subversion 4.7 on 2026-09-09.
 - Current structural grammar: Moon Source Language, version 5.0.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.0) and Chat–Work Routing Protocol (version 4.7-public).
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0), Connected Sources (version 1.1), Moon Source Language (version 5.0) and Chat–Work Routing Protocol (version 4.7).
 - All fourteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry.
 - Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -45,7 +45,7 @@ They should not be collapsed into one number.
 
 The public title of a capability is its stable human-facing identity. A release version is separate state. Do not rename a current title merely because the portable, protocol or repository has advanced from one release to another.
 
-- Keep human-facing titles, first-level headings, registry `title` values and website card labels free of release markers such as `V2`, `V4`, `3.0`, `4.3`, `1.0-public`, `beta` or `rc1`.
+- Keep human-facing titles, first-level headings, registry `title` values and website card labels free of release markers such as `V2`, `V4`, `3.0`, `4.3`, `1.0`, `beta` or `rc1`.
 - Record release state in dedicated `version` metadata, registry fields, release notes, package names, filenames, paths and other technical coordinates where it is useful or required.
 - Historical prose may name an earlier generation when the version is part of the fact being preserved; phrase current use with the stable title and an explicit version field or sentence.
 - Reusable Moon Source-family repositories should copy the policy template and run the title/version separation guard before promotion.
@@ -93,13 +93,13 @@ The superseded V3 file is removed from the current repository and website trees.
 
 MSL remains 4.3 because the structural grammar did not change.
 
-### Chat–Work V4.3-public release — 2026-09-07
+### Chat–Work V4.3 release — 2026-09-07
 
-Chat–Work V4.3-public is a **material additive-and-superseding portable release**, not an MSL grammar change.
+Chat–Work V4.3 is a **material additive-and-superseding portable release**, not an MSL grammar change.
 
 It promotes the model-neutral Intelligence Distillation Ladder across `efficient | balanced | strong | frontier`: isolate the irreducible delta, distinguish reasoning effort from capability, allow justified direct tier jumps, use bounded micro-bursts, return only the decision-bearing ruling and re-enter the lower sufficient tier for implementation and verification. Frontier Burst is retained as the frontier-tier specialization of this general pattern.
 
-The superseded 4.2-public portable remains recoverable through Git history; the live repository and website continue to expose one canonical V4 file. The release does not claim an OpenAI policy, benchmark, guaranteed savings or quality gain, universal model ranking, native skill advancement or a private profile default.
+The superseded 4.2 portable remains recoverable through Git history; the live repository and website continue to expose one canonical V4 file. The release does not claim an OpenAI policy, benchmark, guaranteed savings or quality gain, universal model ranking, native skill advancement or a private profile default.
 
 MSL remains 4.3 because the structural grammar did not change.
 
@@ -107,37 +107,37 @@ MSL remains 4.3 because the structural grammar did not change.
 
 Moon Source Setup 3.1 is a **material additive portable release**, not an MSL grammar change. It adds an adaptive persistent-source route for durable continuity and current living context, recommends Google Drive as the default ChatGPT document-source substrate when available, keeps GitHub complementary, probes actual capability and preserves a standalone fallback. It does not make connector access mandatory or create a connector-onboarding questionnaire.
 
-### Connected Sources 1.0-public release — 2026-09-07
+### Connected Sources 1.0 release — 2026-09-07
 
-Connected Sources 1.0-public is a **material method-plus-portable promotion**. The canonical method remains `docs/CONNECTED_SOURCES.md`; `portables/connected-sources/CONNECTED_SOURCES.md` is its independently readable public projection. The portable makes Standalone, Connected Read, Living Source and Federated modes explicit, carries source locator/reference and capability-probing rules, and preserves authority, freshness, mutation, readback, fallback and claim-ceiling boundaries.
+Connected Sources 1.0 is a **material method-plus-portable promotion**. The canonical method remains `docs/CONNECTED_SOURCES.md`; `portables/connected-sources/CONNECTED_SOURCES.md` is its independently readable public projection. The portable makes Standalone, Connected Read, Living Source and Federated modes explicit, carries source locator/reference and capability-probing rules, and preserves authority, freshness, mutation, readback, fallback and claim-ceiling boundaries.
 
 This promotion does not claim universal connector support, automatic synchronization, exhaustive retrieval, authority by locator, private-source disclosure or adoption. MSL remains 4.3 because the structural grammar did not change.
 
-### Connected Sources 1.1-public canonical-body rebase — 2026-09-07
+### Connected Sources 1.1 canonical-body rebase — 2026-09-07
 
-Connected Sources 1.1-public is a **material canonical-identity and method-plus-portable rebase**, not an MSL grammar change. The portable at `portables/connected-sources/CONNECTED_SOURCES.md` is now the single active semantic body and may serve both structural and transport roles. It absorbs the unique current public doctrine from the retired `docs/CONNECTED_SOURCES.md` body without concatenating the two files, including Connector Preflight, the substrate contract, retrieval coverage, failure modes, facet-scoped authority and acceptance boundaries.
+Connected Sources 1.1 is a **material canonical-identity and method-plus-portable rebase**, not an MSL grammar change. The portable at `portables/connected-sources/CONNECTED_SOURCES.md` is now the single active semantic body and may serve both structural and transport roles. It absorbs the unique current public doctrine from the retired `docs/CONNECTED_SOURCES.md` body without concatenating the two files, including Connector Preflight, the substrate contract, retrieval coverage, failure modes, facet-scoped authority and acceptance boundaries.
 
-The retired docs body is removed from the live tree; Git history preserves it. Dated ChatGPT product facts are isolated in the subordinate `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` reference and are not auto-loaded for generic source governance. The current package is `downloads/connected-sources-1.1-public.zip`, the website mirror remains the same mapped filename, and the former 1.0 package is removed from active `main`.
+The retired docs body is removed from the live tree; Git history preserves it. Dated ChatGPT product facts are isolated in the subordinate `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` reference and are not auto-loaded for generic source governance. The current package is `downloads/connected-sources-1.1.zip`, the website mirror remains the same mapped filename, and the former 1.0 package is removed from active `main`.
 
-Be My Eyes remains **1.0-public** because its portable already contains the material current method responsibilities found in the retired docs body; the duplicate docs body is removed without changing portable bytes. MSL remains 4.3 because the structural grammar did not change.
+Be My Eyes remains **1.0** because its portable already contains the material current method responsibilities found in the retired docs body; the duplicate docs body is removed without changing portable bytes. MSL remains 4.3 because the structural grammar did not change.
 
-### Chat–Work V4.4-public release — 2026-09-07
+### Chat–Work V4.4 release — 2026-09-07
 
-Chat–Work V4.4-public is a **material additive-and-superseding portable release**, not an MSL grammar change. It retains the V4.3-public Intelligence Distillation Ladder and adds a connector-aware source transport contract for governing source/family, locator, facet, requested operation, coverage, freshness/revision, mutation authorization, readback and fallback. A locator is transported as a reference, never as authority.
+Chat–Work V4.4 is a **material additive-and-superseding portable release**, not an MSL grammar change. It retains the V4.3 Intelligence Distillation Ladder and adds a connector-aware source transport contract for governing source/family, locator, facet, requested operation, coverage, freshness/revision, mutation authorization, readback and fallback. A locator is transported as a reference, never as authority.
 
-The superseded 4.3-public portable remains recoverable through Git history; the live repository and website expose one current V4 file and one current mirror. The release does not claim an OpenAI policy, benchmark, automatic source synchronization, native skill advancement, guaranteed savings/quality or product entitlement.
+The superseded 4.3 portable remains recoverable through Git history; the live repository and website expose one current V4 file and one current mirror. The release does not claim an OpenAI policy, benchmark, automatic source synchronization, native skill advancement, guaranteed savings/quality or product entitlement.
 
 MSL remains 4.3 because the structural grammar did not change.
 
-### Chat–Work V4.7-public release — 2026-09-09
+### Chat–Work V4.7 release — 2026-09-09
 
-Chat–Work V4.7-public is a **material additive-and-superseding portable release**, not an MSL grammar change. It retains the V4.4 connector-aware source transport contract and adds a Bounded Exhaustiveness Guard to the Intelligence Distillation Ladder so open-ended completeness language is compiled into explicit coverage ceilings, stop conditions and scope-expansion rules before expensive sustained or frontier execution.
+Chat–Work V4.7 is a **material additive-and-superseding portable release**, not an MSL grammar change. It retains the V4.4 connector-aware source transport contract and adds a Bounded Exhaustiveness Guard to the Intelligence Distillation Ladder so open-ended completeness language is compiled into explicit coverage ceilings, stop conditions and scope-expansion rules before expensive sustained or frontier execution.
 
-The release also adds `scope_amplification_failure` and a constrain-before-escalate recovery path. The Astra behavior that motivated the calibration is retained only as dated anecdotal field evidence, not as a benchmark, universal model property or fixed cost claim. The public human title remains **Chat–Work Routing Protocol** and the canonical filename remains `CHAT_WORK_ROUTING_PROTOCOL_V4.md`; 4.7-public is release state, not title identity.
+The release also adds `scope_amplification_failure` and a constrain-before-escalate recovery path. The Astra behavior that motivated the calibration is retained only as dated anecdotal field evidence, not as a benchmark, universal model property or fixed cost claim. The public human title remains **Chat–Work Routing Protocol** and the canonical filename remains `CHAT_WORK_ROUTING_PROTOCOL_V4.md`; 4.7 is release state, not title identity.
 
-The superseded 4.4-public portable remains recoverable through Git history. MSL remains 5.0 because this release changes the routing/distillation protocol, not the structural passage grammar.
+The superseded 4.4 portable remains recoverable through Git history. MSL remains 5.0 because this release changes the routing/distillation protocol, not the structural passage grammar.
 
-**Lineage correction:** the last correctly numbered Chat–Work release was 4.4-public. The self-onboarding canonical-body integration is counted as 4.5, the MSL 5.0 canonical dependency/reference alignment as 4.6, and the bounded-exhaustiveness update as 4.7. The repository had preserved 4.4 across the first two updates under an older semantic-only bump convention; this correction restores the project's +0.1-per-module-update rule without fabricating parallel historical artifacts.
+**Lineage correction:** the last correctly numbered Chat–Work release was 4.4. The self-onboarding canonical-body integration is counted as 4.5, the MSL 5.0 canonical dependency/reference alignment as 4.6, and the bounded-exhaustiveness update as 4.7. The repository had preserved 4.4 across the first two updates under an older semantic-only bump convention; this correction restores the project's +0.1-per-module-update rule without fabricating parallel historical artifacts.
 
 ## Future versions
 ### Public capability registry rebase — 2026-09-08
@@ -147,7 +147,7 @@ The registry now records one capability per record with independent
 architectural role and distribution metadata. Standalone distribution remains
 supported without creating a second semantic inventory.
 
-Connected Sources remains version 1.1-public, but its canonical body now lives
+Connected Sources remains version 1.1, but its canonical body now lives
 at docs/CONNECTED_SOURCES.md because its primary responsibility is structural
 source governance. Its ZIP and website mirror remain exact delivery surfaces.
 The registry schema advanced to 2.0; no capability method version was bumped.
@@ -158,6 +158,12 @@ A future MSL major version would need evidence that the grammar itself has chang
 ## Public routes
 
 Inspect the current public capabilities in the [unified registry](../registry/PUBLIC_CAPABILITIES.md), use the [download hub](../DOWNLOADS.md) for standalone access, consult [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for intellectual lineage and content-custody changes, or return to [Architecture](../ARCHITECTURE.md) for the governing model.
+
+## Visibility-neutral version tokens
+
+Repository visibility is an orthogonal publication/distribution state, not part of a version token. Moon Source versions therefore use bare release state only. Public/private exposure belongs in repository location, status, boundary and distribution metadata; never append a visibility qualifier to the numeric version.
+
+Removing a legacy visibility qualifier is a bookkeeping-only normalization and does not by itself advance the numeric release. Future accepted updates continue to follow the governing increment rule on the bare number itself.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

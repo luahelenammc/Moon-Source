@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main() -> None:
     assert contains_version_marker("Preflight V2")
-    assert contains_version_marker("Be My Eyes 1.0-public")
+    assert contains_version_marker("Be My Eyes 1.0")
     assert contains_version_marker("Moon Source Language 4.3")
     assert not contains_version_marker("Preflight")
     assert not contains_version_marker("Chat–Work Routing Protocol")
@@ -36,7 +36,7 @@ def main() -> None:
     assert not validation_errors(data)
 
     fixture = copy.deepcopy(data)
-    fixture["capabilities"][0]["title"] = "Be My Eyes 1.0-public"
+    fixture["capabilities"][0]["title"] = "Be My Eyes 1.0"
     errors = validation_errors(
         fixture,
         root=ROOT,

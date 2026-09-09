@@ -39,6 +39,12 @@ Validation command: [guard command]
 
 The repository rule governs current public naming. A local artifact convention may preserve version information in technical coordinates but must not turn that coordinate into the current human-facing title.
 
+## Visibility-neutral version tokens
+
+Repository visibility is an orthogonal publication/distribution state, not part of a version token. Moon Source versions therefore use bare release state only. Public/private exposure belongs in repository location, status, boundary and distribution metadata; never append a visibility qualifier to the numeric version.
+
+Removing a legacy visibility qualifier is a bookkeeping-only normalization and does not by itself advance the numeric release. Future accepted updates continue to follow the governing increment rule on the bare number itself.
+
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
 ---

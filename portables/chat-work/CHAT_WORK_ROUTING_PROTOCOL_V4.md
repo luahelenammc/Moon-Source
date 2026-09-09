@@ -2,7 +2,7 @@
 
 *Cross-surface execution routing and closure across Chat, Work and Codex*
 
-## Public Portable Edition · Version 4.7-public
+## Public Portable Edition · Version 4.7
 
 ## Meta
 
@@ -13,15 +13,15 @@
 - **website mirror:** https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_4_7.md
 - **public boundary:** standalone protocol; product and model calibration is date-sensitive; this document does not imply that a native Chat–Work router skill is installed
 - **status:** public portable protocol
-- **version:** 4.7-public
+- **version:** 4.7
 - **language:** English
 - **protocol semantics as of:** 2026-09-09
 - **product/model calibration as of:** 2026-09-09; recheck official documentation before relying on volatile names, availability, limits or pricing
 - **primary implementation:** ChatGPT Chat, Work and Codex surfaces, where available
 - **Codex boundary:** optional execution capability; never assumed installed, enabled, available or desired
 - **governed dimensions:** execution profile, object geometry, execution surface, capability tier, reasoning effort, continuity/locality, execution envelope, budget survival, distillation, bounded exhaustiveness, return closure and claim ceiling
-- **supersedes:** Chat–Work Routing Protocol V4, published label 4.5-public; this 4.7-public correction restores two previously skipped +0.1 lineage increments while retaining the V4 public generation and canonical filename
-- **MSL dependency:** Moon Source Language 5.0; the protocol remains independently versioned at 4.7-public.
+- **supersedes:** Chat–Work Routing Protocol V4, published label 4.5; this 4.7 correction restores two previously skipped +0.1 lineage increments while retaining the V4 public generation and canonical filename
+- **MSL dependency:** Moon Source Language 5.0; the protocol remains independently versioned at 4.7.
 - **license:** CC BY 4.0; see [LICENSING.md](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md)
 - **license URL:** https://creativecommons.org/licenses/by/4.0/
 - **creator:** Lua Helena Moon Martins Cardoso (Moon)
@@ -1115,12 +1115,12 @@ The smallest unresolved delta determines re-entry.
 ## 22. Lifecycle and succession
 
 - Chat–Work Routing Protocol remains the current public generation;
-- `4.5-public` is the current semantic subversion of that generation, not a new V5 title or filename;
-- `4.4-public` is superseded by this subversion and remains recoverable through Git history;
-- `4.3-public`, `4.2-public`, `4.1-public` and earlier 4.x subversions remain historical lineage recoverable through Git history;
-- `4.0-public` and V3 remain historical lineage;
+- `4.5` is the current semantic subversion of that generation, not a new V5 title or filename;
+- `4.4` is superseded by this subversion and remains recoverable through Git history;
+- `4.3`, `4.2`, `4.1` and earlier 4.x subversions remain historical lineage recoverable through Git history;
+- `4.0` and V3 remain historical lineage;
 - the live repository and website each expose one canonical V4 file;
-- MSL is currently 5.0; this protocol remains independently versioned at 4.5-public;
+- MSL is currently 5.0; this protocol remains independently versioned at 4.5;
 - an installed native skill, if any, is a separate object requiring its own update and verification.
 
 ## 23. Safe operating rules

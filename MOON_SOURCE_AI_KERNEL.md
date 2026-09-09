@@ -28,8 +28,8 @@ Use each file for the responsibility it actually owns:
 - `README.md` — orientation, public entry points and top-level routing.
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
 - `portables/preflight/PREFLIGHT_V2.md` — Preflight: human-intent reconstruction before execution, currently version 2.0, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
-- `portables/be-my-eyes/BE_MY_EYES.md` — canonical active Be My Eyes method and 1.0-public standalone distribution: contextual scene reading, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection.
-- `docs/CONNECTED_SOURCES.md` — canonical Connected Sources structural crown jewel and 1.1-public standalone distribution: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
+- `portables/be-my-eyes/BE_MY_EYES.md` — canonical active Be My Eyes method and 1.0 standalone distribution: contextual scene reading, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection.
+- `docs/CONNECTED_SOURCES.md` — canonical Connected Sources structural crown jewel and 1.1 standalone distribution: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
 - `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` — subordinate dated ChatGPT product/reference facts; load only when current product behavior is materially relevant.
 - `docs/SOURCE_OPERATIONS.md` — public source-operation grammar: retrieve, process, metabolize, promote, promotion gate, lifecycle, legacy succession, current-state versus history, smallest sovereign destination, readback and no-delta.
 - `ARCHITECTURE.md#field-to-form` — canonical public architecture and Field-to-Form diagnostic: decide what should exist before choosing a container or artifact type.
@@ -45,7 +45,7 @@ Use each file for the responsibility it actually owns:
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router, currently version 3.1.
 - `portables/msl/MSL_5_0.md` — current public structural grammar for semantic passage and materialization. MSL is currently 5.0.
-- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md` — current 4.4-public closed-loop ChatGPT surface/model/reasoning and source-transport routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
+- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md` — current 4.4 closed-loop ChatGPT surface/model/reasoning and source-transport routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
 - `registry/PUBLIC_CAPABILITIES.md` — human-readable unified public capability identities, roles, versions, status and standalone-distribution routes.
 - `registry/public-capabilities.json` — machine-readable one-record-per-capability registry; standalone distribution is nested metadata and does not create a second semantic inventory.
 - `docs/PORTABLE_DESIGN_CONTRACT.md` — portable publication, canonical-path and mirror rules.
@@ -209,7 +209,7 @@ If intellectual material is also changing custody or becoming a derivative, load
 ### If the user needs to reach a connected living source or external-memory substrate
 
 Load:
-- `docs/CONNECTED_SOURCES.md` — canonical structural crown jewel and standalone-capable method, currently version 1.1-public
+- `docs/CONNECTED_SOURCES.md` — canonical structural crown jewel and standalone-capable method, currently version 1.1
 - `docs/RESPONSIBILITY_MAP.md` when authority or ownership is unclear
 - `docs/SOURCE_HYGIENE.md` when the corpus itself may be stale, contradictory or bloated
 - `docs/OPERATIONAL_RELIABILITY.md` when the operation includes mutation, retries, partial failure or recovery

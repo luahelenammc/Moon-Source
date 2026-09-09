@@ -57,7 +57,7 @@ Creator: Example Creator
             "function": "Govern living-source authority.",
             "claim_ceiling": "No guaranteed freshness or universal connector behavior.",
             "versioning_mode": "public_semantic_version",
-            "version": "1.1-public",
+            "version": "1.1",
             "public_created_on": "2026-09-07",
             "last_material_update_on": "2026-09-08",
             "last_material_update_summary": "Registry rebase.",

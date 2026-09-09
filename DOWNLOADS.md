@@ -25,8 +25,8 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 |---|---|---|---|
 | [🧭 **Moon Source Setup**](portables/setup/README.md) | [MOON_SOURCE_SETUP.md](portables/setup/MOON_SOURCE_SETUP.md#first-use) | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip) |
 | [🛫 **Preflight**](portables/preflight/README.md) | [PREFLIGHT_V2.md](portables/preflight/PREFLIGHT_V2.md#first-use) | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
-| [👁️ **Be My Eyes**](portables/be-my-eyes/README.md) | [BE_MY_EYES.md](portables/be-my-eyes/BE_MY_EYES.md#first-use) | Reading messages, threads, screenshots, notes and drafts as human scenes | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip) |
-| [🔗 **Connected Sources**](portables/connected-sources/README.md) | [CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md#first-use) | Governed operation over persistent connected sources | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources-1.1-public.zip) |
+| [👁️ **Be My Eyes**](portables/be-my-eyes/README.md) | [BE_MY_EYES.md](portables/be-my-eyes/BE_MY_EYES.md#first-use) | Reading messages, threads, screenshots, notes and drafts as human scenes | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0.zip) |
+| [🔗 **Connected Sources**](portables/connected-sources/README.md) | [CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md#first-use) | Governed operation over persistent connected sources | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources-1.1.zip) |
 | [🧱 **Moon Source Language**](portables/msl/README.md) | [MSL_5_0.md](portables/msl/MSL_5_0.md#first-use) | Governing semantic passage across sources, capabilities, interfaces and surfaces | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-5.0.zip) |
 | [🔀 **Chat–Work Routing Protocol**](portables/chat-work/README.md) | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) | Object- and workload-routed Chat/Work/Codex execution | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip) |
 
@@ -34,7 +34,7 @@ The MSL 5.0 package carries the exact canonical body, including its explicit for
 
 > 🌱 **First time with Moon Source?** Start with [README.md#first-use](README.md#first-use). Each readable capability surface has a prominent **Start** route into the canonical body's embedded First use section. Every current standalone package still contains exactly the self-onboarding canonical body — not the README facade.
 
-The current Be My Eyes capability version is **1.0-public**. The current Connected Sources capability version is **1.1-public**. The current Chat–Work Routing Protocol version is **4.7-public**. It retains the model-neutral Intelligence Distillation Ladder and connector-aware source transport, and now adds bounded exhaustiveness plus scope-amplification recovery, while preserving the unversioned human title, V4 canonical filename and current MSL 5.0.
+The current Be My Eyes capability version is **1.0**. The current Connected Sources capability version is **1.1**. The current Chat–Work Routing Protocol version is **4.7**. It retains the model-neutral Intelligence Distillation Ladder and connector-aware source transport, and now adds bounded exhaustiveness plus scope-amplification recovery, while preserving the unversioned human title, V4 canonical filename and current MSL 5.0.
 
 GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each current standalone package contains its canonical body and the readable package surfaces required by that distribution; the canonical body carries the operative First use entry. Website copies are convenience mirrors, not separate semantic sources.
 
@@ -59,13 +59,13 @@ The former `docs/PREFLIGHT.md` path remains only as a succession pointer.
 
 ### Be My Eyes
 
-[**Browse Be My Eyes**](portables/be-my-eyes/README.md) · [**Open canonical body**](portables/be-my-eyes/BE_MY_EYES.md#first-use) · [**Download package**](downloads/be-my-eyes-1.0-public.zip)
+[**Browse Be My Eyes**](portables/be-my-eyes/README.md) · [**Open canonical body**](portables/be-my-eyes/BE_MY_EYES.md#first-use) · [**Download package**](downloads/be-my-eyes-1.0.zip)
 
-Be My Eyes owns the structural scene-reading responsibility and remains independently distributable at **1.0-public**.
+Be My Eyes owns the structural scene-reading responsibility and remains independently distributable at **1.0**.
 
 ### Connected Sources
 
-[**Browse Connected Sources**](portables/connected-sources/README.md) · [**Open canonical body**](docs/CONNECTED_SOURCES.md#first-use) · [**Download package**](downloads/connected-sources-1.1-public.zip)
+[**Browse Connected Sources**](portables/connected-sources/README.md) · [**Open canonical body**](docs/CONNECTED_SOURCES.md#first-use) · [**Download package**](downloads/connected-sources-1.1.zip)
 
 Connected Sources remains the structural crown jewel at `docs/CONNECTED_SOURCES.md`. Its portable directory contains only the human-facing README facade; the retired portable canonical body is not restored.
 
@@ -89,9 +89,9 @@ Connected Sources remains the structural crown jewel at `docs/CONNECTED_SOURCES.
 - **Just want AI to understand you better?** Download **Moon Source Setup** (version **3.1**).
 - **Want AI to reconstruct what you mean before it acts?** Download **Preflight** (version **2.0**).
 - **Want AI to read what is happening between people, or predict how your message may land without pretending to read minds?** Download **Be My Eyes**.
-- **Need AI to return to current material across sessions or operate over governed connected sources?** Download **Connected Sources** (version **1.1-public**).
+- **Need AI to return to current material across sessions or operate over governed connected sources?** Download **Connected Sources** (version **1.1**).
 - **Want the structural grammar?** Download **Moon Source Language** (version **5.0**).
-- **Want configurable Chat ↔ Work ↔ Codex routing?** Download **Chat–Work Routing Protocol** (version **4.7-public**).
+- **Want configurable Chat ↔ Work ↔ Codex routing?** Download **Chat–Work Routing Protocol** (version **4.7**).
 - **Need a bounded operational execution pattern?** Browse **Operational Devices** and **Operational Reliability**.
 - **Need to metabolize recurring failure?** Browse **Failure to Capability — Failure Foundry**.
 - **Want the synthetic browser reference?** Browse **Browser Console Device**; it is an experimental example, not a supported standalone distribution.

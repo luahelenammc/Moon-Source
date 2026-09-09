@@ -2,7 +2,7 @@
 
 *Contextual Scene Reading*
 
-## Public Portable Edition · 1.0-public
+## Public Portable Edition · 1.0
 
 ## Meta
 
@@ -12,7 +12,7 @@
 - **professional context:** https://www.luahelena.com.br/ia/?lang=en
 - **website mirror:** https://www.luahelena.com.br/moonsource/downloads/BE_MY_EYES.md
 - **status:** current public portable
-- **version:** 1.0-public
+- **version:** 1.0
 - **language:** English
 - **method semantics as of:** 2026-09-07
 - **class:** contextual scene-reading protocol

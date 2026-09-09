@@ -10,7 +10,7 @@ A public capability for reaching persistent sources through connectors without c
 - **Audience:** people and builders who need AI to return to current external material across interactions.
 - **Language:** English-first capability; execution may follow the user's language.
 - **Status:** public · free to read · standalone-capable · platform-independent.
-- **Version:** 1.1-public.
+- **Version:** 1.1.
 - **Architectural role:** structural crown jewel / Living Source Protocol.
 - **Canonical repository:** https://github.com/luahelenammc/Moon-Source
 - **Canonical path:** docs/CONNECTED_SOURCES.md

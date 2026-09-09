@@ -2,7 +2,7 @@
 
 **Let AI work with persistent external sources while keeping access, authority, freshness, mutation and readback separate.**
 
-[▶️ Start here](../../docs/CONNECTED_SOURCES.md#first-use) · [⬇️ Download package](../../downloads/connected-sources-1.1-public.zip) · [🌙 Moon Source](../../README.md)
+[▶️ Start here](../../docs/CONNECTED_SOURCES.md#first-use) · [⬇️ Download package](../../downloads/connected-sources-1.1.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 
@@ -23,10 +23,10 @@ It is not a connector onboarding tutorial, universal synchronization layer or pe
 
 ## Current identity
 
-- **Version:** 1.1-public
+- **Version:** 1.1
 - **Status:** current · structural crown jewel · supported standalone distribution
 - **Canonical semantic body:** [`docs/CONNECTED_SOURCES.md`](../../docs/CONNECTED_SOURCES.md)
-- **Package:** [`downloads/connected-sources-1.1-public.zip`](../../downloads/connected-sources-1.1-public.zip)
+- **Package:** [`downloads/connected-sources-1.1.zip`](../../downloads/connected-sources-1.1.zip)
 - **ChatGPT adapter:** [`docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md`](../../docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md)
 - **License:** CC BY 4.0 · see [Licensing](../../LICENSING.md)
 
