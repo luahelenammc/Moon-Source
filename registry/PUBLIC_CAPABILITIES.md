@@ -20,7 +20,7 @@ The table below is a human-readable view of the same fourteen records.
 | moon-source-setup | [Moon Source Setup](../portables/setup/README.md) | adaptive context router | 3.1 | current | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md#first-use) | [ZIP](../downloads/moon-source-setup-3.1.zip) |
 | operational-devices | 🛠️ Operational Devices | operational-device pattern | — | current | [OPERATIONAL_DEVICES.md](../docs/OPERATIONAL_DEVICES.md) | — |
 | operational-reliability | 🛡️ Operational Reliability | operational-reliability method | — | current | [OPERATIONAL_RELIABILITY.md](../docs/OPERATIONAL_RELIABILITY.md) | — |
-| preflight | [Preflight](../portables/preflight/README.md) | transversal interface method | 2.0 | current | [PREFLIGHT_V2.md](../portables/preflight/PREFLIGHT_V2.md#first-use) | [ZIP](../downloads/preflight-v2.zip) |
+| preflight | [Preflight](../portables/preflight/README.md) | transversal interface method | 2.1 | current | [PREFLIGHT_V2.md](../portables/preflight/PREFLIGHT_V2.md#first-use) | [ZIP](../downloads/preflight-v2.zip) |
 | procedural-projection | 🧩 Procedural Projection | procedural-projection method | — | current | [PROCEDURAL_PROJECTION.md](../docs/PROCEDURAL_PROJECTION.md) | — |
 | signal-calibration | 🎚️ Signal Calibration | qualitative signal calibration | — | current | [SIGNAL_CALIBRATION.md](../docs/SIGNAL_CALIBRATION.md) | — |
 | source-hygiene | 🧹 Source Hygiene | source-hygiene method | — | current | [SOURCE_HYGIENE.md](../docs/SOURCE_HYGIENE.md) | — |

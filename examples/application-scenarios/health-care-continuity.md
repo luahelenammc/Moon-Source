@@ -23,7 +23,7 @@ Use Preflight to identify the actual decision, audience, sensitivity and questio
 - [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for choosing what deserves materialization.
 - [Connected Sources](../../docs/CONNECTED_SOURCES.md) for source reach, freshness and mutation boundaries.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for contradiction, duplication and stale-state review.
-- [MSL 5.0](../../portables/msl/MSL_5_0.md) for a proportionate continuity packet or handoff.
+- [MSL 5.0](../../portables/msl/MSL_5_1.md) for a proportionate continuity packet or handoff.
 
 ## Possible smallest materialization
 

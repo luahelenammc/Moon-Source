@@ -21,7 +21,7 @@ It is not mind-reading, a mandatory questionnaire or an excuse to over-architect
 
 ## Current identity
 
-- **Version:** 2.0
+- **Version:** 2.1
 - **Status:** current · supported standalone distribution
 - **Canonical body:** [`portables/preflight/PREFLIGHT_V2.md`](PREFLIGHT_V2.md)
 - **Package:** [`downloads/preflight-v2.zip`](../../downloads/preflight-v2.zip)

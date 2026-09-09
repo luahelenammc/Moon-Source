@@ -18,7 +18,7 @@ They should not be collapsed into one number.
 
 - Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to bounded-exhaustiveness subversion 4.7-public on 2026-09-09.
 - Current structural grammar: Moon Source Language, version 5.1.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.0), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 4.7-public).
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.1), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 4.7-public).
 - All fourteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry.
 - Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -144,6 +144,10 @@ The release also adds `scope_amplification_failure` and a constrain-before-escal
 The superseded 4.4-public portable remains recoverable through Git history. MSL remains 5.0 because this release changes the routing/distillation protocol, not the structural passage grammar.
 
 **Lineage correction:** the last correctly numbered Chat–Work release was 4.4-public. The self-onboarding canonical-body integration is counted as 4.5, the MSL 5.0 canonical dependency/reference alignment as 4.6, and the bounded-exhaustiveness update as 4.7. The repository had preserved 4.4 across the first two updates under an older semantic-only bump convention; this correction restores the project's +0.1-per-module-update rule without fabricating parallel historical artifacts.
+
+### Preflight 2.1 dependency-coherence release — 2026-09-09
+
+Preflight 2.1 updates the canonical dependency route from the retired `MSL_5_0.md` path to the current `MSL_5_1.md` path. The Preflight reconstruction method is unchanged. Because the canonical Preflight body changed, the repository +0.1 rule advances its release state from 2.0 to 2.1; the stable V2 human title, canonical filename and package family remain unchanged.
 
 ## Future versions
 ### Public capability registry rebase — 2026-09-08

@@ -20,7 +20,7 @@ Use Moon Source Setup 3.1 to infer the learner's actual need and maturity. Use t
 - [Preflight](../../docs/PREFLIGHT.md) for task shaping.
 - [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for the smallest useful learning artifact.
 - [Procedural Projection](../../docs/PROCEDURAL_PROJECTION.md) for method-to-procedure separation.
-- [MSL 5.0](../../portables/msl/MSL_5_0.md) for a role-bounded onboarding packet.
+- [MSL 5.0](../../portables/msl/MSL_5_1.md) for a role-bounded onboarding packet.
 
 ## Possible smallest materialization
 
