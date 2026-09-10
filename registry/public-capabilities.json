@@ -297,7 +297,7 @@
       "dependencies": [],
       "difficulty": "beginner to advanced",
       "distribution": {
-        "canonical_sha256": "375cbcfb68048b4a5c13273ffc64ede9b88bbd9ae1d629ae1acff5096f6e580b",
+        "canonical_sha256": "ddecbaa00cf49d4ea552814339b88f5fbe6449691f3e29e921628be0b26f0acd",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/PREFLIGHT_V2.md",
