@@ -20,7 +20,7 @@ The table below is a human-readable view of the same fourteen records.
 | moon-source-setup | [Moon Source Setup](../portables/setup/README.md) | adaptive context router | 3.1 | current | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md#first-use) | [ZIP](../downloads/moon-source-setup-3.1.zip) |
 | operational-devices | 🛠️ Operational Devices | operational-device pattern | — | current | [OPERATIONAL_DEVICES.md](../docs/OPERATIONAL_DEVICES.md) | — |
 | operational-reliability | 🛡️ Operational Reliability | operational-reliability method | — | current | [OPERATIONAL_RELIABILITY.md](../docs/OPERATIONAL_RELIABILITY.md) | — |
-| preflight | [Preflight](../portables/preflight/README.md) | transversal interface method | 2.1 | current | [PREFLIGHT_V2.md](../portables/preflight/PREFLIGHT_V2.md#first-use) | [ZIP](../downloads/preflight-v2.zip) |
+| preflight | [Preflight](../portables/preflight/README.md) | transversal interface method | 2.2 | current | [PREFLIGHT_V2.md](../portables/preflight/PREFLIGHT_V2.md#first-use) | [ZIP](../downloads/preflight-v2.zip) |
 | procedural-projection | 🧩 Procedural Projection | procedural-projection method | — | current | [PROCEDURAL_PROJECTION.md](../docs/PROCEDURAL_PROJECTION.md) | — |
 | signal-calibration | 🎚️ Signal Calibration | qualitative signal calibration | — | current | [SIGNAL_CALIBRATION.md](../docs/SIGNAL_CALIBRATION.md) | — |
 | source-hygiene | 🧹 Source Hygiene | source-hygiene method | — | current | [SOURCE_HYGIENE.md](../docs/SOURCE_HYGIENE.md) | — |
@@ -79,7 +79,7 @@ byte-identical to its mapped canonical body.
 Unversioned capabilities are governed by their canonical material updates.
 Standalone capabilities carry independent public versions when a method or
 distribution contract earns one. Registry schema changes do not automatically
-change a capability version. The current standalone releases are Connected Sources at 1.1-public, MSL at 5.1, Chat–Work at 5.1, Setup at 3.1, Preflight at 2.1 and Be My Eyes at 1.0-public. Chat–Work 5.1 adds a model-neutral strategy-adapter boundary and subordinate Astra strategy guidance while preserving optional explicitly activated ephemeral Sprint Mode, bounded Decision Sprint, Sprint Receipts and the model-neutral IDL/Decision Trace laws; MSL's formatting contract is part of the current 5.1 body and release identity.
+change a capability version. The current standalone releases are Connected Sources at 1.1-public, MSL at 5.1, Chat–Work at 5.1, Setup at 3.1, Preflight at 2.2 and Be My Eyes at 1.0-public. Chat–Work 5.1 adds a model-neutral strategy-adapter boundary and subordinate Astra strategy guidance while preserving optional explicitly activated ephemeral Sprint Mode, bounded Decision Sprint, Sprint Receipts and the model-neutral IDL/Decision Trace laws; MSL's formatting contract is part of the current 5.1 body and release identity.
 
 Product-specific connector behavior, model names, plans, prices, availability
 and other volatile facts must be rechecked before being treated as current.

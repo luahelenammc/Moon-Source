@@ -45,6 +45,61 @@ Connected Sources answers whether and how a source can be reached, refreshed or 
 
 These operations are related, but they are not a compulsory chain. A retrieve may be enough. A process may end in a proposal or no delta. A metabolized change may remain in its current jurisdiction. A promoted mechanism may be rejected, incubated or already public.
 
+## Source Reflex
+
+Source Reflex is the bounded correction loop used when active execution reveals a material mismatch between the frame being used and the source, jurisdiction, artifact variant, version, ontology, authority or runtime surface that should govern the task.
+
+> Correct the active map before deciding whether the source needs a patch.
+
+During an active task, frame correction may be reflexive when evidence is sufficient. This is execution-local correction, not autonomous maintenance: no background scan, silent rewrite, automatic publication or mutation authority inferred from access.
+
+### Trigger boundary
+
+Use Source Reflex when execution finds:
+
+- a governing source or effective authority different from the one presumed;
+- an artifact jurisdiction, variant or version that does not fit the task;
+- a snapshot, bridge or copy treated as canonical;
+- an ontology or runtime surface that does not match the source meant to govern;
+- an explicit correction or a conflict between current sources.
+
+Do not activate it for cosmetic preference, equivalent wording, immaterial noise or a new external fact when the current frame remains correct. External material enters through Nectar and reaches Source Reflex only when it evidences a frame mismatch.
+
+### Canonical receipt
+
+Every material correction should leave a compact receipt with:
+
+- trigger, mismatch type, evidence and confidence;
+- active frame before and corrected frame;
+- governing source, smallest sovereign destination and mutation authority;
+- persistence class, local action, upstream candidacy and next operator;
+- readback and residual uncertainty.
+
+The source/jurisdiction preflight route should expose **jurisdiction_fit: pass | corrected | conflict**, the corrected source/frame, mismatch type, confidence, persistence relevance and next operator. Living State Reconciliation may consume this receipt after jurisdiction is resolved; it does not resolve jurisdiction on behalf of preflight.
+
+### Persistence and authority
+
+- **instance_only:** correct the working frame for the present task only.
+- **source_gap_local:** preserve a reusable local gap without implying an upstream change.
+- **source_conflict:** preserve competing authorities and do not force a synthesis.
+- **upstream_candidate:** abstract, sanitize and de-duplicate a reusable pattern; candidacy is not promotion.
+
+The authority ladder remains bounded: A0 observes; A1 corrects and classifies; A2 writes locally only under explicit authority; A3 prepares or promotes publicly only under explicit public instruction or a delegated workflow, with review, gate and readback. Correction and candidacy do not grant mutation authority.
+
+### Composition boundary
+
+Project MRI remains responsible for broad system-health and drift inspection. Source Mutation Hygiene Gate controls write safety. Source Operations owns retrieve, process, metabolize, promote, lifecycle and no-delta decisions. Nectar owns external material, credit and provenance. Living State Reconciliation reconciles state after source and authority are resolved. Source Reflex routes among these owners; it is not a new content owner or a new standalone capability.
+
+### Synthetic acceptance cases
+
+- **A — variant mismatch:** the task names a V1 artifact while the current governing body is V2; correct the active variant, continue, and keep the correction instance-only unless a separate gap is proven.
+- **B — stale snapshot:** a snapshot disagrees with the current source; current source governs, while the snapshot remains evidence rather than canonical state.
+- **C — bridge treated as canonical:** a bridge packet is mistaken for the source of truth; route back to the sovereign source and do not rewrite the bridge as if it owned the content.
+- **D — reusable local gap:** a correction exposes a repeatable local behavior without public proof; classify source_gap_local and route to the smallest local destination.
+- **E — upstream candidate:** a sanitized, non-duplicative pattern is reusable beyond the local habitat; classify upstream_candidate, prepare the public packet, and stop at the promotion gate.
+- **F — ambiguous conflict:** two current authorities remain materially incompatible; preserve source_conflict, surface the uncertainty and request the next decision.
+- **G — no delta:** the current frame remains correct after inspection; record no_delta and make no mutation.
+
 ### Retrieve
 
 Retrieve locates and loads governing context for the present task.
@@ -326,7 +381,7 @@ This component supports the claim that Moon Source publishes a bounded source-op
 It does not support claims of:
 
 - an autonomous source migration, promotion or archive engine;
-- automatic detection of promotion eligibility;
+- autonomous or background detection of promotion eligibility;
 - automatic synchronization or archive creation;
 - external adoption, measured impact or universal validity;
 - permission or endorsement from an upstream donor;

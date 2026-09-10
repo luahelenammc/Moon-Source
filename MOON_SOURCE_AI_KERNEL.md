@@ -27,7 +27,7 @@ Use each file for the responsibility it actually owns:
 
 - `README.md` — orientation, public entry points and top-level routing.
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
-- `portables/preflight/PREFLIGHT_V2.md` — Preflight: human-intent reconstruction before execution, currently version 2.1, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
+- `portables/preflight/PREFLIGHT_V2.md` — Preflight: human-intent reconstruction before execution, currently version 2.2, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
 - `portables/be-my-eyes/BE_MY_EYES.md` — canonical active Be My Eyes method and 1.0-public standalone distribution: contextual scene reading, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection.
 - `docs/CONNECTED_SOURCES.md` — canonical Connected Sources structural crown jewel and 1.1-public standalone distribution: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
 - `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` — subordinate dated ChatGPT product/reference facts; load only when current product behavior is materially relevant.
@@ -229,7 +229,7 @@ Also load:
 - `docs/RESPONSIBILITY_MAP.md` when ownership or authority is unclear;
 - `docs/CREDITS_ATTRIBUTION_OPS.md` when material lineage, custody, permission or disclosure changes.
 
-Use **retrieve** to locate current governing context without mutation. Use **process** to interpret or transform the working representation without default writeback. Use **metabolize** only when a real eligible delta belongs in the current governing source and can be read back. Use **promote** deliberately, after abstraction, sanitization, public-duplication and lineage checks; promotion is never automatic.
+Use **retrieve** to locate current governing context without mutation. Use **process** to interpret or transform the working representation without default writeback. Use **metabolize** only when a real eligible delta belongs in a governed source, and use **promote** deliberately after abstraction, sanitization, public-duplication and lineage checks. Source Reflex may correct the active frame and identify an upstream candidate during active work when evidence is sufficient, but promotion remains deliberate, authority-bound and never automatic; use the public [Source Operations](docs/SOURCE_OPERATIONS.md#source-reflex) gate.
 
 Route current-use questions about superseded artifacts to their active successor. Keep legacy bodies available only for historical, provenance or recovery questions. Treat bridges, mirrors, snapshots and ledgers as non-authoritative for current state unless a governing source explicitly assigns them that facet.
 

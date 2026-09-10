@@ -87,7 +87,7 @@ Connected Sources remains the structural crown jewel at `docs/CONNECTED_SOURCES.
 
 - **Giving Moon Source files to an AI?** Download the **Moon Source AI Kernel**.
 - **Just want AI to understand you better?** Download **Moon Source Setup** (version **3.1**).
-- **Want AI to reconstruct what you mean before it acts?** Download **Preflight** (version **2.1**).
+- **Want AI to reconstruct what you mean before it acts?** Download **Preflight** (version **2.2**).
 - **Want AI to read what is happening between people, or predict how your message may land without pretending to read minds?** Download **Be My Eyes**.
 - **Need AI to return to current material across sessions or operate over governed connected sources?** Download **Connected Sources** (version **1.1-public**).
 - **Want the structural grammar?** Download **Moon Source Language** (version **5.1**).
