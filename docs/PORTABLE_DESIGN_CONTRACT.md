@@ -3,6 +3,8 @@
 A supported standalone distribution must package a capability's canonical
 semantic body so it can travel independently within its declared scope.
 
+**MSL profile:** 5.1-compatible Markdown-native contract surface; semantic authority and delivery surfaces remain distinct.
+
 ## Required metadata
 
 Each capability with a supported standalone distribution should identify:

@@ -2,6 +2,8 @@
 
 > **Status:** hypothetical / fictional didactic scenario. This example illustrates how Moon Source could be applied to a common context problem. It is not evidence of external adoption, implementation, measured impact or independent validation.
 
+**MSL profile:** 5.1-compatible Markdown-native synthetic scenario; fictional status, claim ceiling and authority boundaries remain unchanged.
+
 ## Common problem
 
 A fictional care service has sensitive information distributed across team notes, handoffs and separate source systems. Several professionals need different facets of the same current context, while authority to interpret, edit or disclose each facet is not identical.
@@ -18,12 +20,12 @@ Use Preflight to identify the actual decision, audience, sensitivity and questio
 
 ## Relevant components and portables
 
-- [Preflight](../../docs/PREFLIGHT.md) for task shaping before retrieval.
+- [Preflight](../../portables/preflight/PREFLIGHT_V2.md) for task shaping before retrieval.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for authority and ownership.
 - [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for choosing what deserves materialization.
 - [Connected Sources](../../docs/CONNECTED_SOURCES.md) for source reach, freshness and mutation boundaries.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for contradiction, duplication and stale-state review.
-- [MSL 5.0](../../portables/msl/MSL_5_1.md) for a proportionate continuity packet or handoff.
+- [MSL 5.1](../../portables/msl/MSL_5_1.md) for a proportionate continuity packet or handoff.
 
 ## Possible smallest materialization
 

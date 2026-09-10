@@ -2,6 +2,8 @@
 
 The following objects can work together, but they do not perform the same job.
 
+**MSL profile:** 5.1-compatible Markdown-native mapping surface; responsibility, authority and boundaries remain explicit.
+
 | Object | Public reading | Primary responsibility | It is not |
 |---|---|---|---|
 | Field | The real situation | Supply the context that must be understood | A document template |

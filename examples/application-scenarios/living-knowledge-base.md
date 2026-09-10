@@ -2,6 +2,8 @@
 
 > **Status:** hypothetical / fictional didactic scenario. This example illustrates how Moon Source could be applied to a common context problem. It is not evidence of external adoption, implementation, measured impact or independent validation.
 
+**MSL profile:** 5.1-compatible Markdown-native synthetic scenario; fictional status, claim ceiling and authority boundaries remain unchanged.
+
 ## Common problem
 
 A fictional project has documents, spreadsheets, AI chats and code. Different surfaces govern different facets, duplicate summaries become stale and the team wants AI assistance without exhaustive ingestion or silent mutation.
@@ -12,7 +14,7 @@ A single mega-summary flattens repository, document and conversation responsibil
 
 ## Moon Source reading of the field
 
-Use Connected Sources to map the source substrate, jurisdiction, retrieval scope, freshness and mutation authority. Use Source Hygiene to identify duplicated summaries and orphaned decisions. Use Operational Reliability for read-only diagnosis, bounded writes, receipts and recovery. Use MSL 5.0 when a packet or registry is actually needed.
+Use Connected Sources to map the source substrate, jurisdiction, retrieval scope, freshness and mutation authority. Use Source Hygiene to identify duplicated summaries and orphaned decisions. Use Operational Reliability for read-only diagnosis, bounded writes, receipts and recovery. Use MSL 5.1 when a packet or registry is actually needed.
 
 ## Relevant components and portables
 
@@ -20,7 +22,7 @@ Use Connected Sources to map the source substrate, jurisdiction, retrieval scope
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for staleness and duplication.
 - [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) for safe operation and readback.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for facet-level ownership.
-- [MSL 5.0](../../portables/msl/MSL_5_1.md) for a bounded registry or continuity packet.
+- [MSL 5.1](../../portables/msl/MSL_5_1.md) for a bounded registry or continuity packet.
 
 ## Possible smallest materialization
 

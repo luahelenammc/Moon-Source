@@ -75,7 +75,7 @@ History belongs to Git; it does not require an active compatibility twin.
 
 Before asking what structure the field deserves, the AI may need to solve a more human problem: **what is the person actually trying to accomplish?**
 
-[Preflight](portables/preflight/PREFLIGHT_V2.md) is the human-intent reconstruction layer before execution. Its current public version is **2.0**. It reads raw human expression as a whole, distinguishes request from context, example, hesitation and correction, reconstructs the desired outcome and constraints, and asks only when a consequential ambiguity remains.
+[Preflight](portables/preflight/PREFLIGHT_V2.md) is the human-intent reconstruction layer before execution. Its current public version is **2.1**. It reads raw human expression as a whole, distinguishes request from context, example, hesitation and correction, reconstructs the desired outcome and constraints, and asks only when a consequential ambiguity remains.
 
 Its core loop is intentionally simpler than the architectural topology:
 

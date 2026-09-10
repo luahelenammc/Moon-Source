@@ -23,9 +23,9 @@ Examples:
 
 ```text
 Title: Moon Source Language
-Version: 5.0
-Canonical path: portables/msl/MSL_5_0.md
-Package: downloads/moon-source-language-5.0.zip
+Version: 5.1
+Canonical path: portables/msl/MSL_5_1.md
+Package: downloads/moon-source-language-5.1.zip
 ```
 
 ```text

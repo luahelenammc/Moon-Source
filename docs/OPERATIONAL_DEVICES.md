@@ -6,6 +6,8 @@ An **operational device** is a bounded operational embodiment of a reusable proc
 
 The device is useful when a recurring method needs an explicit trigger, state, guardrail, failure behavior and observable output. It does not become a source of authority merely because it is executable or documented.
 
+**MSL profile:** 5.1-compatible Markdown-native method surface; preserve the procedure/device distinction and execution-surface boundary.
+
 ## Responsibility contract
 
 | Object | Owns | Does not replace |

@@ -2,6 +2,8 @@
 
 > **Status:** hypothetical / fictional didactic scenario. This example illustrates how Moon Source could be applied to a common context problem. It is not evidence of external adoption, implementation, measured impact or independent validation.
 
+**MSL profile:** 5.1-compatible Markdown-native synthetic scenario; fictional status, claim ceiling and authority boundaries remain unchanged.
+
 ## Common problem
 
 A fictional operations team performs a recurring process through a mixture of SOPs, chat messages, spreadsheets and the memory of two experienced people. An AI assistant retrieves contradictory instructions, and nobody knows which material is current.

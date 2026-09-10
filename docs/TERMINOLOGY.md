@@ -4,7 +4,7 @@ Internal names are useful for continuity, but a public reader should be able to 
 
 | Moon Source term | Public explanation | Use with care |
 |---|---|---|
-| Preflight | Human-intent reconstruction before execution: turn ordinary, incomplete, conversational or self-correcting expression into a faithful working task, then activate heavier execution guardrails only when consequence requires them; current public version 2.0 | Not mind-reading, a compulsory questionnaire, hidden reasoning transcript, prompt-engineering homework or autonomous self-modification |
+| Preflight | Human-intent reconstruction before execution: turn ordinary, incomplete, conversational or self-correcting expression into a faithful working task, then activate heavier execution guardrails only when consequence requires them; current public version 2.1 | Not mind-reading, a compulsory questionnaire, hidden reasoning transcript, prompt-engineering homework or autonomous self-modification |
 | Adaptive Preflight | Moon Source Setup's specialization of the broader Preflight portable for personal and project-context setup | Do not treat Setup as the owner of all Preflight behavior |
 | Self-prompt / reconstructed working prompt | Explanatory metaphor for the working task produced after the AI reconstructs intended meaning, desired outcome, corrections and constraints | Not canonical ontology; does not imply hidden chain-of-thought, literal system-prompt editing or persistent self-modification |
 | Source jurisdiction | Which source has authority over which claim or state | A conditional execution concern in Preflight; do not publish private resolver heuristics by default |
@@ -24,7 +24,7 @@ Internal names are useful for continuity, but a public reader should be able to 
 | Source hygiene | Maintenance of active truth, freshness, duplication, contradiction and archive boundaries | Not a claim of perfect automation |
 | Signal calibration | Using incomplete or ambiguous cues proportionally without promoting them to fact or discarding them because certainty is unavailable | Not proof of motive, diagnosis or causality |
 | Working inference | The current best-supported interpretation kept explicitly distinct from established fact | Not a public claim or a substitute for domain evidence standards |
-| MSL | Structural/context grammar for governed semantic passage | Current public version is 5.0 |
+| MSL | Structural/context grammar for governed semantic passage | Current public version is 5.1 |
 | Runtime | Callable operating layer | Use only where real executable capacity is evidenced |
 | Public surface | Human-facing portal or distribution layer | Does not replace the source |
 | Archive | Preserved historical material | Historical does not mean current |

@@ -8,6 +8,8 @@ A public source-hygiene method for auditing context corpora, project files and k
 
 Broken intellectual custody is a source-hygiene finding. Missing origin, unclear authorship, lost canonical identity, unrecorded transformations, permission drift, derivative ambiguity or unattributed material reuse can all make a corpus structurally unreliable even when retrieval works. Use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for the dedicated protection operation; do not publish private custody ledgers or infer legal permission from a missing marker.
 
+**MSL profile:** 5.1-compatible Markdown-native method surface; preserve source authority, freshness and custody boundaries.
+
 ## 🔍 What kind of failure is this?
 
 | Finding | The question |
