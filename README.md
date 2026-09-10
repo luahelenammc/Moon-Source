@@ -160,11 +160,11 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent capability changes
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
-- **2026-09-09 — Preflight:** Dependency-coherence release: updates the canonical MSL route from the superseded 5.0 path to current 5.1; Preflight method semantics are unchanged.
-- **2026-09-09 — Moon Source Setup:** Aligned active MSL references with the current 5.1 structural/context grammar without changing Moon Source Setup semantics or version.
+- **2026-09-10 — Preflight:** MSL 5.1 envelope and historical-reference cleanup; Preflight reconstruction semantics remain unchanged.
+- **2026-09-10 — Moon Source Setup:** Aligned active MSL and Preflight canonical references with MSL 5.1 and Preflight 2.1 without changing Moon Source Setup semantics or version.
+- **2026-09-10 — Connected Sources:** Declared the current MSL 5.1 structural dependency in the canonical metadata without changing method semantics or version.
+- **2026-09-10 — Be My Eyes:** Declared the current MSL 5.1 structural dependency in the canonical metadata without changing method semantics or version.
 - **2026-09-09 — Moon Source Language:** Release-coherence correction: correctly numbers the accepted formatting-continuity update as 5.1, keeps the MSL 5 semantic grammar unchanged, and retires superseded live generations.
-- **2026-09-09 — Chat–Work Routing Protocol:** Released 5.1 with a model-neutral strategy-adapter boundary and subordinate Astra strategy guidance, preserving generic IDL, optional Sprint/Decision Sprint, Decision Trace, authority, evidence, verification and Chat Postflight boundaries.
-- **2026-09-08 — Connected Sources:** Moved the canonical Connected Sources body to its structural home while preserving its 1.1-public standalone distribution.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
 This bounded digest is generated from the unified capability registry. It is not a commit log.
