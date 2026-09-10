@@ -23,7 +23,7 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 
 | Capability | Canonical body | Best for | Direct download |
 |---|---|---|---|
-| [🧭 **Moon Source Setup**](portables/setup/README.md) | [MOON_SOURCE_SETUP.md](portables/setup/MOON_SOURCE_SETUP.md#first-use) | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip) |
+| [🧭 **Setup**](portables/setup/README.md) | [MOON_SOURCE_SETUP.md](portables/setup/MOON_SOURCE_SETUP.md#first-use) | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip) |
 | [🛫 **Preflight**](portables/preflight/README.md) | [PREFLIGHT_V2.md](portables/preflight/PREFLIGHT_V2.md#first-use) | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
 | [👁️ **Be My Eyes**](portables/be-my-eyes/README.md) | [BE_MY_EYES.md](portables/be-my-eyes/BE_MY_EYES.md#first-use) | Reading messages, threads, screenshots, notes and drafts as human scenes | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip) |
 | [🔗 **Connected Sources**](portables/connected-sources/README.md) | [CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md#first-use) | Governed operation over persistent connected sources | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources-1.1-public.zip) |
@@ -73,7 +73,7 @@ Connected Sources remains the structural crown jewel at `docs/CONNECTED_SOURCES.
 
 - [Moon Source AI Kernel](MOON_SOURCE_AI_KERNEL.md)
 - [Unified public capability registry](registry/PUBLIC_CAPABILITIES.md)
-- [🏗️ Moon Source Architecture — Field to Form](ARCHITECTURE.md#field-to-form)
+- [🏗️ Architecture — Field to Form](ARCHITECTURE.md#field-to-form)
 - [🧾 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md)
 - [🔓 Licensing](LICENSING.md)
 - [🧩 Procedural Projection](docs/PROCEDURAL_PROJECTION.md)
@@ -82,6 +82,10 @@ Connected Sources remains the structural crown jewel at `docs/CONNECTED_SOURCES.
 - [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md)
 - [🧪 Browser Console Device reference](examples/browser-console-device/)
 - [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md)
+
+## Related public body
+
+[Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) is the separate public body for domain-shaped systems. It may use Moon Source for installation and context governance, but it is not a Moon Source capability and does not require Moon Source as a permanent runtime dependency.
 
 ## Which download should I choose?
 

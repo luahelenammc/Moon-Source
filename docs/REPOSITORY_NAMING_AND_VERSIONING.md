@@ -1,40 +1,50 @@
 # Repository Naming and Versioning
 
-## Title–version separation
+## Title, summary and surface coordinates
 
-Moon Source public repositories use two different coordinates:
+Moon Source public repositories use three naming/presentation coordinates plus version:
 
-- **Title / name = identity.** A human-facing title names the capability, method, protocol or family and should remain stable across ordinary releases.
-- **Version = state.** A version records the current generation, compatibility state or release maturity and belongs in dedicated metadata.
+- **Registry title / semantic identity = identity.** A stable name for the capability, method, protocol or family. It remains in registry `title` fields and semantic metadata.
+- **Summary title = concise browsing label.** A short label used in repository lists, tables and download hubs. It may omit the project prefix when the surrounding surface already establishes it; intrinsic names such as Moon Source Language remain intact.
+- **Surface title = local readable identity.** The title shown in a capability README or canonical body. It combines the summary title with a bounded role qualifier such as `— Moon Source portable`, `— Moon Source component` or `— Moon Source architecture`.
+- **Version = state.** A version records generation, compatibility or release maturity separately in dedicated metadata.
 
-This separation keeps a person-facing name useful after a release advances. It also prevents a registry, website card or document heading from becoming stale merely because the underlying artifact moved from V2 to V3 or from 3.0 to 4.0.
+These coordinates are presentation layers, not competing semantic authorities. The registry `title` keeps the capability's stable identity; `summary_title` keeps list surfaces compact; `surface_title` makes an individual body self-identifying; and `version` records state.
 
 ## Required practice
 
 For current public material:
 
-1. Keep the stable title in first-level headings, registry `title` fields, website card labels, navigation labels and human-facing download names.
-2. Put release state in a dedicated `version` field, metadata block, registry `version` field, changelog entry, release note or explicit sentence.
-3. Keep version-bearing technical coordinates when they are useful or contractually required: canonical filenames, paths, package filenames, URLs, branch names, historical references and compatibility identifiers.
-4. When discussing history, name the old generation explicitly and keep it grammatically separate from the current title.
-5. Do not move a current naming/version rule into a local or private source when the rule governs this public repository family.
+1. Keep the registry title stable in machine-readable identity and semantic metadata.
+2. Use the summary title for compact repository lists, README tables, download hubs and similar browsing surfaces.
+3. Use the surface title in each individual capability README and canonical body H1. The role qualifier identifies the Moon Source portable, component or architecture; it is not a version marker.
+4. Put release state in a dedicated `version` field, metadata block, registry `version` field, changelog entry, release note or explicit sentence.
+5. Keep version-bearing technical coordinates when they are useful or contractually required: canonical filenames, paths, package filenames, URLs, branch names, historical references and compatibility identifiers.
+6. When discussing history, name the old generation explicitly and keep it grammatically separate from the current title.
+7. Do not globally replace the project name. Explicit project identity, dependency, lineage, licensing and attribution statements retain the full Moon Source name.
+8. Do not move a current naming/version rule into a local or private source when the rule governs this public repository family.
 
 Examples:
 
 ```text
-Title: Moon Source Language
-Version: 5.1
-Canonical path: portables/msl/MSL_5_1.md
-Package: downloads/moon-source-language-5.1.zip
+Registry title: Moon Source Setup
+Summary title: Setup
+Surface title: Setup — Moon Source portable
+Version: 3.1
+Canonical path: portables/setup/MOON_SOURCE_SETUP.md
 ```
 
 ```text
-Title: Preflight
-Version: 2.0
-Canonical path: portables/preflight/PREFLIGHT_V2.md
+Registry title: Moon Source Language
+Summary title: Moon Source Language
+Surface title: Moon Source Language — Moon Source portable
+Version: 5.1
+Canonical path: portables/msl/MSL_5_1.md
 ```
 
-The technical path may preserve a version because it is an identity and compatibility coordinate. The public title should not become `Preflight V2`.
+The technical path may preserve a version because it is an identity and compatibility coordinate. The public summary title should not become `Moon Source V2`, and a surface role qualifier should not become `Setup V2`.
+
+## Inheritance
 
 ## Inheritance
 

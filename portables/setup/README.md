@@ -1,4 +1,4 @@
-# 🧭 Moon Source Setup
+# 🧭 Setup — Moon Source portable
 
 **Build the smallest useful AI context setup for a person or project without turning context into a pile of everything.**
 

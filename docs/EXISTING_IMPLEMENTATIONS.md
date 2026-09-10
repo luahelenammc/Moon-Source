@@ -2,7 +2,7 @@
 
 This map points to artifacts that already exist. It is not a manufactured case study and does not claim external adoption.
 
-Use it to choose an inspectable public capability. If the question is what should be created rather than what already exists, start with the [🏗️ Moon Source Architecture — Field to Form](../ARCHITECTURE.md#field-to-form).
+Use it to choose an inspectable public capability. If the question is what should be created rather than what already exists, start with the [🏗️ Architecture — Field to Form](../ARCHITECTURE.md#field-to-form).
 
 **Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
 
@@ -11,7 +11,7 @@ Use it to choose an inspectable public capability. If the question is what shoul
 | Capability | Inspectable materialization | Evidence class | Claim ceiling |
 |---|---|---|---|
 | Human-intent reconstruction before execution | [Preflight](../portables/preflight/PREFLIGHT_V2.md) | PUBLIC_ARTIFACT, PUBLIC_REPOSITORY | A documented public method reconstructs intended tasks from ordinary human expression and activates heavier execution guardrails only when consequence requires them; mind-reading, scientific validation, uniqueness, adoption, measured improvement and independent validation are not demonstrated here. |
-| Personal context setup | [Moon Source Setup](../portables/setup/MOON_SOURCE_SETUP.md) | PUBLIC_ARTIFACT | An adaptive setup is published, now with a bounded capability-probed persistent-source route; impact is not demonstrated here. |
+| Personal context setup | [Setup](../portables/setup/MOON_SOURCE_SETUP.md) | PUBLIC_ARTIFACT | An adaptive setup is published, now with a bounded capability-probed persistent-source route; impact is not demonstrated here. |
 | Contextual scene reading | [Be My Eyes 1.0-public portable](../portables/be-my-eyes/BE_MY_EYES.md) | PUBLIC_ARTIFACT, PUBLIC_REPOSITORY | One canonical public body serves both the structural method and independently readable portable for scene reconstruction, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection; mind-reading, diagnosis, validated prediction, guaranteed reaction and external adoption are not demonstrated. |
 | Sovereign semantic passage grammar | [Moon Source Language](../portables/msl/MSL_5_1.md) | PUBLIC_ARTIFACT | Moon Source Language version 5.1 is published as a structural/context portable; it is not executable code or a universal standard. |
 | Procedural projection method | [Procedural Projection](PROCEDURAL_PROJECTION.md) | PUBLIC_ARTIFACT | A bounded public method exists; automatic synchronization, native execution everywhere and impact are not demonstrated. |

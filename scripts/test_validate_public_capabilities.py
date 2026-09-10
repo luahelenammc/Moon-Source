@@ -28,7 +28,7 @@ class PublicCapabilityRegistryTests(unittest.TestCase):
         (self.root / "downloads").mkdir()
         (self.root / "registry").mkdir()
 
-        connected = """# Connected Sources
+        connected = """# Connected Sources — Moon Source component / portable
 
 ## First use
 
@@ -39,7 +39,7 @@ Creator: Example Creator
 Canonical path: `docs/CONNECTED_SOURCES.md`
 License: https://creativecommons.org/licenses/by/4.0/
 """
-        repository_only = """# Source Operations
+        repository_only = """# Source Operations — Moon Source component
 
 Canonical repository: https://github.com/example/moon-source
 Creator: Example Creator
@@ -51,6 +51,9 @@ Creator: Example Creator
         connected_capability = {
             "id": "connected-sources",
             "title": "Connected Sources",
+            "summary_title": "Connected Sources",
+            "surface_title": "Connected Sources — Moon Source component / portable",
+            "readable_surface_path": "docs/CONNECTED_SOURCES.md",
             "status": "current",
             "architectural_role": "structural_crown_jewel",
             "canonical_path": "docs/CONNECTED_SOURCES.md",
@@ -79,6 +82,8 @@ Creator: Example Creator
         repository_only_capability = {
             "id": "source-operations",
             "title": "Source Operations",
+            "summary_title": "Source Operations",
+            "surface_title": "Source Operations — Moon Source component",
             "status": "current",
             "architectural_role": "source_operations_method",
             "canonical_path": "docs/SOURCE_OPERATIONS.md",

@@ -2,27 +2,47 @@
 
 Use this template when a Moon Source-family repository needs a public rule for naming and releases.
 
-## Title–version separation
+## Title, summary and surface coordinates
 
-**Title / name = identity.** Keep the human-facing title stable across ordinary releases.
+Use three naming/presentation coordinates plus version:
 
-**Version = state.** Record the current generation, compatibility state or release maturity separately in metadata, registry fields, release notes and changelog entries.
+- **Registry title / semantic identity.** The stable capability, method, protocol or family name.
+- **Summary title.** The concise label used by lists, tables, download hubs and navigation cards.
+- **Surface title.** The individual README and canonical-body H1, combining the summary title with a bounded `— Moon Source portable`, `— Moon Source component` or `— Moon Source architecture` qualifier.
+- **Version.** The separate generation, compatibility or release state.
+
+Keep these coordinates distinct. A concise summary does not create a new capability identity, and a surface qualifier is not a version.
 
 ## Governed surfaces
 
-Apply the stable title to:
+Use the coordinates deliberately:
 
-- first-level document headings;
-- registry `title` fields;
-- website cards and navigation labels;
-- human-facing download labels.
+- registry `title` fields and semantic metadata: stable registry title;
+- repository lists, tables, cards and download hubs: summary title;
+- individual capability READMEs and canonical bodies: surface title;
+- metadata, release notes and changelogs: version;
+- canonical filenames, paths, package filenames, URLs, branches and compatibility identifiers: technical coordinates, which may retain version markers.
 
-Keep version markers where they are technical coordinates or historical facts:
+Preserve full Moon Source naming in explicit project identity, dependency, lineage, licensing and attribution statements. Do not make a global textual replacement.
 
-- dedicated `version` metadata;
-- canonical filenames, paths and package filenames;
-- compatibility identifiers, branches and release records;
-- historical prose that is explicitly about an earlier generation.
+## Local adoption
+
+Replace the placeholders below, then add a repository-level guard and tests before public promotion:
+
+```text
+Registry title: [stable semantic identity]
+Summary title: [concise browsing label]
+Surface title: [readable body title with Moon Source role]
+Current version: [release state]
+Canonical path: [technical path, if applicable]
+Registry entry: [path or identifier]
+Website/public surface: [path or URL, if applicable]
+Validation command: [guard command]
+```
+
+The repository rule governs current public naming. A local artifact convention may preserve version information in technical coordinates but must not turn that coordinate into the current human-facing title or a second semantic identity.
+
+## Local adoption
 
 ## Local adoption
 

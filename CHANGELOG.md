@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-10 — Public relationship and title-surface normalization
+
+- Added an explicit, bounded Moon Source ↔ Moon Cortex discoverability route while keeping the repositories, capability registry and runtime-dependency boundaries distinct.
+- Introduced separate summary and per-surface title coordinates so list labels stay concise while module READMEs and canonical bodies identify their Moon Source portable/component role.
+- Preserved capability identities, paths, filenames, semantic versions and public claims; refreshed affected canonical packages and delivery fingerprints.
+
 ## 2026-09-10 — MSL 5.1 full-public-surface closure
 
 - Applied a content-preserving MSL 5.1 envelope across the reviewed first- and second-wave Markdown surfaces.

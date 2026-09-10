@@ -1,4 +1,4 @@
-# 🏭 Failure to Capability — Failure Foundry
+# 🏭 Failure to Capability — Failure Foundry — Moon Source component
 
 Failure Foundry is a bounded loop for turning a recurring, costly, systemic or epistemically dangerous failure into the smallest reusable capability that has actually earned publication or reuse.
 

@@ -1,4 +1,4 @@
-# 🎚️ Signal Calibration
+# 🎚️ Signal Calibration — Moon Source component
 
 A bounded method for using weak, convergent or ambiguous evidence without turning inference into fact or uncertainty into blindness.
 

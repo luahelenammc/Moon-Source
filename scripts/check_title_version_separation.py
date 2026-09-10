@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: Apache-2.0
-"""Guard stable public capability titles against release-marker coupling."""
+"""Guard stable public capability identities, summary labels and surface titles."""
 
 from __future__ import annotations
 
@@ -49,36 +49,85 @@ def validation_errors(
         if not isinstance(capability, dict):
             errors.append("capability entry is not an object")
             continue
+
         identity = capability.get("id", "<unknown>")
         title = capability.get("title")
+        summary_title = capability.get("summary_title")
+        surface_title = capability.get("surface_title")
         canonical_path = capability.get("canonical_path")
         distribution = capability.get("distribution", {})
         standalone = isinstance(distribution, dict) and distribution.get("standalone") is True
         version = capability.get("version")
-        if not isinstance(title, str) or not title.strip():
-            errors.append(f"{identity}: title is empty")
-            continue
-        if contains_version_marker(title):
-            errors.append(f"{identity}: title contains a version marker: {title!r}")
+
+        for field, value in (("title", title), ("summary_title", summary_title), ("surface_title", surface_title)):
+            if not isinstance(value, str) or not value.strip():
+                errors.append(f"{identity}: {field} is empty")
+            elif contains_version_marker(value):
+                errors.append(f"{identity}: {field} contains a version marker: {value!r}")
+
+        if (
+            isinstance(summary_title, str)
+            and isinstance(surface_title, str)
+            and summary_title.strip()
+            and surface_title.strip()
+            and not normalize_heading(surface_title).startswith(normalize_heading(summary_title))
+        ):
+            errors.append(
+                f"{identity}: surface title {surface_title!r} does not begin with summary title {summary_title!r}"
+            )
+
+        if (
+            isinstance(summary_title, str)
+            and "moon source" in summary_title.casefold()
+            and identity != "moon-source-language"
+        ):
+            errors.append(
+                f"{identity}: summary title should omit the repeated Moon Source prefix: {summary_title!r}"
+            )
+
         if standalone and (not isinstance(version, str) or not version.strip()):
             errors.append(f"{identity}: standalone version metadata is empty")
-        if not isinstance(canonical_path, str):
+        if not isinstance(canonical_path, str) or not canonical_path.strip():
             errors.append(f"{identity}: canonical_path is missing")
             continue
+
         path = root / canonical_path
         if not path.is_file():
             errors.append(f"{identity}: canonical file is missing: {canonical_path}")
             continue
+
         heading = first_h1(path.read_text(encoding="utf-8"))
         if heading is None:
             errors.append(f"{identity}: canonical file has no level-one heading")
-        elif contains_version_marker(heading):
-            errors.append(f"{identity}: canonical heading contains a version marker: {heading!r}")
-        elif standalone and normalize_heading(heading) != normalize_heading(title):
-            errors.append(
-                f"{identity}: canonical heading {heading!r} does not match title {title!r}"
-            )
-        for marker in (str(identity), title, canonical_path):
+        else:
+            if contains_version_marker(heading):
+                errors.append(f"{identity}: canonical heading contains a version marker: {heading!r}")
+            if isinstance(surface_title, str) and normalize_heading(heading) != normalize_heading(surface_title):
+                errors.append(
+                    f"{identity}: canonical heading {heading!r} does not match surface_title {surface_title!r}"
+                )
+
+        readable_path = capability.get("readable_surface_path")
+        if standalone and (not isinstance(readable_path, str) or not readable_path.strip()):
+            errors.append(f"{identity}: standalone capability has no readable_surface_path")
+        if isinstance(readable_path, str) and readable_path.strip():
+            readable = root / readable_path
+            if not readable.is_file():
+                errors.append(f"{identity}: readable surface is missing: {readable_path}")
+            else:
+                readable_heading = first_h1(readable.read_text(encoding="utf-8"))
+                if readable_heading is None:
+                    errors.append(f"{identity}: readable surface has no level-one heading")
+                elif isinstance(surface_title, str) and normalize_heading(readable_heading) != normalize_heading(surface_title):
+                    errors.append(
+                        f"{identity}: readable heading {readable_heading!r} does not match surface_title {surface_title!r}"
+                    )
+
+        if isinstance(surface_title, str) and "— Moon Source " not in surface_title:
+            errors.append(f"{identity}: surface_title lacks a bounded Moon Source role qualifier")
+        if not isinstance(summary_title, str) or not isinstance(surface_title, str):
+            continue
+        for marker in (str(identity), summary_title, canonical_path):
             if marker not in human_registry:
                 errors.append(f"{identity}: human capability registry omits {marker!r}")
 
@@ -88,12 +137,12 @@ def validation_errors(
 def main() -> None:
     try:
         data = json.loads(REGISTRY.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as error:
-        raise SystemExit(f"title/version separation validation failed: invalid registry JSON: {error}")
+    except (OSError, json.JSONDecodeError) as error:
+        raise SystemExit(f"title/surface validation failed: invalid registry JSON: {error}")
     errors = validation_errors(data)
     if errors:
         raise SystemExit(
-            "title/version separation validation failed:\n"
+            "title/surface validation failed:\n"
             + "\n".join(f"- {error}" for error in errors)
         )
     standalone = sum(
@@ -101,9 +150,12 @@ def main() -> None:
         for capability in data["capabilities"]
         if capability.get("distribution", {}).get("standalone") is True
     )
+    readable = sum(
+        1 for capability in data["capabilities"] if capability.get("readable_surface_path")
+    )
     print(
-        f"validated title/version separation across {len(data['capabilities'])} capabilities "
-        f"and {standalone} standalone distributions"
+        f"validated title/surface coordinates across {len(data['capabilities'])} capabilities; "
+        f"standalone_distributions={standalone}; readable_surfaces={readable}"
     )
 
 

@@ -11,6 +11,12 @@ This repository is the canonical public body of Moon Source.
 > 📦 **Want the whole Moon Source at once?**  
 > 🌙⬇️ [**Download the complete repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) — the full public source in one file.
 
+## Moon Cortex: related public body
+
+[Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) is the related public applied/system body for domain-shaped modules. It owns domain-specific identities, contracts and routes; Moon Source remains the context-architecture body. Moon Cortex may consult Moon Source for installation and context governance, but it is not a Moon Source capability or a permanent runtime dependency.
+
+> **Moon Source governs context. Moon Cortex instantiates domain systems. The user owns the local result.**
+
 ## Why Moon Source exists
 
 AI context can fail in opposite directions: there may be too little context, or far too much of the wrong kind. The harder failures appear when information is reachable but nobody can explain which source governs it, whether it is still current, who may change it, or what should happen when two sources disagree.
@@ -21,10 +27,10 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 
 | If you need to… | Start here |
 |---|---|
-| Give an AI the smallest useful setup for a person or project | [🧭 Moon Source Setup](portables/setup/README.md) |
+| Give an AI the smallest useful setup for a person or project | [🧭 Setup](portables/setup/README.md) |
 | Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [🛫 Preflight](portables/preflight/README.md) |
 | Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [👁️ Be My Eyes](portables/be-my-eyes/README.md) |
-| Decide what deserves to become a source, handoff, procedure or other form | [🏗️ Moon Source Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
+| Decide what deserves to become a source, handoff, procedure or other form | [🏗️ Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Retrieve, process, metabolize or promote governed source material | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [🔗 Connected Sources](portables/connected-sources/README.md) |
@@ -101,7 +107,7 @@ The gallery uses fictional, didactic scenarios so the method can be demonstrated
 
 Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are public capabilities that currently support standalone distribution. Their architectural roles remain independent of the fact that they can travel as self-contained packages.
 
-- 🧭 [**Moon Source Setup**](portables/setup/README.md) — adaptive routing to the smallest useful personal or project context setup, including a probed persistent-source route; current version **3.1**.
+- 🧭 [**Setup**](portables/setup/README.md) — adaptive routing to the smallest useful personal or project context setup, including a probed persistent-source route; current version **3.1**.
 - 🛫 [**Preflight**](portables/preflight/README.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them; current version **2.2**.
 - 👁️ [**Be My Eyes**](portables/be-my-eyes/README.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
 - 🔗 [**Connected Sources**](portables/connected-sources/README.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.1-public**. Its canonical semantic body remains in [`docs/CONNECTED_SOURCES.md`](docs/CONNECTED_SOURCES.md).
@@ -175,7 +181,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 | Need | Canonical route |
 |---|---|
-| Full architecture and Field-to-Form diagnostic | [🏗️ Moon Source Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
+| Full architecture and Field-to-Form diagnostic | [🏗️ Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
 | AI-side routing through the public corpus | [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md) |
 | Contextual scene-reading capability | [Be My Eyes](portables/be-my-eyes/README.md) |
 | Connected source capability | [Connected Sources](portables/connected-sources/README.md) |
@@ -187,6 +193,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 | Portable publication contract | [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md) |
 | Contributing | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Human-facing website | [luahelena.com.br/moonsource](https://www.luahelena.com.br/moonsource/?lang=en) |
+| Related public applied/system body | [Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) |
 | Moon's broader professional context | [luahelena.com.br/ia](https://www.luahelena.com.br/ia/?lang=en) |
 
 ## Current baseline

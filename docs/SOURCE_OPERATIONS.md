@@ -1,4 +1,4 @@
-# 🔄 Source Operations — Retrieve, Process, Metabolize and Promote
+# 🔄 Source Operations — Moon Source component
 
 Source Operations is the public Moon Source method surface for deciding how governed context is found, interpreted, changed, preserved and deliberately generalized across jurisdictions.
 
