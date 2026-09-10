@@ -2,6 +2,8 @@
 
 > **Status:** hypothetical / fictional didactic scenario. This example illustrates how Moon Source could be applied to a common context problem. It is not evidence of external adoption, implementation, measured impact or independent validation.
 
+**MSL profile:** 5.1-compatible Markdown-native synthetic scenario; fictional status, claim ceiling and authority boundaries remain unchanged.
+
 ## Common problem
 
 A fictional small initiative coordinates volunteers, partners and recurring activities. Decisions live in personal messages, turnover causes institutional memory loss and reporting requires traceability without creating a second bureaucracy.
@@ -12,14 +14,14 @@ Copying every message into a shared archive creates administrative weight withou
 
 ## Moon Source reading of the field
 
-Use the Field-to-Form diagnostic to materialize only what the network repeatedly needs. Use Responsibility Map to distinguish partner, activity, source and handoff ownership. Use MSL 5.0 for continuity packets and archive boundaries. Use Credits & Attribution Ops when partner material, authorship or permission travels with a report.
+Use the Field-to-Form diagnostic to materialize only what the network repeatedly needs. Use Responsibility Map to distinguish partner, activity, source and handoff ownership. Use MSL 5.1 for continuity packets and archive boundaries. Use Credits & Attribution Ops when partner material, authorship or permission travels with a report.
 
 ## Relevant components and portables
 
 - [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for proportional materialization.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for network ownership.
 - [Credits & Attribution Ops](../../docs/CREDITS_ATTRIBUTION_OPS.md) for lineage and permissions.
-- [MSL 5.0](../../portables/msl/MSL_5_1.md) for packets, handoffs and archives.
+- [MSL 5.1](../../portables/msl/MSL_5_1.md) for packets, handoffs and archives.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for bounded review as the corpus grows.
 
 ## Possible smallest materialization

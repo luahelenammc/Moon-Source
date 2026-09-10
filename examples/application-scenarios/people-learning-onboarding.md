@@ -2,6 +2,8 @@
 
 > **Status:** hypothetical / fictional didactic scenario. This example illustrates how Moon Source could be applied to a common context problem. It is not evidence of external adoption, implementation, measured impact or independent validation.
 
+**MSL profile:** 5.1-compatible Markdown-native synthetic scenario; fictional status, claim ceiling and authority boundaries remain unchanged.
+
 ## Common problem
 
 A fictional team trains newcomers through scattered slides, messages and informal explanations from experienced colleagues. The AI gives generic answers because role, local language, limits and current practice are missing.
@@ -17,10 +19,10 @@ Use Moon Source Setup 3.1 to infer the learner's actual need and maturity. Use t
 ## Relevant components and portables
 
 - [Moon Source Setup](../../portables/setup/MOON_SOURCE_SETUP.md) for adaptive entry, use-case routing and a capability-probed persistent-source route.
-- [Preflight](../../docs/PREFLIGHT.md) for task shaping.
+- [Preflight](../../portables/preflight/PREFLIGHT_V2.md) for task shaping.
 - [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for the smallest useful learning artifact.
 - [Procedural Projection](../../docs/PROCEDURAL_PROJECTION.md) for method-to-procedure separation.
-- [MSL 5.0](../../portables/msl/MSL_5_1.md) for a role-bounded onboarding packet.
+- [MSL 5.1](../../portables/msl/MSL_5_1.md) for a role-bounded onboarding packet.
 
 ## Possible smallest materialization
 

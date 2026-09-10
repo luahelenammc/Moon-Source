@@ -8,6 +8,8 @@ This document exposes the responsibility contract and public diagnostic surface.
 
 When a procedure is adapted, transported, mirrored, generated from source material or combined with another method, apply [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) so the procedural projection does not lose its intellectual identity, upstream lineage, canonical origin, transformation history, permission envelope, disclosure boundary or local authorship.
 
+**MSL profile:** 5.1-compatible Markdown-native method surface; preserve source/procedure authority and projection boundaries.
+
 ## 🔗 Responsibility contract
 
 | Object | Owns | Does not replace |

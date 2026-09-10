@@ -8,6 +8,8 @@ Its central distinction is:
 
 This document defines an operation family, not a second AI Kernel. The AI Kernel routes into it; Connected Sources governs connector reach and source access; Source Hygiene diagnoses corpus failure; Archive and Legacy preserves superseded history; Credits & Attribution Ops preserves material lineage and custody.
 
+**MSL profile:** 5.1-compatible Markdown-native method surface; preserve source authority, lifecycle and readback boundaries.
+
 ## Scope and boundary
 
 Source Operations applies to public, project, organizational or other governed source work when the operation itself matters: loading context, analyzing material, integrating a real change, or considering a mature mechanism for a broader layer.

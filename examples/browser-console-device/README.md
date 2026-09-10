@@ -8,6 +8,8 @@ This example is the first public materialization of an [Operational Device](../.
 
 It is intentionally not a stable portable. The adapter contract is surface-specific, DOMs and data shapes change, and cross-surface stability has not been demonstrated.
 
+**MSL profile:** 5.1-compatible Markdown-native experimental reference surface; runtime and non-portable boundaries remain unchanged.
+
 ## What the core demonstrates
 
 `collector.template.js` provides a bounded device with:

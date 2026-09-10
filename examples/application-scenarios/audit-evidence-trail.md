@@ -2,6 +2,8 @@
 
 > **Status:** hypothetical / fictional didactic scenario. This example illustrates how Moon Source could be applied to a common context problem. It is not evidence of external adoption, implementation, measured impact or independent validation.
 
+**MSL profile:** 5.1-compatible Markdown-native synthetic scenario; fictional status, claim ceiling and authority boundaries remain unchanged.
+
 ## Common problem
 
 A fictional team can describe its decisions but cannot easily reconstruct which source supported each one. Versions are duplicated, reports collapse fact and interpretation, and a later reviewer cannot tell what changed or what was merely inferred.
@@ -20,7 +22,7 @@ Use Evidence & Claims to set the ceiling for each public statement. Use Signal C
 - [Signal Calibration](../../docs/SIGNAL_CALIBRATION.md) for bounded interpretation.
 - [Credits & Attribution Ops](../../docs/CREDITS_ATTRIBUTION_OPS.md) for lineage and custody.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for provenance and version diagnosis.
-- [MSL 5.0](../../portables/msl/MSL_5_1.md) for a compact evidence ledger.
+- [MSL 5.1](../../portables/msl/MSL_5_1.md) for a compact evidence ledger.
 
 ## Possible smallest materialization
 

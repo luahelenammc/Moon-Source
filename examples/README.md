@@ -2,6 +2,8 @@
 
 This directory contains bounded reference implementations of public Moon Source patterns. Examples are inspectable demonstrations, not stable portables, products, SDKs or proof of universal runtime support.
 
+**MSL profile:** 5.1-compatible Markdown-native gallery surface; examples remain bounded, experimental or hypothetical as labelled.
+
 ## Browser Console Device
 
 [`browser-console-device/`](browser-console-device/) is an experimental, dependency-free Browser Console Device with a synthetic `localhost` demo.

@@ -4,6 +4,8 @@ Failure Foundry is a bounded loop for turning a recurring, costly, systemic or e
 
 It treats failure as evidence to be classified and metabolized. It does not treat every error as doctrine, and it does not claim autonomous self-improvement.
 
+**MSL profile:** 5.1-compatible Markdown-native method surface; preserve failure evidence, promotion boundaries and the claim ceiling.
+
 ## Public loop
 
 ```text

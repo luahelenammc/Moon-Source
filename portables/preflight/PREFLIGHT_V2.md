@@ -4,7 +4,8 @@
 
 > **Humans should not have to prompt like machines.**
 
-**Version:** 2.1  
+**Version:** 2.1  **MSL relation:** Moon Source Language 5.1 is consulted only when a materialization has earned existence.  
+
 **Status:** current public portable  
 **Public since:** 2026-08-23  
 **V2 rebase:** 2026-09-07  
@@ -575,7 +576,7 @@ The V1 contribution is not discarded. Its authority, freshness, risk, destinatio
 
 The superseded V1 body remains recoverable through Git history. On 2026-09-07, V2 was promoted from a repository component into a standalone public portable. Its current canonical identity is `portables/preflight/PREFLIGHT_V2.md`. The former `docs/PREFLIGHT.md` body is superseded; that path now exists only as a lightweight succession pointer, while historical bodies remain recoverable through Git history.
 
-This promotion created the Preflight portable family at version 2.0. At the time of that promotion it did not change the then-current MSL 4.3, Setup 3.0 or Chat–Work V4; MSL is now current at 5.0 after the 2026-09-09 release.
+This promotion created the Preflight portable family at version 2.0. At the time of that promotion it did not change the then-current MSL 4.3, Setup 3.0 or Chat–Work V4; MSL is now current at 5.1 after the 2026-09-09 release.
 
 ## 20. Claim ceiling
 

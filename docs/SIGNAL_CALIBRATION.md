@@ -10,6 +10,8 @@ Use Signal Calibration when a field contains several small, incomplete or ambigu
 
 It does not make weak evidence decisive. It prevents “not fully proven” from being treated as either “already established” or “epistemically irrelevant”.
 
+**MSL profile:** 5.1-compatible Markdown-native method surface; preserve observation/inference distinctions and uncertainty boundaries.
+
 ## The two symmetric failures
 
 | Failure | What goes wrong |

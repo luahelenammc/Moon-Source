@@ -2,6 +2,8 @@
 
 Moon Source is developed through a larger private and professional corpus. This repository is intentionally narrower.
 
+**MSL profile:** 5.1-compatible Markdown-native public-boundary surface; public/private and claim ceilings remain explicit.
+
 ## Public
 
 The public body may include:

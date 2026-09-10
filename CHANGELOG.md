@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-10 — MSL 5.1 full-public-surface closure
+
+- Applied a content-preserving MSL 5.1 envelope across the reviewed first- and second-wave Markdown surfaces.
+- Corrected remaining live references to MSL 5.0, Preflight 2.0, the retired Preflight succession route and the retired MSL 5.0 path; historical release notes remain historical.
+- Kept the canonical MSL 5.1 body and the public claim, licensing and authority boundaries unchanged while aligning affected distribution bytes and fingerprints.
+
 ## 2026-09-09 — Chat–Work 5.1 · Astra Strategy Adapter boundary
 
 - Added a compact, model-neutral Model Strategy Adapter Boundary so model-specific strategy can remain subordinate to Chat–Work's core laws.

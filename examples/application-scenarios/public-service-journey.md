@@ -2,6 +2,8 @@
 
 > **Status:** hypothetical / fictional didactic scenario. This example illustrates how Moon Source could be applied to a common context problem. It is not evidence of external adoption, implementation, measured impact or independent validation.
 
+**MSL profile:** 5.1-compatible Markdown-native synthetic scenario; fictional status, claim ceiling and authority boundaries remain unchanged.
+
 ## Common problem
 
 A fictional citizen request moves between several departments. Documents are stored in different systems, handoffs occur informally and the citizen repeatedly explains the same situation. Staff cannot easily tell which source governs eligibility, status, responsibility or public communication.
@@ -16,12 +18,12 @@ Begin with Preflight and the Field-to-Form diagnostic: identify the citizen-faci
 
 ## Relevant components and portables
 
-- [Preflight](../../docs/PREFLIGHT.md) for entry-point diagnosis and question threshold.
+- [Preflight](../../portables/preflight/PREFLIGHT_V2.md) for entry-point diagnosis and question threshold.
 - [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for bounded public and internal forms.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for departmental jurisdiction.
 - [Connected Sources](../../docs/CONNECTED_SOURCES.md) for provenance and targeted retrieval.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for stale and duplicated material.
-- [MSL 5.0](../../portables/msl/MSL_5_1.md) for a handoff or status packet.
+- [MSL 5.1](../../portables/msl/MSL_5_1.md) for a handoff or status packet.
 
 ## Possible smallest materialization
 

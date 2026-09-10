@@ -4,6 +4,8 @@ Operational reliability is the discipline of making execution diagnosable, bound
 
 It applies to a procedure, device, workflow or bounded runtime. It does not promise that a target is healthy, that a repair is safe in every environment or that a log is automatically authoritative.
 
+**MSL profile:** 5.1-compatible Markdown-native method surface; preserve diagnosis, mutation and receipt boundaries.
+
 ## 1. Reconstruct the problem before touching the target
 
 Translate the request into an operational reconstruction:

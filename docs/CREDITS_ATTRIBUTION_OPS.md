@@ -10,6 +10,8 @@
 - **AI-assisted coauthorial development:** Moon + Áurion
 - **status:** active reusable public component
 
+**MSL profile:** 5.1-compatible Markdown-native method surface; preserve identity, custody and permission boundaries.
+
 Credits & Attribution Ops is a reusable meta-operational component for protecting the continuity of intellectual and other immaterial material as it is created, shared, transformed, generated, mirrored, combined, published, superseded or archived.
 
 Its purpose is broader than producing credits. It keeps enough of a material's **identity, origin, authorship, lineage, custody, transformation history, permission envelope, disclosure boundary, derivative relationships, attribution inheritance and evidence** recoverable that the material does not lose who or what it is merely because it moved or changed.

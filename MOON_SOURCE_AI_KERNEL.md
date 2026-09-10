@@ -27,7 +27,7 @@ Use each file for the responsibility it actually owns:
 
 - `README.md` — orientation, public entry points and top-level routing.
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
-- `portables/preflight/PREFLIGHT_V2.md` — Preflight: human-intent reconstruction before execution, currently version 2.0, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
+- `portables/preflight/PREFLIGHT_V2.md` — Preflight: human-intent reconstruction before execution, currently version 2.1, with authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
 - `portables/be-my-eyes/BE_MY_EYES.md` — canonical active Be My Eyes method and 1.0-public standalone distribution: contextual scene reading, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection.
 - `docs/CONNECTED_SOURCES.md` — canonical Connected Sources structural crown jewel and 1.1-public standalone distribution: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
 - `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` — subordinate dated ChatGPT product/reference facts; load only when current product behavior is materially relevant.
