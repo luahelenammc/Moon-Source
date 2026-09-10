@@ -160,9 +160,8 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent capability changes
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
-- **2026-09-10 — Preflight:** MSL 5.1 envelope and historical-reference cleanup; Preflight reconstruction semantics remain unchanged.
+- **2026-09-10 — Preflight:** Added bounded active-frame correction and persistence/promotion-candidacy boundaries; Preflight is now version 2.2.
 - **2026-09-10 — Moon Source Setup:** Aligned active MSL and Preflight canonical references with MSL 5.1 and Preflight 2.1 without changing Moon Source Setup semantics or version.
-- **2026-09-10 — Source Reflex:** Added bounded active-frame correction, persistence classification and promotion-candidacy boundaries to Source Operations and Preflight; Preflight advanced to **2.2**.
 - **2026-09-10 — Connected Sources:** Declared the current MSL 5.1 structural dependency in the canonical metadata without changing method semantics or version.
 - **2026-09-10 — Be My Eyes:** Declared the current MSL 5.1 structural dependency in the canonical metadata without changing method semantics or version.
 - **2026-09-09 — Moon Source Language:** Release-coherence correction: correctly numbers the accepted formatting-continuity update as 5.1, keeps the MSL 5 semantic grammar unchanged, and retires superseded live generations.
