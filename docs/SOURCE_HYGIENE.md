@@ -48,6 +48,12 @@ A diagnosis can conclude that no mutation is warranted. “No change” is a val
 
 Source Hygiene remains the diagnostic owner. A scan may conclude that the source already contains the needed function, that evidence is insufficient, or that no mutation is warranted. In those cases, preserve the finding without cosmetic rewriting and use the appropriate no-delta or incubation disposition.
 
+## Runtime correction versus persistent mutation
+
+A runtime correction changes the active frame used for the present task when evidence exposes a material source, jurisdiction, variant, version, ontology, authority or runtime-surface mismatch. It is not, by itself, a persistent mutation.
+
+Source Reflex owns that bounded correction and persistence classification. Source Hygiene remains the owner of stale, contradictory, duplicated or bloated corpus diagnosis. After a correction, route any writeback through the smallest sovereign destination, explicit mutation authority, privacy and provenance checks, and readback. A valid outcome may be no delta.
+
 ## 🧪 Proportional output
 
 A useful finding should be recorded with:
