@@ -1,4 +1,4 @@
-# 🏗️ Moon Source Architecture — Field to Form
+# 🏗️ Architecture — Field to Form — Moon Source architecture
 
 Moon Source is a way to decide what kind of context a human, team, project or institution actually needs before forcing the material into a fixed container.
 
@@ -50,6 +50,12 @@ Moon Source asks: what may govern, how current is it, what may travel or mutate,
 ```
 
 These are responsibility-oriented comparisons, not a universal ontology. A harness or retrieval system may implement some governance of its own; Moon Source complements those mechanisms rather than replacing them. It is not an agent harness, RAG engine, orchestration framework, runtime or SDK.
+
+## Relationship to Moon Cortex
+
+[Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) is the related public applied/system body for domain-shaped modules. Moon Source governs context, authority, provenance, freshness, transport and reconfiguration; Cortex owns domain-specific module identity and operation.
+
+The relationship is complementary and asymmetric: a Cortex module may consult Moon Source for installation/context governance, but Cortex is not a Moon Source capability and Moon Source is not a permanent runtime dependency. User-local state remains under the user's or authorized local system's sovereignty.
 
 ## One capability, multiple roles
 
@@ -110,7 +116,7 @@ Field to Form is the practical diagnostic inside the canonical Moon Source archi
 ### Choose the public entry point
 
 - **Human-intent reconstruction before execution:** start with [🛫 Preflight](portables/preflight/PREFLIGHT_V2.md) when the request is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally. Consequence-triggered execution guardrails remain available when the resulting task is risky, public, source-governed or mutable.
-- **Personal or project context:** start with [🧭 Moon Source Setup](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
+- **Personal or project context:** start with [🧭 Setup](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
 - **Project, team or knowledge field:** run this Field-to-Form diagnostic before choosing a document type.
 - **Structure, source, handoff or protocol design:** use [🧱 Moon Source Language](portables/msl/MSL_5_1.md) after the responsibility is clear.
 - **ChatGPT execution routing:** use the [🔀 Chat–Work Routing Protocol](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) when surface, model or reasoning effort is the actual decision.

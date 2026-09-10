@@ -1,4 +1,4 @@
-# 🧩 Procedural Projection
+# 🧩 Procedural Projection — Moon Source component
 
 A public method for turning a stable way of working into a reusable procedural capability without confusing procedure with source authority.
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: Apache-2.0
-"""Small regression tests for the title/version separation guard."""
+"""Small regression tests for the public title-coordinate guard."""
 
 from __future__ import annotations
 
@@ -28,7 +28,7 @@ def main() -> None:
     assert not contains_version_marker("Preflight")
     assert not contains_version_marker("Chat–Work Routing Protocol")
     assert first_h1("intro\n# Stable Name\n") == "Stable Name"
-    assert normalize_heading("# 🧭 Moon Source Setup") == "Moon Source Setup"
+    assert normalize_heading("# 🧭 Setup — Moon Source portable") == "Setup — Moon Source portable"
 
     data = json.loads(
         (ROOT / "registry" / "public-capabilities.json").read_text(encoding="utf-8")
@@ -37,15 +37,20 @@ def main() -> None:
 
     fixture = copy.deepcopy(data)
     fixture["capabilities"][0]["title"] = "Be My Eyes 1.0-public"
-    errors = validation_errors(
-        fixture,
-        root=ROOT,
-        human_registry=(ROOT / "registry" / "PUBLIC_CAPABILITIES.md").read_text(
-            encoding="utf-8"
-        ),
-    )
+    errors = validation_errors(fixture, root=ROOT, human_registry=(ROOT / "registry" / "PUBLIC_CAPABILITIES.md").read_text(encoding="utf-8"))
     assert any("title contains a version marker" in error for error in errors)
-    print("title/version separation tests passed")
+
+    fixture = copy.deepcopy(data)
+    fixture["capabilities"][0]["surface_title"] = "Wrong — Moon Source portable"
+    errors = validation_errors(fixture, root=ROOT, human_registry=(ROOT / "registry" / "PUBLIC_CAPABILITIES.md").read_text(encoding="utf-8"))
+    assert any("canonical heading" in error for error in errors)
+
+    fixture = copy.deepcopy(data)
+    fixture["capabilities"][0]["summary_title"] = "Moon Source Be My Eyes"
+    errors = validation_errors(fixture, root=ROOT, human_registry=(ROOT / "registry" / "PUBLIC_CAPABILITIES.md").read_text(encoding="utf-8"))
+    assert any("summary title should omit" in error for error in errors)
+
+    print("title/surface coordinate tests passed")
 
 
 if __name__ == "__main__":

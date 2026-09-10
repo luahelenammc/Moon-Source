@@ -2,7 +2,7 @@
 
 Field to Form is now part of the canonical Moon Source architecture.
 
-➡️ [Open **🏗️ Moon Source Architecture — Field to Form**](../ARCHITECTURE.md#field-to-form)
+➡️ [Open **🏗️ Architecture — Field to Form**](../ARCHITECTURE.md#field-to-form)
 
 This file is a routing compatibility surface only. It does not contain or govern a second copy of the method.
 

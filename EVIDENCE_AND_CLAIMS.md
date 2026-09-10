@@ -19,6 +19,7 @@ Moon Source is disclosed through existing evidence only. This repository organiz
 ## What the current public body supports
 
 - Moon Source is a public context-architecture method and reference architecture. Evidence: PUBLIC_ARTIFACT, PUBLIC_REPOSITORY.
+- A separate public [Moon Cortex repository](https://github.com/luahelenammc/Moon-Cortex) exists as a related applied/system body for domain-shaped modules. This establishes a public relationship and discoverability route, not that Cortex is a Moon Source capability, permanent dependency or adoption claim. Evidence: PUBLIC_REPOSITORY.
 - Moon Source includes independently readable public portables for setup, human-intent reconstruction, contextual scene reading, connected sources, adaptive structural grammar and Chat–Work routing. Evidence: PUBLIC_ARTIFACT.
 - Moon Source Language is the current public structural/context language in this repository, at version 5.1. Evidence: PUBLIC_ARTIFACT, INTERNAL_SOURCE_USED. MSL 5.1 is not an executable language, universal ontology, runtime or adoption claim.
 - The repository is a public versioning and reference body. Evidence: PUBLIC_REPOSITORY.

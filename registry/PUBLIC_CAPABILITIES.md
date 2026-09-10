@@ -9,7 +9,9 @@ class. The machine-readable contract is
 [registry/public-capabilities.json](public-capabilities.json), schema 2.0.
 The table below is a human-readable view of the same fourteen records.
 
-| ID | Capability | Architectural role | Version | Status | Canonical body | Standalone distribution |
+The table's **Summary title** is the concise browsing label. The registry's semantic `title` remains stable in machine-readable metadata; individual README and canonical-body headings use `surface_title` to make the Moon Source role explicit without folding version into identity.
+
+| ID | Summary title | Architectural role | Version | Status | Canonical body | Standalone distribution |
 |---|---|---|---:|---|---|---|
 | be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) | contextual scene-reading method | 1.0-public | current | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md#first-use) | [ZIP](../downloads/be-my-eyes-1.0-public.zip) |
 | chat-work-routing | [Chat–Work Routing Protocol](../portables/chat-work/README.md) | operational routing protocol | 5.1 | current | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) | [ZIP](../downloads/chat-work-routing-protocol-v4.zip) |
@@ -17,14 +19,18 @@ The table below is a human-readable view of the same fourteen records.
 | credits-attribution-ops | 🧾 Credits & Attribution Ops | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
 | failure-foundry | 🏭 Failure to Capability — Failure Foundry | failure-to-capability method | — | current | [FAILURE_FOUNDRY.md](../docs/FAILURE_FOUNDRY.md) | — |
 | moon-source-language | [Moon Source Language](../portables/msl/README.md) | sovereign semantic passage grammar | 5.1 | current | [MSL_5_1.md](../portables/msl/MSL_5_1.md#first-use) | [ZIP](../downloads/moon-source-language-5.1.zip) |
-| moon-source-setup | [Moon Source Setup](../portables/setup/README.md) | adaptive context router | 3.1 | current | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md#first-use) | [ZIP](../downloads/moon-source-setup-3.1.zip) |
+| moon-source-setup | [Setup](../portables/setup/README.md) | adaptive context router | 3.1 | current | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md#first-use) | [ZIP](../downloads/moon-source-setup-3.1.zip) |
 | operational-devices | 🛠️ Operational Devices | operational-device pattern | — | current | [OPERATIONAL_DEVICES.md](../docs/OPERATIONAL_DEVICES.md) | — |
 | operational-reliability | 🛡️ Operational Reliability | operational-reliability method | — | current | [OPERATIONAL_RELIABILITY.md](../docs/OPERATIONAL_RELIABILITY.md) | — |
 | preflight | [Preflight](../portables/preflight/README.md) | transversal interface method | 2.2 | current | [PREFLIGHT_V2.md](../portables/preflight/PREFLIGHT_V2.md#first-use) | [ZIP](../downloads/preflight-v2.zip) |
 | procedural-projection | 🧩 Procedural Projection | procedural-projection method | — | current | [PROCEDURAL_PROJECTION.md](../docs/PROCEDURAL_PROJECTION.md) | — |
 | signal-calibration | 🎚️ Signal Calibration | qualitative signal calibration | — | current | [SIGNAL_CALIBRATION.md](../docs/SIGNAL_CALIBRATION.md) | — |
 | source-hygiene | 🧹 Source Hygiene | source-hygiene method | — | current | [SOURCE_HYGIENE.md](../docs/SOURCE_HYGIENE.md) | — |
-| source-operations | 🔄 Source Operations — Retrieve, Process, Metabolize and Promote | source-operations method | — | current | [SOURCE_OPERATIONS.md](../docs/SOURCE_OPERATIONS.md) | — |
+| source-operations | 🔄 Source Operations | source-operations method | — | current | [SOURCE_OPERATIONS.md](../docs/SOURCE_OPERATIONS.md) | — |
+
+## Related public body
+
+[Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) is a separate related public body for domain-shaped systems. It is intentionally not a record in this Moon Source capability registry.
 
 ## How to read the registry
 
@@ -41,7 +47,7 @@ for it. A standalone distribution does not create a second authority.
 
 The six standalone distributions are a filtered view of the unified registry:
 👁️ Be My Eyes, 🔀 Chat–Work Routing Protocol, 🔗 Connected Sources, 🧱 Moon Source Language,
-🧭 Moon Source Setup and 🛫 Preflight. This filter is not a second semantic
+🧭 Setup and 🛫 Preflight. This filter is not a second semantic
 inventory.
 
 ## Connected Sources

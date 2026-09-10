@@ -1,4 +1,4 @@
-# 🧱 Moon Source Language
+# 🧱 Moon Source Language — Moon Source portable
 
 **Sovereign Semantic Passage** — a structural language for moving situated context across sources, systems and surfaces without losing meaning, provenance, authority or boundaries.
 

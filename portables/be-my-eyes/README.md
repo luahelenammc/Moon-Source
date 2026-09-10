@@ -1,4 +1,4 @@
-# 👁️ Be My Eyes
+# 👁️ Be My Eyes — Moon Source portable
 
 **Read a message, thread, screenshot, note or draft as a human scene — without pretending inference is fact.**
 

@@ -1,4 +1,4 @@
-# 🧾 Credits & Attribution Ops
+# 🧾 Credits & Attribution Ops — Moon Source component
 
 ## Intellectual lineage, content custody & immaterial-asset protection
 

@@ -1,4 +1,4 @@
-# 🔗 Connected Sources
+# 🔗 Connected Sources — Moon Source component / portable
 
 **Let AI work with persistent external sources while keeping access, authority, freshness, mutation and readback separate.**
 

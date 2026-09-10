@@ -19,6 +19,8 @@ VALID_STATUSES = {"current", "experimental", "deprecated", "archived"}
 REQUIRED_FIELDS = {
     "id",
     "title",
+    "summary_title",
+    "surface_title",
     "status",
     "architectural_role",
     "canonical_path",
@@ -275,7 +277,7 @@ def validate_registry(
                 marker in human_registry
                 for marker in (
                     capability["id"],
-                    capability["title"],
+                    capability["summary_title"],
                     capability["canonical_path"],
                 )
             ):

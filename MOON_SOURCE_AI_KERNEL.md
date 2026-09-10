@@ -82,6 +82,10 @@ Preflight is the general human-intent reconstruction layer before execution. It 
 
 ## 3. Route by user intent
 
+### If the user wants a domain-shaped applied system
+
+[Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) is a separate public body for domain-specific systems. Route domain identity, contracts and module operation to Cortex when relevant; do not register it as a Moon Source capability or load it automatically. Moon Source may govern the context or installation facet when deliberately consulted. The resulting local state remains user-owned, and Cortex is not a permanent runtime dependency.
+
 ### If the human meaning itself needs reconstruction
 
 Load:

@@ -1,4 +1,4 @@
-# 🧹 Source Hygiene
+# 🧹 Source Hygiene — Moon Source component
 
 A public source-hygiene method for auditing context corpora, project files and knowledge systems whose problem is deeper than retrieval.
 
