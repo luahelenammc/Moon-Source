@@ -297,7 +297,7 @@
       "dependencies": [],
       "difficulty": "beginner to advanced",
       "distribution": {
-        "canonical_sha256": "1250097902f1a2fc9ff05aacc17b3b27994d96423adcc03c95dbb8dffb16aeba",
+        "canonical_sha256": "367836da53d66ffb536ab2959a282373522bb86b4802fa9bbbe96aeba4f15aa8",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/PREFLIGHT_V2.md",
@@ -306,11 +306,11 @@
         "standalone": true
       },
       "freshness": "general interpretation method; external facts and product-specific routes remain date-sensitive when a reconstructed task requires them",
-      "function": "Reconstruct a human's intended task from ordinary, incomplete, conversational or self-correcting expression before execution, activating heavier authority, freshness, provenance, safety, destination, mutation and readback guardrails only when consequence requires them",
+      "function": "Reconstruct a human's intended task from ordinary, incomplete, conversational or self-correcting expression before and during execution, correcting a material active-frame mismatch when evidence is sufficient and activating heavier authority, freshness, provenance, safety, destination, mutation and readback guardrails only when consequence requires them",
       "id": "preflight",
       "language": "English with language-sensitive execution",
       "last_material_update_on": "2026-09-10",
-      "last_material_update_summary": "MSL 5.1 envelope and historical-reference cleanup; Preflight reconstruction semantics remain unchanged.",
+      "last_material_update_summary": "Added bounded active-frame correction and persistence/promotion-candidacy boundaries; Preflight is now version 2.2.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -319,7 +319,7 @@
       "status": "current",
       "supersedes": null,
       "title": "Preflight",
-      "version": "2.1",
+      "version": "2.2",
       "versioning_mode": "independent_public_capability_version"
     },
     {
