@@ -18,20 +18,29 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Apply Astra 1.2 migration
-        run: python .github/scripts/astra_adapter_1_2_finalize.py
+      - name: Apply Astra 1.2 migrations
+        run: |
+          python .github/scripts/astra_adapter_1_2_finalize.py
+          python .github/scripts/astra_adapter_1_2_packaging_fix.py
+          python scripts/update_capability_digest.py
+      - name: Remove one-shot migration machinery
+        run: |
+          rm .github/workflows/astra-adapter-1-2-finalize.yml
+          rm .github/scripts/astra_adapter_1_2_finalize.py
+          rm .github/scripts/astra_adapter_1_2_packaging_fix.py
       - name: Validate public surfaces
         run: |
           python scripts/check_links.py
           python scripts/validate_public_capabilities.py
+          python scripts/test_validate_public_capabilities.py
           python scripts/check_public_stamps.py
           python scripts/check_title_version_separation.py
+          python scripts/test_title_version_separation.py
+          python scripts/update_capability_digest.py --check
       - name: Commit finalized release
         run: |
           git config user.name 'Lua H. Moon M. C.'
           git config user.email 'luahelenammc@gmail.com'
-          rm .github/workflows/astra-adapter-1-2-finalize.yml
-          rm .github/scripts/astra_adapter_1_2_finalize.py
           git add -A
           git commit -m 'Release Astra Strategy Adapter 1.2 setup contract'
           git push
