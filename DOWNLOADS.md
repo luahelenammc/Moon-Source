@@ -32,7 +32,7 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 
 The MSL 5.1 package carries the exact canonical body, including its explicit formatting contract; the README is a routing facade.
 
-> 🌱 **First time with Moon Source?** Start with [README.md#first-use](README.md#first-use). Each readable capability surface has a prominent **Start** route into the canonical body's embedded First use section. Every current standalone package still contains exactly the self-onboarding canonical body — not the README facade.
+> 🌱 **First time with Moon Source?** Start with [README.md#first-use](README.md#first-use). Each readable capability surface has a prominent **Start** route into the canonical body's embedded First use section. Every current standalone package contains its self-onboarding canonical body rather than the README facade. Chat–Work additionally carries its subordinate Astra adapter because that adapter is part of the portable’s internal topology, not a separate capability.
 
 The current Be My Eyes capability version is **1.0-public**. The current Connected Sources capability version is **1.1-public**. The current Chat–Work Routing Protocol version is **5.1**. It retains the model-neutral Intelligence Distillation Ladder, bounded exhaustiveness, connector-aware source transport, auditable Decision Trace, optional explicitly activated ephemeral Sprint Mode, bounded Decision Sprint and Sprint Receipts, and now adds a subordinate model-strategy adapter boundary while preserving the unversioned human title, V4 canonical filename and current MSL 5.1.
 

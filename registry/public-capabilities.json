@@ -60,7 +60,7 @@
         "Uses MSL-5.1 terminology; product and model calibration is date-sensitive and belongs in subordinate adapter notes",
         "Source transport records governing source or family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback; a locator is not authority",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions",
-        "Optional Astra strategy adapter at docs/CHAT_WORK_ASTRA_ADAPTER.md; subordinate to the canonical Chat–Work body and not a second capability identity"
+        "Optional Astra strategy adapter at portables/chat-work/astra/CHAT_WORK_ASTRA_ADAPTER.md; subordinate to the canonical Chat–Work body and not a second capability identity"
       ],
       "difficulty": "advanced",
       "distribution": {
