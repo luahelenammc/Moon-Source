@@ -8,8 +8,6 @@ def replace_once(text: str, old: str, new: str, label: str) -> str:
     return text.replace(old, new, 1)
 
 
-# Declare Chat–Work as a composite standalone distribution whose two members are
-# both governed and byte-verifiable. This does not create a second capability.
 registry_path = Path("registry/public-capabilities.json")
 data = json.loads(registry_path.read_text(encoding="utf-8"))
 chat = next(c for c in data["capabilities"] if c["id"] == "chat-work-routing")
@@ -27,9 +25,6 @@ dist["composite_members"] = [
 ]
 registry_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-# Generalize the validator's existing composite-package branch. A composite
-# distribution may declare an exact member contract; every member must exist
-# and match its source bytes, and the canonical source must remain present.
 validator_path = Path("scripts/validate_public_capabilities.py")
 validator = validator_path.read_text(encoding="utf-8")
 old = '''                    if distribution.get("composite"):
@@ -73,10 +68,8 @@ new = '''                    if distribution.get("composite"):
 validator = replace_once(validator, old, new, "composite validator branch")
 validator_path.write_text(validator, encoding="utf-8")
 
-# Add a regression test proving the declared second member cannot silently
-# drift while the canonical body remains correct.
 test_path = Path("scripts/test_validate_public_capabilities.py")
-tests = test_path.read_text(encoding="utf-8")n
+tests = test_path.read_text(encoding="utf-8")
 insert_after = '''    def test_package_must_contain_exact_canonical_bytes(self):
         data = copy.deepcopy(self.data)
         self._write_package("CONNECTED_SOURCES.md", "different bytes")
@@ -111,6 +104,5 @@ new_test = '''    def test_composite_package_members_are_byte_verified(self):
         self.assert_error("composite package member mismatch", self.errors(data))
 
 '''
-# Fix the deliberate temporary marker in this migration file before execution.
 tests = replace_once(tests, insert_after, insert_after + new_test, "composite package regression test")
 test_path.write_text(tests, encoding="utf-8")
