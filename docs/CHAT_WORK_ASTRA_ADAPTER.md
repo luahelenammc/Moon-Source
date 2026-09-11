@@ -308,7 +308,7 @@ Likewise, Astra can be used in any strategy above without Sprint.
 This section is empirical and replaceable. It never overrides the canonical
 Chat–Work body, the active authority envelope or the claim ceiling.
 
-**Last checked:** 2026-09-09
+**Last checked:** 2026-09-10
 
 **Source class:** official product documentation for product behavior; dated
 field reports for operational hypotheses.
@@ -343,6 +343,30 @@ universal model property. When Astra is selected for sustained or frontier
 execution, prefer explicit scope ceilings and stop conditions over vague
 requests to “be balanced.”
 
+### Total-work efficiency calibration — 2026-09-10
+
+Recent community field reports converge on a useful operational hypothesis: a cheaper or lower-effort individual call can still be more expensive at task level when it causes extra continuations, repeated context ingestion, repair turns, tool cycles or agent fanout. Conversely, a higher-effort pass can be economically preferable when it resolves the same accepted result in materially fewer loops. Treat this as field evidence and routing guidance, not a fixed performance or pricing law.
+
+The adapter therefore optimizes **total work to accepted state**, not nominal effort per turn.
+
+Use three independent resource controls:
+
+1. **Capability floor** — the lowest capability that can responsibly solve the irreducible task.
+2. **Effort ceiling** — the lowest reasoning depth that resolves the current uncertainty without creating disproportionate downstream repair.
+3. **Loop budget** — the tolerated burden from continuations, context rereads, tool calls, searches, retries and physical fanout before the route must pause and restructure.
+
+Do not promote `light`, `medium`, `high`, `xhigh`, `ultra`, `fast` or any other product-specific label into universal doctrine. Start with the lowest effort that is plausibly sufficient, but apply a **reasoning-effort inversion test**: if lowering effort increases correction turns, repeated context processing, tool churn, reconstruction cost or total accepted-state latency, restore the higher effort rather than preserving a false local saving.
+
+Apply the same logic to speed modes. A latency-premium mode is justified when human-visible response latency is itself the dominant bottleneck. It is usually poor value when execution time is dominated by external tools, browsing, tests, long-running operations or agent coordination. This is a bottleneck-allocation rule, not a ban on fast modes.
+
+Apply the same logic to agents and parallelism. Physical fanout should earn its coordination tax. Prefer one capable owner when the work is tightly coupled, context-heavy or sequential; use subagents when work units are materially independent, context duplication is bounded and convergence cost is lower than the expected parallel gain. The generic Native Parallelism Gate still governs.
+
+For Astra strategy selection, prefer this sequence:
+
+> **Peak cognition at the bottleneck. Minimum sufficient cognition elsewhere. Minimize total work, not individual-turn expense.**
+
+A route that looks cheaper because one turn is cheaper but requires many more turns is not automatically efficient. A route that looks expensive because one turn uses greater reasoning effort may still be the lower-cost route if it collapses the loop.
+
 Useful current references:
 
 - [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex)
@@ -365,6 +389,9 @@ The adapter may classify failures such as:
 - `context_overload` — broad context was supplied without decision-relevant need;
 - `capsule_monoculture` — a capsule workflow was applied by habit to a task whose geometry required another strategy;
 - `frontier_execution_overkill` — expensive execution was used where a brain burst plus cheaper implementation would have sufficed;
+- `effort_underfit_loop_amplification` — lower reasoning effort reduced local cost but increased continuations, repairs, context rereads or tool churn enough to worsen total-work efficiency;
+- `fanout_coordination_overhead` — subagents or parallel branches duplicated context or coordination work without sufficient independent-work benefit;
+- `latency_premium_mismatch` — a speed-premium mode was used while external tools or execution, rather than model response latency, dominated the run;
 - `strategy_surface_mismatch` — the chosen role required tools/persistence unavailable on the selected surface;
 - `adapter_staleness` — dated Astra calibration was treated as current after its freshness boundary.
 
