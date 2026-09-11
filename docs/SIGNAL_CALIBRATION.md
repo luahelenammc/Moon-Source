@@ -63,6 +63,68 @@ When the distinction changes the decision, a calibrated answer should make visib
 
 The full contract is not mandatory for every low-stakes answer. Structure should be sufficient for the field, not maximal by default.
 
+
+## Interior–Membrane Split
+
+Signal Calibration can operate across two distinct responsibilities when a high-resolution working analysis must later circulate to another audience or jurisdiction:
+
+> **Exploration and circulation are different responsibilities.**
+
+Activate this split only when a meaningful boundary exists: a useful analysis must travel; local, private or sensitive material cannot travel literally; the consequence of error changes between working context and output; sanitization is already erasing the mechanism; or raw material is at risk of crossing an unsuitable boundary. It is a decision aid, not a mandatory ritual for every case.
+
+### Interior / working layer
+
+The interior (or working) layer is an explicit governed working representation. It may preserve:
+
+- observations, signals, convergence, working inferences, alternatives and counterevidence;
+- local or provisional language when it increases analytic resolution;
+- mechanisms, asymmetries, contradictions and consequences;
+- explicit epistemic labels and qualitative confidence;
+- a real `no_new_inference_with_reason` result when the field adds no new understanding.
+
+It does not convert inference into fact, and it does not invent novelty merely to satisfy a format or a quota.
+
+### Membrane / boundary layer
+
+The membrane (or boundary) layer translates and gates circulation. It decides what can cross, to which destination, under which authority and with what consequence:
+
+- resolve audience, purpose, destination, authority, exposure and consequence;
+- remove or abstract private, local, personal or irrelevant dependencies;
+- preserve the original epistemic status, or make it more conservative; translation is not promotion;
+- translate a surviving mechanism into observable behavior, process, risk, ownership, rule or action when that survives the gate;
+- retain material that cannot cross without distortion, returning `no_exportable_delta`.
+
+**Sanitization is not causal amnesia.**
+
+**Sanitize dependencies, not the mechanism.**
+
+A boundary may narrow circulation without retroactively narrowing the working field that produced the analysis. If removing private dependencies also removes the mechanism, keep the material local rather than exporting a hollow summary.
+
+### Minimal split output
+
+No literal YAML format is required. When the split is material, make the working and boundary decisions visible enough to audit:
+
+- **working layer:** established material, working inference, mechanism, alternatives or counterevidence, and qualitative confidence;
+- **boundary layer:** destination, exportable mechanism, translated output, retained or withheld material, epistemic status after translation, and `exportable_delta` or `no_exportable_delta`.
+
+### Boundary QA
+
+- **Causal retention test:** after translation, can the recipient still understand why the conclusion matters?
+- **Epistemic conservation test:** did anything cross with stronger epistemic status than it had inside?
+- **Dependency test:** which elements are load-bearing mechanism and which are merely local or private dependencies?
+- **Destination test:** would the same output be appropriate for a private working note, an internal team memo and a public artifact? If yes by default, the boundary is probably under-modelled.
+
+If no material distinction in destination or consequence exists, use ordinary calibration rather than manufacturing a two-layer ritual.
+
+### Synthetic example (non-evidentiary)
+
+A team notices recurring delays concentrated at one approval point.
+
+- **Interior:** the pattern is recorded; centralization or single-point dependency is a leading working inference; a formal regulatory requirement remains a meaningful alternative.
+- **Membrane:** a broad report does not assert a person's motive. It preserves the mechanism — a single approval dependency creates delay risk — and recommends backup ownership or a review of the approval path. The human cause remains unestablished.
+
+This example is synthetic and does not report a real organization, adoption or outcome.
+
 ## Generic example
 
 A team lead repeatedly asks to be copied on operational decisions and follows up when excluded.
@@ -119,6 +181,16 @@ Check for:
 - using low-stakes inference standards for high-stakes accusations or irreversible action;
 - invented precision, scores or probabilities.
 
+### Boundary failures
+
+- **Premature sanitization** — reducing the working field before the mechanism is understood;
+- **Causal amnesia** — producing a safer-sounding output that removes the operational relation that made the analysis useful;
+- **Epistemic laundering** — allowing a hypothesis to cross as fact or as a stronger claim;
+- **Membrane-as-censor** — deleting instead of translating when a public-safe mechanism could survive;
+- **Local-dependency leakage** — allowing private, personal or irrelevant dependencies to cross without need;
+- **One-output-for-every-destination** — treating a private note, internal memo and public artifact as if they had the same contract;
+- **Double authority** — creating a second capability or owner for a responsibility already held by Signal Calibration.
+
 Ask:
 
 1. Did uncertainty change the confidence level, or did it erase the interpretation entirely?
@@ -136,6 +208,8 @@ This is a bounded qualitative reasoning and calibration method. It is:
 - not a hidden scoring engine;
 - not a replacement for domain-specific evidence standards;
 - not evidence of external adoption or measured impact.
+- not access to hidden model reasoning or chain-of-thought, and not a requirement to reveal private deliberation;
+- not a system for detecting human intent or an automatic authorization to circulate material;
 
 See [Architecture](../ARCHITECTURE.md), [Evidence and Claims](../EVIDENCE_AND_CLAIMS.md), [Public Boundary](../PUBLIC_BOUNDARY.md) and [Existing Implementations](EXISTING_IMPLEMENTATIONS.md) for the surrounding authority and disclosure boundary.
 
