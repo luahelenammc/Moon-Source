@@ -11,13 +11,11 @@
 - a Work result must return to Chat for verification and bounded closure;
 - expensive execution needs a survivability check before spending the budget.
 
-## Astra strategy, not Astra mode
+## Astra submodule, not Astra mode
 
-Astra is an optional capability target, not a prescribed work style. When it
-is actually available, Chat–Work can compile it as a judgment brain, broad
-reviewer, co-architect, bounded executor or sustained full-run surface. Role,
-autonomy, reasoning depth, context breadth and mutation authority remain
-separate.
+Astra is an optional subordinate submodule of this Chat–Work portable, not a prescribed work style. Its canonical adapter now lives inside this module at [`astra/CHAT_WORK_ASTRA_ADAPTER.md`](astra/CHAT_WORK_ASTRA_ADAPTER.md).
+
+When Astra is actually available, Chat–Work can compile it as a judgment brain, broad reviewer, co-architect, bounded executor or sustained full-run surface. Role, autonomy, reasoning depth, context breadth and mutation authority remain separate.
 
 Examples of valid requests:
 
@@ -27,11 +25,7 @@ Examples of valid requests:
 - “Give Astra a sustained run for this finite objective, with checkpoints and verification.”
 - “Run a Decision Sprint across this finite docket.”
 
-Capsules are useful for bounded judgment, but they are not mandatory for broad
-review, co-architecture or execution. The user may override the compiled
-strategy; authority, scope, safety and verification still govern. See the
-[optional Astra Strategy Adapter](../../docs/CHAT_WORK_ASTRA_ADAPTER.md) for
-the date-sensitive subordinate guidance.
+Capsules are useful for bounded judgment, but they are not mandatory for broad review, co-architecture or execution. The user may override the compiled strategy; authority, scope, safety and verification still govern. Open the [Astra Strategy Adapter](astra/CHAT_WORK_ASTRA_ADAPTER.md) for the date-sensitive subordinate guidance.
 
 ## What it does
 
@@ -48,12 +42,12 @@ It does not itself create access to a model, tool, connector or execution surfac
 - **Version:** 5.1
 - **Protocol family:** V4
 - **Status:** current · supported standalone distribution
-- **Optional strategy adapter:** [`docs/CHAT_WORK_ASTRA_ADAPTER.md`](../../docs/CHAT_WORK_ASTRA_ADAPTER.md)
+- **Optional Astra submodule:** [`astra/CHAT_WORK_ASTRA_ADAPTER.md`](astra/CHAT_WORK_ASTRA_ADAPTER.md)
 - **Canonical body:** [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
 - **Package:** [`downloads/chat-work-routing-protocol-v4.zip`](../../downloads/chat-work-routing-protocol-v4.zip)
 - **License:** CC BY 4.0 · see [Licensing](../../LICENSING.md)
 
-> **Authority:** This README is the human-facing presentation surface. [`CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md) remains the semantic authority and contains the operative **First use** instructions.
+> **Authority:** This README is the human-facing presentation surface. [`CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md) remains the semantic authority and contains the operative **First use** instructions. The Astra adapter is subordinate to that body and does not create a second capability identity.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
