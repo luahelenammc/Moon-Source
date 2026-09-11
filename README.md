@@ -166,11 +166,11 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent capability changes
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
+- **2026-09-11 — Signal Calibration:** Added the Interior–Membrane Split to preserve working signal while bounding circulation, with causal-retention and epistemic-conservation checks.
 - **2026-09-10 — Preflight:** Added bounded active-frame correction and persistence/promotion-candidacy boundaries; Preflight is now version 2.2.
 - **2026-09-10 — Moon Source Setup:** Aligned active MSL and Preflight canonical references with MSL 5.1 and Preflight 2.1 without changing Moon Source Setup semantics or version.
 - **2026-09-10 — Connected Sources:** Declared the current MSL 5.1 structural dependency in the canonical metadata without changing method semantics or version.
 - **2026-09-10 — Chat–Work Routing Protocol:** Integrated the independently versioned Astra Strategy Adapter 1.2 as an internal Chat–Work submodule with a mandatory compact setup/customization contract; Chat–Work remains 5.1 and model-neutral.
-- **2026-09-10 — Be My Eyes:** Declared the current MSL 5.1 structural dependency in the canonical metadata without changing method semantics or version.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
 This bounded digest is generated from the unified capability registry. It is not a commit log.
