@@ -163,6 +163,10 @@ Promotion means:
 
 Promotion is not copy/import. A source can influence a public method without becoming a public dependency, and a donor can remain the authority for its own local state. Promotion is deliberate, not automatic.
 
+### Interior–Membrane handoff
+
+When promotion begins from a high-resolution working analysis, use the [Interior–Membrane Split](SIGNAL_CALIBRATION.md#interior-membrane-split) to keep exploration and circulation as different responsibilities. Remove or abstract local and private dependencies without erasing the reusable mechanism, and preserve or lower the donor material's epistemic strength unless new evidence independently raises it. This is a promotion boundary, not a second promotion owner.
+
 ## 2. Mutation contract
 
 ### Smallest sovereign destination
