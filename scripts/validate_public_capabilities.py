@@ -233,7 +233,35 @@ def validate_registry(
                 with ZipFile(package) as archive:
                     files = [name for name in archive.namelist() if not name.endswith("/")]
                     if distribution.get("composite"):
-                        if path.name not in {Path(name).name for name in files}:
+                        members = distribution.get("composite_members")
+                        if members is not None:
+                            if not isinstance(members, list) or not members or not all(isinstance(member, dict) for member in members):
+                                errors.append(f"{capability_id} composite_members must be a non-empty array of objects")
+                            else:
+                                expected_names = [member.get("archive_path") for member in members]
+                                source_paths = [member.get("source_path") for member in members]
+                                if any(not isinstance(name, str) or not name for name in expected_names):
+                                    errors.append(f"{capability_id} composite package has invalid archive_path")
+                                elif any(not isinstance(source, str) or not source for source in source_paths):
+                                    errors.append(f"{capability_id} composite package has invalid source_path")
+                                elif len(set(expected_names)) != len(expected_names):
+                                    errors.append(f"{capability_id} composite package has duplicate archive_path")
+                                elif files != expected_names:
+                                    errors.append(f"{capability_id} composite package members do not match contract")
+                                else:
+                                    if canonical_path not in source_paths:
+                                        errors.append(f"{capability_id} composite package contract omits canonical source")
+                                    for member in members:
+                                        source = root / member["source_path"]
+                                        if not source.is_file():
+                                            errors.append(
+                                                f"{capability_id} composite package source is missing: {member['source_path']}"
+                                            )
+                                        elif archive.read(member["archive_path"]) != source.read_bytes():
+                                            errors.append(
+                                                f"{capability_id} composite package member mismatch: {member['archive_path']}"
+                                            )
+                        elif path.name not in {Path(name).name for name in files}:
                             errors.append(f"{capability_id} composite package omits its canonical body")
                     else:
                         if files != [path.name] or archive.read(path.name) != path.read_bytes():

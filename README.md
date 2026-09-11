@@ -112,7 +112,7 @@ Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are public 
 - 👁️ [**Be My Eyes**](portables/be-my-eyes/README.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
 - 🔗 [**Connected Sources**](portables/connected-sources/README.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.1-public**. Its canonical semantic body remains in [`docs/CONNECTED_SOURCES.md`](docs/CONNECTED_SOURCES.md).
 - 🧱 [**Moon Source Language**](portables/msl/README.md) — structural grammar for governed semantic passage across sources, capabilities, interfaces and surfaces; current version **5.1**.
-- 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/README.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, model-neutral Intelligence Distillation, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, optional explicitly activated ephemeral Sprint Mode, bounded Decision Sprint, auditable Decision Trace, subordinate model-specific strategy adapters, Sprint Receipts, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **5.1**.
+- 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/README.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, model-neutral Intelligence Distillation, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, optional explicitly activated ephemeral Sprint Mode, bounded Decision Sprint, auditable Decision Trace, subordinate model-specific strategy adapters, Sprint Receipts, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **5.1**; optional Astra submodule **1.2**.
 
 🗂️ [**Open the download hub**](DOWNLOADS.md) to browse readable surfaces, open canonical bodies or download the supported standalone packages.
 
@@ -169,8 +169,8 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 - **2026-09-10 — Preflight:** Added bounded active-frame correction and persistence/promotion-candidacy boundaries; Preflight is now version 2.2.
 - **2026-09-10 — Moon Source Setup:** Aligned active MSL and Preflight canonical references with MSL 5.1 and Preflight 2.1 without changing Moon Source Setup semantics or version.
 - **2026-09-10 — Connected Sources:** Declared the current MSL 5.1 structural dependency in the canonical metadata without changing method semantics or version.
+- **2026-09-10 — Chat–Work Routing Protocol:** Integrated the independently versioned Astra Strategy Adapter 1.2 as an internal Chat–Work submodule with a mandatory compact setup/customization contract; Chat–Work remains 5.1 and model-neutral.
 - **2026-09-10 — Be My Eyes:** Declared the current MSL 5.1 structural dependency in the canonical metadata without changing method semantics or version.
-- **2026-09-09 — Moon Source Language:** Release-coherence correction: correctly numbers the accepted formatting-continuity update as 5.1, keeps the MSL 5 semantic grammar unchanged, and retires superseded live generations.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
 This bounded digest is generated from the unified capability registry. It is not a commit log.

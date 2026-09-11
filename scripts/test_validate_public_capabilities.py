@@ -180,6 +180,33 @@ Creator: Example Creator
         self._write_package("CONNECTED_SOURCES.md", "different bytes")
         self.assert_error("exactly the canonical bytes", self.errors(data))
 
+    def test_composite_package_members_are_byte_verified(self):
+        data = copy.deepcopy(self.data)
+        capability = data["capabilities"][0]
+        adapter_path = self.root / "docs/ADAPTER.md"
+        adapter_path.write_text("adapter bytes", encoding="utf-8")
+        capability["distribution"]["composite"] = True
+        capability["distribution"]["composite_members"] = [
+            {
+                "archive_path": "CONNECTED_SOURCES.md",
+                "source_path": "docs/CONNECTED_SOURCES.md",
+            },
+            {
+                "archive_path": "adapter/ADAPTER.md",
+                "source_path": "docs/ADAPTER.md",
+            },
+        ]
+        canonical = (self.root / "docs/CONNECTED_SOURCES.md").read_bytes()
+        with ZipFile(self.root / "downloads/connected-sources.zip", "w") as archive:
+            archive.writestr("CONNECTED_SOURCES.md", canonical)
+            archive.writestr("adapter/ADAPTER.md", b"adapter bytes")
+        self.assertEqual(self.errors(data), [])
+
+        with ZipFile(self.root / "downloads/connected-sources.zip", "w") as archive:
+            archive.writestr("CONNECTED_SOURCES.md", canonical)
+            archive.writestr("adapter/ADAPTER.md", b"drifted bytes")
+        self.assert_error("composite package member mismatch", self.errors(data))
+
     def test_canonical_sha_is_checked(self):
         data = copy.deepcopy(self.data)
         data["capabilities"][0]["distribution"]["canonical_sha256"] = "0" * 64

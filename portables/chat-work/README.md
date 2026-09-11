@@ -13,9 +13,11 @@
 
 ## Astra submodule, not Astra mode
 
-Astra is an optional subordinate submodule of this Chat–Work portable, not a prescribed work style. Its canonical adapter now lives inside this module at [`astra/CHAT_WORK_ASTRA_ADAPTER.md`](astra/CHAT_WORK_ASTRA_ADAPTER.md).
+Astra is an optional subordinate submodule of this Chat–Work portable, not a prescribed work style. Its canonical adapter now lives inside this module at [`astra/CHAT_WORK_ASTRA_ADAPTER.md`](astra/CHAT_WORK_ASTRA_ADAPTER.md) and is independently versioned at **1.2**.
 
 When Astra is actually available, Chat–Work can compile it as a judgment brain, broad reviewer, co-architect, bounded executor or sustained full-run surface. Role, autonomy, reasoning depth, context breadth and mutation authority remain separate.
+
+Before Astra execution begins, the adapter runs its own compact Setup Contract. No preset is the default: the user may choose AUTO, reuse a verified profile or apply a one-run override, and only then does the strategy compiler select a geometry inside that accepted envelope.
 
 Examples of valid requests:
 
@@ -42,7 +44,7 @@ It does not itself create access to a model, tool, connector or execution surfac
 - **Version:** 5.1
 - **Protocol family:** V4
 - **Status:** current · supported standalone distribution
-- **Optional Astra submodule:** [`astra/CHAT_WORK_ASTRA_ADAPTER.md`](astra/CHAT_WORK_ASTRA_ADAPTER.md)
+- **Optional Astra submodule:** [`astra/CHAT_WORK_ASTRA_ADAPTER.md`](astra/CHAT_WORK_ASTRA_ADAPTER.md) · version **1.2**
 - **Canonical body:** [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
 - **Package:** [`downloads/chat-work-routing-protocol-v4.zip`](../../downloads/chat-work-routing-protocol-v4.zip)
 - **License:** CC BY 4.0 · see [Licensing](../../LICENSING.md)

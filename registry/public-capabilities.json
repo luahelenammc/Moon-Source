@@ -60,24 +60,35 @@
         "Uses MSL-5.1 terminology; product and model calibration is date-sensitive and belongs in subordinate adapter notes",
         "Source transport records governing source or family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback; a locator is not authority",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions",
-        "Optional Astra strategy adapter at portables/chat-work/astra/CHAT_WORK_ASTRA_ADAPTER.md; subordinate to the canonical Chat–Work body and not a second capability identity"
+        "Optional Astra strategy adapter v1.2 at portables/chat-work/astra/CHAT_WORK_ASTRA_ADAPTER.md; subordinate to the canonical Chat–Work body, independently versioned as a submodule, setup-gated, and not a second capability identity"
       ],
       "difficulty": "advanced",
       "distribution": {
-        "canonical_sha256": "01481da522181fac344e9cdee78bb2544bbec64b6bbf7fb23b62bf74ca91528c",
+        "canonical_sha256": "64bf38c40d994a1f0db4cf55bb9ef4e596c086c93b171a221585e718ca9fa865",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_5_1.md",
         "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_5_1.md",
         "package_path": "downloads/chat-work-routing-protocol-v4.zip",
-        "standalone": true
+        "standalone": true,
+        "composite": true,
+        "composite_members": [
+          {
+            "archive_path": "CHAT_WORK_ROUTING_PROTOCOL_V4.md",
+            "source_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md"
+          },
+          {
+            "archive_path": "astra/CHAT_WORK_ASTRA_ADAPTER.md",
+            "source_path": "portables/chat-work/astra/CHAT_WORK_ASTRA_ADAPTER.md"
+          }
+        ]
       },
       "freshness": "protocol semantics as of 2026-09-09; model-specific product calibration is dated, replaceable adapter guidance; recheck volatile behavior, model names, prices, availability and usage pools",
       "function": "Route by sovereign object and workload shape across Chat, Work and optional Codex using configurable execution profiles, observed surface availability, capability floors, Budget Survivability, the model-neutral Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, bounded micro-bursts, optional explicitly activated ephemeral Sprint Mode, a finite Decision Sprint sibling-delta exception, auditable Decision Trace for material higher-tier rulings, decision-bearing return capsules, subordinate model-specific strategy adapters, Sprint Receipts, Chat Postflight and delta-only re-entry",
       "id": "chat-work-routing",
       "language": "English",
-      "last_material_update_on": "2026-09-09",
-      "last_material_update_summary": "Released 5.1 with a model-neutral strategy-adapter boundary and subordinate Astra strategy guidance, preserving generic IDL, optional Sprint/Decision Sprint, Decision Trace, authority, evidence, verification and Chat Postflight boundaries.",
+      "last_material_update_on": "2026-09-10",
+      "last_material_update_summary": "Integrated the independently versioned Astra Strategy Adapter 1.2 as an internal Chat–Work submodule with a mandatory compact setup/customization contract; Chat–Work remains 5.1 and model-neutral.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",

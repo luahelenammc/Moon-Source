@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-10 — Astra Strategy Adapter 1.2 · setup and customization contract
+
+- Established explicit independent submodule versioning: **1.0** for the initial accepted public adapter, **1.1** for the Total-Work Efficiency calibration, and **1.2** for this setup/customization integration.
+- Added a mandatory compact Astra Setup Contract before model-specific strategy execution, with `AUTO`, verified `PROFILE` reuse and one-run `RUN_OVERRIDE` paths; setup resolves only materially relevant preferences and does not manufacture capability or authority.
+- Made Brain Burst, Deep Review, Co-Architect, Executor, Full Run and Decision Sprint reference presets non-default recommendations; the strategy compiler now operates only inside the user-accepted setup envelope.
+- Tightened nesting under Chat–Work: general Chat–Work setup/profile/run-state laws govern first, Astra setup resolves model-specific preferences second, and Chat Postflight still closes the loop. Chat–Work remains **5.1** because this is a subordinate adapter release plus clarification of existing setup/profile law, not a new core routing generation.
+
 ## 2026-09-10 — Public relationship and title-surface normalization
 
 - Added an explicit, bounded Moon Source ↔ Moon Cortex discoverability route while keeping the repositories, capability registry and runtime-dependency boundaries distinct.

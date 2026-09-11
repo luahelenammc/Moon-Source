@@ -5,6 +5,11 @@
 ## Public status
 
 - **status:** current subordinate adapter; optional public guidance
+- **version:** 1.2
+- **versioning mode:** independently versioned subordinate submodule; the human title remains unversioned
+- **first public release:** 2026-09-09
+- **last material update:** 2026-09-10
+- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration
 - **applies to:** Chat–Work Routing Protocol 5.1
 - **effective date:** 2026-09-09
 - **governing canonical body:** `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`
@@ -85,12 +90,70 @@ The adapter begins with separation, not presets:
 
 These distinctions prevent the router from turning a successful local workflow into a universal prescription.
 
+## Astra Setup Contract
+
+Astra must not begin from an author-imposed operating style. **Before this adapter compiles or executes an Astra strategy, an Astra Setup must be resolved.** This gate is mandatory on first activation in a run unless a verified persistent Astra profile already exists and the user explicitly chooses to reuse it.
+
+Setup is not questionnaire debt. Resolve only the preferences that materially change the route. Unknown fields may remain `auto` or inherit Chat–Work only when the user has explicitly accepted that adaptive behavior. A reference preset may be recommended after setup, but it must never be silently treated as the user's default.
+
+The setup may complete in one turn when the user supplies enough configuration. Otherwise, the router presents the smallest decision-bearing proposal and obtains the user's acceptance before Astra execution begins.
+
+Supported setup modes:
+
+- **AUTO** — compile a proposed Astra configuration from the task plus the active Chat–Work profile, disclose the material fields and let the user accept or override it;
+- **PROFILE** — reuse a verified persistent Astra profile, while disclosing material run-specific deviations before execution;
+- **RUN_OVERRIDE** — apply explicit one-run changes without mutating a reusable profile.
+
+A portable setup shape is:
+
+```yaml
+astra_setup:
+  mode: AUTO | PROFILE | RUN_OVERRIDE
+  persistence: ephemeral | persistent | unknown
+  objective: null
+  role_preference: auto | judgment | reviewer | co_architect | executor | mixed
+  autonomy_preference: auto | read_only | recommend | bounded_mutation | sustained_execution
+  context_breadth_preference: auto | micro_capsule | bounded_corpus | broad_corpus | workspace_scale
+  coverage_preference: auto | single_delta | sibling_docket | multi_domain | exhaustive_bounded
+  reasoning_preference: adaptive | conserve | balanced | deep
+  optimization_priority: inherit_chat_work | throughput_per_allowance | quality | latency | balanced
+  parallelism_preference: inherit_chat_work | logical_only | bounded | permissive
+  mutation_authority: inherit_chat_work | none | bounded_explicit | sustained_explicit
+  return_preference: auto | return_capsule | decision_trace | structured_report | artifact | patch | evidence_receipt | mixed
+  checkpoints: proportional | aggressive
+  stop_condition: null
+```
+
+These are preferences and routing inputs, not capability claims. Setup cannot manufacture model availability, surface access, source authority, mutation permission, budget, persistence or safety clearance.
+
+### Setup precedence
+
+When Astra-specific preferences conflict, use this order:
+
+1. safety, authority, evidence and capability-floor constraints;
+2. explicit current-run Astra override;
+3. explicitly selected persistent Astra profile;
+4. active Chat–Work Execution Profile fields that are semantically compatible with Astra;
+5. an accepted Astra AUTO proposal;
+6. adapter reference presets only as recommendations.
+
+Absence of a preference is not permission to infer one from Moon's habits, a model's prestige, a previous user's workflow or a preset name.
+
+> **No Astra preset is the default. Setup chooses the strategy space; the compiler chooses within it.**
+
+### Persistence boundary
+
+A named Astra profile is reusable only when it is actually stored in a persistent source available to the current environment. Otherwise it is ephemeral. This inherits Chat–Work's Profile Persistence Law: never claim that Astra preferences were saved, remembered or made default without evidence.
+
+Material changes in objective, authority, available surfaces, resource posture or desired autonomy reopen only the affected setup fields. Do not rerun the entire questionnaire ritualistically.
+
 ## Astra Strategy Profile
 
-An Astra strategy should be compiled from independent dimensions. The exact syntax is illustrative; the semantic separation is load-bearing.
+After Astra Setup is resolved, the strategy is compiled from independent dimensions. The exact syntax is illustrative; the semantic separation is load-bearing.
 
 ```yaml
 astra_strategy:
+  setup_ref: required
   role: judgment | reviewer | co_architect | executor | mixed
   autonomy: read_only | recommend | bounded_mutation | sustained_execution
   context_breadth: micro_capsule | bounded_corpus | broad_corpus | workspace_scale
@@ -148,7 +211,7 @@ Autonomy never manufactures permission.
 
 ## Reference presets
 
-These are ergonomic starting points, not closed modes. A compiled strategy may mix fields differently when the task requires it.
+These are ergonomic starting points, not closed modes or defaults. They may be suggested only after Astra Setup has established the user's preferences and task envelope. A compiled strategy may mix fields differently when the task requires it.
 
 ### Astra Brain Burst / Judgment Burst
 
@@ -264,20 +327,44 @@ It is appropriate when a finite family of related decisions shares enough contex
 
 Resolve the strategy in this order:
 
-1. **Sovereign objective and sovereign object** — what must actually change or be decided?
-2. **Astra value test** — would Astra materially improve this task or irreducible slice, and is it actually available?
-3. **Role** — judgment, review, co-architecture, execution or mixed?
-4. **Autonomy** — how far should Astra carry the work before returning control?
-5. **Corpus geometry** — how much context and how many authority domains must remain coherent?
-6. **Mutation authority** — what may Astra actually change?
-7. **Coverage topology** — one delta, finite docket, multiple domains or explicit bounded exhaustiveness?
-8. **Reasoning effort** — what depth is required independently of role/autonomy?
-9. **Resource overlay** — normal Budget Survivability or an explicitly activated Sprint/perishable-capacity envelope?
-10. **Return geometry** — ruling, trace, report, artifact, patch, receipt or a mixed return?
-11. **Checkpoints and stop condition** — where can the run safely stop, salvage or re-enter?
-12. **Verification and Chat Postflight** — what observable evidence closes the loop?
+1. **Astra Setup Gate** — which setup mode is active, which user preferences are explicit, which fields may adapt, and has the setup been accepted for this run?
+2. **Sovereign objective and sovereign object** — what must actually change or be decided?
+3. **Astra value test** — would Astra materially improve this task or irreducible slice, and is it actually available?
+4. **Role** — judgment, review, co-architecture, execution or mixed within the accepted setup?
+5. **Autonomy** — how far should Astra carry the work before returning control?
+6. **Corpus geometry** — how much context and how many authority domains must remain coherent?
+7. **Mutation authority** — what may Astra actually change?
+8. **Coverage topology** — one delta, finite docket, multiple domains or explicit bounded exhaustiveness?
+9. **Reasoning effort** — what depth is required independently of role/autonomy and consistent with the user's resource preference?
+10. **Resource overlay** — normal Budget Survivability or an explicitly activated Sprint/perishable-capacity envelope?
+11. **Return geometry** — ruling, trace, report, artifact, patch, receipt or a mixed return?
+12. **Checkpoints and stop condition** — where can the run safely stop, salvage or re-enter?
+13. **Verification and Chat Postflight** — what observable evidence closes the loop?
 
-The compiler should choose the smallest structure that preserves the task's required autonomy and coherence. It should not force every user through every field when defaults are harmless.
+The compiler should choose the smallest structure that preserves the task's required autonomy and coherence **inside the accepted setup envelope**. It must not silently override user preferences merely because another preset looks more efficient. When a preference conflicts with safety, authority, capability floor or observed availability, disclose the conflict and downroute, request a bounded override or return a blocked condition rather than inventing consent.
+
+## Chat–Work integration contract
+
+The Astra adapter is not a parallel router. It is a subordinate strategy layer inside Chat–Work.
+
+Chat–Work resolves the general Execution Profile, Run State, task requirements, authority and capability floor first. When Astra is selected as a possible capability target, the adapter then resolves the **Astra Setup Contract** before compiling model-specific strategy.
+
+This creates a nested setup relationship:
+
+```text
+Chat–Work Setup
+  → general surface / capability / resource / authority envelope
+  → Astra selected as a possible target
+    → Astra Setup
+      → user-specific role / autonomy / context / effort / fanout / return preferences
+      → Astra Strategy Compiler
+        → bounded execution or return
+  → Chat Postflight
+```
+
+Chat–Work may recommend Astra and may prefill an AUTO proposal from explicit profile data, but it must not silently choose Brain Burst, Deep Review, Co-Architect, Executor, Full Run, Decision Sprint, maximum reasoning, maximum autonomy or physical fanout on the user's behalf.
+
+The same user may rationally configure Astra differently for different tasks. A persistent Astra profile is a convenience, not an identity claim or an immutable default.
 
 ## Relationship to IDL and capsules
 
@@ -383,6 +470,9 @@ redesigning the routing core.
 
 The adapter may classify failures such as:
 
+- `setup_bypass` — Astra strategy or execution began before the required setup envelope was resolved;
+- `preset_capture` — a reference preset was silently treated as the user's default operating style;
+- `profile_inheritance_overreach` — Chat–Work or a prior Astra profile supplied preferences that were not explicit, persistent or semantically compatible with the current run;
 - `autonomy_underfit` — Astra was constrained to judgment when execution autonomy was load-bearing;
 - `autonomy_overreach` — Astra received more execution freedom than the task or authority justified;
 - `context_underfit` — over-distillation removed context needed for correct frontier work;
@@ -398,6 +488,8 @@ The adapter may classify failures such as:
 These are routing diagnoses, not claims about the model's private internals.
 
 ## Relationship to Chat–Work 5.1
+
+**Current Astra adapter version: 1.2.** Chat–Work itself remains 5.1: this adapter version is subordinate and independently tracked, while the governing router keeps its stable release identity.
 
 Chat–Work 5.1 adds only the generic boundary that makes this adapter
 legitimate. The canonical body retains the stable routing laws; this document
