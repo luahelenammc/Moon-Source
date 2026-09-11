@@ -388,7 +388,7 @@
     {
       "architectural_role": "qualitative_signal_calibration",
       "canonical_path": "docs/SIGNAL_CALIBRATION.md",
-      "claim_ceiling": "Bounded public qualitative-calibration method; not proof of motives, diagnostic validity, scientific validation or impact",
+      "claim_ceiling": "Bounded public qualitative-calibration and boundary-translation method; not access to hidden model reasoning, proof of motives, diagnostic validity, scientific validation or impact",
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
       "dependencies": [],
       "distribution": {
@@ -397,8 +397,8 @@
       "freshness": "general public method; recheck when its canonical body changes",
       "function": "Calibrate weak, convergent or ambiguous signals into bounded working inference without certainty inflation",
       "id": "signal-calibration",
-      "last_material_update_on": "2026-08-21",
-      "last_material_update_summary": "Added bounded qualitative calibration for convergent signals, working inference and update conditions.",
+      "last_material_update_on": "2026-09-11",
+      "last_material_update_summary": "Added the Interior–Membrane Split to preserve working signal while bounding circulation, with causal-retention and epistemic-conservation checks.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
