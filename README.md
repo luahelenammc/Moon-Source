@@ -33,6 +33,7 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 | Decide what deserves to become a source, handoff, procedure or other form | [🏗️ Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Retrieve, process, metabolize or promote governed source material | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) |
+| Organize a shared file workspace into intake, explicit action queues, lifecycle state, review stamps and durable handoffs | [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
 | Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [🔗 Connected Sources](portables/connected-sources/README.md) |
 | Structure recurring context, continuity or handoffs | [🧱 Moon Source Language](portables/msl/README.md) |
 | Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [🔀 Chat–Work](portables/chat-work/README.md) |
@@ -94,6 +95,7 @@ A few principles carry most of the architecture:
 - **Work completion is not cycle completion.** When sustained execution returns, Chat verifies the real state, closes bounded residuals and re-enters Work only for irreducible remaining work.
 - **Humans should not have to prompt like machines.** [Preflight](portables/preflight/PREFLIGHT_V2.md) reconstructs intended meaning, desired outcome, corrections and constraints before execution; authority, provenance, freshness, risk and mutation checks activate only when consequence makes them material.
 - **Read the scene, not only the sentence.** [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) reconstructs actors, relationship and plausible subtext while keeping observation, inference and overread distinct.
+- **A shared workspace should show action without inventing ownership.** [Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) separates common intake, personal action queues, lifecycle projection, human stamps and durable source-of-record routing.
 
 ## Examples
 
@@ -142,6 +144,7 @@ Moon Source publishes public capabilities with one canonical semantic body each.
 | Repository-only capability | Responsibility |
 |---|---|
 | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) | Retrieve, process, metabolize and promote governed source changes, with lifecycle and legacy-successor rules |
+| [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) | Organize shared intake, explicit personal action queues, lifecycle surfaces, revision-bound stamps and durable source-of-record handoffs |
 | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
 | [🎚️ Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Useful working inference without certainty inflation |
 | [🧩 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Project a stable method into a reusable procedure without moving source authority |
@@ -150,7 +153,7 @@ Moon Source publishes public capabilities with one canonical semantic body each.
 | [🛡️ Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Read-only-first diagnosis, failure boundaries, ordinary and Context Receipts, reversibility and freshness |
 | [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Turn recurring failure into the smallest validated reusable mechanism |
 
-The canonical chronology, roles, status and material-update history of all fourteen capabilities lives in the [public capability registry](registry/PUBLIC_CAPABILITIES.md); its machine-readable contract is [registry/public-capabilities.json](registry/public-capabilities.json). The six standalone distributions are a filtered distribution view. Connected Sources is a structural crown jewel at [docs/CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md), with dated ChatGPT product facts subordinate to [its adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md).
+The canonical chronology, roles, status and material-update history of all fifteen capabilities lives in the [public capability registry](registry/PUBLIC_CAPABILITIES.md); its machine-readable contract is [registry/public-capabilities.json](registry/public-capabilities.json). The six standalone distributions are a filtered distribution view. Connected Sources is a structural crown jewel at [docs/CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md), with dated ChatGPT product facts subordinate to [its adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md).
 
 ## Evidence, boundary and reuse
 
@@ -166,11 +169,11 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent capability changes
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
+- **2026-09-12 — Lifecycle Workspace Router:** Published a provenance-gated lifecycle workspace router derived from Moon/Moon × Áurion source material, with shared intake, action queues, stamps, dashboard projections, source-of-record pointers, reversible migration and durable-file-layer handoff rules.
 - **2026-09-11 — Signal Calibration:** Added the Interior–Membrane Split to preserve working signal while bounding circulation, with causal-retention and epistemic-conservation checks.
 - **2026-09-10 — Preflight:** Added bounded active-frame correction and persistence/promotion-candidacy boundaries; Preflight is now version 2.2.
 - **2026-09-10 — Moon Source Setup:** Aligned active MSL and Preflight canonical references with MSL 5.1 and Preflight 2.1 without changing Moon Source Setup semantics or version.
 - **2026-09-10 — Connected Sources:** Declared the current MSL 5.1 structural dependency in the canonical metadata without changing method semantics or version.
-- **2026-09-10 — Chat–Work Routing Protocol:** Integrated the independently versioned Astra Strategy Adapter 1.2 as an internal Chat–Work submodule with a mandatory compact setup/customization contract; Chat–Work remains 5.1 and model-neutral.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
 This bounded digest is generated from the unified capability registry. It is not a commit log.
@@ -186,6 +189,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 | Contextual scene-reading capability | [Be My Eyes](portables/be-my-eyes/README.md) |
 | Connected source capability | [Connected Sources](portables/connected-sources/README.md) |
 | Source operation grammar, lifecycle and succession | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) |
+| Collaborative workspace intake, action queues, lifecycle and stamps | [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
 | Definitions and responsibility boundaries | [Terminology](docs/TERMINOLOGY.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
 | Unified public capability registry | [registry/PUBLIC_CAPABILITIES.md](registry/PUBLIC_CAPABILITIES.md) |
 | Versioning and release rules | [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) |
@@ -198,7 +202,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 ## Current baseline
 
-Public architecture baseline: **2026-08-16**. Additive public capabilities, operational hardening and licensing updates continued through **2026-09-10**; Preflight advanced to **2.2**, Be My Eyes remains **1.0-public**, Connected Sources remains a structural crown jewel at its canonical docs path, and the public registry is unified schema **2.0** while Chat–Work routing remains the tri-surface **V4** protocol with current semantic subversion **5.1**.
+Public architecture baseline: **2026-08-16**. Additive public capabilities, operational hardening and licensing updates continued through **2026-09-12**; Preflight is **2.2**, Be My Eyes remains **1.0-public**, Connected Sources remains a structural crown jewel at its canonical docs path, Lifecycle Workspace Router is a repository-only public capability, and the public registry is unified schema **2.0** while Chat–Work routing remains the tri-surface **V4** protocol with current semantic subversion **5.1**.
 
 Current structural grammar: **Moon Source Language**, version **5.1**. Current standalone distributions: **Moon Source Setup** (version **3.1**), **Preflight** (version **2.2**), **Be My Eyes** (version **1.0-public**), **Connected Sources** (version **1.1-public**), **Moon Source Language** (version **5.1**) and **Chat–Work Routing Protocol** (version **5.1**). Sprint Mode is optional, explicitly activated and ephemeral; it does not expose allowance/reset state or persist as a profile. The Astra Strategy Adapter is optional, subordinate and date-sensitive. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 
