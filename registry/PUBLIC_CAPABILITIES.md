@@ -7,7 +7,7 @@ capabilities also have a supported standalone distribution.
 “Portable” is therefore a distribution profile, not a competing semantic
 class. The machine-readable contract is
 [registry/public-capabilities.json](public-capabilities.json), schema 2.0.
-The table below is a human-readable view of the same fourteen records.
+The table below is a human-readable view of the same fifteen records.
 
 The table's **Summary title** is the concise browsing label. The registry's semantic `title` remains stable in machine-readable metadata; individual README and canonical-body headings use `surface_title` to make the Moon Source role explicit without folding version into identity.
 
@@ -18,6 +18,7 @@ The table's **Summary title** is the concise browsing label. The registry's sema
 | connected-sources | [Connected Sources](../portables/connected-sources/README.md) | structural crown jewel | 1.1-public | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources-1.1-public.zip) |
 | credits-attribution-ops | 🧾 Credits & Attribution Ops | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
 | failure-foundry | 🏭 Failure to Capability — Failure Foundry | failure-to-capability method | — | current | [FAILURE_FOUNDRY.md](../docs/FAILURE_FOUNDRY.md) | — |
+| lifecycle-workspace-router | 🗂️ Lifecycle Workspace Router | lifecycle workspace routing method | — | current | [LIFECYCLE_WORKSPACE_ROUTER.md](../docs/LIFECYCLE_WORKSPACE_ROUTER.md) | — |
 | moon-source-language | [Moon Source Language](../portables/msl/README.md) | sovereign semantic passage grammar | 5.1 | current | [MSL_5_1.md](../portables/msl/MSL_5_1.md#first-use) | [ZIP](../downloads/moon-source-language-5.1.zip) |
 | moon-source-setup | [Setup](../portables/setup/README.md) | adaptive context router | 3.1 | current | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md#first-use) | [ZIP](../downloads/moon-source-setup-3.1.zip) |
 | operational-devices | 🛠️ Operational Devices | operational-device pattern | — | current | [OPERATIONAL_DEVICES.md](../docs/OPERATIONAL_DEVICES.md) | — |
