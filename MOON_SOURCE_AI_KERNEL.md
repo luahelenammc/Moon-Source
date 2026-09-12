@@ -32,6 +32,7 @@ Use each file for the responsibility it actually owns:
 - `docs/CONNECTED_SOURCES.md` — canonical Connected Sources structural crown jewel and 1.1-public standalone distribution: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
 - `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` — subordinate dated ChatGPT product/reference facts; load only when current product behavior is materially relevant.
 - `docs/SOURCE_OPERATIONS.md` — public source-operation grammar: retrieve, process, metabolize, promote, promotion gate, lifecycle, legacy succession, current-state versus history, smallest sovereign destination, readback and no-delta.
+- `docs/LIFECYCLE_WORKSPACE_ROUTER.md` — collaborative workspace routing: shared intake, explicit personal action queues, lifecycle projections, human review/validation stamps, source-of-record pointers, reversible migration, durable-file-layer handoffs and provider readback without conflating location with authorship, ownership or authority.
 - `ARCHITECTURE.md#field-to-form` — canonical public architecture and Field-to-Form diagnostic: decide what should exist before choosing a container or artifact type.
 - `docs/RESPONSIBILITY_MAP.md` — separating responsibilities, ownership, authority and transport between objects.
 - `docs/TERMINOLOGY.md` — responsibility-first translation between ordinary language and Moon Source vocabulary.
@@ -62,6 +63,7 @@ When two files appear to conflict, do not flatten them together. First ask wheth
 <!-- MOON-SOURCE-CANONICAL-AUTHORITY:START -->
 - Credits & Attribution Ops → `docs/CREDITS_ATTRIBUTION_OPS.md`
 - Failure to Capability — Failure Foundry → `docs/FAILURE_FOUNDRY.md`
+- Lifecycle Workspace Router → `docs/LIFECYCLE_WORKSPACE_ROUTER.md`
 - Operational Devices → `docs/OPERATIONAL_DEVICES.md`
 - Operational Reliability → `docs/OPERATIONAL_RELIABILITY.md`
 - Procedural Projection → `docs/PROCEDURAL_PROJECTION.md`
@@ -113,8 +115,22 @@ Then load only as needed:
 - `docs/RESPONSIBILITY_MAP.md` for ownership/authority collisions.
 - `docs/TERMINOLOGY.md` for translation or unclear vocabulary.
 - `portables/msl/MSL_5_1.md` once a materialization actually earns existence.
+- `docs/LIFECYCLE_WORKSPACE_ROUTER.md` when the mess is specifically a shared file workspace whose intake, queues, lifecycle, review state, durable sources or routing history are hard to read.
 
 The form comes from the field. Do not begin by choosing a document type.
+
+### If the user needs to organize a collaborative file workspace
+
+Load:
+- `docs/LIFECYCLE_WORKSPACE_ROUTER.md`
+
+Also load only as needed:
+- `docs/CONNECTED_SOURCES.md` when the workspace is connector-backed or provider behavior matters;
+- `docs/SOURCE_OPERATIONS.md` when material is crossing jurisdictions or being promoted;
+- `docs/CREDITS_ATTRIBUTION_OPS.md` when authorship, ownership, contribution or derivative lineage is material;
+- `docs/OPERATIONAL_RELIABILITY.md` when migration, mutation, partial failure or recovery is involved.
+
+Keep shared intake distinct from shared obligation, personal queues limited to explicit actions, lifecycle folders as operational projections and richer multidimensional state in a dashboard or ledger. Prefer one durable source-of-record with pointers rather than duplicate payload. Bind material human validation to the revision actually reviewed, and read back provider state after routing or migration. When a durable workspace exists, prefer the workspace as the file layer and chat as the link/signaling layer rather than making attachments the canonical source.
 
 ### If the user asks what kind of Moon Source artifact to create
 
