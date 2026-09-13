@@ -1,107 +1,166 @@
 # 🗂️ Lifecycle Workspace Router — Moon Source component
 
-The Lifecycle Workspace Router is a public Moon Source method for organizing collaborative file workspaces so that people and AI can tell what arrived, who actually needs to act, what state an artifact is in, which revision was reviewed, and where the durable source lives — without pretending that folder location proves authorship, ownership or authority.
+Public capability version: **1.1-public**
+
+The Lifecycle Workspace Router is a public Moon Source method for projecting multidimensional artifact and source state onto durable workspace surfaces. It can support a single actor, a role or process, an AI operating under human authority, or multiple collaborators. Collaboration is an application profile, not the ontology of the method.
 
 Its central rule is:
 
-> **Artifact identity and provenance come first; lifecycle and action state determine workspace projection. Folder placement is an operational view, not the source of truth about who created or owns an idea.**
+> **Keep identity, provenance, lifecycle, action, revision, authority and physical location distinct; project only the state a workspace surface needs while preserving one canonical source-of-record.**
 
-This method is provider-neutral. Google Drive and Google Sheets are useful examples because they expose folders, files, IDs, revisions and human-readable tables, but the architecture does not require them.
+The method is provider-neutral. Google Drive and Google Sheets are useful examples because they expose folders, files, IDs, revisions and human-readable tables, but the architecture does not require them.
 
 Canonical public repository: https://github.com/luahelenammc/Moon-Source
 
 Created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion**.
 
-## Scope
+## Scope and jurisdiction
 
-Use this capability when a collaborative workspace has become hard to read because one physical tree is being asked to represent several different things at once: origin, authorship, ownership, topic, review status, decision state, next action and archive history.
+Use this capability when a persistent artifact or source must expose some combination of identity, lifecycle, explicit action, source-of-record, workspace projection, freshness, staleness, lineage or transition.
 
-The method separates those dimensions instead of forcing them into folder names.
+The Router is a workspace and persistent-artifact specialization. It does not decide whether a domain needs a router, choose the general field-to-form architecture, define passage or form grammar, adjudicate truth, or grant authority. Those boundaries belong to the surrounding Moon Source architecture and related capabilities.
 
-It is:
+The method is:
 
-- a workspace-routing and lifecycle method;
-- a way to keep a common intake surface without creating common obligation;
-- a way to give each participant an explicit personal action queue;
-- a way to project lifecycle state into folders while preserving richer metadata elsewhere;
-- a way to record read, review and validation state against real artifact revisions;
-- a way to keep one durable source-of-record while exposing pointers in several queues;
-- a migration and reconciliation pattern with receipts and provider readback.
+- a way to project multidimensional state onto durable workspace surfaces;
+- a family of intake surfaces for personal, shared, external or untriaged arrivals;
+- a way to represent explicit action queues without confusing assignment with origin or ownership;
+- a way to expose lifecycle state without making a folder path the source of truth;
+- a way to record awareness, review, validation, verification and freshness against real revisions when evidence exists;
+- a way to preserve one durable source-of-record while exposing pointers in several views;
+- a bounded routing, reconciliation, migration and provider-readback pattern.
 
 It is not:
 
 - a database of record by default;
-- proof of authorship, legal ownership, consent or approval;
-- automatic synchronization between providers;
-- a universal workflow taxonomy;
-- permission for AI to invent human decisions or validation state;
-- evidence that a person read or approved something merely because the file was reachable;
-- a replacement for the authority rules of the organization, project or domain using it.
+- proof of authorship, legal ownership, consent, approval or authority;
+- an automatic synchronization engine between providers;
+- a universal workflow taxonomy or lifecycle engine for every runtime;
+- permission for AI to invent human decisions, ownership, consent or validation state;
+- evidence that a person read or approved something merely because it was reachable;
+- a finished product, adoption claim or substitute for the authority rules of the domain using it.
 
-## The four planes
+## Provenance gate
 
-A useful implementation separates four planes.
+The public capability is a provenance-cleared generalization of Moon / Moon × Áurion source material. Collaborative testing can supply evidence and stress the design, but it does not reset authorship or silently convert another party's mechanism into upstream core.
 
-### 1. Shared Intake
+The hard gate is:
 
-Shared Intake is the common arrival surface for material that is new, untriaged or not yet assigned to a next actor.
+```text
+absence_of_proof_of_moon_origin => exclude_from_upstream_core
+```
 
-It can contain:
+Only material with a traceable Moon or Moon × Áurion origin, or a clearly general method derived from that material, enters this public body. Mechanisms whose origin belongs to external collaborators, whose provenance is materially ambiguous, or whose governance assumptions cannot be cleared are excluded rather than anonymized and absorbed.
 
-- newly arrived material;
-- external submissions;
-- objects whose classification is not yet resolved;
-- genuinely collective items still awaiting triage;
-- items whose next actor is not yet known.
+```text
+shared_testbed != shared_authorship
+usefulness != ownership
+ambiguous_provenance → disclose_or_exclude
+```
 
-The invariant is:
+This is a good-faith evidentiary boundary, not a claim of infallibility. If stronger evidence later changes the lineage of a published element, the correct response is to correct attribution, scope or content.
+
+## Universal Workspace Core
+
+The core applies in any valid application profile. It is the smallest set of distinctions needed to keep a durable workspace legible:
+
+| Dimension | What must remain distinguishable |
+| --- | --- |
+| Stable identity | The artifact or source remains identifiable independently of its current path or surface. |
+| Source-of-record | A canonical reference identifies where the authoritative payload or record lives. |
+| Provenance and custody | Origin, authorship, contributors, custodian and evidence ceiling are not inferred from placement. |
+| Orthogonal lifecycle | Operational state is represented separately from topic, location and authority. |
+| Explicit action | The next action and its assignee are explicit; action is not implied by visibility. |
+| Revision and freshness | The revision, hash or provider freshness signal is bound to claims that depend on it. |
+| Lineage | Copies, revisions, supersession, derivation and duplicates remain related without collapsing distinct objects. |
+| Pointers and projections | Queues, dashboards and folders point to or summarize the source; they do not duplicate its payload by default. |
+| Durable surfaces | Intake, action, lifecycle, dashboard and receipt surfaces are created only when they answer a real operational question. |
+| Stamps and receipts | Awareness, review, validation, verification, routing and reconciliation events carry evidence and scope. |
+| Readback | Provider state is read back before a write is treated as complete. |
+| Reversible migration | Moves and reclassification preserve identity and lineage whenever the provider allows it. |
+| Durable/transient boundary | A durable workspace artifact is not silently replaced by a chat message or transient attachment. |
+
+The actor dimension is open enough to include a human, role, AI, operator, process, team or service. An AI assignment represents an explicit operational action; it does not grant autonomy, authority or human consent.
+
+## Orthogonal state and projection contract
+
+One object may need to answer several questions at once. Keep the dimensions separate:
+
+| Dimension | Question |
+| --- | --- |
+| Identity | Which object is this? |
+| Authority | Which source or rule is authoritative for this claim? |
+| Provenance | Where did the object or claim come from, and what evidence supports it? |
+| Lifecycle | What operational state is it in? |
+| Action | What explicit action is requested, and from whom? |
+| Validation | Who read, reviewed, validated or verified which revision, if anyone? |
+| Freshness | Is the state fresh, stale or unknown against the current provider object? |
+| Location | Where is the current materialized view or source-of-record? |
+
+The Router materializes only the views needed by the workspace. A path can project lifecycle; a queue can project action; a dashboard can summarize several dimensions; none of them automatically becomes authority.
+
+```text
+action != lifecycle
+location != authorship
+location != ownership
+folder_presence != task
+dashboard_state != source_authority
+```
+
+For a persistent projection, completion means more than a successful tool call:
+
+```text
+projection_success = provider_write + projection_update + readback
+```
+
+The Shared Lifecycle / Projection Contract in Protocols and Runtime supplies the transversal grammar for stable IDs, orthogonal state, typed actions, revision binding, projection, readback and reconciliation. This capability specializes that grammar for persistent workspace and artifact state; it does not become a universal lifecycle engine.
+
+## Surface families
+
+### Intake family
+
+Intake is the family of arrival surfaces for material that is new, external, untriaged or not yet assigned a next action. A deployment may use:
+
+- personal intake;
+- shared intake;
+- external submission intake;
+- an untriaged or quarantine surface.
+
+Shared Intake is a useful collaboration profile, not a universal requirement:
 
 ```text
 shared_intake != common_obligation
 ```
 
-Presence in Shared Intake does not mean everyone must read, review or answer.
+Presence in any intake surface does not by itself mean that a person, team or service must read, review or answer.
 
-### 2. Personal Action Queues
+### Action queues
 
-A personal Inbox or queue should mean one thing:
-
-> **There is an explicit action currently assigned to this person.**
-
-It should not mean “this person uploaded the file”, “this person owns the idea”, or “this file is about this person”.
-
-Common action classes can include:
-
-- `READ`
-- `REVIEW`
-- `DECISION`
-- `REVISION`
-- `REQUEST_INFO`
-- explicit acknowledgement when genuinely required
-
-FYI, reference and general-interest material should not create queue debt unless acknowledgement is itself the requested action.
+An action queue is a projection of an explicit request. It can be personal, role-based, process-based, AI-operated under human authority, team-based or service-based.
 
 ```text
+queue_presence = explicit_action_required
 originator != assignee
-folder_presence != task
 FYI != review_debt
 ```
 
-When a response resolves the requested action, the queue entry should close or advance. An actionable Inbox that retains resolved items indefinitely stops functioning as a queue and becomes an archive.
+Typical action classes include `READ`, `REVIEW`, `DECISION`, `REVISION`, `REQUEST_INFO` and explicit acknowledgement when acknowledgement is genuinely required. General-interest, reference and FYI material should not create queue debt.
 
-### 3. Lifecycle Surface
+When a response resolves the requested action, the queue entry should close or advance. A queue that retains resolved work indefinitely has become an archive and should be represented as such.
 
-The artifact source can have one operational location that answers a narrow question:
+### Lifecycle surface
 
-> **What is happening with this artifact now?**
+A lifecycle surface answers a narrow question:
 
-A minimal reference topology is:
+> **What is happening with this artifact or source now?**
+
+The physical path is a materialized view of relevant state, not the entire state vector. A small workspace may need only a few states; a larger one may use folders, labels, views or equivalent provider constructs. Do not create empty infrastructure merely for symmetry.
+
+An illustrative topology is:
 
 ```text
 Workspace/
-├── 00. Inbox/
-│   ├── 00. Shared Inbox/
-│   └── <personal queues>/
+├── 00. Intake/
 ├── 10. Review Pending/
 ├── 20. Revision Needed/
 ├── 30. Decision Pending/
@@ -114,84 +173,59 @@ Workspace/
 └── _System/
 ```
 
-This is a reference, not a mandatory ontology. Do not create empty infrastructure merely for symmetry. A smaller workspace may need fewer states; a specialized domain may need different labels.
+Moving an object changes a workflow projection. It does not silently change authorship, ownership, custody or semantic authority.
 
-Folder movement changes the workflow projection. It does not silently change authorship, ownership or semantic authority.
+### State and operations dashboards
 
-### 4. Operations Dashboard
+A dashboard, ledger or table can expose dimensions that a physical tree cannot represent honestly. Useful views include:
 
-A table or spreadsheet can carry the multidimensional state that a folder tree cannot represent honestly.
-
-Useful views include:
-
-- what arrived;
-- who needs to act;
-- which action is requested;
-- who has read, reviewed or validated;
-- which revision was reviewed or validated;
-- whether an earlier validation became stale;
-- where the source-of-record lives;
+- arrivals and untriaged items;
+- explicit actions by actor;
 - current lifecycle state;
-- duplicate and lineage relationships;
-- recent routing events;
-- next action.
+- source-of-record and canonical path;
+- revision and freshness;
+- awareness, review, validation and verification stamps;
+- lineage, supersession and duplicate relationships;
+- recent routing events, receipts and next actions.
 
-The dashboard is a human projection, not intrinsic authority.
+The dashboard is a projection for inspection and operation. Centralizing a vocabulary or a view does not turn it into authority.
 
-```text
-dashboard_state != source_authority
-```
-
-## One durable source, many pointers
+### Source-of-record and pointers
 
 Prefer:
 
 ```text
 one canonical artifact
-+ zero-or-more queue pointers
-+ dashboard rows
++ zero-or-more action pointers
++ zero-or-more dashboard rows
++ receipts and stamps as needed
 ```
 
-Do not duplicate the payload merely to make the same object visible to several people.
-
-If one artifact requires action from several participants, each queue can contain a pointer, shortcut or queue record referencing the same source-of-record.
+Do not duplicate a payload merely to make the same object visible in several queues or views. A pointer, shortcut or queue record can reference the same source-of-record.
 
 ```text
 duplicate_pointer != duplicate_artifact
 ```
 
-A renamed or convenience copy does not automatically become a new semantic object. Near-duplicate detection is a review aid, not deletion authority.
+### Identity, lineage and provenance records
 
-## Identity and provenance
+Where the provider allows it, preserve:
 
-Where the substrate allows it, preserve enough metadata to distinguish the object from its current location:
+- stable artifact ID and provider ID;
+- canonical title and artifact class;
+- originator, author, contributor and custodian fields;
+- source-of-record reference;
+- requested action and actor fields;
+- lifecycle state and current path;
+- current revision, hash or freshness signal;
+- lineage fields such as `copy_of`, `revision_of`, `supersedes`, `superseded_by` and `derived_from`;
+- timestamps and bounded classification confidence when AI-assisted inference is used.
 
-- stable artifact ID;
-- provider file ID;
-- canonical title;
-- originator;
-- author or authors;
-- owner or custodian;
-- contributors;
-- artifact class;
-- topic or tags;
-- requested action;
-- required readers or reviewers;
-- lifecycle state;
-- current revision or hash;
-- lineage parent;
-- `supersedes` / `superseded_by`;
-- `copy_of` / related artifacts;
-- timestamps;
-- classification confidence when AI-assisted inference is involved.
+Unknown is a valid state. Missing evidence must not be converted into operational fiction.
 
-Unknown is a valid state. Do not convert missing evidence into operational fiction.
+## Stamps and revision-bound validation
 
-## Read, review and validation stamps
-
-Human states that normally disappear into chat should be made explicit when they matter.
-
-A practical stamp model can separate:
+States that matter operationally should be explicit, while retaining the distinction between observation and human judgment.
 
 ### Awareness
 
@@ -207,7 +241,7 @@ A practical stamp model can separate:
 - `REVIEWED`
 - `REVISION_REQUESTED`
 
-### Outcome
+### Validation or outcome
 
 - `GO` / `ACCEPT`
 - `MODIFY` / `REVISION_REQUIRED`
@@ -220,127 +254,91 @@ A practical stamp model can separate:
 - `STALE`
 - `UNKNOWN`
 
-The core law is:
-
 ```text
 read != review != validate
 ```
 
-Reading is not approval. Review is not necessarily validation. A material validation should point to the object and revision that were actually seen.
-
-## Revision-bound validation
-
-When an approval, validation or decision depends on concrete content, record the revision or hash if the provider exposes one.
-
-A useful stamp can include:
-
-- artifact/file ID;
-- reviewed revision or hash;
-- reviewer;
-- requested action;
-- outcome;
-- timestamp;
-- response or receipt link.
-
-If a later material edit creates a new revision, the earlier validation should not be silently projected onto the new content.
+When a decision or validation depends on concrete content, bind the stamp to the artifact ID and revision or hash that was actually seen. A useful record includes reviewer or validator, requested action, outcome, timestamp and response or receipt reference.
 
 ```text
 validation(revision_n) != validation(revision_n+1)
 ```
 
-If the effect of a change cannot be determined safely, mark the validation `STALE` or `UNKNOWN`, or request a new review instead of inventing continuity.
+If a later material edit makes the effect of a prior validation uncertain, mark it `STALE` or `UNKNOWN`, or request a new review. Do not project continuity by assumption.
 
-## A practical dashboard schema
+## Application profiles
 
-A spreadsheet implementation can use a small set of tabs.
+The same core supports different operating contexts. The profiles below make the difference visible without creating two ontologies.
 
-### `DASHBOARD`
+### Single-Actor / Contextual Architecture
 
-Human summary: Shared Intake count, actions by person, pending reviews or decisions, stale validations, revision-needed items and recently resolved work.
+This profile is appropriate for a personal living source, a personal workspace, or a system in which one actor or one authorized process is the relevant operational context. It may use:
 
-### `ARTIFACTS`
+- personal intake or direct capture;
+- an action queue for self, a role, an operator, a process or an AI under human authority;
+- lifecycle folders or labels only where they reduce ambiguity;
+- self-check, machine validation, human validation or an explicit absence of validation;
+- a state dashboard without people, reviewers or collaboration fields.
 
-One row per canonical artifact: identity, origin, authorship, custody, requested action, lifecycle state, current revision, canonical path, timestamps and next action.
+Do not fabricate human governance where it does not exist. Shared Intake, a reviewer or a per-person queue is not required for the Router to be useful.
 
-### `ACTION_QUEUE`
+### Multi-Actor Collaboration
 
-One row per actionable request per recipient, for example:
+This profile is appropriate when several actors must coordinate around durable artifacts. It may add:
 
-- `queue_id`
-- `artifact_id`
-- source URL
-- action
-- `requested_by`
-- `assigned_to`
-- queue state
-- source revision
-- what is needed
-- response URL
-- resolution
+- Shared Intake for common arrival without common obligation;
+- actor-specific queues and pointers;
+- `assigned_to`, `requested_by`, readers, reviewers and custodians;
+- awareness, review, outcome and freshness stamps per person or role;
+- revision-bound validation and cross-person handoffs;
+- a shared durable workspace for artifacts, with chat or messaging as signaling and link transport.
 
-### `REVIEW_STAMPS`
+A compact collaboration flow is:
 
-One row per `artifact × reviewer × revision/scope`, recording awareness, review state, outcome, reviewed revision, current revision, freshness, timestamps and response/receipt.
+```text
+arrival
+→ intake
+→ triage
+→ canonical source routed to lifecycle surface
+→ explicit action pointer(s)
+→ stamps and dashboard projection
+→ read / review / decision
+→ durable response or receipt
+→ queue and lifecycle advance
+→ provider readback and reconciliation
+```
 
-### `ROUTING_LOG`
+For a collaborative handoff, completion requires a shareable durable source link in addition to the normal projection contract:
 
-Append-oriented events such as `CREATE`, `MOVE`, `ROUTE`, `QUEUE`, `DEQUEUE`, `SUPERSEDE`, `ARCHIVE` and `RECONCILE`, including old/new path, reason and readback.
+```text
+send_success = provider_write + control_projection_update + readback + shareable_link
+```
 
-### `LINEAGE_DUPLICATES`
+The collaboration profile does not imply ownership, authorship or universal governance. It simply adds the actor dimensions the shared operation actually needs.
 
-Relationships such as `EXACT_DUPLICATE`, `COPY_OF`, `REVISION_OF`, `SUPERSEDES`, `DERIVED_FROM`, `NEAR_DUPLICATE` and `DISTINCT`.
-
-### `LISTS_CONFIG` — optional
-
-Controlled vocabularies for dropdowns. Utility does not become authority merely because it is centralized.
-
-## Routing and reconciliation
+## Routing, reconciliation and bounded assistance
 
 Use deterministic rules when the state can be derived without creative interpretation, including:
 
-- provider IDs and timestamps;
-- known paths;
+- provider IDs, known paths and timestamps;
 - exact duplicate checks when supported;
-- queue creation/removal after explicit events;
-- revision mismatch;
-- lifecycle projection;
-- provider readback and receipts.
+- queue creation or removal after explicit events;
+- revision mismatch and freshness changes;
+- lifecycle projection, receipts and provider readback.
 
-AI may assist with bounded classifications such as artifact class, topic, near-duplicate candidates, delta summaries or likely requested action. Those suggestions do not independently create ownership, validation, consent or human decisions.
+AI may assist with bounded classifications such as artifact class, topic, candidate near-duplicates, delta summaries or a requested action that is explicitly inferable. The suggestion must remain distinguishable from a human state.
 
 ```text
 LLM_suggestion != human_state
 ```
 
-Reconciliation compares the intended control projection with the real provider state. A routing operation is not complete merely because a write call returned success.
+Reconciliation compares intended projection with actual provider state. If a provider write succeeds but projection or readback fails, retain a partial, pending or `written_unverified` state. Do not declare a deployment, handoff or validation complete from tool success alone.
 
-## Queue / reply loop
+Receipts may record `CREATE`, `MOVE`, `ROUTE`, `QUEUE`, `DEQUEUE`, `SUPERSEDE`, `ARCHIVE` and `RECONCILE`, with object identity, old and new location, reason, revision, expected state, observed state and readback reference.
 
-A compact operational loop is:
+## Durable workspace and transient signaling
 
-```text
-artifact arrives
-→ Shared Intake
-→ triage
-→ canonical source routed to lifecycle surface
-→ personal queue pointer(s) created only for explicit actions
-→ dashboard/stamps initialized
-→ person reads/reviews/decides
-→ response preserved
-→ material stamp bound to exact revision when appropriate
-→ queue item resolved
-→ next queue created only when genuinely needed
-→ lifecycle/log projection updated
-→ provider readback
-```
-
-The loop should preserve the difference between the durable artifact, the action request and the human response.
-
-## Durable file layer, signaling layer
-
-When a durable collaborative workspace is available, prefer creating and updating canonical artifacts there rather than making a chat attachment the primary source.
-
-A useful communication split is:
+When a durable workspace is available, the canonical artifact should live there. Chat and other transient channels should carry signaling, links and explicit action rather than silently becoming a competing source.
 
 ```text
 workspace = durable_file_layer
@@ -348,111 +346,98 @@ chat = signaling_and_link_layer
 attachment = exception
 ```
 
-A robust handoff looks like:
+A robust handoff is:
 
 ```text
-write or update canonical artifact in workspace
-→ update the relevant dashboard / queue / stamp projection
-→ read back the provider state
-→ produce a shareable source-of-record link
-→ use chat or messaging to signal the link and requested action
-→ recipient works from the durable source
-→ response / receipt returns to the workspace
-→ queue, stamps and lifecycle projection advance
+write or update canonical artifact
+→ update relevant queue / dashboard / stamp projection
+→ read back provider state
+→ produce shareable source-of-record link
+→ signal link and requested action
+→ preserve response or receipt in the durable workspace
+→ advance queue, stamps and lifecycle
 ```
 
-When the provider supports these steps, do not declare the handoff complete before the durable write, control-projection update, readback and shareable link are all available.
+Attachments and transient previews remain valid fallbacks when a durable provider is unavailable. They should not silently become a competing canonical copy. Provider behavior is date-, permission- and implementation-sensitive; probe the actual capability.
 
-```text
-send_success = provider_write + control_projection_update + readback + shareable_link
-```
-
-Attachments and transient previews remain valid fallbacks when the durable provider is unavailable, but they should not silently become a competing canonical copy. Provider and connector behavior is date-, permission- and implementation-sensitive; probe what is actually available rather than assuming support.
-
-## Duplicates, versions and archive
+## Duplicates, versions, archive and safe migration
 
 Prefer one canonical identity per artifact.
 
-- exact copy is not new evidence;
-- renamed copy is not automatically a new artifact;
-- convenience copies should point back to the canonical object;
-- near-duplicate is a candidate relationship, not automatic deletion authority;
-- a material revision should not be collapsed into an exact duplicate;
-- preserve lineage before destructive cleanup.
-
-When a former current object becomes superseded, preserve its relationship to the successor. Archive should reduce active-surface noise without erasing useful provenance.
-
-## Safe migration
+- an exact copy is not new evidence;
+- a renamed or convenience copy is not automatically a new semantic object;
+- a material revision is not an exact duplicate;
+- near-duplicate detection is a review aid, not deletion authority;
+- preserve lineage before destructive cleanup;
+- archive reduces active-surface noise without erasing useful provenance.
 
 For an existing messy workspace:
 
 1. census the provider state;
 2. identify stable provider IDs;
-3. classify obvious duplicate and lineage relationships conservatively;
-4. create only the minimal target structure;
-5. populate the dashboard without inventing historical states;
+3. classify obvious lineage and duplicate relationships conservatively;
+4. create only the minimal target surfaces;
+5. populate state projections without inventing historical events;
 6. dry-run routing where risk justifies it;
-7. use reversible moves that preserve file identity where possible;
-8. reconstruct human review stamps only from explicit evidence;
-9. read back the provider after bounded batches;
+7. use reversible moves that preserve identity where possible;
+8. reconstruct human stamps only from explicit evidence;
+9. read back after bounded mutation batches;
 10. record a migration receipt or postflight.
-
-A useful migration receipt can answer:
-
-```text
-old_path → new_path → why → provider_readback
-```
 
 Ambiguous items should be staged or quarantined rather than destructively forced into a false category.
 
-## Provenance and promotion boundary
+## Responsibility boundaries
 
-This public method was developed by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion**, then generalized through real collaborative use.
+- **Architecture / Field-to-Form** decides whether a workspace router is the correct form for a field.
+- **MSL** owns passage and form grammar; the Router is one valid workspace specialization.
+- **Protocols and Runtime** owns the transversal lifecycle / projection grammar.
+- **Source Operations** owns retrieve, process, metabolize, promote, smallest sovereign destination and source readback discipline.
+- **Connected Sources** owns reach, freshness, permissions, provider capabilities and exact provider readback; access is not authority.
+- **Source Hygiene** diagnoses stale, contradictory, duplicated, bloated and orphaned corpus state.
+- **Credits & Attribution Ops** owns intellectual lineage, custody, permission and attribution.
+- **Operational Reliability** owns bounded mutation, dry-run, failure behavior, reversibility, receipts and recovery.
 
-Collaborative testing is not a provenance reset. During promotion into this public capability, mechanisms whose traceable origin belonged to external collaborators — or whose origin remained materially ambiguous — were intentionally excluded rather than anonymized and absorbed.
+The Router consumes those jurisdictions; it does not replace them.
 
-The public capability therefore represents a provenance-cleared generalization of Moon / Moon × Áurion material. It is not a transcript of a particular shared workspace, does not claim ownership of collaborators' systems, and does not treat convergence during a joint experiment as evidence that all converged mechanisms share one author.
+## Runtime projection contract
 
-```text
-shared_testbed != shared_authorship
-usefulness != ownership
-ambiguous_provenance → disclose_or_exclude
-```
+Custom Instructions, project prompts, runtime capsules, dashboards, queues and folders can be compiled or derived projections. The universal projection grammar and runtime compilation remain in Protocols and Runtime.
 
-This provenance screen is a good-faith evidentiary boundary, not a claim of infallibility. If stronger provenance evidence later shows that a published element materially originated elsewhere, the correct response is to correct lineage, attribution, scope or content rather than preserve a false ownership claim.
+This capability governs the persistent workspace or artifact lifecycle of such a projection when that lifecycle is itself the object being routed. It does not duplicate a runtime patch, claim that a compiled surface is a new source of truth, or silently delete an existing active projection artifact. A stale or pending projection should remain explicitly classified and routed to the competent runtime source for review.
 
-## Claim ceiling
+## Public claim ceiling
 
-The Lifecycle Workspace Router organizes and makes collaborative workspaces more legible. By itself it does not prove:
+The Lifecycle Workspace Router is a published workspace-organization and routing method. By itself it does not prove:
 
-- authorship or legal ownership;
-- consent or approval;
-- that a person actually read something without evidence;
-- correctness of artifact content;
-- completeness of a provider census;
-- automatic synchronization between providers;
+- authorship, legal ownership, consent, approval or authority;
+- that a person actually read, reviewed or validated content without evidence;
+- correctness or completeness of artifact content or provider inventory;
+- automatic synchronization or universal provider support;
 - that a spreadsheet is a database of record;
 - that physical location defines authority;
-- external adoption, measured impact or universal workflow superiority.
+- universal workflow superiority, external adoption or measured impact;
+- a finished product, autonomous agent or universal lifecycle engine.
 
 ## Compact laws
 
 ```text
-Shared Intake = common entry, not common debt
-Personal Inbox = explicit action queue
-Lifecycle folder = operational projection
-Spreadsheet = multidimensional human projection
+identity != location
+provenance != placement
+source_of_record != projection
+shared_intake != common_obligation
+action != visibility
 originator != assignee
-location != authorship
-location != ownership
+folder_presence != task
 read != review != validate
 validation binds to revision
-duplicate != second artifact
-LLM suggestion != human state
-UNKNOWN != permission to invent
+location != authorship
+location != ownership
+duplicate_pointer != duplicate_artifact
+LLM_suggestion != human_state
+UNKNOWN != permission_to_invent
 workspace = durable_file_layer
 chat = signaling_and_link_layer
-move → receipt → provider readback
+move → receipt → provider_readback
 ```
 
 ## Related Moon Source capabilities
