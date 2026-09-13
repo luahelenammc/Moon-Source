@@ -16,11 +16,11 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-09; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to the bounded-exhaustiveness, calibration, Decision Trace, Sprint and strategy-adapter subversions through 5.1 on 2026-09-09.
+- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-13; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to the bounded-exhaustiveness, calibration, Decision Trace, Sprint and strategy-adapter subversions through 5.1 on 2026-09-09.
 - Current structural grammar: Moon Source Language, version 5.1.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.1), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 5.1).
-- All fourteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry.
-- Credits & Attribution Ops, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.2), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 5.1).
+- All fifteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry, while Lifecycle Workspace Router is a repository-only capability with its own public version.
+- Credits & Attribution Ops, Lifecycle Workspace Router, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
 - Website: production public convenience surface; each current portable mirror must remain byte-equal to its canonical current portable before mirror status is called verified.
 - Repository: luahelenammc/Moon-Source, public reference and versioning body; software and automation are Apache-2.0, while documentation, methods and public portables are CC-BY-4.0.
@@ -40,6 +40,26 @@ They should not be collapsed into one number.
 11. A user-facing link labeled **Download** must use a route intended to download the file; inline browse/open routes must be labeled as browse/open instead.
 12. One capability has one canonical semantic body. Architectural role and standalone distribution are independent dimensions. Mirrors and packages are delivery surfaces, and a distinct adapter is allowed only for volatile or surface-specific facts.
 13. Every accepted update to an independently versioned capability's canonical body or operative contract advances that capability by **+0.1**. A bookkeeping-only correction that restores previously skipped version increments does not recursively create another bump.
+
+## Lifecycle Workspace Router 1.1-public release — 2026-09-13
+
+Lifecycle Workspace Router 1.1-public is a **material semantic rebase** of the
+repository-only public capability. It generalizes the opening and core from a
+collaboration-first framing to a universal workspace-state projection method,
+then keeps Single-Actor / Contextual Architecture and Multi-Actor Collaboration
+as explicit application profiles.
+
+The release makes orthogonal identity, provenance, lifecycle, action, revision,
+freshness, lineage, source-of-record, pointers, stamps, receipts,
+reconciliation, reversible migration and durable/transient boundaries explicit.
+It preserves the provenance gate, the claim ceiling and the boundary that
+collaborative testing is not a provenance reset. It does not change the MSL
+grammar, create a standalone package, add a website mirror or claim automatic
+provider synchronization.
+
+The prior 2026-09-12 public body was an unversioned baseline. This accepted
+material update establishes the independent public release state `1.1-public`;
+the stable capability title and canonical path remain unchanged.
 
 ## Title–version separation
 
