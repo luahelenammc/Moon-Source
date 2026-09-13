@@ -1,8 +1,8 @@
 # 🗂️ Lifecycle Workspace Router — Moon Source component
 
-Public capability version: **1.1-public**
+Public capability version: **1.2-public**
 
-The Lifecycle Workspace Router is a public Moon Source method for projecting multidimensional artifact and source state onto durable workspace surfaces. It can support a single actor, a role or process, an AI operating under human authority, or multiple collaborators. Collaboration is an application profile, not the ontology of the method.
+The Lifecycle Workspace Router is a Moon Source method and reference architecture for projecting multidimensional artifact and source state onto durable workspace surfaces. It can support a single actor, a role or process, an AI operating under human authority, or multiple collaborators. Collaboration is an application profile, not the ontology of the method. “Router” names an organizational method, not executable routing software, a daemon or an automatic synchronization engine.
 
 Its central rule is:
 
@@ -40,25 +40,17 @@ It is not:
 - evidence that a person read or approved something merely because it was reachable;
 - a finished product, adoption claim or substitute for the authority rules of the domain using it.
 
-## Provenance gate
+## Provenance and attribution
 
-The public capability is a provenance-cleared generalization of Moon / Moon × Áurion source material. Collaborative testing can supply evidence and stress the design, but it does not reset authorship or silently convert another party's mechanism into upstream core.
-
-The hard gate is:
+Created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion**. This public method does not infer authorship, ownership, authority or permission from shared testing, visibility or usefulness. Ambiguous lineage remains bounded rather than being silently presented as independent public authorship.
 
 ```text
-absence_of_proof_of_moon_origin => exclude_from_upstream_core
+attribution != ownership
+visibility != permission
+ambiguous_lineage → disclose_or_bound
 ```
 
-Only material with a traceable Moon or Moon × Áurion origin, or a clearly general method derived from that material, enters this public body. Mechanisms whose origin belongs to external collaborators, whose provenance is materially ambiguous, or whose governance assumptions cannot be cleared are excluded rather than anonymized and absorbed.
-
-```text
-shared_testbed != shared_authorship
-usefulness != ownership
-ambiguous_provenance → disclose_or_exclude
-```
-
-This is a good-faith evidentiary boundary, not a claim of infallibility. If stronger evidence later changes the lineage of a published element, the correct response is to correct attribution, scope or content.
+The public body states the method, its public boundaries and the attribution required for responsible reuse. If stronger evidence later changes the lineage of a published element, correct its attribution, scope or content.
 
 ## Universal Workspace Core
 
@@ -114,6 +106,43 @@ projection_success = provider_write + projection_update + readback
 ```
 
 The Shared Lifecycle / Projection Contract in Protocols and Runtime supplies the transversal grammar for stable IDs, orthogonal state, typed actions, revision binding, projection, readback and reconciliation. This capability specializes that grammar for persistent workspace and artifact state; it does not become a universal lifecycle engine.
+
+## Operational Control Plane / Reconciliation Authority
+
+The intended operational state does not belong to a folder, dashboard, queue or any other projection in isolation. It is reconstructed from canonical artifact identity, recorded orthogonal state, the routing ledger and receipts, source-of-record pointers, and provider readback.
+
+The authority split is deliberate:
+
+- the canonical artifact and recorded state/ledger define intended operational state;
+- folders, queues, dashboards and lifecycle surfaces project selected dimensions;
+- provider readback supplies observed state, including materially relevant access or permission consequences when the provider exposes reliable evidence;
+- reconciliation compares intended and observed state and recreates or corrects projections without inventing semantic authority.
+
+No single projection becomes a hidden universal database. Disagreement is a reconciliation signal:
+
+```text
+folder != authority
+dashboard != authority
+queue != authority
+provider_visible_state != semantic_authority
+intended_operational_state != any_single_projection
+projection_disagreement → reconcile_from_recorded_state + provider_readback
+```
+
+## Worked example: revision-bound routing
+
+1. An artifact arrives in Intake.
+2. Its stable identity and source-of-record are recorded; the path remains a projection.
+3. A `REVIEW` action is queued for an actor; the queue pointer does not duplicate the payload.
+4. The lifecycle projection moves to `Review Pending`.
+5. The actor reviews and validates revision `R1`.
+6. The canonical artifact changes materially and becomes `R2`.
+7. The `R1` validation becomes `STALE` for `R2`.
+8. The action, lifecycle and routing-ledger projections are updated.
+9. Reconciliation compares the recorded state with provider-visible state.
+10. Provider readback confirms the corrected projection; if it does not, the state remains partial or pending.
+
+The same trace works for one human plus an AI under human authority or for several actors; collaboration adds assignee and reviewer dimensions, not a different ontology.
 
 ## Surface families
 
@@ -334,6 +363,18 @@ LLM_suggestion != human_state
 
 Reconciliation compares intended projection with actual provider state. If a provider write succeeds but projection or readback fails, retain a partial, pending or `written_unverified` state. Do not declare a deployment, handoff or validation complete from tool success alone.
 
+### Provider-aware moves and partial projection
+
+A move command is an operational request, not evidence that the workspace projection succeeded. Depending on the provider and context, moving an object can affect inherited permissions, shareability, link behavior, automations, retention, parent-folder semantics or external references. When a consequence is material and the provider exposes reliable evidence, read back the relevant access or permission state through the provider contract. Connected Sources owns provider capability and permission semantics; the Router consumes the readback.
+
+```text
+move_success != move_command_success
+partial_write != completed_projection
+projection_success = intended_change + provider_write + relevant_readback + reconciled_state
+```
+
+If the provider write succeeds but a required projection update or readback fails, the operation is incomplete and must enter reconciliation or recovery under Operational Reliability. Do not mark it complete from the move response alone.
+
 Receipts may record `CREATE`, `MOVE`, `ROUTE`, `QUEUE`, `DEQUEUE`, `SUPERSEDE`, `ARCHIVE` and `RECONCILE`, with object identity, old and new location, reason, revision, expected state, observed state and readback reference.
 
 ## Durable workspace and transient signaling
@@ -407,7 +448,7 @@ This capability governs the persistent workspace or artifact lifecycle of such a
 
 ## Public claim ceiling
 
-The Lifecycle Workspace Router is a published workspace-organization and routing method. By itself it does not prove:
+The Lifecycle Workspace Router is a published workspace-organization method and reference architecture. By itself it does not prove:
 
 - authorship, legal ownership, consent, approval or authority;
 - that a person actually read, reviewed or validated content without evidence;
@@ -438,6 +479,8 @@ UNKNOWN != permission_to_invent
 workspace = durable_file_layer
 chat = signaling_and_link_layer
 move → receipt → provider_readback
+move_success != move_command_success
+partial_write != completed_projection
 ```
 
 ## Related Moon Source capabilities
