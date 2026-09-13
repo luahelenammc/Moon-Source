@@ -203,10 +203,14 @@ def validate_registry(
             errors.append(f"{capability_id} distribution must declare standalone true or false")
             continue
         if not distribution["standalone"]:
-            if capability.get("version") is not None:
-                errors.append(
-                    f"{capability_id} must not carry a semantic version when it is repository-only"
-                )
+            version = capability.get("version")
+            if version is not None:
+                if capability.get("versioning_mode") != "independent_public_capability_version":
+                    errors.append(
+                        f"{capability_id} repository-only version requires independent_public_capability_version"
+                    )
+                elif not isinstance(version, str) or not version.strip():
+                    errors.append(f"{capability_id} repository-only version must be a non-empty string")
             continue
 
         standalone_ids.append(capability_id)

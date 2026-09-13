@@ -146,6 +146,21 @@ Creator: Example Creator
         data["capabilities"][1]["version"] = None
         self.assertEqual(self.errors(data), [])
 
+    def test_repository_only_capability_can_carry_independent_version(self):
+        data = copy.deepcopy(self.data)
+        capability = data["capabilities"][1]
+        capability["distribution"] = {"standalone": False}
+        capability["versioning_mode"] = "independent_public_capability_version"
+        capability["version"] = "1.1-public"
+        self.assertEqual(self.errors(data), [])
+
+    def test_repository_only_version_requires_independent_versioning_mode(self):
+        data = copy.deepcopy(self.data)
+        capability = data["capabilities"][1]
+        capability["distribution"] = {"standalone": False}
+        capability["version"] = "1.1-public"
+        self.assert_error("requires independent_public_capability_version", self.errors(data))
+
     def test_duplicate_id_is_rejected(self):
         data = copy.deepcopy(self.data)
         data["capabilities"].append(copy.deepcopy(data["capabilities"][1]))
