@@ -215,7 +215,7 @@
       "id": "lifecycle-workspace-router",
       "language": "English with provider-neutral execution",
       "last_material_update_on": "2026-09-13",
-      "last_material_update_summary": "Material additive-and-corrective release to 1.2-public: adds explicit operational control-plane and reconciliation authority, a revision-bound worked example, provider-aware move/readback and partial-projection rules, and a public method/reference-architecture framing.",
+      "last_material_update_summary": "Material additive-and-corrective release to 1.2: adds explicit operational control-plane and reconciliation authority, a revision-bound worked example, provider-aware move/readback and partial-projection rules, and a method/reference-architecture framing.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -225,7 +225,7 @@
       "summary_title": "Lifecycle Workspace Router",
       "surface_title": "Lifecycle Workspace Router — Moon Source component",
       "title": "Lifecycle Workspace Router",
-      "version": "1.2-public",
+      "version": "1.2",
       "versioning_mode": "independent_public_capability_version"
     },
     {

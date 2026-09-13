@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: Apache-2.0
-"""Small regression tests for the public title-coordinate guard."""
+"""Small regression tests for the public title/version coordinate guard."""
 
 from __future__ import annotations
 
@@ -12,6 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from check_title_version_separation import (  # noqa: E402
+    contains_audience_version_label,
     contains_version_marker,
     first_h1,
     normalize_heading,
@@ -19,6 +20,7 @@ from check_title_version_separation import (  # noqa: E402
 )
 
 ROOT = Path(__file__).resolve().parents[1]
+HUMAN_REGISTRY = (ROOT / "registry" / "PUBLIC_CAPABILITIES.md").read_text(encoding="utf-8")
 
 
 def main() -> None:
@@ -27,6 +29,11 @@ def main() -> None:
     assert contains_version_marker("Moon Source Language 4.3")
     assert not contains_version_marker("Preflight")
     assert not contains_version_marker("Chat–Work Routing Protocol")
+    assert contains_audience_version_label("1.2-public")
+    assert contains_audience_version_label("2.0_private")
+    assert contains_audience_version_label("3.1.local")
+    assert not contains_audience_version_label("1.2")
+    assert not contains_audience_version_label("5.1-rc1")
     assert first_h1("intro\n# Stable Name\n") == "Stable Name"
     assert normalize_heading("# 🧭 Setup — Moon Source portable") == "Setup — Moon Source portable"
 
@@ -37,20 +44,33 @@ def main() -> None:
 
     fixture = copy.deepcopy(data)
     fixture["capabilities"][0]["title"] = "Be My Eyes 1.0-public"
-    errors = validation_errors(fixture, root=ROOT, human_registry=(ROOT / "registry" / "PUBLIC_CAPABILITIES.md").read_text(encoding="utf-8"))
+    errors = validation_errors(fixture, root=ROOT, human_registry=HUMAN_REGISTRY)
     assert any("title contains a version marker" in error for error in errors)
 
     fixture = copy.deepcopy(data)
     fixture["capabilities"][0]["surface_title"] = "Wrong — Moon Source portable"
-    errors = validation_errors(fixture, root=ROOT, human_registry=(ROOT / "registry" / "PUBLIC_CAPABILITIES.md").read_text(encoding="utf-8"))
+    errors = validation_errors(fixture, root=ROOT, human_registry=HUMAN_REGISTRY)
     assert any("canonical heading" in error for error in errors)
 
     fixture = copy.deepcopy(data)
     fixture["capabilities"][0]["summary_title"] = "Moon Source Be My Eyes"
-    errors = validation_errors(fixture, root=ROOT, human_registry=(ROOT / "registry" / "PUBLIC_CAPABILITIES.md").read_text(encoding="utf-8"))
+    errors = validation_errors(fixture, root=ROOT, human_registry=HUMAN_REGISTRY)
     assert any("summary title should omit" in error for error in errors)
 
-    print("title/surface coordinate tests passed")
+    # Legacy distributed labels are grandfathered only at their exact existing values.
+    fixture = copy.deepcopy(data)
+    be_my_eyes = next(item for item in fixture["capabilities"] if item["id"] == "be-my-eyes")
+    be_my_eyes["version"] = "1.1-public"
+    errors = validation_errors(fixture, root=ROOT, human_registry=HUMAN_REGISTRY)
+    assert any("version contains an audience/surface label" in error for error in errors)
+
+    fixture = copy.deepcopy(data)
+    lwr = next(item for item in fixture["capabilities"] if item["id"] == "lifecycle-workspace-router")
+    lwr["version"] = "1.2-public"
+    errors = validation_errors(fixture, root=ROOT, human_registry=HUMAN_REGISTRY)
+    assert any("version contains an audience/surface label" in error for error in errors)
+
+    print("title/surface/version coordinate tests passed")
 
 
 if __name__ == "__main__":

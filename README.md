@@ -169,7 +169,7 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent capability changes
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
-- **2026-09-13 — Lifecycle Workspace Router:** Material additive-and-corrective release to 1.2-public: adds explicit operational control-plane and reconciliation authority, a revision-bound worked example, provider-aware move/readback and partial-projection rules, and a public method/reference-architecture framing.
+- **2026-09-13 — Lifecycle Workspace Router:** Material additive-and-corrective release to 1.2: adds explicit operational control-plane and reconciliation authority, a revision-bound worked example, provider-aware move/readback and partial-projection rules, and a method/reference-architecture framing.
 - **2026-09-11 — Signal Calibration:** Added the Interior–Membrane Split to preserve working signal while bounding circulation, with causal-retention and epistemic-conservation checks.
 - **2026-09-10 — Preflight:** Added bounded active-frame correction and persistence/promotion-candidacy boundaries; Preflight is now version 2.2.
 - **2026-09-10 — Moon Source Setup:** Aligned active MSL and Preflight canonical references with MSL 5.1 and Preflight 2.1 without changing Moon Source Setup semantics or version.
@@ -202,7 +202,7 @@ Use the README for orientation; use the deeper files when the responsibility act
 
 ## Current baseline
 
-Public architecture baseline: **2026-08-16**. Additive public capabilities, operational hardening and licensing updates continued through **2026-09-13**; Preflight is **2.2**, Be My Eyes remains **1.0-public**, Connected Sources remains a structural crown jewel at its canonical docs path, Lifecycle Workspace Router is repository-only and independently versioned at **1.2-public**, and the public registry is unified schema **2.0** while Chat–Work routing remains the tri-surface **V4** protocol with current semantic subversion **5.1**.
+Public architecture baseline: **2026-08-16**. Additive public capabilities, operational hardening and licensing updates continued through **2026-09-13**; Preflight is **2.2**, Be My Eyes remains **1.0-public**, Connected Sources remains a structural crown jewel at its canonical docs path, Lifecycle Workspace Router is repository-only and independently versioned at **1.2**, and the public registry is unified schema **2.0** while Chat–Work routing remains the tri-surface **V4** protocol with current semantic subversion **5.1**.
 
 Current structural grammar: **Moon Source Language**, version **5.1**. Current standalone distributions: **Moon Source Setup** (version **3.1**), **Preflight** (version **2.2**), **Be My Eyes** (version **1.0-public**), **Connected Sources** (version **1.1-public**), **Moon Source Language** (version **5.1**) and **Chat–Work Routing Protocol** (version **5.1**). Sprint Mode is optional, explicitly activated and ephemeral; it does not expose allowance/reset state or persist as a profile. The Astra Strategy Adapter is optional, subordinate and date-sensitive. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
 

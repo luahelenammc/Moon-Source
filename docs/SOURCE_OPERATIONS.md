@@ -88,7 +88,7 @@ The authority ladder remains bounded: A0 observes; A1 corrects and classifies; A
 
 ### Public-surface writing guard
 
-When a reusable mechanism is prepared for a public surface, carry public substance, necessary attribution, public dependencies and the applicable claim limits. Omit private source maps, production diaries and synchronization narration that do not serve a public claim; preserve provenance and credit where they are required for responsible reuse.
+When a reusable mechanism is prepared for a public surface, carry the mechanism itself, the dependencies and claim limits needed to use it, and only the attribution needed for credit, licensing, public lineage or correct reuse. General repository authorship and licensing belong in the canonical credit, licensing and stamp surfaces; do not add a per-component `Provenance and attribution`, donor-history or production-history section merely to narrate how the public artifact was produced. Provenance remains in a component when provenance is part of the component's actual method or data model. Omit private source maps, source numbers, production diaries and synchronization narration that do not serve a public-use requirement.
 
 ### Composition boundary
 
