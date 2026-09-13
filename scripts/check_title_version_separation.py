@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: Apache-2.0
-"""Guard stable public capability identities, summary labels and surface titles."""
+"""Guard stable public capability identities, surface titles and version coordinates."""
 
 from __future__ import annotations
 
@@ -15,11 +15,27 @@ HUMAN_REGISTRY = ROOT / "registry" / "PUBLIC_CAPABILITIES.md"
 VERSION_MARKER_RE = re.compile(
     r"(?i)(?<![A-Za-z])(?:v\d+(?:\.\d+)*|\d+\.\d+(?:\.\d+)*(?:-[a-z0-9.-]+)?|(?:alpha|beta|rc)\d*)(?![A-Za-z])"
 )
+AUDIENCE_VERSION_LABEL_RE = re.compile(
+    r"(?i)(?:^|[-_.])(?:public|private|local)(?:$|[-_.])"
+)
 H1_RE = re.compile(r"^\s*#\s+(?!#)(.*?)\s*$", re.MULTILINE)
+
+# These exact labels predate the audience/version separation rule and are tied to
+# already-published standalone package coordinates. They may remain until the
+# capability's next accepted material release; no new audience-bearing version is
+# allowed, including for these capability IDs.
+LEGACY_AUDIENCE_LABELED_VERSIONS = {
+    "be-my-eyes": "1.0-public",
+    "connected-sources": "1.1-public",
+}
 
 
 def contains_version_marker(value: str) -> bool:
     return bool(VERSION_MARKER_RE.search(value))
+
+
+def contains_audience_version_label(value: str) -> bool:
+    return bool(AUDIENCE_VERSION_LABEL_RE.search(value))
 
 
 def first_h1(markdown: str) -> str | None:
@@ -87,6 +103,15 @@ def validation_errors(
 
         if standalone and (not isinstance(version, str) or not version.strip()):
             errors.append(f"{identity}: standalone version metadata is empty")
+
+        if isinstance(version, str) and contains_audience_version_label(version):
+            legacy_value = LEGACY_AUDIENCE_LABELED_VERSIONS.get(str(identity))
+            if version != legacy_value:
+                errors.append(
+                    f"{identity}: version contains an audience/surface label: {version!r}; "
+                    "keep public/private/local in separate visibility or distribution metadata"
+                )
+
         if not isinstance(canonical_path, str) or not canonical_path.strip():
             errors.append(f"{identity}: canonical_path is missing")
             continue
@@ -154,7 +179,7 @@ def main() -> None:
         1 for capability in data["capabilities"] if capability.get("readable_surface_path")
     )
     print(
-        f"validated title/surface coordinates across {len(data['capabilities'])} capabilities; "
+        f"validated title/surface/version coordinates across {len(data['capabilities'])} capabilities; "
         f"standalone_distributions={standalone}; readable_surfaces={readable}"
     )
 
