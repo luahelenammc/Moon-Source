@@ -35,10 +35,6 @@ The [application-scenario gallery](../examples/application-scenarios/) is a publ
 
 Its evidence class is `PUBLIC_ARTIFACT` only for the existence and inspectability of the scenario files. It does not establish real adoption, implementation, measured impact, sector validation, independent validation or a client case. The scenarios route to actual public components and portables while keeping the claim ceiling unchanged.
 
-## Bounded internal projections
-
-Internal Local Moon Source and Moon Professional Source materials informed the public terminology, disclosure boundary and MSL version decision. They remain internal sources. Their existence does not establish an external result.
-
 ## What is intentionally absent
 
 - no synthetic blank-field case;

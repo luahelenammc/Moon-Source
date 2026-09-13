@@ -200,7 +200,7 @@
       "architectural_role": "lifecycle_workspace_routing_method",
       "best_for": "People, roles, processes or teams who need a durable workspace to project artifact and source identity, lifecycle, explicit action, revision freshness, lineage and receipts without conflating physical location with authorship or authority",
       "canonical_path": "docs/LIFECYCLE_WORKSPACE_ROUTER.md",
-      "claim_ceiling": "Published workspace-organization and routing method; not a database of record, automatic synchronization engine, legal ownership proof, consent proof, universal workflow or lifecycle standard, autonomous authority or evidence of external adoption",
+      "claim_ceiling": "Published workspace-organization method and reference architecture; not a database of record, automatic synchronization engine, legal ownership proof, consent proof, universal workflow or lifecycle standard, autonomous authority or evidence of external adoption",
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
       "dependencies": [
         "No required dependency; Connected Sources is complementary when a live provider or connector is used",
@@ -211,11 +211,11 @@
         "standalone": false
       },
       "freshness": "general public method as of 2026-09-13; provider-specific Drive, Sheets and connector behavior remains date- and permission-sensitive",
-      "function": "Project multidimensional artifact and source state onto durable workspace surfaces through intake families, explicit action queues, lifecycle views, revision-bound stamps, source-of-record pointers, lineage, bounded routing, reversible migration and provider readback across single-actor and multi-actor profiles",
+      "function": "Project multidimensional artifact and source state onto durable workspace surfaces through intake families, explicit action queues, lifecycle views, revision-bound stamps, source-of-record pointers, an operational control plane, bounded routing, reconciliation, reversible migration and provider readback across single-actor and multi-actor profiles",
       "id": "lifecycle-workspace-router",
       "language": "English with provider-neutral execution",
       "last_material_update_on": "2026-09-13",
-      "last_material_update_summary": "Material semantic rebase: establishes 1.1-public with a universal workspace core, single-actor and multi-actor application profiles, orthogonal action/lifecycle state, revision-bound validation, source-of-record pointers, reversible migration, durable/transient boundaries and provider readback.",
+      "last_material_update_summary": "Material additive-and-corrective release to 1.2-public: adds explicit operational control-plane and reconciliation authority, a revision-bound worked example, provider-aware move/readback and partial-projection rules, and a public method/reference-architecture framing.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -225,7 +225,7 @@
       "summary_title": "Lifecycle Workspace Router",
       "surface_title": "Lifecycle Workspace Router — Moon Source component",
       "title": "Lifecycle Workspace Router",
-      "version": "1.1-public",
+      "version": "1.2-public",
       "versioning_mode": "independent_public_capability_version"
     },
     {
@@ -237,7 +237,7 @@
       "dependencies": [],
       "difficulty": "intermediate to advanced",
       "distribution": {
-        "canonical_sha256": "18ee850de7d2ee796fd416b5e51961a3082c167ee540f66b5000156c6ab5e360",
+        "canonical_sha256": "89882b3f2d488ad4cbf33048d0277221e9934f41053846b7bdf4ec8ec54b9bfd",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-5.1.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_5_1.md",

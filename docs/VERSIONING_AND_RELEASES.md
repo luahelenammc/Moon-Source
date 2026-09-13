@@ -9,8 +9,7 @@ Moon Source has several versioned layers with different responsibilities:
 - repository architecture version;
 - public portable version;
 - MSL version;
-- website surface revision;
-- internal source revision.
+- website surface revision.
 
 They should not be collapsed into one number.
 
@@ -41,6 +40,24 @@ They should not be collapsed into one number.
 12. One capability has one canonical semantic body. Architectural role and standalone distribution are independent dimensions. Mirrors and packages are delivery surfaces, and a distinct adapter is allowed only for volatile or surface-specific facts.
 13. Every accepted update to an independently versioned capability's canonical body or operative contract advances that capability by **+0.1**. A bookkeeping-only correction that restores previously skipped version increments does not recursively create another bump.
 
+## Lifecycle Workspace Router 1.2-public release — 2026-09-13
+
+Lifecycle Workspace Router 1.2-public is a **material additive-and-corrective
+release** of the repository-only public capability. It adds an explicit
+Operational Control Plane / Reconciliation Authority, a revision-bound worked
+example, and provider-aware move/readback rules for permissions, links,
+automations, retention, parent semantics and partial projection.
+
+The release also makes the method/reference-architecture boundary explicit:
+“router” names a public organizational method, not executable routing software
+or an automatic synchronization engine. The public attribution wording remains
+bounded to authorship, permission and claim responsibility; the MSL grammar and
+the standalone distribution set do not change.
+
+The stable capability title and canonical path remain unchanged. The accepted
+content update advances the independent release state from `1.1-public` to
+`1.2-public` under the repository +0.1 rule.
+
 ## Lifecycle Workspace Router 1.1-public release — 2026-09-13
 
 Lifecycle Workspace Router 1.1-public is a **material semantic rebase** of the
@@ -52,10 +69,9 @@ as explicit application profiles.
 The release makes orthogonal identity, provenance, lifecycle, action, revision,
 freshness, lineage, source-of-record, pointers, stamps, receipts,
 reconciliation, reversible migration and durable/transient boundaries explicit.
-It preserves the provenance gate, the claim ceiling and the boundary that
-collaborative testing is not a provenance reset. It does not change the MSL
-grammar, create a standalone package, add a website mirror or claim automatic
-provider synchronization.
+It preserves the public attribution and claim boundaries. It does not change
+the MSL grammar, create a standalone package, add a website mirror or claim
+automatic provider synchronization.
 
 The prior 2026-09-12 public body was an unversioned baseline. This accepted
 material update establishes the independent public release state `1.1-public`;

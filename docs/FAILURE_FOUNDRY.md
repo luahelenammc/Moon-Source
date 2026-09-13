@@ -159,7 +159,7 @@ Do not expose private promotion machinery, hidden thresholds, credentials or sou
 
 ## Claim ceiling
 
-This is a bounded public projection of a failure-to-capability method, internally informed by repeated operational failures. It is not an autonomous self-improvement engine, compiler, benchmark, universal standard or evidence of measured impact. It does not make private cases public merely because they produced a reusable insight.
+This is a bounded public failure-to-capability method. It is not an autonomous self-improvement engine, compiler, benchmark, universal standard or evidence of measured impact. It does not make private cases public merely because they produced a reusable insight.
 
 Use [Operational Reliability](OPERATIONAL_RELIABILITY.md) for execution evidence and recovery, [Operational Devices](OPERATIONAL_DEVICES.md) for bounded embodiment, and [Procedural Projection](PROCEDURAL_PROJECTION.md) when the resulting method needs a portable procedural surface.
 

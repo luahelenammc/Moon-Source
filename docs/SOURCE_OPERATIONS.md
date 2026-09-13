@@ -86,6 +86,10 @@ The source/jurisdiction preflight route should expose **jurisdiction_fit: pass |
 
 The authority ladder remains bounded: A0 observes; A1 corrects and classifies; A2 writes locally only under explicit authority; A3 prepares or promotes publicly only under explicit public instruction or a delegated workflow, with review, gate and readback. Correction and candidacy do not grant mutation authority.
 
+### Public-surface writing guard
+
+When a reusable mechanism is prepared for a public surface, carry public substance, necessary attribution, public dependencies and the applicable claim limits. Omit private source maps, production diaries and synchronization narration that do not serve a public claim; preserve provenance and credit where they are required for responsible reuse.
+
 ### Composition boundary
 
 Project MRI remains responsible for broad system-health and drift inspection. Source Mutation Hygiene Gate controls write safety. Source Operations owns retrieve, process, metabolize, promote, lifecycle and no-delta decisions. Nectar owns external material, credit and provenance. Living State Reconciliation reconciles state after source and authority are resolved. Source Reflex routes among these owners; it is not a new content owner or a new standalone capability.
