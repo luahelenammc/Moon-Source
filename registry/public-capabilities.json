@@ -8,7 +8,7 @@
     "project": "Moon Source",
     "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md"
   },
-  "as_of": "2026-09-12",
+  "as_of": "2026-09-13",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "capabilities": [
     {
@@ -198,9 +198,9 @@
     },
     {
       "architectural_role": "lifecycle_workspace_routing_method",
-      "best_for": "Teams and collaborators who need a shared file workspace to show intake, explicit action queues, lifecycle state, review freshness, durable sources and routing receipts without conflating folder location with authorship or authority",
+      "best_for": "People, roles, processes or teams who need a durable workspace to project artifact and source identity, lifecycle, explicit action, revision freshness, lineage and receipts without conflating physical location with authorship or authority",
       "canonical_path": "docs/LIFECYCLE_WORKSPACE_ROUTER.md",
-      "claim_ceiling": "Published workspace-organization and routing method; not a database of record, automatic synchronization engine, legal ownership proof, consent proof, universal workflow standard or evidence of external adoption",
+      "claim_ceiling": "Published workspace-organization and routing method; not a database of record, automatic synchronization engine, legal ownership proof, consent proof, universal workflow or lifecycle standard, autonomous authority or evidence of external adoption",
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
       "dependencies": [
         "No required dependency; Connected Sources is complementary when a live provider or connector is used",
@@ -210,12 +210,12 @@
       "distribution": {
         "standalone": false
       },
-      "freshness": "general public method as of 2026-09-12; provider-specific Drive, Sheets and connector behavior remains date- and permission-sensitive",
-      "function": "Organize collaborative workspaces through shared intake, explicit personal action queues, lifecycle surfaces, multidimensional human ledgers and stamps, revision-bound validation, source-of-record pointers, bounded routing, durable-file-layer handoffs and provider readback without conflating folder location with authorship, ownership or authority",
+      "freshness": "general public method as of 2026-09-13; provider-specific Drive, Sheets and connector behavior remains date- and permission-sensitive",
+      "function": "Project multidimensional artifact and source state onto durable workspace surfaces through intake families, explicit action queues, lifecycle views, revision-bound stamps, source-of-record pointers, lineage, bounded routing, reversible migration and provider readback across single-actor and multi-actor profiles",
       "id": "lifecycle-workspace-router",
       "language": "English with provider-neutral execution",
-      "last_material_update_on": "2026-09-12",
-      "last_material_update_summary": "Published a provenance-gated lifecycle workspace router derived from Moon/Moon × Áurion source material, with shared intake, action queues, stamps, dashboard projections, source-of-record pointers, reversible migration and durable-file-layer handoff rules.",
+      "last_material_update_on": "2026-09-13",
+      "last_material_update_summary": "Material semantic rebase: establishes 1.1-public with a universal workspace core, single-actor and multi-actor application profiles, orthogonal action/lifecycle state, revision-bound validation, source-of-record pointers, reversible migration, durable/transient boundaries and provider readback.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -225,8 +225,8 @@
       "summary_title": "Lifecycle Workspace Router",
       "surface_title": "Lifecycle Workspace Router — Moon Source component",
       "title": "Lifecycle Workspace Router",
-      "version": null,
-      "versioning_mode": "material_update_without_semantic_version"
+      "version": "1.1-public",
+      "versioning_mode": "independent_public_capability_version"
     },
     {
       "architectural_role": "structural_grammar",
