@@ -19,11 +19,12 @@ For current public material:
 2. Use the summary title for compact repository lists, README tables, download hubs and similar browsing surfaces.
 3. Use the surface title in each individual capability README and canonical body H1. The role qualifier identifies the Moon Source portable, component or architecture; it is not a version marker.
 4. Put release state in a dedicated `version` field, metadata block, registry `version` field, changelog entry, release note or explicit sentence.
-5. Keep audience, visibility, distribution and habitat separate from version. Current version identifiers must not contain labels such as `public`, `private` or `local`; represent those properties in status, distribution, visibility or surface metadata instead.
-6. Keep version-bearing technical coordinates when they are useful or contractually required: canonical filenames, paths, package filenames, URLs, branch names, historical references and compatibility identifiers. Legacy technical coordinates may preserve an older audience-bearing string when changing it would break a published package or compatibility route; that exception does not authorize the string as a current version value.
-7. When discussing history, name the old generation explicitly and keep it grammatically separate from the current title. Historical prose may preserve the exact label used at the time.
-8. Do not globally replace the project name. Explicit project identity, dependency, lineage, licensing and attribution statements retain the full Moon Source name.
-9. Do not move a current naming/version rule into a local or private source when the rule governs this public repository family.
+5. Keep audience, visibility, distribution and habitat separate from version. Do not introduce labels such as `public`, `private` or `local` into a new current version identifier; represent those properties in status, distribution, visibility or surface metadata instead.
+6. Two already-published standalone releases — Be My Eyes `1.0-public` and Connected Sources `1.1-public` — are narrow compatibility exceptions because their exact strings are tied to live package coordinates. They may persist only until each capability's next accepted material release. The exception is closed: changing either version to another audience-bearing token is invalid.
+7. Keep version-bearing technical coordinates when they are useful or contractually required: canonical filenames, paths, package filenames, URLs, branch names, historical references and compatibility identifiers. Legacy technical coordinates may preserve an older audience-bearing string when changing it would break a published package or compatibility route; that exception does not establish a naming precedent.
+8. When discussing history, name the old generation explicitly and keep it grammatically separate from the current title. Historical prose may preserve the exact label used at the time.
+9. Do not globally replace the project name. Explicit project identity, dependency, lineage, licensing and attribution statements retain the full Moon Source name.
+10. Do not move a current naming/version rule into a local or private source when the rule governs this public repository family.
 
 Examples:
 
@@ -45,7 +46,7 @@ Distribution: standalone
 Canonical path: portables/msl/MSL_5_1.md
 ```
 
-The technical path may preserve a version because it is an identity and compatibility coordinate. The public summary title should not become `Moon Source V2`, a surface role qualifier should not become `Setup V2`, and a version should not become `3.1-public` merely because the artifact is publicly distributed.
+The technical path may preserve a version because it is an identity and compatibility coordinate. The public summary title should not become `Moon Source V2`, a surface role qualifier should not become `Setup V2`, and a new version should not become `3.1-public` merely because the artifact is publicly distributed.
 
 ## Inheritance
 
@@ -60,7 +61,7 @@ python scripts/check_title_version_separation.py
 python scripts/test_title_version_separation.py
 ```
 
-The guard is intentionally scoped to governed current metadata and headings. It does not ban historical references or legacy technical filenames that accurately preserve a previously published compatibility coordinate.
+The guard rejects new audience-bearing version values and permits only the two exact grandfathered standalone values named above. It does not ban historical references or legacy technical filenames that accurately preserve a previously published compatibility coordinate.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
