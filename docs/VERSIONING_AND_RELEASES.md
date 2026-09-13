@@ -17,8 +17,8 @@ They should not be collapsed into one number.
 
 - Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-13; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to the bounded-exhaustiveness, calibration, Decision Trace, Sprint and strategy-adapter subversions through 5.1 on 2026-09-09.
 - Current structural grammar: Moon Source Language, version 5.1.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.2), Be My Eyes (version 1.0-public), Connected Sources (version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 5.1).
-- All fifteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry, while Lifecycle Workspace Router is a repository-only capability with its own public version.
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.2), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (legacy distributed version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 5.1).
+- All fifteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry, while Lifecycle Workspace Router is a repository-only capability with its own independent version.
 - Credits & Attribution Ops, Lifecycle Workspace Router, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
 - Website: production public convenience surface; each current portable mirror must remain byte-equal to its canonical current portable before mirror status is called verified.
@@ -38,30 +38,35 @@ They should not be collapsed into one number.
 10. License rights come from the applicable standard license and file-level metadata; they are not broadened beyond those terms by implication.
 11. A user-facing link labeled **Download** must use a route intended to download the file; inline browse/open routes must be labeled as browse/open instead.
 12. One capability has one canonical semantic body. Architectural role and standalone distribution are independent dimensions. Mirrors and packages are delivery surfaces, and a distinct adapter is allowed only for volatile or surface-specific facts.
-13. Every accepted update to an independently versioned capability's canonical body or operative contract advances that capability by **+0.1**. A bookkeeping-only correction that restores previously skipped version increments does not recursively create another bump.
+13. Every accepted update to an independently versioned capability's canonical body or operative contract advances that capability by **+0.1**. A bookkeeping-only correction that restores previously skipped version increments or corrects the representation of an existing version does not recursively create another bump.
+14. Version identifiers encode release or compatibility state, not audience, visibility, distribution or habitat. Do not introduce `public`, `private`, `local` or equivalent surface labels into a current version token. Store those properties separately. Exact legacy audience-bearing versions already tied to published standalone package coordinates may remain only until that capability's next accepted material release; they are compatibility exceptions, not precedent.
 
-## Lifecycle Workspace Router 1.2-public release — 2026-09-13
+## Lifecycle Workspace Router 1.2 release — 2026-09-13
 
-Lifecycle Workspace Router 1.2-public is a **material additive-and-corrective
-release** of the repository-only public capability. It adds an explicit
+Lifecycle Workspace Router 1.2 is a **material additive-and-corrective
+release** of the repository-only capability. It adds an explicit
 Operational Control Plane / Reconciliation Authority, a revision-bound worked
 example, and provider-aware move/readback rules for permissions, links,
 automations, retention, parent semantics and partial projection.
 
 The release also makes the method/reference-architecture boundary explicit:
-“router” names a public organizational method, not executable routing software
-or an automatic synchronization engine. The public attribution wording remains
-bounded to authorship, permission and claim responsibility; the MSL grammar and
-the standalone distribution set do not change.
+“router” names an organizational method, not executable routing software
+or an automatic synchronization engine. The MSL grammar and the standalone
+distribution set do not change.
 
 The stable capability title and canonical path remain unchanged. The accepted
-content update advances the independent release state from `1.1-public` to
-`1.2-public` under the repository +0.1 rule.
+content update advances the independent release state from `1.1` to `1.2`
+under the repository +0.1 rule.
 
-## Lifecycle Workspace Router 1.1-public release — 2026-09-13
+**Version-token correction:** the short-lived `1.1-public` / `1.2-public`
+notation for this repository-only capability is normalized to `1.1` / `1.2`.
+The removed suffix described visibility rather than release state, so this is a
+bookkeeping correction of the same releases and does not trigger `1.3`.
 
-Lifecycle Workspace Router 1.1-public is a **material semantic rebase** of the
-repository-only public capability. It generalizes the opening and core from a
+## Lifecycle Workspace Router 1.1 release — 2026-09-13
+
+Lifecycle Workspace Router 1.1 is a **material semantic rebase** of the
+repository-only capability. It generalizes the opening and core from a
 collaboration-first framing to a universal workspace-state projection method,
 then keeps Single-Actor / Contextual Architecture and Multi-Actor Collaboration
 as explicit application profiles.
@@ -69,20 +74,21 @@ as explicit application profiles.
 The release makes orthogonal identity, provenance, lifecycle, action, revision,
 freshness, lineage, source-of-record, pointers, stamps, receipts,
 reconciliation, reversible migration and durable/transient boundaries explicit.
-It preserves the public attribution and claim boundaries. It does not change
-the MSL grammar, create a standalone package, add a website mirror or claim
-automatic provider synchronization.
+It preserves the claim boundaries. It does not change the MSL grammar, create a
+standalone package, add a website mirror or claim automatic provider
+synchronization.
 
 The prior 2026-09-12 public body was an unversioned baseline. This accepted
-material update establishes the independent public release state `1.1-public`;
-the stable capability title and canonical path remain unchanged.
+material update establishes the independent release state `1.1`; the stable
+capability title and canonical path remain unchanged.
 
 ## Title–version separation
 
 The public title of a capability is its stable human-facing identity. A release version is separate state. Do not rename a current title merely because the portable, protocol or repository has advanced from one release to another.
 
-- Keep human-facing titles, first-level headings, registry `title` values and website card labels free of release markers such as `V2`, `V4`, `3.0`, `4.3`, `1.0-public`, `beta` or `rc1`.
-- Record release state in dedicated `version` metadata, registry fields, release notes, package names, filenames, paths and other technical coordinates where it is useful or required.
+- Keep human-facing titles, first-level headings, registry `title` values and website card labels free of release markers such as `V2`, `V4`, `3.0`, `4.3`, legacy `1.0-public`, `beta` or `rc1`.
+- Record release state in dedicated `version` metadata, registry fields, release notes and compatible technical coordinates where useful or required.
+- Keep audience/visibility/distribution labels out of current version identifiers. `1.2` is a version; `public` is separate metadata. Legacy package filenames may preserve an older audience-bearing string when changing them would break a published distribution route.
 - Historical prose may name an earlier generation when the version is part of the fact being preserved; phrase current use with the stable title and an explicit version field or sentence.
 - Reusable Moon Source-family repositories should copy the policy template and run the title/version separation guard before promotion.
 
