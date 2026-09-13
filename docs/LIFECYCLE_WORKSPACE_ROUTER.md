@@ -1,6 +1,6 @@
 # 🗂️ Lifecycle Workspace Router — Moon Source component
 
-Public capability version: **1.2-public**
+Capability version: **1.2**
 
 The Lifecycle Workspace Router is a Moon Source method and reference architecture for projecting multidimensional artifact and source state onto durable workspace surfaces. It can support a single actor, a role or process, an AI operating under human authority, or multiple collaborators. Collaboration is an application profile, not the ontology of the method. “Router” names an organizational method, not executable routing software, a daemon or an automatic synchronization engine.
 
@@ -39,18 +39,6 @@ It is not:
 - permission for AI to invent human decisions, ownership, consent or validation state;
 - evidence that a person read or approved something merely because it was reachable;
 - a finished product, adoption claim or substitute for the authority rules of the domain using it.
-
-## Provenance and attribution
-
-Created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion**. This public method does not infer authorship, ownership, authority or permission from shared testing, visibility or usefulness. Ambiguous lineage remains bounded rather than being silently presented as independent public authorship.
-
-```text
-attribution != ownership
-visibility != permission
-ambiguous_lineage → disclose_or_bound
-```
-
-The public body states the method, its public boundaries and the attribution required for responsible reuse. If stronger evidence later changes the lineage of a published element, correct its attribution, scope or content.
 
 ## Universal Workspace Core
 
