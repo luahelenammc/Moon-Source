@@ -1,0 +1,66 @@
+{
+  "fixture": "northstar",
+  "description": "Synthetic golden fixture for deterministic diagnostic-family recovery.",
+  "findings": [
+    {
+      "id": "NORTHSTAR-DUP-001",
+      "finding_type": "duplicate",
+      "evidence_paths": [
+        "sources/overview.md",
+        "sources/overview-copy.md"
+      ]
+    },
+    {
+      "id": "NORTHSTAR-NEAR-001",
+      "finding_type": "near_duplicate",
+      "evidence_paths": [
+        "sources/overview.md",
+        "sources/overview-near.md"
+      ]
+    },
+    {
+      "id": "NORTHSTAR-CONTRA-001",
+      "finding_type": "contradiction",
+      "evidence_paths": [
+        "sources/current-storage.md",
+        "sources/historical-storage.md"
+      ]
+    },
+    {
+      "id": "NORTHSTAR-STALE-001",
+      "finding_type": "stale_authority",
+      "evidence_paths": [
+        "sources/current-storage.md",
+        "sources/historical-storage.md"
+      ]
+    },
+    {
+      "id": "NORTHSTAR-AUTH-001",
+      "finding_type": "unclear_authority",
+      "evidence_paths": [
+        "sources/ai-rule.md"
+      ]
+    },
+    {
+      "id": "NORTHSTAR-OWNER-001",
+      "finding_type": "missing_owner",
+      "evidence_paths": [
+        "sources/retention.md"
+      ]
+    },
+    {
+      "id": "NORTHSTAR-ORPHAN-001",
+      "finding_type": "orphaned_decision",
+      "evidence_paths": [
+        "sources/launch-notes.md"
+      ]
+    },
+    {
+      "id": "NORTHSTAR-SCOPE-001",
+      "finding_type": "scope_jurisdiction_leak",
+      "evidence_paths": [
+        "sources/ai-rule.md"
+      ]
+    }
+  ]
+}

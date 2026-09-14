@@ -1,0 +1,15 @@
+Project MRI
+Copyright 2026 Lua Helena Moon Martins Cardoso
+
+Project MRI is an AI-assisted, human-governed reference implementation by Lua
+Helena Moon Martins Cardoso, with coauthorial development assistance from
+Áurion. Moon retains final authority over authorship, licensing, publication,
+external commitments and claims.
+
+Software is available under the Apache License 2.0. Documentation, methods,
+diagrams, visual assets and synthetic fixture content are available under CC BY
+4.0. See LICENSE, LICENSES/CC-BY-4.0.txt and LICENSING.md.
+
+Project MRI is related to, but is not a replacement for, Moon Source. Do not
+infer Moon Source permissions from this repository; preserve the source
+project's own notices when reusing its materials.
