@@ -15,3 +15,9 @@
 | Live Swift Compute/GPU integration exists | prohibited claim | No credentials or live operation are present |
 | External adoption, finalist or winner status exists | prohibited claim | No such status is claimed |
 | Software is Apache-2.0 and documentation/fixtures are CC BY 4.0 | release policy | `LICENSING.md`, `LICENSE` and `NOTICE` |
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).

@@ -11,3 +11,9 @@
 The public package deliberately excludes hospital, patient, employee, collaborator, private Moon Professional Source, Local Moon Source, Lunar Citadel and connector data. It also excludes secret prompts, credentials and private heuristics.
 
 The project is understandable without learning MSL or private Moon vocabulary. Its public value is the executable boundary and evidence model, not exposure of the private corpus from which the broader method evolved.
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).

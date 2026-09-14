@@ -119,3 +119,9 @@ Software, tests, CLI, server, web implementation and automation are licensed und
 **Created and designed by Lua Helena Moon Martins Cardoso (Moon).** Developed through an AI-assisted coauthorial process with Áurion; Moon retains final authority.
 
 The project is an executable reference build, not a production connector, autonomous repair engine, compliance system, adoption claim or proof that AI safety has been solved. The machine is allowed to point at the mess. It is not allowed to quietly declare the mess canonical.
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).

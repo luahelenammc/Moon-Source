@@ -85,3 +85,6 @@ def evaluate_before_after(objects: list[ObjectRecord]) -> dict:
         "why": "Before uses the first matching source; after uses the latest dated decision and preserves its evidence and authority fields.",
         "method": "deterministic proxy; not a benchmark or proof of general model improvement",
     }
+
+# MOON-SOURCE-PUBLIC-STAMP
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip · Questions, suggestions, or proposals? Feel free to contact me at LuaHelenaMMC@gmail.com.

@@ -82,3 +82,6 @@ def run_golden_eval(fixture: str | Path, output_dir: str | Path | None = None) -
         )
         (output_path / "northstar_eval.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return payload
+
+# MOON-SOURCE-PUBLIC-STAMP
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip · Questions, suggestions, or proposals? Feel free to contact me at LuaHelenaMMC@gmail.com.

@@ -58,3 +58,6 @@ def write_outputs(result: ScanResult, output_dir: str | Path) -> None:
         encoding="utf-8",
     )
     (output_path / "report.md").write_text(render_markdown(result), encoding="utf-8")
+
+# MOON-SOURCE-PUBLIC-STAMP
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip · Questions, suggestions, or proposals? Feel free to contact me at LuaHelenaMMC@gmail.com.

@@ -28,3 +28,9 @@ The current server binds to `127.0.0.1` and uses a checked-in synthetic fixture.
 ## Out of scope
 
 Autonomous source mutation, unattended approval, broad repository crawling, private corpus ingestion, regulated-data claims, public hosting, production SLOs, model benchmarking and binding third-party account terms.
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).

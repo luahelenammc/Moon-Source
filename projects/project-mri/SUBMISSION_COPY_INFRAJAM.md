@@ -73,3 +73,9 @@ Created and designed by **Lua Helena Moon Martins Cardoso (Moon)**, with AI-assi
 - Moon Source: <https://github.com/luahelenammc/Moon-Source>
 - Public architecture: <https://www.luahelena.com.br/moonsource/?lang=en>
 - Professional context: <https://www.luahelena.com.br/ia/?lang=en>
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).

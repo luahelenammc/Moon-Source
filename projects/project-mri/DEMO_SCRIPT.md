@@ -56,3 +56,9 @@ Close with:
 - If review state becomes confusing, click **Reset review state**.
 - If the browser path is unavailable, run `python -m mri demo --output out/demo` and show `out/demo/report.md` plus `python -m mri eval fixtures/northstar --output evals/northstar`.
 - Do not present the optional provider adapter as live. Do not claim model accuracy.
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).
