@@ -4,7 +4,7 @@ A public source-hygiene method for auditing context corpora, project files and k
 
 > Better retrieval cannot repair a source that is itself stale, contradictory, duplicated or governed by the wrong authority.
 
-**Project MRI** is the lineage name for this family of work. This document publishes a bounded diagnostic interface, not a finished autonomous scanner or the private MRI engine.
+**Project MRI** is the lineage name for this family of work. Its standalone executable reference implementation is published at [Project MRI](https://github.com/luahelenammc/Project-MRI). This document publishes a bounded diagnostic interface, not a finished autonomous scanner or the private MRI engine.
 
 Broken intellectual custody is a source-hygiene finding. Missing origin, unclear authorship, lost canonical identity, unrecorded transformations, permission drift, derivative ambiguity or unattributed material reuse can all make a corpus structurally unreliable even when retrieval works. Use [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for the dedicated protection operation; do not publish private custody ledgers or infer legal permission from a missing marker.
 
