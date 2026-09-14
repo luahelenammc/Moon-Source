@@ -1,0 +1,137 @@
+{
+  "fixture": "fixtures/northstar",
+  "metric": "fixture_recovery_rate",
+  "metric_definition": "expected diagnostic families recovered with required evidence paths",
+  "recovered": 8,
+  "expected": 8,
+  "rate": 1.0,
+  "not_model_accuracy": true,
+  "not_generalization_proof": true,
+  "cases": [
+    {
+      "id": "NORTHSTAR-DUP-001",
+      "expected": {
+        "id": "NORTHSTAR-DUP-001",
+        "finding_type": "duplicate",
+        "evidence_paths": [
+          "sources/overview.md",
+          "sources/overview-copy.md"
+        ]
+      },
+      "recovered": true,
+      "finding_id": "F-001"
+    },
+    {
+      "id": "NORTHSTAR-NEAR-001",
+      "expected": {
+        "id": "NORTHSTAR-NEAR-001",
+        "finding_type": "near_duplicate",
+        "evidence_paths": [
+          "sources/overview.md",
+          "sources/overview-near.md"
+        ]
+      },
+      "recovered": true,
+      "finding_id": "F-003"
+    },
+    {
+      "id": "NORTHSTAR-CONTRA-001",
+      "expected": {
+        "id": "NORTHSTAR-CONTRA-001",
+        "finding_type": "contradiction",
+        "evidence_paths": [
+          "sources/current-storage.md",
+          "sources/historical-storage.md"
+        ]
+      },
+      "recovered": true,
+      "finding_id": "F-004"
+    },
+    {
+      "id": "NORTHSTAR-STALE-001",
+      "expected": {
+        "id": "NORTHSTAR-STALE-001",
+        "finding_type": "stale_authority",
+        "evidence_paths": [
+          "sources/current-storage.md",
+          "sources/historical-storage.md"
+        ]
+      },
+      "recovered": true,
+      "finding_id": "F-005"
+    },
+    {
+      "id": "NORTHSTAR-AUTH-001",
+      "expected": {
+        "id": "NORTHSTAR-AUTH-001",
+        "finding_type": "unclear_authority",
+        "evidence_paths": [
+          "sources/ai-rule.md"
+        ]
+      },
+      "recovered": true,
+      "finding_id": "F-006"
+    },
+    {
+      "id": "NORTHSTAR-OWNER-001",
+      "expected": {
+        "id": "NORTHSTAR-OWNER-001",
+        "finding_type": "missing_owner",
+        "evidence_paths": [
+          "sources/retention.md"
+        ]
+      },
+      "recovered": true,
+      "finding_id": "F-015"
+    },
+    {
+      "id": "NORTHSTAR-ORPHAN-001",
+      "expected": {
+        "id": "NORTHSTAR-ORPHAN-001",
+        "finding_type": "orphaned_decision",
+        "evidence_paths": [
+          "sources/launch-notes.md"
+        ]
+      },
+      "recovered": true,
+      "finding_id": "F-013"
+    },
+    {
+      "id": "NORTHSTAR-SCOPE-001",
+      "expected": {
+        "id": "NORTHSTAR-SCOPE-001",
+        "finding_type": "scope_jurisdiction_leak",
+        "evidence_paths": [
+          "sources/ai-rule.md"
+        ]
+      },
+      "recovered": true,
+      "finding_id": "F-010"
+    }
+  ],
+  "observed_finding_types": [
+    "contradiction",
+    "duplicate",
+    "missing_owner",
+    "near_duplicate",
+    "orphaned_decision",
+    "scope_jurisdiction_leak",
+    "stale_authority",
+    "unclear_authority"
+  ],
+  "scan_validation": {
+    "schema": "project-mri.scan.v1",
+    "valid": true,
+    "finding_count": 15,
+    "evidence_count": 20
+  },
+  "_moon_source_public_stamp": {
+    "project": "Moon Source",
+    "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+    "ai_assisted_coauthor": "Áurion",
+    "licensing": "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md",
+    "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md",
+    "full_source": "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip",
+    "contact": "Questions, suggestions, or proposals? Feel free to contact me at LuaHelenaMMC@gmail.com."
+  }
+}

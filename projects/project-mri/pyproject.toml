@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-mri"
+version = "0.3.0"
+description = "Governed context infrastructure for AI-assisted projects."
+requires-python = ">=3.10"
+dependencies = []
+authors = [{name = "Lua Helena Moon Martins Cardoso"}]
+license = {text = "Apache-2.0 for software; CC BY 4.0 for documentation and synthetic fixtures"}
+readme = "README.md"
+
+[project.scripts]
+mri = "mri.cli:main"
+
+[tool.project-mri]
+execution = "run-from-source"
+dependencies = "standard-library-only"
+
+[tool.setuptools.packages.find]
+include = ["mri*"]

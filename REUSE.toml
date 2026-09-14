@@ -38,3 +38,30 @@ SPDX-License-Identifier = "CC-BY-4.0"
 
 # The files under LICENSES/ are standard legal texts reproduced verbatim and
 # are handled by REUSE as license files rather than Moon-authored project files.
+
+[[annotations]]
+path = [
+  "projects/project-mri/.env.example",
+  "projects/project-mri/.gitignore",
+  "projects/project-mri/.github/workflows/*.yml",
+  "projects/project-mri/mri/*.py",
+  "projects/project-mri/server.py",
+  "projects/project-mri/tests/*.py",
+  "projects/project-mri/pyproject.toml",
+  "projects/project-mri/web/*.html"
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Lua Helena Moon Martins Cardoso (Moon)"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = [
+  "projects/project-mri/CITATION.cff",
+  "projects/project-mri/VERSION",
+  "projects/project-mri/evals/northstar/northstar_eval.json",
+  "projects/project-mri/fixtures/northstar/expected_findings.json",
+  "projects/project-mri/NOTICE"
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Lua Helena Moon Martins Cardoso (Moon)"
+SPDX-License-Identifier = "CC-BY-4.0"
