@@ -9,8 +9,8 @@ authors:
     affiliation: Independent
 version: 0.3.0
 date-released: 2026-09-14
-url: https://github.com/luahelenammc/Project-MRI
-repository-code: https://github.com/luahelenammc/Project-MRI
+url: https://github.com/luahelenammc/Moon-Source/tree/main/projects/project-mri
+repository-code: https://github.com/luahelenammc/Moon-Source/tree/main/projects/project-mri
 license: Apache-2.0
 keywords:
   - governed context
