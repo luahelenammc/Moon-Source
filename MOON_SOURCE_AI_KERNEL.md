@@ -42,6 +42,7 @@ Use each file for the responsibility it actually owns:
 - `docs/OPERATIONAL_RELIABILITY.md` — read-only-first execution discipline, dependency checks, failure domains, ordinary and Context Receipts, and recovery.
 - `docs/FAILURE_FOUNDRY.md` — bounded failure-to-capability loop for recurring or costly operational failure.
 - `examples/browser-console-device/README.md` — experimental synthetic Browser Console Device reference implementation.
+- `docs/SEMANTIC_REWEAVE.md` — semantic-topology reconstruction and least-mutation repair for mature projects whose inherited containers no longer match the responsibilities that emerged through growth.
 - `docs/SIGNAL_CALIBRATION.md` — bounded qualitative calibration for weak, convergent or ambiguous signals and working inference.
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router, currently version 3.1.
@@ -67,6 +68,7 @@ When two files appear to conflict, do not flatten them together. First ask wheth
 - Operational Devices → `docs/OPERATIONAL_DEVICES.md`
 - Operational Reliability → `docs/OPERATIONAL_RELIABILITY.md`
 - Procedural Projection → `docs/PROCEDURAL_PROJECTION.md`
+- Semantic Reweave → `docs/SEMANTIC_REWEAVE.md`
 - Signal Calibration → `docs/SIGNAL_CALIBRATION.md`
 - Source Hygiene → `docs/SOURCE_HYGIENE.md`
 - Source Operations — Retrieve, Process, Metabolize and Promote → `docs/SOURCE_OPERATIONS.md`
@@ -116,8 +118,9 @@ Then load only as needed:
 - `docs/TERMINOLOGY.md` for translation or unclear vocabulary.
 - `portables/msl/MSL_5_1.md` once a materialization actually earns existence.
 - `docs/LIFECYCLE_WORKSPACE_ROUTER.md` when the mess is specifically a shared file workspace whose intake, queues, lifecycle, review state, durable sources or routing history are hard to read.
+- `docs/SEMANTIC_REWEAVE.md` when the project already has substantial accumulated structure and the question is whether inherited groupings still represent the material's semantic topology.
 
-The form comes from the field. Do not begin by choosing a document type.
+The form comes from the field. Do not begin by choosing a document type. When the project already has a mature form, do not assume the form still deserves to govern the field.
 
 ### If the user needs to organize a collaborative file workspace
 
@@ -180,6 +183,19 @@ Load:
 - `docs/RESPONSIBILITY_MAP.md` when ownership or authority is unclear.
 
 Do not rewrite governed sources without explicit mutation authority. Do not treat a bounded hygiene method as an autonomous scanner.
+
+### If an evolved project needs its themes and responsibilities recut without a ground-up redesign
+
+Load:
+- `docs/SEMANTIC_REWEAVE.md`
+
+Also load only as needed:
+- `docs/SOURCE_HYGIENE.md` when freshness, duplication, contradiction or provenance quality is itself part of the problem;
+- `docs/RESPONSIBILITY_MAP.md` when the recovered topology exposes ownership or authority collisions;
+- `ARCHITECTURE.md#field-to-form` only if a recovered responsibility actually earns a new or changed artifact;
+- `docs/SOURCE_OPERATIONS.md` when an accepted reweave requires governed mutation across source jurisdictions.
+
+Run the Container Erasure Test before proposing a target architecture. Preserve coherent clusters, distinguish semantic affinity from jurisdiction, resolve sources of record before moving content and climb the least-mutation repair ladder only as far as the field requires. A bridge or authority clarification may be a better result than a split, merge or new file. `no structural change` is valid when the inherited topology survives the test.
 
 ### If the user has several weak or ambiguous cues and needs a useful interpretation
 
