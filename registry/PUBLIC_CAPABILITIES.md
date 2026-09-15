@@ -7,7 +7,7 @@ capabilities also have a supported standalone distribution.
 “Portable” is therefore a distribution profile, not a competing semantic
 class. The machine-readable contract is
 [registry/public-capabilities.json](public-capabilities.json), schema 2.0.
-The table below is a human-readable view of the same fifteen records.
+The table below is a human-readable view of the same sixteen records.
 
 The table's **Summary title** is the concise browsing label. The registry's semantic `title` remains stable in machine-readable metadata; individual README and canonical-body headings use `surface_title` to make the Moon Source role explicit without folding version into identity.
 
@@ -25,6 +25,7 @@ The table's **Summary title** is the concise browsing label. The registry's sema
 | operational-reliability | 🛡️ Operational Reliability | operational-reliability method | — | current | [OPERATIONAL_RELIABILITY.md](../docs/OPERATIONAL_RELIABILITY.md) | — |
 | preflight | [Preflight](../portables/preflight/README.md) | transversal interface method | 2.2 | current | [PREFLIGHT_V2.md](../portables/preflight/PREFLIGHT_V2.md#first-use) | [ZIP](../downloads/preflight-v2.zip) |
 | procedural-projection | 🧩 Procedural Projection | procedural-projection method | — | current | [PROCEDURAL_PROJECTION.md](../docs/PROCEDURAL_PROJECTION.md) | — |
+| semantic-reweave | 🧵 Semantic Reweave | semantic-topology repair method | — | current | [SEMANTIC_REWEAVE.md](../docs/SEMANTIC_REWEAVE.md) | — |
 | signal-calibration | 🎚️ Signal Calibration | qualitative signal calibration | — | current | [SIGNAL_CALIBRATION.md](../docs/SIGNAL_CALIBRATION.md) | — |
 | source-hygiene | 🧹 Source Hygiene | source-hygiene method | — | current | [SOURCE_HYGIENE.md](../docs/SOURCE_HYGIENE.md) | — |
 | source-operations | 🔄 Source Operations | source-operations method | — | current | [SOURCE_OPERATIONS.md](../docs/SOURCE_OPERATIONS.md) | — |
