@@ -36,20 +36,12 @@ jobs:
           source_hygiene_row = "| Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) |"
           semantic_reweave_route = "| Reorganize a mature project or corpus whose inherited containers no longer match its semantic responsibilities | [🧵 Semantic Reweave](docs/SEMANTIC_REWEAVE.md) |"
           if semantic_reweave_route not in text:
-              text = text.replace(
-                  source_hygiene_row,
-                  source_hygiene_row + "\n" + semantic_reweave_route,
-                  1,
-              )
+              text = text.replace(source_hygiene_row, source_hygiene_row + "\n" + semantic_reweave_route, 1)
 
           source_hygiene_capability = "| [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |"
           semantic_reweave_capability = "| [🧵 Semantic Reweave](docs/SEMANTIC_REWEAVE.md) | Recover latent semantic topology and apply the smallest authority-preserving reorganization of mature projects or corpora |"
           if semantic_reweave_capability not in text:
-              text = text.replace(
-                  source_hygiene_capability,
-                  source_hygiene_capability + "\n" + semantic_reweave_capability,
-                  1,
-              )
+              text = text.replace(source_hygiene_capability, source_hygiene_capability + "\n" + semantic_reweave_capability, 1)
 
           text = text.replace("all fifteen capabilities", "all sixteen capabilities")
           path.write_text(text, encoding="utf-8", newline="\n")
@@ -64,14 +56,17 @@ jobs:
           text = path.read_text(encoding="utf-8")
           heading = "## 2026-09-15 — Semantic Reweave public capability"
           if heading not in text:
-              entry = """## 2026-09-15 — Semantic Reweave public capability
-
-- Published **Semantic Reweave** as a repository-only Moon Source capability for recovering latent semantic topology in mature projects and corpora without redesigning them from scratch.
-- Added the Container Erasure / Filename Erasure Test, bounded mismatch taxonomy, authority-first topology reconstruction, least-mutation repair ladder, provenance-preserving migration and explicit boundaries with Source Hygiene, Responsibility Map, Field to Form and Source Operations.
-- Registered the sixteenth public capability in the unified schema 2.0 registry and routed it through the AI Kernel without creating a redundant standalone package or independent semantic version.
-- Synchronized the AI Kernel transport package and README capability surfaces required by the public validation contract.
-
-"""
+              lines = [
+                  heading,
+                  "",
+                  "- Published **Semantic Reweave** as a repository-only Moon Source capability for recovering latent semantic topology in mature projects and corpora without redesigning them from scratch.",
+                  "- Added the Container Erasure / Filename Erasure Test, bounded mismatch taxonomy, authority-first topology reconstruction, least-mutation repair ladder, provenance-preserving migration and explicit boundaries with Source Hygiene, Responsibility Map, Field to Form and Source Operations.",
+                  "- Registered the sixteenth public capability in the unified schema 2.0 registry and routed it through the AI Kernel without creating a redundant standalone package or independent semantic version.",
+                  "- Synchronized the AI Kernel transport package and README capability surfaces required by the public validation contract.",
+                  "",
+                  "",
+              ]
+              entry = "\n".join(lines)
               text = text.replace("# Changelog\n\n", "# Changelog\n\n" + entry, 1)
               path.write_text(text, encoding="utf-8", newline="\n")
           PY
@@ -91,44 +86,21 @@ jobs:
               archive.writestr(source.name, source.read_bytes())
           PY
 
-      - name: Validate licensing contract
-        run: python scripts/check_licensing.py
-
-      - name: Validate REUSE
-        run: reuse lint
-
-      - name: Validate citation metadata
-        run: cffconvert --validate --infile CITATION.cff
-
-      - name: Validate local Markdown links
-        run: python scripts/check_links.py
-
-      - name: Validate public capability registry
-        run: python scripts/validate_public_capabilities.py
-
-      - name: Test public capability validator
-        run: python scripts/test_validate_public_capabilities.py
-
-      - name: Validate AI Kernel package
-        run: python scripts/check_kernel_package.py
-
-      - name: Validate title/version separation
-        run: python scripts/check_title_version_separation.py
-
-      - name: Test title/version separation
-        run: python scripts/test_title_version_separation.py
-
-      - name: Test link checker
-        run: python scripts/test_check_links.py
-
-      - name: Validate public stamps
-        run: python scripts/check_public_stamps.py
-
-      - name: Test public stamps
-        run: python scripts/test_public_stamps.py
-
-      - name: Validate README capability digest
-        run: python scripts/update_capability_digest.py --check
+      - name: Validate full public repository contract
+        run: |
+          python scripts/check_licensing.py
+          reuse lint
+          cffconvert --validate --infile CITATION.cff
+          python scripts/check_links.py
+          python scripts/validate_public_capabilities.py
+          python scripts/test_validate_public_capabilities.py
+          python scripts/check_kernel_package.py
+          python scripts/check_title_version_separation.py
+          python scripts/test_title_version_separation.py
+          python scripts/test_check_links.py
+          python scripts/check_public_stamps.py
+          python scripts/test_public_stamps.py
+          python scripts/update_capability_digest.py --check
 
       - name: Commit repaired release surfaces
         run: |
