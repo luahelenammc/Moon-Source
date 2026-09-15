@@ -1,0 +1,146 @@
+name: Repair Semantic Reweave release coherence
+
+on:
+  push:
+    branches:
+      - fix/semantic-reweave-release-coherence
+
+permissions:
+  contents: write
+
+jobs:
+  repair-and-validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out repair branch
+        uses: actions/checkout@v5
+        with:
+          ref: fix/semantic-reweave-release-coherence
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Install validation dependencies
+        run: python -m pip install --disable-pip-version-check --no-input reuse cffconvert
+
+      - name: Synchronize README release surfaces
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("README.md")
+          text = path.read_text(encoding="utf-8")
+
+          source_hygiene_row = "| Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) |"
+          semantic_reweave_route = "| Reorganize a mature project or corpus whose inherited containers no longer match its semantic responsibilities | [🧵 Semantic Reweave](docs/SEMANTIC_REWEAVE.md) |"
+          if semantic_reweave_route not in text:
+              text = text.replace(
+                  source_hygiene_row,
+                  source_hygiene_row + "\n" + semantic_reweave_route,
+                  1,
+              )
+
+          source_hygiene_capability = "| [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |"
+          semantic_reweave_capability = "| [🧵 Semantic Reweave](docs/SEMANTIC_REWEAVE.md) | Recover latent semantic topology and apply the smallest authority-preserving reorganization of mature projects or corpora |"
+          if semantic_reweave_capability not in text:
+              text = text.replace(
+                  source_hygiene_capability,
+                  source_hygiene_capability + "\n" + semantic_reweave_capability,
+                  1,
+              )
+
+          text = text.replace("all fifteen capabilities", "all sixteen capabilities")
+          path.write_text(text, encoding="utf-8", newline="\n")
+          PY
+
+      - name: Record release in changelog
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("CHANGELOG.md")
+          text = path.read_text(encoding="utf-8")
+          heading = "## 2026-09-15 — Semantic Reweave public capability"
+          if heading not in text:
+              entry = """## 2026-09-15 — Semantic Reweave public capability
+
+- Published **Semantic Reweave** as a repository-only Moon Source capability for recovering latent semantic topology in mature projects and corpora without redesigning them from scratch.
+- Added the Container Erasure / Filename Erasure Test, bounded mismatch taxonomy, authority-first topology reconstruction, least-mutation repair ladder, provenance-preserving migration and explicit boundaries with Source Hygiene, Responsibility Map, Field to Form and Source Operations.
+- Registered the sixteenth public capability in the unified schema 2.0 registry and routed it through the AI Kernel without creating a redundant standalone package or independent semantic version.
+- Synchronized the AI Kernel transport package and README capability surfaces required by the public validation contract.
+
+"""
+              text = text.replace("# Changelog\n\n", "# Changelog\n\n" + entry, 1)
+              path.write_text(text, encoding="utf-8", newline="\n")
+          PY
+
+      - name: Refresh README capability digest
+        run: python scripts/update_capability_digest.py
+
+      - name: Regenerate AI Kernel transport package
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZIP_DEFLATED, ZipFile
+
+          source = Path("MOON_SOURCE_AI_KERNEL.md")
+          package = Path("downloads/moon-source-ai-kernel.zip")
+          with ZipFile(package, "w", compression=ZIP_DEFLATED) as archive:
+              archive.writestr(source.name, source.read_bytes())
+          PY
+
+      - name: Validate licensing contract
+        run: python scripts/check_licensing.py
+
+      - name: Validate REUSE
+        run: reuse lint
+
+      - name: Validate citation metadata
+        run: cffconvert --validate --infile CITATION.cff
+
+      - name: Validate local Markdown links
+        run: python scripts/check_links.py
+
+      - name: Validate public capability registry
+        run: python scripts/validate_public_capabilities.py
+
+      - name: Test public capability validator
+        run: python scripts/test_validate_public_capabilities.py
+
+      - name: Validate AI Kernel package
+        run: python scripts/check_kernel_package.py
+
+      - name: Validate title/version separation
+        run: python scripts/check_title_version_separation.py
+
+      - name: Test title/version separation
+        run: python scripts/test_title_version_separation.py
+
+      - name: Test link checker
+        run: python scripts/test_check_links.py
+
+      - name: Validate public stamps
+        run: python scripts/check_public_stamps.py
+
+      - name: Test public stamps
+        run: python scripts/test_public_stamps.py
+
+      - name: Validate README capability digest
+        run: python scripts/update_capability_digest.py --check
+
+      - name: Commit repaired release surfaces
+        run: |
+          git config user.name "luahelenammc"
+          git config user.email "luahelenammc@gmail.com"
+          git add README.md CHANGELOG.md downloads/moon-source-ai-kernel.zip
+          if git diff --cached --quiet; then
+            echo "No repair delta to commit."
+          else
+            git commit -m "Repair Semantic Reweave release coherence"
+            git push origin HEAD:fix/semantic-reweave-release-coherence
+          fi
+
+# MOON-SOURCE-PUBLIC-STAMP
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip · Questions, suggestions, or proposals? Feel free to contact me at LuaHelenaMMC@gmail.com.
