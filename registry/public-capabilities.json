@@ -8,7 +8,7 @@
     "project": "Moon Source",
     "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md"
   },
-  "as_of": "2026-09-13",
+  "as_of": "2026-09-15",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "capabilities": [
     {
@@ -414,6 +414,37 @@
       "summary_title": "Procedural Projection",
       "surface_title": "Procedural Projection — Moon Source component",
       "title": "Procedural Projection",
+      "version": null,
+      "versioning_mode": "material_update_without_semantic_version"
+    },
+    {
+      "architectural_role": "semantic_topology_repair_method",
+      "best_for": "Mature projects and knowledge corpora whose inherited files, sections or categories may no longer match the semantic responsibilities that have emerged through growth",
+      "canonical_path": "docs/SEMANTIC_REWEAVE.md",
+      "claim_ceiling": "Bounded public semantic-topology and corpus-reorganization method; not autonomous refactoring, objective ontology discovery, a universal taxonomy, mutation authority or evidence of external adoption or measured improvement",
+      "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+      "dependencies": [
+        "No required dependency; Source Hygiene is complementary for corpus health, Responsibility Map for authority collisions, Field to Form for newly earned artifacts and Source Operations for governed mutation"
+      ],
+      "difficulty": "intermediate to advanced",
+      "distribution": {
+        "standalone": false
+      },
+      "freshness": "general public method as of 2026-09-15; recheck when its canonical body or adjacent authority contracts change",
+      "function": "Recover the latent semantic topology of an evolving project or corpus, compare it with inherited containers, classify structural mismatches and apply or propose the smallest authority-preserving repair while retaining provenance",
+      "id": "semantic-reweave",
+      "language": "English with language-sensitive execution",
+      "last_material_update_on": "2026-09-15",
+      "last_material_update_summary": "Published the initial public Semantic Reweave method with the Container Erasure Test, mismatch taxonomy, authority-first analysis, least-mutation repair ladder and provenance-preserving readback.",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-09-15",
+      "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
+      "status": "current",
+      "summary_title": "Semantic Reweave",
+      "surface_title": "Semantic Reweave — Moon Source component",
+      "title": "Semantic Reweave",
       "version": null,
       "versioning_mode": "material_update_without_semantic_version"
     },
