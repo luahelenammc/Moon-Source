@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-15 — Semantic Reweave public capability
+
+- Published **Semantic Reweave** as a repository-only Moon Source capability for recovering latent semantic topology in mature projects and corpora without redesigning them from scratch.
+- Added the Container Erasure / Filename Erasure Test, bounded mismatch taxonomy, authority-first topology reconstruction, least-mutation repair ladder, provenance-preserving migration and explicit boundaries with Source Hygiene, Responsibility Map, Field to Form and Source Operations.
+- Registered the sixteenth public capability in the unified schema 2.0 registry and routed it through the AI Kernel without creating a redundant standalone package or independent semantic version.
+- Synchronized the AI Kernel transport package and README capability surfaces required by the public validation contract.
+
 ## 2026-09-10 — Astra Strategy Adapter 1.2 · setup and customization contract
 
 - Established explicit independent submodule versioning: **1.0** for the initial accepted public adapter, **1.1** for the Total-Work Efficiency calibration, and **1.2** for this setup/customization integration.

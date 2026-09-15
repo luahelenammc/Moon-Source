@@ -32,6 +32,7 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 | Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [👁️ Be My Eyes](portables/be-my-eyes/README.md) |
 | Decide what deserves to become a source, handoff, procedure or other form | [🏗️ Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) |
+| Reorganize a mature project or corpus whose inherited containers no longer match its semantic responsibilities | [🧵 Semantic Reweave](docs/SEMANTIC_REWEAVE.md) |
 | Retrieve, process, metabolize or promote governed source material | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Project multidimensional artifact and source state onto durable workspace surfaces, with optional intake, action queues, lifecycle views, stamps and handoffs | [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
 | Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [🔗 Connected Sources](portables/connected-sources/README.md) |
@@ -146,6 +147,7 @@ Moon Source publishes public capabilities with one canonical semantic body each.
 | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) | Retrieve, process, metabolize and promote governed source changes, with lifecycle and legacy-successor rules |
 | [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) | Project multidimensional artifact and source state onto durable workspace surfaces, with bounded routing, revision-bound stamps, source-of-record pointers and provider readback |
 | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
+| [🧵 Semantic Reweave](docs/SEMANTIC_REWEAVE.md) | Recover latent semantic topology and apply the smallest authority-preserving reorganization of mature projects or corpora |
 | [🎚️ Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Useful working inference without certainty inflation |
 | [🧩 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Project a stable method into a reusable procedure without moving source authority |
 | [🧾 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage, content custody and immaterial-asset protection |
@@ -153,7 +155,7 @@ Moon Source publishes public capabilities with one canonical semantic body each.
 | [🛡️ Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Read-only-first diagnosis, failure boundaries, ordinary and Context Receipts, reversibility and freshness |
 | [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Turn recurring failure into the smallest validated reusable mechanism |
 
-The canonical chronology, roles, status and material-update history of all fifteen capabilities lives in the [public capability registry](registry/PUBLIC_CAPABILITIES.md); its machine-readable contract is [registry/public-capabilities.json](registry/public-capabilities.json). The six standalone distributions are a filtered distribution view. Connected Sources is a structural crown jewel at [docs/CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md), with dated ChatGPT product facts subordinate to [its adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md).
+The canonical chronology, roles, status and material-update history of all sixteen capabilities lives in the [public capability registry](registry/PUBLIC_CAPABILITIES.md); its machine-readable contract is [registry/public-capabilities.json](registry/public-capabilities.json). The six standalone distributions are a filtered distribution view. Connected Sources is a structural crown jewel at [docs/CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md), with dated ChatGPT product facts subordinate to [its adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md).
 
 ## Evidence, boundary and reuse
 
@@ -169,11 +171,11 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent capability changes
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
+- **2026-09-15 — Semantic Reweave:** Published the initial public Semantic Reweave method with the Container Erasure Test, mismatch taxonomy, authority-first analysis, least-mutation repair ladder and provenance-preserving readback.
 - **2026-09-13 — Lifecycle Workspace Router:** Material additive-and-corrective release to 1.2: adds explicit operational control-plane and reconciliation authority, a revision-bound worked example, provider-aware move/readback and partial-projection rules, and a method/reference-architecture framing.
 - **2026-09-11 — Signal Calibration:** Added the Interior–Membrane Split to preserve working signal while bounding circulation, with causal-retention and epistemic-conservation checks.
 - **2026-09-10 — Preflight:** Added bounded active-frame correction and persistence/promotion-candidacy boundaries; Preflight is now version 2.2.
 - **2026-09-10 — Moon Source Setup:** Aligned active MSL and Preflight canonical references with MSL 5.1 and Preflight 2.1 without changing Moon Source Setup semantics or version.
-- **2026-09-10 — Connected Sources:** Declared the current MSL 5.1 structural dependency in the canonical metadata without changing method semantics or version.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
 This bounded digest is generated from the unified capability registry. It is not a commit log.
