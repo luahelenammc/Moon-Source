@@ -171,11 +171,11 @@ A public artifact is not an adoption claim. A tested slice is not proof of a uni
 ## Recent capability changes
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
+- **2026-09-17 — Credits & Attribution Ops:** Added proactive donor envelopes, pre-canonicalization provenance readback, AI-mediated lineage-drift detection, evidence-ranked lineage-conflict audit and anti-totalization boundaries between local authorship and upstream lineage.
 - **2026-09-15 — Semantic Reweave:** Published the initial public Semantic Reweave method with the Container Erasure Test, mismatch taxonomy, authority-first analysis, least-mutation repair ladder and provenance-preserving readback.
 - **2026-09-13 — Lifecycle Workspace Router:** Material additive-and-corrective release to 1.2: adds explicit operational control-plane and reconciliation authority, a revision-bound worked example, provider-aware move/readback and partial-projection rules, and a method/reference-architecture framing.
 - **2026-09-11 — Signal Calibration:** Added the Interior–Membrane Split to preserve working signal while bounding circulation, with causal-retention and epistemic-conservation checks.
 - **2026-09-10 — Preflight:** Added bounded active-frame correction and persistence/promotion-candidacy boundaries; Preflight is now version 2.2.
-- **2026-09-10 — Moon Source Setup:** Aligned active MSL and Preflight canonical references with MSL 5.1 and Preflight 2.1 without changing Moon Source Setup semantics or version.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
 This bounded digest is generated from the unified capability registry. It is not a commit log.

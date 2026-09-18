@@ -8,7 +8,7 @@
     "project": "Moon Source",
     "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md"
   },
-  "as_of": "2026-09-15",
+  "as_of": "2026-09-17",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "capabilities": [
     {
@@ -153,11 +153,11 @@
       "distribution": {
         "standalone": false
       },
-      "freshness": "general public method; recheck when its canonical body changes",
-      "function": "Protect intellectual lineage and content custody across identity, origin, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence",
+      "freshness": "general public method as of 2026-09-17; recheck when its canonical body or adjacent attribution/governance contracts change",
+      "function": "Protect intellectual lineage and content custody across identity, origin, authorship, canonicality, transformations, donor exposure, permission envelopes, disclosure boundaries, derivatives, attribution and evidence, with proactive provenance transport and bounded lineage-conflict audit",
       "id": "credits-attribution-ops",
-      "last_material_update_on": "2026-08-18",
-      "last_material_update_summary": "Expanded the component into public immaterial-asset protection with custody, transformation and disclosure-boundary rules.",
+      "last_material_update_on": "2026-09-17",
+      "last_material_update_summary": "Added proactive donor envelopes, pre-canonicalization provenance readback, AI-mediated lineage-drift detection, evidence-ranked lineage-conflict audit and anti-totalization boundaries between local authorship and upstream lineage.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
