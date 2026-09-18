@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-17 — Credits & Attribution Ops · proactive lineage transport
+
+- Strengthened **Credits & Attribution Ops** around AI-mediated lineage drift: local implementation authorship can coexist with upstream architectural lineage, while real influence does not imply total derivation, ownership, parenthood or invented percentage ancestry.
+- Added compact donor envelopes and a pre-canonicalization provenance readback so material source relationships travel with high-resolution cross-system architecture instead of being reconstructed only after conflict.
+- Added an evidence-ranked lineage-conflict audit: isolate the smallest disputed layer, reconstruct chronology, prefer explicit donor/adaptation records over resemblance, reverse-audit recipient-native antecedents, preserve uncertainty and repair only the affected lineage surface.
+- Added a higher evidentiary threshold for claims that a mechanism came specifically from confidential/private material, while preserving exposure as a possible channel rather than proof of derivation.
+- Routed the strengthened method through the public AI Kernel and capability registry without creating a standalone distribution or semantic version.
+
 ## 2026-09-15 — Semantic Reweave public capability
 
 - Published **Semantic Reweave** as a repository-only Moon Source capability for recovering latent semantic topology in mature projects and corpora without redesigning them from scratch.
