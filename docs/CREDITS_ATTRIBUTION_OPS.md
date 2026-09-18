@@ -81,6 +81,9 @@ A credit line can be generated from that record. The record cannot be reconstruc
 | **Canonical identity loss** | Multiple copies exist and nobody can recover which path, version or artifact governs the lineage. |
 | **Credit dilution** | Attribution becomes weaker at each transport step until it vanishes. |
 | **AI laundering** | Material enters an AI-mediated workflow and the generated result is treated as provenance-free merely because a model intervened. |
+| **AI-mediated lineage drift** | A model recomposes donor concepts, terms, schemas or responsibility patterns into locally coherent work faster than provenance travels with them, making external lineage appear native. |
+| **Attribution totalization** | A real influence signal is inflated into an unsupported claim of total derivation, parenthood, ownership, percentage ancestry or exclusive origin. |
+| **Topology-lineage collapse** | A current integration, dependency or downstream relationship is mistaken for historical architectural lineage, or vice versa. |
 | **Composite opacity** | Several material sources contribute to one output but the synthesis is presented as if it had a single origin. |
 | **Disclosure-boundary erosion** | A public credit, mirror or derivative leaks private lineage, confidential material or protected implementation detail. |
 
@@ -91,6 +94,10 @@ The module does not guarantee that these failures cannot occur. It creates the r
 - Absorbing a resource does not erase its origin.
 - Transformation can create new local authorship without erasing material upstream lineage.
 - AI mediation is not a provenance reset when identifiable source material materially conditions an output.
+- Local implementation authorship and upstream architectural lineage can coexist.
+- A lineage correction does not by itself create coauthorship, ownership, parenthood or control.
+- Current topology, integration direction or dependency does not by itself establish historical lineage.
+- Resemblance alone is weak evidence; explicit donor/adaptation records, dated chronology and mechanism-level correspondence are stronger.
 - Access, visibility, discussion or availability do not create authority or permission.
 - Attribution does not create permission, ownership, endorsement, partnership, validation or adoption.
 - Custody is not automatically ownership; possession of a copy is not semantic authority.
@@ -154,6 +161,7 @@ Record only what changes the decision, but preserve these fields when relevant:
 | **Origin** | Where did it come from? |
 | **Author / community / contributor** | Who created or materially contributed to it, or is that unknown? |
 | **Source lineage** | Is there an upstream, intermediary, fork, mirror, donor or named source artifact? |
+| **Exposure / donor context** | Which external architecture, corpus, packet, review or collaboration context was materially available before this artifact or mechanism was produced? |
 | **Current custodian** | Who or what maintains the relevant current copy or record? |
 | **Canonical identity** | What path, repository, URL, registry entry or source governs identity? |
 | **Version / fingerprint** | Which version is meant, and does exact byte identity matter? |
@@ -181,9 +189,11 @@ Use only as much identity evidence as the situation deserves.
 | Evidence layer | What it can support |
 |---|---|
 | **Named provenance** | A recoverable statement of source, author or upstream relationship |
+| **Explicit donor / adaptation record** | Direct evidence that a source, mechanism or responsibility boundary was intentionally used, adapted or transplanted |
 | **Date / version** | Which temporal or released state is being discussed |
 | **Canonical path** | Where the governing artifact or record should be retrieved |
 | **Revision history** | How the artifact changed over time and who made recorded changes |
+| **Chronology + mechanism correspondence** | Evidence that a distinctive mechanism existed upstream before appearing downstream; stronger than resemblance, weaker than an explicit donor record when the transfer channel remains unresolved |
 | **Fingerprint / hash** | Exact byte identity for a specific artifact when that matters |
 | **Signed or externally witnessed evidence** | Stronger external evidence when the project already has a reason and mechanism to preserve it |
 
@@ -196,14 +206,15 @@ Run the smallest version the material requires:
 1. **Identify** the asset, source artifact or material contribution actually at issue.
 2. **Bound** the operation: decide what is inside the lineage record and what must stay outside it.
 3. **Establish lineage** by separating origin, upstream contributors, intermediaries and local material.
-4. **Establish custody** by locating the current maintainer, canonical path and relevant version.
-5. **Classify transformation**: record what was copied, extracted, translated, summarized, adapted, remixed, generated, redacted, mirrored or rejected.
-6. **Resolve the permission envelope only as far as evidence allows**. Do not infer rights from availability, silence or prior access.
-7. **Control exposure**: decide what provenance can travel publicly and what private, confidential or security-sensitive detail must remain bounded.
-8. **Transport** the material with enough canonical identity to recover its governing source.
-9. **Inherit attribution and lineage** into material descendants when the upstream contribution remains material.
-10. **Preserve evidence** proportionally through dates, versions, histories, fingerprints or other records when needed.
-11. **Audit** the result for silent appropriation, permission drift, broken canonicality, leaked boundaries and false certainty.
+4. **Map material exposure** when cross-system or AI-assisted work is involved: record which donor architecture, corpus, packet, review or collaboration context was available before the local mechanism appeared.
+5. **Establish custody** by locating the current maintainer, canonical path and relevant version.
+6. **Classify transformation**: record what was copied, extracted, translated, summarized, adapted, remixed, generated, redacted, mirrored or rejected.
+7. **Resolve the permission envelope only as far as evidence allows**. Do not infer rights from availability, silence or prior access.
+8. **Control exposure**: decide what provenance can travel publicly and what private, confidential or security-sensitive detail must remain bounded.
+9. **Transport** the material with enough canonical identity to recover its governing source.
+10. **Inherit attribution and lineage** into material descendants when the upstream contribution remains material.
+11. **Preserve evidence** proportionally through dates, versions, histories, fingerprints or other records when needed.
+12. **Audit** the result for silent appropriation, permission drift, broken canonicality, leaked boundaries, lineage drift, attribution totalization and false certainty.
 
 Valid operational outcomes include `no_delta`, `analytic_only`, `protected_reference`, `adapted`, `derived`, `mirrored`, `pending_permission`, `disputed` and `rejected`.
 
@@ -312,6 +323,77 @@ When AI materially participates:
 
 The goal is not to log every token. It is to prevent a material lineage from disappearing merely because generation occurred between source and destination.
 
+### 14.1 Provenance transport before canonicalization
+
+When high-resolution architecture, technical design or other materially distinctive source material crosses a project or model boundary, provenance should travel **with the material**, not wait for a later dispute.
+
+A compact **donor envelope** may record:
+
+- source project or artifact;
+- author, owner or responsible upstream party as actually known;
+- date, revision or canonical locator;
+- relationship class: reference, inspiration, adaptation, derivation, composite or unresolved;
+- what may be inspected, adapted, transformed or redistributed as actually supported;
+- what remains sovereign, confidential or otherwise bounded;
+- the minimum attribution or lineage facts expected to survive downstream transformation;
+- unresolved provenance questions that must remain unresolved rather than silently becoming local origin.
+
+Before a materially influenced AI-generated or AI-assisted artifact becomes canonical, published or reusable, perform a **provenance readback**:
+
+1. Which named concepts, schemas, responsibility boundaries, sequencing patterns or other distinctive mechanisms may have been materially conditioned by donor context?
+2. Which of those were independently present locally before the exposure?
+3. Which donor edges are directly documented, which are supported only by chronology/correspondence, and which remain unresolved?
+4. Does the proposed local credit preserve both upstream lineage and genuine local authorship?
+5. Would removing the donor name from the record make the current artifact falsely appear independently originated?
+
+The target is not maximal credit text. The target is enough recoverable lineage that a later reader can distinguish **local implementation**, **upstream influence**, **direct adaptation**, **composite development** and **uncertainty**.
+
+### 14.2 AI-mediated lineage drift
+
+A recurring AI-native provenance hazard occurs when donor material is available to a model, the model recomposes it into a coherent local artifact, and the transformation is faster or more complete than the provenance record.
+
+Typical sequence:
+
+1. material crosses a trust, review, collaboration or ingestion boundary;
+2. the receiving model recomposes useful concepts or mechanisms;
+3. local coherence creates a false sense of local origin;
+4. an upstream contributor later recognizes distinctive structure;
+5. a model or participant may then over-correct by narrating total ancestry, ownership or causal certainty;
+6. only a later lineage audit reconstructs the smaller, evidence-backed relationship.
+
+The preventive rule is:
+
+> **AI recomposition does not reset provenance, and local coherence does not prove local origin.**
+
+The corrective rule is equally important:
+
+> **A real donor edge does not imply that the donor owns, authored or parented the whole downstream system.**
+
+Do not use invented percentage ancestry or model-generated contribution shares unless a defined quantitative method and evidence actually support them.
+
+### 14.3 Lineage-conflict audit
+
+When attribution is disputed, begin with the **smallest disputed layer** rather than with motive, character or whole-system ownership.
+
+1. **Specify the object.** Name the exact mechanism, schema, term, file, responsibility boundary, implementation family or artifact under dispute.
+2. **Freeze totalizing conclusions.** Do not assume theft, clean-room independence, parenthood, ownership or exclusive origin before the lineage is reconstructed.
+3. **Reconstruct chronology.** Compare dated upstream antecedents, recipient-side antecedents, exposure/access windows, implementation dates and later divergence.
+4. **Rank evidence.** Prefer explicit donor/adaptation records and mechanism-level correspondence over vocabulary, visual resemblance, development speed or model confidence.
+5. **Reverse-audit.** Search for recipient-native antecedents and reciprocal influence with the same seriousness used to search for donor evidence.
+6. **Classify narrowly.** Use the smallest supported relationship: independent development, reference/inspiration, adaptation, operational derivation, AI-mediated derivation, composite or unresolved.
+7. **Repair the smallest surface.** Correct the affected lineage, attribution, registry, note or canonical source without rewriting unrelated authorship.
+8. **Preserve uncertainty.** If the transfer channel cannot be established, record material influence or unresolved provenance without inventing confidential-source causation.
+
+For a claim that a distinctive mechanism came **specifically from confidential or private material**, use a higher threshold. Strong support normally requires all of the following:
+
+- a dated private antecedent;
+- no materially equivalent prior public/shared disclosure available to explain the mechanism;
+- a plausible access or exposure channel;
+- post-exposure appearance of the distinctive mechanism downstream;
+- no stronger recipient-native, shared or independent explanation.
+
+Exposure establishes a possible channel. It does not establish derivation by itself.
+
 ## 15. Integration contract
 
 When transplanted into another project, this module remains subordinate to that project's own authority, terms and boundaries.
@@ -341,6 +423,10 @@ Before publishing, mirroring, adapting, generating from or teaching with materia
 - local authorship or adaptation is distinguished from upstream work;
 - external lineage has not been silently absorbed;
 - AI mediation has not been used as a provenance reset;
+- material donor context was transported or explicitly marked unresolved before canonicalization where appropriate;
+- local implementation authorship has not been confused with exclusive lineage;
+- a real lineage edge has not been inflated into ownership, parenthood, total derivation or invented percentage ancestry;
+- current topology or integration direction has not been substituted for historical lineage;
 - transformation history is proportionate and recoverable;
 - permission and its scope are no stronger than the evidence;
 - public exposure does not cross the material's disclosure boundary;
@@ -385,8 +471,10 @@ Identify:
 7. public, bounded and confidential disclosure limits;
 8. derivative or downstream relationships that should remain connected;
 9. minimum attribution that should travel with the material;
-10. evidence needed for the appropriate protection profile;
-11. unresolved risks or uncertainties.
+10. material donor/exposure context that existed before the current artifact or mechanism;
+11. evidence needed for the appropriate protection profile;
+12. whether a pre-canonicalization provenance readback or lineage-conflict audit is needed;
+13. unresolved risks or uncertainties.
 
 Use the lightest protection profile that preserves what matters.
 Do not infer permission, ownership or legal status from availability or attribution.
