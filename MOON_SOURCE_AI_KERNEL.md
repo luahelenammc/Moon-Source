@@ -36,7 +36,7 @@ Use each file for the responsibility it actually owns:
 - `ARCHITECTURE.md#field-to-form` — canonical public architecture and Field-to-Form diagnostic: decide what should exist before choosing a container or artifact type.
 - `docs/RESPONSIBILITY_MAP.md` — separating responsibilities, ownership, authority and transport between objects.
 - `docs/TERMINOLOGY.md` — responsibility-first translation between ordinary language and Moon Source vocabulary.
-- `docs/CREDITS_ATTRIBUTION_OPS.md` — intellectual-lineage, content-custody and immaterial-asset protection across identity, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
+- `docs/CREDITS_ATTRIBUTION_OPS.md` — intellectual-lineage, content-custody and immaterial-asset protection across identity, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence, including proactive donor envelopes, pre-canonicalization provenance readback and bounded lineage-conflict audit.
 - `docs/PROCEDURAL_PROJECTION.md` — public source/procedure/skill contract, projection, QA and semantic-undercompilation checks.
 - `docs/OPERATIONAL_DEVICES.md` — bounded operational embodiment of a reusable procedure on a concrete execution surface.
 - `docs/OPERATIONAL_RELIABILITY.md` — read-only-first execution discipline, dependency checks, failure domains, ordinary and Context Receipts, and recovery.
@@ -228,9 +228,9 @@ Also load:
 - the governing source or artifact whose lineage is being protected;
 - `MOON_SOURCE_USE_AND_ATTRIBUTION.md` only when the material is Moon Source itself and project-specific use/authorship governance is relevant.
 
-Identify the asset, origin, material contributors, current custodian, canonical identity, transformations, permission envelope, disclosure boundary, derivative lineage, attribution inheritance and evidence. Use the lightest protection profile that preserves what matters.
+Identify the asset, origin, material contributors, current custodian, canonical identity, transformations, permission envelope, disclosure boundary, derivative lineage, attribution inheritance and evidence. When high-resolution external architecture or other distinctive donor material was available before local AI-assisted work, also record material exposure context and run a provenance readback before canonicalization when the lineage would otherwise become ambiguous. Use the lightest protection profile that preserves what matters.
 
-Do not infer permission or ownership from public availability, attribution or model mediation. Do not treat AI generation as a provenance reset when identifiable source material materially conditioned the output. Do not expose private lineage merely to make a public credit more complete.
+If attribution is disputed, isolate the smallest disputed mechanism or artifact, reconstruct chronology, rank direct donor/adaptation evidence above resemblance, reverse-audit recipient-native antecedents and repair only the affected lineage surface. Do not infer permission or ownership from public availability, attribution or model mediation. Do not treat AI generation as a provenance reset when identifiable source material materially conditioned the output, and do not inflate a real donor edge into total derivation, parenthood, ownership or invented percentage ancestry. Do not expose private lineage merely to make a public credit more complete.
 
 ### If the user needs to transfer context between people, models, threads or projects
 
