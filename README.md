@@ -168,6 +168,14 @@ Moon Source is deliberately strict about the difference between an artifact exis
 
 A public artifact is not an adoption claim. A tested slice is not proof of a universal runtime. The repository does not claim external adoption, measured impact, enterprise readiness, universal superiority or product-market fit without evidence.
 
+## Applying Moon Source to an organization
+
+Moon Source itself remains public. Organizations that want the architecture applied to a real context — across existing sources, tools, workflows, authority boundaries, handoffs and maintenance — can work directly with Moon through the professional application surface:
+
+**[Work with Moon →](https://www.luahelena.com.br/moonsource/work-with-moon/?lang=en)**
+
+This is a professional-service bridge, not a claim that Moon Source is a mature enterprise platform. Engagements are scoped to the actual context and retain the evidence, privacy, authority and claim ceilings documented in this repository.
+
 ## Recent capability changes
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
