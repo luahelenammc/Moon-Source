@@ -7,7 +7,7 @@ SPDX-FileCopyrightText = "2026 Lua Helena Moon Martins Cardoso (Moon)"
 SPDX-License-Identifier = "CC-BY-4.0"
 
 [[annotations]]
-path = ["scripts/*.py", ".github/workflows/*.yml", ".github/workflows/*.yaml"]
+path = ["scripts/*.py", ".github/workflows/*.yml", ".github/workflows/*.yaml", ".github/CODEOWNERS"]
 precedence = "override"
 SPDX-FileCopyrightText = "2026 Lua Helena Moon Martins Cardoso (Moon)"
 SPDX-License-Identifier = "Apache-2.0"

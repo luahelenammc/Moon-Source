@@ -27,8 +27,10 @@ The repository does not require a CLA or a signed-off-by line as a condition of 
 - for a new or materially revised standalone distribution, follow the [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md): the canonical body remains semantic authority and must embed a usable `## First use` path; a lightweight README facade is welcome for human discoverability when it routes to — rather than duplicates — that authority;
 - register every new or materially changed public capability in `registry/public-capabilities.json` and `registry/PUBLIC_CAPABILITIES.md`, recording architectural role and distribution independently;
 - touch cross-file surfaces only where responsibility, routing, evidence, boundary, licensing or discoverability actually changes;
-- run the local validation commands described in `.github/workflows/validate.yml`;
+- run `python scripts/moon_source.py validate` before opening a pull request; use `python scripts/moon_source.py mirror --check` separately when the change touches a canonical standalone body or its mapped mirror;
 - run `reuse lint` when changing licensing or file classes.
+
+The repository maintenance CLI delegates to the existing bounded validators; it is not a new public capability. Use an explicit `--apply` flag for stamp or generated-digest mutations. Read [MAINTAINERS.md](MAINTAINERS.md) for authority and [SECURITY.md](SECURITY.md) for security reporting.
 
 New application material must be visibly hypothetical and didactic unless independently supported public evidence exists. Do not present a fictional scenario as a case study, adoption result or validated deployment.
 
