@@ -168,6 +168,22 @@ Moon Source is deliberately strict about the difference between an artifact exis
 
 A public artifact is not an adoption claim. A tested slice is not proof of a universal runtime. The repository does not claim external adoption, measured impact, enterprise readiness, universal superiority or product-market fit without evidence.
 
+## Repository maintenance
+
+The public repository includes a small executable maintenance layer over its existing validators. Contributors can run the same bounded local contract used by CI with:
+
+```bash
+python scripts/moon_source.py validate
+```
+
+This checks licensing and REUSE, citation metadata, links, the public capability registry, the AI Kernel package, title/version separation, public stamps, the generated capability digest and the maintenance CLI itself. Current canonical-to-website mirror state is a separate read-only check:
+
+```bash
+python scripts/moon_source.py mirror --check
+```
+
+The CLI is repository maintenance tooling. It does not add a public capability, change semantic versioning or replace the canonical source contracts.
+
 ## Applying Moon Source to an organization
 
 Moon Source itself remains public. Organizations that want the architecture applied to a real context — across existing sources, tools, workflows, authority boundaries, handoffs and maintenance — can work directly with Moon through the professional application surface:
