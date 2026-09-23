@@ -227,3 +227,9 @@ A future model release should update or supersede this adapter rather than spray
 ## Final law
 
 > **Luna buys throughput; Sol buys stronger judgment inside execution. Raise effort when effort is the missing ingredient, route directly to Sol when strong reasoning is already load-bearing, and never turn API price ratios into imaginary Work allowance mathematics. The model is an executor choice; the sovereign object still chooses the surface.**
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).
