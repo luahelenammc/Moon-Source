@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-23 — Chat–Work 5.2 · GPT-6 Sol/Luna executor calibration
+
+- Added the subordinate **GPT-6 Sol/Luna Strategy Adapter 1.0**, grounded in OpenAI's 2026-09-22 launch guidance, model specifications, pricing and Work/Codex availability.
+- Calibrated **Luna** as the default high-throughput executor when it clears the capability floor and **Sol** as the strong executor/co-architect when difficult reasoning remains load-bearing inside complex coding or agentic execution.
+- Added the stable rule that semantic capability tiers do not require one-to-one named-model counterparts: a balanced route may compile to Luna at higher effort or Sol at lower effort rather than inventing a missing product tier or forcing a ceremonial staircase.
+- Preserved Astra as a separate frontier strategy adapter, kept model choice separate from surface choice, retained Context Diet despite the 1.05M context window, and explicitly blocked transfer of API token-price ratios into unsupported ChatGPT Work/Codex allowance math.
+- Advanced Chat–Work from **5.1 to 5.2** while preserving the canonical V4 filename, model-neutral core, MSL 5.1 dependency, Sprint/IDL/Decision Trace laws and Chat Postflight.
+
+
 ## 2026-09-17 — Credits & Attribution Ops · proactive lineage transport
 
 - Strengthened **Credits & Attribution Ops** around AI-mediated lineage drift: local implementation authorship can coexist with upstream architectural lineage, while real influence does not imply total derivation, ownership, parenthood or invented percentage ancestry.
