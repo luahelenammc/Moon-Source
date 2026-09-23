@@ -9,19 +9,19 @@ Moon Source is a public reference architecture for organizing that problem. It s
 This repository is the canonical public body of Moon Source.
 
 > 📦 **Want the whole Moon Source at once?**  
-> 🌙⬇️ [**Download the complete repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) — the full public source in one file.
-
-## Moon Cortex: related public body
-
-[Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) is the related public applied/system body for domain-shaped modules. It owns domain-specific identities, contracts and routes; Moon Source remains the context-architecture body. Moon Cortex may consult Moon Source for installation and context governance, but it is not a Moon Source capability or a permanent runtime dependency.
-
-> **Moon Source governs context. Moon Cortex instantiates domain systems. The user owns the local result.**
+> 🌙⬇️ [**Download the complete repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
 
 ## Why Moon Source exists
 
-AI context can fail in opposite directions: there may be too little context, or far too much of the wrong kind. The harder failures appear when information is reachable but nobody can explain which source governs it, whether it is still current, who may change it, or what should happen when two sources disagree.
+AI context can fail in opposite directions: there may be too little context, or far too much of the wrong kind. The harder failures appear when information is reachable but nobody can explain which source governs it, whether it is still current, who may change it, or what should happen when sources disagree.
 
 Moon Source treats context as an organized field rather than a pile of text. Its job is not to maximize memory. Its job is to make context **legible, proportionate, attributable and maintainable** for people and AI.
+
+The short version:
+
+**field → observation and diagnosis → authority → responsibility → proportional form → operation and transport → feedback, hygiene, lineage and archive**
+
+This is a topology, not a compulsory waterfall. New information can send the work back to observation, authority or responsibility.
 
 ## Start with the problem, not the vocabulary
 
@@ -34,26 +34,22 @@ Moon Source treats context as an organized field rather than a pile of text. Its
 | Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Reorganize a mature project or corpus whose inherited containers no longer match its semantic responsibilities | [🧵 Semantic Reweave](docs/SEMANTIC_REWEAVE.md) |
 | Retrieve, process, metabolize or promote governed source material | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) |
-| Project multidimensional artifact and source state onto durable workspace surfaces, with optional intake, action queues, lifecycle views, stamps and handoffs | [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
+| Project multidimensional artifact and source state onto durable workspace surfaces | [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
 | Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [🔗 Connected Sources](portables/connected-sources/README.md) |
 | Structure recurring context, continuity or handoffs | [🧱 Moon Source Language](portables/msl/README.md) |
-| Route work across ChatGPT surfaces, models and execution modes, including post-Work closure | [🔀 Chat–Work](portables/chat-work/README.md) |
+| Route work across ChatGPT surfaces, models and execution modes | [🔀 Chat–Work](portables/chat-work/README.md) |
 
 ## First use
 
-Moon Source is a public context architecture: a set of reusable methods for deciding what should exist, what governs, what travels and what stays current. It is not an application that installs a background service, memory system, connector, model switch or hidden permission.
+Moon Source is a context architecture, not an application that installs a background service, memory system, connector, model switch or hidden permission. Usually nothing is installed.
 
-Usually nothing is installed. Markdown gives a person or an AI inspectable instructions and methods; it does not create access, activation, synchronization or authority by itself.
+If you are a human exploring the repository, choose the smallest route in the map above and open that capability's README. If you give the full repository to an AI, use [`MOON_SOURCE_AI_KERNEL.md`](MOON_SOURCE_AI_KERNEL.md) for AI-side routing. For one concrete need, start with the smallest relevant capability instead of loading the whole repository.
 
-If you are a human exploring the full repository, read this section, choose the smallest route in the map above and open that capability's readable README surface. Its prominent **Start** link leads to the canonical body's embedded onboarding section. If you give the full repository to an AI, use [`MOON_SOURCE_AI_KERNEL.md`](MOON_SOURCE_AI_KERNEL.md) for AI-side routing. For one concrete need, start with the smallest relevant capability instead of loading the whole repository.
+Each public capability has one canonical semantic body. A README may make it easier to browse and a package or website mirror may make it easier to transport, but those surfaces do not create another identity, authority or version.
 
-Each public capability has one canonical semantic body. A lightweight README may present that body for human browsing, and a standalone package or website mirror may distribute it, but none of those surfaces creates another identity, authority or version.
+> **One canonical body, multiple legitimate surfaces.**
 
-> **One canonical body, multiple legitimate surfaces.** The README makes a capability legible. The canonical body remains the semantic authority and carries operative First use. Packages and mirrors carry the canonical artifact for transport.
-
-### A small first run
-
-Ask the AI:
+A useful first prompt is:
 
 ```text
 I need help with [describe the real need].
@@ -63,61 +59,27 @@ Tell me the canonical file, the first action, what happens next,
 and any step I must perform manually.
 ```
 
-For example, if a messy request needs clarification before execution, choose Preflight and say:
+Access is not activation. A reachable source is not automatically authoritative, and a successful write is not accepted until the relevant readback succeeds.
 
-```text
-Use Preflight before acting.
-Reconstruct my intended outcome, corrections and constraints in ordinary language,
-then show me the task you would execute.
-```
-
-Access is not activation. The repository does not silently grant a connector, account, model, permission, memory or write capability; a reachable source is not automatically authoritative; and a successful write is not accepted until the relevant readback succeeds.
-
-If the answer becomes more architectural than useful, say: “Use the smallest relevant capability, ordinary language, and give me the next concrete action. Do not load the whole repository.”
-
-You do not need to read the whole repository before using Moon Source. The [AI Kernel](MOON_SOURCE_AI_KERNEL.md) is the routing layer for loading the smallest relevant part of the public body.
-
-## The architecture in one minute
-
-Moon Source follows a decision loop:
-
-**field → observation and diagnosis → authority → responsibility → proportional form → operation and transport → feedback, hygiene, lineage and archive**
-
-This is a topology, not a compulsory waterfall. New information can send the work back to observation, authority or responsibility.
-
-A few principles carry most of the architecture:
+## Core principles
 
 - **Field before form.** Do not decide the artifact before understanding the situation.
-- **Access is not authority.** A connector, search result or reachable file does not become governing context merely because AI can retrieve it.
+- **Access is not authority.** Retrieval, connectors and search results do not become governing context merely because AI can reach them.
 - **Retrieval is not instruction authority.** Source text may supply data without gaining permission to redirect the task or authorize an action.
 - **Materialize proportionately.** Create the smallest durable form that can carry the responsibility without losing provenance or ownership.
-- **Freshness and readback matter.** A mutation is not complete merely because a write call succeeded.
-- **Operations have different authority effects.** Retrieve reads, process transforms working material, metabolize integrates a real delta and promote generalizes a proven mechanism; none of these verbs is a substitute for the others.
-- **Work completion is not cycle completion.** When sustained execution returns, Chat verifies the real state, closes bounded residuals and re-enters Work only for irreducible remaining work.
-- **Humans should not have to prompt like machines.** [Preflight](portables/preflight/PREFLIGHT_V2.md) reconstructs intended meaning, desired outcome, corrections and constraints before execution; authority, provenance, freshness, risk and mutation checks activate only when consequence makes them material.
+- **Freshness and readback matter.** Mutation is incomplete until the relevant state is verified.
+- **Different operations have different authority effects.** Retrieve reads; process transforms working material; metabolize integrates a real delta; promote generalizes a proven mechanism.
+- **Humans should not have to prompt like machines.** [Preflight](portables/preflight/PREFLIGHT_V2.md) reconstructs intended meaning before execution and escalates guardrails only when consequence requires them.
 - **Read the scene, not only the sentence.** [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) reconstructs actors, relationship and plausible subtext while keeping observation, inference and overread distinct.
-- **A workspace should show state without inventing authority.** [Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) separates identity, provenance, lifecycle, explicit action, revision, source-of-record and physical projection, with single-actor and multi-actor profiles.
+- **Workspace state must not invent authority.** [Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) projects lifecycle, action and provenance onto durable surfaces without replacing the source of record.
 
-## Examples
+## Public capabilities
 
-The [hypothetical application-scenario gallery](examples/application-scenarios/) makes the architecture easier to inspect by placing the same contextual method inside different kinds of everyday problems.
+Moon Source publishes reusable public capabilities with one canonical semantic body each. Some also support standalone distribution; others live only in the repository because their value depends on the wider architecture.
 
-The setting changes from scenario to scenario; the underlying questions stay recognizable: what is happening, what governs, who is responsible, what deserves a durable form, and how that form should stay current.
+The authoritative inventory, chronology, status and material-update history lives in the [public capability registry](registry/PUBLIC_CAPABILITIES.md), with a machine-readable contract at [registry/public-capabilities.json](registry/public-capabilities.json).
 
-The gallery uses fictional, didactic scenarios so the method can be demonstrated without importing private, client or institutional material.
-
-## Standalone distributions and downloads
-
-Setup, Preflight, Be My Eyes, Connected Sources, MSL and Chat–Work are public capabilities that currently support standalone distribution. Their architectural roles remain independent of the fact that they can travel as self-contained packages.
-
-- 🧭 [**Setup**](portables/setup/README.md) — adaptive routing to the smallest useful personal or project context setup, including a probed persistent-source route; current version **3.1**.
-- 🛫 [**Preflight**](portables/preflight/README.md) — human-intent reconstruction before execution, with heavier guardrails only when consequence requires them; current version **2.2**.
-- 👁️ [**Be My Eyes**](portables/be-my-eyes/README.md) — contextual scene reading for human communication, including forward and inverse/reception reads, anti-overread discipline and response-axis selection.
-- 🔗 [**Connected Sources**](portables/connected-sources/README.md) — Living Source Protocol for standalone, connected-read, living-source and federated operation with explicit source authority, freshness, mutation and fallback boundaries; current version **1.1-public**. Its canonical semantic body remains in [`docs/CONNECTED_SOURCES.md`](docs/CONNECTED_SOURCES.md).
-- 🧱 [**Moon Source Language**](portables/msl/README.md) — structural grammar for governed semantic passage across sources, capabilities, interfaces and surfaces; current version **5.1**.
-- 🔀 [**Chat–Work Routing Protocol**](portables/chat-work/README.md) — object-routed execution across Chat, Work and Codex, Budget Survivability, model-neutral Intelligence Distillation, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, optional explicitly activated ephemeral Sprint Mode, bounded Decision Sprint, auditable Decision Trace, subordinate model-specific strategy adapters, Sprint Receipts, Chat Postflight, bounded repair, acceptance and delta-only re-entry; current version **5.1**; optional Astra submodule **1.2**.
-
-🗂️ [**Open the download hub**](DOWNLOADS.md) to browse readable surfaces, open canonical bodies or download the supported standalone packages.
+For portable packages and human-readable entry points, use the [download hub](DOWNLOADS.md). For examples of the architecture applied to fictional everyday situations, see the [application-scenario gallery](examples/application-scenarios/).
 
 ## Where Moon Source sits in an AI stack
 
@@ -132,57 +94,36 @@ flowchart TB
     context --- moon
 ```
 
-This is an orientation model, not a universal stack ontology. A product may combine or split these responsibilities, and Moon Source can operate across boundaries rather than inside only one box.
+This is an orientation model, not a universal stack ontology. Products may combine or split these responsibilities.
 
-Moon Source primarily operates in and around governed context: it helps determine what the harness may trust, retrieve, carry forward, mutate and verify. It complements an agent harness by governing the context path around execution.
+Moon Source primarily operates in and around governed context: it helps determine what a harness may trust, retrieve, carry forward, mutate and verify. RAG, memory stores, MCP/tools and other retrieval or orchestration mechanisms can participate in these layers, but Moon Source is not the model, the harness, the RAG engine or the agent runtime.
 
-RAG, memory stores, MCP/tools and other retrieval or orchestration mechanisms can participate in these layers. Moon Source is not the model, the harness, the RAG engine or the agent runtime; it is a context-architecture and governance layer that can sit around or across them.
-
-## Current public capabilities
-
-Moon Source publishes public capabilities with one canonical semantic body each. The architectural role says what a capability is responsible for; an optional standalone distribution says how that body can travel. A registry view may filter repository-only capabilities or standalone distributions, but neither filter is a second semantic inventory.
-
-| Repository-only capability | Responsibility |
-|---|---|
-| [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) | Retrieve, process, metabolize and promote governed source changes, with lifecycle and legacy-successor rules |
-| [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) | Project multidimensional artifact and source state onto durable workspace surfaces, with bounded routing, revision-bound stamps, source-of-record pointers and provider readback |
-| [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) | Bounded diagnosis and conservative repair of context corpora |
-| [🧵 Semantic Reweave](docs/SEMANTIC_REWEAVE.md) | Recover latent semantic topology and apply the smallest authority-preserving reorganization of mature projects or corpora |
-| [🎚️ Signal Calibration](docs/SIGNAL_CALIBRATION.md) | Useful working inference without certainty inflation |
-| [🧩 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) | Project a stable method into a reusable procedure without moving source authority |
-| [🧾 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage, content custody and immaterial-asset protection |
-| [🛠️ Operational Devices](docs/OPERATIONAL_DEVICES.md) | Bounded embodiments of reusable procedures on concrete execution surfaces |
-| [🛡️ Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) | Read-only-first diagnosis, failure boundaries, ordinary and Context Receipts, reversibility and freshness |
-| [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) | Turn recurring failure into the smallest validated reusable mechanism |
-
-The canonical chronology, roles, status and material-update history of all sixteen capabilities lives in the [public capability registry](registry/PUBLIC_CAPABILITIES.md); its machine-readable contract is [registry/public-capabilities.json](registry/public-capabilities.json). The six standalone distributions are a filtered distribution view. Connected Sources is a structural crown jewel at [docs/CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md), with dated ChatGPT product facts subordinate to [its adapter notes](docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md).
-
-## Evidence, boundary and reuse
+## Evidence, boundaries and reuse
 
 Moon Source is deliberately strict about the difference between an artifact existing and a claim being proven.
 
-- [Evidence and Claims](EVIDENCE_AND_CLAIMS.md) defines what current public artifacts actually support and what remains unproven.
-- [Public Boundary](PUBLIC_BOUNDARY.md) defines what is public and what remains reserved, including private corpora and protected operational machinery.
-- [Existing Implementations](docs/EXISTING_IMPLEMENTATIONS.md) maps the inspectable artifacts behind current capability statements.
+- [Evidence and Claims](EVIDENCE_AND_CLAIMS.md) defines what current public artifacts support and what remains unproven.
+- [Public Boundary](PUBLIC_BOUNDARY.md) defines what is public and what remains reserved.
+- [Existing Implementations](docs/EXISTING_IMPLEMENTATIONS.md) maps inspectable artifacts behind current capability statements.
 - [Licensing](LICENSING.md) governs reuse: code and automation use **Apache-2.0**; documentation, methods and supported standalone distributions use **CC BY 4.0**, subject to file-level metadata and third-party terms.
 
 A public artifact is not an adoption claim. A tested slice is not proof of a universal runtime. The repository does not claim external adoption, measured impact, enterprise readiness, universal superiority or product-market fit without evidence.
 
 ## Repository maintenance
 
-The public repository includes a small executable maintenance layer over its existing validators. Contributors can run the same bounded local contract used by CI with:
+The public repository includes a bounded executable maintenance layer over its validators:
 
 ```bash
 python scripts/moon_source.py validate
 ```
 
-This checks licensing and REUSE, citation metadata, links, the public capability registry, the AI Kernel package, title/version separation, public stamps, the generated capability digest and the maintenance CLI itself. Current canonical-to-website mirror state is a separate read-only check:
+Current canonical-to-website mirror state is a separate read-only check:
 
 ```bash
 python scripts/moon_source.py mirror --check
 ```
 
-The CLI is repository maintenance tooling. It does not add a public capability, change semantic versioning or replace the canonical source contracts.
+The CLI is repository maintenance tooling. It does not add a public capability, change semantic versioning or replace canonical source contracts.
 
 ## Applying Moon Source to an organization
 
@@ -204,33 +145,23 @@ This is a professional-service bridge, not a claim that Moon Source is a mature 
 
 This bounded digest is generated from the unified capability registry. It is not a commit log.
 
-## Repository map
-
-Use the README for orientation; use the deeper files when the responsibility actually belongs there.
+## Repository navigation
 
 | Need | Canonical route |
 |---|---|
-| Full architecture and Field-to-Form diagnostic | [🏗️ Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
+| Full architecture and Field-to-Form diagnostic | [🏗️ Architecture](ARCHITECTURE.md#field-to-form) |
 | AI-side routing through the public corpus | [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md) |
-| Contextual scene-reading capability | [Be My Eyes](portables/be-my-eyes/README.md) |
-| Connected source capability | [Connected Sources](portables/connected-sources/README.md) |
-| Source operation grammar, lifecycle and succession | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) |
-| Artifact/source state projection, workspace lifecycle and action routing | [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
 | Definitions and responsibility boundaries | [Terminology](docs/TERMINOLOGY.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |
 | Unified public capability registry | [registry/PUBLIC_CAPABILITIES.md](registry/PUBLIC_CAPABILITIES.md) |
-| Versioning and release rules | [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) |
-| Public naming and title/version separation | [Repository Naming and Versioning](docs/REPOSITORY_NAMING_AND_VERSIONING.md) |
+| Versioning, naming and release rules | [Versioning and Releases](docs/VERSIONING_AND_RELEASES.md) + [Repository Naming and Versioning](docs/REPOSITORY_NAMING_AND_VERSIONING.md) |
 | Portable publication contract | [Portable Design Contract](docs/PORTABLE_DESIGN_CONTRACT.md) |
 | Contributing | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Human-facing website | [luahelena.com.br/moonsource](https://www.luahelena.com.br/moonsource/?lang=en) |
-| Related public applied/system body | [Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) |
 | Moon's broader professional context | [luahelena.com.br/ia](https://www.luahelena.com.br/ia/?lang=en) |
 
-## Current baseline
+## Related public project
 
-Public architecture baseline: **2026-08-16**. Additive public capabilities, operational hardening and licensing updates continued through **2026-09-13**; Preflight is **2.2**, Be My Eyes remains **1.0-public**, Connected Sources remains a structural crown jewel at its canonical docs path, Lifecycle Workspace Router is repository-only and independently versioned at **1.2**, and the public registry is unified schema **2.0** while Chat–Work routing remains the tri-surface **V4** protocol with current semantic subversion **5.1**.
-
-Current structural grammar: **Moon Source Language**, version **5.1**. Current standalone distributions: **Moon Source Setup** (version **3.1**), **Preflight** (version **2.2**), **Be My Eyes** (version **1.0-public**), **Connected Sources** (version **1.1-public**), **Moon Source Language** (version **5.1**) and **Chat–Work Routing Protocol** (version **5.1**). Sprint Mode is optional, explicitly activated and ephemeral; it does not expose allowance/reset state or persist as a profile. The Astra Strategy Adapter is optional, subordinate and date-sensitive. This repository remains the semantic and versioning authority; the website is the human-facing facade and its downloads are convenience mirrors.
+[Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) is a separate, optional applied/system body for domain-shaped modules. It can use Moon Source governance where useful, but it is not part of Moon Source and is not a permanent runtime dependency.
 
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
 
