@@ -14,7 +14,7 @@ The table's **Summary title** is the concise browsing label. The registry's sema
 | ID | Summary title | Architectural role | Version | Status | Canonical body | Standalone distribution |
 |---|---|---|---:|---|---|---|
 | be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) | contextual scene-reading method | 1.0-public | current | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md#first-use) | [ZIP](../downloads/be-my-eyes-1.0-public.zip) |
-| chat-work-routing | [Chat–Work Routing Protocol](../portables/chat-work/README.md) | operational routing protocol | 5.1 | current | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) | [ZIP](../downloads/chat-work-routing-protocol-v4.zip) |
+| chat-work-routing | [Chat–Work Routing Protocol](../portables/chat-work/README.md) | operational routing protocol | 5.2 | current | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) | [ZIP](../downloads/chat-work-routing-protocol-v4.zip) |
 | connected-sources | [Connected Sources](../portables/connected-sources/README.md) | structural crown jewel | 1.1-public | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources-1.1-public.zip) |
 | credits-attribution-ops | 🧾 Credits & Attribution Ops | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
 | failure-foundry | 🏭 Failure to Capability — Failure Foundry | failure-to-capability method | — | current | [FAILURE_FOUNDRY.md](../docs/FAILURE_FOUNDRY.md) | — |
@@ -97,7 +97,7 @@ material release and do not establish a naming precedent.
 
 The current independently versioned capabilities are Lifecycle Workspace Router at
 1.2, Connected Sources at 1.1-public, MSL at 5.1, Chat–Work at 5.1,
-Setup at 3.1, Preflight at 2.2 and Be My Eyes at 1.0-public. Chat–Work 5.1
+Setup at 3.1, Preflight at 2.2 and Be My Eyes at 1.0-public. Chat–Work 5.2
 adds a model-neutral strategy-adapter boundary and subordinate Astra Strategy
 Adapter 1.2 guidance while preserving optional explicitly activated ephemeral
 Sprint Mode, bounded Decision Sprint, Sprint Receipts and the model-neutral
