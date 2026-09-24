@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-24 — Chat–Work 6.1 · surface-neutral control-root routing
+
+- Removed the remaining **Chat-first default** from the public core while preserving the Chat → Work/Codex → Chat loop as the named first-class **Chat–Work Loop Profile**.
+- Added the **Control Root Law**, **Surface Continuity Law** and **Surface Transition Gate**: preserve the current competent root, separate control surface/root from root model and execution harness, and move the user only for a material capability, locality, permission, verification or preference reason.
+- Replaced generic Chat-only closure with **Control-Root Postflight**; Work, Codex or another compatible root may now converge and close the run on the same surface when the runtime supports it.
+- Updated handoff/return schemas, Route Card, surface gates, lifecycle and First Use so surface switching is a fallback rather than ritual workflow.
+- Advanced the GPT-6 Sol/Luna adapter to **1.3** and the Astra adapter to **1.4** for surface-neutral root alignment.
+- Advanced the canonical protocol from **6.0 to 6.1**. MSL remains **5.1**; canonical filename and package coordinates remain stable.
+
 ## 2026-09-24 — Chat–Work 6.0 · delegation-first heterogeneous orchestration
 
 - Promoted **delegation topology** to a first-class routing dimension and added the Delegation-First Law: Work/Codex roots should assemble the cheapest sufficient internal model topology before asking the user to switch models or surfaces manually.

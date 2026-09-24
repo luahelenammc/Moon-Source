@@ -15,9 +15,9 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-24; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, through the 5.x strategy/adaptation line, and to the delegation-first 6.0 architecture on 2026-09-24.
+- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-24; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, through the 5.x strategy/adaptation line, to delegation-first 6.0 and then surface-neutral control-root 6.1 on 2026-09-24.
 - Current structural grammar: Moon Source Language, version 5.1.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (legacy distributed version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 6.0).
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (legacy distributed version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 6.1).
 - All fifteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry, while Lifecycle Workspace Router is a repository-only capability with its own independent version.
 - Credits & Attribution Ops, Lifecycle Workspace Router, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -222,6 +222,20 @@ The release removes Astra-specific product calibration from stable core prose an
 ### Preflight 2.1 dependency-coherence release — 2026-09-09
 
 Preflight 2.1 updates the canonical dependency route from the retired MSL 5.0 body to the then-current MSL 5.1 path. The Preflight reconstruction method is unchanged. Because the canonical Preflight body changed, the repository +0.1 rule advances its release state from 2.0 to 2.1; at that checkpoint the V2 title and package family remained in use. The current canonical filename is now the stable `PREFLIGHT.md` path.
+
+### Chat–Work 6.1 release — 2026-09-24
+
+Chat–Work 6.1 is a **material additive-and-superseding routing release** within the V6 generation, not an MSL grammar change.
+
+It preserves 6.0 Delegation-First orchestration and removes the remaining Chat-first assumption from the public core. The current competent control root becomes the continuity default; **control surface/root**, **root model/tier** and **execution surface/harness** are now explicit separate routing dimensions.
+
+The historical **Chat → Work/Codex → Chat** loop remains fully supported as the named **Chat–Work Loop Profile**, but AUTO no longer requires it. Work may remain root through delegated execution and postflight; Codex may remain root for repository-shaped objectives; frontier roots may delegate cheaper workers and converge without ritual return to Chat.
+
+Surface switching is now gated by material capability, persistence/locality, permission, verification, capability-floor or explicit user-preference reasons. AUTO should first try direct completion, current-root tools, internal delegation and bounded cross-surface execution with root continuity.
+
+Control-Root Postflight replaces Chat Postflight as the generic closure law; Chat Postflight remains a compatibility/profile-specific name when the Chat–Work Loop Profile is active.
+
+The GPT-6 Sol/Luna adapter advances to **1.3** and the Astra adapter to **1.4** for surface-neutral root alignment. Chat–Work 6.1 supersedes 6.0; the canonical filename and standalone package coordinates remain stable. MSL remains 5.1.
 
 ### Chat–Work 6.0 release — 2026-09-24
 

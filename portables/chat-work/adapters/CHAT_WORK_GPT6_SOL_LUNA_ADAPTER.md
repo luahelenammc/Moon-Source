@@ -5,7 +5,7 @@
 ## Meta
 
 - **status:** current subordinate adapter
-- **adapter version:** 1.2
+- **adapter version:** 1.3
 - **as of:** 2026-09-24
 - **governing capability:** [Chat–Work Routing Protocol](../CHAT_WORK_ROUTING_PROTOCOL.md)
 - **scope:** GPT-6 Sol and GPT-6 Luna routing in Work and Codex, including heterogeneous subagent topology, child-model inheritance/overrides and API-shaped reasoning about executor choice
@@ -18,7 +18,7 @@
 
 ## 1. Why this adapter exists
 
-GPT-6 changes the practical executor geometry, and current subagent support makes heterogeneous model delegation a first-class execution option under Chat–Work 6.0.
+GPT-6 changes the practical executor geometry, and current subagent support makes heterogeneous model delegation a first-class execution option under Chat–Work 6.1. The 6.1 core is surface-neutral: Sol/Luna topology does not require Chat to be the control root when Work or Codex can retain objective, convergence and postflight.
 
 At launch, OpenAI positions:
 
@@ -99,6 +99,12 @@ Strong Sol-shaped work includes:
 - high-consequence final review where Luna's result is plausible but not sufficiently trustworthy.
 
 Sol is not automatically the default because a task is important. It is selected when the **irreducible execution geometry** is strong.
+
+## Surface-neutral topology calibration
+
+Under Chat–Work 6.1, the Sol/Luna pattern is independent from a mandatory Chat return loop. A Sol root in Work or Codex may delegate bounded volume to Luna, converge the result and perform Control-Root Postflight on the same surface when the harness supports it. Chat → Work/Codex → Chat remains valid when the named Chat–Work Loop Profile is active or the user prefers Chat continuity.
+
+A model change, child spawn and surface transition are separate events. Prefer internal child routing first; preserve the current competent root when possible; request a human-visible surface switch only when the required harness, permission, capability floor or verification path cannot be satisfied internally.
 
 ## 5. The overlap zone: balanced is not a missing product
 
@@ -396,7 +402,7 @@ When Sol underperforms:
 - do not automatically expand context or autonomy;
 - isolate the remaining hard delta;
 - use Astra only if available, justified by the frontier gate and permitted by the active Astra adapter/user profile;
-- preserve tests, receipts and Chat Postflight.
+- preserve tests, receipts and Control-Root Postflight.
 
 ## 13. Locality and migration note
 
