@@ -54,17 +54,18 @@
       "architectural_role": "operational_routing_protocol",
       "best_for": "ChatGPT users and builders who need routing to adapt to resource posture, enabled capabilities and quality/throughput preferences while isolating hard reasoning deltas, preserving capability floors and closing work audibly across Chat, Work and optional Codex",
       "canonical_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md",
-      "claim_ceiling": "Published Chat–Work V4 protocol, subversion 5.1; operational routing heuristic only, with optional subordinate model-specific strategy guidance; not an OpenAI policy, native Sprint Mode feature, allowance/reset detector, price or economic model, benchmark, guaranteed savings/quality/quota-use claim or proof that a native chat-work-router V4 skill is installed",
+      "claim_ceiling": "Published Chat–Work V4 protocol, subversion 5.2; operational routing heuristic only, with optional subordinate model-specific strategy guidance; not an OpenAI policy, native Sprint Mode feature, allowance/reset detector, price or economic model, benchmark, guaranteed savings/quality/quota-use claim or proof that a native chat-work-router V4 skill is installed",
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
       "dependencies": [
         "Uses MSL-5.1 terminology; product and model calibration is date-sensitive and belongs in subordinate adapter notes",
         "Source transport records governing source or family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback; a locator is not authority",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions",
-        "Optional Astra strategy adapter v1.2 at portables/chat-work/astra/CHAT_WORK_ASTRA_ADAPTER.md; subordinate to the canonical Chat–Work body, independently versioned as a submodule, setup-gated, and not a second capability identity"
+        "Optional Astra strategy adapter v1.2 at portables/chat-work/astra/CHAT_WORK_ASTRA_ADAPTER.md; subordinate to the canonical Chat–Work body, independently versioned as a submodule, setup-gated, and not a second capability identity",
+        "GPT-6 Sol/Luna strategy adapter v1.0 at portables/chat-work/gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md; dated Work/Codex executor calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics"
       ],
       "difficulty": "advanced",
       "distribution": {
-        "canonical_sha256": "64bf38c40d994a1f0db4cf55bb9ef4e596c086c93b171a221585e718ca9fa865",
+        "canonical_sha256": "160da46d42e8bbe30f9baf72de755b605e38898550cf245d3f0bf5f4827ff794",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_5_1.md",
@@ -80,15 +81,19 @@
           {
             "archive_path": "astra/CHAT_WORK_ASTRA_ADAPTER.md",
             "source_path": "portables/chat-work/astra/CHAT_WORK_ASTRA_ADAPTER.md"
+          },
+          {
+            "archive_path": "gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md",
+            "source_path": "portables/chat-work/gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md"
           }
         ]
       },
-      "freshness": "protocol semantics as of 2026-09-09; model-specific product calibration is dated, replaceable adapter guidance; recheck volatile behavior, model names, prices, availability and usage pools",
+      "freshness": "protocol semantics as of 2026-09-23; model-specific product calibration is dated, replaceable adapter guidance; recheck volatile behavior, model names, prices, availability and usage pools",
       "function": "Route by sovereign object and workload shape across Chat, Work and optional Codex using configurable execution profiles, observed surface availability, capability floors, Budget Survivability, the model-neutral Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, bounded micro-bursts, optional explicitly activated ephemeral Sprint Mode, a finite Decision Sprint sibling-delta exception, auditable Decision Trace for material higher-tier rulings, decision-bearing return capsules, subordinate model-specific strategy adapters, Sprint Receipts, Chat Postflight and delta-only re-entry",
       "id": "chat-work-routing",
       "language": "English",
-      "last_material_update_on": "2026-09-10",
-      "last_material_update_summary": "Integrated the independently versioned Astra Strategy Adapter 1.2 as an internal Chat–Work submodule with a mandatory compact setup/customization contract; Chat–Work remains 5.1 and model-neutral.",
+      "last_material_update_on": "2026-09-23",
+      "last_material_update_summary": "Advanced Chat–Work to 5.2 with the dated GPT-6 Sol/Luna executor adapter, the no-one-to-one named-model tier rule, and a rebuilt three-member standalone package; preserved the model-neutral core and Astra adapter boundary.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -97,10 +102,10 @@
       "readable_surface_path": "portables/chat-work/README.md",
       "status": "current",
       "summary_title": "Chat–Work Routing Protocol",
-      "supersedes": "5.0",
+      "supersedes": "5.1",
       "surface_title": "Chat–Work Routing Protocol — Moon Source portable",
       "title": "Chat–Work Routing Protocol",
-      "version": "5.1",
+      "version": "5.2",
       "versioning_mode": "independent_public_capability_version"
     },
     {

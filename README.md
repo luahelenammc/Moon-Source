@@ -136,11 +136,11 @@ This is a professional-service bridge, not a claim that Moon Source is a mature 
 ## Recent capability changes
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
+- **2026-09-23 — Chat–Work Routing Protocol:** Advanced Chat–Work to 5.2 with the dated GPT-6 Sol/Luna executor adapter, the no-one-to-one named-model tier rule, and a rebuilt three-member standalone package; preserved the model-neutral core and Astra adapter boundary.
 - **2026-09-17 — Credits & Attribution Ops:** Added proactive donor envelopes, pre-canonicalization provenance readback, AI-mediated lineage-drift detection, evidence-ranked lineage-conflict audit and anti-totalization boundaries between local authorship and upstream lineage.
 - **2026-09-15 — Semantic Reweave:** Published the initial public Semantic Reweave method with the Container Erasure Test, mismatch taxonomy, authority-first analysis, least-mutation repair ladder and provenance-preserving readback.
 - **2026-09-13 — Lifecycle Workspace Router:** Material additive-and-corrective release to 1.2: adds explicit operational control-plane and reconciliation authority, a revision-bound worked example, provider-aware move/readback and partial-projection rules, and a method/reference-architecture framing.
 - **2026-09-11 — Signal Calibration:** Added the Interior–Membrane Split to preserve working signal while bounding circulation, with causal-retention and epistemic-conservation checks.
-- **2026-09-10 — Preflight:** Added bounded active-frame correction and persistence/promotion-candidacy boundaries; Preflight is now version 2.2.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
 This bounded digest is generated from the unified capability registry. It is not a commit log.

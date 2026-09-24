@@ -15,6 +15,8 @@
 
 Astra is an optional subordinate submodule of this Chat–Work portable, not a prescribed work style. Its canonical adapter now lives inside this module at [`astra/CHAT_WORK_ASTRA_ADAPTER.md`](astra/CHAT_WORK_ASTRA_ADAPTER.md) and is independently versioned at **1.2**.
 
+GPT-6 Sol/Luna has a separate dated executor calibration at [`gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md`](gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md), version **1.0**. It preserves the model-neutral core while mapping the new family to Work/Codex execution: Luna for focused/high-volume work, Sol for strong reasoning inside complex agentic execution, and no invented one-to-one named model for the semantic `balanced` tier.
+
 When Astra is actually available, Chat–Work can compile it as a judgment brain, broad reviewer, co-architect, bounded executor or sustained full-run surface. Role, autonomy, reasoning depth, context breadth and mutation authority remain separate.
 
 Before Astra execution begins, the adapter runs its own compact Setup Contract. No preset is the default: the user may choose AUTO, reuse a verified profile or apply a one-run override, and only then does the strategy compiler select a geometry inside that accepted envelope.
@@ -27,7 +29,7 @@ Examples of valid requests:
 - “Give Astra a sustained run for this finite objective, with checkpoints and verification.”
 - “Run a Decision Sprint across this finite docket.”
 
-Capsules are useful for bounded judgment, but they are not mandatory for broad review, co-architecture or execution. The user may override the compiled strategy; authority, scope, safety and verification still govern. Open the [Astra Strategy Adapter](astra/CHAT_WORK_ASTRA_ADAPTER.md) for the date-sensitive subordinate guidance.
+Capsules are useful for bounded judgment, but they are not mandatory for broad review, co-architecture or execution. The user may override the compiled strategy; authority, scope, safety and verification still govern. Open the [Astra Strategy Adapter](astra/CHAT_WORK_ASTRA_ADAPTER.md) for frontier strategy and the [GPT-6 Sol/Luna Adapter](gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md) for the current Work/Codex executor calibration.
 
 ## What it does
 
@@ -41,15 +43,16 @@ It does not itself create access to a model, tool, connector or execution surfac
 
 ## Current identity
 
-- **Version:** 5.1
+- **Version:** 5.2
 - **Protocol family:** V4
 - **Status:** current · supported standalone distribution
 - **Optional Astra submodule:** [`astra/CHAT_WORK_ASTRA_ADAPTER.md`](astra/CHAT_WORK_ASTRA_ADAPTER.md) · version **1.2**
+- **GPT-6 Sol/Luna submodule:** [`gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md`](gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md) · version **1.0**
 - **Canonical body:** [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
 - **Package:** [`downloads/chat-work-routing-protocol-v4.zip`](../../downloads/chat-work-routing-protocol-v4.zip)
 - **License:** CC BY 4.0 · see [Licensing](../../LICENSING.md)
 
-> **Authority:** This README is the human-facing presentation surface. [`CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md) remains the semantic authority and contains the operative **First use** instructions. The Astra adapter is subordinate to that body and does not create a second capability identity.
+> **Authority:** This README is the human-facing presentation surface. [`CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md) remains the semantic authority and contains the operative **First use** instructions. The Astra and GPT-6 Sol/Luna adapters are subordinate to that body and do not create separate capability identities.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
