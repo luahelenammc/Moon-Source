@@ -4,14 +4,14 @@
 
 > **Humans should not have to prompt like machines.**
 
-**Version:** 2.3  **MSL relation:** Moon Source Language 5.1 is consulted only when a materialization has earned existence.  
+**Version:** 2.3  **MSL relation:** Moon Source Language 5.1 is consulted only when a materialization has earned existence.<br>
 
 **Status:** current public portable  
 **Public since:** 2026-08-23  
 **V2 rebase:** 2026-09-07  
 **Portable promotion:** 2026-09-07  
-**2.3 refinement:** 2026-09-23  
-**Canonical path:** `portables/preflight/PREFLIGHT_V2.md`  
+**2.3 refinement:** 2026-09-23<br>
+**Canonical path:** `portables/preflight/PREFLIGHT.md`<br>
 **Language:** English; execution should follow the user's language  
 **Audience:** general AI users, power users, writers, teams and builders  
 **Creator and final human authority:** Lua Helena Moon Martins Cardoso (Moon)  
@@ -578,7 +578,7 @@ Preflight fails when it becomes:
 | [Source Hygiene](../../docs/SOURCE_HYGIENE.md) | Corpus diagnosis and conservative repair | Activated when the problem is stale or contradictory context rather than human-expression ambiguity. |
 | [Credits & Attribution Ops](../../docs/CREDITS_ATTRIBUTION_OPS.md) | Intellectual lineage and content custody | Activated when material identity, permission or derivative lineage matters. |
 | [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) | Bounded execution reliability and receipts | Preflight may identify verification or recoverability requirements; Operational Reliability owns safeguards, failure diagnosis, retry/rollback discipline and receipts when execution earns them. |
-| [Moon Source Language](../msl/MSL_5_1.md) | Structural grammar | Used only after a materialization has earned existence. |
+| [Moon Source Language](../msl/MOON_SOURCE_LANGUAGE.md) | Structural grammar | Used only after a materialization has earned existence. |
 
 Preflight is upstream of these components only in the sense that it reconstructs **what the human is asking for**. It does not become their authority.
 
@@ -619,7 +619,7 @@ human expression → intended meaning → faithful working task
 
 The V1 contribution is not discarded. Its authority, freshness, risk, destination, mutation and readback concerns survive as conditional routes and specialized safeguards.
 
-The superseded V1 body remains recoverable through Git history. On 2026-09-07, V2 was promoted from a repository component into a standalone public portable. Its current canonical identity is `portables/preflight/PREFLIGHT_V2.md`. The former `docs/PREFLIGHT.md` body is superseded; that path now exists only as a lightweight succession pointer, while historical bodies remain recoverable through Git history.
+The superseded V1 body remains recoverable through Git history. On 2026-09-07, V2 was promoted from a repository component into a standalone public portable at the then-current path `portables/preflight/PREFLIGHT_V2.md`. On 2026-09-24, the live body moved to the stable identity path `portables/preflight/PREFLIGHT.md` without changing Preflight's version or method semantics. The former `docs/PREFLIGHT.md` body is superseded; that path now exists only as a lightweight succession pointer, while historical bodies remain recoverable through Git history.
 
 This promotion created the Preflight portable family at version 2.0. At the time of that promotion it did not change the then-current MSL 4.3, Setup 3.0 or Chat–Work V4; MSL is now current at 5.1 after the 2026-09-09 release.
 

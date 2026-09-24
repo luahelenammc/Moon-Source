@@ -2,7 +2,7 @@
 
 **Sovereign Semantic Passage** — a structural language for moving situated context across sources, systems and surfaces without losing meaning, provenance, authority or boundaries.
 
-[▶️ Start here](MSL_5_1.md#first-use) · [⬇️ Download package](../../downloads/moon-source-language-5.1.zip) · [🌙 Moon Source](../../README.md)
+[▶️ Start here](MOON_SOURCE_LANGUAGE.md#first-use) · [⬇️ Download package](../../downloads/moon-source-language.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 
@@ -25,9 +25,9 @@ MSL is not executable code, a runtime, a connector, a universal ontology, a prod
 
 - **Version:** 5.1
 - **Status:** current · supported standalone distribution
-- **Canonical body:** [`MSL_5_1.md`](MSL_5_1.md)
+- **Canonical body:** [`MOON_SOURCE_LANGUAGE.md`](MOON_SOURCE_LANGUAGE.md)
 - **Previous lineage:** MSL 5.0, MSL 4.4 and MSL 4.3 remain recoverable through repository history
-- **Package:** [`moon-source-language-5.1.zip`](../../downloads/moon-source-language-5.1.zip)
+- **Package:** [`moon-source-language.zip`](../../downloads/moon-source-language.zip)
 - **License:** [CC BY 4.0](../../LICENSING.md)
 
 The canonical body contains the operative First use section. This README is a readable routing surface, not a second source of truth.

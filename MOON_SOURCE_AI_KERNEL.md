@@ -13,7 +13,7 @@ If you received the full repository or ZIP:
 1. Read this file first.
 2. Read `README.md` for orientation and public entry points.
 3. Reconstruct the user's actual intended task before loading more files.
-4. If the human meaning is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally, apply [Preflight](portables/preflight/PREFLIGHT_V2.md). If the reconstructed task has material source, freshness, public, sensitive or mutation consequences, let Preflight route only to the guardrails that consequence requires.
+4. If the human meaning is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally, apply [Preflight](portables/preflight/PREFLIGHT.md). If the reconstructed task has material source, freshness, public, sensitive or mutation consequences, let Preflight route only to the guardrails that consequence requires.
 5. Load only the smallest set of Moon Source modules that can answer or execute that task. This is Moon Source's **progressive disclosure**, or **just-in-time context loading**, discipline: load the next sufficient context rather than the whole repository by reflex.
 6. Use the authority map below when files overlap.
 7. Preserve the distinction between current state, historical material, public claims and private/non-disclosed machinery.
@@ -27,7 +27,7 @@ Use each file for the responsibility it actually owns:
 
 - `README.md` — orientation, public entry points and top-level routing.
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
-- `portables/preflight/PREFLIGHT_V2.md` — Preflight: human-intent reconstruction before execution, currently version 2.3, with a bounded success contract inside the reconstruction core and authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
+- `portables/preflight/PREFLIGHT.md` — Preflight: human-intent reconstruction before execution, currently version 2.3, with a bounded success contract inside the reconstruction core and authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
 - `portables/be-my-eyes/BE_MY_EYES.md` — canonical active Be My Eyes method and 1.0-public standalone distribution: contextual scene reading, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection.
 - `docs/CONNECTED_SOURCES.md` — canonical Connected Sources structural crown jewel and 1.1-public standalone distribution: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
 - `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` — subordinate dated ChatGPT product/reference facts; load only when current product behavior is materially relevant.
@@ -46,7 +46,7 @@ Use each file for the responsibility it actually owns:
 - `docs/SIGNAL_CALIBRATION.md` — bounded qualitative calibration for weak, convergent or ambiguous signals and working inference.
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router, currently version 3.1.
-- `portables/msl/MSL_5_1.md` — current public structural grammar for semantic passage and materialization. MSL is currently 5.1.
+- `portables/msl/MOON_SOURCE_LANGUAGE.md` — current public structural grammar for semantic passage and materialization. MSL is currently 5.1.
 - `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md` — current 5.2 closed-loop ChatGPT surface/model/reasoning and source-transport routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
 - `registry/PUBLIC_CAPABILITIES.md` — human-readable unified public capability identities, roles, versions, status and standalone-distribution routes.
 - `registry/public-capabilities.json` — machine-readable one-record-per-capability registry; standalone distribution is nested metadata and does not create a second semantic inventory.
@@ -75,9 +75,9 @@ When two files appear to conflict, do not flatten them together. First ask wheth
 - Connected Sources → `docs/CONNECTED_SOURCES.md`
 - Be My Eyes → `portables/be-my-eyes/BE_MY_EYES.md`
 - Chat–Work Routing Protocol → `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`
-- Moon Source Language → `portables/msl/MSL_5_1.md`
+- Moon Source Language → `portables/msl/MOON_SOURCE_LANGUAGE.md`
 - Moon Source Setup → `portables/setup/MOON_SOURCE_SETUP.md`
-- Preflight → `portables/preflight/PREFLIGHT_V2.md`
+- Preflight → `portables/preflight/PREFLIGHT.md`
 <!-- MOON-SOURCE-CANONICAL-AUTHORITY:END -->
 
 The canonical-authority map has one active semantic body per current public capability. Architectural responsibility and standalone distribution are independent metadata: a capability may be structural and distributable at the same time. Mirrors, ZIP packages and subordinate adapters are delivery or reference surfaces, not additional authorities.
@@ -93,7 +93,7 @@ Preflight is the general human-intent reconstruction layer before execution. It 
 ### If the human meaning itself needs reconstruction
 
 Load:
-- `portables/preflight/PREFLIGHT_V2.md`
+- `portables/preflight/PREFLIGHT.md`
 
 Use Preflight when the person is thinking aloud, mixing examples with requirements, correcting themselves, relying on context, expressing what they want to avoid more clearly than what they want, or otherwise risks being misunderstood by literal execution. Reconstruct the intended task first. Ask only if consequential ambiguity remains. Then load a specialized capability only if the reconstructed task materially requires source authority, freshness, provenance, public/sensitive boundaries, form selection, execution routing or mutation safeguards.
 
@@ -104,7 +104,7 @@ Load:
 
 Optionally load:
 - `ARCHITECTURE.md` if the user's context is already distributed across several sources or roles.
-- `portables/msl/MSL_5_1.md` only if the setup needs a custom governed structure beyond the standalone distribution itself.
+- `portables/msl/MOON_SOURCE_LANGUAGE.md` only if the setup needs a custom governed structure beyond the standalone distribution itself.
 
 Do not load the whole architecture merely to run Setup.
 
@@ -116,7 +116,7 @@ Load:
 Then load only as needed:
 - `docs/RESPONSIBILITY_MAP.md` for ownership/authority collisions.
 - `docs/TERMINOLOGY.md` for translation or unclear vocabulary.
-- `portables/msl/MSL_5_1.md` once a materialization actually earns existence.
+- `portables/msl/MOON_SOURCE_LANGUAGE.md` once a materialization actually earns existence.
 - `docs/LIFECYCLE_WORKSPACE_ROUTER.md` when the mess is specifically a shared file workspace whose intake, queues, lifecycle, review state, durable sources or routing history are hard to read.
 - `docs/SEMANTIC_REWEAVE.md` when the project already has substantial accumulated structure and the question is whether inherited groupings still represent the material's semantic topology.
 
@@ -140,7 +140,7 @@ Keep shared intake distinct from shared obligation, personal queues limited to e
 Load:
 - `ARCHITECTURE.md#field-to-form`
 - `docs/RESPONSIBILITY_MAP.md`
-- `portables/msl/MSL_5_1.md`
+- `portables/msl/MOON_SOURCE_LANGUAGE.md`
 
 Choose the smallest form that creates a real capability. Do not generate a source, skill, handoff, protocol, registry, bridge and archive just because those categories exist.
 
@@ -236,7 +236,7 @@ Do not infer permission or ownership from public availability, attribution or mo
 
 Load:
 - `docs/RESPONSIBILITY_MAP.md`
-- `portables/msl/MSL_5_1.md`
+- `portables/msl/MOON_SOURCE_LANGUAGE.md`
 
 Determine whether the transfer is actually a handoff, packet/capsule, bridge or another form. Transport does not automatically inherit source authority.
 

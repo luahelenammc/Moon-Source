@@ -12,8 +12,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from check_title_version_separation import (  # noqa: E402
+    VERSIONED_CURRENT_PATH_EXCEPTIONS,
     contains_audience_version_label,
     contains_version_marker,
+    contains_version_marker_in_path,
+    current_path_error,
     first_h1,
     normalize_heading,
     validation_errors,
@@ -34,6 +37,18 @@ def main() -> None:
     assert contains_audience_version_label("3.1.local")
     assert not contains_audience_version_label("1.2")
     assert not contains_audience_version_label("5.1-rc1")
+    assert contains_version_marker_in_path("portables/msl/MSL_5_1.md")
+    assert contains_version_marker_in_path("portables/msl/v5/MOON_SOURCE_LANGUAGE.md")
+    assert contains_version_marker_in_path("downloads/preflight-v2.zip")
+    assert contains_version_marker_in_path("moonsource/downloads/PREFLIGHT_V2.md")
+    assert not contains_version_marker_in_path("portables/msl/MOON_SOURCE_LANGUAGE.md")
+    assert current_path_error("msl", "canonical_path", "portables/msl/MSL_5_1.md")
+    exception_path = "portables/preflight/PREFLIGHT_V2.md"
+    VERSIONED_CURRENT_PATH_EXCEPTIONS[exception_path] = "parallel compatibility generation"
+    assert current_path_error("preflight", "canonical_path", exception_path) is None
+    VERSIONED_CURRENT_PATH_EXCEPTIONS[exception_path] = ""
+    assert current_path_error("preflight", "canonical_path", exception_path)
+    del VERSIONED_CURRENT_PATH_EXCEPTIONS[exception_path]
     assert first_h1("intro\n# Stable Name\n") == "Stable Name"
     assert normalize_heading("# 🧭 Setup — Moon Source portable") == "Setup — Moon Source portable"
 
@@ -41,6 +56,24 @@ def main() -> None:
         (ROOT / "registry" / "public-capabilities.json").read_text(encoding="utf-8")
     )
     assert not validation_errors(data)
+
+    fixture = copy.deepcopy(data)
+    msl = next(item for item in fixture["capabilities"] if item["id"] == "moon-source-language")
+    msl["canonical_path"] = "portables/msl/MOON_SOURCE_LANGUAGE_V5_1.md"
+    errors = validation_errors(fixture, root=ROOT, human_registry=HUMAN_REGISTRY)
+    assert any("current canonical_path contains a version marker" in error for error in errors)
+
+    fixture = copy.deepcopy(data)
+    preflight = next(item for item in fixture["capabilities"] if item["id"] == "preflight")
+    preflight["distribution"]["package_path"] = "downloads/preflight-v2.zip"
+    errors = validation_errors(fixture, root=ROOT, human_registry=HUMAN_REGISTRY)
+    assert any("current package_path contains a version marker" in error for error in errors)
+
+    fixture = copy.deepcopy(data)
+    preflight = next(item for item in fixture["capabilities"] if item["id"] == "preflight")
+    preflight["distribution"]["mirror_path"] = "moonsource/downloads/PREFLIGHT_V2.md"
+    errors = validation_errors(fixture, root=ROOT, human_registry=HUMAN_REGISTRY)
+    assert any("current mirror_path contains a version marker" in error for error in errors)
 
     fixture = copy.deepcopy(data)
     fixture["capabilities"][0]["title"] = "Be My Eyes 1.0-public"

@@ -18,7 +18,7 @@ Use Preflight to identify the requested outcome and the decision that must be cu
 
 ## Relevant components and portables
 
-- [Preflight](../../portables/preflight/PREFLIGHT_V2.md) for the current task and audience.
+- [Preflight](../../portables/preflight/PREFLIGHT.md) for the current task and audience.
 - [Connected Sources](../../docs/CONNECTED_SOURCES.md) for source hierarchy, freshness and retrieval scope.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for contradiction and stale-state diagnosis.
 - [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) for receipts, retries and readback.

@@ -69,7 +69,7 @@ Access is not activation. A reachable source is not automatically authoritative,
 - **Materialize proportionately.** Create the smallest durable form that can carry the responsibility without losing provenance or ownership.
 - **Freshness and readback matter.** Mutation is incomplete until the relevant state is verified.
 - **Different operations have different authority effects.** Retrieve reads; process transforms working material; metabolize integrates a real delta; promote generalizes a proven mechanism.
-- **Humans should not have to prompt like machines.** [Preflight](portables/preflight/PREFLIGHT_V2.md) reconstructs intended meaning before execution and escalates guardrails only when consequence requires them.
+- **Humans should not have to prompt like machines.** [Preflight](portables/preflight/PREFLIGHT.md) reconstructs intended meaning before execution and escalates guardrails only when consequence requires them.
 - **Read the scene, not only the sentence.** [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) reconstructs actors, relationship and plausible subtext while keeping observation, inference and overread distinct.
 - **Workspace state must not invent authority.** [Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) projects lifecycle, action and provenance onto durable surfaces without replacing the source of record.
 
@@ -136,11 +136,11 @@ This is a professional-service bridge, not a claim that Moon Source is a mature 
 ## Recent capability changes
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
-- **2026-09-23 — Preflight:** Refined Preflight with a bounded success contract: positive requirements versus constraints, current task state for longitudinal work, observable success criteria, contextual operationalization of vague quality language, and consequence-proportional verification targets; records conceptual lineage to David Kendrick's Master Prompt Engineer v5.1 without changing Preflight's human-intent center.
-- **2026-09-23 — Chat–Work Routing Protocol:** Chat–Work remains 5.2; model-specific subordinate adapters were structurally consolidated into one shared `portables/chat-work/adapters/` directory, preserving adapter versions and protocol semantics while preventing one-folder-per-model proliferation.
-- **2026-09-17 — Credits & Attribution Ops:** Added proactive donor envelopes, pre-canonicalization provenance readback, AI-mediated lineage-drift detection, evidence-ranked lineage-conflict audit and anti-totalization boundaries between local authorship and upstream lineage.
-- **2026-09-15 — Semantic Reweave:** Published the initial public Semantic Reweave method with the Container Erasure Test, mismatch taxonomy, authority-first analysis, least-mutation repair ladder and provenance-preserving readback.
-- **2026-09-13 — Lifecycle Workspace Router:** Material additive-and-corrective release to 1.2: adds explicit operational control-plane and reconciliation authority, a revision-bound worked example, provider-aware move/readback and partial-projection rules, and a method/reference-architecture framing.
+- **2026-09-24 — Preflight:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
+- **2026-09-24 — Moon Source Setup:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
+- **2026-09-24 — Moon Source Language:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
+- **2026-09-24 — Connected Sources:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
+- **2026-09-24 — Chat–Work Routing Protocol:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
 This bounded digest is generated from the unified capability registry. It is not a commit log.

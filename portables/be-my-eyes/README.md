@@ -2,7 +2,7 @@
 
 **Read a message, thread, screenshot, note or draft as a human scene — without pretending inference is fact.**
 
-[▶️ Start here](BE_MY_EYES.md#first-use) · [⬇️ Download package](../../downloads/be-my-eyes-1.0-public.zip) · [🌙 Moon Source](../../README.md)
+[▶️ Start here](BE_MY_EYES.md#first-use) · [⬇️ Download package](../../downloads/be-my-eyes.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 
@@ -24,7 +24,7 @@ It does not read minds, establish motive, diagnose people or replace findings of
 - **Version:** 1.0-public
 - **Status:** current · supported standalone distribution
 - **Canonical body:** [`portables/be-my-eyes/BE_MY_EYES.md`](BE_MY_EYES.md)
-- **Package:** [`downloads/be-my-eyes-1.0-public.zip`](../../downloads/be-my-eyes-1.0-public.zip)
+- **Package:** [`downloads/be-my-eyes.zip`](../../downloads/be-my-eyes.zip)
 - **License:** CC BY 4.0 · see [Licensing](../../LICENSING.md)
 
 > **Authority:** This README is the human-facing presentation surface. [`BE_MY_EYES.md`](BE_MY_EYES.md) remains the semantic authority and contains the operative **First use** instructions.

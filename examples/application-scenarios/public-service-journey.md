@@ -18,12 +18,12 @@ Begin with Preflight and the Field-to-Form diagnostic: identify the citizen-faci
 
 ## Relevant components and portables
 
-- [Preflight](../../portables/preflight/PREFLIGHT_V2.md) for entry-point diagnosis and question threshold.
+- [Preflight](../../portables/preflight/PREFLIGHT.md) for entry-point diagnosis and question threshold.
 - [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for bounded public and internal forms.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for departmental jurisdiction.
 - [Connected Sources](../../docs/CONNECTED_SOURCES.md) for provenance and targeted retrieval.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for stale and duplicated material.
-- [MSL 5.1](../../portables/msl/MSL_5_1.md) for a handoff or status packet.
+- [MSL 5.1](../../portables/msl/MOON_SOURCE_LANGUAGE.md) for a handoff or status packet.
 
 ## Possible smallest materialization
 

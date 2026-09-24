@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-24 — stable canonical paths and current distributions
+
+- Renamed the active MSL and Preflight bodies to `portables/msl/MOON_SOURCE_LANGUAGE.md` and `portables/preflight/PREFLIGHT.md`; their version state remains metadata (`5.1` and `2.3`).
+- Normalized all version-bearing current ZIP names to capability identities: Be My Eyes, Connected Sources, Moon Source Language, Moon Source Setup and Preflight now have version-neutral package paths.
+- Repaired active repository and Moon Cortex links, registry routes, package members and the three version-bearing website mirror names; rebuilt all current standalone packages and the AI Kernel package.
+- Refreshed canonical SHA-256 values and the Preflight website bytes, including the public download page's Preflight `2.3` label. Naming cleanup did not change any capability version or semantic contract.
+
 ## 2026-09-23 — Preflight 2.3 · bounded success contract and attributed conceptual lineage
 
 - Refined the human-intent reconstruction core with a bounded success contract: desired outcome, positive requirements versus constraints, current accepted task state for longitudinal work, observable success criteria when completion is non-trivial, and a verification target when consequence makes verification material.

@@ -2,7 +2,7 @@
 
 **Turn messy, conversational or self-correcting human expression into the faithful task the person actually meant before execution begins.**
 
-[▶️ Start here](PREFLIGHT_V2.md#first-use) · [⬇️ Download package](../../downloads/preflight-v2.zip) · [🌙 Moon Source](../../README.md)
+[▶️ Start here](PREFLIGHT.md#first-use) · [⬇️ Download package](../../downloads/preflight.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 
@@ -23,11 +23,11 @@ It is not mind-reading, a mandatory questionnaire or an excuse to over-architect
 
 - **Version:** 2.3
 - **Status:** current · supported standalone distribution
-- **Canonical body:** [`portables/preflight/PREFLIGHT_V2.md`](PREFLIGHT_V2.md)
-- **Package:** [`downloads/preflight-v2.zip`](../../downloads/preflight-v2.zip)
+- **Canonical body:** [`portables/preflight/PREFLIGHT.md`](PREFLIGHT.md)
+- **Package:** [`downloads/preflight.zip`](../../downloads/preflight.zip)
 - **License:** CC BY 4.0 · see [Licensing](../../LICENSING.md)
 
-> **Authority:** This README is the human-facing presentation surface. [`PREFLIGHT_V2.md`](PREFLIGHT_V2.md) remains the semantic authority and contains the operative **First use** instructions.
+> **Authority:** This README is the human-facing presentation surface. [`PREFLIGHT.md`](PREFLIGHT.md) remains the semantic authority and contains the operative **First use** instructions.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

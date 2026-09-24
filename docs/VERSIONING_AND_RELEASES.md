@@ -15,9 +15,9 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-13; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, to the IDL/source-transport subversions through 4.4-public on 2026-09-07, and to the bounded-exhaustiveness, calibration, Decision Trace, Sprint and strategy-adapter subversions through 5.1 on 2026-09-09.
+- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-24; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, through the 5.1 strategy-adapter releases on 2026-09-09 and to 5.2 on 2026-09-23.
 - Current structural grammar: Moon Source Language, version 5.1.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.2), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (legacy distributed version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 5.1).
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (legacy distributed version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 5.2).
 - All fifteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry, while Lifecycle Workspace Router is a repository-only capability with its own independent version.
 - Credits & Attribution Ops, Lifecycle Workspace Router, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -39,7 +39,9 @@ They should not be collapsed into one number.
 11. A user-facing link labeled **Download** must use a route intended to download the file; inline browse/open routes must be labeled as browse/open instead.
 12. One capability has one canonical semantic body. Architectural role and standalone distribution are independent dimensions. Mirrors and packages are delivery surfaces, and a distinct adapter is allowed only for volatile or surface-specific facts.
 13. Every accepted update to an independently versioned capability's canonical body or operative contract advances that capability by **+0.1**. A bookkeeping-only correction that restores previously skipped version increments or corrects the representation of an existing version does not recursively create another bump.
-14. Version identifiers encode release or compatibility state, not audience, visibility, distribution or habitat. Do not introduce `public`, `private`, `local` or equivalent surface labels into a current version token. Store those properties separately. Exact legacy audience-bearing versions already tied to published standalone package coordinates may remain only until that capability's next accepted material release; they are compatibility exceptions, not precedent.
+14. Version identifiers encode release or compatibility state, not audience, visibility, distribution or habitat. Do not introduce `public`, `private`, `local` or equivalent surface labels into a current version token. Store those properties separately. Exact legacy audience-bearing version values may remain only until that capability's next accepted material release; they are metadata exceptions, not package-name precedent.
+15. Living/current canonical filenames, package filenames, mirror filenames and parent directories identify the semantic object, not its current version. Version state belongs in metadata, registries, changelogs, tags and release records. A version-bearing current path needs a documented semantic reason, such as a schema or compatibility generation that remains live in parallel. Historical snapshots, immutable release archives, migrations and external versioned standards remain valid exceptions.
+16. Keep directory geometry stable when a shared semantic container is sufficient. A canonical path move requires full reference-graph repair, package-member and fingerprint refresh, governed-mirror synchronization and readback. Do not create compatibility twins by default. A naming-only correction does not advance a capability's semantic version.
 
 ## Lifecycle Workspace Router 1.2 release — 2026-09-13
 
@@ -87,8 +89,8 @@ capability title and canonical path remain unchanged.
 The public title of a capability is its stable human-facing identity. A release version is separate state. Do not rename a current title merely because the portable, protocol or repository has advanced from one release to another.
 
 - Keep human-facing titles, first-level headings, registry `title` values and website card labels free of release markers such as `V2`, `V4`, `3.0`, `4.3`, legacy `1.0-public`, `beta` or `rc1`.
-- Record release state in dedicated `version` metadata, registry fields, release notes and compatible technical coordinates where useful or required.
-- Keep audience/visibility/distribution labels out of current version identifiers. `1.2` is a version; `public` is separate metadata. Legacy package filenames may preserve an older audience-bearing string when changing them would break a published distribution route.
+- Record release state in dedicated `version` metadata, registry fields, changelogs, tags and release notes. Current canonical, package and mirror paths use stable semantic names.
+- Keep audience/visibility/distribution labels out of current version identifiers. `1.2` is a version; `public` is separate metadata. A version-bearing current path requires a documented semantic exception; historical paths and frozen release artifacts may retain their version.
 - Historical prose may name an earlier generation when the version is part of the fact being preserved; phrase current use with the stable title and an explicit version field or sentence.
 - Reusable Moon Source-family repositories should copy the policy template and run the title/version separation guard before promotion.
 
@@ -107,7 +109,7 @@ The corrective postflight pass restores formatting continuity as an explicit par
 
 MSL 5.1 is the correctly numbered release state of the already accepted MSL 5.0 formatting-continuity update. Repository policy requires every accepted material update to an independently versioned capability body or operative contract to advance that capability by +0.1. The formatting-continuity pass changed the MSL canonical body and operative formatting contract, so that accepted delta earns 5.1.
 
-The 5.1 promotion is bookkeeping/release coherence, not another semantic grammar change: it therefore does not recursively trigger 5.2. The active tree exposes only `portables/msl/MSL_5_1.md`; MSL 5.0, internal 4.4 and public 4.3 remain recoverable lineage through repository history rather than parallel live portables.
+The 5.1 promotion is bookkeeping/release coherence, not another semantic grammar change: it therefore does not recursively trigger 5.2. MSL 5.0, internal 4.4 and public 4.3 remain recoverable lineage through repository history rather than parallel live portables. The current canonical body now lives at the stable path `portables/msl/MOON_SOURCE_LANGUAGE.md`; the former version-bearing path is historical lineage only.
 
 ## Historical MSL decision
 
@@ -165,7 +167,7 @@ This promotion does not claim universal connector support, automatic synchroniza
 
 Connected Sources 1.1-public is a **material canonical-identity and method-plus-portable rebase**, not an MSL grammar change. The portable at `portables/connected-sources/CONNECTED_SOURCES.md` is now the single active semantic body and may serve both structural and transport roles. It absorbs the unique current public doctrine from the retired `docs/CONNECTED_SOURCES.md` body without concatenating the two files, including Connector Preflight, the substrate contract, retrieval coverage, failure modes, facet-scoped authority and acceptance boundaries.
 
-The retired docs body is removed from the live tree; Git history preserves it. Dated ChatGPT product facts are isolated in the subordinate `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` reference and are not auto-loaded for generic source governance. The current package is `downloads/connected-sources-1.1-public.zip`, the website mirror remains the same mapped filename, and the former 1.0 package is removed from active `main`.
+The retired docs body is removed from the live tree; Git history preserves it. Dated ChatGPT product facts are isolated in the subordinate `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` reference and are not auto-loaded for generic source governance. At that release checkpoint, the package was `downloads/connected-sources-1.1-public.zip`; on 2026-09-24 its current route was normalized to `downloads/connected-sources.zip`, while former release packages remain historical rather than active `main` artifacts.
 
 Be My Eyes remains **1.0-public** because its portable already contains the material current method responsibilities found in the retired docs body; the duplicate docs body is removed without changing portable bytes. MSL remains 4.3 because the structural grammar did not change.
 
@@ -219,7 +221,7 @@ The release removes Astra-specific product calibration from stable core prose an
 
 ### Preflight 2.1 dependency-coherence release — 2026-09-09
 
-Preflight 2.1 updates the canonical dependency route from the retired `MSL_5_0.md` path to the current `MSL_5_1.md` path. The Preflight reconstruction method is unchanged. Because the canonical Preflight body changed, the repository +0.1 rule advances its release state from 2.0 to 2.1; the stable V2 human title, canonical filename and package family remain unchanged.
+Preflight 2.1 updates the canonical dependency route from the retired MSL 5.0 body to the then-current MSL 5.1 path. The Preflight reconstruction method is unchanged. Because the canonical Preflight body changed, the repository +0.1 rule advances its release state from 2.0 to 2.1; at that checkpoint the V2 title and package family remained in use. The current canonical filename is now the stable `PREFLIGHT.md` path.
 
 ## Future versions
 ### Public capability registry rebase — 2026-09-08

@@ -20,12 +20,12 @@ Use Preflight to identify the actual decision, audience, sensitivity and questio
 
 ## Relevant components and portables
 
-- [Preflight](../../portables/preflight/PREFLIGHT_V2.md) for task shaping before retrieval.
+- [Preflight](../../portables/preflight/PREFLIGHT.md) for task shaping before retrieval.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for authority and ownership.
 - [🏗️ Field-to-Form diagnostic](../../ARCHITECTURE.md#field-to-form) for choosing what deserves materialization.
 - [Connected Sources](../../docs/CONNECTED_SOURCES.md) for source reach, freshness and mutation boundaries.
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for contradiction, duplication and stale-state review.
-- [MSL 5.1](../../portables/msl/MSL_5_1.md) for a proportionate continuity packet or handoff.
+- [MSL 5.1](../../portables/msl/MOON_SOURCE_LANGUAGE.md) for a proportionate continuity packet or handoff.
 
 ## Possible smallest materialization
 

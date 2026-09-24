@@ -2,7 +2,7 @@
 
 **Build the smallest useful AI context setup for a person or project without turning context into a pile of everything.**
 
-[▶️ Start here](MOON_SOURCE_SETUP.md#first-use) · [⬇️ Download package](../../downloads/moon-source-setup-3.1.zip) · [🌙 Moon Source](../../README.md)
+[▶️ Start here](MOON_SOURCE_SETUP.md#first-use) · [⬇️ Download package](../../downloads/moon-source-setup.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 
@@ -24,7 +24,7 @@ It does not install a memory system, connector, background service or universal 
 - **Version:** 3.1
 - **Status:** current · supported standalone distribution
 - **Canonical body:** [`portables/setup/MOON_SOURCE_SETUP.md`](MOON_SOURCE_SETUP.md)
-- **Package:** [`downloads/moon-source-setup-3.1.zip`](../../downloads/moon-source-setup-3.1.zip)
+- **Package:** [`downloads/moon-source-setup.zip`](../../downloads/moon-source-setup.zip)
 - **License:** CC BY 4.0 · see [Licensing](../../LICENSING.md)
 
 > **Authority:** This README is the human-facing presentation surface. [`MOON_SOURCE_SETUP.md`](MOON_SOURCE_SETUP.md) remains the semantic authority and contains the operative **First use** instructions.
