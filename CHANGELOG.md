@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-24 — Chat–Work 6.0 · delegation-first heterogeneous orchestration
+
+- Promoted **delegation topology** to a first-class routing dimension and added the Delegation-First Law: Work/Codex roots should assemble the cheapest sufficient internal model topology before asking the user to switch models or surfaces manually.
+- Rebased physical subagents from a primarily defensive fan-out exception into a bounded execution primitive for independent read-heavy, repetitive and high-volume work, while preserving write ownership, convergence, recursion/fan-out ceilings, Budget Survivability and total-work efficiency.
+- Added heterogeneous root/child routing: **Sol root → Luna workers** for bounded bulk and **Astra root → Luna workers + Sol specialists** when frontier judgment is load-bearing.
+- Advanced the GPT-6 Sol/Luna Strategy Adapter from **1.1 to 1.2** and the Astra Strategy Adapter from **1.2 to 1.3** with current subagent inheritance, override, context-isolation and branch-local escalation guidance.
+- Changed manual model/surface switching from a routine routing response into a last-resort boundary when the active harness cannot resolve the required topology internally.
+- Advanced the canonical protocol from **5.2 to 6.0**. MSL remains **5.1**; the canonical filename and package coordinates remain stable.
+
 ## 2026-09-24 — stable canonical paths and current distributions
 
 - Renamed the active MSL and Preflight bodies to `portables/msl/MOON_SOURCE_LANGUAGE.md` and `portables/preflight/PREFLIGHT.md`; their version state remains metadata (`5.1` and `2.3`).
