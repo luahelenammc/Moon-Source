@@ -14,7 +14,7 @@ The table's **Summary title** is the concise browsing label. The registry's sema
 | ID | Summary title | Architectural role | Version | Status | Canonical body | Standalone distribution |
 |---|---|---|---:|---|---|---|
 | be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) | contextual scene-reading method | 1.0-public | current | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md#first-use) | [ZIP](../downloads/be-my-eyes-1.0-public.zip) |
-| chat-work-routing | [Chat–Work Routing Protocol](../portables/chat-work/README.md) | operational routing protocol | 5.2 | current | [CHAT_WORK_ROUTING_PROTOCOL_V4.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) | [ZIP](../downloads/chat-work-routing-protocol-v4.zip) |
+| chat-work-routing | [Chat–Work Routing Protocol](../portables/chat-work/README.md) | operational routing protocol | 5.2 | current | [CHAT_WORK_ROUTING_PROTOCOL.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md#first-use) | [ZIP](../downloads/chat-work-routing-protocol.zip) |
 | connected-sources | [Connected Sources](../portables/connected-sources/README.md) | structural crown jewel | 1.1-public | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources-1.1-public.zip) |
 | credits-attribution-ops | 🧾 Credits & Attribution Ops | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
 | failure-foundry | 🏭 Failure to Capability — Failure Foundry | failure-to-capability method | — | current | [FAILURE_FOUNDRY.md](../docs/FAILURE_FOUNDRY.md) | — |
@@ -77,7 +77,7 @@ capabilities under:
 - https://www.luahelena.com.br/moonsource/downloads/BE_MY_EYES.md
 - https://www.luahelena.com.br/moonsource/downloads/CONNECTED_SOURCES.md
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_5_1.md
-- https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_5_1.md
+- https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_MSL_5_1.md
 
 These are delivery surfaces, not semantic authorities. Each mirror must remain
 byte-identical to its mapped canonical body.

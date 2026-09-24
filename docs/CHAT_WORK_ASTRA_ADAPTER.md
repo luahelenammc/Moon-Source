@@ -8,7 +8,7 @@ The Astra Strategy Adapter is a subordinate submodule of the Chat–Work Routing
 
 This `docs/` path is retained only as a compatibility and succession pointer for existing links. It has no independent semantic authority, version or capability identity.
 
-The governing canonical body remains [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md).
+The governing canonical body remains [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md).
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

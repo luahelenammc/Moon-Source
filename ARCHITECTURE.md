@@ -119,7 +119,7 @@ Field to Form is the practical diagnostic inside the canonical Moon Source archi
 - **Personal or project context:** start with [🧭 Setup](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
 - **Project, team or knowledge field:** run this Field-to-Form diagnostic before choosing a document type.
 - **Structure, source, handoff or protocol design:** use [🧱 Moon Source Language](portables/msl/MSL_5_1.md) after the responsibility is clear.
-- **ChatGPT execution routing:** use the [🔀 Chat–Work Routing Protocol](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md) when surface, model or reasoning effort is the actual decision.
+- **ChatGPT execution routing:** use the [🔀 Chat–Work Routing Protocol](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md) when surface, model or reasoning effort is the actual decision.
 - **Intellectual lineage and immaterial-asset protection:** use [🧾 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material must retain identity, authorship, canonicality, transformation history, permission scope, disclosure boundaries, derivative lineage and recoverable evidence as it moves or changes.
 - **Licensing and redistribution:** use [LICENSING](LICENSING.md) to route software to Apache-2.0, documentation and public capability distributions to CC-BY-4.0, and third-party material to its own terms.
 - **Reusable procedure:** use [🧩 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.

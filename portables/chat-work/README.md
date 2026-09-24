@@ -2,7 +2,7 @@
 
 **Route a task across Chat, Work and Codex by the object being changed, the workload required and the intelligence budget available.**
 
-[▶️ Start here](CHAT_WORK_ROUTING_PROTOCOL_V4.md#first-use) · [⬇️ Download package](../../downloads/chat-work-routing-protocol-v4.zip) · [🌙 Moon Source](../../README.md)
+[▶️ Start here](CHAT_WORK_ROUTING_PROTOCOL.md#first-use) · [⬇️ Download package](../../downloads/chat-work-routing-protocol.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 
@@ -48,11 +48,11 @@ It does not itself create access to a model, tool, connector or execution surfac
 - **Status:** current · supported standalone distribution
 - **Optional Astra submodule:** [`astra/CHAT_WORK_ASTRA_ADAPTER.md`](astra/CHAT_WORK_ASTRA_ADAPTER.md) · version **1.2**
 - **GPT-6 Sol/Luna submodule:** [`gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md`](gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md) · version **1.1**
-- **Canonical body:** [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md)
-- **Package:** [`downloads/chat-work-routing-protocol-v4.zip`](../../downloads/chat-work-routing-protocol-v4.zip)
+- **Canonical body:** [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`](CHAT_WORK_ROUTING_PROTOCOL.md)
+- **Package:** [`downloads/chat-work-routing-protocol.zip`](../../downloads/chat-work-routing-protocol.zip)
 - **License:** CC BY 4.0 · see [Licensing](../../LICENSING.md)
 
-> **Authority:** This README is the human-facing presentation surface. [`CHAT_WORK_ROUTING_PROTOCOL_V4.md`](CHAT_WORK_ROUTING_PROTOCOL_V4.md) remains the semantic authority and contains the operative **First use** instructions. The Astra and GPT-6 Sol/Luna adapters are subordinate to that body and do not create separate capability identities.
+> **Authority:** This README is the human-facing presentation surface. [`CHAT_WORK_ROUTING_PROTOCOL.md`](CHAT_WORK_ROUTING_PROTOCOL.md) remains the semantic authority and contains the operative **First use** instructions. The Astra and GPT-6 Sol/Luna adapters are subordinate to that body and do not create separate capability identities.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

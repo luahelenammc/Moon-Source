@@ -7,7 +7,7 @@
 - **status:** current subordinate adapter
 - **adapter version:** 1.1
 - **as of:** 2026-09-23
-- **governing capability:** [Chat–Work Routing Protocol](../CHAT_WORK_ROUTING_PROTOCOL_V4.md)
+- **governing capability:** [Chat–Work Routing Protocol](../CHAT_WORK_ROUTING_PROTOCOL.md)
 - **scope:** GPT-6 Sol and GPT-6 Luna routing in Work, Codex and API-shaped reasoning about executor choice
 - **authority:** subordinate; the canonical Chat–Work body wins on conflict
 - **volatility:** high; availability, model menus, reasoning controls, plan/workspace exposure and usage economics must be rechecked
