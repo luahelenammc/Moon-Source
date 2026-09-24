@@ -67,7 +67,7 @@
       ],
       "difficulty": "advanced",
       "distribution": {
-        "canonical_sha256": "4016866faa1eefe8cfd658e7e84e7f2101712d500548777256fd03a26ab0b5f8",
+        "canonical_sha256": "77cfe8060f21200efa6fb9a90fbcce6d8e696c7a59783be54cf4ec612e5bd39f",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL.md",
