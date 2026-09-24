@@ -1,21 +1,58 @@
-name: Verify Chat-Work 6.1 package receipt
+name: Rebuild Chat-Work 6.1 packages
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - chat-work-6.1-postflight-readback
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  verify:
+  rebuild:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: chat-work-6.1-postflight-readback
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Verify packaged bytes
-        run: python scripts/moon_source.py validate
+      - name: Rebuild deterministic packages
+        run: |
+          python - <<'PY'
+          import json
+          import zipfile
+          from pathlib import Path
+
+          root = Path(".")
+          registry = json.loads((root / "registry/public-capabilities.json").read_text(encoding="utf-8"))
+          record = next(item for item in registry["capabilities"] if item["id"] == "chat-work-routing")
+
+          def write_zip(path, members):
+              with zipfile.ZipFile(path, "w") as zf:
+                  for archive_path, source_path in members:
+                      info = zipfile.ZipInfo(archive_path, date_time=(1980, 1, 1, 0, 0, 0))
+                      info.compress_type = zipfile.ZIP_STORED
+                      info.external_attr = 0o100644 << 16
+                      zf.writestr(info, (root / source_path).read_bytes())
+
+          members = [(m["archive_path"], m["source_path"]) for m in record["distribution"]["composite_members"]]
+          write_zip(root / record["distribution"]["package_path"], members)
+          write_zip(root / "downloads/moon-source-ai-kernel.zip", [("MOON_SOURCE_AI_KERNEL.md", "MOON_SOURCE_AI_KERNEL.md")])
+          PY
+      - name: Commit rebuilt packages
+        run: |
+          if git diff --quiet -- downloads/chat-work-routing-protocol.zip downloads/moon-source-ai-kernel.zip; then
+            echo "Packages already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add downloads/chat-work-routing-protocol.zip downloads/moon-source-ai-kernel.zip
+          git commit -m "Chat–Work 6.1: rebuild packages after readback"
+          git push origin HEAD:chat-work-6.1-postflight-readback
 
 # MOON-SOURCE-PUBLIC-STAMP
 # 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip · Questions, suggestions, or proposals? Feel free to contact me at LuaHelenaMMC@gmail.com.
