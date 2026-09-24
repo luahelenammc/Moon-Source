@@ -5,7 +5,7 @@
 ## Meta
 
 - **status:** current subordinate adapter
-- **adapter version:** 1.0
+- **adapter version:** 1.1
 - **as of:** 2026-09-23
 - **governing capability:** [Chat–Work Routing Protocol](../CHAT_WORK_ROUTING_PROTOCOL_V4.md)
 - **scope:** GPT-6 Sol and GPT-6 Luna routing in Work, Codex and API-shaped reasoning about executor choice
@@ -166,16 +166,147 @@ The API's >272K long-context price step is useful evidence that very large promp
 
 ## 9. Economics boundary
 
-At standard short-context API rates, Sol is 20× Luna per input token and 20× Luna per output token.
+### 9.1 Standard short-context API price vector
 
-That ratio is useful for API deployment planning. It must **not** be copied into ChatGPT Work/Codex allowance math.
+For the dated 2026-09-23 calibration, use the official **Standard / short-context** text-token rates per 1M tokens:
 
-ChatGPT usage can depend on model, task, reasoning effort, tool work, plan and workspace policy. Unless the product exposes a reliable run-level usage measure, Chat–Work should reason qualitatively:
+| Model | Input | Output |
+|---|---:|---:|
+| GPT-6 Luna | $0.10 | $0.50 |
+| GPT-5.6 Luna | $0.20 | $1.20 |
+| GPT-6 Sol | $2.00 | $10.00 |
+| GPT-5.6 Sol | $4.00 | $20.00 |
+| GPT-6 Astra | $10.00 | $50.00 |
 
-- use Luna for bulk where it clears the floor;
-- use Sol where stronger reasoning reduces total correction/retry work;
+Long-context, Batch, Flex, Fast, regional-processing and tool-call prices are separate regimes and must be recalculated from current official pricing rather than inferred from this table.
+
+### 9.2 Mixed-workload cost equation
+
+Let:
+
+- `I` = uncached input tokens in millions;
+- `O` = output tokens in millions;
+- `pᵢ(m)` = standard short-context input price of model `m`;
+- `pₒ(m)` = standard short-context output price of model `m`.
+
+Then the text-token API cost proxy is:
+
+`C(m; I, O) = pᵢ(m)·I + pₒ(m)·O`
+
+This proxy intentionally excludes cached-input effects, cache writes, tools, regional uplifts and non-Standard service tiers unless those terms are explicitly added.
+
+For two models `A` and `B`, define:
+
+`R(A:B | I,O) = C(A;I,O) / C(B;I,O)`
+
+If `R = 20`, model A costs 20× model B for that workload. The savings from moving from A to B are:
+
+`Savings(A→B) = 1 - C(B;I,O)/C(A;I,O)`
+
+### 9.3 Constant-ratio relations
+
+Some pairs have proportional input/output prices, so their ratio is independent of the input/output mix:
+
+- `R(GPT-6 Sol : GPT-6 Luna) = 20×`
+- `R(GPT-6 Astra : GPT-6 Sol) = 5×`
+- `R(GPT-6 Astra : GPT-6 Luna) = 100×`
+- `R(GPT-5.6 Sol : GPT-6 Luna) = 40×`
+- `R(GPT-6 Astra : GPT-5.6 Sol) = 2.5×`
+- `R(GPT-5.6 Sol : GPT-6 Sol) = 2×`
+
+Equivalent savings readings:
+
+- GPT-6 Luna is **95% cheaper** than GPT-6 Sol;
+- GPT-6 Sol is **80% cheaper** than GPT-6 Astra;
+- GPT-6 Luna is **99% cheaper** than GPT-6 Astra;
+- GPT-6 Luna is **97.5% cheaper** than GPT-5.6 Sol;
+- GPT-6 Sol is **50% cheaper** than GPT-5.6 Sol.
+
+### 9.4 Generation-over-generation Luna equation
+
+GPT-5.6 Luna → GPT-6 Luna is not perfectly proportional because output fell more than input:
+
+`R(6 Luna : 5.6 Luna | I,O) = (0.10I + 0.50O) / (0.20I + 1.20O)`
+
+Therefore:
+
+- input-only: GPT-6 Luna costs **50%** of GPT-5.6 Luna → **50% cheaper**;
+- output-only: GPT-6 Luna costs **41.67%** of GPT-5.6 Luna → **58.33% cheaper**;
+- any mixed workload falls between those endpoints.
+
+By contrast:
+
+`R(6 Sol : 5.6 Sol) = 0.5`
+
+so GPT-6 Sol is exactly **50% cheaper** than GPT-5.6 Sol for any uncached text-token input/output mix under this price regime.
+
+### 9.5 Cross-generation ratios that depend on workload mix
+
+For GPT-6 Sol versus GPT-5.6 Luna:
+
+`R(6 Sol : 5.6 Luna | I,O) = (2I + 10O) / (0.20I + 1.20O)`
+
+This ranges from **10×** for input-only work to **8.33×** for output-only work.
+
+For GPT-6 Astra versus GPT-5.6 Luna:
+
+`R(6 Astra : 5.6 Luna | I,O) = (10I + 50O) / (0.20I + 1.20O)`
+
+This ranges from **50×** for input-only work to **41.67×** for output-only work.
+
+For GPT-5.6 Sol versus GPT-5.6 Luna:
+
+`R(5.6 Sol : 5.6 Luna | I,O) = (4I + 20O) / (0.20I + 1.20O)`
+
+This ranges from **20×** for input-only work to **16.67×** for output-only work.
+
+### 9.6 Luna-normalized price index
+
+Using GPT-6 Luna as `1.0`:
+
+| Model | Input-price index | Output-price index |
+|---|---:|---:|
+| GPT-6 Luna | 1× | 1× |
+| GPT-5.6 Luna | 2× | 2.4× |
+| GPT-6 Sol | 20× | 20× |
+| GPT-5.6 Sol | 40× | 40× |
+| GPT-6 Astra | 100× | 100× |
+
+This makes the current economic geometry explicit:
+
+`GPT-6 Luna = 1 → GPT-6 Sol = 20 → GPT-6 Astra = 100`
+
+with GPT-5.6 Luna and Sol sitting at `2/2.4` and `40` respectively.
+
+### 9.7 Routing interpretation
+
+The large price gap does **not** create a compulsory routing staircase.
+
+Use the equations to estimate **API cost pressure**, then combine them with capability floor, correction/retry cost and task geometry:
+
+- prefer Luna for bulk where it clears the floor;
+- prefer Sol when stronger reasoning inside execution is expected to reduce replay, correction or failure enough to justify the premium;
 - use Astra only under the canonical frontier gate and its own adapter when available;
-- never claim a fixed “one Sol = N Luna” rule for Work/Codex.
+- do not force Luna to fail merely because it is cheaper;
+- do not promote to Sol or Astra merely because the task is important.
+
+The optimization target is not minimum first-turn cost:
+
+`Preferred route = argmin(expected total cost to verified acceptance)`
+
+where expected total cost includes the probability-weighted cost of retries, correction, repeated tool work, context reconstruction and higher-tier bursts when material.
+
+### 9.8 ChatGPT allowance firewall
+
+These equations are **API price equations only**.
+
+They must **not** be copied into ChatGPT Work/Codex allowance math. ChatGPT usage can depend on model, task, reasoning effort, tool work, plan and workspace policy. Unless the product exposes a reliable run-level conversion, never infer rules such as:
+
+- `1 Sol Work run = 20 Luna Work runs`;
+- `1 Astra run = 5 Sol runs`;
+- allowance percentage consumed = API token-cost ratio.
+
+The token-price ratios can inform qualitative economic intuition; they cannot manufacture product telemetry.
 
 ## 10. Default routing matrix
 
