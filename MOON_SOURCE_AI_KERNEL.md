@@ -47,7 +47,7 @@ Use each file for the responsibility it actually owns:
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router, currently version 3.1.
 - `portables/msl/MSL_5_1.md` — current public structural grammar for semantic passage and materialization. MSL is currently 5.1.
-- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md` — current 4.4-public closed-loop ChatGPT surface/model/reasoning and source-transport routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
+- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md` — current 5.2 closed-loop ChatGPT surface/model/reasoning and source-transport routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
 - `registry/PUBLIC_CAPABILITIES.md` — human-readable unified public capability identities, roles, versions, status and standalone-distribution routes.
 - `registry/public-capabilities.json` — machine-readable one-record-per-capability registry; standalone distribution is nested metadata and does not create a second semantic inventory.
 - `docs/PORTABLE_DESIGN_CONTRACT.md` — portable publication, canonical-path and mirror rules.
@@ -74,7 +74,7 @@ When two files appear to conflict, do not flatten them together. First ask wheth
 - Source Operations — Retrieve, Process, Metabolize and Promote → `docs/SOURCE_OPERATIONS.md`
 - Connected Sources → `docs/CONNECTED_SOURCES.md`
 - Be My Eyes → `portables/be-my-eyes/BE_MY_EYES.md`
-- Chat–Work Routing Protocol → `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`
+- Chat–Work Routing Protocol → `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`
 - Moon Source Language → `portables/msl/MSL_5_1.md`
 - Moon Source Setup → `portables/setup/MOON_SOURCE_SETUP.md`
 - Preflight → `portables/preflight/PREFLIGHT_V2.md`
@@ -272,7 +272,7 @@ Route current-use questions about superseded artifacts to their active successor
 ### If the user asks where ChatGPT work should run
 
 Load:
-- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`
+- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`
 
 Apply the V4 tri-surface loop: route by sovereign object across Chat, Work and Codex; choose capability and effort separately; run Budget Survivability before expensive work; and after any executor return perform Chat Postflight before treating the cycle as complete. Treat model names, prices, usage pools, limits and product behavior as date-sensitive. Re-verify current product facts when the answer depends on them.
 
