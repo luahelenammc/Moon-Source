@@ -2,7 +2,7 @@
 
 The Astra Strategy Adapter is a subordinate submodule of the Chat–Work Routing Protocol and now lives inside the Chat–Work portable.
 
-**Canonical adapter:** [`portables/chat-work/astra/CHAT_WORK_ASTRA_ADAPTER.md`](../portables/chat-work/astra/CHAT_WORK_ASTRA_ADAPTER.md)
+**Canonical adapter:** [`portables/chat-work/adapters/CHAT_WORK_ASTRA_ADAPTER.md`](../portables/chat-work/adapters/CHAT_WORK_ASTRA_ADAPTER.md)
 
 **Current adapter version:** 1.2
 
