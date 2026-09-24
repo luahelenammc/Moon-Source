@@ -274,7 +274,7 @@ Route current-use questions about superseded artifacts to their active successor
 Load:
 - `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`
 
-Apply the V6 delegation-first tri-surface loop: route by sovereign object across Chat, Work and Codex; choose root capability, child topology and effort separately; prefer internal subagent delegation before asking for a manual model switch when the harness exposes it; run Budget Survivability before expensive work; and after any executor return perform Chat Postflight before treating the cycle as complete. Treat model names, prices, usage pools, limits and product behavior as date-sensitive. Re-verify current product facts when the answer depends on them.
+Apply the V6.1 surface-neutral, delegation-first loop: route by sovereign object across Chat, Work and Codex; preserve the current competent control root when it can complete and verify the objective; choose control root, execution harness, root capability, child topology and effort separately; prefer internal subagent delegation before asking for a manual model or surface switch when the harness exposes it; run Budget Survivability before expensive work; and after material executor return perform Control-Root Postflight before treating the cycle as complete. Use the named Chat–Work Loop Profile when Chat continuity is preferred. Treat model names, prices, usage pools, limits and product behavior as date-sensitive. Re-verify current product facts when the answer depends on them.
 
 ### If the user wants to publish, mirror, redistribute or version public Moon Source material
 
