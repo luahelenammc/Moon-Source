@@ -52,20 +52,21 @@
     },
     {
       "architectural_role": "operational_routing_protocol",
-      "best_for": "ChatGPT users and builders who need routing to adapt to resource posture, enabled capabilities and quality/throughput preferences while isolating hard reasoning deltas, preserving capability floors and closing work audibly across Chat, Work and optional Codex",
+      "best_for": "ChatGPT users and builders who need routing to adapt across Chat, Work and Codex while keeping the human in one flow whenever the active harness can delegate independent work to cheaper sufficient subagents and reserve stronger models for irreducible judgment",
       "canonical_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md",
-      "claim_ceiling": "Published Chat–Work Routing Protocol, version 5.2; operational routing heuristic only, with optional subordinate model-specific strategy guidance; not an OpenAI policy, native Sprint Mode feature, allowance/reset detector, price or economic model, benchmark, guaranteed savings/quality/quota-use claim or proof that a native chat-work-router skill is installed",
+      "claim_ceiling": "Published Chat–Work Routing Protocol, version 6.0; operational routing heuristic with Delegation-First orchestration and subordinate model-specific strategy guidance; not an OpenAI policy, native Sprint Mode feature, guarantee that any runtime exposes subagents or child-model overrides, allowance/reset detector, price or economic model, benchmark, guaranteed savings/quality/quota-use claim or proof that a native chat-work-router skill is installed",
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
       "dependencies": [
-        "Uses MSL-5.1 terminology; product and model calibration is date-sensitive and belongs in subordinate adapter notes",
+        "Uses MSL-5.1 terminology; product, model and subagent calibration is date-sensitive and belongs in subordinate adapter notes",
         "Source transport records governing source or family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback; a locator is not authority",
+        "Work and Codex subagent availability, child-model inheritance/override behavior, concurrency and permissions are run-time conditions; Delegation-First never fabricates unavailable controls",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions",
-        "Optional Astra strategy adapter v1.2 at portables/chat-work/adapters/CHAT_WORK_ASTRA_ADAPTER.md; subordinate to the canonical Chat–Work body, independently versioned as a submodule, setup-gated, and not a second capability identity",
-        "GPT-6 Sol/Luna strategy adapter v1.1 at portables/chat-work/adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md; dated Work/Codex executor calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics; includes dated Standard short-context API price-ratio equations with a firewall against unsupported Work/Codex allowance conversion"
+        "Optional Astra strategy adapter v1.3 at portables/chat-work/adapters/CHAT_WORK_ASTRA_ADAPTER.md; subordinate to the canonical Chat–Work body, independently versioned as a submodule, setup-gated, delegation-aware and not a second capability identity",
+        "GPT-6 Sol/Luna strategy adapter v1.2 at portables/chat-work/adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md; dated Work/Codex executor and heterogeneous-subagent calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics"
       ],
       "difficulty": "advanced",
       "distribution": {
-        "canonical_sha256": "5f4ab1a5738e87986c2cc99a74676d975e26998832bb5fb6488a53d78ef6ef8d",
+        "canonical_sha256": "6850b78a9df34b4fa64fba58debbe7f0862059666f114732bbdcd6670393ec66",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL.md",
@@ -88,12 +89,12 @@
           }
         ]
       },
-      "freshness": "protocol semantics as of 2026-09-23; model-specific product calibration is dated, replaceable adapter guidance; recheck volatile behavior, model names, prices, availability and usage pools",
-      "function": "Route by sovereign object and workload shape across Chat, Work and optional Codex using configurable execution profiles, observed surface availability, capability floors, Budget Survivability, the model-neutral Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, bounded micro-bursts, optional explicitly activated ephemeral Sprint Mode, a finite Decision Sprint sibling-delta exception, auditable Decision Trace for material higher-tier rulings, decision-bearing return capsules, subordinate model-specific strategy adapters, Sprint Receipts, Chat Postflight and delta-only re-entry",
+      "freshness": "protocol semantics as of 2026-09-24; model/subagent product calibration is dated, replaceable adapter guidance; recheck volatile behavior, model names, child-model controls, inheritance, prices, availability and usage pools",
+      "function": "Route by sovereign object and workload shape across Chat, Work and optional Codex using configurable execution profiles, observed surface availability, capability floors, Delegation-First orchestration, heterogeneous root/child model topology, Budget Survivability, the model-neutral Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, bounded micro-bursts, optional explicitly activated ephemeral Sprint Mode, a finite Decision Sprint sibling-delta exception, auditable Decision Trace for material higher-tier rulings, decision-bearing return capsules, subordinate model-specific strategy adapters, Sprint Receipts, Chat Postflight and delta-only re-entry",
       "id": "chat-work-routing",
       "language": "English",
       "last_material_update_on": "2026-09-24",
-      "last_material_update_summary": "Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.",
+      "last_material_update_summary": "Promoted Chat–Work to 6.0: delegation topology is now first-class, internal heterogeneous subagent orchestration precedes manual model switching when available, Sol→Luna and Astra→Luna/Sol patterns are calibrated in subordinate adapters, and fanout remains bounded by ownership, convergence, total-work efficiency and verification.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -102,10 +103,10 @@
       "readable_surface_path": "portables/chat-work/README.md",
       "status": "current",
       "summary_title": "Chat–Work Routing Protocol",
-      "supersedes": "5.1",
+      "supersedes": "5.2",
       "surface_title": "Chat–Work Routing Protocol — Moon Source portable",
       "title": "Chat–Work Routing Protocol",
-      "version": "5.2",
+      "version": "6.0",
       "versioning_mode": "independent_public_capability_version"
     },
     {
