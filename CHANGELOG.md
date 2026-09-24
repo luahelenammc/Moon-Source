@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-23 — GPT-6 Sol/Luna Adapter 1.1 · price-ratio equations
+
+- Added explicit Standard short-context API price vectors for GPT-5.6 Luna/Sol and GPT-6 Luna/Sol/Astra.
+- Added the mixed-workload cost equation `C(m; I,O) = pᵢ(m)·I + pₒ(m)·O`, pairwise ratio and savings equations, constant-ratio relations, generation-over-generation formulas and a Luna-normalized price index.
+- Made the current economic geometry machine-readable in prose: GPT-6 Luna = 1×, GPT-6 Sol = 20× and GPT-6 Astra = 100× for both uncached input and output under the dated Standard short-context regime.
+- Preserved the firewall between API token economics and ChatGPT Work/Codex allowance economics; no fixed run-conversion ratio is inferred.
+- Chat–Work core remains **5.2**; only the subordinate GPT-6 adapter advances from **1.0 to 1.1**.
+
+
 ## 2026-09-23 — Chat–Work 5.2 · GPT-6 Sol/Luna executor calibration
 
 - Added the subordinate **GPT-6 Sol/Luna Strategy Adapter 1.0**, grounded in OpenAI's 2026-09-22 launch guidance, model specifications, pricing and Work/Codex availability.
