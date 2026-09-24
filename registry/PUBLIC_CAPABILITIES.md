@@ -99,7 +99,7 @@ The current independently versioned capabilities are Lifecycle Workspace Router 
 1.2, Connected Sources at 1.1-public, MSL at 5.1, Chat–Work at 5.2,
 Setup at 3.1, Preflight at 2.2 and Be My Eyes at 1.0-public. Chat–Work 5.2
 preserves the model-neutral strategy-adapter boundary and Astra Strategy Adapter
-1.2, and adds the dated GPT-6 Sol/Luna Adapter 1.0 plus the stable rule that
+1.2, and adds the dated GPT-6 Sol/Luna Adapter 1.1, including explicit API price-ratio equations, plus the stable rule that
 semantic capability tiers do not require one-to-one named-model counterparts.
 Optional Sprint Mode, bounded Decision Sprint, Sprint Receipts and the
 model-neutral IDL/Decision Trace laws remain intact; MSL's formatting contract is
