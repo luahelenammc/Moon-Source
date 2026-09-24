@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-23 — Chat–Work 5.2 · unified adapter directory
+
+- Consolidated the Astra and GPT-6 Sol/Luna subordinate adapters under a single `portables/chat-work/adapters/` directory.
+- Removed the model-family-specific `astra/` and `gpt-6/` directories to avoid structural proliferation as new adapters are added.
+- Established the default storage rule that future single-file model adapters co-reside in `adapters/`; a dedicated subdirectory is justified only when an adapter becomes a genuine multi-file subsystem.
+- Preserved Chat–Work **5.2** and the independent adapter versions; this is a structural packaging cleanup, not a semantic release.
+
+
 ## 2026-09-23 — Chat–Work 5.2 · artifact naming normalization
 
 - Renamed the current canonical body from `CHAT_WORK_ROUTING_PROTOCOL_V4.md` to `CHAT_WORK_ROUTING_PROTOCOL.md` so the filename no longer freezes an obsolete historical generation marker onto the independently versioned 5.2 protocol.
