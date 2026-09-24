@@ -13,7 +13,7 @@
 - **applies to:** Chat–Work Routing Protocol 5.1
 - **effective date:** 2026-09-09
 - **governing canonical body:** `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`
-- **canonical release:** Chat–Work 5.1; the stable human title and V4 filename remain unchanged
+- **canonical release lineage:** introduced under Chat–Work 5.1; the current canonical body uses the unversioned filename `CHAT_WORK_ROUTING_PROTOCOL.md`
 - **MSL dependency:** Moon Source Language 5.1
 - **authority:** subordinate adapter only; the Chat–Work canonical body governs on conflict
 - **scope:** Astra-specific strategy geometry, reusable presets and volatile model/surface calibration

@@ -136,7 +136,7 @@ This is a professional-service bridge, not a claim that Moon Source is a mature 
 ## Recent capability changes
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
-- **2026-09-23 — Chat–Work Routing Protocol:** Chat–Work remains 5.2; current artifact naming was normalized by removing the obsolete V4 fossil from the canonical file, standalone package and website mirror while preserving version history and protocol semantics.
+- **2026-09-23 — Chat–Work Routing Protocol:** Chat–Work remains 5.2; model-specific subordinate adapters were structurally consolidated into one shared `portables/chat-work/adapters/` directory, preserving adapter versions and protocol semantics while preventing one-folder-per-model proliferation.
 - **2026-09-17 — Credits & Attribution Ops:** Added proactive donor envelopes, pre-canonicalization provenance readback, AI-mediated lineage-drift detection, evidence-ranked lineage-conflict audit and anti-totalization boundaries between local authorship and upstream lineage.
 - **2026-09-15 — Semantic Reweave:** Published the initial public Semantic Reweave method with the Container Erasure Test, mismatch taxonomy, authority-first analysis, least-mutation repair ladder and provenance-preserving readback.
 - **2026-09-13 — Lifecycle Workspace Router:** Material additive-and-corrective release to 1.2: adds explicit operational control-plane and reconciliation authority, a revision-bound worked example, provider-aware move/readback and partial-projection rules, and a method/reference-architecture framing.
