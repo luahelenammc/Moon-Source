@@ -9,11 +9,11 @@
 - **versioning mode:** independently versioned subordinate submodule; the human title remains unversioned
 - **first public release:** 2026-09-09
 - **last material update:** 2026-09-24
-- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.1 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1
+- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1
 - **applies to:** Chat–Work Routing Protocol 6.1
 - **effective date:** 2026-09-24
 - **governing canonical body:** `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`
-- **canonical release lineage:** introduced under Chat–Work 5.1, updated for Chat–Work 6.1 Delegation-First orchestration and aligned to the surface-neutral control-root model in Chat–Work 6.1; the current canonical body uses the unversioned filename `CHAT_WORK_ROUTING_PROTOCOL.md`
+- **canonical release lineage:** introduced under Chat–Work 5.1, updated for Chat–Work 6.0 Delegation-First orchestration and aligned to the surface-neutral control-root model in Chat–Work 6.1; the current canonical body uses the unversioned filename `CHAT_WORK_ROUTING_PROTOCOL.md`
 - **MSL dependency:** Moon Source Language 5.1
 - **authority:** subordinate adapter only; the Chat–Work canonical body governs on conflict
 - **scope:** Astra-specific strategy geometry, reusable presets and volatile model/surface calibration
