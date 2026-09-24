@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-23 — Preflight 2.3 · bounded success contract and attributed conceptual lineage
+
+- Refined the human-intent reconstruction core with a bounded success contract: desired outcome, positive requirements versus constraints, current accepted task state for longitudinal work, observable success criteria when completion is non-trivial, and a verification target when consequence makes verification material.
+- Added a narrow rule for translating vague quality words such as “professional,” “complete” or “deep” into observable properties only when context supports the translation and it materially changes execution.
+- Preserved Preflight's semantic center and adaptive depth: simple requests do not become requirements bureaucracy, and retry, rollback, failure diagnosis and operational receipts remain owned by Operational Reliability and related recovery machinery.
+- Recorded explicit conceptual lineage to **David Kendrick's _Master Prompt Engineer v5.1 — Core Knowledge & Operating Doctrine_** for the materially used outcome/requirements/constraints/state/success-criteria/verification pattern. The credit marks bounded influence and adaptation, not coauthorship, endorsement, partnership or wholesale import of the donor method.
+- Advanced Preflight from **2.2 to 2.3** and synchronized its registry identity, standalone package, AI Kernel reference/package and README capability digest.
+
 ## 2026-09-23 — Chat–Work 5.2 · unified adapter directory
 
 - Consolidated the Astra and GPT-6 Sol/Luna subordinate adapters under a single `portables/chat-work/adapters/` directory.
