@@ -5,10 +5,10 @@
 ## Meta
 
 - **status:** current subordinate adapter
-- **adapter version:** 1.1
-- **as of:** 2026-09-23
+- **adapter version:** 1.2
+- **as of:** 2026-09-24
 - **governing capability:** [Chat–Work Routing Protocol](../CHAT_WORK_ROUTING_PROTOCOL.md)
-- **scope:** GPT-6 Sol and GPT-6 Luna routing in Work, Codex and API-shaped reasoning about executor choice
+- **scope:** GPT-6 Sol and GPT-6 Luna routing in Work and Codex, including heterogeneous subagent topology, child-model inheritance/overrides and API-shaped reasoning about executor choice
 - **authority:** subordinate; the canonical Chat–Work body wins on conflict
 - **volatility:** high; availability, model menus, reasoning controls, plan/workspace exposure and usage economics must be rechecked
 - **product boundary:** not OpenAI policy, not a benchmark ranking system and not a guarantee about ChatGPT allowance consumption
@@ -18,7 +18,7 @@
 
 ## 1. Why this adapter exists
 
-GPT-6 changes the practical executor geometry without changing Chat–Work's stable laws.
+GPT-6 changes the practical executor geometry, and current subagent support makes heterogeneous model delegation a first-class execution option under Chat–Work 6.0.
 
 At launch, OpenAI positions:
 
@@ -138,6 +138,7 @@ Prefer Work when the sovereign object is connected research, multi-file knowledg
 
 - Luna is the default candidate for bounded high-volume Work.
 - Sol becomes the default candidate when the Work trajectory itself requires strong ongoing judgment, branching recovery or co-architecture.
+- When Work exposes subagent delegation, prefer Sol-as-root with Luna workers for independent bulk before asking the user to change the whole Work model.
 
 ### Codex
 
@@ -145,12 +146,69 @@ Prefer Codex when the sovereign object is a repository, codebase, tests, termina
 
 - Luna is a strong default for well-specified implementation, repetitive fixes, tests and bounded refactors.
 - Sol is preferred for difficult debugging, broad refactors, architecture-bearing implementation and complex agentic coding.
+- Codex exposes the strongest current control surface for heterogeneous subagents: global child defaults, per-spawn overrides and custom agent files can separate root and child models when the active release exposes those controls.
 
 ### Chat
 
 At launch, GPT-6 Sol/Luna are not exposed as ordinary Chat models. Chat remains the controller/postflight surface using the best suitable **Chat-available** model. Never report a GPT-6 Sol/Luna Chat switch unless the product actually exposes it.
 
-## 8. Context law
+## 8. Heterogeneous subagent topology
+
+Current official subagent guidance supports a root/child split rather than requiring every child to inherit the root model.
+
+### Default strong-root pattern
+
+For most demanding Codex work, start with Sol as the root and delegate narrow or high-volume branches to Luna:
+
+```text
+Sol root
+├─ Luna / high → exploration, search, evidence gathering
+├─ Luna / high → tests, logs, repetitive verification
+├─ Luna / high → documentation or mechanical implementation
+└─ Sol root     → convergence, hard debugging, architecture, final validation
+```
+
+This is the preferred default when the root needs strong planning but most child work is bounded.
+
+### Frontier-root pattern
+
+When Astra is justified as the root, do not automatically duplicate Astra across every branch. Prefer:
+
+```text
+Astra root
+├─ Luna workers → volume, scans, extraction, routine tool work
+├─ Sol specialists → ambiguous or architecture-bearing branches
+└─ Astra root → decomposition, arbitration, exceptional judgment, final synthesis
+```
+
+The Astra adapter owns the frontier-specific geometry. This adapter owns the Luna/Sol child roles.
+
+### Inheritance and override
+
+If no child model or child reasoning effort is configured, current subagent behavior may inherit the parent model and effort. Heterogeneous delegation therefore requires an explicit child policy when cost separation matters.
+
+In current Codex configuration, the `[agents]` block can set `default_subagent_model`, `default_subagent_reasoning_effort` and a concurrency ceiling. Custom agent files can pin their own model and effort. Explicit spawn settings, configured defaults and parent inheritance form a precedence chain; verify the active client's behavior instead of assuming that a configuration was honored.
+
+For ChatGPT Work, prompt for the intended delegation topology and child model/effort when the UI/runtime exposes that capability. Work is hosted and does not expose the same local configuration surface as Codex.
+
+### Fresh-child context preference
+
+When a heterogeneous child only needs a bounded task packet, prefer a fresh or deliberately partial child context rather than cloning the entire parent history. This reduces context duplication and preserves the economic point of using a cheaper worker.
+
+Current Codex Multi-Agent V2 guidance also warns that full-history forks inherit the parent model and reasoning effort and do not accept model/effort overrides. Treat this as dated implementation calibration, not permanent protocol law.
+
+### Fanout law
+
+The point is not “more agents.” The point is **more useful work per expensive root token**.
+
+- use Luna workers for read-heavy, independent and verifiable units;
+- promote only failed or genuinely difficult branches to Sol;
+- keep parallel write ownership disjoint or serialize mutation;
+- cap fanout and depth;
+- return summaries/evidence rather than raw intermediate noise;
+- compare total work to accepted state, not per-call sticker price.
+
+## 9. Context law
 
 The 1.05M context window is a **capacity ceiling, not a context target**.
 
@@ -164,9 +222,9 @@ Keep Context Diet active:
 
 The API's >272K long-context price step is useful evidence that very large prompts have real economics, but it is **API pricing**, not a Work/Codex allowance formula.
 
-## 9. Economics boundary
+## 10. Economics boundary
 
-### 9.1 Standard short-context API price vector
+### 10.1 Standard short-context API price vector
 
 For the dated 2026-09-23 calibration, use the official **Standard / short-context** text-token rates per 1M tokens:
 
@@ -180,7 +238,7 @@ For the dated 2026-09-23 calibration, use the official **Standard / short-contex
 
 Long-context, Batch, Flex, Fast, regional-processing and tool-call prices are separate regimes and must be recalculated from current official pricing rather than inferred from this table.
 
-### 9.2 Mixed-workload cost equation
+### 10.2 Mixed-workload cost equation
 
 Let:
 
@@ -203,7 +261,7 @@ If `R = 20`, model A costs 20× model B for that workload. The savings from movi
 
 `Savings(A→B) = 1 - C(B;I,O)/C(A;I,O)`
 
-### 9.3 Constant-ratio relations
+### 10.3 Constant-ratio relations
 
 Some pairs have proportional input/output prices, so their ratio is independent of the input/output mix:
 
@@ -222,7 +280,7 @@ Equivalent savings readings:
 - GPT-6 Luna is **97.5% cheaper** than GPT-5.6 Sol;
 - GPT-6 Sol is **50% cheaper** than GPT-5.6 Sol.
 
-### 9.4 Generation-over-generation Luna equation
+### 10.4 Generation-over-generation Luna equation
 
 GPT-5.6 Luna → GPT-6 Luna is not perfectly proportional because output fell more than input:
 
@@ -240,7 +298,7 @@ By contrast:
 
 so GPT-6 Sol is exactly **50% cheaper** than GPT-5.6 Sol for any uncached text-token input/output mix under this price regime.
 
-### 9.5 Cross-generation ratios that depend on workload mix
+### 10.5 Cross-generation ratios that depend on workload mix
 
 For GPT-6 Sol versus GPT-5.6 Luna:
 
@@ -260,7 +318,7 @@ For GPT-5.6 Sol versus GPT-5.6 Luna:
 
 This ranges from **20×** for input-only work to **16.67×** for output-only work.
 
-### 9.6 Luna-normalized price index
+### 10.6 Luna-normalized price index
 
 Using GPT-6 Luna as `1.0`:
 
@@ -278,7 +336,7 @@ This makes the current economic geometry explicit:
 
 with GPT-5.6 Luna and Sol sitting at `2/2.4` and `40` respectively.
 
-### 9.7 Routing interpretation
+### 10.7 Routing interpretation
 
 The large price gap does **not** create a compulsory routing staircase.
 
@@ -296,7 +354,7 @@ The optimization target is not minimum first-turn cost:
 
 where expected total cost includes the probability-weighted cost of retries, correction, repeated tool work, context reconstruction and higher-tier bursts when material.
 
-### 9.8 ChatGPT allowance firewall
+### 10.8 ChatGPT allowance firewall
 
 These equations are **API price equations only**.
 
@@ -308,22 +366,22 @@ They must **not** be copied into ChatGPT Work/Codex allowance math. ChatGPT usag
 
 The token-price ratios can inform qualitative economic intuition; they cannot manufacture product telemetry.
 
-## 10. Default routing matrix
+## 11. Default routing matrix
 
 | Workload geometry | Preferred starting route | Escalate when |
 |---|---|---|
-| Focused extraction / classification / transformation | Luna · low/medium | reasoning, not source/tool failure, remains insufficient |
+| Focused extraction / classification / transformation | Luna · low/medium, or Luna workers under a stronger root | reasoning, not source/tool failure, remains insufficient |
 | Bounded multi-step artifact work | Luna · medium/high | ambiguity or correction cost becomes load-bearing |
 | Dense but bounded judgment with clear inputs | Luna · high/max or Sol · low/medium | choose by total-work efficiency |
 | Narrow code patch / tests / mechanical refactor | Codex + Luna · medium/high | debugging/architecture becomes genuinely hard |
-| Complex repo-wide engineering / hard debugging | Codex + Sol · high/xhigh | irreducible frontier judgment remains |
+| Complex repo-wide engineering / hard debugging | Codex + Sol root · medium/high, Luna workers for bounded branches | irreducible frontier judgment remains |
 | Long connector/computer workflow with stable decisions | Work + Luna · medium/high | trajectory branches require repeated strong judgment |
-| Multi-app agentic workflow with uncertain recovery | Work + Sol · high/xhigh | frontier cognition materially changes outcome |
+| Multi-app agentic workflow with uncertain recovery | Work + Sol root, Luna workers when independent bulk exists | frontier cognition materially changes outcome |
 | High-consequence review / architecture | Sol · xhigh/max | Astra burst/full route passes canonical frontier gate |
 
 Reasoning labels are recommendations only when the current surface actually exposes them.
 
-## 11. Failure and re-entry
+## 12. Failure and re-entry
 
 When Luna underperforms:
 
@@ -340,13 +398,13 @@ When Sol underperforms:
 - use Astra only if available, justified by the frontier gate and permitted by the active Astra adapter/user profile;
 - preserve tests, receipts and Chat Postflight.
 
-## 12. Locality and migration note
+## 13. Locality and migration note
 
 This adapter describes the GPT-6 family **as observed at the dated release state**. Future Chat availability, changed usage pools, new family members, repricing or changed effort controls can alter the calibration without changing the canonical Chat–Work architecture.
 
 A future model release should update or supersede this adapter rather than spraying model names through the stable core.
 
-## 13. Official sources
+## 14. Official sources
 
 - OpenAI — Introducing GPT-6 Sol and Luna: https://openai.com/index/introducing-gpt-6-sol-and-luna/
 - OpenAI API — GPT-6 Sol: https://developers.openai.com/api/docs/models/gpt-6-sol
@@ -354,10 +412,12 @@ A future model release should update or supersede this adapter rather than spray
 - OpenAI API — GPT-6 model guidance: https://developers.openai.com/api/docs/guides/latest-model
 - OpenAI API — Pricing: https://developers.openai.com/api/docs/pricing
 - OpenAI Help — ChatGPT Release Notes: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+- OpenAI — Subagents: https://learn.chatgpt.com/docs/agent-configuration/subagents
+- OpenAI Codex source — current `[agents]` configuration fields: https://github.com/openai/codex/blob/main/codex-rs/config/src/config_toml.rs
 
 ## Final law
 
-> **Luna buys throughput; Sol buys stronger judgment inside execution. Raise effort when effort is the missing ingredient, route directly to Sol when strong reasoning is already load-bearing, and never turn API price ratios into imaginary Work allowance mathematics. The model is an executor choice; the sovereign object still chooses the surface.**
+> **Luna buys throughput; Sol buys stronger judgment inside execution. Keep Sol at the bottleneck, delegate bounded bulk to Luna when the harness can do so, and promote only the difficult branch. Never turn API price ratios into imaginary Work allowance mathematics. The sovereign object chooses the surface; the delegation topology chooses where each unit of cognition is spent.**
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
