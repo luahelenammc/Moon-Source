@@ -60,8 +60,8 @@
         "Uses MSL-5.1 terminology; product and model calibration is date-sensitive and belongs in subordinate adapter notes",
         "Source transport records governing source or family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback; a locator is not authority",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions",
-        "Optional Astra strategy adapter v1.2 at portables/chat-work/astra/CHAT_WORK_ASTRA_ADAPTER.md; subordinate to the canonical Chat–Work body, independently versioned as a submodule, setup-gated, and not a second capability identity",
-        "GPT-6 Sol/Luna strategy adapter v1.1 at portables/chat-work/gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md; dated Work/Codex executor calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics; includes dated Standard short-context API price-ratio equations with a firewall against unsupported Work/Codex allowance conversion"
+        "Optional Astra strategy adapter v1.2 at portables/chat-work/adapters/CHAT_WORK_ASTRA_ADAPTER.md; subordinate to the canonical Chat–Work body, independently versioned as a submodule, setup-gated, and not a second capability identity",
+        "GPT-6 Sol/Luna strategy adapter v1.1 at portables/chat-work/adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md; dated Work/Codex executor calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics; includes dated Standard short-context API price-ratio equations with a firewall against unsupported Work/Codex allowance conversion"
       ],
       "difficulty": "advanced",
       "distribution": {
@@ -79,12 +79,12 @@
             "source_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md"
           },
           {
-            "archive_path": "astra/CHAT_WORK_ASTRA_ADAPTER.md",
-            "source_path": "portables/chat-work/astra/CHAT_WORK_ASTRA_ADAPTER.md"
+            "archive_path": "adapters/CHAT_WORK_ASTRA_ADAPTER.md",
+            "source_path": "portables/chat-work/adapters/CHAT_WORK_ASTRA_ADAPTER.md"
           },
           {
-            "archive_path": "gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md",
-            "source_path": "portables/chat-work/gpt-6/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md"
+            "archive_path": "adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md",
+            "source_path": "portables/chat-work/adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md"
           }
         ]
       },
@@ -93,7 +93,7 @@
       "id": "chat-work-routing",
       "language": "English",
       "last_material_update_on": "2026-09-23",
-      "last_material_update_summary": "Chat–Work remains 5.2; current artifact naming was normalized by removing the obsolete V4 fossil from the canonical file, standalone package and website mirror while preserving version history and protocol semantics.",
+      "last_material_update_summary": "Chat–Work remains 5.2; model-specific subordinate adapters were structurally consolidated into one shared `portables/chat-work/adapters/` directory, preserving adapter versions and protocol semantics while preventing one-folder-per-model proliferation.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
