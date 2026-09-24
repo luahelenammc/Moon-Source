@@ -53,8 +53,8 @@
     {
       "architectural_role": "operational_routing_protocol",
       "best_for": "ChatGPT users and builders who need routing to adapt to resource posture, enabled capabilities and quality/throughput preferences while isolating hard reasoning deltas, preserving capability floors and closing work audibly across Chat, Work and optional Codex",
-      "canonical_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md",
-      "claim_ceiling": "Published Chat–Work V4 protocol, subversion 5.2; operational routing heuristic only, with optional subordinate model-specific strategy guidance; not an OpenAI policy, native Sprint Mode feature, allowance/reset detector, price or economic model, benchmark, guaranteed savings/quality/quota-use claim or proof that a native chat-work-router V4 skill is installed",
+      "canonical_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md",
+      "claim_ceiling": "Published Chat–Work Routing Protocol, version 5.2; operational routing heuristic only, with optional subordinate model-specific strategy guidance; not an OpenAI policy, native Sprint Mode feature, allowance/reset detector, price or economic model, benchmark, guaranteed savings/quality/quota-use claim or proof that a native chat-work-router skill is installed",
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
       "dependencies": [
         "Uses MSL-5.1 terminology; product and model calibration is date-sensitive and belongs in subordinate adapter notes",
@@ -66,17 +66,17 @@
       "difficulty": "advanced",
       "distribution": {
         "canonical_sha256": "160da46d42e8bbe30f9baf72de755b605e38898550cf245d3f0bf5f4827ff794",
-        "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol-v4.zip",
+        "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol.zip",
         "embedded_first_use": true,
-        "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_5_1.md",
-        "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_5_1.md",
-        "package_path": "downloads/chat-work-routing-protocol-v4.zip",
+        "mirror_path": "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_MSL_5_1.md",
+        "mirror_url": "https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_MSL_5_1.md",
+        "package_path": "downloads/chat-work-routing-protocol.zip",
         "standalone": true,
         "composite": true,
         "composite_members": [
           {
-            "archive_path": "CHAT_WORK_ROUTING_PROTOCOL_V4.md",
-            "source_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md"
+            "archive_path": "CHAT_WORK_ROUTING_PROTOCOL.md",
+            "source_path": "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md"
           },
           {
             "archive_path": "astra/CHAT_WORK_ASTRA_ADAPTER.md",
@@ -93,7 +93,7 @@
       "id": "chat-work-routing",
       "language": "English",
       "last_material_update_on": "2026-09-23",
-      "last_material_update_summary": "Chat–Work remains 5.2; GPT-6 Sol/Luna adapter advanced to 1.1 with explicit Standard short-context API price equations, normalized cross-model ratios, mixed-workload cost formulas and an explicit firewall against projecting token-price ratios onto Work/Codex allowance consumption.",
+      "last_material_update_summary": "Chat–Work remains 5.2; current artifact naming was normalized by removing the obsolete V4 fossil from the canonical file, standalone package and website mirror while preserving version history and protocol semantics.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
