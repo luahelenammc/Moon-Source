@@ -5,15 +5,15 @@
 ## Public status
 
 - **status:** current subordinate adapter; optional public guidance
-- **version:** 1.2
+- **version:** 1.3
 - **versioning mode:** independently versioned subordinate submodule; the human title remains unversioned
 - **first public release:** 2026-09-09
-- **last material update:** 2026-09-10
-- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration
-- **applies to:** Chat–Work Routing Protocol 5.1
-- **effective date:** 2026-09-09
+- **last material update:** 2026-09-24
+- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0
+- **applies to:** Chat–Work Routing Protocol 6.0
+- **effective date:** 2026-09-24
 - **governing canonical body:** `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`
-- **canonical release lineage:** introduced under Chat–Work 5.1; the current canonical body uses the unversioned filename `CHAT_WORK_ROUTING_PROTOCOL.md`
+- **canonical release lineage:** introduced under Chat–Work 5.1 and updated for Chat–Work 6.0 Delegation-First orchestration; the current canonical body uses the unversioned filename `CHAT_WORK_ROUTING_PROTOCOL.md`
 - **MSL dependency:** Moon Source Language 5.1
 - **authority:** subordinate adapter only; the Chat–Work canonical body governs on conflict
 - **scope:** Astra-specific strategy geometry, reusable presets and volatile model/surface calibration
@@ -50,7 +50,7 @@ The canonical Chat–Work protocol continues to own stable, model-neutral laws:
 - mutation authorization;
 - Decision Trace semantics;
 - Sprint as an optional run-level overlay;
-- Native Parallelism Gate;
+- Delegation & Native Parallelism Gate;
 - verification, receipts and Chat Postflight;
 - acceptance states and claim ceiling.
 
@@ -323,6 +323,39 @@ return_geometry: return_capsule | decision_trace | mixed
 
 It is appropriate when a finite family of related decisions shares enough context that repeatedly reconstructing the same expensive frame would be wasteful or coherence-destroying.
 
+## Astra as heterogeneous orchestrator
+
+Chat–Work 6.0 changes the default question for frontier runs. When Astra is selected, ask not “should Astra do everything?” but “which parts genuinely require Astra?”
+
+When the active Work/Codex runtime exposes subagents and model selection, prefer a cognitive pyramid:
+
+```text
+Astra root
+├─ Luna workers → retrieval, scanning, extraction, routine verification and bounded implementation
+├─ Sol specialists → difficult debugging, ambiguous synthesis and architecture-bearing branches
+└─ Astra → decomposition, arbitration, exceptional frontier judgment and final synthesis
+```
+
+This is a default hypothesis, not a compulsory caste system. A small, tightly coupled frontier task may remain single-owner Astra. A broad task with little frontier reasoning may not need Astra at all.
+
+### Frontier budget preservation law
+
+Astra should not spend frontier budget on work that a cheaper child can perform against the same acceptance boundary. Preserve Astra for bottlenecks where its additional capability can change the decision, architecture, exception handling or final verification.
+
+### Branch-local escalation
+
+1. Luna attempts bounded work.
+2. If failure is due to source, authority, tooling or specification, repair that cause.
+3. If failure is genuinely cognitive, promote only that branch to Sol.
+4. Escalate from Sol back to Astra only when the branch contains an irreducible frontier judgment.
+5. Return the distilled result to the root for convergence.
+
+Do not promote the entire run because one leaf became difficult.
+
+### Context and write ownership
+
+Children should receive minimum sufficient context, not the whole Astra history by default. Parallel write-heavy branches require disjoint ownership or explicit merge control. Astra remains convergence owner unless the task explicitly assigns another owner.
+
 ## Astra Strategy Compiler
 
 Resolve the strategy in this order:
@@ -345,7 +378,7 @@ The compiler should choose the smallest structure that preserves the task's requ
 
 ## Chat–Work integration contract
 
-The Astra adapter is not a parallel router. It is a subordinate strategy layer inside Chat–Work.
+The Astra adapter is not a parallel router. It is a subordinate strategy layer inside Chat–Work 6.0, including its Delegation-First law.
 
 Chat–Work resolves the general Execution Profile, Run State, task requirements, authority and capability floor first. When Astra is selected as a possible capability target, the adapter then resolves the **Astra Setup Contract** before compiling model-specific strategy.
 
@@ -358,11 +391,12 @@ Chat–Work Setup
     → Astra Setup
       → user-specific role / autonomy / context / effort / fanout / return preferences
       → Astra Strategy Compiler
+        → single-owner or heterogeneous root/child topology
         → bounded execution or return
   → Chat Postflight
 ```
 
-Chat–Work may recommend Astra and may prefill an AUTO proposal from explicit profile data, but it must not silently choose Brain Burst, Deep Review, Co-Architect, Executor, Full Run, Decision Sprint, maximum reasoning, maximum autonomy or physical fanout on the user's behalf.
+Chat–Work may recommend Astra and may prefill an AUTO proposal from explicit profile data. Under Chat–Work 6.0, AUTO may also select an internal delegation topology when the active harness exposes it, but it must not silently expand mutation authority, scope, maximum reasoning or unbounded physical fanout.
 
 The same user may rationally configure Astra differently for different tasks. A persistent Astra profile is a convenience, not an identity claim or an immutable default.
 
@@ -395,7 +429,7 @@ Likewise, Astra can be used in any strategy above without Sprint.
 This section is empirical and replaceable. It never overrides the canonical
 Chat–Work body, the active authority envelope or the claim ceiling.
 
-**Last checked:** 2026-09-10
+**Last checked:** 2026-09-24
 
 **Source class:** official product documentation for product behavior; dated
 field reports for operational hypotheses.
@@ -419,7 +453,8 @@ become necessary for routing. Examples include:
 - current allowance or shared-pool behavior;
 - observed tool or harness differences;
 - dated operational failure patterns;
-- current economic reasons to prefer brain-burst versus sustained execution.
+- current economic reasons to prefer brain-burst versus sustained execution;
+- current subagent availability, child-model inheritance/override behavior and concurrency controls.
 
 Every volatile fact must be dated and sourced to appropriate current evidence. Anecdotes may inform a risk hypothesis but must not become a universal model property, benchmark or fixed cost law.
 
@@ -446,7 +481,7 @@ Do not promote `light`, `medium`, `high`, `xhigh`, `ultra`, `fast` or any other 
 
 Apply the same logic to speed modes. A latency-premium mode is justified when human-visible response latency is itself the dominant bottleneck. It is usually poor value when execution time is dominated by external tools, browsing, tests, long-running operations or agent coordination. This is a bottleneck-allocation rule, not a ban on fast modes.
 
-Apply the same logic to agents and parallelism. Physical fanout should earn its coordination tax. Prefer one capable owner when the work is tightly coupled, context-heavy or sequential; use subagents when work units are materially independent, context duplication is bounded and convergence cost is lower than the expected parallel gain. The generic Native Parallelism Gate still governs.
+Apply the same logic to agents and parallelism. Under Chat–Work 6.0, internal delegation is preferred over a user-visible model switch when the active harness can resolve the required capability tree. Physical fanout should still earn its coordination tax: prefer one capable owner when work is tightly coupled, context-heavy or sequential; use subagents when units are materially independent, context duplication is bounded and convergence cost is lower than the expected gain. The generic Delegation & Native Parallelism Gate governs.
 
 For Astra strategy selection, prefer this sequence:
 
@@ -461,6 +496,7 @@ Useful current references:
 - [Reasoning models](https://developers.openai.com/api/docs/guides/reasoning)
 - [Custom instructions with AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)
 - [Codex CLI](https://learn.chatgpt.com/docs/codex/cli)
+- [Subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents)
 
 The adapter keeps this calibration outside stable Chat–Work law so that a
 future model, surface or product change can replace these notes without
@@ -487,27 +523,26 @@ The adapter may classify failures such as:
 
 These are routing diagnoses, not claims about the model's private internals.
 
-## Relationship to Chat–Work 5.1
+## Relationship to Chat–Work 6.0
 
-**Current Astra adapter version: 1.2.** Chat–Work itself remains 5.1: this adapter version is subordinate and independently tracked, while the governing router keeps its stable release identity.
+**Current Astra adapter version: 1.3.** Chat–Work 6.0 is the governing router; this adapter remains subordinate and independently tracked.
 
-Chat–Work 5.1 adds only the generic boundary that makes this adapter
-legitimate. The canonical body retains the stable routing laws; this document
-supplies optional Astra-specific strategy geometry and calibration. The
-adapter is not a new capability, a second registry identity or a replacement
-for the canonical portable.
+Chat–Work 6.0 promotes Delegation-First and heterogeneous topology to stable routing law. This adapter specializes that law for Astra without turning Astra into a universal executor or creating a second router.
 
 The release is coherent only when:
 
-- an unknown user can choose Astra as brain, reviewer, co-architect, executor or mixed without contradicting the core;
+- an unknown user can choose Astra as brain, reviewer, co-architect, executor, orchestrator or mixed without contradicting the core;
 - role, autonomy and mutation authority remain independent;
 - corpus breadth changes strategy without fake document-count thresholds;
 - capsules remain optional and contextual;
 - Sprint remains an independent overlay;
 - broad context and sustained execution are allowed when genuinely load-bearing;
+- Astra can delegate reducible bulk to cheaper workers when the runtime exposes it;
+- branch-local escalation is preferred over promoting the whole run;
 - presets remain examples rather than a closed taxonomy;
 - volatile Astra facts can change without requiring general-router doctrine to change;
 - no native feature, entitlement, benchmark or guaranteed-economics claim is introduced;
+- heterogeneous child routing is used only when the active runtime actually exposes compatible subagent/model controls;
 - the canonical Chat–Work body remains the single semantic authority.
 
 ## Claim ceiling

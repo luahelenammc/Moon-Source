@@ -47,7 +47,7 @@ Use each file for the responsibility it actually owns:
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router, currently version 3.1.
 - `portables/msl/MOON_SOURCE_LANGUAGE.md` — current public structural grammar for semantic passage and materialization. MSL is currently 5.1.
-- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md` — current 5.2 closed-loop ChatGPT surface/model/reasoning and source-transport routing, Work return, Chat Postflight, acceptance and re-entry protocol; product details are date-sensitive.
+- `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md` — current 6.0 delegation-first ChatGPT routing protocol: object/surface routing, heterogeneous root/child model topology, source transport, executor return, Chat Postflight, acceptance and re-entry; product and subagent details are date-sensitive.
 - `registry/PUBLIC_CAPABILITIES.md` — human-readable unified public capability identities, roles, versions, status and standalone-distribution routes.
 - `registry/public-capabilities.json` — machine-readable one-record-per-capability registry; standalone distribution is nested metadata and does not create a second semantic inventory.
 - `docs/PORTABLE_DESIGN_CONTRACT.md` — portable publication, canonical-path and mirror rules.
@@ -274,7 +274,7 @@ Route current-use questions about superseded artifacts to their active successor
 Load:
 - `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`
 
-Apply the V4 tri-surface loop: route by sovereign object across Chat, Work and Codex; choose capability and effort separately; run Budget Survivability before expensive work; and after any executor return perform Chat Postflight before treating the cycle as complete. Treat model names, prices, usage pools, limits and product behavior as date-sensitive. Re-verify current product facts when the answer depends on them.
+Apply the V6 delegation-first tri-surface loop: route by sovereign object across Chat, Work and Codex; choose root capability, child topology and effort separately; prefer internal subagent delegation before asking for a manual model switch when the harness exposes it; run Budget Survivability before expensive work; and after any executor return perform Chat Postflight before treating the cycle as complete. Treat model names, prices, usage pools, limits and product behavior as date-sensitive. Re-verify current product facts when the answer depends on them.
 
 ### If the user wants to publish, mirror, redistribute or version public Moon Source material
 

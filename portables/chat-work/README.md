@@ -1,21 +1,23 @@
 # 🔀 Chat–Work Routing Protocol — Moon Source portable
 
-**Route a task across Chat, Work and Codex by the object being changed, the workload required and the intelligence budget available.**
+**Route a task across Chat, Work and Codex by the object being changed, then let the active harness assemble the cheapest sufficient internal model topology before asking the user to switch manually.**
 
 [▶️ Start here](CHAT_WORK_ROUTING_PROTOCOL.md#first-use) · [⬇️ Download package](../../downloads/chat-work-routing-protocol.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 
 - a task may need to move between conversational reasoning and sustained execution;
-- you need to choose surface, model/reasoning effort and source transport separately;
-- a Work result must return to Chat for verification and bounded closure;
+- one task contains both expensive judgment and large amounts of cheaper parallelizable work;
+- you want Work/Codex to delegate internally instead of making the user shuttle between models;
+- you need to choose surface, root model, child models/reasoning effort and source transport separately;
+- an executor result must return to Chat for verification and bounded closure;
 - expensive execution needs a survivability check before spending the budget.
 
 ## Astra submodule, not Astra mode
 
-Astra is an optional subordinate submodule of this Chat–Work portable, not a prescribed work style. Its canonical adapter now lives inside this module at [`adapters/CHAT_WORK_ASTRA_ADAPTER.md`](adapters/CHAT_WORK_ASTRA_ADAPTER.md) and is independently versioned at **1.2**.
+Astra is an optional subordinate submodule of this Chat–Work portable, not a prescribed work style. Its canonical adapter now lives inside this module at [`adapters/CHAT_WORK_ASTRA_ADAPTER.md`](adapters/CHAT_WORK_ASTRA_ADAPTER.md) and is independently versioned at **1.3**.
 
-GPT-6 Sol/Luna has a separate dated executor calibration at [`adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md`](adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md), version **1.1**. It preserves the model-neutral core while mapping the new family to Work/Codex execution: Luna for focused/high-volume work, Sol for strong reasoning inside complex agentic execution, and no invented one-to-one named model for the semantic `balanced` tier.
+GPT-6 Sol/Luna has a separate dated executor calibration at [`adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md`](adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md), version **1.3**. It preserves the model-neutral core while mapping the family to Work/Codex execution and heterogeneous delegation: Luna for focused/high-volume child work, Sol for strong roots and demanding specialists, plus current Codex child-model/default configuration guidance.
 
 When Astra is actually available, Chat–Work can compile it as a judgment brain, broad reviewer, co-architect, bounded executor or sustained full-run surface. Role, autonomy, reasoning depth, context breadth and mutation authority remain separate.
 
@@ -33,21 +35,21 @@ Capsules are useful for bounded judgment, but they are not mandatory for broad r
 
 ## What it does
 
-Chat–Work defines an object-routed execution loop across Chat, Work and Codex, including execution profiles, connector-aware source transport, Budget Survivability, the Intelligence Distillation Ladder, bounded exhaustiveness, an auditable Decision Trace for material higher-tier rulings, optional explicitly activated ephemeral Sprint Mode with a bounded Decision Sprint exception, and Chat Postflight.
+Chat–Work 6.0 defines an object-routed execution loop across Chat, Work and Codex, including execution profiles, Delegation-First orchestration, heterogeneous root/child model topology, connector-aware source transport, Budget Survivability, the Intelligence Distillation Ladder, bounded exhaustiveness, an auditable Decision Trace for material higher-tier rulings, optional explicitly activated ephemeral Sprint Mode with a bounded Decision Sprint exception, and Chat Postflight.
 
 The Decision Trace exposes the smallest decision-bearing comparison needed to audit a material ruling — alternatives, decisive reasons, adversarial correction, falsifier/test and uncertainty — **not** hidden chain-of-thought or private scratchpad content.
 
 ## What it does not do
 
-It does not itself create access to a model, tool, connector or execution surface. Sprint Mode does not expose allowance/reset state, create a native product feature or persist across runs. Product names, limits and availability are date-sensitive and must be rechecked when they matter.
+It does not itself create access to a model, tool, connector, subagent control or execution surface. It cannot force Work/Codex to honor a child-model override the active runtime does not expose. Sprint Mode does not expose allowance/reset state, create a native product feature or persist across runs. Product names, limits, inheritance behavior and availability are date-sensitive and must be rechecked when they matter.
 
 ## Current identity
 
-- **Version:** 5.2
-- **Protocol family:** V4
+- **Version:** 6.0
+- **Protocol family:** V6
 - **Status:** current · supported standalone distribution
 - **Optional Astra submodule:** [`adapters/CHAT_WORK_ASTRA_ADAPTER.md`](adapters/CHAT_WORK_ASTRA_ADAPTER.md) · version **1.2**
-- **GPT-6 Sol/Luna submodule:** [`adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md`](adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md) · version **1.1**
+- **GPT-6 Sol/Luna submodule:** [`adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md`](adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md) · version **1.2**
 - **Adapter directory law:** current and future model-specific Chat–Work adapters co-reside under `portables/chat-work/adapters/`; do not create one directory per model family unless a future adapter actually becomes a multi-file subsystem.
 - **Canonical body:** [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`](CHAT_WORK_ROUTING_PROTOCOL.md)
 - **Package:** [`downloads/chat-work-routing-protocol.zip`](../../downloads/chat-work-routing-protocol.zip)

@@ -140,7 +140,7 @@ This is a professional-service bridge, not a claim that Moon Source is a mature 
 - **2026-09-24 — Moon Source Setup:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
 - **2026-09-24 — Moon Source Language:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
 - **2026-09-24 — Connected Sources:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
-- **2026-09-24 — Chat–Work Routing Protocol:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
+- **2026-09-24 — Chat–Work Routing Protocol:** Promoted Chat–Work to 6.0: delegation topology is now first-class, internal heterogeneous subagent orchestration precedes manual model switching when available, Sol→Luna and Astra→Luna/Sol patterns are calibrated in subordinate adapters, and fanout remains bounded by ownership, convergence, total-work efficiency and verification.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
 This bounded digest is generated from the unified capability registry. It is not a commit log.
