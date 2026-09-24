@@ -23,7 +23,7 @@ The table's **Summary title** is the concise browsing label. The registry's sema
 | moon-source-setup | [Setup](../portables/setup/README.md) | adaptive context router | 3.1 | current | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md#first-use) | [ZIP](../downloads/moon-source-setup-3.1.zip) |
 | operational-devices | 🛠️ Operational Devices | operational-device pattern | — | current | [OPERATIONAL_DEVICES.md](../docs/OPERATIONAL_DEVICES.md) | — |
 | operational-reliability | 🛡️ Operational Reliability | operational-reliability method | — | current | [OPERATIONAL_RELIABILITY.md](../docs/OPERATIONAL_RELIABILITY.md) | — |
-| preflight | [Preflight](../portables/preflight/README.md) | transversal interface method | 2.2 | current | [PREFLIGHT_V2.md](../portables/preflight/PREFLIGHT_V2.md#first-use) | [ZIP](../downloads/preflight-v2.zip) |
+| preflight | [Preflight](../portables/preflight/README.md) | transversal interface method | 2.3 | current | [PREFLIGHT_V2.md](../portables/preflight/PREFLIGHT_V2.md#first-use) | [ZIP](../downloads/preflight-v2.zip) |
 | procedural-projection | 🧩 Procedural Projection | procedural-projection method | — | current | [PROCEDURAL_PROJECTION.md](../docs/PROCEDURAL_PROJECTION.md) | — |
 | semantic-reweave | 🧵 Semantic Reweave | semantic-topology repair method | — | current | [SEMANTIC_REWEAVE.md](../docs/SEMANTIC_REWEAVE.md) | — |
 | signal-calibration | 🎚️ Signal Calibration | qualitative signal calibration | — | current | [SIGNAL_CALIBRATION.md](../docs/SIGNAL_CALIBRATION.md) | — |
@@ -97,7 +97,7 @@ material release and do not establish a naming precedent.
 
 The current independently versioned capabilities are Lifecycle Workspace Router at
 1.2, Connected Sources at 1.1-public, MSL at 5.1, Chat–Work at 5.2,
-Setup at 3.1, Preflight at 2.2 and Be My Eyes at 1.0-public. Chat–Work 5.2
+Setup at 3.1, Preflight at 2.3 and Be My Eyes at 1.0-public. Chat–Work 5.2
 preserves the model-neutral strategy-adapter boundary and Astra Strategy Adapter
 1.2, and adds the dated GPT-6 Sol/Luna Adapter 1.1, including explicit API price-ratio equations, plus the stable rule that
 semantic capability tiers do not require one-to-one named-model counterparts.
