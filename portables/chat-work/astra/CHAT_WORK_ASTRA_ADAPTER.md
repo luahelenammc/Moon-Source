@@ -12,7 +12,7 @@
 - **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration
 - **applies to:** Chat–Work Routing Protocol 5.1
 - **effective date:** 2026-09-09
-- **governing canonical body:** `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL_V4.md`
+- **governing canonical body:** `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`
 - **canonical release:** Chat–Work 5.1; the stable human title and V4 filename remain unchanged
 - **MSL dependency:** Moon Source Language 5.1
 - **authority:** subordinate adapter only; the Chat–Work canonical body governs on conflict
