@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-23 — Chat–Work 5.2 · artifact naming normalization
+
+- Renamed the current canonical body from `CHAT_WORK_ROUTING_PROTOCOL_V4.md` to `CHAT_WORK_ROUTING_PROTOCOL.md` so the filename no longer freezes an obsolete historical generation marker onto the independently versioned 5.2 protocol.
+- Normalized the current standalone package and website-mirror filenames accordingly, while preserving historical changelog references to the former V4 naming where they describe past release state.
+- Updated current registry, adapter, architecture and download references without changing Chat–Work semantics or its 5.2 version.
+
+
 ## 2026-09-23 — GPT-6 Sol/Luna Adapter 1.1 · price-ratio equations
 
 - Added explicit Standard short-context API price vectors for GPT-5.6 Luna/Sol and GPT-6 Luna/Sol/Astra.
