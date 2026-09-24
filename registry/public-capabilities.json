@@ -368,7 +368,7 @@
       "dependencies": [],
       "difficulty": "beginner to advanced",
       "distribution": {
-        "canonical_sha256": "8aec193d92c101a214475d7c0ba137400be54cb4476e593c90fce347baceb063",
+        "canonical_sha256": "b8454fca6f2c1ce2d2f6641c9d86a635b3fd7f6cfa3108e1d232cfe7b9003db8",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/PREFLIGHT_V2.md",
@@ -380,8 +380,8 @@
       "function": "Reconstruct a human's intended task from ordinary, incomplete, conversational or self-correcting expression before and during execution, correcting a material active-frame mismatch when evidence is sufficient and activating heavier authority, freshness, provenance, safety, destination, mutation and readback guardrails only when consequence requires them",
       "id": "preflight",
       "language": "English with language-sensitive execution",
-      "last_material_update_on": "2026-09-10",
-      "last_material_update_summary": "Added bounded active-frame correction and persistence/promotion-candidacy boundaries; Preflight is now version 2.2.",
+      "last_material_update_on": "2026-09-23",
+      "last_material_update_summary": "Refined Preflight with a bounded success contract: positive requirements versus constraints, current task state for longitudinal work, observable success criteria, contextual operationalization of vague quality language, and consequence-proportional verification targets; records conceptual lineage to David Kendrick's Master Prompt Engineer v5.1 without changing Preflight's human-intent center.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -390,10 +390,10 @@
       "readable_surface_path": "portables/preflight/README.md",
       "status": "current",
       "summary_title": "Preflight",
-      "supersedes": null,
+      "supersedes": "2.2",
       "surface_title": "Preflight — Moon Source portable",
       "title": "Preflight",
-      "version": "2.2",
+      "version": "2.3",
       "versioning_mode": "independent_public_capability_version"
     },
     {

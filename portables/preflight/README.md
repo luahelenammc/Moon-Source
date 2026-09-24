@@ -13,7 +13,7 @@
 
 ## What it does
 
-Preflight reconstructs intended meaning, desired outcome and important constraints in ordinary language, then hands execution the smallest faithful working task.
+Preflight reconstructs intended meaning, desired outcome, positive requirements and constraints in ordinary language, then adds current task state, observable success criteria and a verification target only when they materially improve execution.
 
 ## What it does not do
 
@@ -21,7 +21,7 @@ It is not mind-reading, a mandatory questionnaire or an excuse to over-architect
 
 ## Current identity
 
-- **Version:** 2.2
+- **Version:** 2.3
 - **Status:** current · supported standalone distribution
 - **Canonical body:** [`portables/preflight/PREFLIGHT_V2.md`](PREFLIGHT_V2.md)
 - **Package:** [`downloads/preflight-v2.zip`](../../downloads/preflight-v2.zip)
