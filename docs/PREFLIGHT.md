@@ -2,7 +2,7 @@
 
 Preflight is now a standalone Moon Source public portable, currently at version **2.1**.
 
-**Current canonical path:** [`portables/preflight/PREFLIGHT_V2.md`](../portables/preflight/PREFLIGHT_V2.md)  
+**Current canonical path:** [`portables/preflight/PREFLIGHT.md`](../portables/preflight/PREFLIGHT.md)<br>
 **Current version:** 2.1  
 **Portable promotion:** 2026-09-07
 

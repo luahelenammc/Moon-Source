@@ -23,11 +23,11 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 
 | Capability | Canonical body | Best for | Direct download |
 |---|---|---|---|
-| [🧭 **Setup**](portables/setup/README.md) | [MOON_SOURCE_SETUP.md](portables/setup/MOON_SOURCE_SETUP.md#first-use) | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup-3.1.zip) |
-| [🛫 **Preflight**](portables/preflight/README.md) | [PREFLIGHT_V2.md](portables/preflight/PREFLIGHT_V2.md#first-use) | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight-v2.zip) |
-| [👁️ **Be My Eyes**](portables/be-my-eyes/README.md) | [BE_MY_EYES.md](portables/be-my-eyes/BE_MY_EYES.md#first-use) | Reading messages, threads, screenshots, notes and drafts as human scenes | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes-1.0-public.zip) |
-| [🔗 **Connected Sources**](portables/connected-sources/README.md) | [CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md#first-use) | Governed operation over persistent connected sources | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources-1.1-public.zip) |
-| [🧱 **Moon Source Language**](portables/msl/README.md) | [MSL_5_1.md](portables/msl/MSL_5_1.md#first-use) | Governing semantic passage across sources, capabilities, interfaces and surfaces | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language-5.1.zip) |
+| [🧭 **Setup**](portables/setup/README.md) | [MOON_SOURCE_SETUP.md](portables/setup/MOON_SOURCE_SETUP.md#first-use) | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup.zip) |
+| [🛫 **Preflight**](portables/preflight/README.md) | [PREFLIGHT.md](portables/preflight/PREFLIGHT.md#first-use) | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight.zip) |
+| [👁️ **Be My Eyes**](portables/be-my-eyes/README.md) | [BE_MY_EYES.md](portables/be-my-eyes/BE_MY_EYES.md#first-use) | Reading messages, threads, screenshots, notes and drafts as human scenes | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes.zip) |
+| [🔗 **Connected Sources**](portables/connected-sources/README.md) | [CONNECTED_SOURCES.md](docs/CONNECTED_SOURCES.md#first-use) | Governed operation over persistent connected sources | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources.zip) |
+| [🧱 **Moon Source Language**](portables/msl/README.md) | [MOON_SOURCE_LANGUAGE.md](portables/msl/MOON_SOURCE_LANGUAGE.md#first-use) | Governing semantic passage across sources, capabilities, interfaces and surfaces | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-language.zip) |
 | [🔀 **Chat–Work Routing Protocol**](portables/chat-work/README.md) | [CHAT_WORK_ROUTING_PROTOCOL.md](portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md#first-use) | Object/workload routing, model-neutral escalation, optional Sprint Mode, model-specific strategy adapters, Decision Trace and Chat Postflight | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/chat-work-routing-protocol.zip) |
 
 The MSL 5.1 package carries the exact canonical body, including its explicit formatting contract; the README is a routing facade.
@@ -53,19 +53,19 @@ Restoring a README does not change the canonical path, package bytes, mirror byt
 
 ### Preflight
 
-[**Browse Preflight**](portables/preflight/README.md) · [**Open canonical body**](portables/preflight/PREFLIGHT_V2.md#first-use) · [**Download package**](downloads/preflight-v2.zip)
+[**Browse Preflight**](portables/preflight/README.md) · [**Open canonical body**](portables/preflight/PREFLIGHT.md#first-use) · [**Download package**](downloads/preflight.zip)
 
 The former `docs/PREFLIGHT.md` path remains only as a succession pointer.
 
 ### Be My Eyes
 
-[**Browse Be My Eyes**](portables/be-my-eyes/README.md) · [**Open canonical body**](portables/be-my-eyes/BE_MY_EYES.md#first-use) · [**Download package**](downloads/be-my-eyes-1.0-public.zip)
+[**Browse Be My Eyes**](portables/be-my-eyes/README.md) · [**Open canonical body**](portables/be-my-eyes/BE_MY_EYES.md#first-use) · [**Download package**](downloads/be-my-eyes.zip)
 
 Be My Eyes owns the structural scene-reading responsibility and remains independently distributable at **1.0-public**.
 
 ### Connected Sources
 
-[**Browse Connected Sources**](portables/connected-sources/README.md) · [**Open canonical body**](docs/CONNECTED_SOURCES.md#first-use) · [**Download package**](downloads/connected-sources-1.1-public.zip)
+[**Browse Connected Sources**](portables/connected-sources/README.md) · [**Open canonical body**](docs/CONNECTED_SOURCES.md#first-use) · [**Download package**](downloads/connected-sources.zip)
 
 Connected Sources remains the structural crown jewel at `docs/CONNECTED_SOURCES.md`. Its portable directory contains only the human-facing README facade; the retired portable canonical body is not restored.
 

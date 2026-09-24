@@ -13,17 +13,17 @@ The table's **Summary title** is the concise browsing label. The registry's sema
 
 | ID | Summary title | Architectural role | Version | Status | Canonical body | Standalone distribution |
 |---|---|---|---:|---|---|---|
-| be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) | contextual scene-reading method | 1.0-public | current | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md#first-use) | [ZIP](../downloads/be-my-eyes-1.0-public.zip) |
+| be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) | contextual scene-reading method | 1.0-public | current | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md#first-use) | [ZIP](../downloads/be-my-eyes.zip) |
 | chat-work-routing | [Chat–Work Routing Protocol](../portables/chat-work/README.md) | operational routing protocol | 5.2 | current | [CHAT_WORK_ROUTING_PROTOCOL.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md#first-use) | [ZIP](../downloads/chat-work-routing-protocol.zip) |
-| connected-sources | [Connected Sources](../portables/connected-sources/README.md) | structural crown jewel | 1.1-public | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources-1.1-public.zip) |
+| connected-sources | [Connected Sources](../portables/connected-sources/README.md) | structural crown jewel | 1.1-public | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources.zip) |
 | credits-attribution-ops | 🧾 Credits & Attribution Ops | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
 | failure-foundry | 🏭 Failure to Capability — Failure Foundry | failure-to-capability method | — | current | [FAILURE_FOUNDRY.md](../docs/FAILURE_FOUNDRY.md) | — |
 | lifecycle-workspace-router | 🗂️ Lifecycle Workspace Router | lifecycle workspace routing method | 1.2 | current | [LIFECYCLE_WORKSPACE_ROUTER.md](../docs/LIFECYCLE_WORKSPACE_ROUTER.md) | — |
-| moon-source-language | [Moon Source Language](../portables/msl/README.md) | sovereign semantic passage grammar | 5.1 | current | [MSL_5_1.md](../portables/msl/MSL_5_1.md#first-use) | [ZIP](../downloads/moon-source-language-5.1.zip) |
-| moon-source-setup | [Setup](../portables/setup/README.md) | adaptive context router | 3.1 | current | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md#first-use) | [ZIP](../downloads/moon-source-setup-3.1.zip) |
+| moon-source-language | [Moon Source Language](../portables/msl/README.md) | sovereign semantic passage grammar | 5.1 | current | [MOON_SOURCE_LANGUAGE.md](../portables/msl/MOON_SOURCE_LANGUAGE.md#first-use) | [ZIP](../downloads/moon-source-language.zip) |
+| moon-source-setup | [Setup](../portables/setup/README.md) | adaptive context router | 3.1 | current | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md#first-use) | [ZIP](../downloads/moon-source-setup.zip) |
 | operational-devices | 🛠️ Operational Devices | operational-device pattern | — | current | [OPERATIONAL_DEVICES.md](../docs/OPERATIONAL_DEVICES.md) | — |
 | operational-reliability | 🛡️ Operational Reliability | operational-reliability method | — | current | [OPERATIONAL_RELIABILITY.md](../docs/OPERATIONAL_RELIABILITY.md) | — |
-| preflight | [Preflight](../portables/preflight/README.md) | transversal interface method | 2.3 | current | [PREFLIGHT_V2.md](../portables/preflight/PREFLIGHT_V2.md#first-use) | [ZIP](../downloads/preflight-v2.zip) |
+| preflight | [Preflight](../portables/preflight/README.md) | transversal interface method | 2.3 | current | [PREFLIGHT.md](../portables/preflight/PREFLIGHT.md#first-use) | [ZIP](../downloads/preflight.zip) |
 | procedural-projection | 🧩 Procedural Projection | procedural-projection method | — | current | [PROCEDURAL_PROJECTION.md](../docs/PROCEDURAL_PROJECTION.md) | — |
 | semantic-reweave | 🧵 Semantic Reweave | semantic-topology repair method | — | current | [SEMANTIC_REWEAVE.md](../docs/SEMANTIC_REWEAVE.md) | — |
 | signal-calibration | 🎚️ Signal Calibration | qualitative signal calibration | — | current | [SIGNAL_CALIBRATION.md](../docs/SIGNAL_CALIBRATION.md) | — |
@@ -72,12 +72,12 @@ registry identity or authority map.
 The branded website keeps convenience copies of the six current standalone
 capabilities under:
 
-- https://www.luahelena.com.br/moonsource/downloads/PREFLIGHT_V2.md
+- https://www.luahelena.com.br/moonsource/downloads/PREFLIGHT.md
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_SETUP.md
 - https://www.luahelena.com.br/moonsource/downloads/BE_MY_EYES.md
 - https://www.luahelena.com.br/moonsource/downloads/CONNECTED_SOURCES.md
-- https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL_5_1.md
-- https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_MSL_5_1.md
+- https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL.md
+- https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL.md
 
 These are delivery surfaces, not semantic authorities. Each mirror must remain
 byte-identical to its mapped canonical body.

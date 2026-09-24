@@ -15,6 +15,9 @@ HUMAN_REGISTRY = ROOT / "registry" / "PUBLIC_CAPABILITIES.md"
 VERSION_MARKER_RE = re.compile(
     r"(?i)(?<![A-Za-z])(?:v\d+(?:\.\d+)*|\d+\.\d+(?:\.\d+)*(?:-[a-z0-9.-]+)?|(?:alpha|beta|rc)\d*)(?![A-Za-z])"
 )
+PATH_VERSION_MARKER_RE = re.compile(
+    r"(?i)(?<![A-Za-z0-9])(?:v\d+(?:[._]\d+)*|\d+(?:[._]\d+)+(?:-[a-z0-9][a-z0-9.-]*)?)(?![A-Za-z0-9])"
+)
 AUDIENCE_VERSION_LABEL_RE = re.compile(
     r"(?i)(?:^|[-_.])(?:public|private|local)(?:$|[-_.])"
 )
@@ -29,6 +32,11 @@ LEGACY_AUDIENCE_LABELED_VERSIONS = {
     "connected-sources": "1.1-public",
 }
 
+# A current version-bearing path is exceptional and must be justified here.
+# Keep this allowlist empty unless a live parallel generation/compatibility
+# identity makes the version-bearing coordinate semantically necessary.
+VERSIONED_CURRENT_PATH_EXCEPTIONS: dict[str, str] = {}
+
 
 def contains_version_marker(value: str) -> bool:
     return bool(VERSION_MARKER_RE.search(value))
@@ -36,6 +44,25 @@ def contains_version_marker(value: str) -> bool:
 
 def contains_audience_version_label(value: str) -> bool:
     return bool(AUDIENCE_VERSION_LABEL_RE.search(value))
+
+
+def contains_version_marker_in_path(value: str) -> bool:
+    """Detect release markers in a current path, including directory names."""
+
+    return bool(PATH_VERSION_MARKER_RE.search(value))
+
+
+def current_path_error(identity: str, coordinate: str, value: str) -> str | None:
+    normalized = value.replace("\\", "/").strip("/")
+    if (
+        contains_version_marker_in_path(normalized)
+        and not VERSIONED_CURRENT_PATH_EXCEPTIONS.get(normalized, "").strip()
+    ):
+        return (
+            f"{identity}: current {coordinate} contains a version marker: {value!r}; "
+            "keep release state in metadata or add a documented semantic exception"
+        )
+    return None
 
 
 def first_h1(markdown: str) -> str | None:
@@ -116,6 +143,11 @@ def validation_errors(
             errors.append(f"{identity}: canonical_path is missing")
             continue
 
+        if capability.get("status") in {"current", "experimental"}:
+            path_error = current_path_error(identity, "canonical_path", canonical_path)
+            if path_error:
+                errors.append(path_error)
+
         path = root / canonical_path
         if not path.is_file():
             errors.append(f"{identity}: canonical file is missing: {canonical_path}")
@@ -150,6 +182,14 @@ def validation_errors(
 
         if isinstance(surface_title, str) and "— Moon Source " not in surface_title:
             errors.append(f"{identity}: surface_title lacks a bounded Moon Source role qualifier")
+
+        if standalone and capability.get("status") in {"current", "experimental"}:
+            for coordinate in ("package_path", "mirror_path"):
+                value = distribution.get(coordinate)
+                if isinstance(value, str) and value.strip():
+                    path_error = current_path_error(identity, coordinate, value)
+                    if path_error:
+                        errors.append(path_error)
         if not isinstance(summary_title, str) or not isinstance(surface_title, str):
             continue
         for marker in (str(identity), summary_title, canonical_path):

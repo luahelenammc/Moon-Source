@@ -22,7 +22,7 @@ Use Connected Sources to map the source substrate, jurisdiction, retrieval scope
 - [Source Hygiene](../../docs/SOURCE_HYGIENE.md) for staleness and duplication.
 - [Operational Reliability](../../docs/OPERATIONAL_RELIABILITY.md) for safe operation and readback.
 - [Responsibility Map](../../docs/RESPONSIBILITY_MAP.md) for facet-level ownership.
-- [MSL 5.1](../../portables/msl/MSL_5_1.md) for a bounded registry or continuity packet.
+- [MSL 5.1](../../portables/msl/MOON_SOURCE_LANGUAGE.md) for a bounded registry or continuity packet.
 
 ## Possible smallest materialization
 
