@@ -61,7 +61,7 @@
         "Source transport records governing source or family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback; a locator is not authority",
         "Work and Codex subagent availability, child-model inheritance/override behavior, concurrency and permissions are run-time conditions; Delegation-First never fabricates unavailable controls",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions",
-        "Optional Astra strategy adapter v1.5 at portables/chat-work/adapters/CHAT_WORK_ASTRA_ADAPTER.md; subordinate to the canonical Chat–Work body, independently versioned as a submodule, setup-gated, delegation-aware and aligned to the surface-neutral control-root model",
+        "Optional Astra strategy adapter v1.6 at portables/chat-work/adapters/CHAT_WORK_ASTRA_ADAPTER.md; subordinate to the canonical Chat–Work body, independently versioned as a submodule, setup-gated, delegation-aware, worker-ownership calibrated and aligned to the surface-neutral control-root model",
         "GPT-6 Sol/Luna strategy adapter v1.3 at portables/chat-work/adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md; dated heterogeneous executor/subagent calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics",
         "Control surface/root, root model/tier and execution surface/harness are distinct routing dimensions; AUTO preserves the current competent root before considering a human-visible surface transition"
       ],
@@ -95,7 +95,7 @@
       "id": "chat-work-routing",
       "language": "English",
       "last_material_update_on": "2026-09-27",
-      "last_material_update_summary": "Chat–Work 6.1 remains the governing surface-neutral router; its subordinate Astra Strategy Adapter advanced to 1.5 with official OpenAI calibration for follow-through, instruction/skill diet, delegation, proportional verification, output shape and API-vs-product capability boundaries.",
+      "last_material_update_summary": "Chat–Work 6.1 remains the governing surface-neutral router; its subordinate Astra Strategy Adapter advanced to 1.6 with credited mechanism-level calibration for coherent delegation bundles, worker ownership/non-shadowing, review-before-acceptance, consolidated correction and real write-isolation boundaries.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
