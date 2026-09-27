@@ -47,7 +47,7 @@ They should not be collapsed into one number.
 
 Connected Sources 1.2 is a **material additive release** that makes two context-governance responsibilities explicit: source/host reach does not give every internal consumer entitlement to receive the source, and decision-bearing raw material can leave active context through a compact rehydratable projection while its resolvable source remains intact. It preserves separate source, consumer, instruction and mutation boundaries and does not prescribe a provider, storage backend, size threshold, summary shape or runtime.
 
-The release records bounded mechanism-level inspiration from Ishan Gupta's `Ishan-1/MAVIS` (MIT) without copying code or importing its runtime habitat. Scenario-fixture validation remains an experiment candidate; it is not promoted to a universal rule. MSL remains 5.1; the standalone package and exact-byte website mirror were rebuilt and the registry fingerprint refreshed.
+The release records bounded mechanism-level inspiration from Ishan Gupta's `Ishan-1/MAVIS` (MIT) without copying code or importing its runtime habitat. Scenario-fixture validation remains an experiment candidate; it is not promoted to a universal rule. MSL remains 5.1; the Connected Sources standalone ZIP and exact-byte website mirror were rebuilt, the AI Kernel ZIP was refreshed to match its updated canonical body, and the registry fingerprint was refreshed.
 
 ## Lifecycle Workspace Router 1.2 release — 2026-09-13
 

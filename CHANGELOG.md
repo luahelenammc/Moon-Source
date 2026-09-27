@@ -5,7 +5,7 @@
 - Made host/source reach distinct from each internal consumer's contextual scope; delivery follows responsibility, while instruction and mutation authority remain separate.
 - Added rehydratable context offload: preserve the resolvable source and provenance, carry a compact projection in active context, and reread when omitted detail could matter.
 - Recorded bounded mechanism-level credit to Ishan Gupta's `Ishan-1/MAVIS` (MIT); no code or runtime dependency was copied. Scenario-fixture validation remains incubating.
-- Advanced Connected Sources from 1.1-public to 1.2, rebuilt the standalone ZIP and exact-byte website mirror, and refreshed the registry fingerprint and generated README digest. MSL remains 5.1; registry schema remains 2.0.
+- Advanced Connected Sources from 1.1-public to 1.2, rebuilt its standalone ZIP and exact-byte website mirror, refreshed the AI Kernel ZIP to match its updated canonical body, and refreshed the registry fingerprint and generated README digest. MSL remains 5.1; registry schema remains 2.0.
 
 ## 2026-09-24 — Chat–Work 6.1 · surface-neutral control-root routing
 
