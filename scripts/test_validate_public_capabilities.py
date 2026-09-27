@@ -132,6 +132,39 @@ Creator: Example Creator
     def assert_error(self, fragment: str, errors: list[str]) -> None:
         self.assertTrue(any(fragment in error for error in errors), errors)
 
+    def test_legacy_alias_mapping_is_valid_and_non_competing(self):
+        data = copy.deepcopy(self.data)
+        capability = data["capabilities"][0]
+        capability["legacy_aliases"] = ["Connected Sources Archive"]
+        capability["legacy_ids"] = ["connected-sources-legacy"]
+        legacy_path = self.root / "docs/CONNECTED_SOURCES_LEGACY.md"
+        legacy_path.write_text("Moved to docs/CONNECTED_SOURCES.md\n", encoding="utf-8")
+        capability["legacy_paths"] = ["docs/CONNECTED_SOURCES_LEGACY.md"]
+        capability["legacy_package_paths"] = ["downloads/connected-sources-legacy.zip"]
+        with ZipFile(self.root / "downloads/connected-sources.zip") as source, ZipFile(self.root / capability["legacy_package_paths"][0], "w") as target:
+            for name in source.namelist():
+                target.writestr(name, source.read(name))
+        capability["legacy_mirror_paths"] = ["moonsource/downloads/CONNECTED_SOURCES_LEGACY.md"]
+        self.assertEqual(self.errors(data), [])
+
+    def test_legacy_id_cannot_collide_with_current_id(self):
+        data = copy.deepcopy(self.data)
+        data["capabilities"][0]["legacy_ids"] = ["source-operations"]
+        self.assert_error("legacy id collides with current capability id", self.errors(data))
+
+    def test_legacy_package_must_match_current_package_bytes(self):
+        data = copy.deepcopy(self.data)
+        capability = data["capabilities"][0]
+        capability["legacy_package_paths"] = ["downloads/connected-sources-legacy.zip"]
+        with ZipFile(self.root / capability["legacy_package_paths"][0], "w") as archive:
+            archive.writestr("CONNECTED_SOURCES.md", "stale body")
+        self.assert_error("legacy package does not match canonical package bytes", self.errors(data))
+
+    def test_legacy_paths_must_resolve(self):
+        data = copy.deepcopy(self.data)
+        data["capabilities"][0]["legacy_paths"] = ["docs/missing-legacy.md"]
+        self.assert_error("legacy path does not exist", self.errors(data))
+
     def test_baseline_registry_is_valid(self):
         self.assertEqual(self.errors(), [])
 

@@ -1,4 +1,4 @@
-name: Verify Chat-Work 6.1 package receipt
+name: Verify Adaptive Orchestration 6.1 package receipt
 
 on:
   workflow_dispatch:

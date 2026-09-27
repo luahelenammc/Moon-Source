@@ -31,7 +31,7 @@ def main() -> None:
     assert contains_version_marker("Be My Eyes 1.0-public")
     assert contains_version_marker("Moon Source Language 4.3")
     assert not contains_version_marker("Preflight")
-    assert not contains_version_marker("Chat–Work Routing Protocol")
+    assert not contains_version_marker("Adaptive Orchestration Protocol")
     assert contains_audience_version_label("1.2-public")
     assert contains_audience_version_label("2.0_private")
     assert contains_audience_version_label("3.1.local")

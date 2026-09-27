@@ -34,7 +34,7 @@ The repository maintenance CLI delegates to the existing bounded validators; it 
 
 New application material must be visibly hypothetical and didactic unless independently supported public evidence exists. Do not present a fictional scenario as a case study, adoption result or validated deployment.
 
-The public capability registry records Git-derived public creation and material-update dates. Do not guess dates from private lineage, and do not create a standalone distribution or bump MSL, Setup or Chat–Work merely because another capability or facade changed.
+The public capability registry records Git-derived public creation and material-update dates. Do not guess dates from private lineage, and do not create a standalone distribution or bump MSL, Setup or Adaptive Orchestration merely because another capability or facade changed.
 
 When user feedback exposes a first-use misunderstanding — for example, confusing an instruction layer with an installed integration, assuming an unavailable capability, or not knowing the first manual step — treat that as a documentation/interface delta first. Change the canonical semantic body only when the semantic contract itself is wrong. Onboarding clarity alone does not earn a protocol version bump.
 

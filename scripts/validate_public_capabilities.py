@@ -298,6 +298,91 @@ def validate_registry(
         if distribution.get("download_url") != expected_download:
             errors.append(f"{capability_id} download_url does not match package_path")
 
+    # Legacy identities are compatibility entrances on the existing record, not new capabilities.
+    alias_fields = ("legacy_aliases", "legacy_ids", "legacy_paths", "legacy_package_paths", "legacy_mirror_paths")
+    canonical_id_owner = {item.get("id"): item.get("id") for item in capabilities if isinstance(item, dict)}
+    canonical_path_owner = {item.get("canonical_path"): item.get("id") for item in capabilities if isinstance(item, dict)}
+    canonical_mirror_owner = {
+        item.get("distribution", {}).get("mirror_path"): item.get("id")
+        for item in capabilities if isinstance(item, dict) and isinstance(item.get("distribution"), dict)
+    }
+    alias_id_owner: dict[str, str] = {}
+    alias_identity_owner: dict[str, str] = {}
+    alias_path_owner: dict[str, str] = {}
+    for item in capabilities:
+        if not isinstance(item, dict):
+            continue
+        owner = item.get("id", "unknown capability")
+        values_by_field = {}
+        for field in alias_fields:
+            values = item.get(field, [])
+            if not isinstance(values, list):
+                errors.append(f"{owner} {field} must be an array of strings")
+                values_by_field[field] = []
+                continue
+            if any(not isinstance(value, str) or not value.strip() for value in values):
+                errors.append(f"{owner} {field} must contain non-empty strings")
+            valid_values = [value for value in values if isinstance(value, str) and value.strip()]
+            if len(set(valid_values)) != len(valid_values):
+                errors.append(f"{owner} {field} contains duplicate values")
+            values_by_field[field] = valid_values
+
+        for legacy_id in values_by_field["legacy_ids"]:
+            current_owner = canonical_id_owner.get(legacy_id)
+            if current_owner and current_owner != owner:
+                errors.append(f"{owner} legacy id collides with current capability id: {legacy_id}")
+            prior = alias_id_owner.get(legacy_id)
+            if prior and prior != owner:
+                errors.append(f"legacy id is assigned to multiple capabilities: {legacy_id}")
+            alias_id_owner[legacy_id] = owner
+
+        for alias in values_by_field["legacy_aliases"]:
+            identity = capability_identity(alias)
+            current_owner = identities.get(identity)
+            if current_owner and current_owner != owner:
+                errors.append(f"{owner} legacy alias collides with current capability identity: {alias}")
+            prior = alias_identity_owner.get(identity)
+            if prior and prior != owner:
+                errors.append(f"legacy alias is assigned to multiple capabilities: {alias}")
+            alias_identity_owner[identity] = owner
+
+        for legacy_path in values_by_field["legacy_paths"]:
+            path_obj = Path(legacy_path)
+            if path_obj.is_absolute() or ".." in path_obj.parts:
+                errors.append(f"{owner} has an unsafe legacy path: {legacy_path}")
+                continue
+            if not (root / path_obj).exists():
+                errors.append(f"{owner} legacy path does not exist: {legacy_path}")
+            current_owner = canonical_path_owner.get(legacy_path.rstrip("/"))
+            if current_owner and current_owner != owner:
+                errors.append(f"{owner} legacy path collides with current canonical path: {legacy_path}")
+            prior = alias_path_owner.get(legacy_path)
+            if prior and prior != owner:
+                errors.append(f"legacy path is assigned to multiple capabilities: {legacy_path}")
+            alias_path_owner[legacy_path] = owner
+
+        dist = item.get("distribution", {})
+        current_package_path = dist.get("package_path") if isinstance(dist, dict) else None
+        current_package = root / current_package_path if isinstance(current_package_path, str) else None
+        for legacy_package_path in values_by_field["legacy_package_paths"]:
+            if not legacy_package_path.startswith("downloads/") or not legacy_package_path.endswith(".zip"):
+                errors.append(f"{owner} has an invalid legacy package path: {legacy_package_path}")
+                continue
+            legacy_package = root / legacy_package_path
+            if not legacy_package.is_file():
+                errors.append(f"{owner} legacy package is missing: {legacy_package_path}")
+            elif current_package is None or not current_package.is_file():
+                errors.append(f"{owner} canonical package is missing for legacy package comparison")
+            elif legacy_package.read_bytes() != current_package.read_bytes():
+                errors.append(f"{owner} legacy package does not match canonical package bytes: {legacy_package_path}")
+
+        for legacy_mirror_path in values_by_field["legacy_mirror_paths"]:
+            if not legacy_mirror_path.startswith("moonsource/downloads/"):
+                errors.append(f"{owner} legacy mirror path is outside the website download surface: {legacy_mirror_path}")
+            current_owner = canonical_mirror_owner.get(legacy_mirror_path)
+            if current_owner and current_owner != owner:
+                errors.append(f"{owner} legacy mirror path collides with current mirror path: {legacy_mirror_path}")
+
     expected_standalone = sorted(standalone_ids)
     view_ids = data.get("views", {}).get("standalone_distributions", {}).get("capability_ids")
     if sorted(view_ids or []) != expected_standalone:

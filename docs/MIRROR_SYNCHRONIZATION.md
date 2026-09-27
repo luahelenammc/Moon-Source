@@ -35,7 +35,7 @@ Historical mirror promotions and their fingerprints remain inspectable in Git hi
 
 The 2026-09-02 Chat–Work V3 promotion is historical. On 2026-09-06, Chat–Work V4 became the current standalone distribution and mirror: the superseded V3 files were removed from both live trees, the exact V4 bytes were copied to the mapped mirror path, and the registry fingerprint was refreshed. On 2026-09-07, Setup advanced to 3.1, Connected Sources was promoted as a method plus 1.0-public standalone distribution, and Chat–Work advanced to 4.4-public; each current standalone distribution is mapped to one exact website mirror, with the superseded Chat–Work 4.3 mirror removed. That historical state still had MSL 4.3; the current MSL mirror now carries MSL 5.1. On 2026-09-09, Chat–Work advanced through 4.9 and 5.0 and then to 5.1 on the same V4 path; the exact 5.1 bytes are mapped to `moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL_V4_MSL_5_1.md`, while the superseded mirrors remain recoverable through Git history rather than the live website tree.
 
-On 2026-09-24, current canonical bodies, packages and mirrors were normalized to stable semantic paths. MSL is mirrored at `moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL.md`, Preflight at `moonsource/downloads/PREFLIGHT.md`, and Chat–Work at `moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL.md`. All six standalone packages now use version-neutral current filenames. Preflight's 2.3 bytes were refreshed on the website; the current registry fingerprint and exact-byte mirror check now agree. Capability versions did not change.
+On 2026-09-24, current canonical bodies, packages and mirrors were normalized to stable semantic paths. MSL is mirrored at `moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL.md`, Preflight at `moonsource/downloads/PREFLIGHT.md`, and Adaptive Orchestration at `moonsource/downloads/ADAPTIVE_ORCHESTRATION_PROTOCOL.md`. All six standalone packages now use version-neutral current filenames. Preflight's 2.3 bytes were refreshed on the website; the current registry fingerprint and exact-byte mirror check now agree. Capability versions did not change.
 
 ## Mismatch detection
 
@@ -56,6 +56,8 @@ A non-zero exit means at least one canonical current file or current mirror has 
 ## Public routes
 
 Use the [public capability registry](../registry/PUBLIC_CAPABILITIES.md) for canonical paths, roles and fingerprints, the [download hub](../DOWNLOADS.md) for standalone public access, [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for mirror lineage and content custody, or [Architecture](../ARCHITECTURE.md) for the responsibilities behind the files.
+
+On 2026-09-27, the Chat–Work Routing Protocol identity moved to Adaptive Orchestration Protocol at version 6.1 under the naming-only version rule. The canonical package and exact-byte website mirror use the new identity; the old folder, body, adapter paths, package and mirror remain thin compatibility routes to the current canonical artifacts. Astra 1.6 and GPT-6 Sol/Luna 1.3 are unchanged.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
