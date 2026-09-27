@@ -14,7 +14,7 @@ The table's **Summary title** is the concise browsing label. The registry's sema
 | ID | Summary title | Architectural role | Version | Status | Canonical body | Standalone distribution |
 |---|---|---|---:|---|---|---|
 | be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) | contextual scene-reading method | 1.0-public | current | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md#first-use) | [ZIP](../downloads/be-my-eyes.zip) |
-| chat-work-routing | [Chat–Work Routing Protocol](../portables/chat-work/README.md) | operational routing protocol | 6.1 | current | [CHAT_WORK_ROUTING_PROTOCOL.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md#first-use) | [ZIP](../downloads/chat-work-routing-protocol.zip) |
+| adaptive-orchestration | [Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) | adaptive execution orchestration protocol | 6.1 | current | [ADAPTIVE_ORCHESTRATION_PROTOCOL.md](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md#first-use) | [ZIP](../downloads/adaptive-orchestration-protocol.zip) |
 | connected-sources | [Connected Sources](../portables/connected-sources/README.md) | structural crown jewel | 1.2 | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources.zip) |
 | credits-attribution-ops | 🧾 Credits & Attribution Ops | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
 | failure-foundry | 🏭 Failure to Capability — Failure Foundry | failure-to-capability method | — | current | [FAILURE_FOUNDRY.md](../docs/FAILURE_FOUNDRY.md) | — |
@@ -48,7 +48,7 @@ within a declared scope and Moon Source publishes a supported standalone route
 for it. A standalone distribution does not create a second authority.
 
 The six standalone distributions are a filtered view of the unified registry:
-👁️ Be My Eyes, 🔀 Chat–Work Routing Protocol, 🔗 Connected Sources, 🧱 Moon Source Language,
+👁️ Be My Eyes, 🧬 Adaptive Orchestration Protocol, 🔗 Connected Sources, 🧱 Moon Source Language,
 🧭 Setup and 🛫 Preflight. This filter is not a second semantic
 inventory.
 
@@ -78,7 +78,9 @@ capabilities under:
 - https://www.luahelena.com.br/moonsource/downloads/BE_MY_EYES.md
 - https://www.luahelena.com.br/moonsource/downloads/CONNECTED_SOURCES.md
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL.md
-- https://www.luahelena.com.br/moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL.md
+- https://www.luahelena.com.br/moonsource/downloads/ADAPTIVE_ORCHESTRATION_PROTOCOL.md
+
+The former CHAT_WORK_ROUTING_PROTOCOL.md mirror remains a minimal migration pointer to this current mirror.
 
 These are delivery surfaces, not semantic authorities. Each mirror must remain
 byte-identical to its mapped canonical body.
@@ -98,8 +100,8 @@ no longer covered by this exception; the legacy value does not establish a
 naming precedent.
 
 The current independently versioned capabilities are Lifecycle Workspace Router at
-1.2, Connected Sources at 1.2, MSL at 5.1, Chat–Work at 6.1,
-Setup at 3.1, Preflight at 2.3 and Be My Eyes at 1.0-public. Chat–Work 6.1
+1.2, Connected Sources at 1.2, MSL at 5.1, Adaptive Orchestration at 6.1,
+Setup at 3.1, Preflight at 2.3 and Be My Eyes at 1.0-public. Adaptive Orchestration 6.1
 preserves Delegation-First orchestration while making the public core surface-neutral: the current competent control root is the continuity default, control surface/root is distinct from root model and execution harness, and the historical Chat → Work/Codex → Chat loop remains a named first-class profile rather than the mandatory topology. The Astra Strategy Adapter is 1.6 and the GPT-6 Sol/Luna Adapter is 1.3; their named-model and subagent calibration remains dated and subordinate. MSL's formatting contract remains part of the current 5.1 body and release identity.
 
 Product-specific connector behavior, model names, plans, prices, availability
@@ -113,6 +115,8 @@ Moon Source is the semantic and versioning authority. After a canonical body
 changes, update its supported distribution and mirror only after the canonical
 registry and validators pass. Use
 python scripts/check_mirror_sync.py for exact SHA-256 equality.
+
+The legacy id chat-work-routing, legacy names Chat–Work Routing Protocol / Chat–Work Router / Chat–Work, old artifact paths, package and mirror are compatibility pointers to adaptive-orchestration; they do not add a second capability record.
 
 The registry does not replace [Credits & Attribution
 Ops](../docs/CREDITS_ATTRIBUTION_OPS.md), which governs intellectual lineage,

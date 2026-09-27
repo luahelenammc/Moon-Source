@@ -1,0 +1,674 @@
+# Adaptive Orchestration Astra Strategy Adapter
+
+*Optional subordinate adapter for model-specific frontier strategy without changing Adaptive Orchestration's model-neutral core*
+
+## Public status
+
+- **status:** current subordinate adapter; optional public guidance
+- **version:** 1.6
+- **versioning mode:** independently versioned subordinate submodule; the human title remains unversioned
+- **first public release:** 2026-09-09
+- **last material update:** 2026-09-27
+- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1 → 1.5 official Astra prompting/skills calibration → 1.6 delegated-bundle and worker-ownership calibration from credited external mechanism study
+- **applies to:** Adaptive Orchestration Protocol 6.1
+- **effective date:** 2026-09-27
+- **governing canonical body:** `portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md`
+- **canonical release lineage:** introduced under Chat–Work 5.1, updated through Chat–Work 6.0 Delegation-First orchestration and aligned to the surface-neutral control-root model in Chat–Work 6.1; those releases are the same lineage now named Adaptive Orchestration Protocol, whose current body uses the unversioned filename ADAPTIVE_ORCHESTRATION_PROTOCOL.md
+- **MSL dependency:** Moon Source Language 5.1
+- **serialized compatibility tokens:** existing inherit_chat_work values remain accepted as inheritance markers for saved profile data; the tokens do not create a second protocol identity
+- **authority:** subordinate adapter only; the Adaptive Orchestration canonical body governs on conflict
+- **scope:** Astra-specific strategy geometry, reusable presets and volatile model/surface calibration
+- **non-scope:** general routing law, universal model ranking, entitlement inference, benchmarks, pricing guarantees, hidden reasoning access or automatic autonomy
+
+## Why this adapter exists
+
+Adaptive Orchestration accumulated several mechanisms that were discovered or refined while working with frontier models such as Astra: the Intelligence Distillation Ladder, Decision Capsules, Return Capsules, Frontier Burst, Bounded Exhaustiveness, Decision Trace, Decision Sprint and Sprint Mode.
+
+Those mechanisms are useful beyond Astra and therefore belong to the model-neutral core. What does **not** belong in the core is the assumption that Astra itself should always be used through one particular geometry.
+
+Astra can be used as a bounded reasoning brain with almost no execution autonomy, but that is only one valid strategy. Another user may need a broad read-only review, iterative co-architecture, bounded mutation, sustained execution or a coherent frontier full run. The router should not confuse a model's capability with one author's preferred way of spending that capability.
+
+> **Astra is a capability target, not a prescribed work style.**
+
+This adapter makes Astra configurable without allowing Astra-specific habits or volatile product facts to colonize the general router.
+
+## Core / adapter boundary
+
+### Adaptive Orchestration core owns
+
+The canonical Adaptive Orchestration protocol continues to own stable, model-neutral laws:
+
+- sovereign object and observable delta;
+- surface and harness routing;
+- capability floor;
+- reasoning effort as a separate dimension;
+- Execution Profile and Run State;
+- Budget Survivability;
+- Context Diet;
+- Intelligence Distillation Ladder;
+- Bounded Exhaustiveness;
+- source transport and authority;
+- mutation authorization;
+- Decision Trace semantics;
+- Sprint as an optional run-level overlay;
+- Delegation & Native Parallelism Gate;
+- verification, receipts and Control-Root Postflight;
+- acceptance states and claim ceiling.
+
+### Astra adapter owns
+
+This subordinate adapter may organize:
+
+- Astra role and autonomy strategies;
+- Astra-specific context/corpus geometry;
+- recurring Astra reference presets;
+- strategy selection when Astra is actually available;
+- date-sensitive observations about Astra behavior or product exposure;
+- Astra-specific ergonomics and failure patterns;
+- migration guidance when model economics or product surfaces change.
+
+The adapter never creates a second semantic authority. It cannot waive safety, user authority, evidence, capability floor, source authority, scope ceilings, mutation permission, verification, claim ceilings or Control-Root Postflight.
+
+## Orthogonal laws
+
+The adapter begins with separation, not presets:
+
+> **Model capability does not determine autonomy geometry.**
+
+> **Reasoning depth is not execution autonomy.**
+
+> **Context breadth is not mutation authority.**
+
+> **Frontier capability is not a frontier full run.**
+
+> **High autonomy is not unbounded scope.**
+
+> **Sprint is not an Astra mode.**
+
+> **Decision Trace is not Astra-only.**
+
+> **An IDL brain burst is one Astra strategy, not Astra's identity.**
+
+These distinctions prevent the router from turning a successful local workflow into a universal prescription.
+
+## Astra Setup Contract
+
+Astra must not begin from an author-imposed operating style. **Before this adapter compiles or executes an Astra strategy, an Astra Setup must be resolved.** This gate is mandatory on first activation in a run unless a verified persistent Astra profile already exists and the user explicitly chooses to reuse it.
+
+Setup is not questionnaire debt. Resolve only the preferences that materially change the route. Unknown fields may remain `auto` or inherit Adaptive Orchestration only when the user has explicitly accepted that adaptive behavior. A reference preset may be recommended after setup, but it must never be silently treated as the user's default.
+
+The setup may complete in one turn when the user supplies enough configuration. Otherwise, the router presents the smallest decision-bearing proposal and obtains the user's acceptance before Astra execution begins.
+
+Supported setup modes:
+
+- **AUTO** — compile a proposed Astra configuration from the task plus the active Adaptive Orchestration profile, disclose the material fields and let the user accept or override it;
+- **PROFILE** — reuse a verified persistent Astra profile, while disclosing material run-specific deviations before execution;
+- **RUN_OVERRIDE** — apply explicit one-run changes without mutating a reusable profile.
+
+A portable setup shape is:
+
+```yaml
+astra_setup:
+  mode: AUTO | PROFILE | RUN_OVERRIDE
+  persistence: ephemeral | persistent | unknown
+  objective: null
+  role_preference: auto | judgment | reviewer | co_architect | executor | mixed
+  autonomy_preference: auto | read_only | recommend | bounded_mutation | sustained_execution
+  context_breadth_preference: auto | micro_capsule | bounded_corpus | broad_corpus | workspace_scale
+  coverage_preference: auto | single_delta | sibling_docket | multi_domain | exhaustive_bounded
+  reasoning_preference: adaptive | conserve | balanced | deep
+  optimization_priority: inherit_chat_work | throughput_per_allowance | quality | latency | balanced
+  parallelism_preference: inherit_chat_work | logical_only | bounded | permissive
+  mutation_authority: inherit_chat_work | none | bounded_explicit | sustained_explicit
+  return_preference: auto | return_capsule | decision_trace | structured_report | artifact | patch | evidence_receipt | mixed
+  checkpoints: proportional | aggressive
+  stop_condition: null
+```
+
+These are preferences and routing inputs, not capability claims. Setup cannot manufacture model availability, surface access, source authority, mutation permission, budget, persistence or safety clearance.
+
+### Setup precedence
+
+When Astra-specific preferences conflict, use this order:
+
+1. safety, authority, evidence and capability-floor constraints;
+2. explicit current-run Astra override;
+3. explicitly selected persistent Astra profile;
+4. active Adaptive Orchestration Execution Profile fields that are semantically compatible with Astra;
+5. an accepted Astra AUTO proposal;
+6. adapter reference presets only as recommendations.
+
+Absence of a preference is not permission to infer one from Moon's habits, a model's prestige, a previous user's workflow or a preset name.
+
+> **No Astra preset is the default. Setup chooses the strategy space; the compiler chooses within it.**
+
+### Persistence boundary
+
+A named Astra profile is reusable only when it is actually stored in a persistent source available to the current environment. Otherwise it is ephemeral. This inherits Adaptive Orchestration's Profile Persistence Law: never claim that Astra preferences were saved, remembered or made default without evidence.
+
+Material changes in objective, authority, available surfaces, resource posture or desired autonomy reopen only the affected setup fields. Do not rerun the entire questionnaire ritualistically.
+
+## Astra Strategy Profile
+
+After Astra Setup is resolved, the strategy is compiled from independent dimensions. The exact syntax is illustrative; the semantic separation is load-bearing.
+
+```yaml
+astra_strategy:
+  setup_ref: required
+  role: judgment | reviewer | co_architect | executor | mixed
+  autonomy: read_only | recommend | bounded_mutation | sustained_execution
+  context_breadth: micro_capsule | bounded_corpus | broad_corpus | workspace_scale
+  coverage_topology: single_delta | sibling_docket | multi_domain | exhaustive_bounded
+  direction_constraint_density: tight | moderate | permissive
+  mutation_authority: none | bounded_explicit | sustained_explicit
+  reasoning_effort: adaptive
+  return_geometry: return_capsule | decision_trace | structured_report | artifact | patch | evidence_receipt | mixed
+  resource_overlay: inherit_chat_work
+  parallelism: inherit_native_parallelism_gate
+  checkpoints: proportional
+  stop_condition: null
+  fallback: null
+```
+
+`direction_constraint_density` describes how much freedom Astra has to explore and choose methods **inside the authorized task**. It never relaxes safety, source authority, mutation authority, privacy, scope authorization or the claim ceiling.
+
+## Context Breadth Law
+
+Raw document count is only one burden signal.
+
+When selecting an Astra strategy, consider the geometry of the corpus:
+
+- number of source families and authority domains;
+- coupling among documents, topics and decisions;
+- freshness and version conflicts;
+- amount of context that must remain simultaneously coherent;
+- reconstruction cost if the work is split into many calls;
+- breadth and reversibility of possible mutation;
+- verification and reconciliation burden;
+- likely duration and interruption sensitivity.
+
+Do not create universal thresholds such as `N documents = full run` or `N topics = frontier`. Ten independent files may be easier than three tightly coupled governing sources. Corpus geometry changes strategy; document count alone does not determine it.
+
+## Role and autonomy are separate
+
+A role describes what Astra contributes. Autonomy describes how far Astra may carry work without handing control back.
+
+Examples:
+
+- `judgment + read_only` can return one ruling without touching the object;
+- `reviewer + recommend` can traverse a broad corpus and propose changes without mutation;
+- `co_architect + bounded_mutation` can iterate on architecture and apply explicitly bounded edits;
+- `executor + sustained_execution` can own a coherent implementation run when tools, permissions, budget, checkpoints and verification support it.
+
+A user may deliberately choose low autonomy with very high reasoning capability. That is a resource strategy, not a deficiency. A different user may rationally choose high autonomy when repeated handoffs would destroy coherence or cost more than sustained frontier execution.
+
+## Mutation Authority Law
+
+Autonomy never manufactures permission.
+
+`autonomy: sustained_execution` means the selected strategy permits a sustained execution shape **if** the underlying task already supplies legitimate mutation authority. If authority is absent, the same strategy must downshift to read, recommend, report or return a blocked authority condition.
+
+> **Capability can propose a mutation geometry; only authority can permit mutation.**
+
+## Reference presets
+
+These are ergonomic starting points, not closed modes or defaults. They may be suggested only after Astra Setup has established the user's preferences and task envelope. A compiled strategy may mix fields differently when the task requires it.
+
+### Astra Brain Burst / Judgment Burst
+
+Use when frontier cognition is load-bearing but expensive execution is not.
+
+Typical geometry:
+
+```yaml
+role: judgment
+autonomy: read_only
+context_breadth: micro_capsule | bounded_corpus
+coverage_topology: single_delta | sibling_docket
+return_geometry: return_capsule | decision_trace
+```
+
+This is the geometry behind strongly distilled Decision Capsules: prepare cheaply, buy the difficult ruling, return cheaply, implement and verify elsewhere.
+
+It is especially useful when the user wants to spend Astra on cognition rather than tool loops or routine mutation. It must not become Astra's default identity.
+
+### Astra Deep Review
+
+Use when the value comes from seeing a broad body of material together without granting execution authority.
+
+Typical geometry:
+
+```yaml
+role: reviewer
+autonomy: read_only | recommend
+context_breadth: broad_corpus
+coverage_topology: multi_domain | exhaustive_bounded
+return_geometry: structured_report | decision_trace | mixed
+```
+
+The review may be extensive. Decision Trace remains proportional: only materially consequential rulings need its full audit structure.
+
+### Astra Co-Architect
+
+Use when the task benefits from iterative architecture rather than a single ruling.
+
+Typical geometry:
+
+```yaml
+role: co_architect
+autonomy: recommend | bounded_mutation
+context_breadth: bounded_corpus | broad_corpus
+coverage_topology: multi_domain
+return_geometry: structured_report | patch | artifact | mixed
+checkpoints: proportional
+```
+
+This preset should preserve room for Astra to discover and compare architectural options while keeping scope, authority and acceptance explicit.
+
+### Astra Executor
+
+Use when frontier capability is materially useful during the execution itself rather than only before it.
+
+Typical geometry:
+
+```yaml
+role: executor
+autonomy: bounded_mutation | sustained_execution
+context_breadth: bounded_corpus | broad_corpus | workspace_scale
+return_geometry: artifact | patch | evidence_receipt | mixed
+```
+
+Requirements rise with autonomy:
+
+- explicit mutation authority;
+- real tools/surfaces observed as available;
+- checkpoint and salvage strategy;
+- tests/readback appropriate to the sovereign object;
+- bounded scope and stop condition;
+- evidence-bearing receipt;
+- mandatory Control-Root Postflight.
+
+Do not force extreme capsule distillation when sustained execution needs broader context to remain correct.
+
+### Astra Full Run
+
+Use only when decomposition would materially damage coherence or create greater cost/risk than one sustained frontier execution.
+
+A Full Run may use broad corpus or workspace-scale context and substantial autonomy. It is still bounded by:
+
+- Budget Survivability;
+- source and mutation authority;
+- explicit scope and stop conditions;
+- Bounded Exhaustiveness where relevant;
+- checkpoints and salvageability;
+- tool/environment availability;
+- verification and evidence;
+- Control-Root Postflight.
+
+`Full Run` means sustained responsibility, not unlimited responsibility.
+
+### Astra Decision Sprint
+
+Decision Sprint is the intersection of the generic Sprint overlay and the generic IDL sibling-delta exception. It is not the default for Astra and not the default for Sprint.
+
+Typical geometry:
+
+```yaml
+role: judgment | mixed
+autonomy: read_only | recommend
+context_breadth: bounded_corpus | broad_corpus
+coverage_topology: sibling_docket
+resource_overlay: sprint
+return_geometry: return_capsule | decision_trace | mixed
+```
+
+It is appropriate when a finite family of related decisions shares enough context that repeatedly reconstructing the same expensive frame would be wasteful or coherence-destroying.
+
+## Surface-neutral frontier root
+
+Adaptive Orchestration 6.1 no longer treats Chat as the mandatory home of frontier judgment or closure. When Astra is the justified frontier root and the active Work/Codex harness can retain objective, authority, convergence and postflight, Astra may remain the control root while delegating Luna workers and Sol specialists. The run does not need to return to Chat merely to satisfy protocol form.
+
+The historical Chat → Work/Codex → Chat pattern remains a first-class named profile. Use it when Chat continuity is explicitly preferred or materially useful, not as the universal default.
+
+## Astra as heterogeneous orchestrator
+
+Adaptive Orchestration 6.1 changes the default question for frontier runs. When Astra is selected, ask not “should Astra do everything?” but “which parts genuinely require Astra?”
+
+When the active Work/Codex runtime exposes subagents and model selection, prefer a cognitive pyramid:
+
+```text
+Astra root
+├─ Luna workers → retrieval, scanning, extraction, routine verification and bounded implementation
+├─ Sol specialists → difficult debugging, ambiguous synthesis and architecture-bearing branches
+└─ Astra → decomposition, arbitration, exceptional frontier judgment and final synthesis
+```
+
+This is a default hypothesis, not a compulsory caste system. A small, tightly coupled frontier task may remain single-owner Astra. A broad task with little frontier reasoning may not need Astra at all.
+
+### Frontier budget preservation law
+
+Astra should not spend frontier budget on work that a cheaper child can perform against the same acceptance boundary. Preserve Astra for bottlenecks where its additional capability can change the decision, architecture, exception handling or final verification.
+
+### Branch-local escalation
+
+1. Luna attempts bounded work.
+2. If failure is due to source, authority, tooling or specification, repair that cause.
+3. If failure is genuinely cognitive, promote only that branch to Sol.
+4. Escalate from Sol back to Astra only when the branch contains an irreducible frontier judgment.
+5. Return the distilled result to the root for convergence.
+
+Do not promote the entire run because one leaf became difficult.
+
+### Context and write ownership
+
+Children should receive minimum sufficient context, not the whole Astra history by default. Parallel write-heavy branches require disjoint ownership or explicit merge control. Astra remains convergence owner unless the task explicitly assigns another owner.
+
+### Delegated bundle and worker-ownership calibration — 2026-09-27
+
+A bounded mechanism-level study of Ethan Rogers' public `ethanplusai/astra-flash-orchestrator` repository (v1.2.0; main commit `68f8d34b7532be2623c804e97f53be337310cb35`, reviewed 2026-09-27) adds a useful refinement to Astra-as-orchestrator behavior. The transferable value is not its provider stack or named Flash worker. It is the execution geometry.
+
+#### Coherent bundle granularity
+
+When a worker's contract is stable, prefer one coherent bounded assignment that can carry its own in-scope discovery, execution, test/fix loop and routine verification. Split work at genuine dependency, ownership or independently reviewable acceptance boundaries, not at every function, tool call or status milestone.
+
+This does not authorize broad adjacent work. The bundle remains bounded by objective, allowed scope, contracts, acceptance criteria and stop conditions.
+
+#### Worker ownership and root non-shadowing
+
+After dispatching a healthy worker into an accepted bundle, the Astra root should not duplicate the worker's in-scope exploration or mutation merely to remain visibly active. Let the worker carry the reducible loop. The root retains objective, authority, architecture-bearing decisions, blocker resolution, convergence and acceptance.
+
+Do not use progress polling, status requests or overlapping root work as ceremony when the harness already provides a viable continuation/wait path. A wait timeout alone is not evidence of failure. Intervene when evidence indicates a real blocker, ownership conflict, failed acceptance boundary or material risk.
+
+#### Review before acceptance
+
+Worker completion means `ready_for_review`, not accepted. The root reviews the actual delta and the evidence relevant to the captured baseline. When correction is needed, prefer one consolidated findings packet over drip-fed micro-corrections, then recheck the affected behavior and dependencies. Broaden verification only when new evidence, residual uncertainty, material risk or a governing gate requires it.
+
+The worker does not self-accept. Executor completion and control-root cycle completion remain distinct.
+
+#### Real isolation for parallel mutation
+
+Logical agent separation is not mutable-state isolation. On a shared mutable object or workspace, prefer one active writer for coupled scope. Multiple writers require genuinely independent writable scopes or verified separate workspaces plus an explicit convergence/merge plan. A separate agent thread, by itself, is not evidence of filesystem, credential, process, port or network isolation.
+
+#### Provenance and adaptation boundary
+
+Source: Ethan Rogers, `ethanplusai/astra-flash-orchestrator`, v1.2.0, MIT-licensed repository reviewed at commit `68f8d34b7532be2623c804e97f53be337310cb35`.
+
+Absorbed at mechanism level: coherent delegation bundles, worker-owned internal execution loops, root non-shadowing, review-before-acceptance, consolidated correction and the distinction between logical concurrency and real write isolation.
+
+Not imported: DeepSeek/Codex Router/provider configuration, installation machinery, package prompts, code, fixed worker identity, fixed correction-cycle counts, benchmark savings claims or any implication of partnership, endorsement or shared authorship.
+
+## Astra Strategy Compiler
+
+Resolve the strategy in this order:
+
+1. **Astra Setup Gate** — which setup mode is active, which user preferences are explicit, which fields may adapt, and has the setup been accepted for this run?
+2. **Sovereign objective and sovereign object** — what must actually change or be decided?
+3. **Astra value test** — would Astra materially improve this task or irreducible slice, and is it actually available?
+4. **Role** — judgment, review, co-architecture, execution or mixed within the accepted setup?
+5. **Autonomy** — how far should Astra carry the work before returning control?
+6. **Corpus geometry** — how much context and how many authority domains must remain coherent?
+7. **Mutation authority** — what may Astra actually change?
+8. **Coverage topology** — one delta, finite docket, multiple domains or explicit bounded exhaustiveness?
+9. **Reasoning effort** — what depth is required independently of role/autonomy and consistent with the user's resource preference?
+10. **Resource overlay** — normal Budget Survivability or an explicitly activated Sprint/perishable-capacity envelope?
+11. **Return geometry** — ruling, trace, report, artifact, patch, receipt or a mixed return?
+12. **Checkpoints and stop condition** — where can the run safely stop, salvage or re-enter?
+13. **Verification and Control-Root Postflight** — what observable evidence closes the loop?
+
+The compiler should choose the smallest structure that preserves the task's required autonomy and coherence **inside the accepted setup envelope**. It must not silently override user preferences merely because another preset looks more efficient. When a preference conflicts with safety, authority, capability floor or observed availability, disclose the conflict and downroute, request a bounded override or return a blocked condition rather than inventing consent.
+
+## Adaptive Orchestration integration contract
+
+The Astra adapter is not a parallel router. It is a subordinate strategy layer inside Adaptive Orchestration 6.1, including its Delegation-First law.
+
+Adaptive Orchestration resolves the general Execution Profile, Run State, task requirements, authority and capability floor first. When Astra is selected as a possible capability target, the adapter then resolves the **Astra Setup Contract** before compiling model-specific strategy.
+
+This creates a nested setup relationship:
+
+```text
+Adaptive Orchestration Setup
+  → general surface / capability / resource / authority envelope
+  → Astra selected as a possible target
+    → Astra Setup
+      → user-specific role / autonomy / context / effort / fanout / return preferences
+      → Astra Strategy Compiler
+        → single-owner or heterogeneous root/child topology
+        → bounded execution or return
+  → Control-Root Postflight
+```
+
+Adaptive Orchestration may recommend Astra and may prefill an AUTO proposal from explicit profile data. Under Adaptive Orchestration 6.1, AUTO may also select an internal delegation topology when the active harness exposes it, but it must not silently expand mutation authority, scope, maximum reasoning or unbounded physical fanout.
+
+The same user may rationally configure Astra differently for different tasks. A persistent Astra profile is a convenience, not an identity claim or an immutable default.
+
+## Relationship to IDL and capsules
+
+The Intelligence Distillation Ladder remains model-neutral.
+
+Decision Capsules and Return Capsules are tools for a particular geometry: bounded higher-tier judgment with lower-tier preparation and re-entry. They are excellent when the user wants Astra primarily as a brain. They are not mandatory wrappers for every Astra invocation.
+
+When Astra is selected as executor, co-architect or full-run owner, the router may intentionally retain broader context and more operational autonomy when those are load-bearing and authorized.
+
+The correct question is not:
+
+> How do we force this task through an Astra capsule?
+
+It is:
+
+> What Astra strategy buys the most verified useful delta for this task, given the desired autonomy, corpus geometry, authority, resources and return contract?
+
+## Relationship to Sprint
+
+Sprint Mode remains a generic Adaptive Orchestration overlay. It can wrap Astra or another suitable capability tier.
+
+Sprint may change the resource posture and pacing of an Astra strategy, but it does not choose Astra automatically, increase mutation authority, expand the docket or turn a bounded brain burst into a full execution run.
+
+Likewise, Astra can be used in any strategy above without Sprint.
+
+## Adapter calibration boundary
+
+This section is empirical and replaceable. It never overrides the canonical
+Adaptive Orchestration body, the active authority envelope or the claim ceiling.
+
+**Last checked:** 2026-09-27
+
+**Source class:** official product documentation for product behavior; dated
+field reports for operational hypotheses.
+
+The current official product documentation distinguishes Chat, Work and Codex
+as different experiences and makes model, plan, workspace, rollout, tool and
+surface availability conditional. It also treats model usage and resource
+burden as task-, input/output-, settings- and mode-sensitive. These are live
+calibration inputs, not permissions or stable protocol laws. The router must
+probe the actual surface and model before routing work to Astra.
+
+The name `Astra` in this document is a strategy-adapter target/alias. It does
+not prove that a user has access to a model, surface, CLI, desktop capability,
+connector, allowance, credit pool or any particular product configuration.
+
+Date-sensitive Astra facts belong here, not in the stable router, when they
+become necessary for routing. Examples include:
+
+- where Astra is exposed;
+- product-specific effort controls;
+- current allowance or shared-pool behavior;
+- observed tool or harness differences;
+- dated operational failure patterns;
+- current economic reasons to prefer brain-burst versus sustained execution;
+- current subagent availability, child-model inheritance/override behavior and concurrency controls.
+
+Every volatile fact must be dated and sourced to appropriate current evidence. Anecdotes may inform a risk hypothesis but must not become a universal model property, benchmark or fixed cost law.
+
+A trusted community field report dated 2026-09-09 described Astra expanding
+open-ended completeness instructions into very large edge-case and test
+sweeps. Treat this as anecdotal operational evidence, not a benchmark or
+universal model property. When Astra is selected for sustained or frontier
+execution, prefer explicit scope ceilings and stop conditions over vague
+requests to “be balanced.”
+
+### Official Astra prompting and skills calibration — 2026-09-27
+
+OpenAI's current GPT-6 guidance adds a useful behavioral calibration for Astra. These observations refine the adapter; they do not create new routing authority. API-only capabilities remain API/harness facts and must not be presumed to exist in ChatGPT Work, Codex or another surface unless observed there.
+
+#### Action continuity and clarification
+
+Astra is more likely than earlier models to ask a focused question when additional input could materially change the result. Compile that tendency against the task's existing authority instead of treating every ambiguity as a stop signal:
+
+- infer routine gaps from the current request, prior context and governing source when the choice is low-risk and reversible;
+- complete already-authorized read-only, reversible and preparatory work before asking for a decision;
+- ask when the missing answer materially changes the outcome, authority, irreversible action or acceptance boundary;
+- define completion and stop conditions explicitly for sustained work so a first implementation, first draft or first passing check is not mistaken for the end when the objective also requires inspection, repair or readback.
+
+This is not permission to bypass a real approval boundary. It is an anti-stall rule for work that is already inside the authorized envelope.
+
+#### Instruction diet and progressive disclosure
+
+Astra follows instructions strongly and can be disproportionately affected by stale, overlapping or conflicting guidance in skills, `AGENTS.md` files and loaded references. Therefore:
+
+- preserve normal instruction precedence, with platform/safety/authority constraints above task-local guidance and explicit current user intent above subordinate reusable skill preferences when they legitimately conflict;
+- audit inherited instruction files when they cause unexplained stopping, permission loops or route drift;
+- prefer short skill descriptions with precise triggers;
+- use progressive disclosure: keep the root skill or adapter as a small router and load supporting instructions only when the task actually needs them;
+- do not require a full repository map, full documentation stack or entire source family for every small change;
+- revisit legacy hand-holding rules written for weaker models when they create redundant steps without changing acceptance or safety.
+
+Context Diet therefore applies to instructions as well as factual corpus. More governance text is not automatically more governance.
+
+#### Delegation calibration
+
+OpenAI notes that Astra may delegate less than a multi-agent workflow wants by default. When Adaptive Orchestration's Delegation-First law and the active harness support subagents, make the expected delegation behavior explicit: delegate materially independent work when it can improve quality or reduce total time, while retaining Astra for frontier decomposition, arbitration and convergence.
+
+This does not waive the Delegation & Native Parallelism Gate. Small, coupled or coordination-heavy work may still remain single-owner.
+
+#### Verification calibration
+
+Astra can test more broadly than a small change requires. Verification should remain proportional to the sovereign object and failure cost:
+
+- do not create tests merely to mirror a reversible, low-impact implementation;
+- run the checks that materially verify the requested delta;
+- after those checks pass, broaden or repeat testing only when new changes, failures, uncertainty or a higher-risk acceptance boundary justify it;
+- preserve mandatory project/repository gates when they actually govern acceptance.
+
+The goal is verified completion, not a ceremonial acreage of green checkmarks.
+
+#### Output-shape calibration
+
+Astra tends toward detailed Markdown, lists and recurring stock phrasing. Output structure is therefore an explicit destination constraint, not evidence that the underlying task requires more taxonomy. When the result is human-facing, inherit the destination's voice, density and formatting rules; use lists only when they improve the actual information geometry.
+
+#### API capability boundary
+
+Current OpenAI API guidance documents GPT-6 support for async tool calling, mid-turn steering, multi-agent orchestration, persisted reasoning, compaction and `configuration_update` for changing reasoning effort during a conversation while preserving cache. It also states that Astra does not support reasoning effort `none`; `low` is the minimum supported Astra effort in that API surface.
+
+These are useful implementation facts for compatible API harnesses. They are **not** evidence that ChatGPT Work exposes the same controls, that a current UI permits mid-turn configuration changes, or that the router may infer model/surface availability. Probe the actual harness before relying on them.
+
+Official references:
+
+- [Using GPT-6 / Model guidance](https://developers.openai.com/api/docs/guides/latest-model)
+- [Rethinking skills and prompts for GPT-6 Astra](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra)
+
+### Total-work efficiency calibration — 2026-09-10
+
+Recent community field reports converge on a useful operational hypothesis: a cheaper or lower-effort individual call can still be more expensive at task level when it causes extra continuations, repeated context ingestion, repair turns, tool cycles or agent fanout. Conversely, a higher-effort pass can be economically preferable when it resolves the same accepted result in materially fewer loops. Treat this as field evidence and routing guidance, not a fixed performance or pricing law.
+
+The adapter therefore optimizes **total work to accepted state**, not nominal effort per turn.
+
+Use three independent resource controls:
+
+1. **Capability floor** — the lowest capability that can responsibly solve the irreducible task.
+2. **Effort ceiling** — the lowest reasoning depth that resolves the current uncertainty without creating disproportionate downstream repair.
+3. **Loop budget** — the tolerated burden from continuations, context rereads, tool calls, searches, retries and physical fanout before the route must pause and restructure.
+
+Do not promote `light`, `medium`, `high`, `xhigh`, `ultra`, `fast` or any other product-specific label into universal doctrine. Start with the lowest effort that is plausibly sufficient, but apply a **reasoning-effort inversion test**: if lowering effort increases correction turns, repeated context processing, tool churn, reconstruction cost or total accepted-state latency, restore the higher effort rather than preserving a false local saving.
+
+Apply the same logic to speed modes. A latency-premium mode is justified when human-visible response latency is itself the dominant bottleneck. It is usually poor value when execution time is dominated by external tools, browsing, tests, long-running operations or agent coordination. This is a bottleneck-allocation rule, not a ban on fast modes.
+
+Apply the same logic to agents and parallelism. Under Adaptive Orchestration 6.1, internal delegation is preferred over a user-visible model switch when the active harness can resolve the required capability tree. Physical fanout should still earn its coordination tax: prefer one capable owner when work is tightly coupled, context-heavy or sequential; use subagents when units are materially independent, context duplication is bounded and convergence cost is lower than the expected gain. The generic Delegation & Native Parallelism Gate governs.
+
+For Astra strategy selection, prefer this sequence:
+
+> **Peak cognition at the bottleneck. Minimum sufficient cognition elsewhere. Minimize total work, not individual-turn expense.**
+
+A route that looks cheaper because one turn is cheaper but requires many more turns is not automatically efficient. A route that looks expensive because one turn uses greater reasoning effort may still be the lower-cost route if it collapses the loop.
+
+Useful current references:
+
+- [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex)
+- [ChatGPT models](https://learn.chatgpt.com/docs/models)
+- [Reasoning models](https://developers.openai.com/api/docs/guides/reasoning)
+- [Custom instructions with AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)
+- [Codex CLI](https://learn.chatgpt.com/docs/codex/cli)
+- [Subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents)
+
+The adapter keeps this calibration outside stable Adaptive Orchestration law so that a
+future model, surface or product change can replace these notes without
+redesigning the routing core.
+
+## Failure classes specific to strategy selection
+
+The adapter may classify failures such as:
+
+- `setup_bypass` — Astra strategy or execution began before the required setup envelope was resolved;
+- `preset_capture` — a reference preset was silently treated as the user's default operating style;
+- `profile_inheritance_overreach` — Adaptive Orchestration or a prior Astra profile supplied preferences that were not explicit, persistent or semantically compatible with the current run;
+- `autonomy_underfit` — Astra was constrained to judgment when execution autonomy was load-bearing;
+- `autonomy_overreach` — Astra received more execution freedom than the task or authority justified;
+- `context_underfit` — over-distillation removed context needed for correct frontier work;
+- `context_overload` — broad context was supplied without decision-relevant need;
+- `capsule_monoculture` — a capsule workflow was applied by habit to a task whose geometry required another strategy;
+- `frontier_execution_overkill` — expensive execution was used where a brain burst plus cheaper implementation would have sufficed;
+- `effort_underfit_loop_amplification` — lower reasoning effort reduced local cost but increased continuations, repairs, context rereads or tool churn enough to worsen total-work efficiency;
+- `fanout_coordination_overhead` — subagents or parallel branches duplicated context or coordination work without sufficient independent-work benefit;
+- `latency_premium_mismatch` — a speed-premium mode was used while external tools or execution, rather than model response latency, dominated the run;
+- `strategy_surface_mismatch` — the chosen role required tools/persistence unavailable on the selected surface;
+- `premature_clarification_stop` — Astra paused for input before completing already-authorized reversible, read-only or preparatory work;
+- `instruction_stack_overconstraint` — stale, overlapping or conflicting skill/AGENTS guidance caused permission loops, route drift or unnecessary context loading;
+- `delegation_underuse` — independent work remained on Astra despite an available, beneficial and authorized child topology;
+- `delegation_fragmentation` — a stable worker-sized unit was split into status-shaped microtasks that increased coordination or root overhead without improving acceptance;
+- `root_shadow_execution` — the root duplicated or overlapped healthy worker-owned exploration/execution without a concrete blocker, risk or verification need;
+- `logical_isolation_confusion` — separate agent sessions were treated as proof of separate mutable workspaces or process/security isolation;
+- `executor_self_acceptance` — worker completion was treated as accepted state before root review and convergence;
+- `verification_overreach` — testing or repeated checking materially exceeded the risk and acceptance needs of the delta without new evidence;
+- `output_shape_overproduction` — Astra's default formatting/detail tendency overrode the actual destination's density or voice constraints;
+- `adapter_staleness` — dated Astra calibration was treated as current after its freshness boundary.
+
+These are routing diagnoses, not claims about the model's private internals.
+
+## Relationship to Adaptive Orchestration 6.1
+
+**Current Astra adapter version: 1.6.** Adaptive Orchestration 6.1 is the governing router; this adapter remains subordinate and independently tracked.
+
+Adaptive Orchestration 6.1 promotes Delegation-First and heterogeneous topology to stable routing law. This adapter specializes that law for Astra without turning Astra into a universal executor or creating a second router.
+
+The release is coherent only when:
+
+- an unknown user can choose Astra as brain, reviewer, co-architect, executor, orchestrator or mixed without contradicting the core;
+- role, autonomy and mutation authority remain independent;
+- corpus breadth changes strategy without fake document-count thresholds;
+- capsules remain optional and contextual;
+- Sprint remains an independent overlay;
+- broad context and sustained execution are allowed when genuinely load-bearing;
+- Astra can delegate reducible bulk to cheaper workers when the runtime exposes it;
+- branch-local escalation is preferred over promoting the whole run;
+- presets remain examples rather than a closed taxonomy;
+- volatile Astra facts can change without requiring general-router doctrine to change;
+- no native feature, entitlement, benchmark or guaranteed-economics claim is introduced;
+- heterogeneous child routing is used only when the active runtime actually exposes compatible subagent/model controls;
+- the canonical Adaptive Orchestration body remains the single semantic authority.
+
+## Claim ceiling
+
+This adapter is a routing and strategy layer. It does not claim that Astra has
+one correct use, that Astra is always the best frontier route, that any user has
+access to it, that hidden reasoning can be exposed, that high autonomy is
+always beneficial, that broad context always improves results, or that any
+specific strategy guarantees better quality or lower cost.
+
+Its purpose is narrower:
+
+> **Preserve Astra's plurality of legitimate work styles while keeping Adaptive Orchestration's core model-neutral, auditable and user-configurable.**
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).

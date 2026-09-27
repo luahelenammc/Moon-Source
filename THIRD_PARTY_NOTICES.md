@@ -19,7 +19,7 @@ These files are not relicensed as Moon-authored works. They govern the material 
 
 ## Referenced external material
 
-The Chat–Work Routing Protocol contains dated references and links to OpenAI product and developer documentation. Those references are included for calibration and source traceability; they are not an endorsement, partnership, official OpenAI documentation or a grant of rights in OpenAI names, marks or content.
+The Adaptive Orchestration Protocol contains dated references and links to OpenAI product and developer documentation. Those references are included for calibration and source traceability; they are not an endorsement, partnership, official OpenAI documentation or a grant of rights in OpenAI names, marks or content.
 
 The repository also refers to GitHub, Creative Commons, SPDX and REUSE as infrastructure, standards or public reference sources. Their names, marks, documentation and services remain subject to their own terms. Moon Source does not claim ownership of them.
 

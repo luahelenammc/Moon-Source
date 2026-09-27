@@ -37,7 +37,7 @@ This is a topology, not a compulsory waterfall. New information can send the wor
 | Project multidimensional artifact and source state onto durable workspace surfaces | [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
 | Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [🔗 Connected Sources](portables/connected-sources/README.md) |
 | Structure recurring context, continuity or handoffs | [🧱 Moon Source Language](portables/msl/README.md) |
-| Route work across ChatGPT surfaces, models and execution modes | [🔀 Chat–Work](portables/chat-work/README.md) |
+| Route work across ChatGPT surfaces, models and execution modes | [🧬 Adaptive Orchestration](portables/adaptive-orchestration/README.md) |
 
 ## First use
 
@@ -137,7 +137,7 @@ This is a professional-service bridge, not a claim that Moon Source is a mature 
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
 - **2026-09-27 — Connected Sources:** Added consumer-scoped context delivery and rehydratable offload of decision-bearing material while preserving source authority boundaries; credited bounded mechanism-level study without copying code or runtime.
-- **2026-09-27 — Chat–Work Routing Protocol:** Chat–Work 6.1 remains the governing surface-neutral router; its subordinate Astra Strategy Adapter advanced to 1.6 with credited mechanism-level calibration for coherent delegation bundles, worker ownership/non-shadowing, review-before-acceptance, consolidated correction and real write-isolation boundaries.
+- **2026-09-27 — Adaptive Orchestration Protocol:** Canonical identity and paths migrated from Chat–Work Routing Protocol to Adaptive Orchestration Protocol. Version 6.1 and execution semantics remain unchanged under the naming-only rule; old GitHub paths, package and website mirror remain explicit aliases. Astra 1.6 and GPT-6 Sol/Luna 1.3 remain unchanged.
 - **2026-09-24 — Preflight:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
 - **2026-09-24 — Moon Source Setup:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
 - **2026-09-24 — Moon Source Language:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.

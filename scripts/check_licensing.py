@@ -34,7 +34,7 @@ ACTIVE_AUTHORITIES = (
     "docs/CONNECTED_SOURCES.md",
     "portables/setup/MOON_SOURCE_SETUP.md",
     "portables/msl/MOON_SOURCE_LANGUAGE.md",
-    "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md",
+    "portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md",
 )
 
 STALE_PATTERNS = (

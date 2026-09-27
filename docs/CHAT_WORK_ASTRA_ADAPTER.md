@@ -1,14 +1,10 @@
 # Chat–Work Astra Strategy Adapter — legacy locator
 
-The Astra Strategy Adapter is a subordinate submodule of the Chat–Work Routing Protocol and now lives inside the Chat–Work portable.
+This document preserves the former locator and identity. The current adapter is subordinate to Adaptive Orchestration Protocol.
 
-**Canonical adapter:** [`portables/chat-work/adapters/CHAT_WORK_ASTRA_ADAPTER.md`](../portables/chat-work/adapters/CHAT_WORK_ASTRA_ADAPTER.md)
+**Canonical adapter:** [portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](../portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md)
 
-**Current adapter version:** 1.4
-
-This `docs/` path is retained only as a compatibility and succession pointer for existing links. It has no independent semantic authority, version or capability identity.
-
-The governing canonical body remains [`portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md).
+The adapter remains independently versioned at 1.6. The governing canonical body is [portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md).
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

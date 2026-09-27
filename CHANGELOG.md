@@ -1,5 +1,11 @@
 # Changelog
 
+## Adaptive Orchestration canonical identity migration — 2026-09-27
+
+The Chat–Work Routing Protocol is now named **Adaptive Orchestration Protocol**. Its public id and canonical directory, body, adapters, package and website mirror use the new identity. The migration preserves version **6.1** under the repository rule that naming-only corrections do not advance semantic versions; core procedure is unchanged, Astra remains **1.6**, and GPT-6 Sol/Luna remains **1.3**. The former names, registry id, GitHub paths, package and mirror remain explicit compatibility routes to the one current authority.
+
+
+
 ## 2026-09-27 — Connected Sources 1.2 · consumer-scoped context and rehydratable offload
 
 - Made host/source reach distinct from each internal consumer's contextual scope; delivery follows responsibility, while instruction and mutation authority remain separate.
