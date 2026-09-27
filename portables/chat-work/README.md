@@ -30,7 +30,7 @@ The historical **Chat → Work/Codex → Chat** loop remains fully supported as 
 
 ## Astra submodule, not Astra mode
 
-Astra is an optional subordinate submodule of this Chat–Work portable, not a prescribed work style. Its canonical adapter lives at [adapters/CHAT_WORK_ASTRA_ADAPTER.md](adapters/CHAT_WORK_ASTRA_ADAPTER.md) and is independently versioned at **1.4**.
+Astra is an optional subordinate submodule of this Chat–Work portable, not a prescribed work style. Its canonical adapter lives at [adapters/CHAT_WORK_ASTRA_ADAPTER.md](adapters/CHAT_WORK_ASTRA_ADAPTER.md) and is independently versioned at **1.6**.
 
 GPT-6 Sol/Luna has a separate dated executor calibration at [adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md](adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md), version **1.3**. It preserves the model-neutral core while mapping the family to heterogeneous execution: Luna for focused/high-volume child work, Sol for strong roots and demanding specialists, plus current Codex child-model/default configuration guidance.
 
@@ -62,7 +62,7 @@ Sprint Mode does not expose allowance/reset state, create a native product featu
 - **Protocol family:** V6
 - **Status:** current · supported standalone distribution
 - **Named continuity profile:** Chat–Work Loop Profile · Chat → Work/Codex → Chat
-- **Optional Astra submodule:** [adapters/CHAT_WORK_ASTRA_ADAPTER.md](adapters/CHAT_WORK_ASTRA_ADAPTER.md) · version **1.4**
+- **Optional Astra submodule:** [adapters/CHAT_WORK_ASTRA_ADAPTER.md](adapters/CHAT_WORK_ASTRA_ADAPTER.md) · version **1.6**
 - **GPT-6 Sol/Luna submodule:** [adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md](adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md) · version **1.3**
 - **Adapter directory law:** current and future model-specific Chat–Work adapters co-reside under portables/chat-work/adapters/; do not create one directory per model family unless a future adapter actually becomes a multi-file subsystem.
 - **Canonical body:** [portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md](CHAT_WORK_ROUTING_PROTOCOL.md)
