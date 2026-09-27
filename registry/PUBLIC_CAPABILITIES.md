@@ -15,7 +15,7 @@ The table's **Summary title** is the concise browsing label. The registry's sema
 |---|---|---|---:|---|---|---|
 | be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) | contextual scene-reading method | 1.0-public | current | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md#first-use) | [ZIP](../downloads/be-my-eyes.zip) |
 | chat-work-routing | [Chat–Work Routing Protocol](../portables/chat-work/README.md) | operational routing protocol | 6.1 | current | [CHAT_WORK_ROUTING_PROTOCOL.md](../portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md#first-use) | [ZIP](../downloads/chat-work-routing-protocol.zip) |
-| connected-sources | [Connected Sources](../portables/connected-sources/README.md) | structural crown jewel | 1.1-public | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources.zip) |
+| connected-sources | [Connected Sources](../portables/connected-sources/README.md) | structural crown jewel | 1.2 | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources.zip) |
 | credits-attribution-ops | 🧾 Credits & Attribution Ops | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
 | failure-foundry | 🏭 Failure to Capability — Failure Foundry | failure-to-capability method | — | current | [FAILURE_FOUNDRY.md](../docs/FAILURE_FOUNDRY.md) | — |
 | lifecycle-workspace-router | 🗂️ Lifecycle Workspace Router | lifecycle workspace routing method | 1.2 | current | [LIFECYCLE_WORKSPACE_ROUTER.md](../docs/LIFECYCLE_WORKSPACE_ROUTER.md) | — |
@@ -57,9 +57,10 @@ inventory.
 [Connected Sources](../docs/CONNECTED_SOURCES.md#first-use) is a structural
 crown jewel governing source reach, source/data authority, instruction
 authority, jurisdiction, freshness, targeted versus exhaustive retrieval,
-connector capability probing, mutation authorization, readback, fallback and
-federated source responsibility. Its canonical home follows that
-responsibility. It remains independently distributable as version 1.1-public.
+consumer-scoped delivery, rehydratable offload, connector capability probing,
+mutation authorization, readback, fallback and federated source responsibility.
+Its canonical home follows that responsibility. It remains independently
+distributable as version 1.2.
 The readable [distribution facade](../portables/connected-sources/README.md)
 exists only for human presentation and routing.
 
@@ -90,13 +91,14 @@ independent version when their method earns a distinct release state;
 standalone distribution and semantic versioning are separate dimensions.
 Version identifiers describe release state, not visibility or distribution.
 New version identifiers must not add audience labels such as `public`, `private`
-or `local`. Be My Eyes `1.0-public` and Connected Sources `1.1-public` are
-narrow legacy exceptions tied to already-published standalone package
-coordinates; they may remain only until each capability's next accepted
-material release and do not establish a naming precedent.
+or `local`. Be My Eyes `1.0-public` remains a narrow legacy exception tied to already-
+published standalone package coordinates until its next accepted material
+release. Connected Sources advanced to `1.2` on 2026-09-27 and is no longer
+covered by this exception. These release-state values do not establish a
+naming precedent.
 
 The current independently versioned capabilities are Lifecycle Workspace Router at
-1.2, Connected Sources at 1.1-public, MSL at 5.1, Chat–Work at 6.1,
+1.2, Connected Sources at 1.2, MSL at 5.1, Chat–Work at 6.1,
 Setup at 3.1, Preflight at 2.3 and Be My Eyes at 1.0-public. Chat–Work 6.1
 preserves Delegation-First orchestration while making the public core surface-neutral: the current competent control root is the continuity default, control surface/root is distinct from root model and execution harness, and the historical Chat → Work/Codex → Chat loop remains a named first-class profile rather than the mandatory topology. The Astra Strategy Adapter is 1.4 and the GPT-6 Sol/Luna Adapter is 1.3; their named-model and subagent calibration remains dated and subordinate. MSL's formatting contract remains part of the current 5.1 body and release identity.
 

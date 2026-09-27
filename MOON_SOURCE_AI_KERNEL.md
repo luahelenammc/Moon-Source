@@ -29,7 +29,7 @@ Use each file for the responsibility it actually owns:
 - `MOON_SOURCE_AI_KERNEL.md` — AI boot, loading and operating rules for the public repository.
 - `portables/preflight/PREFLIGHT.md` — Preflight: human-intent reconstruction before execution, currently version 2.3, with a bounded success contract inside the reconstruction core and authority, provenance, freshness, risk, destination, mutation and readback as conditional execution guardrails.
 - `portables/be-my-eyes/BE_MY_EYES.md` — canonical active Be My Eyes method and 1.0-public standalone distribution: contextual scene reading, observation/inference separation, relational structure, subtext, overread, plausible reception and response-axis selection.
-- `docs/CONNECTED_SOURCES.md` — canonical Connected Sources structural crown jewel and 1.1-public standalone distribution: substrate, source/data and instruction authority, jurisdiction, retrieval scope, freshness, mutation authority and readback.
+- `docs/CONNECTED_SOURCES.md` — canonical Connected Sources structural crown jewel and 1.2 standalone distribution: substrate, source/data and instruction authority, jurisdiction, retrieval scope, consumer-scoped delivery, freshness, rehydratable offload, mutation authority and readback.
 - `docs/CONNECTED_SOURCES_CHATGPT_ADAPTER.md` — subordinate dated ChatGPT product/reference facts; load only when current product behavior is materially relevant.
 - `docs/SOURCE_OPERATIONS.md` — public source-operation grammar: retrieve, process, metabolize, promote, promotion gate, lifecycle, legacy succession, current-state versus history, smallest sovereign destination, readback and no-delta.
 - `docs/LIFECYCLE_WORKSPACE_ROUTER.md` — collaborative workspace routing: shared intake, explicit personal action queues, lifecycle projections, human review/validation stamps, source-of-record pointers, reversible migration, durable-file-layer handoffs and provider readback without conflating location with authorship, ownership or authority.
@@ -245,7 +245,7 @@ If intellectual material is also changing custody or becoming a derivative, load
 ### If the user needs to reach a connected living source or external-memory substrate
 
 Load:
-- `docs/CONNECTED_SOURCES.md` — canonical structural crown jewel and standalone-capable method, currently version 1.1-public
+- `docs/CONNECTED_SOURCES.md` — canonical structural crown jewel and standalone-capable method, currently version 1.2
 - `docs/RESPONSIBILITY_MAP.md` when authority or ownership is unclear
 - `docs/SOURCE_HYGIENE.md` when the corpus itself may be stale, contradictory or bloated
 - `docs/OPERATIONAL_RELIABILITY.md` when the operation includes mutation, retries, partial failure or recovery

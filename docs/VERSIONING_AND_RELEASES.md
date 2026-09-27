@@ -15,10 +15,10 @@ They should not be collapsed into one number.
 
 ## Current baseline
 
-- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-24; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, through the 5.x strategy/adaptation line, to delegation-first 6.0 and then surface-neutral control-root 6.1 on 2026-09-24.
+- Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-27; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, through the 5.x strategy/adaptation line, to delegation-first 6.0 and then surface-neutral control-root 6.1 on 2026-09-24.
 - Current structural grammar: Moon Source Language, version 5.1.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (legacy distributed version 1.1-public), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 6.1).
-- All fifteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry, while Lifecycle Workspace Router is a repository-only capability with its own independent version.
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (version 1.2), Moon Source Language (version 5.1) and Chat–Work Routing Protocol (version 6.1).
+- All sixteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry, while Lifecycle Workspace Router is a repository-only capability with its own independent version.
 - Credits & Attribution Ops, Lifecycle Workspace Router, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
 - Website: production public convenience surface; each current portable mirror must remain byte-equal to its canonical current portable before mirror status is called verified.
@@ -42,6 +42,12 @@ They should not be collapsed into one number.
 14. Version identifiers encode release or compatibility state, not audience, visibility, distribution or habitat. Do not introduce `public`, `private`, `local` or equivalent surface labels into a current version token. Store those properties separately. Exact legacy audience-bearing version values may remain only until that capability's next accepted material release; they are metadata exceptions, not package-name precedent.
 15. Living/current canonical filenames, package filenames, mirror filenames and parent directories identify the semantic object, not its current version. Version state belongs in metadata, registries, changelogs, tags and release records. A version-bearing current path needs a documented semantic reason, such as a schema or compatibility generation that remains live in parallel. Historical snapshots, immutable release archives, migrations and external versioned standards remain valid exceptions.
 16. Keep directory geometry stable when a shared semantic container is sufficient. A canonical path move requires full reference-graph repair, package-member and fingerprint refresh, governed-mirror synchronization and readback. Do not create compatibility twins by default. A naming-only correction does not advance a capability's semantic version.
+
+## Connected Sources 1.2 release — 2026-09-27
+
+Connected Sources 1.2 is a **material additive release** that makes two context-governance responsibilities explicit: source/host reach does not give every internal consumer entitlement to receive the source, and decision-bearing raw material can leave active context through a compact rehydratable projection while its resolvable source remains intact. It preserves separate source, consumer, instruction and mutation boundaries and does not prescribe a provider, storage backend, size threshold, summary shape or runtime.
+
+The release records bounded mechanism-level inspiration from Ishan Gupta's `Ishan-1/MAVIS` (MIT) without copying code or importing its runtime habitat. Scenario-fixture validation remains an experiment candidate; it is not promoted to a universal rule. MSL remains 5.1; the standalone package and exact-byte website mirror were rebuilt and the registry fingerprint refreshed.
 
 ## Lifecycle Workspace Router 1.2 release — 2026-09-13
 

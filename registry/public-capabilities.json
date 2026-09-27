@@ -8,7 +8,7 @@
     "project": "Moon Source",
     "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md"
   },
-  "as_of": "2026-09-24",
+  "as_of": "2026-09-27",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "capabilities": [
     {
@@ -114,7 +114,7 @@
       "architectural_role": "structural_crown_jewel",
       "best_for": "People and builders who need AI to revisit current material, preserve durable continuity or coordinate governed sources without confusing reach with authority",
       "canonical_path": "docs/CONNECTED_SOURCES.md",
-      "claim_ceiling": "Published Living Source Protocol; not universal connector support, automatic synchronization, exhaustive retrieval, authority by locator or adoption proof",
+      "claim_ceiling": "Published Living Source Protocol; not universal connector support, automatic synchronization, exhaustive retrieval, authority by locator, storage or archive guarantees, arbitrary connector support or adoption proof",
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
       "dependencies": [
         "No required dependency in standalone mode; this canonical body is the capability authority",
@@ -123,7 +123,7 @@
       ],
       "difficulty": "intermediate to advanced",
       "distribution": {
-        "canonical_sha256": "c842efa0cd14a4770b0af28d9065573d922e600fe6ea7a557c975449ac037e19",
+        "canonical_sha256": "821c6314856d7786f4219aa31335808e24f42340bb2138aeadec12770790eda2",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/CONNECTED_SOURCES.md",
@@ -131,12 +131,12 @@
         "package_path": "downloads/connected-sources.zip",
         "standalone": true
       },
-      "freshness": "stable public method as of 2026-09-08; connector reach, product capability and source revision remain date- and permission-sensitive",
-      "function": "Operate over standalone, connected-read, living-source and federated source modes with explicit authority, capability probing, freshness, mutation, readback and fallback boundaries",
+      "freshness": "stable public method as of 2026-09-27; connector reach, product capability and source revision remain date- and permission-sensitive",
+      "function": "Operate over standalone, connected-read, living-source and federated source modes with explicit source/host reach, consumer-scoped delivery, authority, capability probing, freshness, rehydratable context offload with source reread when omitted details may matter, mutation, readback and fallback boundaries",
       "id": "connected-sources",
       "language": "English with language-sensitive execution",
-      "last_material_update_on": "2026-09-24",
-      "last_material_update_summary": "Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.",
+      "last_material_update_on": "2026-09-27",
+      "last_material_update_summary": "Added consumer-scoped context delivery and rehydratable offload of decision-bearing material while preserving source authority boundaries; credited bounded mechanism-level study without copying code or runtime.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
@@ -145,10 +145,10 @@
       "readable_surface_path": "portables/connected-sources/README.md",
       "status": "current",
       "summary_title": "Connected Sources",
-      "supersedes": "1.0-public",
+      "supersedes": "1.1-public",
       "surface_title": "Connected Sources — Moon Source component / portable",
       "title": "Connected Sources",
-      "version": "1.1-public",
+      "version": "1.2",
       "versioning_mode": "independent_public_capability_version"
     },
     {
@@ -536,7 +536,7 @@
   ],
   "mirror_contract": {
     "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
-    "current_rebase_note": "The schema 2.0 registry contains one record per public capability. Architectural role and distribution role are independent; portable is a supported standalone distribution profile, not a competing semantic class. Connected Sources is the structural crown jewel at docs/CONNECTED_SOURCES.md and remains standalone-capable at 1.1-public. The six standalone distributions retain self-onboarding canonical bodies and exact package/mirror byte contracts. No method version bump is earned by this structural registry rebase.",
+    "current_rebase_note": "The schema 2.0 registry contains one record per public capability. Architectural role and distribution role are independent; portable is a supported standalone distribution profile, not a competing semantic class. Connected Sources is the structural crown jewel at docs/CONNECTED_SOURCES.md and remains standalone-capable at 1.2 after its 2026-09-27 material release. The six standalone distributions retain self-onboarding canonical bodies and exact package/mirror byte contracts. No method version bump is earned by this structural registry rebase.",
     "mirror_branch": "main",
     "mirror_repository": "https://github.com/luahelenammc/LUAHELENA",
     "mismatch_detection": "python scripts/check_mirror_sync.py",
