@@ -225,6 +225,7 @@ The connector exposes a surface. It does not decide what that surface may govern
 The system's ability to reach a source does not mean every internal consumer should receive it. Resolve source/host reach and the recipient's contextual scope separately. Give an agent, skill, subprocess, procedure, adapter, benchmark or projection only the source slices its responsibility requires. Operational context may be relevant even when personal context is not. Route a request for additional context if a legitimate dependency appears; do not widen distribution merely because the host can retrieve more.
 
 Consumer scope governs delivery. It does not confer instruction authority or mutation authority.
+
 ### Retrieval is not ratification
 
 A search result is evidence that something was retrieved, not automatic source-of-truth status.

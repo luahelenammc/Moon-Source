@@ -114,7 +114,7 @@
       "architectural_role": "structural_crown_jewel",
       "best_for": "People and builders who need AI to revisit current material, preserve durable continuity or coordinate governed sources without confusing reach with authority",
       "canonical_path": "docs/CONNECTED_SOURCES.md",
-      "claim_ceiling": "Published Living Source Protocol; not universal connector support, automatic synchronization, exhaustive retrieval, authority by locator, storage or archive guarantees, arbitrary connector support or adoption proof",
+      "claim_ceiling": "Published Living Source Protocol; not universal or arbitrary connector support, automatic synchronization, exhaustive retrieval, authority by locator, storage or archive guarantees, or adoption proof",
       "creator": "Lua Helena Moon Martins Cardoso (Moon)",
       "dependencies": [
         "No required dependency in standalone mode; this canonical body is the capability authority",
@@ -123,7 +123,7 @@
       ],
       "difficulty": "intermediate to advanced",
       "distribution": {
-        "canonical_sha256": "821c6314856d7786f4219aa31335808e24f42340bb2138aeadec12770790eda2",
+        "canonical_sha256": "f443aeff2ae4da43bea5baf5edd3b37f69bf9472285c5a060e9d8ef96444365b",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/CONNECTED_SOURCES.md",

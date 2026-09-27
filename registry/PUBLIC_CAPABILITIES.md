@@ -91,10 +91,10 @@ independent version when their method earns a distinct release state;
 standalone distribution and semantic versioning are separate dimensions.
 Version identifiers describe release state, not visibility or distribution.
 New version identifiers must not add audience labels such as `public`, `private`
-or `local`. Be My Eyes `1.0-public` remains a narrow legacy exception tied to already-
-published standalone package coordinates until its next accepted material
-release. Connected Sources advanced to `1.2` on 2026-09-27 and is no longer
-covered by this exception. These release-state values do not establish a
+or `local`. Be My Eyes `1.0-public` remains a narrow legacy exception tied to
+already-published standalone package coordinates until its next accepted
+material release. Connected Sources advanced to `1.2` on 2026-09-27 and is
+no longer covered by this exception; the legacy value does not establish a
 naming precedent.
 
 The current independently versioned capabilities are Lifecycle Workspace Router at
