@@ -5,13 +5,13 @@
 ## Public status
 
 - **status:** current subordinate adapter; optional public guidance
-- **version:** 1.4
+- **version:** 1.5
 - **versioning mode:** independently versioned subordinate submodule; the human title remains unversioned
 - **first public release:** 2026-09-09
-- **last material update:** 2026-09-24
-- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1
+- **last material update:** 2026-09-27
+- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1 → 1.5 official Astra prompting/skills calibration
 - **applies to:** Chat–Work Routing Protocol 6.1
-- **effective date:** 2026-09-24
+- **effective date:** 2026-09-27
 - **governing canonical body:** `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`
 - **canonical release lineage:** introduced under Chat–Work 5.1, updated for Chat–Work 6.0 Delegation-First orchestration and aligned to the surface-neutral control-root model in Chat–Work 6.1; the current canonical body uses the unversioned filename `CHAT_WORK_ROUTING_PROTOCOL.md`
 - **MSL dependency:** Moon Source Language 5.1
@@ -435,7 +435,7 @@ Likewise, Astra can be used in any strategy above without Sprint.
 This section is empirical and replaceable. It never overrides the canonical
 Chat–Work body, the active authority envelope or the claim ceiling.
 
-**Last checked:** 2026-09-24
+**Last checked:** 2026-09-27
 
 **Source class:** official product documentation for product behavior; dated
 field reports for operational hypotheses.
@@ -470,6 +470,66 @@ sweeps. Treat this as anecdotal operational evidence, not a benchmark or
 universal model property. When Astra is selected for sustained or frontier
 execution, prefer explicit scope ceilings and stop conditions over vague
 requests to “be balanced.”
+
+### Official Astra prompting and skills calibration — 2026-09-27
+
+OpenAI's current GPT-6 guidance adds a useful behavioral calibration for Astra. These observations refine the adapter; they do not create new routing authority. API-only capabilities remain API/harness facts and must not be presumed to exist in ChatGPT Work, Codex or another surface unless observed there.
+
+#### Action continuity and clarification
+
+Astra is more likely than earlier models to ask a focused question when additional input could materially change the result. Compile that tendency against the task's existing authority instead of treating every ambiguity as a stop signal:
+
+- infer routine gaps from the current request, prior context and governing source when the choice is low-risk and reversible;
+- complete already-authorized read-only, reversible and preparatory work before asking for a decision;
+- ask when the missing answer materially changes the outcome, authority, irreversible action or acceptance boundary;
+- define completion and stop conditions explicitly for sustained work so a first implementation, first draft or first passing check is not mistaken for the end when the objective also requires inspection, repair or readback.
+
+This is not permission to bypass a real approval boundary. It is an anti-stall rule for work that is already inside the authorized envelope.
+
+#### Instruction diet and progressive disclosure
+
+Astra follows instructions strongly and can be disproportionately affected by stale, overlapping or conflicting guidance in skills, `AGENTS.md` files and loaded references. Therefore:
+
+- preserve normal instruction precedence, with platform/safety/authority constraints above task-local guidance and explicit current user intent above subordinate reusable skill preferences when they legitimately conflict;
+- audit inherited instruction files when they cause unexplained stopping, permission loops or route drift;
+- prefer short skill descriptions with precise triggers;
+- use progressive disclosure: keep the root skill or adapter as a small router and load supporting instructions only when the task actually needs them;
+- do not require a full repository map, full documentation stack or entire source family for every small change;
+- revisit legacy hand-holding rules written for weaker models when they create redundant steps without changing acceptance or safety.
+
+Context Diet therefore applies to instructions as well as factual corpus. More governance text is not automatically more governance.
+
+#### Delegation calibration
+
+OpenAI notes that Astra may delegate less than a multi-agent workflow wants by default. When Chat–Work's Delegation-First law and the active harness support subagents, make the expected delegation behavior explicit: delegate materially independent work when it can improve quality or reduce total time, while retaining Astra for frontier decomposition, arbitration and convergence.
+
+This does not waive the Delegation & Native Parallelism Gate. Small, coupled or coordination-heavy work may still remain single-owner.
+
+#### Verification calibration
+
+Astra can test more broadly than a small change requires. Verification should remain proportional to the sovereign object and failure cost:
+
+- do not create tests merely to mirror a reversible, low-impact implementation;
+- run the checks that materially verify the requested delta;
+- after those checks pass, broaden or repeat testing only when new changes, failures, uncertainty or a higher-risk acceptance boundary justify it;
+- preserve mandatory project/repository gates when they actually govern acceptance.
+
+The goal is verified completion, not a ceremonial acreage of green checkmarks.
+
+#### Output-shape calibration
+
+Astra tends toward detailed Markdown, lists and recurring stock phrasing. Output structure is therefore an explicit destination constraint, not evidence that the underlying task requires more taxonomy. When the result is human-facing, inherit the destination's voice, density and formatting rules; use lists only when they improve the actual information geometry.
+
+#### API capability boundary
+
+Current OpenAI API guidance documents GPT-6 support for async tool calling, mid-turn steering, multi-agent orchestration, persisted reasoning, compaction and `configuration_update` for changing reasoning effort during a conversation while preserving cache. It also states that Astra does not support reasoning effort `none`; `low` is the minimum supported Astra effort in that API surface.
+
+These are useful implementation facts for compatible API harnesses. They are **not** evidence that ChatGPT Work exposes the same controls, that a current UI permits mid-turn configuration changes, or that the router may infer model/surface availability. Probe the actual harness before relying on them.
+
+Official references:
+
+- [Using GPT-6 / Model guidance](https://developers.openai.com/api/docs/guides/latest-model)
+- [Rethinking skills and prompts for GPT-6 Astra](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra)
 
 ### Total-work efficiency calibration — 2026-09-10
 
@@ -525,13 +585,18 @@ The adapter may classify failures such as:
 - `fanout_coordination_overhead` — subagents or parallel branches duplicated context or coordination work without sufficient independent-work benefit;
 - `latency_premium_mismatch` — a speed-premium mode was used while external tools or execution, rather than model response latency, dominated the run;
 - `strategy_surface_mismatch` — the chosen role required tools/persistence unavailable on the selected surface;
+- `premature_clarification_stop` — Astra paused for input before completing already-authorized reversible, read-only or preparatory work;
+- `instruction_stack_overconstraint` — stale, overlapping or conflicting skill/AGENTS guidance caused permission loops, route drift or unnecessary context loading;
+- `delegation_underuse` — independent work remained on Astra despite an available, beneficial and authorized child topology;
+- `verification_overreach` — testing or repeated checking materially exceeded the risk and acceptance needs of the delta without new evidence;
+- `output_shape_overproduction` — Astra's default formatting/detail tendency overrode the actual destination's density or voice constraints;
 - `adapter_staleness` — dated Astra calibration was treated as current after its freshness boundary.
 
 These are routing diagnoses, not claims about the model's private internals.
 
 ## Relationship to Chat–Work 6.1
 
-**Current Astra adapter version: 1.4.** Chat–Work 6.1 is the governing router; this adapter remains subordinate and independently tracked.
+**Current Astra adapter version: 1.5.** Chat–Work 6.1 is the governing router; this adapter remains subordinate and independently tracked.
 
 Chat–Work 6.1 promotes Delegation-First and heterogeneous topology to stable routing law. This adapter specializes that law for Astra without turning Astra into a universal executor or creating a second router.
 
