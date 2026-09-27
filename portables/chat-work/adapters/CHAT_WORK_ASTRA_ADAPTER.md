@@ -5,11 +5,11 @@
 ## Public status
 
 - **status:** current subordinate adapter; optional public guidance
-- **version:** 1.5
+- **version:** 1.6
 - **versioning mode:** independently versioned subordinate submodule; the human title remains unversioned
 - **first public release:** 2026-09-09
 - **last material update:** 2026-09-27
-- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1 → 1.5 official Astra prompting/skills calibration
+- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1 → 1.5 official Astra prompting/skills calibration → 1.6 delegated-bundle and worker-ownership calibration from credited external mechanism study
 - **applies to:** Chat–Work Routing Protocol 6.1
 - **effective date:** 2026-09-27
 - **governing canonical body:** `portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md`
@@ -362,6 +362,40 @@ Do not promote the entire run because one leaf became difficult.
 
 Children should receive minimum sufficient context, not the whole Astra history by default. Parallel write-heavy branches require disjoint ownership or explicit merge control. Astra remains convergence owner unless the task explicitly assigns another owner.
 
+### Delegated bundle and worker-ownership calibration — 2026-09-27
+
+A bounded mechanism-level study of Ethan Rogers' public `ethanplusai/astra-flash-orchestrator` repository (v1.2.0; main commit `68f8d34b7532be2623c804e97f53be337310cb35`, reviewed 2026-09-27) adds a useful refinement to Astra-as-orchestrator behavior. The transferable value is not its provider stack or named Flash worker. It is the execution geometry.
+
+#### Coherent bundle granularity
+
+When a worker's contract is stable, prefer one coherent bounded assignment that can carry its own in-scope discovery, execution, test/fix loop and routine verification. Split work at genuine dependency, ownership or independently reviewable acceptance boundaries, not at every function, tool call or status milestone.
+
+This does not authorize broad adjacent work. The bundle remains bounded by objective, allowed scope, contracts, acceptance criteria and stop conditions.
+
+#### Worker ownership and root non-shadowing
+
+After dispatching a healthy worker into an accepted bundle, the Astra root should not duplicate the worker's in-scope exploration or mutation merely to remain visibly active. Let the worker carry the reducible loop. The root retains objective, authority, architecture-bearing decisions, blocker resolution, convergence and acceptance.
+
+Do not use progress polling, status requests or overlapping root work as ceremony when the harness already provides a viable continuation/wait path. A wait timeout alone is not evidence of failure. Intervene when evidence indicates a real blocker, ownership conflict, failed acceptance boundary or material risk.
+
+#### Review before acceptance
+
+Worker completion means `ready_for_review`, not accepted. The root reviews the actual delta and the evidence relevant to the captured baseline. When correction is needed, prefer one consolidated findings packet over drip-fed micro-corrections, then recheck the affected behavior and dependencies. Broaden verification only when new evidence, residual uncertainty, material risk or a governing gate requires it.
+
+The worker does not self-accept. Executor completion and control-root cycle completion remain distinct.
+
+#### Real isolation for parallel mutation
+
+Logical agent separation is not mutable-state isolation. On a shared mutable object or workspace, prefer one active writer for coupled scope. Multiple writers require genuinely independent writable scopes or verified separate workspaces plus an explicit convergence/merge plan. A separate agent thread, by itself, is not evidence of filesystem, credential, process, port or network isolation.
+
+#### Provenance and adaptation boundary
+
+Source: Ethan Rogers, `ethanplusai/astra-flash-orchestrator`, v1.2.0, MIT-licensed repository reviewed at commit `68f8d34b7532be2623c804e97f53be337310cb35`.
+
+Absorbed at mechanism level: coherent delegation bundles, worker-owned internal execution loops, root non-shadowing, review-before-acceptance, consolidated correction and the distinction between logical concurrency and real write isolation.
+
+Not imported: DeepSeek/Codex Router/provider configuration, installation machinery, package prompts, code, fixed worker identity, fixed correction-cycle counts, benchmark savings claims or any implication of partnership, endorsement or shared authorship.
+
 ## Astra Strategy Compiler
 
 Resolve the strategy in this order:
@@ -588,6 +622,10 @@ The adapter may classify failures such as:
 - `premature_clarification_stop` — Astra paused for input before completing already-authorized reversible, read-only or preparatory work;
 - `instruction_stack_overconstraint` — stale, overlapping or conflicting skill/AGENTS guidance caused permission loops, route drift or unnecessary context loading;
 - `delegation_underuse` — independent work remained on Astra despite an available, beneficial and authorized child topology;
+- `delegation_fragmentation` — a stable worker-sized unit was split into status-shaped microtasks that increased coordination or root overhead without improving acceptance;
+- `root_shadow_execution` — the root duplicated or overlapped healthy worker-owned exploration/execution without a concrete blocker, risk or verification need;
+- `logical_isolation_confusion` — separate agent sessions were treated as proof of separate mutable workspaces or process/security isolation;
+- `executor_self_acceptance` — worker completion was treated as accepted state before root review and convergence;
 - `verification_overreach` — testing or repeated checking materially exceeded the risk and acceptance needs of the delta without new evidence;
 - `output_shape_overproduction` — Astra's default formatting/detail tendency overrode the actual destination's density or voice constraints;
 - `adapter_staleness` — dated Astra calibration was treated as current after its freshness boundary.
