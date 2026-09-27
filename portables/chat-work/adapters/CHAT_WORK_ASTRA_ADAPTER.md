@@ -634,7 +634,7 @@ These are routing diagnoses, not claims about the model's private internals.
 
 ## Relationship to Chat–Work 6.1
 
-**Current Astra adapter version: 1.5.** Chat–Work 6.1 is the governing router; this adapter remains subordinate and independently tracked.
+**Current Astra adapter version: 1.6.** Chat–Work 6.1 is the governing router; this adapter remains subordinate and independently tracked.
 
 Chat–Work 6.1 promotes Delegation-First and heterogeneous topology to stable routing law. This adapter specializes that law for Astra without turning Astra into a universal executor or creating a second router.
 
