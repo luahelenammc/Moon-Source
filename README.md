@@ -136,11 +136,11 @@ This is a professional-service bridge, not a claim that Moon Source is a mature 
 ## Recent capability changes
 
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
+- **2026-09-27 — Connected Sources:** Added consumer-scoped context delivery and rehydratable offload of decision-bearing material while preserving source authority boundaries; credited bounded mechanism-level study without copying code or runtime.
 - **2026-09-27 — Chat–Work Routing Protocol:** Chat–Work 6.1 remains the governing surface-neutral router; its subordinate Astra Strategy Adapter advanced to 1.5 with official OpenAI calibration for follow-through, instruction/skill diet, delegation, proportional verification, output shape and API-vs-product capability boundaries.
 - **2026-09-24 — Preflight:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
 - **2026-09-24 — Moon Source Setup:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
 - **2026-09-24 — Moon Source Language:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
-- **2026-09-24 — Connected Sources:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
 <!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
 
 This bounded digest is generated from the unified capability registry. It is not a commit log.

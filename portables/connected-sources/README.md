@@ -23,7 +23,7 @@ It is not a connector onboarding tutorial, universal synchronization layer or pe
 
 ## Current identity
 
-- **Version:** 1.1-public
+- **Version:** 1.2
 - **Status:** current · structural crown jewel · supported standalone distribution
 - **Canonical semantic body:** [`docs/CONNECTED_SOURCES.md`](../../docs/CONNECTED_SOURCES.md)
 - **Package:** [`downloads/connected-sources.zip`](../../downloads/connected-sources.zip)

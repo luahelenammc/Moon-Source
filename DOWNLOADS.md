@@ -34,7 +34,7 @@ The MSL 5.1 package carries the exact canonical body, including its explicit for
 
 > 🌱 **First time with Moon Source?** Start with [README.md#first-use](README.md#first-use). Each readable capability surface has a prominent **Start** route into the canonical body's embedded First use section. Every current standalone package contains its self-onboarding canonical body rather than the README facade. Chat–Work additionally carries subordinate model adapters: Astra **1.2** for frontier strategy and GPT-6 Sol/Luna **1.1** for dated Work/Codex executor calibration. Adapters remain subordinate, setup-aware and replaceable; they do not create separate capability identities.
 
-The current Be My Eyes capability version is **1.0-public**. The current Connected Sources capability version is **1.1-public**. The current Chat–Work Routing Protocol version is **5.2**. It retains the model-neutral Intelligence Distillation Ladder, bounded exhaustiveness, connector-aware source transport, auditable Decision Trace, optional explicitly activated ephemeral Sprint Mode, bounded Decision Sprint and Sprint Receipts, and now adds the dated GPT-6 Sol/Luna executor adapter plus an explicit no-one-to-one-model rule for semantic capability tiers while preserving the unversioned human title, model-neutral core and current MSL 5.1.
+The current Be My Eyes capability version is **1.0-public**. The current Connected Sources capability version is **1.2**. The current Chat–Work Routing Protocol version is **5.2**. It retains the model-neutral Intelligence Distillation Ladder, bounded exhaustiveness, connector-aware source transport, auditable Decision Trace, optional explicitly activated ephemeral Sprint Mode, bounded Decision Sprint and Sprint Receipts, and now adds the dated GPT-6 Sol/Luna executor adapter plus an explicit no-one-to-one-model rule for semantic capability tiers while preserving the unversioned human title, model-neutral core and current MSL 5.1.
 
 GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each current standalone package contains its canonical body and the readable package surfaces required by that distribution; the canonical body carries the operative First use entry. Website copies are convenience mirrors, not separate semantic sources.
 
@@ -93,7 +93,7 @@ Connected Sources remains the structural crown jewel at `docs/CONNECTED_SOURCES.
 - **Just want AI to understand you better?** Download **Moon Source Setup** (version **3.1**).
 - **Want AI to reconstruct what you mean before it acts?** Download **Preflight** (version **2.3**).
 - **Want AI to read what is happening between people, or predict how your message may land without pretending to read minds?** Download **Be My Eyes**.
-- **Need AI to return to current material across sessions or operate over governed connected sources?** Download **Connected Sources** (version **1.1-public**).
+- **Need AI to return to current material across sessions or operate over governed connected sources?** Download **Connected Sources** (version **1.2**).
 - **Want the structural grammar?** Download **Moon Source Language** (version **5.1**).
 - **Want configurable Chat ↔ Work ↔ Codex routing?** Download **Chat–Work Routing Protocol** (version **5.2**), with optional Sprint Mode and subordinate Astra + GPT-6 Sol/Luna strategy guidance.
 - **Need a bounded operational execution pattern?** Browse **Operational Devices** and **Operational Reliability**.
