@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-27 — Public entry and builder routing
+
+- Reworked the README opening around reader intent and added a short plain-language first experiment.
+- Added `START_HERE.md` and `docs/FOR_AI_BUILDERS.md` as presentation surfaces that route into existing canonical methods.
+- Added one explicitly fictional project-context walkthrough and surfaced existing bounded examples.
+- Kept the public capability registry, capability count and capability versions unchanged.
+
 ## Adaptive Orchestration canonical identity migration — 2026-09-27
 
 The Chat–Work Routing Protocol is now named **Adaptive Orchestration Protocol**. Its public id and canonical directory, body, adapters, package and website mirror use the new identity. The migration preserves version **6.1** under the repository rule that naming-only corrections do not advance semantic versions; core procedure is unchanged, Astra remains **1.6**, and GPT-6 Sol/Luna remains **1.3**. The former names, registry id, GitHub paths, package and mirror remain explicit compatibility routes to the one current authority.

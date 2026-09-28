@@ -2,14 +2,38 @@
 
 **Governed context for AI: decide what should exist, what governs, what travels, and what stays current.**
 
-AI chat history is not the same thing as governed context. Conversations can retain useful continuity, but they can also accumulate stale facts, competing instructions, private material, unresolved ownership and context that belongs somewhere else.
+Moon Source is a public reference architecture for deciding which context AI should use, which source governs, what may change, and how useful context stays legible over time. This repository is its canonical public body.
 
-Moon Source is a public reference architecture for organizing that problem. It starts with the field before the form: understand the situation, identify authority and responsibility, then create only the smallest source, protocol, handoff, skill, registry, archive or operational surface the work actually needs.
+## What brings you here?
 
-This repository is the canonical public body of Moon Source.
+| If you want to… | Start here |
+|---|---|
+| Help AI understand you or one of your projects more consistently | [Start Here](START_HERE.md), written for ordinary language and first-time readers |
+| Build AI systems and see where governed context fits beside your existing stack | [For AI Builders](docs/FOR_AI_BUILDERS.md) |
+| Inspect the full architecture and AI-side routing contract | [Architecture](ARCHITECTURE.md) · [Moon Source AI Kernel](MOON_SOURCE_AI_KERNEL.md) |
 
-> 📦 **Want the whole Moon Source at once?**  
-> 🌙⬇️ [**Download the complete repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
+## Try Moon Source in 60 seconds
+
+Copy this into an AI conversation and describe the problem in your own words:
+
+~~~text
+I keep having this problem with AI:
+[describe it normally]
+
+Use Moon Source to identify the smallest context structure
+that would actually help. Do not make me learn Moon Source vocabulary first.
+
+Tell me:
+1. what problem matters here;
+2. the smallest useful structure;
+3. where it should live;
+4. how it should be updated;
+5. what I should try first.
+~~~
+
+A useful first result should connect **problem → smallest useful structure → destination → update rule → first test**.
+
+> Need the whole public reference at once? [Download the complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip).
 
 ## Why Moon Source exists
 
@@ -66,15 +90,7 @@ Each public capability has one canonical semantic body. A README may make it eas
 
 > **One canonical body, multiple legitimate surfaces.**
 
-A useful first prompt is:
-
-```text
-I need help with [describe the real need].
-Recommend the smallest Moon Source capability for it.
-Do not load the whole repository unless necessary.
-Tell me the canonical file, the first action, what happens next,
-and any step I must perform manually.
-```
+For a plain-language first experiment, use the short prompt near the top of this README or follow [Start Here](START_HERE.md).
 
 Access is not activation. A reachable source is not automatically authoritative, and a successful write is not accepted until the relevant readback succeeds.
 
@@ -115,6 +131,26 @@ flowchart TB
 This is an orientation model, not a universal stack ontology. Products may combine or split these responsibilities.
 
 Moon Source primarily operates in and around governed context: it helps determine what a harness may trust, retrieve, carry forward, mutate and verify. The [Adaptive Orchestration Protocol (AOP)](portables/adaptive-orchestration/README.md) governs how choices are made across available control roots, execution surfaces, models, reasoning effort and delegated workers; the harness/runtime still performs the actual loops, tool use and execution. RAG, memory stores, MCP/tools and other retrieval or orchestration mechanisms can participate in these layers, but Moon Source is not the model, the harness, the RAG engine or the agent runtime.
+
+## See it in practice
+
+These examples make the public material easier to inspect. Synthetic and fictional examples show a bounded illustration, not a report of adoption or measured results.
+
+- [First-use project-context walkthrough](examples/first-use-project-context.md): a fictional set of sources, one conflict, a bounded interpretation and a repeatable check.
+- [Setup first use](portables/setup/MOON_SOURCE_SETUP.md#first-use): a standalone prompt for deciding what context would actually help.
+- [Connected Sources tiny example](docs/CONNECTED_SOURCES.md#tiny-example): a walkthrough of source authority and freshness. It does not imply that a connector is available in every environment.
+- [Browser Console Device](examples/browser-console-device/README.md): an experimental, read-only synthetic demo that can be run locally.
+- [Hypothetical application scenarios](examples/application-scenarios/): fictional cases across projects, teams and services.
+
+### Five small context problems
+
+The miniatures below are hypothetical. They show the shape of a useful intervention, not guaranteed outcomes.
+
+- **Project continuity.** Before: several chats carry different project details. Reading: identify which source owns the current goal and decisions. Small move: keep one compact project source with an owner and update trigger. After: when supplied or reachable, that source can guide a new chat instead of every old message appearing current.
+- **Personal AI context.** Before: the same preferences are repeated in unrelated tasks. Reading: separate stable, useful preferences from one-off details. Small move: use Setup to choose a small personal context and decide where it belongs. After: only relevant context travels to recurring tasks.
+- **Team process.** Before: a procedure exists in a document, spreadsheet and chat, with no clear current owner. Reading: assign authority by responsibility and freshness. Small move: name the governing procedure, the owner of exceptions and the event that triggers an update. After: an AI can identify the governing instruction when its source and status are available.
+- **Conflicting sources.** Before: two files give different answers. Reading: identify the source that governs that fact, its date and whether a newer statement is only a proposal. Small move: resolve the authority question before combining the text. After: the answer can state what governs and what remains uncertain.
+- **Current external material.** Before: AI may be using a cached excerpt or old copy. Reading: check the source locator, retrieval scope and observed freshness. Small move: use Connected Sources only when the environment exposes the source and the task warrants it. After: the answer can say what it actually read and what it could not verify.
 
 ## Evidence, boundaries and reuse
 
