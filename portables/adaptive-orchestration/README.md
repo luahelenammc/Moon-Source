@@ -1,10 +1,26 @@
 # 🧬 Adaptive Orchestration Protocol — Moon Source portable
 
-**Adaptive Orchestration Protocol helps an AI choose and coordinate the right control root, execution surface, model, reasoning effort and delegation topology for a task, while preserving continuity, evidence, convergence and acceptance.**
+**Use each model, surface and unit of reasoning where it actually pays for itself.**
 
-**Formerly Chat–Work Routing Protocol. The old name remains a supported doorway to this one current capability.**
+Adaptive Orchestration Protocol (AOP) helps an AI route work across the right control root, execution surface, model capability, reasoning effort and delegation topology while preserving continuity, evidence, convergence and acceptance.
+
+Its efficiency target is **minimum total work to an accepted state**. Cheap sufficient execution should absorb reducible bulk; stronger cognition should be concentrated at the bottlenecks where it can materially change the result. AOP treats repeated context ingestion, unnecessary surface switching, avoidable retries, tool churn and agent fan-out as real execution costs too.
 
 [▶️ Start here](ADAPTIVE_ORCHESTRATION_PROTOCOL.md#first-use) · [⬇️ Download package](../../downloads/adaptive-orchestration-protocol.zip) · [🌙 Moon Source](../../README.md)
+
+## Why use AOP?
+
+Without an explicit routing layer, AI workflows can spend frontier reasoning on repetitive work, keep the root busy with scans that cheaper workers could absorb, reload the same context after unnecessary handoffs, or save on one turn only to lose more on retries and repair.
+
+AOP routes around that waste:
+
+- **keep the competent control root** when it can finish and verify the task;
+- **delegate reducible bulk** such as scanning, extraction, testing and repetitive work to cheaper sufficient execution when available;
+- **escalate only the irreducible delta** that actually needs stronger judgment;
+- **spend context deliberately**, instead of repeatedly re-ingesting material that does not need to travel;
+- **optimize the whole run**, including retries, tool churn, fan-out, convergence and verification, rather than optimizing the apparent cost of one call.
+
+More intelligence is useful when the task needs it. Applying the highest tier everywhere is not orchestration; it is just expensive uniformity.
 
 ## Use this when
 
@@ -63,6 +79,7 @@ Sprint Mode does not expose allowance/reset state, create a native product featu
 - **Version:** 6.1
 - **Protocol family:** V6
 - **Status:** current · supported standalone distribution
+- **Former identity:** Chat–Work Routing Protocol / Chat–Work Router / Chat–Work · retained only as compatibility and migration terminology
 - **Named continuity profile:** Chat–Work Loop Profile · Chat → Work/Codex → Chat
 - **Optional Astra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) · version **1.6**
 - **GPT-6 Sol/Luna submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md) · version **1.3**
