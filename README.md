@@ -23,18 +23,17 @@ The short version:
 
 This is a topology, not a compulsory waterfall. New information can send the work back to observation, authority or responsibility.
 
-Execution choices need proportionate governance too. The [Adaptive Orchestration Protocol (AOP)](portables/adaptive-orchestration/README.md) treats the control root, execution surface, model, reasoning effort and delegation as separate routing decisions. Its target is **minimum total work to an accepted state**: cheaper sufficient execution handles bulk when appropriate, while stronger cognition goes to real bottlenecks. Context rereads, retries, unnecessary delegation and surface switches all carry cost, so the protocol aims to reduce avoidable token, context and compute churn while preserving convergence and verification.
+Execution choices need proportionate governance too. [Adaptive Orchestration Protocol (AOP)](portables/adaptive-orchestration/README.md) starts from a practical rule: **use each model, surface and unit of reasoning where it actually pays for itself**. It separates the control root, execution surface, model capability, reasoning effort and delegation instead of collapsing them into one prestige choice. Its target is **minimum total work to an accepted state**: cheaper sufficient execution absorbs reducible bulk, stronger cognition is concentrated at real bottlenecks, and repeated context ingestion, retries, tool churn, unnecessary fan-out and surface switching are treated as costs to reduce rather than invisible overhead. The practical payoff is less avoidable token/context spend and less wasted high-tier reasoning without pretending that the cheapest single call is always the cheapest route.
 
 ## Start with the problem, not the vocabulary
 
-The split below is for navigation: the first map lists standalone distributions; the second maps repository architecture and components. **Portable** describes a distribution profile, not a separate semantic class. Connected Sources, for example, is structurally central and also standalone-capable.
+The split below is architectural rather than merely a download taxonomy. **Portables** are capabilities whose semantic identity is itself portable. **Standalone distribution** is a separate delivery property: a structural component can also be distributed independently without becoming a portable. Connected Sources is the important example below.
 
-### Standalone portables
+### Portable entry points
 
 | If you need to… | Start here |
 |---|---|
-| Route execution across control roots, surfaces, models, reasoning effort and delegation while minimizing work to an accepted result | [🧬 Adaptive Orchestration Protocol](portables/adaptive-orchestration/README.md) |
-| Reach living sources while keeping authority, freshness, mutation and readback governed | [🔗 Connected Sources](portables/connected-sources/README.md) |
+| Spend AI capability efficiently across roots, surfaces, models, reasoning effort and delegation while minimizing total work to an accepted result | [🧬 Adaptive Orchestration Protocol](portables/adaptive-orchestration/README.md) |
 | Carry context across sources and surfaces without losing meaning, provenance or authority | [🧱 Moon Source Language](portables/msl/README.md) |
 | Build the smallest useful context for a person or project | [🧭 Setup](portables/setup/README.md) |
 | Reconstruct the human task before execution when expression is messy, incomplete or self-correcting | [🛫 Preflight](portables/preflight/README.md) |
@@ -45,6 +44,7 @@ The split below is for navigation: the first map lists standalone distributions;
 | If you need to… | Start here |
 |---|---|
 | Decide what a field needs before choosing its durable form | [🏗️ Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
+| Reach living sources while keeping access, authority, freshness, mutation and readback governed | [🔗 Connected Sources](docs/CONNECTED_SOURCES.md#first-use) |
 | Retrieve, process, metabolize or promote governed source material | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Diagnose stale authority, freshness problems, duplication or contradiction and find the smallest safe corpus repair | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Recover a corpus's semantic topology and repair inherited organization without rebuilding it from scratch | [🧵 Semantic Reweave](docs/SEMANTIC_REWEAVE.md) |
@@ -89,7 +89,7 @@ Access is not activation. A reachable source is not automatically authoritative,
 - **Humans should not have to prompt like machines.** [Preflight](portables/preflight/PREFLIGHT.md) reconstructs intended meaning before execution and escalates guardrails only when consequence requires them.
 - **Read the scene, not only the sentence.** [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) reconstructs actors, relationship and plausible subtext while keeping observation, inference and overread distinct.
 - **Workspace state must not invent authority.** [Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) projects lifecycle, action and provenance onto durable surfaces without replacing the source of record.
-- **Optimize total work to an accepted state.** [Adaptive Orchestration](portables/adaptive-orchestration/README.md) routes capacity across roots, surfaces, models, reasoning effort and delegation; use stronger cognition where it changes the result.
+- **Optimize total work to an accepted state.** [Adaptive Orchestration](portables/adaptive-orchestration/README.md) uses cheaper sufficient execution for reducible bulk, concentrates stronger cognition at real bottlenecks, and treats context churn, retries and unnecessary fan-out as costs rather than free plumbing.
 
 ## Public capabilities
 
@@ -97,7 +97,7 @@ Moon Source publishes reusable public capabilities with one canonical semantic b
 
 The authoritative inventory, chronology, status and material-update history lives in the [public capability registry](registry/PUBLIC_CAPABILITIES.md), with a machine-readable contract at [registry/public-capabilities.json](registry/public-capabilities.json).
 
-For portable packages and human-readable entry points, use the [download hub](DOWNLOADS.md). For examples of the architecture applied to fictional everyday situations, see the [application-scenario gallery](examples/application-scenarios/).
+For standalone packages and human-readable entry points, use the [download hub](DOWNLOADS.md). Connected Sources remains a structural component even though Moon Source also publishes it as a supported standalone distribution. For examples of the architecture applied to fictional everyday situations, see the [application-scenario gallery](examples/application-scenarios/).
 
 ## Where Moon Source sits in an AI stack
 

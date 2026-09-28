@@ -1,4 +1,4 @@
-# 🔗 Connected Sources — Moon Source component / portable
+# 🔗 Connected Sources — Moon Source structural component
 
 **Let AI work with persistent external sources while keeping access, authority, freshness, mutation and readback separate.**
 
@@ -15,7 +15,7 @@
 
 Connected Sources is Moon Source's **Living Source Protocol** and a **structural crown jewel**. It governs how connected material is reached and interpreted without confusing a connector with semantic authority.
 
-This directory exists only as the readable browsing surface for its supported standalone distribution. The capability's structural home remains in `docs/`.
+This directory exists only as the readable browsing facade for its supported standalone distribution. The capability itself is structural, not a portable; its canonical home remains in `docs/`.
 
 ## What it is not
 
