@@ -98,7 +98,7 @@ A divisão abaixo é arquitetural, não apenas uma classificação de downloads.
 
 Moon Source é uma arquitetura de contexto, não um aplicativo que instala um serviço em segundo plano, sistema de memória, conector, troca de modelo ou permissão oculta. Em geral, nada é instalado.
 
-Se você está explorando o repositório como pessoa, escolha o caminho menor no mapa acima e abra o README daquela capacidade. Se entregar o repositório inteiro a uma IA, use `MOON_SOURCE_AI_KERNEL.md` para o roteamento do lado da IA. Para uma necessidade concreta, comece pela menor capacidade relevante, em vez de carregar o repositório todo.
+Se você está explorando o repositório como pessoa, escolha o caminho menor no mapa acima e abra o README daquela capacidade. Se entregar o repositório inteiro a uma IA, use [`MOON_SOURCE_AI_KERNEL.md`](../MOON_SOURCE_AI_KERNEL.md) para o roteamento do lado da IA. Para uma necessidade concreta, comece pela menor capacidade relevante, em vez de carregar o repositório todo.
 
 Cada capacidade pública tem um corpo semântico canônico. Um README pode facilitar a navegação, e um pacote ou espelho no site pode facilitar o transporte, mas essas superfícies não criam outra identidade, autoridade ou versão.
 
