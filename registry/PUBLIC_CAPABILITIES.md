@@ -4,8 +4,10 @@ This is Moon Source's unified public capability registry. Each capability has
 one canonical semantic body and one architectural responsibility. Some
 capabilities also have a supported standalone distribution.
 
-“Portable” is therefore a distribution profile, not a competing semantic
-class. The machine-readable contract is
+Standalone distribution is a delivery profile, not a competing semantic
+class. Most independently distributed capabilities are also portables, but
+that is not required: Connected Sources is a structural component with a
+supported standalone distribution. The machine-readable contract is
 [registry/public-capabilities.json](public-capabilities.json), schema 2.0.
 The table below is a human-readable view of the same sixteen records.
 
@@ -43,9 +45,11 @@ package and its exact-byte website mirror live. Readable capability names may
 point to lightweight README facades for human browsing; those links do not
 change the canonical-body column or machine registry.
 
-A capability is portable when its canonical body can be used independently
-within a declared scope and Moon Source publishes a supported standalone route
-for it. A standalone distribution does not create a second authority.
+A capability may receive a supported standalone distribution when its
+canonical body can be used independently within a declared scope. Distribution
+does not change architectural identity and does not create a second authority.
+Connected Sources therefore remains structural even though it can travel as a
+standalone package.
 
 The six standalone distributions are a filtered view of the unified registry:
 👁️ Be My Eyes, 🧬 Adaptive Orchestration Protocol, 🔗 Connected Sources, 🧱 Moon Source Language,
