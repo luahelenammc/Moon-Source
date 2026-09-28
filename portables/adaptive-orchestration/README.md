@@ -4,7 +4,7 @@
 
 Adaptive Orchestration Protocol (AOP) helps an AI route work across the right control root, execution surface, model capability, reasoning effort and delegation topology while preserving continuity, evidence, convergence and acceptance.
 
-Its efficiency target is **minimum total work to an accepted state**. Cheap sufficient execution should absorb reducible bulk; stronger cognition should be concentrated at the bottlenecks where it can materially change the result. AOP treats repeated context ingestion, unnecessary surface switching, avoidable retries, tool churn and agent fan-out as real execution costs too.
+Its efficiency target is **minimum total work to an accepted state**. Lower-cost sufficient execution should absorb reducible bulk; stronger cognition should be concentrated at the bottlenecks where it can materially change the result. AOP treats repeated context ingestion, unnecessary surface switching, avoidable retries, tool churn and agent fan-out as real execution costs too, with the practical aim of reducing avoidable token/context spend and compute waste without lowering the capability floor the task actually needs.
 
 [▶️ Start here](ADAPTIVE_ORCHESTRATION_PROTOCOL.md#first-use) · [⬇️ Download package](../../downloads/adaptive-orchestration-protocol.zip) · [🌙 Moon Source](../../README.md)
 
@@ -17,7 +17,7 @@ AOP routes around that waste:
 - **keep the competent control root** when it can finish and verify the task;
 - **delegate reducible bulk** such as scanning, extraction, testing and repetitive work to cheaper sufficient execution when available;
 - **escalate only the irreducible delta** that actually needs stronger judgment;
-- **spend context deliberately**, instead of repeatedly re-ingesting material that does not need to travel;
+- **spend tokens and context deliberately**, instead of repeatedly re-ingesting material that does not need to travel;
 - **optimize the whole run**, including retries, tool churn, fan-out, convergence and verification, rather than optimizing the apparent cost of one call.
 
 More intelligence is useful when the task needs it. Applying the highest tier everywhere is not orchestration; it is just expensive uniformity.
