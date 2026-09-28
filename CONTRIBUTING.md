@@ -32,7 +32,9 @@ The repository does not require a CLA or a signed-off-by line as a condition of 
 
 A material change to the root README is incomplete until all governed translation mirrors are updated and translation validation passes. See the [README translation contract](docs/README_TRANSLATIONS.md).
 
-The repository maintenance CLI delegates to the existing bounded validators; it is not a new public capability. Use an explicit `--apply` flag for stamp or generated-digest mutations. Read [MAINTAINERS.md](MAINTAINERS.md) for authority and [SECURITY.md](SECURITY.md) for security reporting.
+Keep README surfaces focused on orientation, first use and current state. Put chronological release history in the owning changelog or capability registry, following the [README maintenance contract](docs/README_MAINTENANCE.md).
+
+The repository maintenance CLI delegates to the existing bounded validators; it is not a new public capability. Use an explicit `--apply` flag only where a maintenance command documents a generated-file write. Read [MAINTAINERS.md](MAINTAINERS.md) for authority and [SECURITY.md](SECURITY.md) for security reporting.
 
 New application material must be visibly hypothetical and didactic unless independently supported public evidence exists. Do not present a fictional scenario as a case study, adoption result or validated deployment.
 

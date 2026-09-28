@@ -32,19 +32,7 @@ More intelligence is useful when the task needs it. Applying the highest tier ev
 - an executor result needs evidence-bearing convergence and postflight;
 - expensive execution needs a survivability check before spending the budget.
 
-## What changed in 6.1
-
-Adaptive Orchestration 6.1 keeps the V6 Delegation-First architecture and removes the remaining **Chat-first assumption** from the public core.
-
-The generic loop is now:
-
-**Control → Route → Execute / Delegate → Converge → Accept**
-
-The current competent control root is the default continuity anchor. Chat, Work and Codex are product surfaces with different affordances; they are not fixed cognitive roles.
-
-A Work run may stay in Work from decomposition through delegated execution and postflight. A Codex run may stay in Codex through subagents and convergence. A frontier root may delegate cheaper workers and still close on the same surface.
-
-The historical **Chat → Work/Codex → Chat** loop remains fully supported as the named **Chat–Work Loop Profile**. It is first-class, not universal.
+For the 6.1 release history, see the [repository changelog](../../CHANGELOG.md).
 
 ## Astra submodule, not Astra mode
 

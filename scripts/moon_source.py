@@ -28,6 +28,8 @@ def local_validation_steps() -> list[tuple[str, list[str]]]:
         ("Markdown links", python_script("check_links.py")),
         ("README translation synchronization", python_script("check_readme_translations.py")),
         ("README translation tests", python_script("test_readme_translations.py")),
+        ("README maintenance policy", python_script("check_readme_maintenance.py")),
+        ("README maintenance policy tests", python_script("test_readme_maintenance.py")),
         ("public capability registry", python_script("validate_public_capabilities.py")),
         (
             "public capability registry tests",
@@ -42,7 +44,6 @@ def local_validation_steps() -> list[tuple[str, list[str]]]:
         ("Markdown link tests", python_script("test_check_links.py")),
         ("public stamps", python_script("check_public_stamps.py")),
         ("public stamp tests", python_script("test_public_stamps.py")),
-        ("capability digest", python_script("update_capability_digest.py", "--check")),
         ("maintenance CLI tests", python_script("test_moon_source_cli.py")),
     ]
 
@@ -54,6 +55,11 @@ def command_steps(command: str, args: argparse.Namespace) -> list[tuple[str, lis
         return [
             ("README translation synchronization", python_script("check_readme_translations.py")),
             ("README translation tests", python_script("test_readme_translations.py")),
+        ]
+    if command == "readmes":
+        return [
+            ("README maintenance policy", python_script("check_readme_maintenance.py")),
+            ("README maintenance policy tests", python_script("test_readme_maintenance.py")),
         ]
     if command == "registry":
         return [
@@ -85,9 +91,6 @@ def command_steps(command: str, args: argparse.Namespace) -> list[tuple[str, lis
             ]
         )
         return steps
-    if command == "digest":
-        arguments = [] if args.apply else ["--check"]
-        return [("capability digest", python_script("update_capability_digest.py", *arguments))]
     if command == "mirror":
         command_line = python_script("check_mirror_sync.py")
         if args.mirror_root is not None:
@@ -127,6 +130,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     subparsers.add_parser("validate", help="run the complete offline/local validation contract")
     subparsers.add_parser("translations", help="check README translation freshness and structure")
+    subparsers.add_parser("readmes", help="check README scope and changelog separation")
     subparsers.add_parser("registry", help="validate the public capability registry")
     subparsers.add_parser("licensing", help="run licensing, REUSE and citation checks")
     subparsers.add_parser("links", help="run Markdown link checks and regression tests")
@@ -134,8 +138,6 @@ def build_parser() -> argparse.ArgumentParser:
     stamps = subparsers.add_parser("stamps", help="check public stamps; use --apply to normalize them")
     stamps.add_argument("--apply", action="store_true", help="explicitly apply stamp normalization")
 
-    digest = subparsers.add_parser("digest", help="check the generated README capability digest")
-    digest.add_argument("--apply", action="store_true", help="explicitly refresh the generated digest")
 
     mirror = subparsers.add_parser("mirror", help="check current canonical-to-website mirror bytes")
     mirror.add_argument("--check", action="store_true", help="explicitly request the read-only check")

@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: zh-CN
 source: ../README.md
-source_sha256: 4d7152376f0f4dd8f1d8d22c6c2e1762bdd6435e3d526b8ff7e315da26d087a4
+source_sha256: 5c952aa0c4b68d45eac9b1e75388a0d8451767b175966876c328bc922138cbcc
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -200,18 +200,6 @@ Moon Source 本身仍然是公开的。希望把这套架构应用于真实上�
 **[与 Moon 合作 →](https://www.luahelena.com.br/moonsource/work-with-moon/?lang=en)**
 
 这是通往专业服务的桥梁，不代表 Moon Source 已成为成熟的企业平台。合作范围会根据实际情境确定，并遵守本仓库记录的证据、隐私、权限和主张边界。
-
-## 近期能力变化
-
-<!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
-- **2026-09-27 — Connected Sources：** 增加了按消费者划分的上下文传递，以及可重新载入决策相关材料的外置方式，同时保留来源权限边界；记录了对机制的有限研究致谢，没有复制代码或 runtime。
-- **2026-09-27 — Adaptive Orchestration Protocol：** 规范身份和路径从 Chat–Work Routing Protocol 迁移为 Adaptive Orchestration Protocol。根据仅更名规则，6.1 版本和执行语义保持不变；旧 GitHub 路径、软件包和网站镜像仍作为明确的兼容入口。Astra 1.6 与 GPT-6 Sol/Luna 1.3 保持不变。
-- **2026-09-24 — Preflight：** 规范正文、软件包和镜像路径已按稳定的材料身份统一；语义内容和能力版本不变。
-- **2026-09-24 — Moon Source Setup：** 规范正文、软件包和镜像路径已按稳定的材料身份统一；语义内容和能力版本不变。
-- **2026-09-24 — Moon Source Language：** 规范正文、软件包和镜像路径已按稳定的材料身份统一；语义内容和能力版本不变。
-<!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
-
-这份有界摘要由统一能力注册表生成，不是提交历史。
 
 ## 仓库导航
 
