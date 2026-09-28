@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-28 — README history routing
+
+- Removed the generated recent-capability digest from the root README and all four translations; current capability chronology remains in the public registry, and dated repository changes remain in this changelog.
+- Removed the 6.1 release recap from the Adaptive Orchestration README and linked its existing changelog entry.
+- Added a repository-wide README maintenance contract and a deterministic heading guard; retired the README digest generator and its CLI command. No capability or version changed.
+
 ## 2026-09-28 — README translations and hard synchronization
 
 - Added complete Brazilian Portuguese, Spanish, Simplified Chinese and Russian mirrors of the canonical English README, with language navigation and source fingerprints.

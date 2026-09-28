@@ -191,18 +191,6 @@ Moon Source itself remains public. Organizations that want the architecture appl
 
 This is a professional-service bridge, not a claim that Moon Source is a mature enterprise platform. Engagements are scoped to the actual context and retain the evidence, privacy, authority and claim ceilings documented in this repository.
 
-## Recent capability changes
-
-<!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
-- **2026-09-27 — Connected Sources:** Added consumer-scoped context delivery and rehydratable offload of decision-bearing material while preserving source authority boundaries; credited bounded mechanism-level study without copying code or runtime.
-- **2026-09-27 — Adaptive Orchestration Protocol:** Canonical identity and paths migrated from Chat–Work Routing Protocol to Adaptive Orchestration Protocol. Version 6.1 and execution semantics remain unchanged under the naming-only rule; old GitHub paths, package and website mirror remain explicit aliases. Astra 1.6 and GPT-6 Sol/Luna 1.3 remain unchanged.
-- **2026-09-24 — Preflight:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
-- **2026-09-24 — Moon Source Setup:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
-- **2026-09-24 — Moon Source Language:** Normalized the current canonical, package and mirror routes to stable artifact identity; semantic content and capability version remain unchanged.
-<!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
-
-This bounded digest is generated from the unified capability registry. It is not a commit log.
-
 ## Repository navigation
 
 | Need | Canonical route |

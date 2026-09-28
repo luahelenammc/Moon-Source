@@ -29,6 +29,7 @@ The language-navigation block is bounded by `MOON-SOURCE-LANGUAGE-NAV:START` and
 ## What to translate
 
 Translate human-facing prose, headings, table labels, examples and visible diagram labels into natural language for the locale. Keep stable capability names where they function as identities. Preserve code, commands, URLs, repository coordinates, filenames, paths, identifiers, automation markers and version values. A translation must retain the source's section order, heading levels, tables, lists, quotes and link targets.
+A mirror cannot add locale-specific sections, release notes or update history that do not appear in the canonical English README.
 
 ## Validation and review
 

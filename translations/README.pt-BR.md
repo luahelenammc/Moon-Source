@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: pt-BR
 source: ../README.md
-source_sha256: 4d7152376f0f4dd8f1d8d22c6c2e1762bdd6435e3d526b8ff7e315da26d087a4
+source_sha256: 5c952aa0c4b68d45eac9b1e75388a0d8451767b175966876c328bc922138cbcc
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -200,18 +200,6 @@ Moon Source continua público. Organizações que queiram aplicar a arquitetura 
 **[Trabalhe com Moon →](https://www.luahelena.com.br/moonsource/work-with-moon/?lang=en)**
 
 Esta é uma ponte para serviços profissionais, não uma afirmação de que Moon Source seja uma plataforma empresarial madura. Os trabalhos são delimitados segundo o contexto real e mantêm os limites de evidência, privacidade, autoridade e afirmações documentados neste repositório.
-
-## Mudanças recentes de capacidades
-
-<!-- MOON-SOURCE-CAPABILITY-DIGEST:START -->
-- **2026-09-27 — Connected Sources:** Acrescentou a entrega de contexto delimitada por consumidor e a transferência reidratável de material relevante para decisões, preservando os limites de autoridade das fontes; registrou crédito por estudo de mecanismos, sem copiar código ou runtime.
-- **2026-09-27 — Adaptive Orchestration Protocol:** A identidade e os caminhos canônicos foram migrados de Chat–Work Routing Protocol para Adaptive Orchestration Protocol. A versão 6.1 e a semântica de execução continuam iguais segundo a regra para mudanças apenas de nome; os caminhos antigos do GitHub, o pacote e o espelho no site permanecem rotas explícitas de compatibilidade. Astra 1.6 e GPT-6 Sol/Luna 1.3 continuam iguais.
-- **2026-09-24 — Preflight:** Os caminhos canônicos, do pacote e do espelho foram normalizados para a identidade estável do artefato; o conteúdo semântico e a versão da capacidade continuam iguais.
-- **2026-09-24 — Moon Source Setup:** Os caminhos canônicos, do pacote e do espelho foram normalizados para a identidade estável do artefato; o conteúdo semântico e a versão da capacidade continuam iguais.
-- **2026-09-24 — Moon Source Language:** Os caminhos canônicos, do pacote e do espelho foram normalizados para a identidade estável do artefato; o conteúdo semântico e a versão da capacidade continuam iguais.
-<!-- MOON-SOURCE-CAPABILITY-DIGEST:END -->
-
-Este resumo delimitado é gerado a partir do registro unificado de capacidades. Não é um histórico de commits.
 
 ## Navegação pelo repositório
 

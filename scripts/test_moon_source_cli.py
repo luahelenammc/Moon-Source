@@ -29,9 +29,17 @@ def main() -> None:
         str(moon_source.ROOT / "scripts" / "check_readme_translations.py"),
         str(moon_source.ROOT / "scripts" / "test_readme_translations.py"),
     ]
+
+    readmes = moon_source.command_steps("readmes", namespace())
+    assert [step[1][1] for step in readmes] == [
+        str(moon_source.ROOT / "scripts" / "check_readme_maintenance.py"),
+        str(moon_source.ROOT / "scripts" / "test_readme_maintenance.py"),
+    ]
     validate_paths = [step[1][1] for step in validate]
     assert str(moon_source.ROOT / "scripts" / "check_readme_translations.py") in validate_paths
     assert str(moon_source.ROOT / "scripts" / "test_readme_translations.py") in validate_paths
+    assert str(moon_source.ROOT / "scripts" / "check_readme_maintenance.py") in validate_paths
+    assert str(moon_source.ROOT / "scripts" / "test_readme_maintenance.py") in validate_paths
 
     registry = moon_source.command_steps("registry", namespace())
     assert [step[1][1] for step in registry] == [
@@ -43,11 +51,6 @@ def main() -> None:
     assert stamps[0][1][1].endswith("apply_public_stamps.py")
     assert stamps[-1][1][1].endswith("test_public_stamps.py")
 
-    digest = moon_source.command_steps("digest", namespace())
-    assert digest[0][1][-1] == "--check"
-    digest_apply = moon_source.command_steps("digest", namespace(apply=True))
-    assert "--check" not in digest_apply[0][1]
-
     mirror = moon_source.command_steps(
         "mirror", namespace(mirror_root=Path("../luahelena"))
     )
@@ -55,6 +58,10 @@ def main() -> None:
 
     with patch.object(moon_source, "run_step", return_value=0) as run_step:
         assert moon_source.execute("registry", namespace()) == 0
+        assert run_step.call_count == 2
+
+    with patch.object(moon_source, "run_step", return_value=0) as run_step:
+        assert moon_source.execute("readmes", namespace()) == 0
         assert run_step.call_count == 2
 
     with patch.object(moon_source, "run_step", side_effect=[0, 3]) as run_step:
