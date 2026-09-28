@@ -146,7 +146,7 @@
       ],
       "difficulty": "intermediate to advanced",
       "distribution": {
-        "canonical_sha256": "808f2e50ab12b2d712007f691fe68f58c5073a33c911e3d224e7845fa0170cd5",
+        "canonical_sha256": "d023ed0d7b5b65091e3f5eabe1b0969f3e7103394304ceb759a48a8835620f97",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/CONNECTED_SOURCES.md",
@@ -169,7 +169,7 @@
       "status": "current",
       "summary_title": "Connected Sources",
       "supersedes": "1.1-public",
-      "surface_title": "Connected Sources — Moon Source component / portable",
+      "surface_title": "Connected Sources — Moon Source structural component",
       "title": "Connected Sources",
       "version": "1.2",
       "versioning_mode": "independent_public_capability_version"

@@ -5,7 +5,7 @@
 - Reworked the README opening around reader intent and added a short plain-language first experiment.
 - Added `START_HERE.md` and `docs/FOR_AI_BUILDERS.md` as presentation surfaces that route into existing canonical methods.
 - Added one explicitly fictional project-context walkthrough and surfaced existing bounded examples.
-- Kept the public capability registry, capability count and capability versions unchanged.
+- Kept the public capability count and capability versions unchanged; aligned Connected Sources’ readable and canonical titles with its structural role and refreshed the exact-byte package fingerprint.
 
 ## Adaptive Orchestration canonical identity migration — 2026-09-27
 
