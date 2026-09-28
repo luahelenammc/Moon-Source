@@ -23,21 +23,38 @@ The short version:
 
 This is a topology, not a compulsory waterfall. New information can send the work back to observation, authority or responsibility.
 
+Execution choices need proportionate governance too. The [Adaptive Orchestration Protocol (AOP)](portables/adaptive-orchestration/README.md) treats the control root, execution surface, model, reasoning effort and delegation as separate routing decisions. Its target is **minimum total work to an accepted state**: cheaper sufficient execution handles bulk when appropriate, while stronger cognition goes to real bottlenecks. Context rereads, retries, unnecessary delegation and surface switches all carry cost, so the protocol aims to reduce avoidable token, context and compute churn while preserving convergence and verification.
+
 ## Start with the problem, not the vocabulary
+
+The split below is for navigation: the first map lists standalone distributions; the second maps repository architecture and components. **Portable** describes a distribution profile, not a separate semantic class. Connected Sources, for example, is structurally central and also standalone-capable.
+
+### Standalone portables
 
 | If you need to… | Start here |
 |---|---|
-| Give an AI the smallest useful setup for a person or project | [🧭 Setup](portables/setup/README.md) |
-| Help AI reconstruct what a human is actually trying to accomplish before acting on messy, incomplete or conversational wording | [🛫 Preflight](portables/preflight/README.md) |
-| Read a message, thread, screenshot, note or draft as a human scene — including relationship, subtext, overread and likely reception | [👁️ Be My Eyes](portables/be-my-eyes/README.md) |
-| Decide what deserves to become a source, handoff, procedure or other form | [🏗️ Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
-| Repair a corpus with stale authority, contradiction, duplication or orphaned decisions | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) |
-| Reorganize a mature project or corpus whose inherited containers no longer match its semantic responsibilities | [🧵 Semantic Reweave](docs/SEMANTIC_REWEAVE.md) |
+| Route execution across control roots, surfaces, models, reasoning effort and delegation while minimizing work to an accepted result | [🧬 Adaptive Orchestration Protocol](portables/adaptive-orchestration/README.md) |
+| Reach living sources while keeping authority, freshness, mutation and readback governed | [🔗 Connected Sources](portables/connected-sources/README.md) |
+| Carry context across sources and surfaces without losing meaning, provenance or authority | [🧱 Moon Source Language](portables/msl/README.md) |
+| Build the smallest useful context for a person or project | [🧭 Setup](portables/setup/README.md) |
+| Reconstruct the human task before execution when expression is messy, incomplete or self-correcting | [🛫 Preflight](portables/preflight/README.md) |
+| Read communications and artifacts as human scenes while distinguishing observation from inference | [👁️ Be My Eyes](portables/be-my-eyes/README.md) |
+
+### Structural architecture & components
+
+| If you need to… | Start here |
+|---|---|
+| Decide what a field needs before choosing its durable form | [🏗️ Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
 | Retrieve, process, metabolize or promote governed source material | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) |
-| Project multidimensional artifact and source state onto durable workspace surfaces | [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
-| Let AI reach living material through Drive, GitHub or another connector without confusing access with authority | [🔗 Connected Sources](portables/connected-sources/README.md) |
-| Structure recurring context, continuity or handoffs | [🧱 Moon Source Language](portables/msl/README.md) |
-| Route work across ChatGPT surfaces, models and execution modes | [🧬 Adaptive Orchestration](portables/adaptive-orchestration/README.md) |
+| Diagnose stale authority, freshness problems, duplication or contradiction and find the smallest safe corpus repair | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) |
+| Recover a corpus's semantic topology and repair inherited organization without rebuilding it from scratch | [🧵 Semantic Reweave](docs/SEMANTIC_REWEAVE.md) |
+| Project lifecycle, action and provenance onto durable workspace surfaces | [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
+| Preserve authorship, permissions, lineage and evidence as material moves or changes | [🧾 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) |
+| Turn a stable method into a bounded reusable procedure | [🧩 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) |
+| Keep execution bounded, diagnosable and recoverable where possible | [🛡️ Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) |
+| Embody a recurring procedure on a concrete execution surface with state, guards and receipts | [🛠️ Operational Devices](docs/OPERATIONAL_DEVICES.md) |
+| Use ambiguous or convergent evidence without inflating certainty | [🎚️ Signal Calibration](docs/SIGNAL_CALIBRATION.md) |
+| Turn recurring failure into the smallest validated reusable mechanism | [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) |
 
 ## First use
 
@@ -72,6 +89,7 @@ Access is not activation. A reachable source is not automatically authoritative,
 - **Humans should not have to prompt like machines.** [Preflight](portables/preflight/PREFLIGHT.md) reconstructs intended meaning before execution and escalates guardrails only when consequence requires them.
 - **Read the scene, not only the sentence.** [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) reconstructs actors, relationship and plausible subtext while keeping observation, inference and overread distinct.
 - **Workspace state must not invent authority.** [Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) projects lifecycle, action and provenance onto durable surfaces without replacing the source of record.
+- **Optimize total work to an accepted state.** [Adaptive Orchestration](portables/adaptive-orchestration/README.md) routes capacity across roots, surfaces, models, reasoning effort and delegation; use stronger cognition where it changes the result.
 
 ## Public capabilities
 
@@ -86,7 +104,7 @@ For portable packages and human-readable entry points, use the [download hub](DO
 ```mermaid
 flowchart TB
     model["Model: reasoning and generation"]
-    harness["Agent harness / runtime: loops, tools, orchestration, execution and state"]
+    harness["Agent harness / runtime: actual loops, tool use, execution and state"]
     context["Governed context: sources, authority, freshness, provenance, permissions and continuity"]
     moon["Moon Source: context architecture and governance"]
     model <--> harness
@@ -96,7 +114,7 @@ flowchart TB
 
 This is an orientation model, not a universal stack ontology. Products may combine or split these responsibilities.
 
-Moon Source primarily operates in and around governed context: it helps determine what a harness may trust, retrieve, carry forward, mutate and verify. RAG, memory stores, MCP/tools and other retrieval or orchestration mechanisms can participate in these layers, but Moon Source is not the model, the harness, the RAG engine or the agent runtime.
+Moon Source primarily operates in and around governed context: it helps determine what a harness may trust, retrieve, carry forward, mutate and verify. The [Adaptive Orchestration Protocol (AOP)](portables/adaptive-orchestration/README.md) governs how choices are made across available control roots, execution surfaces, models, reasoning effort and delegated workers; the harness/runtime still performs the actual loops, tool use and execution. RAG, memory stores, MCP/tools and other retrieval or orchestration mechanisms can participate in these layers, but Moon Source is not the model, the harness, the RAG engine or the agent runtime.
 
 ## Evidence, boundaries and reuse
 

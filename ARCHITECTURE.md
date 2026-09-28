@@ -81,7 +81,7 @@ History belongs to Git; it does not require an active compatibility twin.
 
 Before asking what structure the field deserves, the AI may need to solve a more human problem: **what is the person actually trying to accomplish?**
 
-[Preflight](portables/preflight/PREFLIGHT.md) is the human-intent reconstruction layer before execution. Its current public version is **2.1**. It reads raw human expression as a whole, distinguishes request from context, example, hesitation and correction, reconstructs the desired outcome and constraints, and asks only when a consequential ambiguity remains.
+[Preflight](portables/preflight/PREFLIGHT.md) is the human-intent reconstruction layer before execution. Its current public version is **2.3**. It reads raw human expression as a whole, distinguishes request from context, example, hesitation and correction, reconstructs the desired outcome and constraints, and asks only when a consequential ambiguity remains.
 
 Its core loop is intentionally simpler than the architectural topology:
 
@@ -119,7 +119,7 @@ Field to Form is the practical diagnostic inside the canonical Moon Source archi
 - **Personal or project context:** start with [🧭 Setup](portables/setup/MOON_SOURCE_SETUP.md), which routes depth and form from the user's actual need.
 - **Project, team or knowledge field:** run this Field-to-Form diagnostic before choosing a document type.
 - **Structure, source, handoff or protocol design:** use [🧱 Moon Source Language](portables/msl/MOON_SOURCE_LANGUAGE.md) after the responsibility is clear.
-- **ChatGPT execution routing:** use the [🧬 Adaptive Orchestration Protocol](portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md) when surface, model or reasoning effort is the actual decision.
+- **Execution routing and orchestration:** use the [🧬 Adaptive Orchestration Protocol](portables/adaptive-orchestration/README.md) when the control root, execution surface, model, reasoning effort or delegation topology must be chosen; the protocol governs those decisions while the harness performs the execution.
 - **Intellectual lineage and immaterial-asset protection:** use [🧾 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) when intellectual material must retain identity, authorship, canonicality, transformation history, permission scope, disclosure boundaries, derivative lineage and recoverable evidence as it moves or changes.
 - **Licensing and redistribution:** use [LICENSING](LICENSING.md) to route software to Apache-2.0, documentation and public capability distributions to CC-BY-4.0, and third-party material to its own terms.
 - **Reusable procedure:** use [🧩 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) when a stable method needs triggers, boundaries, output and QA.
