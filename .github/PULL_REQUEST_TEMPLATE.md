@@ -29,6 +29,7 @@
 ## Validation
 
 - [ ] Relevant local validators run
+- [ ] If the root README changed, all four governed translations were updated and checked (otherwise N/A)
 - [ ] Link, stamp and licensing checks run when applicable
 - [ ] N/A
 

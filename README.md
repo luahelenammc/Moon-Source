@@ -1,5 +1,9 @@
 # 🌙 Moon Source
 
+<!-- MOON-SOURCE-LANGUAGE-NAV:START -->
+🌐 **Read this README in:** [🇧🇷 Português (Brasil)](translations/README.pt-BR.md) · [🇪🇸 Español](translations/README.es.md) · [🇨🇳 简体中文](translations/README.zh-CN.md) · [🇷🇺 Русский](translations/README.ru.md)
+<!-- MOON-SOURCE-LANGUAGE-NAV:END -->
+
 **Governed context for AI: decide what should exist, what governs, what travels, and what stays current.**
 
 Moon Source is a public reference architecture for deciding which context AI should use, which source governs, what may change, and how useful context stays legible over time. This repository is its canonical public body.
