@@ -24,6 +24,15 @@ def main() -> None:
     assert validate[0][1][1].endswith("check_licensing.py")
     assert validate[-1][1][1].endswith("test_moon_source_cli.py")
 
+    translations = moon_source.command_steps("translations", namespace())
+    assert [step[1][1] for step in translations] == [
+        str(moon_source.ROOT / "scripts" / "check_readme_translations.py"),
+        str(moon_source.ROOT / "scripts" / "test_readme_translations.py"),
+    ]
+    validate_paths = [step[1][1] for step in validate]
+    assert str(moon_source.ROOT / "scripts" / "check_readme_translations.py") in validate_paths
+    assert str(moon_source.ROOT / "scripts" / "test_readme_translations.py") in validate_paths
+
     registry = moon_source.command_steps("registry", namespace())
     assert [step[1][1] for step in registry] == [
         str(moon_source.ROOT / "scripts" / "validate_public_capabilities.py"),

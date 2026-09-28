@@ -26,6 +26,8 @@ def local_validation_steps() -> list[tuple[str, list[str]]]:
         ("REUSE lint", ["reuse", "lint"]),
         ("CITATION.cff", ["cffconvert", "--validate", "--infile", "CITATION.cff"]),
         ("Markdown links", python_script("check_links.py")),
+        ("README translation synchronization", python_script("check_readme_translations.py")),
+        ("README translation tests", python_script("test_readme_translations.py")),
         ("public capability registry", python_script("validate_public_capabilities.py")),
         (
             "public capability registry tests",
@@ -48,6 +50,11 @@ def local_validation_steps() -> list[tuple[str, list[str]]]:
 def command_steps(command: str, args: argparse.Namespace) -> list[tuple[str, list[str]]]:
     if command == "validate":
         return local_validation_steps()
+    if command == "translations":
+        return [
+            ("README translation synchronization", python_script("check_readme_translations.py")),
+            ("README translation tests", python_script("test_readme_translations.py")),
+        ]
     if command == "registry":
         return [
             ("public capability registry", python_script("validate_public_capabilities.py")),
@@ -119,6 +126,7 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     subparsers.add_parser("validate", help="run the complete offline/local validation contract")
+    subparsers.add_parser("translations", help="check README translation freshness and structure")
     subparsers.add_parser("registry", help="validate the public capability registry")
     subparsers.add_parser("licensing", help="run licensing, REUSE and citation checks")
     subparsers.add_parser("links", help="run Markdown link checks and regression tests")

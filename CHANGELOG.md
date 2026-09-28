@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-28 — README translations and hard synchronization
+
+- Added complete Brazilian Portuguese, Spanish, Simplified Chinese and Russian mirrors of the canonical English README, with language navigation and source fingerprints.
+- Added deterministic freshness, structural, link-target and PR co-change checks to the maintenance CLI and central validation workflow.
+- Documented translation authority and review rules; no public capability or capability version changed.
+
 ## 2026-09-27 — Public entry and builder routing
 
 - Reworked the README opening around reader intent and added a short plain-language first experiment.
