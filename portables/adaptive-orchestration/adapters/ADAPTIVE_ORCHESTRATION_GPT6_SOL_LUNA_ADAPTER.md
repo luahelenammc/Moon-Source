@@ -69,23 +69,25 @@ The mode changes the **economic preference ordering**, not the semantic tier mod
 
 Outside `Maximum Token Economy`, preserve the ordinary Adaptive Orchestration rules and the Astra adapter's broader plurality of legitimate roles.
 
-### GPT-6.1 Sol behavioral-fit calibration — launch window
+### GPT-6 Sol behavioral-fit field signal — 2026-09-29 review
 
-Do **not** project field reports about the original GPT-6 Sol onto GPT-6.1 Sol as if they were the same behavioral claim. GPT-6.1 is a distinct dated model update and should be evaluated on representative work.
+The community material that triggered this calibration concerns the **original GPT-6 Sol**, not GPT-6.1 Sol. Its useful contribution is therefore a field signal about workload fit, not evidence about GPT-6.1 behavior.
 
-OpenAI's current model guidance explicitly recommends evaluating the chosen model on the target workload and notes that instruction sensitivity, clarification behavior, response shape and testing breadth can vary by model. The stable routing consequence is therefore not a permanent ranking; it is a **Behavioral Fit Gate**.
+Do **not** transfer those observations forward to GPT-6.1 Sol. GPT-6.1 is a distinct dated model update. OpenAI's 2026-09-29 system-card addendum evaluates GPT-6 Sol and GPT-6.1 Sol separately, and current official guidance continues to recommend comparing models on representative tasks rather than assuming behavior from family name or benchmark rank.
 
-For style-sensitive, source-bound or tool-restraint-sensitive work, use a bounded representative micro-probe when behavior is uncertain and drift would be costly. A useful behavior contract can state, subject to higher-priority safety/evidence requirements:
+The stable routing consequence is model-neutral: use the **Behavioral Fit Gate** when style, source fidelity, tool restraint, initiative, role consistency or verification behavior is load-bearing. A bounded representative micro-probe is preferable to a full sacrificial run when behavior is uncertain and drift would be costly.
 
-- transform the supplied material rather than relitigating it when the task is transformation;
+A useful behavior contract can state, subject to higher-priority safety/evidence requirements:
+
+- transform supplied material rather than relitigating it when the task is transformation;
 - preserve supplied facts and source boundaries unless verification is requested or required;
 - do not browse, source-hunt or broaden tool use merely by habit when the task and governing rules do not call for it;
 - preserve the requested voice, role and structural constraints;
 - avoid unsolicited meta-commentary or scope expansion.
 
-If GPT-6.1 Sol clears the capability floor but repeatedly misses that behavior contract, use `SIDE_ROUTE_MODEL_FOR_FIT` to another available executor with better observed fit. This is **not** automatic Astra escalation and does not revoke GPT-6.1 Sol's economic preference under Maximum Token Economy. Escalate capability only when the remaining problem is cognitive or the higher tier is independently justified.
+If the selected model clears the capability floor but repeatedly misses that behavior contract, use `SIDE_ROUTE_MODEL_FOR_FIT` to another available executor with better observed fit. This is not automatic capability escalation. For GPT-6.1 Sol specifically, no negative behavioral conclusion is imported from the original GPT-6 Sol reports; its existing Maximum Token Economy calibration remains governed by current GPT-6.1 evidence and representative workload testing.
 
-Same-day community reactions may justify a probe. They do not establish that GPT-6.1 Sol is globally worse, that an older Sol is globally better, or that any model has a permanent style rank.
+Community reactions can justify a probe. They do not establish that GPT-6 Sol is globally worse, that GPT-6.1 Sol inherits the same behavior, or that any model has a permanent style rank.
 
 ## 2A. Official GPT-6 launch facts
 
