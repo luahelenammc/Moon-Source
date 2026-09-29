@@ -5,13 +5,13 @@
 ## Public status
 
 - **status:** current subordinate adapter; optional public guidance
-- **version:** 1.6
+- **version:** 1.7
 - **versioning mode:** independently versioned subordinate submodule; the human title remains unversioned
 - **first public release:** 2026-09-09
-- **last material update:** 2026-09-27
-- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1 → 1.5 official Astra prompting/skills calibration → 1.6 delegated-bundle and worker-ownership calibration from credited external mechanism study
+- **last material update:** 2026-09-29
+- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1 → 1.5 official Astra prompting/skills calibration → 1.6 delegated-bundle and worker-ownership calibration from credited external mechanism study → 1.7 GPT-6.1 Sol / Maximum Token Economy compatibility
 - **applies to:** Adaptive Orchestration Protocol 6.1
-- **effective date:** 2026-09-27
+- **effective date:** 2026-09-29
 - **governing canonical body:** `portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md`
 - **canonical release lineage:** introduced under Chat–Work 5.1, updated through Chat–Work 6.0 Delegation-First orchestration and aligned to the surface-neutral control-root model in Chat–Work 6.1; those releases are the same lineage now named Adaptive Orchestration Protocol, whose current body uses the unversioned filename ADAPTIVE_ORCHESTRATION_PROTOCOL.md
 - **MSL dependency:** Moon Source Language 5.1
@@ -330,6 +330,23 @@ Adaptive Orchestration 6.1 no longer treats Chat as the mandatory home of fronti
 
 The historical Chat → Work/Codex → Chat pattern remains a first-class named profile. Use it when Chat continuity is explicitly preferred or materially useful, not as the universal default.
 
+## Maximum Token Economy compatibility — public opt-in only
+
+Adaptive Orchestration may activate a `Maximum Token Economy` profile through the GPT-6 Sol/Luna adapter. This profile does **not** change Astra's ordinary public role outside that explicit mode.
+
+When the profile is active and GPT-6.1 Sol is available, treat GPT-6.1 Sol as the preferred substitute for Astra across most non-scientific frontier-shaped work because current OpenAI guidance describes GPT-6.1 Sol as near-Astra across coding, computer use and professional work while token-based Standard rates are materially lower.
+
+Under this profile, route to Astra only when at least one of these conditions is material:
+
+- current evidence indicates that the task class still benefits from Astra's remaining frontier advantage, including the hardest scientific research;
+- the user explicitly asks for Astra or the highest available capability;
+- a bounded GPT-6.1 Sol route shows a diagnosed capability shortfall after source, authority, tooling, specification and context failures are excluded;
+- the acceptance boundary is high-consequence enough that the residual capability delta matters more than the token-economy objective.
+
+Do not require sacrificial Sol failure when the task is already known to sit inside an Astra-favored frontier domain. Conversely, do not retain Astra by prestige when GPT-6.1 Sol can meet the same acceptance boundary.
+
+Outside `Maximum Token Economy`, this exception ordering is inactive and the adapter's existing role plurality remains unchanged.
+
 ## Astra as heterogeneous orchestrator
 
 Adaptive Orchestration 6.1 changes the default question for frontier runs. When Astra is selected, ask not “should Astra do everything?” but “which parts genuinely require Astra?”
@@ -635,7 +652,7 @@ These are routing diagnoses, not claims about the model's private internals.
 
 ## Relationship to Adaptive Orchestration 6.1
 
-**Current Astra adapter version: 1.6.** Adaptive Orchestration 6.1 is the governing router; this adapter remains subordinate and independently tracked.
+**Current Astra adapter version: 1.7.** Adaptive Orchestration 6.1 is the governing router; this adapter remains subordinate and independently tracked.
 
 Adaptive Orchestration 6.1 promotes Delegation-First and heterogeneous topology to stable routing law. This adapter specializes that law for Astra without turning Astra into a universal executor or creating a second router.
 
