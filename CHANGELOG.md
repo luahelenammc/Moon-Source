@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-09-29 — Adaptive Orchestration 6.2 · Behavioral Fit Gate
+
+- Advanced the Adaptive Orchestration core from **6.1 to 6.2**.
+- Added **Behavioral Fit** as a first-class routing constraint separate from capability tier: a cognitively sufficient model can still be a poor executor when observable style, source fidelity, tool restraint, initiative, role consistency or verification behavior misses the acceptance boundary.
+- Added bounded representative micro-probes for new, materially changed or uncertain model behavior on fit-sensitive workloads and the explicit `SIDE_ROUTE_MODEL_FOR_FIT` outcome.
+- Established the stable law **side-route before up-route when the failure is behavioral rather than cognitive**; community reactions may trigger a probe but do not become permanent model rankings.
+- The triggering community material concerns **original GPT-6 Sol**, not GPT-6.1 Sol. The adapter explicitly forbids projecting those observations onto GPT-6.1; current official GPT-6.1 evidence and representative workload testing govern 6.1 behavior.
+- Advanced the GPT-6 Sol/Luna Strategy Adapter to **1.5** and the Astra Strategy Adapter to **1.8** for AOP 6.2 compatibility.
+- Preserved GPT-6.1 Sol's existing economic preference under public opt-in **Maximum Token Economy**; behavioral mismatch does not automatically imply Astra escalation.
+
 ## 2026-09-29 — GPT-6.1 Sol calibration · Maximum Token Economy profile
 
 - Adaptive Orchestration core remains **6.1**.
