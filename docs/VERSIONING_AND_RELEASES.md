@@ -43,6 +43,12 @@ They should not be collapsed into one number.
 15. Living/current canonical filenames, package filenames, mirror filenames and parent directories identify the semantic object, not its current version. Version state belongs in metadata, registries, changelogs, tags and release records. A version-bearing current path needs a documented semantic reason, such as a schema or compatibility generation that remains live in parallel. Historical snapshots, immutable release archives, migrations and external versioned standards remain valid exceptions.
 16. Keep directory geometry stable when a shared semantic container is sufficient. A canonical path move requires full reference-graph repair, package-member and fingerprint refresh, governed-mirror synchronization and readback. Do not create compatibility twins by default. A naming-only correction does not advance a capability's semantic version.
 
+## Adaptive Orchestration adapter calibration — 2026-09-29
+
+Adaptive Orchestration Protocol remains at **6.1** because its model-neutral routing law is unchanged. The accepted dated-model delta advances the GPT-6 Sol/Luna Strategy Adapter from **1.3 to 1.4** and the Astra Strategy Adapter from **1.6 to 1.7**.
+
+The adapters add GPT-6.1 Sol calibration and an explicit public **Maximum Token Economy** profile. That profile is opt-in only: when activated, GPT-6.1 Sol is preferred over Astra for most non-scientific frontier-shaped work while Astra remains available for material frontier exceptions. Outside that profile, Astra's ordinary public strategy plurality remains unchanged.
+
 ## Connected Sources 1.2 release — 2026-09-27
 
 Connected Sources 1.2 is a **material additive release** that makes two context-governance responsibilities explicit: source/host reach does not give every internal consumer entitlement to receive the source, and decision-bearing raw material can leave active context through a compact rehydratable projection while its resolvable source remains intact. It preserves separate source, consumer, instruction and mutation boundaries and does not prescribe a provider, storage backend, size threshold, summary shape or runtime.
