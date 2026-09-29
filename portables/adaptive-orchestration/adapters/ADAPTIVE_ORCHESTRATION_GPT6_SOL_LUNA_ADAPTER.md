@@ -5,10 +5,10 @@
 ## Meta
 
 - **status:** current subordinate adapter
-- **adapter version:** 1.3
-- **as of:** 2026-09-24
+- **adapter version:** 1.4
+- **as of:** 2026-09-29
 - **governing capability:** [Adaptive Orchestration Protocol](../ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
-- **scope:** GPT-6 Sol and GPT-6 Luna routing in Work and Codex, including heterogeneous subagent topology, child-model inheritance/overrides and API-shaped reasoning about executor choice
+- **scope:** GPT-6.1 Sol, GPT-6 Sol and GPT-6 Luna routing in Work and Codex, including heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles and API/product-boundary reasoning about executor choice
 - **authority:** subordinate; the canonical Adaptive Orchestration body wins on conflict
 - **volatility:** high; availability, model menus, reasoning controls, plan/workspace exposure and usage economics must be rechecked
 - **product boundary:** not OpenAI policy, not a benchmark ranking system and not a guarantee about ChatGPT allowance consumption
@@ -34,9 +34,44 @@ The core semantic tiers remain:
 
 A named model can span more than one semantic tier. A semantic tier does not require a dedicated named model.
 
-## 2. Official launch facts
+## 2. GPT-6.1 Sol update — 2026-09-29
 
-As of 2026-09-23:
+OpenAI introduced **GPT-6.1 Sol** on 2026-09-29. Current official guidance describes it as delivering capabilities comparable to GPT-6 Astra and as **near-Astra across coding, computer use and professional work**. Astra remains the recommended option for the hardest scientific research.
+
+GPT-6.1 Sol is rolling out in **ChatGPT Work and Codex** and is not an ordinary Chat model. Availability remains plan-, workspace- and rollout-dependent.
+
+For eligible ChatGPT Enterprise token-based billing in Standard mode, the current rate card lists:
+
+| Model | Input | Cached input | Output |
+|---|---:|---:|---:|
+| GPT-6.1 Sol | $2.00 | $0.10 | $10.00 |
+| GPT-6 Astra | $10.00 | $1.00 | $50.00 |
+
+Within that specific billing regime, GPT-6.1 Sol is therefore **5× cheaper on uncached input and output** and **10× cheaper on cached input** than Astra. This ratio is a dated billing fact, not a universal ChatGPT allowance conversion and not proof that every workload consumes exactly one fifth as much plan usage.
+
+### Maximum Token Economy mode — public opt-in profile
+
+`Maximum Token Economy` is an **explicit opt-in routing profile**, not the public default.
+
+Activate it only when the user or governing execution profile clearly asks to minimize model-token cost aggressively while preserving the acceptance boundary. Do not infer this mode merely because a cheaper model exists.
+
+When active and GPT-6.1 Sol is available:
+
+1. keep **Luna** as the first choice for bounded, high-volume work that clears the capability floor;
+2. use **GPT-6.1 Sol** as the preferred strong root and as the default substitute for Astra across most non-scientific frontier-shaped work;
+3. keep **Astra** behind an exception gate rather than as the routine frontier step;
+4. escalate to Astra directly when current evidence indicates a material frontier gap for the task class, when the user explicitly asks for the highest available capability, or when the acceptance risk makes the residual capability difference more important than token economy;
+5. after a bounded GPT-6.1 Sol attempt, escalate only for a diagnosed capability shortfall, not for source, authority, tooling, specification or context failure.
+
+The mode changes the **economic preference ordering**, not the semantic tier model:
+
+`Luna for cheap sufficient bulk → GPT-6.1 Sol for strong and most frontier-shaped work → Astra only when the remaining frontier delta is material.`
+
+Outside `Maximum Token Economy`, preserve the ordinary Adaptive Orchestration rules and the Astra adapter's broader plurality of legitimate roles.
+
+## 2A. Official GPT-6 launch facts
+
+As of 2026-09-23 for the original GPT-6 Sol/Luna launch:
 
 - GPT-6 Sol and GPT-6 Luna are available in **ChatGPT Work and Codex** for eligible paid plans, subject to rollout and workspace settings.
 - They are **not yet ordinary Chat models**. Chat and Work/Codex model menus are separate surfaces.
