@@ -40,14 +40,14 @@ OpenAI introduced **GPT-6.1 Sol** on 2026-09-29. Current official guidance descr
 
 GPT-6.1 Sol is rolling out in **ChatGPT Work and Codex** and is not an ordinary Chat model. Availability remains plan-, workspace- and rollout-dependent.
 
-For eligible ChatGPT Enterprise token-based billing in Standard mode, the current rate card lists:
+For the OpenAI API **Standard / short-context** text-token regime, the current GPT-6.1 Sol model page and pricing table list:
 
 | Model | Input | Cached input | Output |
 |---|---:|---:|---:|
 | GPT-6.1 Sol | $2.00 | $0.10 | $10.00 |
 | GPT-6 Astra | $10.00 | $1.00 | $50.00 |
 
-Within that specific billing regime, GPT-6.1 Sol is therefore **5× cheaper on uncached input and output** and **10× cheaper on cached input** than Astra. This ratio is a dated billing fact, not a universal ChatGPT allowance conversion and not proof that every workload consumes exactly one fifth as much plan usage.
+Within that API pricing regime, GPT-6.1 Sol is therefore **5× cheaper on uncached input and output** and **10× cheaper on cached input** than Astra. This ratio is a dated API-pricing fact, not a ChatGPT Work/Codex allowance conversion, credit-rate claim or proof that every product run consumes exactly one fifth as much plan usage.
 
 ### Maximum Token Economy mode — public opt-in profile
 
