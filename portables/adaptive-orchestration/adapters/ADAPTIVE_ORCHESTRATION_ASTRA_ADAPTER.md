@@ -334,7 +334,7 @@ The historical Chat → Work/Codex → Chat pattern remains a first-class named 
 
 Adaptive Orchestration may activate a `Maximum Token Economy` profile through the GPT-6 Sol/Luna adapter. This profile does **not** change Astra's ordinary public role outside that explicit mode.
 
-When the profile is active and GPT-6.1 Sol is available, treat GPT-6.1 Sol as the preferred substitute for Astra across most non-scientific frontier-shaped work because current OpenAI guidance describes GPT-6.1 Sol as near-Astra across coding, computer use and professional work while token-based Standard rates are materially lower.
+When the profile is active and GPT-6.1 Sol is available, treat GPT-6.1 Sol as the preferred substitute for Astra across most non-scientific frontier-shaped work because current OpenAI guidance describes GPT-6.1 Sol as near-Astra across coding, computer use and professional work while current **API Standard** token rates are materially lower.
 
 Under this profile, route to Astra only when at least one of these conditions is material:
 
