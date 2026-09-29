@@ -7,6 +7,7 @@
 - Astra Strategy Adapter advances to **1.7**.
 - Public **Maximum Token Economy** is opt-in only: Luna handles cheap sufficient bulk, GPT-6.1 Sol absorbs most non-scientific frontier-shaped work, and Astra remains available behind material exception gates.
 - Outside that profile, Astra's ordinary public role is unchanged.
+- Pricing clarification: the GPT-6.1 Sol `$2 / $0.10 cached / $10` comparison against Astra `$10 / $1 / $50` is **OpenAI API Standard short-context pricing**. It is not asserted as a ChatGPT Work/Codex allowance or credit conversion.
 
 
 ## 2026-09-28 — README history routing
