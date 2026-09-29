@@ -5,10 +5,10 @@
 ## Meta
 
 - **status:** current subordinate adapter
-- **adapter version:** 1.4
+- **adapter version:** 1.5
 - **as of:** 2026-09-29
 - **governing capability:** [Adaptive Orchestration Protocol](../ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
-- **scope:** GPT-6.1 Sol, GPT-6 Sol and GPT-6 Luna routing in Work and Codex, including heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles and API/product-boundary reasoning about executor choice
+- **scope:** GPT-6.1 Sol, GPT-6 Sol and GPT-6 Luna routing in Work and Codex, including heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles, behavioral-fit calibration and API/product-boundary reasoning about executor choice
 - **authority:** subordinate; the canonical Adaptive Orchestration body wins on conflict
 - **volatility:** high; availability, model menus, reasoning controls, plan/workspace exposure and usage economics must be rechecked
 - **product boundary:** not OpenAI policy, not a benchmark ranking system and not a guarantee about ChatGPT allowance consumption
@@ -18,7 +18,7 @@
 
 ## 1. Why this adapter exists
 
-GPT-6 changes the practical executor geometry, and current subagent support makes heterogeneous model delegation a first-class execution option under Adaptive Orchestration 6.1. The 6.1 core is surface-neutral: Sol/Luna topology does not require Chat to be the control root when Work or Codex can retain objective, convergence and postflight.
+GPT-6 changes the practical executor geometry, and current subagent support makes heterogeneous model delegation a first-class execution option under Adaptive Orchestration 6.2. The 6.2 core is surface-neutral and behavior-aware: Sol/Luna topology does not require Chat to be the control root when Work or Codex can retain objective, convergence and postflight, and capability sufficiency does not erase behavioral-fit differences between executors.
 
 At launch, OpenAI positions:
 
@@ -68,6 +68,24 @@ The mode changes the **economic preference ordering**, not the semantic tier mod
 `Luna for cheap sufficient bulk → GPT-6.1 Sol for strong and most frontier-shaped work → Astra only when the remaining frontier delta is material.`
 
 Outside `Maximum Token Economy`, preserve the ordinary Adaptive Orchestration rules and the Astra adapter's broader plurality of legitimate roles.
+
+### GPT-6.1 Sol behavioral-fit calibration — launch window
+
+Do **not** project field reports about the original GPT-6 Sol onto GPT-6.1 Sol as if they were the same behavioral claim. GPT-6.1 is a distinct dated model update and should be evaluated on representative work.
+
+OpenAI's current model guidance explicitly recommends evaluating the chosen model on the target workload and notes that instruction sensitivity, clarification behavior, response shape and testing breadth can vary by model. The stable routing consequence is therefore not a permanent ranking; it is a **Behavioral Fit Gate**.
+
+For style-sensitive, source-bound or tool-restraint-sensitive work, use a bounded representative micro-probe when behavior is uncertain and drift would be costly. A useful behavior contract can state, subject to higher-priority safety/evidence requirements:
+
+- transform the supplied material rather than relitigating it when the task is transformation;
+- preserve supplied facts and source boundaries unless verification is requested or required;
+- do not browse, source-hunt or broaden tool use merely by habit when the task and governing rules do not call for it;
+- preserve the requested voice, role and structural constraints;
+- avoid unsolicited meta-commentary or scope expansion.
+
+If GPT-6.1 Sol clears the capability floor but repeatedly misses that behavior contract, use `SIDE_ROUTE_MODEL_FOR_FIT` to another available executor with better observed fit. This is **not** automatic Astra escalation and does not revoke GPT-6.1 Sol's economic preference under Maximum Token Economy. Escalate capability only when the remaining problem is cognitive or the higher tier is independently justified.
+
+Same-day community reactions may justify a probe. They do not establish that GPT-6.1 Sol is globally worse, that an older Sol is globally better, or that any model has a permanent style rank.
 
 ## 2A. Official GPT-6 launch facts
 
@@ -451,6 +469,7 @@ A future model release should update or supersede this adapter rather than spray
 - OpenAI API — GPT-6 Sol: https://developers.openai.com/api/docs/models/gpt-6-sol
 - OpenAI API — GPT-6 Luna: https://developers.openai.com/api/docs/models/gpt-6-luna
 - OpenAI API — GPT-6 model guidance: https://developers.openai.com/api/docs/guides/latest-model
+- OpenAI API — Model selection: https://developers.openai.com/api/docs/guides/model-selection
 - OpenAI API — Pricing: https://developers.openai.com/api/docs/pricing
 - OpenAI Help — ChatGPT Release Notes: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
 - OpenAI — Subagents: https://learn.chatgpt.com/docs/agent-configuration/subagents
@@ -458,7 +477,7 @@ A future model release should update or supersede this adapter rather than spray
 
 ## Final law
 
-> **Luna buys throughput; Sol buys stronger judgment inside execution. Keep Sol at the bottleneck, delegate bounded bulk to Luna when the harness can do so, and promote only the difficult branch. Never turn API price ratios into imaginary Work allowance mathematics. The sovereign object chooses the surface; the delegation topology chooses where each unit of cognition is spent.**
+> **Luna buys throughput; Sol buys stronger judgment inside execution. Keep Sol at the bottleneck, delegate bounded bulk to Luna when the harness can do so, and promote only the difficult branch. Capability does not guarantee behavioral fit: probe representative work when behavior is load-bearing, and side-route before up-routing when the mismatch is behavioral rather than cognitive. Never turn API price ratios into imaginary Work allowance mathematics. The sovereign object chooses the surface; the delegation topology chooses where each unit of cognition is spent.**
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
