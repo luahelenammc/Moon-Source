@@ -68,7 +68,7 @@
       ],
       "difficulty": "advanced",
       "distribution": {
-        "canonical_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "canonical_sha256": "fcd78927770cc262d18e71acef1be3a0f9cd49058363ff98cd290f79ae36172a",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/adaptive-orchestration-protocol.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/ADAPTIVE_ORCHESTRATION_PROTOCOL.md",
@@ -91,12 +91,12 @@
           }
         ]
       },
-      "freshness": "core protocol semantics as of 2026-09-29; Behavioral Fit Gate added in 6.2; GPT-6.1 Sol / Maximum Token Economy + launch-window behavioral-fit calibration and Astra compatibility checked 2026-09-29; surface/root topology is stable core law while named-model behavior, subagent/product economics and availability remain dated and replaceable",
+      "freshness": "core protocol semantics as of 2026-09-29; Behavioral Fit Gate added in 6.2; original GPT-6 Sol community field signal was reviewed without projecting it onto GPT-6.1 Sol; GPT-6.1 Maximum Token Economy and Astra compatibility checked 2026-09-29; named-model behavior, subagent/product economics and availability remain dated and replaceable",
       "function": "Route by sovereign object and workload shape from the current competent control root across Chat, Work and optional Codex using configurable execution profiles, explicit control-root/execution-surface separation, Behavioral Fit with representative micro-probes and lateral side-routing, Surface Continuity, Delegation-First orchestration, heterogeneous root/child model topology, Budget Survivability, the model-neutral Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, bounded micro-bursts, optional explicitly activated ephemeral Sprint Mode, a finite Decision Sprint sibling-delta exception, auditable Decision Trace for material higher-tier rulings, decision-bearing return capsules, subordinate model-specific strategy adapters, Sprint Receipts, Control-Root Postflight and delta-only re-entry",
       "id": "adaptive-orchestration",
       "language": "English",
       "last_material_update_on": "2026-09-29",
-      "last_material_update_summary": "Advanced Adaptive Orchestration from 6.1 to 6.2 with a model-neutral Behavioral Fit Gate: capability sufficiency no longer implies executor suitability; behavior-sensitive work can use representative micro-probes and SIDE_ROUTE_MODEL_FOR_FIT before capability escalation. GPT-6 Sol/Luna adapter advances to 1.5 for GPT-6.1 launch-window fit calibration; Astra adapter advances to 1.8 for compatibility.",
+      "last_material_update_summary": "Advanced Adaptive Orchestration from 6.1 to 6.2 with a model-neutral Behavioral Fit Gate: capability sufficiency no longer implies executor suitability; behavior-sensitive work can use representative micro-probes and SIDE_ROUTE_MODEL_FOR_FIT before capability escalation. The triggering community signal concerns original GPT-6 Sol and is explicitly not projected onto GPT-6.1 Sol. GPT-6 Sol/Luna adapter advances to 1.5; Astra adapter to 1.8.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
