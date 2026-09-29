@@ -8,7 +8,7 @@
     "project": "Moon Source",
     "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md"
   },
-  "as_of": "2026-09-27",
+  "as_of": "2026-09-29",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "capabilities": [
     {
@@ -61,8 +61,8 @@
         "Source transport records governing source or family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback; a locator is not authority",
         "Work and Codex subagent availability, child-model inheritance/override behavior, concurrency and permissions are run-time conditions; Delegation-First never fabricates unavailable controls",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions",
-        "Optional Astra strategy adapter v1.6 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md; subordinate to the canonical Adaptive Orchestration body, independently versioned as a submodule, setup-gated, delegation-aware, worker-ownership calibrated and aligned to the surface-neutral control-root model",
-        "GPT-6 Sol/Luna strategy adapter v1.3 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md; dated heterogeneous executor/subagent calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics",
+        "Optional Astra strategy adapter v1.7 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md; subordinate to the canonical Adaptive Orchestration body, independently versioned as a submodule, setup-gated, delegation-aware, worker-ownership calibrated and aligned to the surface-neutral control-root model",
+        "GPT-6 Sol/Luna strategy adapter v1.4 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md; dated heterogeneous executor/subagent calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics",
         "Control surface/root, root model/tier and execution surface/harness are distinct routing dimensions; AUTO preserves the current competent root before considering a human-visible surface transition"
       ],
       "difficulty": "advanced",
@@ -90,12 +90,12 @@
           }
         ]
       },
-      "freshness": "core protocol semantics as of 2026-09-24; Astra subordinate adapter calibration checked 2026-09-27; surface/root topology is stable core law while model/subagent product calibration remains dated and replaceable; recheck volatile behavior, model names, child-model controls, inheritance, prices, availability and usage pools",
+      "freshness": "core protocol semantics as of 2026-09-24; GPT-6.1 Sol / Maximum Token Economy calibration and Astra subordinate adapter calibration checked 2026-09-29; surface/root topology is stable core law while model/subagent/product-economics calibration remains dated and replaceable; recheck volatile behavior, model names, child-model controls, inheritance, prices, availability and usage pools",
       "function": "Route by sovereign object and workload shape from the current competent control root across Chat, Work and optional Codex using configurable execution profiles, explicit control-root/execution-surface separation, Surface Continuity, Delegation-First orchestration, heterogeneous root/child model topology, Budget Survivability, the model-neutral Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification recovery, connector-aware source transport, bounded micro-bursts, optional explicitly activated ephemeral Sprint Mode, a finite Decision Sprint sibling-delta exception, auditable Decision Trace for material higher-tier rulings, decision-bearing return capsules, subordinate model-specific strategy adapters, Sprint Receipts, Control-Root Postflight and delta-only re-entry",
       "id": "adaptive-orchestration",
       "language": "English",
-      "last_material_update_on": "2026-09-27",
-      "last_material_update_summary": "Canonical identity and paths migrated from Chat–Work Routing Protocol to Adaptive Orchestration Protocol. Version 6.1 and execution semantics remain unchanged under the naming-only rule; old GitHub paths, package and website mirror remain explicit aliases. Astra 1.6 and GPT-6 Sol/Luna 1.3 remain unchanged.",
+      "last_material_update_on": "2026-09-29",
+      "last_material_update_summary": "Kept the Adaptive Orchestration core at 6.1 while updating its dated model adapters for GPT-6.1 Sol: GPT-6 Sol/Luna adapter 1.4 and Astra adapter 1.7. Added Maximum Token Economy as an explicit public opt-in profile in which GPT-6.1 Sol substitutes for Astra across most non-scientific frontier-shaped work, with Astra retained behind material exception gates.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",

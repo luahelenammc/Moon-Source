@@ -106,7 +106,7 @@ naming precedent.
 The current independently versioned capabilities are Lifecycle Workspace Router at
 1.2, Connected Sources at 1.2, MSL at 5.1, Adaptive Orchestration at 6.1,
 Setup at 3.1, Preflight at 2.3 and Be My Eyes at 1.0-public. Adaptive Orchestration 6.1
-preserves Delegation-First orchestration while making the public core surface-neutral: the current competent control root is the continuity default, control surface/root is distinct from root model and execution harness, and the historical Chat → Work/Codex → Chat loop remains a named first-class profile rather than the mandatory topology. The Astra Strategy Adapter is 1.6 and the GPT-6 Sol/Luna Adapter is 1.3; their named-model and subagent calibration remains dated and subordinate. MSL's formatting contract remains part of the current 5.1 body and release identity.
+preserves Delegation-First orchestration while making the public core surface-neutral: the current competent control root is the continuity default, control surface/root is distinct from root model and execution harness, and the historical Chat → Work/Codex → Chat loop remains a named first-class profile rather than the mandatory topology. The Astra Strategy Adapter is 1.7 and the GPT-6 Sol/Luna Adapter is 1.4; their named-model, GPT-6.1 Sol, token-economy and subagent calibration remains dated and subordinate. Maximum Token Economy is public opt-in only and does not globally demote Astra. MSL's formatting contract remains part of the current 5.1 body and release identity.
 
 Product-specific connector behavior, model names, plans, prices, availability
 and other volatile facts must be rechecked before being treated as current.
