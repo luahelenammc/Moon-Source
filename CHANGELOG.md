@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-29 — GPT-6.1 Sol calibration · Maximum Token Economy profile
+
+- Adaptive Orchestration core remains **6.1**.
+- GPT-6 Sol/Luna Strategy Adapter advances to **1.4** for GPT-6.1 Sol calibration.
+- Astra Strategy Adapter advances to **1.7**.
+- Public **Maximum Token Economy** is opt-in only: Luna handles cheap sufficient bulk, GPT-6.1 Sol absorbs most non-scientific frontier-shaped work, and Astra remains available behind material exception gates.
+- Outside that profile, Astra's ordinary public role is unchanged.
+
+
 ## 2026-09-28 — README history routing
 
 - Removed the generated recent-capability digest from the root README and all four translations; current capability chronology remains in the public registry, and dated repository changes remain in this changelog.
