@@ -5,10 +5,10 @@
 ## Meta
 
 - **status:** current subordinate adapter
-- **adapter version:** 1.5
-- **as of:** 2026-09-29
+- **adapter version:** 1.6
+- **as of:** 2026-10-01
 - **governing capability:** [Adaptive Orchestration Protocol](../ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
-- **scope:** GPT-6.1 Sol, GPT-6 Sol and GPT-6 Luna routing in Work and Codex, including heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles, behavioral-fit calibration and API/product-boundary reasoning about executor choice
+- **scope:** GPT-6.1 Sol, GPT-6 Sol and GPT-6 Luna routing in Work and Codex, including heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles, behavioral-fit calibration, commitment-bearing decision routing and API/product-boundary reasoning about executor choice
 - **authority:** subordinate; the canonical Adaptive Orchestration body wins on conflict
 - **volatility:** high; availability, model menus, reasoning controls, plan/workspace exposure and usage economics must be rechecked
 - **product boundary:** not OpenAI policy, not a benchmark ranking system and not a guarantee about ChatGPT allowance consumption
@@ -18,7 +18,7 @@
 
 ## 1. Why this adapter exists
 
-GPT-6 changes the practical executor geometry, and current subagent support makes heterogeneous model delegation a first-class execution option under Adaptive Orchestration 6.2. The 6.2 core is surface-neutral and behavior-aware: Sol/Luna topology does not require Chat to be the control root when Work or Codex can retain objective, convergence and postflight, and capability sufficiency does not erase behavioral-fit differences between executors.
+GPT-6 changes the practical executor geometry, and current subagent support makes heterogeneous model delegation a first-class execution option under Adaptive Orchestration 6.3. The 6.3 core is surface-neutral, behavior-aware and commitment-aware: Sol/Luna topology does not require Chat to be the control root when Work or Codex can retain objective, convergence and postflight, and capability sufficiency does not erase behavioral-fit or commitment-fit differences between executors.
 
 At launch, OpenAI positions:
 
@@ -136,6 +136,8 @@ Strong Luna-shaped work includes:
 - high-volume artifact work;
 - implementation after a harder architecture decision has already been made.
 
+Luna remains a strong default for bounded or high-volume artifact production once the artifact's commitment-bearing architecture is sufficiently resolved. Volume alone does not make Luna the right executor to close an open-ended art-direction, information-architecture or representation choice.
+
 Luna may use higher reasoning effort when the task is still Luna-shaped but requires more care. Do not treat `Luna` as synonymous with low reasoning.
 
 ### GPT-6 Sol — strong executor / co-architect
@@ -152,6 +154,10 @@ Strong Sol-shaped work includes:
 - ambiguous source reconciliation with material consequences;
 - migrations or refactors where a wrong local choice creates expensive downstream correction;
 - high-consequence final review where Luna's result is plausible but not sufficiently trustworthy.
+
+Sol may also receive a bounded commitment-bearing decision when materially different directions remain plausible and a wrong closure would drive substantial downstream rework. Sol need not own the later bulk implementation when a cheaper sufficient executor can carry it after the choice is settled.
+
+When the implementation is Luna-shaped but one upstream commitment carries high leverage, keep Luna as root or implementer where appropriate and side-route or up-route only that decision when the live gate justifies it. This is a conditional route, not a permanent Luna-to-Sol hierarchy or a claim that Sol is always the better design arbiter.
 
 Sol is not automatically the default because a task is important. It is selected when the **irreducible execution geometry** is strong.
 

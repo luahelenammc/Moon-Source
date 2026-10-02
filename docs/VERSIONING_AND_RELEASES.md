@@ -17,7 +17,7 @@ They should not be collapsed into one number.
 
 - Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-27; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, through the 5.x strategy/adaptation line, to delegation-first 6.0 and then surface-neutral control-root 6.1 on 2026-09-24.
 - Current structural grammar: Moon Source Language, version 5.1.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (version 1.2), Moon Source Language (version 5.1) and Adaptive Orchestration Protocol (version 6.2).
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (version 1.2), Moon Source Language (version 5.1) and Adaptive Orchestration Protocol (version 6.3).
 - All sixteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry, while Lifecycle Workspace Router is a repository-only capability with its own independent version.
 - Credits & Attribution Ops, Lifecycle Workspace Router, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -242,6 +242,14 @@ Adaptive Orchestration 6.2 is a **material additive-and-superseding routing rele
 The release separates cognitive capability from observable executor behavior. For workloads where style/voice fidelity, source-bound transformation, tool-use restraint, initiative, role consistency, verification appetite or approval boundaries are load-bearing, the router can define a small behavior contract, use a bounded representative micro-probe when model behavior is new or uncertain, and return `SIDE_ROUTE_MODEL_FOR_FIT` when cognition is sufficient but behavior remains mismatched. Capability escalation is reserved for actual cognitive shortfall or an independently justified higher-tier route.
 
 The community material that triggered this release concerns **original GPT-6 Sol**, not GPT-6.1 Sol. That signal is preserved only as a hypothesis generator; the GPT-6 adapter explicitly blocks forward transfer of those observations to GPT-6.1. The GPT-6 Sol/Luna adapter advances to **1.5** and the Astra adapter to **1.8** for compatibility. MSL remains 5.1; canonical filenames and package coordinates remain stable.
+
+### Adaptive Orchestration 6.3 release — 2026-10-01
+
+Adaptive Orchestration 6.3 is a **material additive-and-superseding routing release**, not an MSL grammar change. It preserves the surface-neutral control-root architecture, Delegation-First orchestration and the separate Behavioral Fit constraint while adding **Commitment Geometry**: the protocol now identifies a solution-defining choice that should be settled, probed or boundedly explored before dependent work scales.
+
+The **Decision Commitment Gate** routes execution, judgment and commitment independently. Its outcomes include direct commitment, bounded probing or exploration, commitment-only side-routing or up-routing, and smallest-boundary reopening when later evidence shows a choice was inadequate. **Branch Before Build** is conditional on material solution openness and downstream leverage; it is not a required number of variants. Total-work reasoning now includes exploration, verification, correction, replay and convergence. `premature_commitment_failure` remains distinct from behavioral, cognitive, source, tool and ordinary verification failures.
+
+This +0.1 core promotion reflects a stable routing-law change, not merely dated model calibration. The GPT-6 Sol/Luna Strategy Adapter advances to **1.6** with bounded commitment-routing guidance; the Astra adapter advances to **1.9** to inherit the gate while preserving Astra Setup, role plurality and anti-prestige routing. MSL remains **5.1** because its grammar is unchanged. Canonical filenames, adapter paths and package coordinates remain stable.
 
 ### Chat–Work 6.1 release — 2026-09-24
 

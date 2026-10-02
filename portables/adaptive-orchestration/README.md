@@ -2,9 +2,9 @@
 
 **Use each model, surface and unit of reasoning where it actually pays for itself.**
 
-Adaptive Orchestration Protocol (AOP) helps an AI route work across the right control root, execution surface, model capability, behavioral fit, reasoning effort and delegation topology while preserving continuity, evidence, convergence and acceptance.
+Adaptive Orchestration Protocol (AOP) helps an AI route work across the right control root, execution surface, model capability, behavioral fit, commitment geometry, reasoning effort and delegation topology while preserving continuity, evidence, convergence and acceptance.
 
-Its efficiency target is **minimum total work to an accepted state**. Lower-cost sufficient execution should absorb reducible bulk; stronger cognition should be concentrated at the bottlenecks where it can materially change the result. AOP treats repeated context ingestion, unnecessary surface switching, avoidable retries, tool churn and agent fan-out as real execution costs too, with the practical aim of reducing avoidable token/context spend and compute waste without lowering the capability floor the task actually needs.
+Its efficiency target is **minimum total work to an accepted state**. Lower-cost sufficient execution should absorb reducible bulk; stronger cognition should be concentrated at the bottlenecks where it can materially change the result. AOP also checks whether an open, high-leverage solution choice should be probed or resolved before dependent work scales, since an inexpensive first commitment can create costly correction or replay. Repeated context ingestion, unnecessary surface switching, avoidable retries, tool churn and agent fan-out remain real execution costs, without lowering the capability floor the task actually needs.
 
 [▶️ Start here](ADAPTIVE_ORCHESTRATION_PROTOCOL.md#first-use) · [⬇️ Download package](../../downloads/adaptive-orchestration-protocol.zip) · [🌙 Moon Source](../../README.md)
 
@@ -17,6 +17,7 @@ AOP routes around that waste:
 - **keep the competent control root** when it can finish and verify the task;
 - **delegate reducible bulk** such as scanning, extraction, testing and repetitive work to cheaper sufficient execution when available;
 - **escalate only the irreducible delta** that actually needs stronger judgment;
+- **resolve high-leverage commitments before scaling dependent work**, using bounded probes or a commitment-only route only when they lower total work to acceptance;
 - **spend tokens and context deliberately**, instead of repeatedly re-ingesting material that does not need to travel;
 - **optimize the whole run**, including retries, tool churn, fan-out, convergence and verification, rather than optimizing the apparent cost of one call.
 
@@ -32,13 +33,13 @@ More intelligence is useful when the task needs it. Applying the highest tier ev
 - an executor result needs evidence-bearing convergence and postflight;
 - expensive execution needs a survivability check before spending the budget.
 
-For the 6.1 release history, see the [repository changelog](../../CHANGELOG.md).
+For release history, see the [repository changelog](../../CHANGELOG.md).
 
 ## Astra submodule, not Astra mode
 
-Astra is an optional subordinate submodule of this Adaptive Orchestration portable, not a prescribed work style. Its canonical adapter lives at [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) and is independently versioned at **1.8**.
+Astra is an optional subordinate submodule of this Adaptive Orchestration portable, not a prescribed work style. Its canonical adapter lives at [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) and is independently versioned at **1.9**.
 
-GPT-6 Sol/Luna has a separate dated executor calibration at [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md), version **1.5**. It preserves the model-neutral core while mapping the family to heterogeneous execution: Luna for focused/high-volume child work, Sol for strong roots and demanding specialists, plus current Codex child-model/default configuration guidance.
+GPT-6 Sol/Luna has a separate dated executor calibration at [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md), version **1.6**. It preserves the model-neutral core while mapping the family to heterogeneous execution: Luna for focused/high-volume work after material solution commitments are sufficiently resolved, Sol for strong roots and bounded high-leverage decisions when warranted, plus current Codex child-model/default configuration guidance.
 
 When Astra is actually available, Adaptive Orchestration can compile it as a judgment brain, broad reviewer, co-architect, bounded executor, frontier orchestrator or sustained full-run root. Role, autonomy, reasoning depth, context breadth, control surface and mutation authority remain separate.
 
@@ -54,9 +55,9 @@ Examples of valid requests:
 
 ## What it does
 
-Adaptive Orchestration 6.2 defines surface-neutral control-root routing across Chat, Work and optional Codex, including execution profiles, Surface Continuity, a Behavioral Fit Gate with lateral model side-routing, Delegation-First orchestration, heterogeneous root/child topology, connector-aware source transport, Budget Survivability, the Intelligence Distillation Ladder, bounded exhaustiveness, an auditable Decision Trace for material higher-tier rulings, optional explicitly activated ephemeral Sprint Mode, Control-Root Postflight and delta-only re-entry.
+Adaptive Orchestration 6.3 defines surface-neutral control-root routing across Chat, Work and optional Codex, including execution profiles, Surface Continuity, separate Behavioral Fit and Decision Commitment Gates, commitment-only side- or up-routing, proportional Branch Before Build, Delegation-First orchestration, heterogeneous root/child topology, connector-aware source transport, Budget Survivability, the Intelligence Distillation Ladder, bounded exhaustiveness, an auditable Decision Trace for material rulings, optional explicitly activated ephemeral Sprint Mode, Control-Root Postflight and delta-only re-entry.
 
-The Decision Trace exposes the smallest decision-bearing comparison needed to audit a material ruling — alternatives, decisive reasons, adversarial correction, falsifier/test and uncertainty — **not** hidden chain-of-thought or private scratchpad content.
+The Decision Trace exposes the smallest decision-bearing comparison needed to audit a material ruling — alternatives, acceptance criteria when relevant, decisive reasons, adversarial correction, falsifier/test, uncertainty and downstream assumptions — **not** hidden chain-of-thought or private scratchpad content.
 
 ## What it does not do
 
@@ -66,13 +67,13 @@ Sprint Mode does not expose allowance/reset state, create a native product featu
 
 ## Current identity
 
-- **Version:** 6.2
+- **Version:** 6.3
 - **Protocol family:** V6
 - **Status:** current · supported standalone distribution
 - **Former identity:** Chat–Work Routing Protocol / Chat–Work Router / Chat–Work · retained only as compatibility and migration terminology
 - **Named continuity profile:** Chat–Work Loop Profile · Chat → Work/Codex → Chat
-- **Optional Astra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) · version **1.8**
-- **GPT-6 Sol/Luna submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md) · version **1.5**
+- **Optional Astra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) · version **1.9**
+- **GPT-6 Sol/Luna submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md) · version **1.6**
 - **Adapter directory law:** current and future model-specific Adaptive Orchestration adapters co-reside under portables/adaptive-orchestration/adapters/; do not create one directory per model family unless a future adapter actually becomes a multi-file subsystem.
 - **Canonical body:** [portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md](ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
 - **Package:** [downloads/adaptive-orchestration-protocol.zip](../../downloads/adaptive-orchestration-protocol.zip)

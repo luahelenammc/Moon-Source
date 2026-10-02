@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-01 — Adaptive Orchestration 6.3 · Commitment Geometry
+
+- Advanced the Adaptive Orchestration core from **6.2 to 6.3** as a material additive-and-superseding routing release.
+- Added the model-neutral **Decision Commitment Gate**, separating execution, judgment and commitment so a high-leverage solution choice can be resolved before dependent work scales.
+- Added `COMMIT_DIRECTLY`, `PROBE_THEN_COMMIT`, `EXPLORE_THEN_SELECT`, `SIDE_ROUTE_COMMITMENT`, `UPROUTE_COMMITMENT` and `REOPEN_COMMITMENT`, with bounded **Branch Before Build** when exploration costs less than likely replay.
+- Extended total-work economics to include exploration, verification, correction, replay and convergence; added `premature_commitment_failure` and smallest-boundary recovery.
+- Advanced GPT-6 Sol/Luna Strategy Adapter to **1.6** and Astra Strategy Adapter to **1.9** for AOP 6.3 compatibility.
+- Rebuilt the current composite package and its legacy compatibility package from the same canonical body and adapter bytes; refreshed the canonical SHA-256 fingerprint.
+- MSL remains **5.1**. Canonical filenames, package coordinates and website mirror path remain stable.
+
 ## 2026-09-29 — Adaptive Orchestration 6.2 · Behavioral Fit Gate
 
 - Advanced the Adaptive Orchestration core from **6.1 to 6.2**.

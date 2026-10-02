@@ -5,12 +5,12 @@
 ## Public status
 
 - **status:** current subordinate adapter; optional public guidance
-- **version:** 1.8
+- **version:** 1.9
 - **versioning mode:** independently versioned subordinate submodule; the human title remains unversioned
 - **first public release:** 2026-09-09
-- **last material update:** 2026-09-29
-- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1 → 1.5 official Astra prompting/skills calibration → 1.6 delegated-bundle and worker-ownership calibration from credited external mechanism study → 1.7 GPT-6.1 Sol / Maximum Token Economy compatibility → 1.8 Adaptive Orchestration 6.2 Behavioral Fit compatibility
-- **applies to:** Adaptive Orchestration Protocol 6.2
+- **last material update:** 2026-10-01
+- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1 → 1.5 official Astra prompting/skills calibration → 1.6 delegated-bundle and worker-ownership calibration from credited external mechanism study → 1.7 GPT-6.1 Sol / Maximum Token Economy compatibility → 1.8 Adaptive Orchestration 6.2 Behavioral Fit compatibility → 1.9 Adaptive Orchestration 6.3 Commitment Geometry compatibility
+- **applies to:** Adaptive Orchestration Protocol 6.3
 - **effective date:** 2026-09-29
 - **governing canonical body:** `portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md`
 - **canonical release lineage:** introduced under Chat–Work 5.1, updated through Chat–Work 6.0 Delegation-First orchestration and aligned to the surface-neutral control-root model in Chat–Work 6.1; those releases are the same lineage now named Adaptive Orchestration Protocol, whose current body uses the unversioned filename ADAPTIVE_ORCHESTRATION_PROTOCOL.md
@@ -50,6 +50,7 @@ The canonical Adaptive Orchestration protocol continues to own stable, model-neu
 - source transport and authority;
 - mutation authorization;
 - Decision Trace semantics;
+- Decision Commitment Gate and Commitment Geometry, including proportionate probes and commitment-only routing;
 - Sprint as an optional run-level overlay;
 - Delegation & Native Parallelism Gate;
 - verification, receipts and Control-Root Postflight;
@@ -326,7 +327,7 @@ It is appropriate when a finite family of related decisions shares enough contex
 
 ## Surface-neutral frontier root
 
-Adaptive Orchestration 6.2 no longer treats Chat as the mandatory home of frontier judgment or closure. When Astra is the justified frontier root and the active Work/Codex harness can retain objective, authority, convergence and postflight, Astra may remain the control root while delegating Luna workers and Sol specialists. The run does not need to return to Chat merely to satisfy protocol form.
+Adaptive Orchestration 6.3 preserves the surface-neutral control-root rule: Chat is not the mandatory home of frontier judgment or closure. When Astra is the justified frontier root and the active Work/Codex harness can retain objective, authority, convergence and postflight, Astra may remain the control root while delegating Luna workers and Sol specialists. The run does not need to return to Chat merely to satisfy protocol form.
 
 The historical Chat → Work/Codex → Chat pattern remains a first-class named profile. Use it when Chat continuity is explicitly preferred or materially useful, not as the universal default.
 
@@ -343,13 +344,13 @@ Under this profile, route to Astra only when at least one of these conditions is
 - a bounded GPT-6.1 Sol route shows a diagnosed capability shortfall after source, authority, tooling, specification and context failures are excluded;
 - the acceptance boundary is high-consequence enough that the residual capability delta matters more than the token-economy objective.
 
-Do not require sacrificial Sol failure when the task is already known to sit inside an Astra-favored frontier domain. Conversely, do not retain Astra by prestige when GPT-6.1 Sol can meet the same acceptance boundary. Behavioral mismatch is not automatically a capability shortfall: under Adaptive Orchestration 6.2, use the Behavioral Fit Gate and prefer a lateral `SIDE_ROUTE_MODEL_FOR_FIT` when cognition is already sufficient. Astra should receive that route only when its observed fit or independent frontier justification actually earns it.
+Do not require sacrificial Sol failure when the task is already known to sit inside an Astra-favored frontier domain. Conversely, do not retain Astra by prestige when GPT-6.1 Sol can meet the same acceptance boundary. Behavioral mismatch is not automatically a capability shortfall: under Adaptive Orchestration 6.3, use the inherited Behavioral Fit Gate and prefer a lateral `SIDE_ROUTE_MODEL_FOR_FIT` when cognition is already sufficient. Astra should receive that route only when its observed fit or independent frontier justification actually earns it.
 
 Outside `Maximum Token Economy`, this exception ordering is inactive and the adapter's existing role plurality remains unchanged.
 
 ## Astra as heterogeneous orchestrator
 
-Adaptive Orchestration 6.2 changes the default question for frontier runs. When Astra is selected, ask not “should Astra do everything?” but “which parts genuinely require Astra?”
+Adaptive Orchestration 6.3 keeps the default question for frontier runs: when Astra is selected, ask not “should Astra do everything?” but “which parts genuinely require Astra?” A high-leverage commitment may justify a bounded Astra role only when the remaining decision actually needs frontier capability; Astra is not the default aesthetic arbiter, and the gate does not create an “Astra design mode.”
 
 When the active Work/Codex runtime exposes subagents and model selection, prefer a cognitive pyramid:
 
@@ -436,7 +437,7 @@ The compiler should choose the smallest structure that preserves the task's requ
 
 ## Adaptive Orchestration integration contract
 
-The Astra adapter is not a parallel router. It is a subordinate strategy layer inside Adaptive Orchestration 6.2, including its Delegation-First law.
+The Astra adapter is not a parallel router. It is a subordinate strategy layer inside Adaptive Orchestration 6.3, including its Delegation-First and Decision Commitment Gate laws.
 
 Adaptive Orchestration resolves the general Execution Profile, Run State, task requirements, authority and capability floor first. When Astra is selected as a possible capability target, the adapter then resolves the **Astra Setup Contract** before compiling model-specific strategy.
 
@@ -454,7 +455,7 @@ Adaptive Orchestration Setup
   → Control-Root Postflight
 ```
 
-Adaptive Orchestration may recommend Astra and may prefill an AUTO proposal from explicit profile data. Under Adaptive Orchestration 6.2, AUTO may also select an internal delegation topology when the active harness exposes it, but it must not silently expand mutation authority, scope, maximum reasoning or unbounded physical fanout.
+Adaptive Orchestration may recommend Astra and may prefill an AUTO proposal from explicit profile data. Under Adaptive Orchestration 6.3, AUTO may also select an internal delegation topology when the active harness exposes it, but it must not silently expand mutation authority, scope, maximum reasoning or unbounded physical fanout. Commitment routing likewise changes who may decide within the mandate; it does not grant approval or expand mutation scope.
 
 The same user may rationally configure Astra differently for different tasks. A persistent Astra profile is a convenience, not an identity claim or an immutable default.
 
@@ -599,7 +600,7 @@ Do not promote `light`, `medium`, `high`, `xhigh`, `ultra`, `fast` or any other 
 
 Apply the same logic to speed modes. A latency-premium mode is justified when human-visible response latency is itself the dominant bottleneck. It is usually poor value when execution time is dominated by external tools, browsing, tests, long-running operations or agent coordination. This is a bottleneck-allocation rule, not a ban on fast modes.
 
-Apply the same logic to agents and parallelism. Under Adaptive Orchestration 6.2, internal delegation is preferred over a user-visible model switch when the active harness can resolve the required capability tree. Physical fanout should still earn its coordination tax: prefer one capable owner when work is tightly coupled, context-heavy or sequential; use subagents when units are materially independent, context duplication is bounded and convergence cost is lower than the expected gain. The generic Delegation & Native Parallelism Gate governs.
+Apply the same logic to agents and parallelism. Under Adaptive Orchestration 6.3, internal delegation is preferred over a user-visible model switch when the active harness can resolve the required capability tree. Physical fanout should still earn its coordination tax: prefer one capable owner when work is tightly coupled, context-heavy or sequential; use subagents when units are materially independent, context duplication is bounded and convergence cost is lower than the expected gain. The generic Delegation & Native Parallelism Gate governs.
 
 For Astra strategy selection, prefer this sequence:
 
@@ -650,11 +651,11 @@ The adapter may classify failures such as:
 
 These are routing diagnoses, not claims about the model's private internals.
 
-## Relationship to Adaptive Orchestration 6.2
+## Relationship to Adaptive Orchestration 6.3
 
-**Current Astra adapter version: 1.8.** Adaptive Orchestration 6.2 is the governing router; this adapter remains subordinate and independently tracked.
+**Current Astra adapter version: 1.9.** Adaptive Orchestration 6.3 is the governing router; this adapter remains subordinate and independently tracked.
 
-Adaptive Orchestration 6.2 promotes Delegation-First and heterogeneous topology to stable routing law. This adapter specializes that law for Astra without turning Astra into a universal executor or creating a second router.
+Adaptive Orchestration 6.3 inherits Commitment Geometry as well as Delegation-First and heterogeneous topology. This adapter may apply the Decision Commitment Gate to a bounded high-leverage decision, but frontier capability must be shown to change that decision; Astra does not become a universal executor, default aesthetic arbiter or second router.
 
 The release is coherent only when:
 
