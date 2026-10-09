@@ -1,66 +1,55 @@
-# From method to implementation
+# From a context problem to an implementation
 
-Moon Source began as dogfooding: repeated context and continuity problems in the creator's own projects led to methods that were tried, revised and documented through day-to-day work. The public repository makes those methods inspectable. It does **not** turn them into a ready-made assistant, runtime, SDK or externally validated product.
+**[Ler em português brasileiro](FROM_METHOD_TO_IMPLEMENTATION.pt-BR.md)**
 
-This guide answers three practical questions a collaborator, technical lead or recruiter can reasonably ask: **How was the method developed? Where does it work today? What would it take to implement it elsewhere?** It is a reading and translation route, not a new Moon Source capability or independent source of authority.
+What happens between "I have a context method" and "this works for someone else"? This page provides a short, testable route through that question. It does not introduce a new Moon Source capability.
 
-## 1. Start from a failure you can observe
+## 1. Where the method came from
 
-Consider a project where an AI assistant repeatedly follows an obsolete policy because several chat transcripts and documents disagree.
+Moon Source grew out of the creator's own sustained AI workflows across more than 30 personal and professional project workspaces. Long-running work exposed practical failures: having to repeat decisions, retrieving outdated material, or mixing information from different projects. The method evolved through dogfooding: identify a failure, specify ownership and update rules, try them in daily work, inspect the result, and revise. AI assisted development and review under the creator's architectural direction.
 
-- **Problem:** a newer decision exists, but an older document still looks plausible.
-- **Context responsibility:** establish the source owner, effective version, review date, supersession and the human who resolves a conflict.
-- **Useful behavior:** refer to the current authoritative source; make uncertainty explicit when competing top-authority sources conflict.
-- **Acceptance test:** when the obsolete document is retrieved, the system must not silently promote it to current policy.
+**This is actual internal use, not 30 customers, independent deployments, or measured third-party outcomes.** The [canonical public architecture](../ARCHITECTURE.md) describes the method; its [evidence registry](EXISTING_IMPLEMENTATIONS.md) states what can be inspected.
 
-The example is illustrative. Source selection, access, state storage and execution still require a concrete implementation.
+## 2. See what is executable today
 
-## 2. Separate the kinds of evidence
+Start with the separate [Governed Knowledge Routing Demonstrator](https://www.luahelena.com.br/ia/demos/governed-knowledge/) ([source and tests](https://github.com/luahelenammc/LUAHELENA/tree/main/ia/demos/governed-knowledge/)). It is a small deterministic website using fictional policy records. **It is not an LLM assistant and is maintained in a different repository.**
 
-| Evidence level | What can honestly be said | What it does not establish |
-|---|---|---|
-| Public method | Moon Source documents structures for context, source authority, freshness, provenance and handoffs. | Executable software, reliability or adoption by third parties. |
-| Real self-use | The creator uses and iterates on those methods in her own AI workflows and project sources. | Independent customer deployments or measured user outcomes. |
-| Bounded technical demonstration | A standalone [Governed Knowledge Routing Demonstrator](https://www.luahelena.com.br/ia/demos/governed-knowledge/) shows deterministic handling of synthetic source records; [source and tests](https://github.com/luahelenammc/LUAHELENA/tree/main/ia/demos/governed-knowledge/) are inspectable in a **separate professional-site repository**. | An LLM assistant, clinical application, production RAG, universal Moon Source runtime or external adoption. |
-| External pilot | A partner and project would have to agree on scope, responsibilities, consent, evaluation and what actually gets built. | No external pilot or result is claimed by this guide. |
-| Evaluated outcome | A bounded pilot could define measures and compare observed results with an appropriate baseline. | No impact, retention improvement or other effect has been measured here. |
+Try these situations:
 
-For the repository's own available artifacts, read [Existing Implementations and Projections](EXISTING_IMPLEMENTATIONS.md) and [Evidence and Claims](../EVIDENCE_AND_CLAIMS.md). The companion demonstrator is external to this repository and is a **small synthetic implementation of related governance ideas**, not a deployment of a Moon Source product.
-
-## 3. Translate a context method into an implementation contract
-
-A useful first deliverable is a short **context-to-implementation brief** for the actual people and process. It should be reviewed with both a domain owner and a technical owner.
-
-| Question | Minimum specification |
+| Ask the demo | What to inspect |
 |---|---|
-| Whose problem? | User, task, current workflow, concrete point of failure and human stakeholders. |
-| Which sources govern? | Owner, locator, authority, currentness, version, update and supersession rules. |
-| What can the system remember or transmit? | Smallest consented state, retention limit, exclusions and recovery path. |
-| What does the assistant do? | Observable permitted actions, prohibited actions, escalation and human decision rights. |
-| Who implements what? | Context architecture and acceptance criteria versus product engineering, integrations, infrastructure and security. |
-| How will anyone know it works? | Test fixtures, failure cases, readback, maintenance responsibility and pilot measures if authorized. |
+| Hotel reimbursement | Current higher-authority policy beats an outdated version and a disagreeing FAQ. |
+| Privacy policy | An overdue review prevents the old text from being represented as current. |
+| Workplace accommodation | A source can specify the human owner while leaving the individual decision to that person. |
+| Remote work | Two active sources of equal authority disagree; the engine escalates rather than guessing. |
+| Medical leave | No registered topic supports an answer, so the engine says so. |
 
-A candidate pipeline is:
+Open the **decision trace** and the fictional source register. Check which records matched, which were excluded, which authority was considered, and where escalation occurred. This is evidence of bounded source-routing behavior only. It does not prove that language-model context is universally solved, that a production product exists, or that a client used Moon Source.
 
-`real workflow → source/state contract → minimal synthetic test → approved harness and integrations → human review → bounded pilot → evaluation`
+## 3. Convert the method into a buildable brief
 
-Moon Source may inform the source/state contract, context selection, uncertainty and evaluation boundaries. The chosen product stack must supply storage, identity, interface, connectivity, authentication, model invocation if needed, execution controls and security. A diagram of that pipeline is not evidence that those connections exist.
+Before proposing a chatbot, map the actual workflow with a domain owner. Keep the first brief small enough that a separate implementation team can challenge it.
 
-## 4. One small test before the big proposal
+| Field | Write down |
+|---|---|
+| Problem and people | Who encounters the failure, where it occurs, how it is recognized, and who can validate it. |
+| Source and state | Record owners, source locators, currentness rules, version/supersession, and the smallest permissible stored context. |
+| Decision boundary | What the system may answer or do, what it must decline, and which human must decide or review. |
+| Implementation owner | Required identity/access, integrations, runtime/model (if any), security, maintenance, and the team responsible for building them. |
+| Acceptance test | An invented-input scenario with expected output, provenance, conflict handling, escalation and a reproducible readback. |
+| Pilot conditions | Consent/privacy approvals, baseline, evaluation measures, right to publish and attribution, if a real pilot is later authorized. |
 
-Using **only invented data**, write three source records: a current rule, an obsolete version and a conflicting note. Give each record a source owner, date and authority. Specify the expected answer and the required escalation when there is no reliable winner.
+A possible path is `understand workflow → specify governed context → run synthetic acceptance test → build authorized integration → human review → bounded pilot → evaluate`. A diagram of this path is not evidence that an integration or pilot exists.
 
-A reviewer should be able to check four things without trusting a persuasive AI explanation: **which source governed, why, what was excluded and what happened under conflict**. The public [Governed Knowledge Routing Demonstrator](https://www.luahelena.com.br/ia/demos/governed-knowledge/) illustrates a related deterministic test; it is not a real integration or a substitute for system-specific testing.
+## 4. What an honest project conversation sounds like
 
-Only then discuss whether the project needs a conversational assistant at all. In sensitive fields, do not insert personal or health data into prototype prompts without an approved privacy, consent, access and human-oversight design.
+**How were these methods developed?** From repeated practical failures in long-running internal AI work, then iterative specification, use, critique and public documentation.
 
-## 5. A useful claim for an external conversation
+**Have you applied them?** Yes, to the creator's own work. Public methods and bounded technical demonstrations are inspectable. No external Moon Source deployment or independently validated client case is established here.
 
-> I created Moon Source to solve context continuity problems in my own work. I use its methods, publish the reference architecture and can show a limited technical demonstration of related source-governance behavior. Turning that into an application for other users requires joint discovery, an implementation team and tests in the real domain. An external case study would be built and assessed, not assumed.
+**Can you build my assistant?** The architecture can inform source/state requirements, workflow discovery, human decision boundaries and tests. Whether an assistant is appropriate, and who builds its interface, integrations, operations and security, must be established with the project team. Domain-sensitive use demands its own consent and governance decisions.
 
-This preserves a meaningful distinction: **authored method → lived internal use → inspectable bounded behavior → proposed external application → externally observed outcome**. Each stage needs different evidence.
-
-**Further routes:** [Start Here](../START_HERE.md) · [For AI Builders](FOR_AI_BUILDERS.md) · [Architecture](../ARCHITECTURE.md) · [Existing Implementations](EXISTING_IMPLEMENTATIONS.md).
+The [Moon Source architecture](../ARCHITECTURE.md), [For AI Builders](FOR_AI_BUILDERS.md), [Existing Implementations](EXISTING_IMPLEMENTATIONS.md) and [Evidence and Claims](../EVIDENCE_AND_CLAIMS.md) remain authoritative for their respective facts and boundaries. This guide is a public reading route, not another source of authority.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
