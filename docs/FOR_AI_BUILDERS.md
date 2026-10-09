@@ -2,7 +2,9 @@
 
 Moon Source is a governed-context architecture. It helps a system decide which sources matter, which source governs each responsibility, what may enter active context, what may be changed and how a consequential result is checked.
 
-This guide explains where those decisions sit beside an existing AI stack. It is a presentation guide, not an SDK, runtime or new capability. The [Architecture](../ARCHITECTURE.md), [Moon Source AI Kernel](../MOON_SOURCE_AI_KERNEL.md) and linked capability bodies remain authoritative for their own responsibilities.
+This guide explains where those decisions sit beside an existing AI stack. It is a presentation guide, not an SDK, runtime or new capability.
+
+For an evidence-first route from a real workflow problem through context/state specification, synthetic test and possible pilot, see [From method to implementation](FROM_METHOD_TO_IMPLEMENTATION.md). It separates what already exists from what an implementation partner would still need to build. The [Architecture](../ARCHITECTURE.md), [Moon Source AI Kernel](../MOON_SOURCE_AI_KERNEL.md) and linked capability bodies remain authoritative for their own responsibilities.
 
 ## Where it sits
 
