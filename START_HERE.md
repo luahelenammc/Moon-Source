@@ -4,6 +4,8 @@ AI does not need a pile of everything about you. It needs the small amount of co
 
 This page is a plain-language route into Moon Source. You can start with the problem you have; the names of the methods come later.
 
+If you are evaluating this work for a team, a product or an interview, [From method to implementation](docs/FROM_METHOD_TO_IMPLEMENTATION.md) separates real self-use, inspectable demonstrations and the work still required for an external application.
+
 ## Make a first move
 
 Open [Moon Source Setup](portables/setup/MOON_SOURCE_SETUP.md) in an AI conversation and ask:
