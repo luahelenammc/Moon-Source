@@ -4,6 +4,8 @@ This map points to artifacts that already exist. It is not a manufactured case s
 
 Use it to choose an inspectable public capability. If the question is what should be created rather than what already exists, start with the [🏗️ Architecture — Field to Form](../ARCHITECTURE.md#field-to-form).
 
+**How does documented method become a real system?** [From method to implementation](FROM_METHOD_TO_IMPLEMENTATION.md) explains proof levels, implementation responsibilities and a smallest-test contract. A separately hosted [synthetic knowledge-routing demonstrator](https://www.luahelena.com.br/ia/demos/governed-knowledge/) illustrates a related governance behavior with deterministic rules. It is a companion example in another repository, **not a client deployment or evidence that Moon Source is a packaged SDK**.
+
 **Download the full public Moon Source:** [complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip). For individual files and portables, use the [download hub](../DOWNLOADS.md).
 
 ## Public artifacts
