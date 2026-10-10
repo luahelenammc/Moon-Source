@@ -21,7 +21,7 @@ SKIP = {"docs/PUBLIC_EDITORIAL_POLICY.md"}
 
 def main() -> int:
     errors = []
-    paths = subprocess.check_output(["git", "ls-files", "--cached", "-z"], cwd=ROOT).decode("utf-8").split("\\0")
+    paths = subprocess.check_output(["git", "ls-files", "--cached", "-z"], cwd=ROOT).decode("utf-8").split(chr(0))
     for relative in sorted(p for p in paths if p.endswith(".md")):
         path = ROOT / relative
         if relative.startswith(("LICENSES/", ".git/")) or relative in SKIP or not path.is_file():
