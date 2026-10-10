@@ -6,6 +6,7 @@ This is a narrow editorial smoke test, not a substitute for permissions review.
 from pathlib import Path
 import re
 import sys
+import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 PATTERNS = [
@@ -20,9 +21,10 @@ SKIP = {"docs/PUBLIC_EDITORIAL_POLICY.md"}
 
 def main() -> int:
     errors = []
-    for path in sorted(ROOT.rglob("*.md")):
-        relative = path.relative_to(ROOT).as_posix()
-        if relative.startswith(("LICENSES/", ".git/")) or relative in SKIP:
+    paths = subprocess.check_output(["git", "ls-files", "--cached", "-z"], cwd=ROOT).decode("utf-8").split("\\0")
+    for relative in sorted(p for p in paths if p.endswith(".md")):
+        path = ROOT / relative
+        if relative.startswith(("LICENSES/", ".git/")) or relative in SKIP or not path.is_file():
             continue
         for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
             if any(pattern.search(line) for pattern in PATTERNS):
