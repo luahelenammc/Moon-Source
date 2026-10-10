@@ -28,6 +28,7 @@ The repository does not require a CLA or a signed-off-by line as a condition of 
 - register every new or materially changed public capability in `registry/public-capabilities.json` and `registry/PUBLIC_CAPABILITIES.md`, recording architectural role and distribution independently;
 - touch cross-file surfaces only where responsibility, routing, evidence, boundary, licensing or discoverability actually changes;
 - run `python scripts/moon_source.py validate` before opening a pull request; use `python scripts/moon_source.py mirror --check` separately when the change touches a canonical standalone body or its mapped mirror;
+- when an update touches a registered mirrored source, follow the [Cross-Source Mirror Sync Protocol](docs/CROSS_SOURCE_MIRROR_PROTOCOL.md) for D1/F1/S1/R1 downstream closure; do not add a timer, mirror the whole repository by default, or claim private consumers were synchronized without private readback;
 - run `reuse lint` when changing licensing or file classes.
 
 A material change to the root README is incomplete until all governed translation mirrors are updated and translation validation passes. See the [README translation contract](docs/README_TRANSLATIONS.md).
