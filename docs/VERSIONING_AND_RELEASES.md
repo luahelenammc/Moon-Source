@@ -17,7 +17,7 @@ They should not be collapsed into one number.
 
 - Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-27; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, through the 5.x strategy/adaptation line, to delegation-first 6.0 and then surface-neutral control-root 6.1 on 2026-09-24.
 - Current structural grammar: Moon Source Language, version 5.1.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (version 1.2), Moon Source Language (version 5.1) and Adaptive Orchestration Protocol (version 6.3).
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (version 1.2), Moon Source Language (version 5.1) and Adaptive Orchestration Protocol (version 6.4).
 - All sixteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry, while Lifecycle Workspace Router is a repository-only capability with its own independent version.
 - Credits & Attribution Ops, Lifecycle Workspace Router, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
@@ -242,6 +242,10 @@ Adaptive Orchestration 6.2 is a **material additive-and-superseding routing rele
 The release separates cognitive capability from observable executor behavior. For workloads where style/voice fidelity, source-bound transformation, tool-use restraint, initiative, role consistency, verification appetite or approval boundaries are load-bearing, the router can define a small behavior contract, use a bounded representative micro-probe when model behavior is new or uncertain, and return `SIDE_ROUTE_MODEL_FOR_FIT` when cognition is sufficient but behavior remains mismatched. Capability escalation is reserved for actual cognitive shortfall or an independently justified higher-tier route.
 
 The community material that triggered this release concerns **original GPT-6 Sol**, not GPT-6.1 Sol. That signal is preserved only as a hypothesis generator; the GPT-6 adapter explicitly blocks forward transfer of those observations to GPT-6.1. The GPT-6 Sol/Luna adapter advances to **1.5** and the Astra adapter to **1.8** for compatibility. MSL remains 5.1; canonical filenames and package coordinates remain stable.
+
+### Adaptive Orchestration 6.4 calibration — 2026-10-10
+
+The 2026-10-07 Chat rollout exposes conversation-tuned GPT-6 Sol to eligible paid plans and GPT-6 Luna to Free/Go under the GPT-6 Chat label; Work/Codex keep their September executor variants. The canonical document's dated availability boundary was corrected and the subordinate Sol/Luna adapter advanced from **1.6** to **1.7**. Under the existing +0.1 canonical-body update law, the AOP canonical file advances from **6.3** to **6.4**. No new routing mechanism, root requirement, economic ratio, harness permission or Astra strategy was introduced; the existing core laws are preserved. Current package and exact-byte site mirrors must track canonical bytes.
 
 ### Adaptive Orchestration 6.3 release — 2026-10-01
 
