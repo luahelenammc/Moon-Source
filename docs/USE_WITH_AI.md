@@ -25,3 +25,9 @@ If browsing is unavailable, repository traversal is blocked, retrieval is incomp
 - Read only what the task needs; the ZIP may travel whole without forcing all its contents into context.
 
 [Repository](../README.md) · [First-time guide](../START_HERE.md) · [AI Kernel](../MOON_SOURCE_AI_KERNEL.md) · [ZIP fallbacks](../DOWNLOADS.md)
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).
