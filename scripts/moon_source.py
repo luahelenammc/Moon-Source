@@ -22,6 +22,7 @@ def local_validation_steps() -> list[tuple[str, list[str]]]:
     """Return the same bounded local checks used by the public CI job."""
 
     return [
+        ("public editorial surface", python_script("check_public_editorial_surface.py")),
         ("licensing contract", python_script("check_licensing.py")),
         ("REUSE lint", ["reuse", "lint"]),
         ("CITATION.cff", ["cffconvert", "--validate", "--infile", "CITATION.cff"]),
