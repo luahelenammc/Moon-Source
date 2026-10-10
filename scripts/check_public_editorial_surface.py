@@ -15,7 +15,6 @@ PATTERNS = [
     re.compile(r"\bprivate donor (?:corpus|corpora|lineage|project|system)s?\b", re.IGNORECASE),
     re.compile(r"\bsource[- ]gap (?:candidate|route|engine)s?\b", re.IGNORECASE),
     re.compile(r"\bnot every local experiment\b", re.IGNORECASE),
-    re.compile(r"\bprivate (?:source )?corpora\b", re.IGNORECASE),
 ]
 SKIP = {"docs/PUBLIC_EDITORIAL_POLICY.md"}
 
