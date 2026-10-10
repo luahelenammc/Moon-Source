@@ -1,21 +1,68 @@
-name: Verify Adaptive Orchestration 6.1 package receipt
+name: Synchronize Adaptive Orchestration ZIP distributions
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md"
+      - "portables/adaptive-orchestration/adapters/**"
+      - "registry/public-capabilities.json"
+      - ".github/workflows/verify-adaptive-orchestration-package.yml"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: aop-zip-sync
+  cancel-in-progress: false
 
 jobs:
-  verify:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Verify packaged bytes
-        run: python scripts/moon_source.py validate
+      - name: Rebuild exact-member AOP composite and compatibility ZIPs
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
+
+          root = Path(".")
+          registry = json.loads((root / "registry/public-capabilities.json").read_text(encoding="utf-8"))
+          aop = next(c for c in registry["capabilities"] if c["id"] == "adaptive-orchestration")
+          distribution = aop["distribution"]
+          members = distribution["composite_members"]
+          targets = [distribution["package_path"], *aop.get("legacy_package_paths", [])]
+          for target in targets:
+              with ZipFile(root / target, "w") as archive:
+                  for member in members:
+                      source = root / member["source_path"]
+                      info = ZipInfo(member["archive_path"], date_time=(2026, 10, 10, 0, 0, 0))
+                      info.compress_type = ZIP_DEFLATED
+                      info.external_attr = 0o100644 << 16
+                      archive.writestr(info, source.read_bytes(), compress_type=ZIP_DEFLATED, compresslevel=9)
+          PY
+      - name: Verify registry and packaged bytes
+        run: python scripts/validate_public_capabilities.py
+      - name: Publish synchronized packages
+        run: |
+          git add downloads/adaptive-orchestration-protocol.zip downloads/chat-work-routing-protocol.zip
+          if git diff --cached --quiet; then
+            echo "AOP packages already synchronized"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "build(aop): synchronize composite and compatibility ZIPs"
+          git push origin HEAD:main
 
 # MOON-SOURCE-PUBLIC-STAMP
 # 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip · Questions, suggestions, or proposals? Feel free to contact me at LuaHelenaMMC@gmail.com.
