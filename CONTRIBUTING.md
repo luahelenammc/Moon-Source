@@ -18,7 +18,7 @@ The repository does not require a CLA or a signed-off-by line as a condition of 
 ## Before opening a change
 
 - inspect the target file's SPDX/REUSE classification;
-- preserve the public/private boundary;
+- follow the [public editorial policy](docs/PUBLIC_EDITORIAL_POLICY.md): describe documented capabilities and real permission or evidence limits without narrating unpublished project history;
 - keep Moon's authorship distinct from your local contribution;
 - mark material adaptations and preserve third-party notices;
 - use the repository's [pull-request template](.github/PULL_REQUEST_TEMPLATE.md);
