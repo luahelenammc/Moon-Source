@@ -224,7 +224,7 @@ Source jurisdiction asks:
 - Who is allowed to change it?
 - What must remain outside the public or operational surface?
 
-The public architecture exposes this responsibility. It does not publish private resolver heuristics or hidden scoring rules.
+The architecture describes context responsibilities and interfaces; it does not claim a scoring feature without a documented implementation.
 
 ### Connected sources and persistent substrate
 
@@ -329,7 +329,7 @@ Moon Source is not:
 - a universal ontology;
 - a claim of external adoption;
 - a claim that more context is always better;
-- a promise that a standalone distribution exposes the full private method.
+- a guarantee that a standalone distribution includes every integration or implementation detail.
 
 ## Claim ceiling
 
