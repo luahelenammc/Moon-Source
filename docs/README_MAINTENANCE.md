@@ -20,6 +20,8 @@ When an accepted change warrants a history record under the repository's release
 
 The four translated root READMEs are derived mirrors of [`README.md`](../README.md). They must follow its content and section structure; they are not separate places for localized updates or release history. Follow the [translation contract](README_TRANSLATIONS.md) when the canonical README changes.
 
+For reader-facing prose, apply the [public editorial policy](PUBLIC_EDITORIAL_POLICY.md): present current functionality and practical limitations, not unpublished project work or internal publication decisions.
+
 ## Validation
 
 Run `python scripts/moon_source.py readmes` for the focused check and `python scripts/moon_source.py validate` for the complete repository gate. The check rejects common changelog-style README headings and the retired generated-digest marker. It cannot detect history written under every possible heading, so review must still confirm that README prose serves a reader-facing purpose.
