@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: pt-BR
 source: ../README.md
-source_sha256: 5c952aa0c4b68d45eac9b1e75388a0d8451767b175966876c328bc922138cbcc
+source_sha256: e654da9e18874298f10f04427840fb3caba9ece57b09ac166f5fd4bc21b8d0ed
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -47,7 +47,7 @@ Diga:
 
 Um bom primeiro resultado deve ligar **problema → menor estrutura útil → destino → regra de atualização → primeiro teste**.
 
-> Quer a referência pública inteira de uma vez? [Baixe o repositório completo (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip).
+> **Plano A (recomendado):** forneça à IA o [repositório público no GitHub](https://github.com/luahelenammc/Moon-Source) ou o link da capacidade relevante e peça a leitura da entrada canônica e apenas dos arquivos necessários. **Plano B:** [baixe o ZIP completo](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) se o acesso direto não funcionar. [Como usar links com IA](../docs/USE_WITH_AI.md).
 
 ## Por que Moon Source existe
 

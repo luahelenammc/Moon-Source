@@ -37,7 +37,7 @@ Tell me:
 
 A useful first result should connect **problem → smallest useful structure → destination → update rule → first test**.
 
-> Need the whole public reference at once? [Download the complete repository (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip).
+> **Plan A (recommended):** give your AI the [public GitHub repository](https://github.com/luahelenammc/Moon-Source) or the relevant capability URL and ask it to retrieve the canonical entry and only the files needed. **Plan B:** [download the complete ZIP](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) if direct retrieval is unavailable. [How to use links with AI](docs/USE_WITH_AI.md).
 
 ## Why Moon Source exists
 

@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: ru
 source: ../README.md
-source_sha256: 5c952aa0c4b68d45eac9b1e75388a0d8451767b175966876c328bc922138cbcc
+source_sha256: e654da9e18874298f10f04427840fb3caba9ece57b09ac166f5fd4bc21b8d0ed
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -47,7 +47,7 @@ Moon Source — открытая эталонная архитектура, по
 
 Полезный первый результат должен связать **проблему → минимально полезную структуру → место хранения → правило обновления → первую проверку**.
 
-> Нужен весь открытый справочный материал? [Скачайте полный репозиторий (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip).
+> **План A (рекомендуется):** передайте ИИ ссылку на [публичный репозиторий GitHub](https://github.com/luahelenammc/Moon-Source) или нужную возможность и попросите прочитать канонический входной файл и только необходимые материалы. **План Б:** [скачайте полный ZIP](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip), если прямой доступ недоступен. [Как использовать ссылки с ИИ](../docs/USE_WITH_AI.md).
 
 ## Зачем нужен Moon Source
 
