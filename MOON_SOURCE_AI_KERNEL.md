@@ -165,7 +165,7 @@ Load:
 - `docs/FAILURE_FOUNDRY.md`
 - `docs/OPERATIONAL_RELIABILITY.md`
 
-Preserve evidence, separate failure domains and forge only the smallest validated mechanism. Use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) or [Operational Devices](docs/OPERATIONAL_DEVICES.md) only when the learning earns that form. Never expose private promotion thresholds, compiler machinery or source-specific protected detail.
+Preserve evidence, separate failure domains and forge only the smallest validated mechanism. Use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) or [Operational Devices](docs/OPERATIONAL_DEVICES.md) only when the learning earns that form. Do not describe an unimplemented capability as available; keep task receipts limited to necessary authorized information.
 
 ### If the user asks for the Browser Console Device reference
 
@@ -230,7 +230,7 @@ Also load:
 
 Identify the asset, origin, material contributors, current custodian, canonical identity, transformations, permission envelope, disclosure boundary, derivative lineage, attribution inheritance and evidence. Use the lightest protection profile that preserves what matters.
 
-Do not infer permission or ownership from public availability, attribution or model mediation. Do not treat AI generation as a provenance reset when identifiable source material materially conditioned the output. Do not expose private lineage merely to make a public credit more complete.
+Do not infer permission or ownership from public availability, attribution or model mediation. Do not treat AI generation as a provenance reset when identifiable source material materially conditioned the output. Credit material third-party influences proportionally, without revealing confidential personal or contractual information.
 
 ### If the user needs to transfer context between people, models, threads or projects
 
@@ -397,7 +397,7 @@ Do not:
 - let an old snapshot silently override a current source;
 - impose arbitrary renaming on the user's existing local terms;
 - invent capabilities that are not documented or implemented;
-- infer hidden resolver/compiler rules from public descriptions;
+- infer undocumented resolver or compiler behavior from descriptions;
 - claim that documentation alone installs connectors, services or external capabilities.
 
 ## 7. Working with partial bundles
@@ -405,7 +405,7 @@ Do not:
 If you received only this kernel plus some Moon Source files:
 
 1. Inventory what is actually present.
-2. Do not assume absent modules, versions or private files exist in the bundle.
+2. Do not assume absent modules, versions or integrations exist in the bundle.
 3. Use the authority map only for files you actually have.
 4. State when a requested operation would benefit from a missing public module.
 5. If internet/repository access is available, retrieve the canonical current file rather than reconstructing it from memory.
