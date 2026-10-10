@@ -4,7 +4,7 @@ A public method for turning a stable way of working into a reusable procedural c
 
 > A **source** governs truth, state and authority. A **procedural projection** governs reusable procedure and quality checks.
 
-This document exposes the responsibility contract and public diagnostic surface. It does not publish the private compiler, promotion gates, evaluation corpus or automatic synchronization machinery.
+This document describes the method's responsibility contract, expected outputs and the evidence needed to substantiate execution claims.
 
 When a procedure is adapted, transported, mirrored, generated from source material or combined with another method, apply [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) so the procedural projection does not lose its intellectual identity, upstream lineage, canonical origin, transformation history, permission envelope, disclosure boundary or local authorship.
 
@@ -16,7 +16,7 @@ When a procedure is adapted, transported, mirrored, generated from source materi
 |---|---|---|
 | **Source** | Facts, decisions, rules, current state, provenance and authority | A reusable procedure |
 | **Procedure** | A repeatable way of working, including triggers, steps, boundaries and QA | The source of truth for every fact |
-| **Skill / procedural projection** | A transportable representation of a procedure that can be invoked or followed | A private corpus or proof of impact |
+| **Skill / procedural projection** | A transportable representation of a procedure that can be invoked or followed | An accessible source or proof of impact |
 | **Project** | A bounded domain, purpose, participants and outputs | A generic procedure |
 | **Task** | One bounded action or recurring obligation | The project architecture |
 | **Mirror / fallback** | Procedural transport when a native skill surface is unavailable | Native execution or semantic authority |
@@ -81,7 +81,7 @@ The audit question is simple:
 
 > Could a fresh person or AI reconstruct the intended procedure from this projection without inventing the missing operating rules?
 
-Do not infer private thresholds or hidden evaluation suites from this question. It is a reconstructability check, not a benchmark claim.
+This is a reconstructability check, not a performance benchmark.
 
 ## 🪞 Native, portable and fallback surfaces
 
@@ -114,12 +114,12 @@ Return:
 3. Live state to remove: facts, dates, names, permissions or decisions that should remain in the source.
 4. Gaps: missing triggers, stop lines, boundaries, edge conditions, outputs or QA.
 5. Synchronization implications: doctrinal change, factual change, rename/version/deprecation or no action.
-6. Smallest repair: the minimum change that restores the procedure without exposing private machinery.
+6. Smallest repair: the minimum change that restores the documented procedure without introducing unsupported dependencies.
 7. Surface label: native capability, portable projection or fallback/mirror.
 8. Intellectual custody: origin, canonical source, relationship, material transformations, local authorship, permission scope and disclosure boundary when applicable.
 9. Uncertainty: what cannot be established from the supplied material.
 
-Do not invent private compiler rules, thresholds, evaluation labels or adoption claims.
+Do not invent missing compiler behavior, thresholds, evaluation labels or adoption claims.
 ~~~
 
 ## 📏 Claim ceiling

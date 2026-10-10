@@ -73,7 +73,7 @@ The **Moon Source** repository governs this shared method and specializes D1 web
 
 The **Moon Cortex** repository may adopt F1 for selected public modules such as Probability Calibration and Moon Image Cortex. Its [Module Design Contract](https://github.com/luahelenammc/Moon-Cortex/blob/main/docs/MODULE_DESIGN_CONTRACT.md) governs what makes a public module publishable; this protocol governs the **cross-source aftercare** when an explicitly registered consumer exists. Cortex does not inherit Moon Source as its domain authority or a mandatory runtime.
 
-The **Local Moon Source** maintains the *private relationship registry* and situational boundaries under its operational protocols. Its public mirrors are local caches, not competitor canons or published backups.
+Cross-repository relationships require explicit scope and authorization. A local mirror remains a cache; it does not replace the canonical source or imply that another repository governs it.
 
 Procedural Personal Skill mirrors and independently managed website exact-byte mirrors continue to use their own native validation. A future project opts in with a binding, never by copying this entire file.
 
@@ -87,4 +87,4 @@ A conformant implementation demonstrates: unchanged source → `no_delta`; relev
 
 ---
 
-> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md).
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).

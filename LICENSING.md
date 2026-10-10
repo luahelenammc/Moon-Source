@@ -74,7 +74,7 @@ These licenses grant only rights Moon is authorized to grant in material subject
 
 The licenses do not grant broad trademark rights or permission to imply official status, sponsorship or endorsement. Ordinary nominative use needed to identify Moon Source, its origin or a truthful fork/adaptation remains compatible with the applicable standard license. No registered-trademark claim is made here.
 
-The public repository does not license private Moon Source, Local Moon Source, Citadel or other internal corpora merely because related public material is available. The public boundary remains governed by [`PUBLIC_BOUNDARY.md`](PUBLIC_BOUNDARY.md).
+The public licenses apply to the material and rights identified in this repository. They do not override third-party rights, unlock connected accounts or grant access to user data. See [data protection and claims](PUBLIC_BOUNDARY.md).
 
 ## Provenance is a separate layer
 

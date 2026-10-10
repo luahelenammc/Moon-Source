@@ -186,9 +186,9 @@ It is not:
 - therapy, legal advice, medical advice or financial advice;
 - a reason to place confidential information in global AI instructions;
 - a replacement for professional judgment;
-- a full dump of Moon's private or professional source architecture;
-- a public disclosure of private corpora, hidden resolver rules, compiler machinery, scoring systems or protected runtime details;
-- a disclosure of Moon's private or internal source architecture;
+- an automatic copy of any user's complete source repository or account context;
+- a substitute for the methods and software explicitly provided by the installation;
+- permission to access unrelated external sources or systems;
 - a connector-onboarding questionnaire or a presumption that a connector is enabled;
 - evidence of adoption, impact, universal validity or enterprise readiness.
 
@@ -911,9 +911,9 @@ This portable is a public operational projection of Moon Source. It is independe
 
 It may reference public capabilities in the canonical repository. It must not expose or imply:
 
-- private source corpora;
+- other users' or organizations' confidential source material;
 - hidden calibration, scoring, resolver, compiler or reconciliation machinery;
-- private Citadel, Local Moon Source or Moon Professional Source mechanisms;
+- unrelated project integrations or capabilities not supplied with this setup;
 - permission that has not been established;
 - endorsement, partnership, adoption, impact or validation beyond available evidence.
 

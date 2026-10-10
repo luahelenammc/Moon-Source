@@ -59,7 +59,7 @@ The Chat–Work Routing Protocol is now named **Adaptive Orchestration Protocol*
 
 - Made host/source reach distinct from each internal consumer's contextual scope; delivery follows responsibility, while instruction and mutation authority remain separate.
 - Added rehydratable context offload: preserve the resolvable source and provenance, carry a compact projection in active context, and reread when omitted detail could matter.
-- Recorded bounded mechanism-level credit to Ishan Gupta's `Ishan-1/MAVIS` (MIT); no code or runtime dependency was copied. Scenario-fixture validation remains incubating.
+- Recorded bounded mechanism-level credit to Ishan Gupta's `Ishan-1/MAVIS` (MIT); no code or runtime dependency was copied. Scenario-level validation has not been demonstrated.
 - Advanced Connected Sources from 1.1-public to 1.2, rebuilt its standalone ZIP and exact-byte website mirror, refreshed the AI Kernel ZIP to match its updated canonical body, and refreshed the registry fingerprint and generated README digest. MSL remains 5.1; registry schema remains 2.0.
 
 ## 2026-09-24 — Chat–Work 6.1 · surface-neutral control-root routing
@@ -383,7 +383,7 @@ Historical entries describe the repository state at their recorded date. The cur
 - Added implicit capability routing so public components are invoked by need rather than by user knowledge or mere availability.
 - Made destination, privacy, existing material, calibration and update contracts part of the operating route.
 - Removed forced coupling between Setup version and user-artifact names or schemas.
-- Preserved standalone portability and the public boundary; no private machinery, licence or impact claim was added.
+- Preserved standalone portability and the existing license and evidence limits.
 
 ## 2026-08-16 — Public architecture baseline
 

@@ -16,7 +16,7 @@ If you received the full repository or ZIP:
 4. If the human meaning is conversational, incomplete, self-correcting, ambiguous or likely to be misunderstood if followed literally, apply [Preflight](portables/preflight/PREFLIGHT.md). If the reconstructed task has material source, freshness, public, sensitive or mutation consequences, let Preflight route only to the guardrails that consequence requires.
 5. Load only the smallest set of Moon Source modules that can answer or execute that task. This is Moon Source's **progressive disclosure**, or **just-in-time context loading**, discipline: load the next sufficient context rather than the whole repository by reflex.
 6. Use the authority map below when files overlap.
-7. Preserve the distinction between current state, historical material, public claims and private/non-disclosed machinery.
+7. Preserve the distinction between current state, historical material, documented capabilities and claims requiring additional evidence.
 8. If the task changes, re-route rather than carrying every previously loaded module forward by default.
 
 Do not treat "read the whole repository" as the default operating mode. More context is not automatically better context.
@@ -165,7 +165,7 @@ Load:
 - `docs/FAILURE_FOUNDRY.md`
 - `docs/OPERATIONAL_RELIABILITY.md`
 
-Preserve evidence, separate failure domains and forge only the smallest validated mechanism. Use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) or [Operational Devices](docs/OPERATIONAL_DEVICES.md) only when the learning earns that form. Never expose private promotion thresholds, compiler machinery or source-specific protected detail.
+Preserve evidence, separate failure domains and forge only the smallest validated mechanism. Use [Procedural Projection](docs/PROCEDURAL_PROJECTION.md) or [Operational Devices](docs/OPERATIONAL_DEVICES.md) only when the learning earns that form. Do not describe an unimplemented capability as available; keep task receipts limited to necessary authorized information.
 
 ### If the user asks for the Browser Console Device reference
 
@@ -230,7 +230,7 @@ Also load:
 
 Identify the asset, origin, material contributors, current custodian, canonical identity, transformations, permission envelope, disclosure boundary, derivative lineage, attribution inheritance and evidence. Use the lightest protection profile that preserves what matters.
 
-Do not infer permission or ownership from public availability, attribution or model mediation. Do not treat AI generation as a provenance reset when identifiable source material materially conditioned the output. Do not expose private lineage merely to make a public credit more complete.
+Do not infer permission or ownership from public availability, attribution or model mediation. Do not treat AI generation as a provenance reset when identifiable source material materially conditioned the output. Credit material third-party influences proportionally, without revealing confidential personal or contractual information.
 
 ### If the user needs to transfer context between people, models, threads or projects
 
@@ -395,17 +395,17 @@ Do not:
 - treat chat history as governed context simply because it is long;
 - merge contradictory sources without resolving jurisdiction;
 - let an old snapshot silently override a current source;
-- turn local Moon Source vocabulary into mandatory renaming;
-- invent private methods that are not present in the public repository;
-- infer hidden resolver/compiler rules from public descriptions;
-- claim the public repository is a complete dump of the private Moon Source system.
+- impose arbitrary renaming on the user's existing local terms;
+- invent capabilities that are not documented or implemented;
+- infer undocumented resolver or compiler behavior from descriptions;
+- claim that documentation alone installs connectors, services or external capabilities.
 
 ## 7. Working with partial bundles
 
 If you received only this kernel plus some Moon Source files:
 
 1. Inventory what is actually present.
-2. Do not assume absent modules, versions or private files exist in the bundle.
+2. Do not assume absent modules, versions or integrations exist in the bundle.
 3. Use the authority map only for files you actually have.
 4. State when a requested operation would benefit from a missing public module.
 5. If internet/repository access is available, retrieve the canonical current file rather than reconstructing it from memory.
@@ -432,21 +432,21 @@ For date-sensitive product facts in Adaptive Orchestration, verify current offic
 The public Moon Source may expose:
 - public architecture;
 - public structural laws;
-- public-safe diagnostics;
+- documented, bounded diagnostics;
 - public standalone procedures and distributions;
 - public responsibility distinctions;
 - public versioning, lineage and distribution rules;
 - bounded intellectual-lineage, content-custody and immaterial-asset protection operations.
 
 It does not expose or establish:
-- private source corpora;
+- personal or confidential records;
 - protected resolver/compiler heuristics;
-- hidden scoring or reconciliation machinery;
-- private custody/permission ledgers whose disclosure would cross a project boundary;
+- unverified scoring or reconciliation behavior;
+- identifiable third-party custody or permission records without authorization;
 - external adoption merely because artifacts are public;
 - impact or enterprise readiness without evidence;
 - a universal standard;
-- private or internal material merely because a related public file is licensed;
+- user-controlled or third-party material merely because a related document has a public license;
 - rights in third-party material that Moon is not authorized to grant.
 
 When public claims matter, read `EVIDENCE_AND_CLAIMS.md` and `PUBLIC_BOUNDARY.md` before answering.

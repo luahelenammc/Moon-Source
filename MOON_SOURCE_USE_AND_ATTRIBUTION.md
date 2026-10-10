@@ -143,7 +143,7 @@ Using Moon Source does not establish that:
 - a result was validated by Moon;
 - a method is universally effective;
 - a component is licensed beyond its actual terms;
-- private Moon Source, Local Moon Source, Citadel or other internal corpora are included in the public release.
+- access to user-owned data, external accounts or third-party content is granted by the public license.
 
 ## 10. Public routes
 
