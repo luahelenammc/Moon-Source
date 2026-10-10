@@ -39,7 +39,9 @@ For release history, see the [repository changelog](../../CHANGELOG.md).
 
 Astra is an optional subordinate submodule of this Adaptive Orchestration portable, not a prescribed work style. Its canonical adapter lives at [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) and is independently versioned at **1.9**.
 
-GPT-6 Sol/Luna has a separate dated executor calibration at [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md), version **1.6**. It preserves the model-neutral core while mapping the family to heterogeneous execution: Luna for focused/high-volume work after material solution commitments are sufficiently resolved, Sol for strong roots and bounded high-leverage decisions when warranted, plus current Codex child-model/default configuration guidance.
+GPT-6 Sol/Luna has a separate dated executor calibration at [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md), version **1.7**. It preserves the model-neutral core while mapping the family to heterogeneous execution: Luna for focused/high-volume work after material solution commitments are sufficiently resolved, Sol for strong roots and bounded high-leverage decisions when warranted, plus current Codex child-model/default configuration guidance.
+
+As of the October 2026 Chat rollout, GPT-6 in Chat uses conversation-tuned Sol (eligible paid tiers) or Luna (Free/Go), distinct from the September Work/Codex executor releases. Model family does not determine available tools, reasoning controls or delegation on any surface.
 
 When Astra is actually available, Adaptive Orchestration can compile it as a judgment brain, broad reviewer, co-architect, bounded executor, frontier orchestrator or sustained full-run root. Role, autonomy, reasoning depth, context breadth, control surface and mutation authority remain separate.
 
@@ -55,7 +57,7 @@ Examples of valid requests:
 
 ## What it does
 
-Adaptive Orchestration 6.3 defines surface-neutral control-root routing across Chat, Work and optional Codex, including execution profiles, Surface Continuity, separate Behavioral Fit and Decision Commitment Gates, commitment-only side- or up-routing, proportional Branch Before Build, Delegation-First orchestration, heterogeneous root/child topology, connector-aware source transport, Budget Survivability, the Intelligence Distillation Ladder, bounded exhaustiveness, an auditable Decision Trace for material rulings, optional explicitly activated ephemeral Sprint Mode, Control-Root Postflight and delta-only re-entry.
+Adaptive Orchestration 6.4 defines surface-neutral control-root routing across Chat, Work and optional Codex, including execution profiles, Surface Continuity, separate Behavioral Fit and Decision Commitment Gates, commitment-only side- or up-routing, proportional Branch Before Build, Delegation-First orchestration, heterogeneous root/child topology, connector-aware source transport, Budget Survivability, the Intelligence Distillation Ladder, bounded exhaustiveness, an auditable Decision Trace for material rulings, optional explicitly activated ephemeral Sprint Mode, Control-Root Postflight and delta-only re-entry.
 
 The Decision Trace exposes the smallest decision-bearing comparison needed to audit a material ruling — alternatives, acceptance criteria when relevant, decisive reasons, adversarial correction, falsifier/test, uncertainty and downstream assumptions — **not** hidden chain-of-thought or private scratchpad content.
 
@@ -67,13 +69,13 @@ Sprint Mode does not expose allowance/reset state, create a native product featu
 
 ## Current identity
 
-- **Version:** 6.3
+- **Version:** 6.4
 - **Protocol family:** V6
 - **Status:** current · supported standalone distribution
 - **Former identity:** Chat–Work Routing Protocol / Chat–Work Router / Chat–Work · retained only as compatibility and migration terminology
 - **Named continuity profile:** Chat–Work Loop Profile · Chat → Work/Codex → Chat
 - **Optional Astra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) · version **1.9**
-- **GPT-6 Sol/Luna submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md) · version **1.6**
+- **GPT-6 Sol/Luna submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md) · version **1.7**
 - **Adapter directory law:** current and future model-specific Adaptive Orchestration adapters co-reside under portables/adaptive-orchestration/adapters/; do not create one directory per model family unless a future adapter actually becomes a multi-file subsystem.
 - **Canonical body:** [portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md](ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
 - **Package:** [downloads/adaptive-orchestration-protocol.zip](../../downloads/adaptive-orchestration-protocol.zip)
