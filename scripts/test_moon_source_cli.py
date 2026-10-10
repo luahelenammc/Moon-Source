@@ -21,7 +21,8 @@ def namespace(**values: object) -> argparse.Namespace:
 
 def main() -> None:
     validate = moon_source.command_steps("validate", namespace())
-    assert validate[0][1][1].endswith("check_licensing.py")
+    assert validate[0][1][1].endswith("check_public_editorial_surface.py")
+    assert validate[1][1][1].endswith("check_licensing.py")
     assert validate[-1][1][1].endswith("test_moon_source_cli.py")
 
     translations = moon_source.command_steps("translations", namespace())
