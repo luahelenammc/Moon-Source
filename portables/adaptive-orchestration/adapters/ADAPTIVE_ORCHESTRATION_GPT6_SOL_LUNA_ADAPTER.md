@@ -5,10 +5,10 @@
 ## Meta
 
 - **status:** current subordinate adapter
-- **adapter version:** 1.6
-- **as of:** 2026-10-01
+- **adapter version:** 1.7
+- **as of:** 2026-10-10
 - **governing capability:** [Adaptive Orchestration Protocol](../ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
-- **scope:** GPT-6.1 Sol, GPT-6 Sol and GPT-6 Luna routing in Work and Codex, including heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles, behavioral-fit calibration, commitment-bearing decision routing and API/product-boundary reasoning about executor choice
+- **scope:** GPT-6.1 Sol and GPT-6 Sol/Luna routing across Chat, Work and Codex where available, with dated Chat-vs-Work model-variant boundaries, heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles, behavioral-fit calibration, commitment-bearing decision routing and API/product-boundary reasoning about executor choice
 - **authority:** subordinate; the canonical Adaptive Orchestration body wins on conflict
 - **volatility:** high; availability, model menus, reasoning controls, plan/workspace exposure and usage economics must be rechecked
 - **product boundary:** not OpenAI policy, not a benchmark ranking system and not a guarantee about ChatGPT allowance consumption
@@ -94,7 +94,7 @@ Community reactions can justify a probe. They do not establish that GPT-6 Sol is
 As of 2026-09-23 for the original GPT-6 Sol/Luna launch:
 
 - GPT-6 Sol and GPT-6 Luna are available in **ChatGPT Work and Codex** for eligible paid plans, subject to rollout and workspace settings.
-- They are **not yet ordinary Chat models**. Chat and Work/Codex model menus are separate surfaces.
+- At this September launch they were **not yet ordinary Chat models**. That historical fact was superseded for Chat by the 2026-10-07 rollout below; the menus and harnesses remain distinct.
 - API model IDs are `gpt-6-sol` and `gpt-6-luna`.
 - Both API models expose reasoning levels from `none` through `max`; the exact reasoning controls shown in ChatGPT depend on plan, workspace and surface.
 - Both expose a **1,050,000-token context window** and **128,000 max output tokens** in the API.
@@ -106,6 +106,16 @@ As of 2026-09-23 for the original GPT-6 Sol/Luna launch:
 - OpenAI reports improved alignment versus GPT-5.6 counterparts, including fewer misleading coding-work claims.
 
 These are dated product facts. They do not become permanent routing law.
+
+## 2B. GPT-6 in Chat — October 7, 2026 deployment correction
+
+OpenAI launched GPT-6 in the Chat tab on **2026-10-07** for Plus, Pro, Business and Enterprise, expanding rollout to Free and Go from **2026-10-08**, subject to account/workspace rollout and controls. **GPT-6 Sol powers Chat for eligible paid tiers; GPT-6 Luna powers Chat for Free/Go.** The ordinary Chat selector presents **GPT-6**, not separately selectable Sol/Luna model IDs. For paid tiers, GPT-6 Sol powers available Instant-to-Extra-High reasoning levels; Pro is a distinct Astra-backed tier. Do not infer a universal list of effort controls from family names or subscription hints.
+
+**Crucial model-variant boundary:** OpenAI identifies the October Chat GPT-6 Sol/Luna releases as **conversation-tuned versions distinct from the September Sol/Luna models still powering Work and Codex**. September executor benchmarks, API prices, context-window specifications, observed agentic behavior and child-model configuration must not automatically be attributed to the October Chat variants. Nor does Intelligent UI or an answer that streams while thinking establish filesystem/computer control, subagent spawning or delegated execution in Chat.
+
+Routing effect: **Chat can now be the competent GPT-6 Sol/Luna control root and finish tasks entirely in Chat** when its observed tools, scope and verification are sufficient. Prefer the current competent root; move to Work/Codex only for a material harness, locality, sustained-execution, permission, delegation or verification requirement. Sol/Luna describe model families and task-fit hypotheses, not a forced surface migration or permission to claim invisible model switching. GPT-6.1 Sol remains a separate Work/Codex option where exposed, not a Chat menu synonym.
+
+Sources: [OpenAI, GPT-6 and Intelligent UI for everyone (2026-10-07)](https://openai.com/index/gpt-6-for-everyone/); [OpenAI, October GPT-6 Sol/Luna system-card update](https://deploymentsafety.openai.com/gpt-6-october/model-data-and-training); [OpenAI, GPT-6 and other models in ChatGPT](https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt).
 
 ## 3. Benchmark signal, not benchmark government
 
@@ -217,7 +227,7 @@ Prefer Codex when the sovereign object is a repository, codebase, tests, termina
 
 ### Chat
 
-At launch, GPT-6 Sol/Luna are not exposed as ordinary Chat models. Chat remains the controller/postflight surface using the best suitable **Chat-available** model. Never report a GPT-6 Sol/Luna Chat switch unless the product actually exposes it.
+Since the October 2026 rollout, Chat may use **GPT-6 Sol** for eligible paid users or **GPT-6 Luna** for Free/Go under the **GPT-6** Chat label, where actually exposed. Chat can own reasoning, convergence and Control-Root Postflight without a Work/Codex handoff when its available tools and verification satisfy the task. The October conversation variants are not the September Work/Codex executor variants; preserve the surface's actual tool, delegation and model-control limits. Never pretend to select a model or spawn workers when the UI/runtime cannot do so.
 
 ## 8. Heterogeneous subagent topology
 
@@ -467,13 +477,15 @@ When Sol underperforms:
 
 ## 13. Locality and migration note
 
-This adapter describes the GPT-6 family **as observed at the dated release state**. Future Chat availability, changed usage pools, new family members, repricing or changed effort controls can alter the calibration without changing the canonical Adaptive Orchestration architecture.
+This adapter describes the GPT-6 family **as observed at the dated release state**. The October 2026 Chat rollout alters the availability and variant boundary, not the canonical routing architecture. Future usage pools, model releases, repricing and effort-control changes still require a fresh probe.
 
 A future model release should update or supersede this adapter rather than spraying model names through the stable core.
 
 ## 14. Official sources
 
-- OpenAI — Introducing GPT-6 Sol and Luna: https://openai.com/index/introducing-gpt-6-sol-and-luna/
+- OpenAI — Introducing GPT-6 Sol and Luna (September Work/Codex release): https://openai.com/index/introducing-gpt-6-sol-and-luna/
+- OpenAI — GPT-6 and Intelligent UI for everyone (October Chat release): https://openai.com/index/gpt-6-for-everyone/
+- OpenAI — October GPT-6 Sol/Luna deployment safety update: https://deploymentsafety.openai.com/gpt-6-october/model-data-and-training
 - OpenAI API — GPT-6 Sol: https://developers.openai.com/api/docs/models/gpt-6-sol
 - OpenAI API — GPT-6 Luna: https://developers.openai.com/api/docs/models/gpt-6-luna
 - OpenAI API — GPT-6 model guidance: https://developers.openai.com/api/docs/guides/latest-model
