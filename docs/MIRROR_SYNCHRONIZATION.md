@@ -1,5 +1,7 @@
 # Mirror Synchronization
 
+**Branch D1 · exact public distribution.** The shared cross-project source-of-truth is [Cross-Source Mirror Sync Protocol](CROSS_SOURCE_MIRROR_PROTOCOL.md). This file retains only Moon Source → website mirror mappings, exact-byte validation, and release operations. It does not govern private F1 frozen runtime dependencies, S1 procedural mirrors, or R1 selective inheritance. Do not duplicate their generic algorithm here.
+
 The Moon Source repository is the only semantic and versioning source for public capabilities. The branded files under LUAHELENA/moonsource/downloads/ are convenience mirrors of the current standalone distributions only.
 
 ## Contract
