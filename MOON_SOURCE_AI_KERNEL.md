@@ -1,6 +1,6 @@
 # Moon Source AI Kernel
 
-Use this file when an AI system receives the full Moon Source repository, the repository ZIP, or a subset of its public files.
+Use this file when an AI system opens the public Moon Source repository or canonical files by GitHub URL (preferred when supported), or receives an offline ZIP/snapshot (fallback).
 
 This is the public boot contract for operating Moon Source. It tells an AI how to read the repository, which files govern which decisions, what to load for a given task, and what not to infer.
 
@@ -8,7 +8,7 @@ It is subordinate to the AI platform's higher-order instructions, safety rules a
 
 ## 1. Boot sequence
 
-If you received the full repository or ZIP:
+If you can retrieve the public GitHub repository or its canonical files, start directly from their URLs. If that is unavailable or incomplete, use the offline ZIP instead. In either mode:
 
 1. Read this file first.
 2. Read `README.md` for orientation and public entry points.
@@ -467,7 +467,7 @@ If the answer is "nothing new needs to be created," that is a valid Moon Source 
 
 ---
 
-## Quick start for an AI receiving the ZIP
+## Quick start for an AI receiving the public URL or ZIP fallback
 
 If time is limited, do this:
 
@@ -479,9 +479,11 @@ If time is limited, do this:
 6. Check evidence/public-boundary files before making public claims.
 7. Return the result plus any concrete artifact the user actually requested.
 
-**Full public Moon Source ZIP:** https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip
+**Plan A — public repository URL:** https://github.com/luahelenammc/Moon-Source (or the smallest relevant canonical file URL). Follow First use and report which sources you actually retrieved.
 
-**Download hub:** `DOWNLOADS.md`
+**Plan B — offline repository ZIP:** https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip (use when the AI cannot access the links, retrieval is incomplete, or a snapshot is required).
+
+**Access and fallback guide:** [docs/USE_WITH_AI.md](docs/USE_WITH_AI.md) · **Download hub:** `DOWNLOADS.md`
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

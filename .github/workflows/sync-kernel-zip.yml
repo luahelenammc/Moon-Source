@@ -1,0 +1,50 @@
+# SPDX-FileCopyrightText: 2026 Lua Helena Moon Martins Cardoso (Moon)
+# SPDX-License-Identifier: Apache-2.0
+
+name: Synchronize AI Kernel ZIP fallback
+on:
+  push:
+    branches: [main]
+    paths:
+      - "MOON_SOURCE_AI_KERNEL.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-kernel-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Rebuild canonical kernel ZIP
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
+          source = Path("MOON_SOURCE_AI_KERNEL.md")
+          with ZipFile("downloads/moon-source-ai-kernel.zip", "w") as archive:
+              info = ZipInfo(source.name, date_time=(2026, 10, 10, 0, 0, 0))
+              info.compress_type = ZIP_DEFLATED
+              info.external_attr = 0o100644 << 16
+              archive.writestr(info, source.read_bytes(), compress_type=ZIP_DEFLATED, compresslevel=9)
+          PY
+      - name: Verify package has the current canonical bytes
+        run: python scripts/check_kernel_package.py
+      - name: Publish synchronized fallback
+        run: |
+          git add downloads/moon-source-ai-kernel.zip
+          if git diff --cached --quiet; then
+            echo "Kernel fallback already synchronized"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "build(kernel): synchronize ZIP fallback with canonical entry"
+          git push origin HEAD:main
