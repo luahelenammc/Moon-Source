@@ -8,7 +8,7 @@ If you are evaluating this work for a team, a product or an interview, [From met
 
 ## Make a first move
 
-Open [Moon Source Setup](portables/setup/MOON_SOURCE_SETUP.md) in an AI conversation and ask:
+**Plan A:** copy the public [Moon Source Setup URL](https://github.com/luahelenammc/Moon-Source/blob/main/portables/setup/MOON_SOURCE_SETUP.md) into an AI conversation that can open GitHub links. Ask the AI to retrieve the canonical entry and its First use section, then use this prompt:
 
 ~~~text
 Use Moon Source Setup for this task.
@@ -18,6 +18,8 @@ Tell me where it should live, what should stay out,
 and how I can test and update it.
 My problem: [describe it in ordinary words]
 ~~~
+
+**Plan B:** if that AI cannot retrieve the link, attach the [Setup ZIP](downloads/moon-source-setup.zip) or paste the canonical text. [Access guide](docs/USE_WITH_AI.md).
 
 Setup is a public method you can paste into a conversation. It does not install an app, create permanent memory or connect a source by itself. You may need to attach material or save the result where the AI can reach it next time.
 

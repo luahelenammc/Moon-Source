@@ -2,7 +2,7 @@
 
 **Turn messy, conversational or self-correcting human expression into the faithful task the person actually meant before execution begins.**
 
-[▶️ Start here](PREFLIGHT.md#first-use) · [⬇️ Download package](../../downloads/preflight.zip) · [🌙 Moon Source](../../README.md)
+[▶️ Canonical entry · give this GitHub link to your AI](PREFLIGHT.md#first-use) · [⬇️ ZIP fallback](../../downloads/preflight.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 

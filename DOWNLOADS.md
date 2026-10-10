@@ -1,8 +1,10 @@
-# Download Moon Source
+# Access Moon Source · links first, downloads when needed
 
-Choose the smallest download that matches what you need.
+**Plan A (recommended):** share the [public Moon Source repository](https://github.com/luahelenammc/Moon-Source) or the smallest relevant canonical-file link with an AI that can retrieve GitHub content. Ask it to read the canonical **First use** section and only the supporting files the task needs. [Copy-ready guidance](docs/USE_WITH_AI.md).
 
-## Download the full public Moon Source
+**Plan B:** use the downloadable ZIPs below if GitHub retrieval is unavailable or incomplete, or if offline/snapshot transport is required. No ZIP is necessary when Plan A works.
+
+## Full public Moon Source · ZIP fallback
 
 [**Download the complete Moon Source repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)
 
@@ -11,7 +13,7 @@ The ZIP contains the current public architecture, documentation, unified capabil
 The distribution is mixed-license: software and automation use Apache-2.0; documentation, methods and supported standalone distributions use CC-BY-4.0. Read the [licensing guide](LICENSING.md) and [`NOTICE`](NOTICE) before redistributing detached files.
 
 - **Human reader:** start with [README first use](README.md#first-use), then open the readable surface for the smallest relevant capability; its **Start** link leads to the canonical body.
-- **AI receiving the repository or ZIP:** start with `MOON_SOURCE_AI_KERNEL.md`.
+- **AI receiving the repository URL or ZIP:** start with [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md), then retrieve only task-relevant sources; confirm access instead of assuming all files were read.
 
 ## Download the AI Kernel by itself
 
@@ -21,7 +23,7 @@ Use the standalone kernel when you want to give an AI only selected Moon Source 
 
 ## Download one public standalone distribution
 
-| Capability | Canonical body | Best for | Direct download |
+| Capability | Canonical body (Plan A) | Best for | ZIP fallback (Plan B) |
 |---|---|---|---|
 | [🧭 **Setup**](portables/setup/README.md) | [MOON_SOURCE_SETUP.md](portables/setup/MOON_SOURCE_SETUP.md#first-use) | Adaptive routing for proportionate personal and project AI context | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup.zip) |
 | [🛫 **Preflight**](portables/preflight/README.md) | [PREFLIGHT.md](portables/preflight/PREFLIGHT.md#first-use) | Human-intent reconstruction before execution without requiring prompt-engineering language | [⬇️ Download package (`.zip`)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/preflight.zip) |
@@ -36,7 +38,7 @@ The MSL 5.1 package carries the exact canonical body, including its explicit for
 
 The current Be My Eyes capability version is **1.0-public**. The current Connected Sources capability version is **1.2**. The current Adaptive Orchestration Protocol version is **6.3**. Its model-neutral core keeps Behavioral Fit separate from Commitment Geometry: high-leverage choices can be probed or explored before dependent work scales, only the commitment-bearing delta can be side-routed or up-routed, and evidence can reopen a wrong choice without replaying unrelated valid work. Delegation-First orchestration, heterogeneous root/child topology, bounded exhaustiveness, connector-aware source transport, auditable Decision Trace, optional explicitly activated ephemeral Sprint Mode, Control-Root Postflight and subordinate adapters remain part of the protocol.
 
-GitHub renders raw Markdown inline, so the individual download links use small ZIP packages. Each current standalone package contains its canonical body and the readable package surfaces required by that distribution; the canonical body carries the operative First use entry. Website copies are convenience mirrors, not separate semantic sources.
+GitHub Markdown pages can be given to an AI with working retrieval directly. The individual ZIPs exist for AI sessions that cannot open those pages, need local files, or require a complete portable snapshot. Each current standalone package contains its canonical body and the readable package surfaces required by that distribution; the canonical body carries the operative First use entry. Website copies are convenience mirrors, not separate semantic sources.
 
 ## Presentation, authority and transport
 
@@ -45,7 +47,8 @@ The restored READMEs are repository-browsing surfaces only:
 ```text
 README = readable presentation / discoverability
 canonical body = semantic authority + embedded First use
-ZIP = canonical portable artifact
+GitHub URL = preferred access path when retrieval works
+ZIP = complete fallback transport snapshot
 website mirror = exact canonical delivery mirror
 ```
 
@@ -87,10 +90,10 @@ Connected Sources remains the structural crown jewel at `docs/CONNECTED_SOURCES.
 
 [Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) is the separate public body for domain-shaped systems. It may use Moon Source for installation and context governance, but it is not a Moon Source capability and does not require Moon Source as a permanent runtime dependency.
 
-## Which download should I choose?
+## Which resource should I share?
 
-- **Giving Moon Source files to an AI?** Download the **Moon Source AI Kernel**.
-- **Just want AI to understand you better?** Download **Moon Source Setup** (version **3.1**).
+- **Giving the full repository URL to an AI?** Point it to the **Moon Source AI Kernel** on GitHub; use the Kernel ZIP only if direct retrieval fails.
+- **Just want AI to understand you better?** Open the **Moon Source Setup** canonical link (or download the ZIP as fallback) (version **3.1**).
 - **Want AI to reconstruct what you mean before it acts?** Download **Preflight** (version **2.3**).
 - **Want AI to read what is happening between people, or predict how your message may land without pretending to read minds?** Download **Be My Eyes**.
 - **Need AI to return to current material across sessions or operate over governed connected sources?** Download **Connected Sources** (version **1.2**).

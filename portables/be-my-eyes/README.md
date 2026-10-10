@@ -2,7 +2,7 @@
 
 **Read a message, thread, screenshot, note or draft as a human scene — without pretending inference is fact.**
 
-[▶️ Start here](BE_MY_EYES.md#first-use) · [⬇️ Download package](../../downloads/be-my-eyes.zip) · [🌙 Moon Source](../../README.md)
+[▶️ Canonical entry · give this GitHub link to your AI](BE_MY_EYES.md#first-use) · [⬇️ ZIP fallback](../../downloads/be-my-eyes.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 

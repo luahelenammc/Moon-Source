@@ -2,7 +2,7 @@
 
 **Build the smallest useful AI context setup for a person or project without turning context into a pile of everything.**
 
-[▶️ Start here](MOON_SOURCE_SETUP.md#first-use) · [⬇️ Download package](../../downloads/moon-source-setup.zip) · [🌙 Moon Source](../../README.md)
+[▶️ Canonical entry · give this GitHub link to your AI](MOON_SOURCE_SETUP.md#first-use) · [⬇️ ZIP fallback](../../downloads/moon-source-setup.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 
