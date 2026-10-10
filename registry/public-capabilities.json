@@ -22,7 +22,7 @@
       ],
       "difficulty": "beginner to advanced",
       "distribution": {
-        "canonical_sha256": "49d3aef6350ab67ee8e1b76581f62ef995697d2f1e93aa02d52dca3a889aa861",
+        "canonical_sha256": "0c743948345a907650f3e49830ffbcc17b1789bb9670dd309cb74072c11a0577",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/be-my-eyes.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/BE_MY_EYES.md",
@@ -148,7 +148,7 @@
       ],
       "difficulty": "intermediate to advanced",
       "distribution": {
-        "canonical_sha256": "d023ed0d7b5b65091e3f5eabe1b0969f3e7103394304ceb759a48a8835620f97",
+        "canonical_sha256": "b44d76a500e3ef89c1c962fd0afc0077864470ef02228b4883a1e8d3f2231448",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/connected-sources.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/CONNECTED_SOURCES.md",
@@ -306,7 +306,7 @@
       "dependencies": [],
       "difficulty": "beginner to builder",
       "distribution": {
-        "canonical_sha256": "b8796a8cdb88e50cacee50e6ac66fd0c352575702311f9806cb8930359ba6568",
+        "canonical_sha256": "4e57da23132a5160930b81bc8895046443e0d3b9cae54508e55895689cc2043b",
         "download_url": "https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/moon-source-setup.zip",
         "embedded_first_use": true,
         "mirror_path": "moonsource/downloads/MOON_SOURCE_SETUP.md",
