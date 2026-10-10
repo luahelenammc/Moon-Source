@@ -14,6 +14,12 @@ Use the existing owner for each kind of record:
 
 Do not copy the same history into a README. A short link to the relevant changelog or registry is appropriate. Keep current facts that a reader needs to use or identify the artifact, such as its current version, compatibility route or status.
 
+## Access and first-use language
+
+Whenever a README, public catalog or onboarding document explains how an AI can use Moon Source, lead with **Plan A: pass the public GitHub repository/canonical-file URL to an AI with retrieval access**, requesting the smallest task-relevant source set and verifying which files were opened. **Plan B:** download/attach the relevant ZIP only if direct retrieval is unsupported, unavailable, incomplete, or an offline/reproducible snapshot is needed. Do not say or imply that a ZIP is universally required, that all AI systems can crawl links, or that reading grants activation, access permissions or mutation authority. [Reusable reader instructions](USE_WITH_AI.md).
+
+Keep this rule visible in entry surfaces without duplicating it as a new large section in every specialist document. For portable READMEs, a concise link-first line with ZIP fallback is sufficient. Do not change licensing, semantic version, authority or package contents merely because access wording changes.
+
 ## Change rule
 
 When an accepted change warrants a history record under the repository's release and registry rules, update the owning changelog or registry as part of that change. Keep the README focused on orientation, first use, current behavior and boundaries. Do not generate a *recent changes* digest in a README.
