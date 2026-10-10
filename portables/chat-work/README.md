@@ -5,7 +5,7 @@
 - [Open the current readable surface](../adaptive-orchestration/README.md)
 - [Open the canonical protocol body](../adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
 
-This page is a compatibility landing surface. The links above lead to the single current semantic authority.
+This page is a compatibility landing surface. **Plan A:** give your AI the current canonical-protocol GitHub link above and ask it to read the applicable First use section. **Plan B:** use the [Adaptive Orchestration ZIP](../../downloads/adaptive-orchestration-protocol.zip) if direct URL retrieval is unavailable. [Access guide](../../docs/USE_WITH_AI.md). The links above lead to the single current semantic authority.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

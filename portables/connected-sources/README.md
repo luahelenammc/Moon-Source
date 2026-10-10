@@ -2,7 +2,7 @@
 
 **Let AI work with persistent external sources while keeping access, authority, freshness, mutation and readback separate.**
 
-[▶️ Start here](../../docs/CONNECTED_SOURCES.md#first-use) · [⬇️ Download package](../../downloads/connected-sources.zip) · [🌙 Moon Source](../../README.md)
+[▶️ Canonical entry · Plan A](../../docs/CONNECTED_SOURCES.md#first-use) · [⬇️ ZIP fallback · Plan B](../../downloads/connected-sources.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 

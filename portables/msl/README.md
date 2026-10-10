@@ -2,7 +2,7 @@
 
 **Sovereign Semantic Passage** — a structural language for moving situated context across sources, systems and surfaces without losing meaning, provenance, authority or boundaries.
 
-[▶️ Start here](MOON_SOURCE_LANGUAGE.md#first-use) · [⬇️ Download package](../../downloads/moon-source-language.zip) · [🌙 Moon Source](../../README.md)
+[▶️ Canonical entry · Plan A](MOON_SOURCE_LANGUAGE.md#first-use) · [⬇️ ZIP fallback · Plan B](../../downloads/moon-source-language.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
 
