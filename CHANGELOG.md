@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-10 — Adaptive Orchestration 6.4 · GPT-6 in Chat
+
+- Corrected dated availability: GPT-6 Sol now powers eligible paid Chat plans, while GPT-6 Luna powers Free/Go Chat plans under the GPT-6 label; the October conversation variants are distinct from the September Work/Codex executor releases.
+- Advanced the subordinate GPT-6 Sol/Luna adapter **1.6 → 1.7**, preserving distinct surface-specific tools, controls, pricing/usage boundaries and real availability probes.
+- Applied the repository's canonical-body +0.1 version rule (**AOP 6.3 → 6.4**) for the one-line core availability correction. No changes to Delegation-First, Behavioral Fit, Commitment Geometry, Astra 1.9 or MSL 5.1.
+
 ## 2026-10-01 — Adaptive Orchestration 6.3 · Commitment Geometry
 
 - Advanced the Adaptive Orchestration core from **6.2 to 6.3** as a material additive-and-superseding routing release.
