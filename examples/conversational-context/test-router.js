@@ -5,7 +5,7 @@ const {buildContext} = require("./router.js");
 
 const fixture = () => ({
   today:"2026-10-14",
-  request:{purpose:"continuity",region:"FICTIONAL-REGION-A",action:"resume"},
+  request:{purpose:"continuity",region:"FICTIONAL-REGION-A",subjectKey:"FICTIONAL-SUBJECT-A",action:"resume"},
   consent:{status:"granted",purposes:["continuity"],validUntil:"2026-12-31"},
   policy:{allowedPurposes:["continuity"],allowedActions:["resume", "review"],
     allowedKinds:["program_state","dialogue_state"],maxAgeDays:30,
@@ -15,10 +15,10 @@ const fixture = () => ({
     purposes:["continuity"],allowedKinds:["program_state","dialogue_state"],
     fieldsByKind:{program_state:["module"],dialogue_state:["last_topic"]}},
   records:[
-    {kind:"program_state",updatedAt:"2026-10-13",allowedPurposes:["continuity"],
+    {kind:"program_state",subjectKey:"FICTIONAL-SUBJECT-A",region:"FICTIONAL-REGION-A",updatedAt:"2026-10-13",allowedPurposes:["continuity"],
       provenance:{authority:"operator-approved",substrate:"api",revision:"synthetic-r1"},
       fields:{module:3,next_activity:"Exercise 4",medical_note:"NEVER EXPOSE"}},
-    {kind:"dialogue_state",updatedAt:"2026-10-13",allowedPurposes:["continuity"],
+    {kind:"dialogue_state",subjectKey:"FICTIONAL-SUBJECT-A",region:"FICTIONAL-REGION-A",updatedAt:"2026-10-13",allowedPurposes:["continuity"],
       provenance:{authority:"operator-approved",substrate:"query",revision:"synthetic-r3"},
       fields:{last_topic:"Returning after a gap",raw_transcript:"NEVER EXPOSE"}}
   ]
@@ -95,6 +95,25 @@ test("malformed record set blocks, rather than overflowing the trace",()=>{
  const r=run(f=>f.records=new Array(21).fill(f.records[0]));
  assert.equal(r.status,"blocked");
  assert.equal(r.reason,"invalid_contract");
+});
+
+test("records from another subject never enter the chosen conversational context",()=>{
+ const r=run(f=>f.records.push({...f.records[0],subjectKey:"FICTIONAL-SUBJECT-B",
+   updatedAt:"2026-10-14",fields:{module:99}}));
+ assert.equal(r.status,"ready");
+ assert.equal(r.context[0].fields.module,3);
+ assert.doesNotMatch(JSON.stringify(r),/FICTIONAL-SUBJECT-B|99/);
+});
+test("records from another region are excluded even with a valid request profile",()=>{
+ const r=run(f=>f.records.push({...f.records[0],region:"FICTIONAL-REGION-B",
+   updatedAt:"2026-10-14",fields:{module:99}}));
+ assert.equal(r.status,"ready");
+ assert.equal(r.context[0].fields.module,3);
+});
+test("no subject reference blocks context assembly",()=>{
+ const r=run(f=>delete f.request.subjectKey);
+ assert.equal(r.status,"blocked");
+ assert.equal(r.reason,"unsupported_request");
 });
 
 // MOON-SOURCE-PUBLIC-STAMP
