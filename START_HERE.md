@@ -34,6 +34,7 @@ Setup is a public method you can paste into a conversation. It does not install 
 | “I have too many notes and files.” | Look for duplicates, outdated sources and decisions with no visible owner before writing a shorter summary. | [Source Hygiene](docs/SOURCE_HYGIENE.md) | Making a mega-summary before deciding what still matters. |
 | “I want AI to use current files.” | Check whether the AI can reach the actual source, what part it can read and whether the source is fresh enough for this task. | [Connected Sources](docs/CONNECTED_SOURCES.md) | Assuming a search result, connector or old copy is current and authoritative. |
 | “I need to move context to another AI or thread.” | Carry the task, current state, governing sources, uncertainty and next step in a bounded handoff. | [Moon Source Language](portables/msl/MOON_SOURCE_LANGUAGE.md) | Copying the whole archive when only a small part needs to travel. |
+| “I am building an assistant with an API, app state or spreadsheets.” | Define what conversational and operational state is allowed to enter each interaction, then test the boundary with invented records. | [Conversational Context](docs/CONVERSATIONAL_CONTEXT.md) | Assuming a prompt alone enforces consent, permissions or laws. |
 
 These routes are starting points, not a required sequence. If the task is already clear, use the relevant method directly. If it is not, begin with the human need and let the smallest route emerge.
 

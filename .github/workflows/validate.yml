@@ -9,6 +9,7 @@ on:
       - "*.md"
       - "**/*.md"
       - "registry/**"
+      - "examples/**"
       - "scripts/**"
       - "downloads/**"
       - "LICENSE"
@@ -30,6 +31,7 @@ on:
       - "*.md"
       - "**/*.md"
       - "registry/**"
+      - "examples/**"
       - "scripts/**"
       - "downloads/**"
       - "LICENSE"
@@ -61,6 +63,10 @@ jobs:
           python-version: "3.x"
       - run: python -m pip install --disable-pip-version-check --no-input reuse cffconvert
       - run: python scripts/moon_source.py validate
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node --test examples/conversational-context/test-router.js
 
   remote-mirror-drift:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'

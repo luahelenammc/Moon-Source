@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-14 — Conversational context integration (synthetic, non-capability)
+
+- Added a subordinate integration contract for products where governed context is drawn from APIs, queries, spreadsheets and conversation state, not only documents.
+- Added an operator-reviewed jurisdiction requirements boundary. It does not determine applicable law or certify compliance.
+- Added a deterministic synthetic conversational-context selector and Node.js regression tests for purpose, consent, field minimization, source provenance, freshness, conflicts and human escalation.
+- Linked the reading path from Architecture, For AI Builders, Start Here, Kernel and the examples/evidence directories. The existing capability registry and standalone packages are unchanged; no product, live assistant or external adoption is claimed.
+
+
 ## 2026-10-10 — Adaptive Orchestration 6.4 · GPT-6 in Chat
 
 - Corrected dated availability: GPT-6 Sol now powers eligible paid Chat plans, while GPT-6 Luna powers Free/Go Chat plans under the GPT-6 label; the October conversation variants are distinct from the September Work/Codex executor releases.

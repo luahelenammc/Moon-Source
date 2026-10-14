@@ -26,6 +26,10 @@ The reference remains **experimental** and is not registered as a current portab
 - [Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md)
 - [Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md)
 
+## Conversational Context — Synthetic Selector
+
+[`conversational-context/`](conversational-context/) provides a dependency-free Node.js reference for filtering invented API-, query- or spreadsheet-shaped records before a hypothetical conversational turn. It illustrates consent/purpose, reviewed jurisdiction configuration, minimal fields, currentness, conflicting sources and explicit human escalation. The fixture neither retrieves actual records nor invokes an LLM or certifies legal compliance. See the [architecture contract](../docs/CONVERSATIONAL_CONTEXT.md).
+
 ## Hypothetical application scenarios
 
 [`application-scenarios/`](application-scenarios/) is a fictional didactic gallery showing how Moon Source **could** be applied to common context problems across health and care, public services, customer journeys, company operations, audit, people and learning, third-sector coordination, and living documentation.

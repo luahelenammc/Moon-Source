@@ -15,6 +15,9 @@ Moon Source is disclosed through existing evidence only. This repository organiz
 
 ## What the current public body supports
 
+- A subordinate [Conversational Context integration contract](docs/CONVERSATIONAL_CONTEXT.md), [jurisdictional requirements boundary](docs/JURISDICTIONAL_REQUIREMENTS.md) and [synthetic deterministic selector](examples/conversational-context/README.md) illustrate how existing Moon Source responsibilities can inform API-native conversational products. Evidence: PUBLIC_ARTIFACT, PUBLIC_REPOSITORY, IMPLEMENTED_BOUNDED for the isolated selector only; TESTED_BOUNDED only when the repository's automated test run passes. This does not demonstrate actual legal compliance, externally deployed AI products, clinical support, real participant data handling, model reliability or third-party adoption.
+
+
 - Moon Source is a public context-architecture method and reference architecture. Evidence: PUBLIC_ARTIFACT, PUBLIC_REPOSITORY.
 - A separate public [Moon Cortex repository](https://github.com/luahelenammc/Moon-Cortex) exists as a related applied/system body for domain-shaped modules. This establishes a public relationship and discoverability route, not that Cortex is a Moon Source capability, permanent dependency or adoption claim. Evidence: PUBLIC_REPOSITORY.
 - Moon Source includes independently readable public portables for setup, human-intent reconstruction, contextual scene reading, connected sources, adaptive structural grammar and adaptive orchestration. Evidence: PUBLIC_ARTIFACT.

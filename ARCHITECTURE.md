@@ -51,6 +51,8 @@ Moon Source asks: what may govern, how current is it, what may travel or mutate,
 
 These are responsibility-oriented comparisons, not a universal ontology. A harness or retrieval system may implement some governance of its own; Moon Source complements those mechanisms rather than replacing them. It is not an agent harness, RAG engine, orchestration framework, runtime or SDK.
 
+**Conversational products are also a context field.** Application state obtained from APIs, database queries, spreadsheets or event systems can govern what a user-facing assistant may say or remember between exchanges. Documents are only one context substrate. The subordinate [Conversational Context integration contract](docs/CONVERSATIONAL_CONTEXT.md) illustrates purpose, permissions, dialogue state, trusted operational state, human escalation and synthetic acceptance tests without creating another Moon Source capability. Jurisdiction-specific constraints require operator-approved [requirements profiles](docs/JURISDICTIONAL_REQUIREMENTS.md), not model-invented legal decisions.
+
 ## Relationship to Moon Cortex
 
 [Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) is the related public applied/system body for domain-shaped modules. Moon Source governs context, authority, provenance, freshness, transport and reconfiguration; Cortex owns domain-specific module identity and operation.
