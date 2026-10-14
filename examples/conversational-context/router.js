@@ -37,9 +37,10 @@ function buildContext(input) {
   if (!isPlainObject(request) || !isPlainObject(consent) || !isPlainObject(policy)
       || !isPlainObject(legal) || !Array.isArray(records) || records.length > 20)
     return denied("invalid_contract");
-  const {purpose, region, action} = request;
+  const {purpose, region, action, subjectKey} = request;
   if (!contains(ACTIONS, action) || typeof region !== "string"
-      || !region || typeof purpose !== "string" || !purpose)
+      || !region || typeof subjectKey !== "string" || !subjectKey
+      || typeof purpose !== "string" || !purpose)
     return denied("unsupported_request");
   if (action === "human_handoff")
     return escalate("human_requested", [{step: "handoff", result: "explicit"}]);
@@ -68,7 +69,8 @@ function buildContext(input) {
     const candidates = records.filter((record) => record && record.kind === kind);
     const eligible = [];
     for (const item of candidates) {
-      if (!isPlainObject(item) || !isPlainObject(item.fields) || !isPlainObject(item.provenance)
+      if (!isPlainObject(item) || item.subjectKey !== subjectKey || item.region !== region
+          || !isPlainObject(item.fields) || !isPlainObject(item.provenance)
           || item.provenance.authority !== "operator-approved"
           || !contains(["api", "query", "spreadsheet"], item.provenance.substrate)
           || !safeDate(item.updatedAt) || item.updatedAt > today

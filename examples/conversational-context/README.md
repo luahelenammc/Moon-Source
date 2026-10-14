@@ -27,7 +27,7 @@ The test file contains a complete ready-to-run fabricated input.
 
 **Input responsibilities:**
 
-- `request` declares a known action, purpose and fictional region.
+- `request` declares a known action, purpose, fictional region and pseudonymous subject key resolved by a trusted application. Every input record must match that scope; the key is not returned.
 - `consent` and `policy` are **application-side**, not arbitrary user prompts.
 - `jurisdictionProfile` represents an externally reviewed requirement envelope supplied by the operator. The demo cannot verify that any actual reviewer, consent system or statute exists.
 - `records` are synthetically shaped `program_state`, `dialogue_state` or `preference` objects, with dates, purpose, provenance and candidate fields.
@@ -40,7 +40,7 @@ The test file contains a complete ready-to-run fabricated input.
 - `escalate`: a human should resolve conflicting or missing authorized state before proceeding.
 - `trace`: stage names, counts and reasons, without raw dialogue, participant identifiers, medical details or full source content.
 
-Tests cover consent revocation/expiry, mismatched purpose and region, unreviewed/expired requirement profile, unknown actions, stale and future-dated records, source authority, cross-source conflict, allowed API/query/spreadsheet substrate labels, field-level minimization and safe handling of unsupported values.
+Tests cover consent revocation/expiry, mismatched purpose and region, subject/record isolation, unreviewed/expired requirement profile, unknown actions, stale and future-dated records, source authority, cross-source conflict, allowed API/query/spreadsheet substrate labels, field-level minimization and safe handling of unsupported values.
 
 ## What the code purposely does not do
 
