@@ -40,7 +40,7 @@ The test file contains a complete ready-to-run fabricated input.
 - `escalate`: a human should resolve conflicting or missing authorized state before proceeding.
 - `trace`: stage names, counts and reasons, without raw dialogue, participant identifiers, medical details or full source content.
 
-Tests cover consent revocation/expiry, mismatched purpose and region, unreviewed/expired requirement profile, unknown actions, stale and future-dated records, source authority, cross-source conflict, allowed API/query/spreadsheet substrate labels, field-level minimization and safe handling of unsupported values.
+Tests cover consent revocation/expiry, mismatched purpose and region, subject/record isolation, unreviewed/expired requirement profile, unknown actions, stale and future-dated records, source authority, cross-source conflict, allowed API/query/spreadsheet substrate labels, field-level minimization and safe handling of unsupported values.
 
 ## What the code purposely does not do
 
