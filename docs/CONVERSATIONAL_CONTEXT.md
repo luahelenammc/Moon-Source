@@ -25,7 +25,7 @@ Treat each piece of context as a governed object, not as an unbounded chat trans
 
 | Field / facet | Intended responsibility |
 |---|---|
-| Scoped subject reference | A pseudonymous key resolved only by an authorized application; not public personal identity |
+| Scoped subject reference | A pseudonymous key resolved only by an authorized application, matched against every retrieved record and constrained by region; not public personal identity |
 | Purpose and action | Why context is requested, and what the application may actually do |
 | Session / dialogue state | Last relevant conversation state, distinct from raw transcript and from authoritative program records |
 | Operational state | Current milestone, status or scheduled event returned from an approved system |
