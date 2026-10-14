@@ -32,7 +32,8 @@ This is a responsibility map, not a deployed integration. Moon Source supplies p
 | System prompt or instruction layer | Provides behavior rules to the model. | General behavior instructions do not replace current project facts or source ownership. |
 | Moon Source | Organizes authority, responsibility, context scope, freshness, provenance, mutation boundaries and continuity. | It is a reference architecture and set of public methods, not a hosted service or universal integration. |
 
-## Three integration patterns
+## Four integration patterns
+
 
 ### 1. Agent or harness loop
 
@@ -64,6 +65,18 @@ A store can persist context while leaving unanswered who owns it, which parts re
 Use [Moon Source Setup](../portables/setup/MOON_SOURCE_SETUP.md) to choose a small personal or project context. Consider [Connected Sources](CONNECTED_SOURCES.md) only when a persistent substrate and an authorized access surface actually exist. Use [Source Operations](SOURCE_OPERATIONS.md) when material needs to be retrieved, transformed, integrated into a governing source or deliberately generalized.
 
 After an authorized material change, verify the resulting state. [Operational Reliability](OPERATIONAL_RELIABILITY.md) is useful when execution can fail partway or needs a receipt and recovery route. None of these documents imply a native connector for a particular framework or vendor.
+
+### 4. API-native conversational application
+
+When an application assembles context through database queries, APIs, spreadsheets, event state or similar systems, the central question is not only “which file is current?” but also **“which permitted state may influence this user's next interaction?”**
+
+- Keep operational state and dialogue-derived state distinct; record owner, revision and freshness for both.
+- Restrict fields by purpose and region, minimize retention and honor withdrawal or revocation through enforcement implemented by the operating application.
+- Treat user turns, retrieval results and spreadsheet cells as lower-trust data, not instructions authorizing new privileges.
+- Reserve sensitive decisions, unsupported responses and conflicting state for the correct human process.
+- Test with invented records before connecting any real users or data.
+
+The [Conversational Context contract](CONVERSATIONAL_CONTEXT.md) and [synthetic selector](../examples/conversational-context/README.md) illustrate this composition. Any compliance requirement must come from the operator's reviewed [jurisdictional profile](JURISDICTIONAL_REQUIREMENTS.md), not from model inference. Moon Source itself provides neither authentication nor a chatbot runtime.
 
 ## Compositions that may help
 
