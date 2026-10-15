@@ -82,7 +82,7 @@ function buildContext(input) {
   for (const kind of KINDS) {
     if (!contains(policy.allowedKinds, kind) || !contains(legal.allowedKinds, kind))
       continue;
-    const candidates = records.filter((record) => record && record.kind === kind);
+    const candidates = records.filter((record) => record && record.kind === kind && record.subjectKey === subjectKey && record.region === region);
     const eligible = [];
     const maxAge = policy.maxAgeDaysByKind?.[kind] ?? policy.maxAgeDays;
     for (const item of candidates) {
