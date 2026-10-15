@@ -2,6 +2,8 @@
 
 **Build the smallest useful AI context setup for a person or project without turning context into a pile of everything.**
 
+**How to apply it:** give a compatible AI the canonical Setup instructions and describe the person or project context you want to organize. Setup guides the questions and structure; the AI's environment must supply any storage or lasting memory.
+
 [▶️ Canonical entry · give this GitHub link to your AI](MOON_SOURCE_SETUP.md#first-use) · [⬇️ ZIP fallback](../../downloads/moon-source-setup.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when

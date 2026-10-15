@@ -4,9 +4,19 @@
 🌐 **Read this README in:** [🇧🇷 Português (Brasil)](translations/README.pt-BR.md) · [🇪🇸 Español](translations/README.es.md) · [🇨🇳 简体中文](translations/README.zh-CN.md) · [🇷🇺 Русский](translations/README.ru.md)
 <!-- MOON-SOURCE-LANGUAGE-NAV:END -->
 
-**Governed context for AI: decide what should exist, what governs, what travels, and what stays current.**
+**Modular protocols and methods that help AI work with clearer context, continuity and checks. Moon Source is not an application or an AI model.**
 
 Moon Source is a public reference architecture for deciding which context AI should use, which source governs, what may change, and how useful context stays legible over time. This repository is its canonical public body.
+
+## How Moon Source works
+
+**The concept:** each protocol or method defines a responsibility, such as understanding a request, choosing authoritative sources, preserving continuity or checking an outcome. Modules can be used selectively; you do not need to load the entire repository.
+
+**Use it directly with an AI:** give a compatible language model the relevant canonical instructions (a GitHub link when retrieval works, or pasted/attached text) and ask it to apply them to your task. Check what it actually read and followed.
+
+**Use it inside an AI product:** developers translate relevant methods into model instructions, application logic, workflows, interfaces and tests. Their product supplies the runtime, data access, storage, permissions and enforcement.
+
+**Concept is not implementation.** Moon Source defines expected behavior; the AI or application supplies the execution environment. Reading a protocol alone does not install software, create memory, access private data or guarantee correct execution.
 
 ## What brings you here?
 

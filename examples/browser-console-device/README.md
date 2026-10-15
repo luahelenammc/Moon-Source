@@ -8,6 +8,8 @@ This example is the first public materialization of an [Operational Device](../.
 
 It is intentionally not a stable portable. The adapter contract is surface-specific, DOMs and data shapes change, and cross-surface stability has not been demonstrated.
 
+**Concept versus implementation:** Operational Devices defines how a procedure should bind to a concrete execution surface. This synthetic console adapter is one inspectable implementation experiment; the protocol alone cannot open a browser or control a session.
+
 **MSL profile:** 5.1-compatible Markdown-native experimental reference surface; runtime and non-portable boundaries remain unchanged.
 
 ## What the core demonstrates

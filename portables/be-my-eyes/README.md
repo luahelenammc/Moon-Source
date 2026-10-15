@@ -2,6 +2,8 @@
 
 **Read a message, thread, screenshot, note or draft as a human scene — without pretending inference is fact.**
 
+**How to apply it:** provide the canonical Be My Eyes method with a message, scene or draft and ask a compatible AI to distinguish observations, possible interpretations and unknowns. The method guides a reading; it does not establish anyone's private motives.
+
 [▶️ Canonical entry · give this GitHub link to your AI](BE_MY_EYES.md#first-use) · [⬇️ ZIP fallback](../../downloads/be-my-eyes.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when

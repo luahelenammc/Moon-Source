@@ -6,6 +6,8 @@ Adaptive Orchestration Protocol (AOP) helps an AI route work across the right co
 
 Its efficiency target is **minimum total work to an accepted state**. Lower-cost sufficient execution should absorb reducible bulk; stronger cognition should be concentrated at the bottlenecks where it can materially change the result. AOP also checks whether an open, high-leverage solution choice should be probed or resolved before dependent work scales, since an inexpensive first commitment can create costly correction or replay. Repeated context ingestion, unnecessary surface switching, avoidable retries, tool churn and agent fan-out remain real execution costs, without lowering the capability floor the task actually needs.
 
+**How to apply it:** give a compatible AI the canonical AOP instructions before a task whose execution choices matter. The protocol guides routing and verification; the actual available models, tools, delegation and actions depend on the host environment.
+
 [▶️ Canonical entry · Plan A](ADAPTIVE_ORCHESTRATION_PROTOCOL.md#first-use) · [⬇️ ZIP fallback · Plan B](../../downloads/adaptive-orchestration-protocol.zip) · [🌙 Moon Source](../../README.md)
 
 ## Why use AOP?

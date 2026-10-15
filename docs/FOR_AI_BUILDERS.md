@@ -6,6 +6,8 @@ This guide explains where those decisions sit beside an existing AI stack. It is
 
 For an evidence-first route from a real workflow problem through context/state specification, synthetic test and possible pilot, see [From method to implementation](FROM_METHOD_TO_IMPLEMENTATION.md). It separates what already exists from what an implementation partner would still need to build. The [Architecture](../ARCHITECTURE.md), [Moon Source AI Kernel](../MOON_SOURCE_AI_KERNEL.md) and linked capability bodies remain authoritative for their own responsibilities.
 
+**Concept versus implementation:** a Moon Source protocol specifies desired behavior and boundaries; an application implements those requirements with its own prompts, code, access controls, state, workflows and tests. A compatible LLM may follow loaded instructions in a single task, but documentation alone does not provide a runtime or enforce those boundaries. [Direct use with AI](USE_WITH_AI.md) is distinct from integration into a product.
+
 ## Where it sits
 
 ~~~mermaid

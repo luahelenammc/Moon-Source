@@ -4,6 +4,8 @@
 
 O que existe entre “tenho um método de contexto” e “isso funciona para outra pessoa”? Este guia apresenta um percurso curto, com pontos de verificação. É uma porta de leitura do Moon Source, sem criar outra capacidade ou fonte de autoridade.
 
+**Chave de leitura:** o conceito é o método documentado; o uso direto ocorre quando um modelo compatível recebe e segue esse método numa tarefa; a implementação em produto exige traduzi-lo em comportamento de software delimitado e verificar o resultado. São níveis de evidência diferentes.
+
 ## 1. De onde veio o método
 
 O Moon Source surgiu das dificuldades que sua criadora enfrentava ao usar IA continuamente em mais de 30 workspaces pessoais e profissionais. Eram problemas concretos: repetir decisões já tomadas, recuperar documentos desatualizados e misturar informações de projetos diferentes. O desenvolvimento foi feito por *dogfooding*: identificar uma falha, definir quem responde pela informação e como atualizá-la, aplicar a regra no próprio trabalho, observar o resultado e revisar. Houve colaboração de IA na exploração, organização e verificação das soluções, com direção arquitetural da criadora.

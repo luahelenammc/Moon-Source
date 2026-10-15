@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: es
 source: ../README.md
-source_sha256: e654da9e18874298f10f04427840fb3caba9ece57b09ac166f5fd4bc21b8d0ed
+source_sha256: 15933afe0015015160e1522a6e177b5cab8e4081567f1c80cff2fb88c199f549
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -14,9 +14,19 @@ contract: ../docs/README_TRANSLATIONS.md
 
 Esta es una traducción completa del README canónico en inglés. Es un espejo derivado para facilitar el acceso; si hay alguna diferencia, prevalece el README en inglés hasta que se corrija esta traducción.
 
-**Contexto gobernado para IA: decide qué debe existir, qué tiene autoridad, qué circula y qué se mantiene al día.**
+**Protocolos y métodos modulares para que la IA trabaje con contexto, continuidad y verificaciones más claros. Moon Source no es una aplicación ni un modelo de IA.**
 
 Moon Source es una arquitectura pública de referencia para decidir qué contexto debe usar la IA, qué fuente tiene autoridad, qué puede cambiar y cómo mantener legible el contexto útil a lo largo del tiempo. Este repositorio es su cuerpo público canónico.
+
+## Cómo funciona Moon Source
+
+**El concepto:** cada protocolo o método define una responsabilidad, como entender una solicitud, elegir fuentes autorizadas, preservar la continuidad o verificar un resultado. Los módulos se pueden usar de forma selectiva; no hace falta cargar todo el repositorio.
+
+**Uso directo con una IA:** proporciona a un modelo de lenguaje compatible las instrucciones canónicas pertinentes (enlace de GitHub si puede recuperarlas, o texto pegado/adjunto) y pídele que las aplique a tu tarea. Comprueba qué leyó y siguió realmente.
+
+**Uso dentro de un producto de IA:** quienes desarrollan el producto traducen los métodos pertinentes en instrucciones para el modelo, lógica de aplicación, flujos, interfaces y pruebas. El producto aporta el entorno de ejecución, acceso a datos, almacenamiento, permisos y controles.
+
+**El concepto no es la implementación.** Moon Source define el comportamiento esperado; la IA o aplicación aporta el entorno de ejecución. Leer un protocolo no instala software, crea memoria, accede a datos privados ni garantiza su ejecución correcta.
 
 ## ¿Qué te trae aquí?
 

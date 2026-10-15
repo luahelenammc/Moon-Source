@@ -4,6 +4,8 @@ These fictional worked examples show how Moon Source could be applied to common 
 
 > **Status:** hypothetical / fictional didactic scenarios. These examples illustrate how Moon Source could be applied to common context problems. They are not evidence of external adoption, implementation, measured impact or independent validation.
 
+**How to read these:** each scenario explains a possible use of a protocol, but contains no deployed system. To apply a method, give its canonical instructions to a compatible AI or have an application team implement the relevant behavior.
+
 **MSL profile:** 5.1-compatible Markdown-native scenario-gallery surface; examples remain fictional and non-evidentiary.
 
 The recurring shape is deliberately small:

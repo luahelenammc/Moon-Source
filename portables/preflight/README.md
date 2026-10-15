@@ -2,6 +2,8 @@
 
 **Turn messy, conversational or self-correcting human expression into the faithful task the person actually meant before execution begins.**
 
+**How to apply it:** provide the canonical Preflight instructions to a compatible AI when a request needs clarification of intent before execution. It guides interpretation and checks; it does not execute tools or grant permissions itself.
+
 [▶️ Canonical entry · give this GitHub link to your AI](PREFLIGHT.md#first-use) · [⬇️ ZIP fallback](../../downloads/preflight.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when

@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: pt-BR
 source: ../README.md
-source_sha256: e654da9e18874298f10f04427840fb3caba9ece57b09ac166f5fd4bc21b8d0ed
+source_sha256: 15933afe0015015160e1522a6e177b5cab8e4081567f1c80cff2fb88c199f549
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -14,9 +14,19 @@ contract: ../docs/README_TRANSLATIONS.md
 
 Esta é uma tradução completa do README canônico em inglês. É um espelho derivado para facilitar o acesso; em caso de divergência, o README em inglês prevalece até que esta tradução seja corrigida.
 
-**Contexto governado para IA: decida o que deve existir, o que governa, o que circula e o que continua atualizado.**
+**Protocolos e métodos modulares para ajudar a IA a trabalhar com contexto, continuidade e verificações mais claros. Moon Source não é um aplicativo nem um modelo de IA.**
 
 Moon Source é uma arquitetura pública de referência para decidir qual contexto a IA deve usar, qual fonte governa, o que pode mudar e como manter o contexto útil legível ao longo do tempo. Este repositório é seu corpo público canônico.
+
+## Como o Moon Source funciona
+
+**O conceito:** cada protocolo ou método define uma responsabilidade, como compreender um pedido, selecionar fontes com autoridade, preservar a continuidade ou verificar um resultado. Os módulos podem ser usados seletivamente; não é necessário carregar o repositório inteiro.
+
+**Uso direto com uma IA:** forneça a um modelo de linguagem compatível as instruções canônicas pertinentes (link do GitHub quando houver acesso, ou texto colado/anexado) e peça que as aplique à tarefa. Confira o que foi realmente lido e seguido.
+
+**Uso dentro de um produto de IA:** desenvolvedores traduzem os métodos pertinentes em instruções para o modelo, lógica da aplicação, fluxos, interfaces e testes. O produto fornece ambiente de execução, acesso a dados, armazenamento, permissões e mecanismos de controle.
+
+**Conceito não é implementação.** O Moon Source define o comportamento esperado; a IA ou aplicação fornece o ambiente de execução. Ler um protocolo, por si só, não instala programas, cria memória, acessa dados privados nem garante execução correta.
 
 ## O que traz você até aqui?
 
