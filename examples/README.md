@@ -2,6 +2,8 @@
 
 This directory contains bounded reference implementations of public Moon Source patterns. Examples are inspectable demonstrations, not stable portables, products, SDKs or proof of universal runtime support.
 
+**Concept versus implementation:** the Moon Source methods define the intended procedure. The code and scenarios in this directory show selected, bounded ways to exercise or illustrate it. They do not install the architecture into a user's AI environment or demonstrate a finished product.
+
 **MSL profile:** 5.1-compatible Markdown-native gallery surface; examples remain bounded, experimental or hypothetical as labelled.
 
 ## Browser Console Device
