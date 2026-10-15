@@ -2,6 +2,8 @@
 
 Moon Source is a public context architecture, not a software installation or a promise that every AI session can browse GitHub. Use the smallest relevant capability rather than loading the entire corpus.
 
+**What you are providing:** Moon Source files contain methods and protocols for an AI to follow, not an app to install. A successful transfer requires the model to retrieve or receive the actual instructions, use the relevant parts and show what it applied. For a product, an engineering team must instead implement the procedure in its own runtime and controls.
+
 ## Plan A: provide the GitHub URL
 
 1. Copy the [repository link](https://github.com/luahelenammc/Moon-Source), a [specific capability](../README.md#start-with-the-problem-not-the-vocabulary), or its canonical Markdown body.
