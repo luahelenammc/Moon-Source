@@ -46,6 +46,22 @@ function buildContext(input) {
     return escalate("human_requested", [{step: "handoff", result: "explicit"}]);
   if (!contains(policy.allowedPurposes, purpose) || !contains(policy.allowedActions, action))
     return denied("not_authorized_by_policy");
+  // Optional actor scope narrows the existing approval envelope; it cannot
+  // expand purposes or bypass subject/region isolation.
+  if (Array.isArray(policy.allowedActorScopes) &&
+      (!contains(policy.allowedActorScopes, request.actorScope) ||
+       (Array.isArray(consent.allowedActorScopes) &&
+        !contains(consent.allowedActorScopes, request.actorScope))))
+    return denied("actor_scope_not_authorized");
+  if ((consent.subjectKey !== undefined && consent.subjectKey !== subjectKey) ||
+      (consent.region !== undefined && consent.region !== region))
+    return denied("consent_scope_mismatch");
+  if (consent.revokedAt !== undefined &&
+      (!safeDate(consent.revokedAt) || consent.revokedAt <= today))
+    return denied("consent_missing_or_expired");
+  if (consent.validFrom !== undefined &&
+      (!safeDate(consent.validFrom) || consent.validFrom > today))
+    return denied("consent_missing_or_expired");
   // In production, action classification cannot be trusted to a user's flag alone.
   // An application must perform content and clinical-scope safety checks upstream.
   if (consent.status !== "granted" || !contains(consent.purposes, purpose)
@@ -68,20 +84,33 @@ function buildContext(input) {
       continue;
     const candidates = records.filter((record) => record && record.kind === kind);
     const eligible = [];
+    const maxAge = policy.maxAgeDaysByKind?.[kind] ?? policy.maxAgeDays;
     for (const item of candidates) {
       if (!isPlainObject(item) || item.subjectKey !== subjectKey || item.region !== region
           || !isPlainObject(item.fields) || !isPlainObject(item.provenance)
           || item.provenance.authority !== "operator-approved"
           || !contains(["api", "query", "spreadsheet"], item.provenance.substrate)
           || !safeDate(item.updatedAt) || item.updatedAt > today
-          || !Number.isInteger(policy.maxAgeDays) || policy.maxAgeDays < 0
-          || dayNumber(today) - dayNumber(item.updatedAt) > policy.maxAgeDays
+          || !Number.isInteger(maxAge) || maxAge < 0
+          || dayNumber(today) - dayNumber(item.updatedAt) > maxAge
+          || (item.validUntil !== undefined &&
+              (!safeDate(item.validUntil) || item.validUntil < today))
+          || (item.effectiveFrom !== undefined &&
+              (!safeDate(item.effectiveFrom) || item.effectiveFrom > today))
+          || typeof item.provenance.revision !== "string"
+          || !/^[a-zA-Z0-9._:-]{1,80}$/.test(item.provenance.revision)
           || !contains(item.allowedPurposes, purpose)) {
         countSkip("ineligible_record"); continue;
       }
       const a = Array.isArray(policy.fieldsByKind?.[kind]) ? policy.fieldsByKind[kind] : [];
       const b = Array.isArray(legal.fieldsByKind?.[kind]) ? legal.fieldsByKind[kind] : [];
-      const allowed = a.filter((key) => b.includes(key) && Object.hasOwn(item.fields, key));
+      const purposeFields = item.fieldsByPurpose === undefined ? a :
+        (Array.isArray(item.fieldsByPurpose?.[purpose]) ? item.fieldsByPurpose[purpose] : []);
+      const requestedFields = request.fieldSelection === undefined ? a :
+        (Array.isArray(request.fieldSelection?.[kind]) ? request.fieldSelection[kind] : []);
+      const allowed = a.filter((key) => b.includes(key) &&
+        purposeFields.includes(key) && requestedFields.includes(key) &&
+        Object.hasOwn(item.fields, key));
       const fields = {};
       for (const key of allowed) {
         if (/^[a-z][a-z0-9_]{0,39}$/.test(key) && safeText(item.fields[key])) {
@@ -96,14 +125,27 @@ function buildContext(input) {
       trace.push({step: kind, result: "no_eligible_record"});
       continue;
     }
-    eligible.sort((a,b) => b.updatedAt.localeCompare(a.updatedAt));
-    const latest = eligible.filter((x) => x.updatedAt === eligible[0].updatedAt);
+    eligible.sort((a,b) => b.updatedAt.localeCompare(a.updatedAt) ||
+      a.provenance.revision.localeCompare(b.provenance.revision));
+    let latest = eligible.filter((x) => x.updatedAt === eligible[0].updatedAt);
+    // Only an explicit operator-configured substrate precedence can resolve a
+    // same-date disagreement. Missing or tied precedence retains escalation.
+    const priority = policy.substratePriorityByKind?.[kind];
+    if (Array.isArray(priority) && latest.length > 1) {
+      const ranked = latest.map((item) => ({
+        item, rank:priority.indexOf(item.provenance.substrate)
+      }));
+      if (ranked.every((x) => x.rank >= 0)) {
+        const best = Math.min(...ranked.map((x) => x.rank));
+        latest = ranked.filter((x) => x.rank === best).map((x) => x.item);
+      }
+    }
     if (latest.length > 1 && latest.some((x) =>
       JSON.stringify(x.fields) !== JSON.stringify(latest[0].fields)))
       return escalate("conflicting_current_state", [
         ...trace, {step:kind, result:"conflict", count:latest.length}
       ]);
-    context.push(eligible[0]);
+    context.push(latest[0]);
     trace.push({step:kind, result:"selected", candidates:eligible.length});
   }
   if (!context.length)
