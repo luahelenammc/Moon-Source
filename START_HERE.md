@@ -6,6 +6,8 @@ This page is a plain-language route into Moon Source. You can start with the pro
 
 If you are evaluating this work for a team, a product or an interview, [From method to implementation](docs/FROM_METHOD_TO_IMPLEMENTATION.md) separates real self-use, inspectable demonstrations and the work still required for an external application.
 
+**Two ways to use Moon Source:** in a conversation, give a compatible AI the relevant canonical protocol and ask it to apply the method. In an AI product, translate the selected procedure into application instructions, logic and tests. In either case, Moon Source defines how the system *should* work; the AI or product supplies tools, memory, permissions and execution. Start with one problem, not the entire repository.
+
 ## Make a first move
 
 **Plan A:** copy the public [Moon Source Setup URL](https://github.com/luahelenammc/Moon-Source/blob/main/portables/setup/MOON_SOURCE_SETUP.md) into an AI conversation that can open GitHub links. Ask the AI to retrieve the canonical entry and its First use section, then use this prompt:

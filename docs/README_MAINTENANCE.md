@@ -2,6 +2,14 @@
 
 A README is a reader-facing orientation surface. It explains what its repository, module or example is for, where to begin, what is current, what the limits are, and where the authoritative material lives.
 
+## Protocol concept, use and implementation
+
+Reader-facing entry points should explain the distinction between **a documented method**, **its use with a compatible AI** and **its implementation in an application**. The method specifies expected behavior; an AI conversation may follow loaded instructions, while a product implements relevant rules in its own runtime, data, access controls and tests. Neither route is universally automatic.
+
+A capability README should let a first-time reader answer, in ordinary language: **what does this method help an AI do, what canonical instructions should it receive, how do I try it and what can it not do by itself?** Give a concise, module-specific answer near the beginning and link to the canonical body. Do not paste the same generic explanation into every specialist, archive or maintenance document.
+
+Example READMEs must distinguish a bounded executable demonstration from the method it illustrates and from a ready-to-use product. Preserve existing source authority, version, package, use-permission and evidence boundaries. The canonical root README governs the public summary; its four translations must remain fully synchronized.
+
 ## Keep chronological history out
 
 Do not use a README as a rolling update log. Sections such as *Recent changes*, *What changed in 6.1*, *Latest updates*, release notes, and version history belong in a dedicated history surface.

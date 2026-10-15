@@ -4,6 +4,8 @@
 
 This example demonstrates one narrow problem: how a product might decide which **consented and permitted context** from an API, query or spreadsheet *may* enter a conversational interaction. It does not retrieve data from those systems. Input records are fabricated and supplied directly by a caller.
 
+**Concept versus implementation:** the conversational-context contract describes what context may enter an interaction. This Node.js selector implements only deterministic checks over fabricated input; it does not invoke an LLM, connect real APIs or enforce production privacy requirements.
+
 ## Run the tests
 
 Requires Node.js 20+; no packages or network access:

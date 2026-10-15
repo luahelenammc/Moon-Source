@@ -2,6 +2,8 @@
 
 **Sovereign Semantic Passage** — a structural language for moving situated context across sources, systems and surfaces without losing meaning, provenance, authority or boundaries.
 
+**How to apply it:** give a compatible AI the canonical MSL instructions when preparing a handoff or structured context transfer. The method guides what meaning and source authority must travel; another system must implement any actual data transport.
+
 [▶️ Canonical entry · Plan A](MOON_SOURCE_LANGUAGE.md#first-use) · [⬇️ ZIP fallback · Plan B](../../downloads/moon-source-language.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when

@@ -4,6 +4,8 @@
 
 What happens between "I have a context method" and "this works for someone else"? This page provides a short, testable route through that question. It does not introduce a new Moon Source capability.
 
+**Reading key:** the concept is the documented method; direct use means a compatible model receives and follows that method for a task; product implementation means an engineering team translates it into bounded software behavior and verifies the result. These are different evidence levels.
+
 ## 1. Where the method came from
 
 Moon Source grew out of the creator's own sustained AI workflows across more than 30 personal and professional project workspaces. Long-running work exposed practical failures: having to repeat decisions, retrieving outdated material, or mixing information from different projects. The method evolved through dogfooding: identify a failure, specify ownership and update rules, try them in daily work, inspect the result, and revise. AI assisted development and review under the creator's architectural direction.

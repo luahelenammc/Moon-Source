@@ -7,6 +7,13 @@
 - Added synthetic end-to-end proof and regression cases for re-entry, stale/changed/conflicting states, consent and field restrictions, subject/region isolation, unauthorized actions, information minimization and repeatability.
 - No external messages, real participant data, legal determination, new capability registry entry, portable or third-party adoption claim.
 
+## 2026-10-14 — Protocol concept, usage and implementation clarity
+
+- Reframed the canonical README opening around Moon Source as modular AI methods and protocols, explicitly separating documented concept, direct instruction-guided LLM use and implementation in an application's own runtime.
+- Updated all four governed README translations in the same change, with matching canonical SHA-256 fingerprints and stable link/structure requirements.
+- Clarified first-use and implementation boundaries in relevant portable facades, example READMEs, Start Here, the AI usage guide, the builder guide and the bilingual implementation reading route.
+- Updated README maintenance rules to prioritize short, capability-specific explanations rather than repeated slogans. No new capability, software package, product deployment, automatic tool access or compliance guarantee is claimed. Canonical protocol bodies and the 16-capability registry are unchanged.
+
 ## 2026-10-14 — Conversational context integration (synthetic, non-capability)
 
 - Added a subordinate integration contract for products where governed context is drawn from APIs, queries, spreadsheets and conversation state, not only documents.
