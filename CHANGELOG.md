@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-14 — Conversational continuity re-entry and handoff composition
+
+- Extended the existing synthetic conversational context selector with optional actor-scope, consent-revocation, effective-date, purpose-field and per-kind freshness boundaries. Existing input fixtures remain supported.
+- Added a deterministic longitudinal evaluator under the existing Conversational Context example: compare approved prior/current state, identify gaps without inferring absence motives, propose a bounded next step and distinguish human-handoff recommendation from request.
+- Added synthetic end-to-end proof and regression cases for re-entry, stale/changed/conflicting states, consent and field restrictions, subject/region isolation, unauthorized actions, information minimization and repeatability.
+- No external messages, real participant data, legal determination, new capability registry entry, portable or third-party adoption claim.
+
 ## 2026-10-14 — Protocol concept, usage and implementation clarity
 
 - Reframed the canonical README opening around Moon Source as modular AI methods and protocols, explicitly separating documented concept, direct instruction-guided LLM use and implementation in an application's own runtime.

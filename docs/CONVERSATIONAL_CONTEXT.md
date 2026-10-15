@@ -87,6 +87,40 @@ node --test examples/conversational-context/test-router.js
 
 Included gates: explicit consent and expiry; purpose and action allowlists; operator-supplied reviewed jurisdiction profile; source provenance; record age and conflict; intersection of policy/legal field allowlists; refusal or human escalation; no raw transcript or personal identifiers in the result. The test deliberately does not connect to real systems or process real data.
 
+## 5.1 Longitudinal composition: re-entry, consent boundary and human handoff
+
+The reference now also exports
+[`evaluateContinuity(input)`](../examples/conversational-context/continuity.js).
+It **calls the existing `buildContext` selector first**; there is no second
+consent authority, new public capability, persistent memory store or outgoing
+message mechanism.
+
+- **Journey re-entry:** compare *approved* previous dialogue-state fields to
+  *approved* current operational-state fields; report a known change,
+  unchanged field, or `unverified`. A permitted `last_seen_on` may supply
+  an interval, never an explanation for absence. Return any legitimate next
+  activity only as a field reference for application review, not as execution.
+- **Consent and context boundary:** the selector is still responsible for
+  purpose, subject, region, operator-reviewed profile, record provenance and
+  per-field intersection. Optional actor scope, consent revocation/effective
+  date, field-per-purpose narrowing, expiry and per-kind freshness make the
+  existing gate stricter without breaking legacy fixtures. Retrieved text
+  never becomes instruction authority.
+- **Human handoff:** a missing authoritative operational state or unresolved
+  current-state conflict recommends review; a deliberate human-request action
+  records a request. Both return a field-free minimal review packet and
+  `delivery: not_attempted`. No delivery, receipt, acceptance or resolution
+  is claimed without a separate authorized system and verified readback.
+
+The application must supply authenticated identity, real consent/provenance,
+approved policy and legal review, safe action classification, responsible
+human routing and actual retention enforcement. This example supplies none
+of them. In particular it cannot assess clinical urgency, initiate emergency
+services, infer an absence motive or certify legal compliance.
+
+See the [synthetic journey fixture and expected decision](../examples/conversational-context/README.md#journey-re-entry-boundary-and-handoff-composition)
+and the regression tests for measurable input/output behavior.
+
 ## 6. Conversational pilot acceptance template
 
 Choose one short fictional dialogue and one controlled change of state. For each turn record:
