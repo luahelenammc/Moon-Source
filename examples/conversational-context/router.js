@@ -9,7 +9,8 @@
 const KINDS = Object.freeze(["program_state", "dialogue_state", "preference"]);
 const ACTIONS = Object.freeze(["resume", "review", "human_handoff"]);
 const safeDate = (value) => typeof value === "string" && /^\d{4}-\d{2}-\d{2}$/.test(value)
-  && !Number.isNaN(Date.parse(value + "T00:00:00Z"));
+  && !Number.isNaN(Date.parse(value + "T00:00:00Z"))
+  && new Date(value + "T00:00:00Z").toISOString().slice(0,10) === value;
 const dayNumber = (value) => Date.parse(value + "T00:00:00Z") / 86400000;
 const isPlainObject = (value) => value !== null && typeof value === "object"
   && !Array.isArray(value) && Object.getPrototypeOf(value) === Object.prototype;
