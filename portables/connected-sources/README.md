@@ -2,6 +2,8 @@
 
 **Let AI work with persistent external sources while keeping access, authority, freshness, mutation and readback separate.**
 
+**How to apply it:** supply the canonical Connected Sources instructions when an AI already has authorized access to relevant files or services. They guide retrieval, source authority and readback; a protocol does not install a connector or create access rights.
+
 [▶️ Canonical entry · Plan A](../../docs/CONNECTED_SOURCES.md#first-use) · [⬇️ ZIP fallback · Plan B](../../downloads/connected-sources.zip) · [🌙 Moon Source](../../README.md)
 
 ## Use this when
