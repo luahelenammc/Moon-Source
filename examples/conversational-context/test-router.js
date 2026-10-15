@@ -285,6 +285,19 @@ test("no viable records recommends handoff with zero field payload",()=>{
   assert.deepEqual(output.handoff.reviewPacket.contextFields,[]);
 });
 
+test("out-of-scope records do not affect even trace counts",()=>{
+  const baseline=runJourney();
+  const mixed=runJourney(f=>{
+    f.records.push({...f.records[0],subjectKey:"FICTIONAL-SUBJECT-B"});
+    f.records.push({...f.records[1],region:"FICTIONAL-REGION-B"});
+  });
+  assert.deepEqual(mixed.trace,baseline.trace);
+});
+test("calendar-impossible dates are rejected rather than normalized",()=>{
+  assert.equal(runJourney(f=>f.today="2026-02-31").status,"blocked");
+  assert.equal(runJourney(f=>f.records[0].validUntil="2026-02-31").status,"escalate");
+});
+
 // End-to-end synthetic illustration: evaluateContinuity(journey())
 // => approved context for three kinds; operational module changed from 2 to 3;
 // no conjecture about absence; next activity remains an application-review
