@@ -23,6 +23,65 @@ const {buildContext} = require("./router.js");
 
 The test file contains a complete ready-to-run fabricated input.
 
+## Journey re-entry, boundary and handoff composition
+
+The original `buildContext(input)` remains available with its prior shape. A
+second pure entry point adds a **decision over its approved output**, never a
+parallel permission system:
+
+```js
+const {evaluateContinuity} = require("./continuity.js");
+const decision = evaluateContinuity(syntheticInput);
+```
+
+`evaluateContinuity` calls `buildContext` first. The same policy, consent,
+jurisdiction profile, subject, region, provenance, freshness and field
+allowlists govern every value. Optional narrower restrictions are
+`policy.allowedActorScopes`, `consent.allowedActorScopes`,
+`consent.subjectKey` / `consent.region`, `consent.revokedAt` /
+`validFrom`, `policy.maxAgeDaysByKind`,
+`request.fieldSelection`, `record.fieldsByPurpose`,
+`record.effectiveFrom` / `validUntil`, and operator-configured
+`policy.substratePriorityByKind`. Omitting these preserves the older
+fixture contract; providing them cannot expand the existing field allowlists.
+
+**Synthetic end-to-end input:** the `journey()` fixture inside
+[`test-router.js`](test-router.js) supplies a fictional subject in a fictional
+region, purpose `continuity`, actor scope `continuity_operator`, an approved
+current `program_state` (`module: 3`, `next_activity: "Exercise 4"`),
+authorized `dialogue_state` (`last_known_module: 2`,
+`last_seen_on: "2026-09-25"`) and a still-current `preference`
+(`interaction_style: "concise"`), evaluated on `2026-10-14`.
+
+**Expected structured decision:** `status: "ready"`,
+`reason: "continuity_assessed"`,
+`reentry.continuity: "operational_state_changed"`,
+`reentry.operationalUpdatedDuringGap: true`,
+`reentry.daysSinceLastInteraction: 19`,
+`reentry.nextStep.kind: "candidate_for_application_review"`,
+`handoff: null`. The authorized fields remain in `context`; forbidden
+`medical_note`, `raw_transcript` and `private_note` do not appear.
+The 19-day interval is calculated, not interpreted as a motive. A next
+activity is **a candidate**, not an executed action.
+
+For the controlled single-case demonstration:
+
+```bash
+node --test --test-name-pattern="re-entry composes" examples/conversational-context/test-router.js
+```
+
+If valid current operational state is missing, or equally authoritative
+current records conflict, the decision contains `handoff_recommended`
+with a minimal field-free review packet. An explicit request produces
+`handoff_requested`. Neither means delivered, accepted or resolved:
+`delivery` is always `not_attempted`. Unauthorized external actions
+stop, without fabricated notification. Any actual referral requires a
+separate authorized integration, operator decision and delivery readback.
+
+No production identity, consent, security, retention or action capability
+is added here. The detailed responsibility contract stays in
+[Conversational Context](../../docs/CONVERSATIONAL_CONTEXT.md).
+
 ## Contract and observed behavior
 
 **Input responsibilities:**
