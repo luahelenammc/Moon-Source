@@ -151,6 +151,15 @@ Load:
 
 Then load the governing source or procedure only as needed. Keep live state in the source; do not imply automatic synchronization or native execution where only a standalone distribution or mirror is available.
 
+### If the user needs to manipulate an answer in the conversation
+
+Load:
+- [Operational Devices — Conversation-native interactive response tools](docs/OPERATIONAL_DEVICES.md#conversation-native-interactive-response-tools)
+
+First reconstruct the actual decision or task. When useful and supported, give the person a way to change inputs, select items, compare alternatives, advance steps, evaluate results or replan the unfinished portion without rebuilding the whole answer. Keep assumptions, formulae, uncertainty and meaningful outcomes legible. Use plain text when interaction adds no value.
+
+**Boundary:** an in-chat control is a response instrument, not automatically an operational device, a source-of-record, a persistent workflow or authority for external mutations. Surface availability and state behavior are product-specific; do not claim unsupported controls work. If a durable action, connector, or independently distributable application is needed, follow the relevant execution and source-authority routes. This is a subordinate response pattern, not a seventeenth capability or a mandatory new skill.
+
 ### If a recurring procedure needs a concrete bounded execution surface
 
 Load:
