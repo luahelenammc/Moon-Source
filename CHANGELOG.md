@@ -6,6 +6,7 @@
 - Added explicit input/output, state, source-of-record, action-authorization, mobile/accessibility, calculation and postflight boundaries. Interactive responses are not automatically operational devices, persistent applications or permission to modify external systems.
 - Linked the design route from AI Kernel and For AI Builders; kept the existing capability registry, standalone packages, MSL grammar, AOP routing and translated READMEs unchanged.
 - Attributed the community example and verified GPT-6 Intelligent UI availability against official product sources; no claims of external adoption, an installed SDK, working client support outside verified surfaces or end-to-end application delivery.
+- Added progressive rendering acceptance after a field test: native controls, selection and embedded HTML/JavaScript were user-confirmed working, while the failed ten-module composite remains unexplained. A standalone HTML success is not evidence of in-chat render parity.
 
 ## 2026-10-14 — Conversational continuity re-entry and handoff composition
 
