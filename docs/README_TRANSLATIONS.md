@@ -19,7 +19,7 @@ A material change to the root README is incomplete until all four governed trans
 
 1. Finish the canonical English change, including its language selector.
 2. Translate the complete README in section order. Do not summarize, omit qualifications or add claims.
-3. Rebase internal links from the translation directory by adding `../` to root-relative targets. Keep external links, filenames, paths, commands, identifiers, versions and proper names intact.
+3. Rebase internal links from the translation directory by adding `../` to root-relative targets. **Narrow exception:** when the canonical README links to `docs/PROBLEM_TO_METHOD.md`, a translation routes to the matching fully translated `../docs/PROBLEM_TO_METHOD.<locale>.md` (`pt-BR`, `es`, `zh-CN` or `ru`). All other links retain strict rebased-target equivalence. The separate `scripts/check_problem_routes.py` validator checks all five guides against the canonical registry, so a language-specific guide does not become an independent semantic authority.
 4. Refresh the same canonical SHA-256 metadata in all four translations after the English README bytes are final.
 5. Preserve the language-navigation block, structural markers, code fences and exact public stamp.
 6. Run `python scripts/moon_source.py translations`, then `python scripts/moon_source.py validate`.
