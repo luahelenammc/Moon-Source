@@ -137,6 +137,49 @@ Known adapter-specific fragility:
 Claim ceiling:
 ```
 
+## Conversation-native interactive response tools
+
+Some AI conversations can present a working, task-specific interface directly in an answer: editable inputs, checklists, comparisons, simulations, charts or step-by-step controls. This is a **response instrument**, not automatically an installed application or an operational device. It earns a device contract only if there is an actual recurring procedure with a named executable surface, invocation, bounded state, guardrails and observable results. This distinction prevents a convenient chat control from impersonating source authority or persistent infrastructure.
+
+### Choose the operation before the widget
+
+First ask what the person needs to *do with* the answer. A useful set of reusable operations is:
+
+| Operation | User capability | Possible response instrument |
+|---|---|---|
+| **Change** | Adjust assumptions and inspect consequences | Savings projection or budget allocator with editable inputs |
+| **Select** | Assign, tick, include or exclude items | Shared-expense allocation or grouped checklist |
+| **Compare** | Apply common criteria to alternatives | Plan selector with actual usage and transparent pricing rules |
+| **Sequence** | Work through dependent steps | Scalable recipe, study sequence or staged review |
+| **Evaluate** | Attempt, receive feedback and identify gaps | Quiz with explanations and a revision queue |
+| **Replan** | Recalculate the unfinished work after real progress | Study or project plan that preserves completed work and redistributes remaining tasks |
+
+These operations are composable, not six mandatory interfaces or six new Moon Source capabilities. The best answer may still be a sentence, table or ordinary document. A user should not have to learn a special prompt formula to receive a useful presentation when their intent is already clear.
+
+### Response-instrument contract
+
+1. **Purpose and eligibility.** Identify the actual human decision or task and test whether interaction offers more value than text. Do not turn routine answers into dashboards by default.
+2. **Inputs and provenance.** Use real supplied or retrieved data; identify assumptions, missing fields, units and freshness. Do not populate plausible but invented prices, scores, baselines or availability.
+3. **Controls and transformation.** Make each exposed control functional and bind it to explicit calculations, criteria, constraints or dependencies. Label the controls clearly; show units, precision and any important rounding.
+4. **Result and delta.** Show the answer after a change and explain consequential differences, remaining amounts, trade-offs or unmet conditions. Essential information must stay readable without interaction.
+5. **Replanning semantics.** When progress changes, preserve the baseline and genuinely completed items. Reallocate only the remaining work, taking available time, priority, blockers and dependencies into account. Report the new plan and the cost of changed assumptions; never silently mark work done.
+6. **State and authority.** Distinguish ephemeral view state, supported same-conversation state, exported data, governed persistent records and third-party actions. A checkbox does not write to a source-of-record; a button is not permission to send, purchase, publish, schedule or modify an external system. Use an authorized connector or runtime and verify the resulting action separately.
+7. **Accessibility and postflight.** Prefer short labels, usable mobile layouts, numerical sanity checks, reset/revision paths where meaningful and meaningful text fallback. Verify dependent outputs update together and that empty, extreme and conflicting inputs fail visibly rather than returning misleading certainty.
+
+A timer, drag handle, export button or persistent checkbox should only be offered as *working* when the current client actually supports that interaction. Otherwise use a supported alternative and state the boundary. A working interactive answer is not, by itself, a reusable web application, standalone HTML, a packaged module or a live integration.
+
+### Try the pattern without over-specifying the layout
+
+> Using these actual [items, amounts, rules], help me [make a decision or complete a task]. Let me change [inputs], select [items] and compare [results]. Recalculate [output and remaining work] when I change a value or mark a step finished. Show assumptions and limitations; do not execute any external changes. If interactive controls are unavailable, give me a usable non-interactive alternative.
+
+This is an optional formulation, not an activation spell. For higher-risk cases, decide authorization, privacy, jurisdiction and correctness before optimizing the presentation. When reliable persistence, long-running execution, external integrations or independent distribution are necessary, route to the appropriate application, workflow or [Adaptive Orchestration Protocol](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md). An interactive response remains subordinate to the source-of-record and the execution surface's controls.
+
+### Capability boundary and provenance
+
+OpenAI documented **Intelligent UI in GPT-6 ChatGPT** on 2026-10-07, including composable text, visualizations, buttons, forms and interactive tools inside a conversation; availability depends on the supported Chat client and model setting. This public method is vendor-neutral: it describes how to *design and check* a bounded interactive answer, not how to call undocumented platform APIs or guarantee equivalent UI in every AI product. See the [OpenAI launch](https://openai.com/index/gpt-6-for-everyone/) and [Intelligent UI help](https://help.openai.com/en/articles/20001598-intelligent-ui-in-chatgpt) for volatile product-specific behavior.
+
+**Community provenance:** the operational examples and change/select framing were informed by u/Professional-Rest138, “10 things to ask GPT-6 to build you now that ChatGPT answers with working tools instead of text,” r/PromptEngineering (excerpt supplied 2026-10-18); a comment by u/Educational-View8524 specifically suggested redistributing unfinished study topics after actual progress. The source was a practical inspiration, not a validated performance study, an implementation dependency or evidence of external adoption. The reusable six-operation contract and governance constraints above are a Moon Source adaptation.
+
 ## Public boundaries
 
 The public component may expose a device contract, responsibility distinctions, bounded interfaces, synthetic examples, qualitative reliability rules and inspectable receipts.
