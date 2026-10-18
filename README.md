@@ -22,9 +22,9 @@ Moon Source is a public reference architecture for deciding which context AI sho
 
 | If you want to… | Start here |
 |---|---|
-| I have a concrete project problem but do not know which Moon Source method fits | [Find a method by problem](docs/PROBLEM_TO_METHOD.md) · [Em português](docs/PROBLEM_TO_METHOD.pt-BR.md) |
+| Choose a method for a concrete project problem | [Find a method by problem](docs/PROBLEM_TO_METHOD.md) · [Em português](docs/PROBLEM_TO_METHOD.pt-BR.md) |
 | Help AI understand you or one of your projects more consistently | [Start Here](START_HERE.md), written for ordinary language and first-time readers |
-| Build an AI application that resumes long-running journeys, limits what context may be reused or identifies when a human is needed | [Conversational Context](docs/CONVERSATIONAL_CONTEXT.md) · [Executable synthetic example](examples/conversational-context/README.md) |
+| Explore illustrative applications and bounded technical examples | [Application scenarios](examples/application-scenarios/) · [Public examples](examples/README.md) |
 | Build AI systems and see where governed context fits beside your existing stack | [For AI Builders](docs/FOR_AI_BUILDERS.md) |
 | Inspect the full architecture and AI-side routing contract | [Architecture](ARCHITECTURE.md) · [Moon Source AI Kernel](MOON_SOURCE_AI_KERNEL.md) |
 
@@ -63,7 +63,7 @@ The short version:
 
 This is a topology, not a compulsory waterfall. New information can send the work back to observation, authority or responsibility.
 
-Execution choices need proportionate governance too. [Adaptive Orchestration Protocol (AOP)](portables/adaptive-orchestration/README.md) starts from a practical rule: **use each model, surface and unit of reasoning where it actually pays for itself**. It separates the control root, execution surface, model capability, reasoning effort and delegation instead of collapsing them into one prestige choice. Its target is **minimum total work to an accepted state**: cheaper sufficient execution absorbs reducible bulk, stronger cognition is concentrated at real bottlenecks, and repeated context ingestion, retries, tool churn, unnecessary fan-out and surface switching are treated as costs to reduce rather than invisible overhead. The practical payoff is less avoidable token/context spend and less wasted high-tier reasoning without pretending that the cheapest single call is always the cheapest route.
+Beyond source selection, Moon Source also addresses human intent, interpretation, semantic passage, execution routing, collaboration and operational verification. These are distinct responsibilities to combine only when a task needs them, not stages of a mandatory pipeline.
 
 ## Start with the problem, not the vocabulary
 
@@ -148,18 +148,16 @@ flowchart TB
 
 This is an orientation model, not a universal stack ontology. Products may combine or split these responsibilities.
 
-Moon Source primarily operates in and around governed context: it helps determine what a harness may trust, retrieve, carry forward, mutate and verify. The [Adaptive Orchestration Protocol (AOP)](portables/adaptive-orchestration/README.md) governs how choices are made across available control roots, execution surfaces, models, reasoning effort and delegated workers; the harness/runtime still performs the actual loops, tool use and execution. RAG, memory stores, MCP/tools and other retrieval or orchestration mechanisms can participate in these layers, but Moon Source is not the model, the harness, the RAG engine or the agent runtime.
+Moon Source helps govern context and responsibilities around AI work: which sources can be trusted, what meaning must carry forward, what may change and what must be verified. Existing models, harnesses, retrieval systems, connectors and tools provide actual computation and authorized actions. Moon Source does not replace those layers or act as a RAG engine or agent runtime.
 
 ## See it in practice
 
 These examples make the public material easier to inspect. Synthetic and fictional examples show a bounded illustration, not a report of adoption or measured results.
 
-- [First-use project-context walkthrough](examples/first-use-project-context.md): a fictional set of sources, one conflict, a bounded interpretation and a repeatable check.
-- [Setup first use](portables/setup/MOON_SOURCE_SETUP.md#first-use): a standalone prompt for deciding what context would actually help.
-- [Connected Sources tiny example](docs/CONNECTED_SOURCES.md#tiny-example): a walkthrough of source authority and freshness. It does not imply that a connector is available in every environment.
-- [Long-running conversational journeys](examples/conversational-context/README.md): runnable synthetic Node.js decisions for re-entry after a gap, changed operational state, consent boundaries and human review; no messages are sent.
-- [Browser Console Device](examples/browser-console-device/README.md): an experimental, read-only synthetic demo that can be run locally.
-- [Hypothetical application scenarios](examples/application-scenarios/): fictional cases across projects, teams and services.
+- [Find the relevant method](docs/PROBLEM_TO_METHOD.md) ([Português](docs/PROBLEM_TO_METHOD.pt-BR.md)): sixteen concrete problems mapped to the smallest useful action, result and boundary.
+- [Walk through a first context decision](examples/first-use-project-context.md): a fictional project with sources, a conflict and an inspectable check.
+- [Explore application scenarios](examples/application-scenarios/): hypothetical examples across projects, teams and services, not reports of adoption.
+- [Inspect bounded technical examples](examples/README.md): synthetic reference implementations with runnable tests where available, not finished products.
 
 ### Five small context problems
 
