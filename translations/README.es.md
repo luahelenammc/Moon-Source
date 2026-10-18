@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: es
 source: ../README.md
-source_sha256: 4088907867897b5c5b501cf1b9988616b562dac9b7d70e63382cecfac0137e1a
+source_sha256: 2d97aa4887af3a51b64dbaa668e0d79fe9491dc9fa77b795fb3119187f3bc2db
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -32,7 +32,7 @@ Moon Source es una arquitectura pública de referencia para decidir qué context
 
 | Si quieres… | Empieza aquí |
 |---|---|
-| Elegir un método para un problema concreto de un proyecto | [Encuentra un método según el problema](../docs/PROBLEM_TO_METHOD.md) · [Português](../docs/PROBLEM_TO_METHOD.pt-BR.md) |
+| Elegir un método para un problema concreto de un proyecto | [Encuentra un método según el problema](../docs/PROBLEM_TO_METHOD.es.md) |
 | Ayudar a la IA a entenderte a ti o a uno de tus proyectos con más coherencia | [Empieza aquí](../START_HERE.md), escrito en lenguaje cotidiano para quienes llegan por primera vez |
 | Explorar aplicaciones ilustrativas y ejemplos técnicos acotados | [Escenarios de aplicación](../examples/application-scenarios/) · [Ejemplos públicos](../examples/README.md) |
 | Crear sistemas de IA y ver cómo encaja el contexto gobernado en tu stack actual | [Para quienes construyen con IA](../docs/FOR_AI_BUILDERS.md) |
@@ -106,7 +106,7 @@ La división de abajo es arquitectónica, no solo una clasificación de descarga
 | Usar evidencia ambigua o convergente sin exagerar la certeza | [🎚️ Signal Calibration](../docs/SIGNAL_CALIBRATION.md) |
 | Convertir un fallo recurrente en el mecanismo reutilizable más pequeño que haya sido validado | [🏭 Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) |
 
-Para encontrar **problema → primera acción → resultado observable → límite** entre las 16 capacidades actuales, consulta la [guía por problemas](../docs/PROBLEM_TO_METHOD.md) ([Português](../docs/PROBLEM_TO_METHOD.pt-BR.md)). Los cuerpos canónicos anteriores mantienen la autoridad.
+Para encontrar **problema → primera acción → resultado observable → límite** entre las 16 capacidades actuales, consulta la [guía por problemas](../docs/PROBLEM_TO_METHOD.es.md). Los cuerpos canónicos anteriores mantienen la autoridad.
 
 ## Primer uso
 
@@ -164,7 +164,7 @@ Moon Source ayuda a gobernar el contexto y las responsabilidades del trabajo con
 
 Estos ejemplos facilitan la inspección del material público. Los ejemplos sintéticos y ficticios muestran una ilustración acotada, no un relato de adopción ni de resultados medidos.
 
-- [Encontrar el método adecuado](../docs/PROBLEM_TO_METHOD.md) ([Português](../docs/PROBLEM_TO_METHOD.pt-BR.md)): dieciséis problemas concretos con la acción mínima útil, el resultado y sus límites.
+- [Encontrar el método adecuado](../docs/PROBLEM_TO_METHOD.es.md): dieciséis problemas concretos con la acción mínima útil, el resultado y sus límites.
 - [Seguir una primera decisión de contexto](../examples/first-use-project-context.md): proyecto ficticio con fuentes, un conflicto y una comprobación verificable.
 - [Explorar escenarios de aplicación](../examples/application-scenarios/): ejemplos hipotéticos en proyectos, equipos y servicios, no relatos de adopción.
 - [Examinar ejemplos técnicos acotados](../examples/README.md): implementaciones sintéticas de referencia con pruebas ejecutables cuando existan, no productos terminados.
