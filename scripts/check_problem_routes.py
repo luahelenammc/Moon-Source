@@ -17,12 +17,12 @@ LINK_RE = re.compile(r"\]\(([^)]+)\)")
 
 DOCS = {
     "docs/PROBLEM_TO_METHOD.md": (
-        "**Concrete problem**:", "**First move**:",
-        "**What to inspect**:", "**Stop line**:", "**Canonical authority**:",
+        "**Concrete problem:**", "**First move:**",
+        "**What to inspect:**", "**Stop line:**", "**Canonical authority:**",
     ),
     "docs/PROBLEM_TO_METHOD.pt-BR.md": (
-        "**Problema concreto**:", "**Primeiro movimento**:",
-        "**O que observar**:", "**Limite**:", "**Fonte canônica**:",
+        "**Problema concreto:**", "**Primeiro movimento:**",
+        "**O que observar:**", "**Limite:**", "**Fonte canônica:**",
     ),
 }
 
@@ -66,9 +66,6 @@ def audit(root: Path = ROOT) -> list[str]:
                 failures.append(f"{filename}: {identity} must link to {expected}")
             if not (root / canonical).is_file():
                 failures.append(f"{filename}: {identity} canonical target missing: {canonical}")
-        if "new capability" in content.lower() and "not a new capability" not in content.lower():
-            # No enforcement of editorial meaning beyond the explicit route contract.
-            pass
     return failures
 
 
