@@ -9,6 +9,7 @@ class. Most independently distributed capabilities are also portables, but
 that is not required: Connected Sources is a structural component with a
 supported standalone distribution. The machine-readable contract is
 [registry/public-capabilities.json](public-capabilities.json), schema 2.0.
+If you recognize a practical problem but do not know the capability name, start with [Find the method for your problem](../docs/PROBLEM_TO_METHOD.md) ([Português](../docs/PROBLEM_TO_METHOD.pt-BR.md)). That reader-facing guide links back to these canonical records; it is not a second registry.
 The table below is a human-readable view of the same sixteen records.
 
 The table's **Summary title** is the concise browsing label. The registry's semantic `title` remains stable in machine-readable metadata; individual README and canonical-body headings use `surface_title` to make the Moon Source role explicit without folding version into identity.

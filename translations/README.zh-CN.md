@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: zh-CN
 source: ../README.md
-source_sha256: ccf7ca2a261d99c597d8ee8079248e1148b63909ed93f791c864b80dc830ee52
+source_sha256: 51699c8e4364075ec75a54b9303b98a01c27d6ac2712a15b64ea1f98b70fa97f
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -32,6 +32,7 @@ Moon Source 是一套公开参考架构，用于决定 AI 应使用哪些上下�
 
 | 如果你想…… | 从这里开始 |
 |---|---|
+| 我遇到具体的项目问题，但不知道该用哪个 Moon Source 方法 | [按问题查找合适方法](../docs/PROBLEM_TO_METHOD.md) · [Português](../docs/PROBLEM_TO_METHOD.pt-BR.md) |
 | 让 AI 更一致地理解你或你的某个项目 | [从这里开始](../START_HERE.md)，面向初次阅读者，以日常语言编写 |
 | 构建可恢复长期交互、限制上下文再利用并判断何时需要人工介入的 AI 应用 | [对话上下文](../docs/CONVERSATIONAL_CONTEXT.md) · [可运行的合成示例](../examples/conversational-context/README.md) |
 | 构建 AI 系统，并了解受治理上下文如何融入现有技术栈 | [面向 AI 构建者](../docs/FOR_AI_BUILDERS.md) |
@@ -104,6 +105,8 @@ Moon Source 把上下文视为一个有组织的场域，而不是一堆文本�
 | 在具体执行界面中，通过状态、护栏和收据体现重复性程序 | [🛠️ Operational Devices](../docs/OPERATIONAL_DEVICES.md) |
 | 面对含糊或相互印证的证据时，不夸大确定性 | [🎚️ Signal Calibration](../docs/SIGNAL_CALIBRATION.md) |
 | 将重复出现的失败转化为最小且经过验证的可复用机制 | [🏭 Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) |
+
+如需查看全部 16 项现有能力对应的**问题 → 第一步 → 可检验结果 → 使用界限**，请查阅[按问题查找方法](../docs/PROBLEM_TO_METHOD.md)（[Português](../docs/PROBLEM_TO_METHOD.pt-BR.md)）。以上规范正文仍是各方法的权威来源。
 
 ## 首次使用
 

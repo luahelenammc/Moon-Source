@@ -23,6 +23,10 @@ This directory exists only as the readable browsing facade for its supported sta
 
 It is not a connector onboarding tutorial, universal synchronization layer or permission grant. Search is not census; reach is not authority; write capability is not mutation authority; a write is not accepted without appropriate readback.
 
+## Try it on a concrete problem
+
+**Fictional situation:** an AI retrieved an old policy snapshot even though a newer source may exist. Use Connected Sources to verify reach, scope, authority and observed freshness; request an authorized readback only if needed. **Inspect:** what was actually reached and what remains unverified; no connector is installed. [More problems by method](../../docs/PROBLEM_TO_METHOD.md#connected-sources).
+
 ## Current identity
 
 - **Version:** 1.2

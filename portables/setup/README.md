@@ -21,6 +21,10 @@ Moon Source Setup is an adaptive context router. It helps determine the smallest
 
 It does not install a memory system, connector, background service or universal profile. Availability of a source or integration is separate from authority to use it.
 
+## Try it on a concrete problem
+
+**Fictional situation:** you repeat the same project goal and decisions in every chat. Ask Setup for the smallest reusable project context, a source owner and update trigger. **Inspect:** what is retained, what is excluded and one first test; no memory is installed. [More problems by method](../../docs/PROBLEM_TO_METHOD.md#setup).
+
 ## Current identity
 
 - **Version:** 3.1

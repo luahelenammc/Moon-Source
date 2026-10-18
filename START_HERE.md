@@ -27,6 +27,8 @@ Setup is a public method you can paste into a conversation. It does not install 
 
 ## Find the smallest route
 
+Not sure what the module names mean? The [problem-first guide](docs/PROBLEM_TO_METHOD.md) ([em português](docs/PROBLEM_TO_METHOD.pt-BR.md)) starts with sixteen ordinary project situations, a first move, a result to inspect and a clear limit. Choose only the method the situation actually needs.
+
 | If this sounds familiar | First useful move | Start with | Avoid |
 |---|---|---|---|
 | “AI keeps forgetting my project.” | Pick the current goal, key decisions and one place that should own them. Ask what needs an update when the project changes. | [Setup](portables/setup/MOON_SOURCE_SETUP.md) | Pasting every chat into one summary and hoping it stays current. |

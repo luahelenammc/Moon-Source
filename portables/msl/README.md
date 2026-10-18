@@ -23,6 +23,10 @@ MSL 5.1 helps identify the field, locate the sovereign source/body, choose a pro
 
 MSL is not executable code, a runtime, a connector, a universal ontology, a product or proof of external adoption. It does not grant access or mutation authority.
 
+## Try it on a concrete problem
+
+**Fictional situation:** a project is moving between teams and its handoff loses provenance and unresolved questions. Ask MSL what meaning must survive, what must stay out and how the recipient should read it back. **Inspect:** a bounded transfer packet, not a tool action. [More problems by method](../../docs/PROBLEM_TO_METHOD.md#moon-source-language).
+
 ## Current identity
 
 - **Version:** 5.1

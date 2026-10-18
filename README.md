@@ -22,6 +22,7 @@ Moon Source is a public reference architecture for deciding which context AI sho
 
 | If you want to… | Start here |
 |---|---|
+| I have a concrete project problem but do not know which Moon Source method fits | [Find a method by problem](docs/PROBLEM_TO_METHOD.md) · [Em português](docs/PROBLEM_TO_METHOD.pt-BR.md) |
 | Help AI understand you or one of your projects more consistently | [Start Here](START_HERE.md), written for ordinary language and first-time readers |
 | Build an AI application that resumes long-running journeys, limits what context may be reused or identifies when a human is needed | [Conversational Context](docs/CONVERSATIONAL_CONTEXT.md) · [Executable synthetic example](examples/conversational-context/README.md) |
 | Build AI systems and see where governed context fits beside your existing stack | [For AI Builders](docs/FOR_AI_BUILDERS.md) |
@@ -94,6 +95,8 @@ The split below is architectural rather than merely a download taxonomy. **Porta
 | Embody a recurring procedure on a concrete execution surface with state, guards and receipts | [🛠️ Operational Devices](docs/OPERATIONAL_DEVICES.md) |
 | Use ambiguous or convergent evidence without inflating certainty | [🎚️ Signal Calibration](docs/SIGNAL_CALIBRATION.md) |
 | Turn recurring failure into the smallest validated reusable mechanism | [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) |
+
+For the full **problem → first move → observable result → stop line** route across the 16 current capabilities, use the [problem-first guide](docs/PROBLEM_TO_METHOD.md) ([Português](docs/PROBLEM_TO_METHOD.pt-BR.md)). The canonical bodies above still govern each method.
 
 ## First use
 

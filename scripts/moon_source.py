@@ -31,6 +31,8 @@ def local_validation_steps() -> list[tuple[str, list[str]]]:
         ("README translation tests", python_script("test_readme_translations.py")),
         ("README maintenance policy", python_script("check_readme_maintenance.py")),
         ("README maintenance policy tests", python_script("test_readme_maintenance.py")),
+        ("problem-first capability routes", python_script("check_problem_routes.py")),
+        ("problem-first route tests", python_script("test_check_problem_routes.py")),
         ("public capability registry", python_script("validate_public_capabilities.py")),
         (
             "public capability registry tests",

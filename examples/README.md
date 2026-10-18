@@ -6,6 +6,8 @@ This directory contains bounded reference implementations of public Moon Source 
 
 **MSL profile:** 5.1-compatible Markdown-native gallery surface; examples remain bounded, experimental or hypothetical as labelled.
 
+For choosing a method from a familiar project problem before opening a code example, use the [problem-first guide](../docs/PROBLEM_TO_METHOD.md) ([Português](../docs/PROBLEM_TO_METHOD.pt-BR.md)). Many entries are methods to apply, not executable demos.
+
 ## Browser Console Device
 
 [`browser-console-device/`](browser-console-device/) is an experimental, dependency-free Browser Console Device with a synthetic `localhost` demo.
