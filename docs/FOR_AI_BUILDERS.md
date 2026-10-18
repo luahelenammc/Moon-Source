@@ -80,6 +80,14 @@ When an application assembles context through database queries, APIs, spreadshee
 
 The [Conversational Context contract](CONVERSATIONAL_CONTEXT.md) and [synthetic selector](../examples/conversational-context/README.md) illustrate this composition. Any compliance requirement must come from the operator's reviewed [jurisdictional profile](JURISDICTIONAL_REQUIREMENTS.md), not from model inference. Moon Source itself provides neither authentication nor a chatbot runtime.
 
+### Conversation-native tools as presentation, not authority
+
+When a conversational surface supports interactive responses, it can expose sliders, selections, quizzes, comparisons or an adaptive checklist without a separate product build. Use the [conversation-native response-instrument contract](OPERATIONAL_DEVICES.md#conversation-native-interactive-response-tools) to determine which controls are warranted, what data and transformations they depend on, and how to verify changing inputs against outputs.
+
+Treat view-local state and user clicks as *interaction state*, not the authoritative project record. If a user asks to save progress, update a document, make a booking or trigger a workflow, perform a separate permissioned operation using the available application surface and read back the result. When no interactive renderer is available, provide an honest text or file alternative instead of non-working controls.
+
+This route is useful for exploration and bounded decision support; it does not make Moon Source a UI framework, an API, an agent runtime or a guaranteed feature of every model.
+
 ## Compositions that may help
 
 The routes below are conditional compositions, not a master workflow. Stop when the current responsibility is handled.
