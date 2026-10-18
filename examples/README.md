@@ -28,9 +28,11 @@ The reference remains **experimental** and is not registered as a current portab
 - [Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md)
 - [Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md)
 
-## Conversational Context — Synthetic Selector
+## Conversational Context — Re-entry, Boundaries & Handoff (synthetic)
 
-[`conversational-context/`](conversational-context/) provides a dependency-free Node.js reference for filtering invented API-, query- or spreadsheet-shaped records before a hypothetical conversational turn. It illustrates consent/purpose, reviewed jurisdiction configuration, minimal fields, currentness, conflicting sources and explicit human escalation. The fixture neither retrieves actual records nor invokes an LLM or certifies legal compliance. See the [architecture contract](../docs/CONVERSATIONAL_CONTEXT.md).
+[`conversational-context/`](conversational-context/) demonstrates a common longitudinal application problem: how to resume a person's journey after a pause when the prior conversation and the current operational state may differ. The dependency-free Node.js example first selects only authorized API-, query- or spreadsheet-shaped fields, then evaluates a legitimate re-entry and whether a human should review conflicting or missing state.
+
+Try the [runnable synthetic journey](conversational-context/README.md): an old dialogue says module 2, the current approved program state says module 3, and the result names the change without inventing an absence motive. The same fixture family tests revoked consent, unauthorized purposes, cross-person/region isolation and the distinction between `handoff_recommended` and `handoff_requested`. No user data is retrieved, no messages are delivered, and this is not a chatbot, production security control or legal-compliance engine. [Architecture contract](../docs/CONVERSATIONAL_CONTEXT.md).
 
 ## Hypothetical application scenarios
 

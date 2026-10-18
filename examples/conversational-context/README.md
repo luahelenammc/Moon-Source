@@ -2,9 +2,19 @@
 
 **Status:** experimental, read-only, deterministic reference example. **Not** a chatbot, SDK, legal-compliance engine, medical system, production API adapter, standalone Moon Source capability or external adoption.
 
-This example demonstrates one narrow problem: how a product might decide which **consented and permitted context** from an API, query or spreadsheet *may* enter a conversational interaction. It does not retrieve data from those systems. Input records are fabricated and supplied directly by a caller.
+This example demonstrates two connected decisions: which **consented and permitted context** from an API, query or spreadsheet may enter a conversational interaction, and whether a returning person can resume from current operational state without guessing what happened during the gap. It does not retrieve data from those systems. Input records are fabricated and supplied directly by a caller.
 
 **Concept versus implementation:** the conversational-context contract describes what context may enter an interaction. This Node.js selector implements only deterministic checks over fabricated input; it does not invoke an LLM, connect real APIs or enforce production privacy requirements.
+
+## When this helps a project
+
+| Project situation | What the example decides | What it does **not** do |
+|---|---|---|
+| A learner or member returns after an interval | Which prior state is still permitted, which current operational state governs, whether it changed, and what next-step field can be reviewed | Diagnose the absence, restart a program automatically or generate a message |
+| A service needs to preserve preferences without leaking other data | Which fields pass purpose, subject, region, actor, consent, freshness and provenance restrictions | Authenticate anyone, validate consent legally or create a real retention/deletion service |
+| A record conflict or explicit request needs human attention | Whether a handoff is recommended or requested, its configured responsible role, and a minimal unsent review packet | Notify a human or claim that delivery, acceptance or resolution occurred |
+
+For example, [run the fixed-date synthetic journey](#journey-re-entry-boundary-and-handoff-composition), then change the input fixture to revoke consent or introduce conflicting operational state. The result is a structured **decision for the host application to review**, not a ready-to-deploy assistant or a participant message.
 
 ## Run the tests
 
@@ -14,27 +24,23 @@ Requires Node.js 20+; no packages or network access:
 node --test examples/conversational-context/test-router.js
 ```
 
-The reference uses CommonJS to make local invocation straightforward. It supplies one pure function:
+The reference uses CommonJS with two pure functions. The second reuses the first function's authorized selection:
 
 ```js
 const {buildContext} = require("./router.js");
-// Supply a controlled SYNTHETIC input containing:
+const {evaluateContinuity} = require("./continuity.js");
+// Supply controlled SYNTHETIC input:
 // today, request, consent, policy, jurisdictionProfile and records.
-// buildContext returns a structured decision, NOT a message to send.
+// Neither function sends messages or executes an external action.
 ```
 
 The test file contains a complete ready-to-run fabricated input.
 
 ## Journey re-entry, boundary and handoff composition
 
-The original `buildContext(input)` remains available with its prior shape. A
-second pure entry point adds a **decision over its approved output**, never a
-parallel permission system:
-
-```js
-const {evaluateContinuity} = require("./continuity.js");
-const decision = evaluateContinuity(syntheticInput);
-```
+The original `buildContext(input)` remains available with its prior shape.
+`evaluateContinuity(input)` adds a decision over that approved output, never a
+parallel permission system.
 
 `evaluateContinuity` calls `buildContext` first. The same policy, consent,
 jurisdiction profile, subject, region, provenance, freshness and field
