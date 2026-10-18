@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-18 — Conversational continuity discoverability and project routing
+
+- Added need-first navigation for longitudinal conversational journeys, context-use boundaries and genuine human-review handoffs in the public README and all four synchronized translations.
+- Connected Start Here, the builder guide, the example gallery and the existing Conversational Context contract to a runnable synthetic end-to-end decision, instead of presenting the implementation only as a selector.
+- Updated inspectable-evidence routing to reflect the already-tested selector plus re-entry/handoff composition. No application deployment, new public capability, external partnership, code change or added permission is claimed.
+
 ## 2026-10-18 — Conversation-native interactive response tools
 
 - Extended Operational Devices with a subordinate, vendor-neutral response-instrument contract for six useful operations: changing parameters, selecting, comparing, sequencing, evaluating and replanning unfinished work.

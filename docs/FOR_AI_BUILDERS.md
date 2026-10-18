@@ -80,6 +80,10 @@ When an application assembles context through database queries, APIs, spreadshee
 
 The [Conversational Context contract](CONVERSATIONAL_CONTEXT.md) and [synthetic selector](../examples/conversational-context/README.md) illustrate this composition. Any compliance requirement must come from the operator's reviewed [jurisdictional profile](JURISDICTIONAL_REQUIREMENTS.md), not from model inference. Moon Source itself provides neither authentication nor a chatbot runtime.
 
+A practical starting case is a learning program, a multi-session service or an onboarding journey. Someone comes back after an interval: the dialogue may remember an old step, while the current application state has moved ahead. A governed decision should identify the current authorized state without guessing the reason for the gap. Other cases require no replay because consent was revoked, or human review because current approved records disagree.
+
+**Inspect the three outcomes rather than building a chatbot first:** `buildContext(input)` selects authorized fields, `evaluateContinuity(input)` compares approved prior and current states, and a handoff result is only **recommended** or **requested**, never **delivered**, unless another authorized system actually performs and verifies delivery. The [runnable synthetic reference](../examples/conversational-context/README.md) demonstrates these decisions using fabricated data and fixed dates.
+
 ### Conversation-native tools as presentation, not authority
 
 When a conversational surface supports interactive responses, it can expose sliders, selections, quizzes, comparisons or an adaptive checklist without a separate product build. Use the [conversation-native response-instrument contract](OPERATIONAL_DEVICES.md#conversation-native-interactive-response-tools) to determine which controls are warranted, what data and transformations they depend on, and how to verify changing inputs against outputs.

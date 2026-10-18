@@ -23,6 +23,7 @@ Moon Source is a public reference architecture for deciding which context AI sho
 | If you want to… | Start here |
 |---|---|
 | Help AI understand you or one of your projects more consistently | [Start Here](START_HERE.md), written for ordinary language and first-time readers |
+| Build an AI application that resumes long-running journeys, limits what context may be reused or identifies when a human is needed | [Conversational Context](docs/CONVERSATIONAL_CONTEXT.md) · [Executable synthetic example](examples/conversational-context/README.md) |
 | Build AI systems and see where governed context fits beside your existing stack | [For AI Builders](docs/FOR_AI_BUILDERS.md) |
 | Inspect the full architecture and AI-side routing contract | [Architecture](ARCHITECTURE.md) · [Moon Source AI Kernel](MOON_SOURCE_AI_KERNEL.md) |
 
@@ -153,6 +154,7 @@ These examples make the public material easier to inspect. Synthetic and fiction
 - [First-use project-context walkthrough](examples/first-use-project-context.md): a fictional set of sources, one conflict, a bounded interpretation and a repeatable check.
 - [Setup first use](portables/setup/MOON_SOURCE_SETUP.md#first-use): a standalone prompt for deciding what context would actually help.
 - [Connected Sources tiny example](docs/CONNECTED_SOURCES.md#tiny-example): a walkthrough of source authority and freshness. It does not imply that a connector is available in every environment.
+- [Long-running conversational journeys](examples/conversational-context/README.md): runnable synthetic Node.js decisions for re-entry after a gap, changed operational state, consent boundaries and human review; no messages are sent.
 - [Browser Console Device](examples/browser-console-device/README.md): an experimental, read-only synthetic demo that can be run locally.
 - [Hypothetical application scenarios](examples/application-scenarios/): fictional cases across projects, teams and services.
 
