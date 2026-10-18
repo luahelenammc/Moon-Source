@@ -203,6 +203,30 @@ def main() -> None:
     finally:
         temporary.cleanup()
 
+    # One exact locale-aware guide route is permitted; other target drift is not.
+    for locale in translations.LANGUAGES:
+        actual = f"../docs/PROBLEM_TO_METHOD.{locale}.md"
+        assert translations.translated_target("docs/PROBLEM_TO_METHOD.md", locale) == actual
+        failures = []
+        translations.check_structure(
+            "[Find a method](docs/PROBLEM_TO_METHOD.md)",
+            f"[Encontrar método]({actual})",
+            f"locale={locale}",
+            failures,
+            locale,
+        )
+        assert failures == [], failures
+        failures = []
+        translations.check_structure(
+            "[Find a method](docs/PROBLEM_TO_METHOD.md)",
+            "[Wrong destination](../docs/PROBLEM_TO_METHOD.md)",
+            f"locale={locale}",
+            failures,
+            locale,
+        )
+        assert any("Markdown targets differ" in f for f in failures), failures
+        assert translations.translated_target("docs/OTHER_FILE.md", locale) == "../docs/OTHER_FILE.md"
+
     required = {info["path"] for info in translations.LANGUAGES.values()}
     failures = translations.cochange_failures({"README.md", "translations/README.pt-BR.md"})
     assert failures and all(path in failures[0] for path in required - {"translations/README.pt-BR.md"})
