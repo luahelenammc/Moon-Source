@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-18 — Problem-first discovery across public capabilities
+
+- Published English and Brazilian Portuguese problem-to-method navigation for all 16 registered public capabilities, with fictional situations, first actions, inspectable outputs, boundaries and links back to canonical semantic bodies.
+- Made the cross-capability routing visible from public onboarding, the registry, the builder route and the example gallery; added small self-contained demonstrations to reader-facing standalone facades.
+- Added a deterministic, registry-driven discovery-coverage checker and regression tests to the ordinary maintenance validation pipeline. No new capability, SDK, external adoption or semantic version change.
+
 ## 2026-10-18 — Conversational continuity discoverability and project routing
 
 - Added need-first navigation for longitudinal conversational journeys, context-use boundaries and genuine human-review handoffs in the public README and all four synchronized translations.

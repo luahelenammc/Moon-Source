@@ -34,6 +34,8 @@ This is a responsibility map, not a deployed integration. Moon Source supplies p
 | System prompt or instruction layer | Provides behavior rules to the model. | General behavior instructions do not replace current project facts or source ownership. |
 | Moon Source | Organizes authority, responsibility, context scope, freshness, provenance, mutation boundaries and continuity. | It is a reference architecture and set of public methods, not a hosted service or universal integration. |
 
+For recurring use cases without Moon Source vocabulary, begin with the [problem-to-method guide](PROBLEM_TO_METHOD.md): sixteen bounded cases map symptoms to one canonical responsibility, observable output and stop condition. Use the method's canonical instructions for conversational application or implement them in the host stack; the guide itself grants no execution authority.
+
 ## Four integration patterns
 
 

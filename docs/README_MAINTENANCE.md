@@ -10,6 +10,12 @@ A capability README should let a first-time reader answer, in ordinary language:
 
 Example READMEs must distinguish a bounded executable demonstration from the method it illustrates and from a ready-to-use product. Preserve existing source authority, version, package, use-permission and evidence boundaries. The canonical root README governs the public summary; its four translations must remain fully synchronized.
 
+## Problem-first discovery without duplicated authority
+
+For every current registered public capability, the [problem-first guide](PROBLEM_TO_METHOD.md) provides one plausible situation, the smallest useful first step, observable output, stop line and link to the canonical body. This is a **navigation surface**, not a rival capability registry or a new semantic authority. Keep examples fictional and claims proportionate; do not turn a method into a claimed deployment. The English and pt-BR guides use the same registry IDs, and `scripts/check_problem_routes.py` checks one-to-one coverage, readable fields, canonical paths and duplicate IDs. A new registered capability must have its route in both guides; removing a capability requires removing or retiring its entry accordingly.
+
+Keep canonical bodies and standalone packages authoritative. A reader-facing facade may link to the relevant problem entry, but should not copy the method's rules, release chronology or application-specific confidential examples.
+
 ## Keep chronological history out
 
 Do not use a README as a rolling update log. Sections such as *Recent changes*, *What changed in 6.1*, *Latest updates*, release notes, and version history belong in a dedicated history surface.
