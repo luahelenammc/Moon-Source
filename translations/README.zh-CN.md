@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: zh-CN
 source: ../README.md
-source_sha256: 4088907867897b5c5b501cf1b9988616b562dac9b7d70e63382cecfac0137e1a
+source_sha256: 2d97aa4887af3a51b64dbaa668e0d79fe9491dc9fa77b795fb3119187f3bc2db
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -32,7 +32,7 @@ Moon Source 是一套公开参考架构，用于决定 AI 应使用哪些上下�
 
 | 如果你想…… | 从这里开始 |
 |---|---|
-| 为具体项目问题选择合适的方法 | [按问题查找合适方法](../docs/PROBLEM_TO_METHOD.md) · [Português](../docs/PROBLEM_TO_METHOD.pt-BR.md) |
+| 为具体项目问题选择合适的方法 | [按问题查找合适方法](../docs/PROBLEM_TO_METHOD.zh-CN.md) |
 | 让 AI 更一致地理解你或你的某个项目 | [从这里开始](../START_HERE.md)，面向初次阅读者，以日常语言编写 |
 | 浏览示例应用和有界技术示例 | [应用场景](../examples/application-scenarios/) · [公开示例](../examples/README.md) |
 | 构建 AI 系统，并了解受治理上下文如何融入现有技术栈 | [面向 AI 构建者](../docs/FOR_AI_BUILDERS.md) |
@@ -106,7 +106,7 @@ Moon Source 把上下文视为一个有组织的场域，而不是一堆文本�
 | 面对含糊或相互印证的证据时，不夸大确定性 | [🎚️ Signal Calibration](../docs/SIGNAL_CALIBRATION.md) |
 | 将重复出现的失败转化为最小且经过验证的可复用机制 | [🏭 Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) |
 
-如需查看全部 16 项现有能力对应的**问题 → 第一步 → 可检验结果 → 使用界限**，请查阅[按问题查找方法](../docs/PROBLEM_TO_METHOD.md)（[Português](../docs/PROBLEM_TO_METHOD.pt-BR.md)）。以上规范正文仍是各方法的权威来源。
+如需查看全部 16 项现有能力对应的**问题 → 第一步 → 可检验结果 → 使用界限**，请查阅[按问题查找方法](../docs/PROBLEM_TO_METHOD.zh-CN.md)。以上规范正文仍是各方法的权威来源。
 
 ## 首次使用
 
@@ -164,7 +164,7 @@ Moon Source 负责治理 AI 工作中的上下文与职责：哪些来源可信�
 
 这些例子让公开材料更容易检查。合成和虚构示例用于展示有界的说明，不代表采用情况或衡量过的结果。
 
-- [查找合适的方法](../docs/PROBLEM_TO_METHOD.md)（[Português](../docs/PROBLEM_TO_METHOD.pt-BR.md)）：将十六个具体问题对应到最小可行操作、可检查结果和使用边界。
+- [查找合适的方法](../docs/PROBLEM_TO_METHOD.zh-CN.md)：将十六个具体问题对应到最小可行操作、可检查结果和使用边界。
 - [了解首次上下文决策](../examples/first-use-project-context.md)：使用虚构项目说明来源、冲突与可核验的检查。
 - [浏览应用场景](../examples/application-scenarios/)：涵盖项目、团队与服务的假设性示例，并非真实采用案例。
 - [查看有界技术示例](../examples/README.md)：合成参考实现，在适用时附有可运行测试，不是成品。
