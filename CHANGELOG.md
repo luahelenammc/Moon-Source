@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-18 — Problem-to-method tables and five-language discovery
+
+- Reorganized the 16 problem routes into four themed Markdown comparison tables, retaining first action, observable result, stop line, canonical links and deep-link anchors.
+- Converted three fictional cross-module project scenarios into a complementary comparison table without implying deployments or adoption.
+- Added Spanish, Simplified Chinese and Russian guides alongside English and Brazilian Portuguese; routed each README translation directly to its matching language guide without redundant language-switch links.
+- Strengthened registry-driven table validation and maintained strict README link parity, with one governed exception for these locale-specific guides. No canonical method or registry identity was changed.
+
 ## 2026-10-18 — Balanced root README navigation
 
 - Rebalanced the opening routes, examples and architectural descriptions so no single application or execution protocol appears to represent the public Moon Source by default.

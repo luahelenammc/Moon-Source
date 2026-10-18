@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Verify that the problem-first reading routes cover the live public registry.
+"""Validate problem-first tables against the canonical capability registry.
 
-The registry and canonical bodies retain semantic authority; this validates
-only navigability, not correctness of examples or completeness of translations.
+This checks coverage, table shape and links; linguistic fidelity and the
+truth of an example remain editorial-review responsibilities.
 """
 from __future__ import annotations
 
@@ -16,32 +16,35 @@ ROUTE_RE = re.compile(r"<!-- problem-route: ([a-z0-9-]+) -->")
 LINK_RE = re.compile(r"\]\(([^)]+)\)")
 
 DOCS = {
-    "docs/PROBLEM_TO_METHOD.md": (
-        "**Concrete problem:**", "**First move:**",
-        "**What to inspect:**", "**Stop line:**", "**Canonical authority:**",
-    ),
-    "docs/PROBLEM_TO_METHOD.pt-BR.md": (
-        "**Problema concreto:**", "**Primeiro movimento:**",
-        "**O que observar:**", "**Limite:**", "**Fonte canônica:**",
-    ),
+    "docs/PROBLEM_TO_METHOD.md": ("**Inspect:**", "**Limit:**"),
+    "docs/PROBLEM_TO_METHOD.pt-BR.md": ("**Confira:**", "**Limite:**"),
+    "docs/PROBLEM_TO_METHOD.es.md": ("**Comprueba:**", "**Límite:**"),
+    "docs/PROBLEM_TO_METHOD.zh-CN.md": ("**检查:**", "**边界:**"),
+    "docs/PROBLEM_TO_METHOD.ru.md": ("**Проверить:**", "**Граница:**"),
 }
+
+# All guides have four thematic four-column tables.
+TABLE_RULE = "|---|---|---|---|"
 
 
 def audit(root: Path = ROOT) -> list[str]:
     failures: list[str] = []
-    registry = json.loads((root / "registry/public-capabilities.json").read_text(encoding="utf-8"))
+    registry = json.loads(
+        (root / "registry/public-capabilities.json").read_text(encoding="utf-8")
+    )
     records = registry["capabilities"]
     ids = [item["id"] for item in records]
     if len(ids) != len(set(ids)):
         failures.append("registry: duplicate capability identifiers")
-    for filename, fields in DOCS.items():
+    by_id = {record["id"]: record for record in records}
+    for filename, labels in DOCS.items():
         filepath = root / filename
         if not filepath.is_file():
             failures.append(f"{filename}: missing guide")
             continue
         content = filepath.read_text(encoding="utf-8")
-        matches = list(ROUTE_RE.finditer(content))
-        counts = Counter(m.group(1) for m in matches)
+        matches = ROUTE_RE.findall(content)
+        counts = Counter(matches)
         missing = sorted(set(ids) - set(counts))
         extras = sorted(set(counts) - set(ids))
         duplicates = sorted(k for k, count in counts.items() if count != 1)
@@ -49,20 +52,31 @@ def audit(root: Path = ROOT) -> list[str]:
             failures.append(
                 f"{filename}: missing={missing}, extras={extras}, duplicates={duplicates}"
             )
-        for i, match in enumerate(matches):
-            identity = match.group(1)
-            item = next((r for r in records if r["id"] == identity), None)
-            if item is None:
+        if content.count(TABLE_RULE) != 4:
+            failures.append(f"{filename}: expected four four-column thematic tables")
+        for row in content.splitlines():
+            match = ROUTE_RE.search(row)
+            if not match:
                 continue
-            section = content[match.end():matches[i + 1].start() if i + 1 < len(matches) else len(content)]
-            for field in fields:
-                if field not in section:
-                    failures.append(f"{filename}: {identity} missing {field}")
-            canonical = item["canonical_path"]
+            identity = match.group(1)
+            if identity not in by_id:
+                continue
+            cells = row.strip().split("|")
+            if len(cells) != 6 or cells[0] or cells[-1]:
+                failures.append(f"{filename}: {identity} malformed four-column table row")
+                continue
+            problem, method, move, evidence = [c.strip() for c in cells[1:5]]
+            if not all((problem, method, move, evidence)):
+                failures.append(f"{filename}: {identity} contains empty cell")
+            if "<a id=\"" not in method:
+                failures.append(f"{filename}: {identity} missing stable deep-link anchor")
+            for label in labels:
+                if label not in evidence:
+                    failures.append(f"{filename}: {identity} missing {label}")
+            canonical = by_id[identity]["canonical_path"]
             expected = (canonical.removeprefix("docs/") if canonical.startswith("docs/")
                         else "../" + canonical)
-            authorities = [line for line in section.splitlines() if fields[-1] in line]
-            if not authorities or expected not in LINK_RE.findall(authorities[0]):
+            if expected not in LINK_RE.findall(method):
                 failures.append(f"{filename}: {identity} must link to {expected}")
             if not (root / canonical).is_file():
                 failures.append(f"{filename}: {identity} canonical target missing: {canonical}")
@@ -75,7 +89,7 @@ def main() -> int:
         for finding in findings:
             print("FAIL:", finding)
         return 1
-    print("PASS: 16 public capabilities each have one inspected EN + pt-BR problem route")
+    print("PASS: 16 canonical capabilities in four themed tables across five languages")
     return 0
 
 
