@@ -21,6 +21,10 @@ Preflight reconstructs intended meaning, desired outcome, positive requirements 
 
 It is not mind-reading, a mandatory questionnaire or an excuse to over-architect a clear request. Source, authority, provenance and mutation checks enter only when the reconstructed task materially needs them.
 
+## Try it on a concrete problem
+
+**Fictional situation:** a request mixes background, three corrections and a final instruction. Give the whole request to Preflight and ask for the faithful intended task before proceeding. **Inspect:** the intended result, constraints and only consequential questions; no invented intent. [More problems by method](../../docs/PROBLEM_TO_METHOD.md#preflight).
+
 ## Current identity
 
 - **Version:** 2.3

@@ -21,6 +21,10 @@ Be My Eyes separates observation from relational inference and unknowns, support
 
 It does not read minds, establish motive, diagnose people or replace findings of fact in high-stakes settings. It organizes the communication scene and calibrates interpretation.
 
+## Try it on a concrete problem
+
+**Fictional situation:** a colleague replies with a brief, ambiguous sentence. Supply the message and ask the AI to separate what was actually said from possible subtext, then suggest a proportionate response posture. **Inspect:** observations, inferences and unknowns; no claim about hidden motive. [More problems by method](../../docs/PROBLEM_TO_METHOD.md#be-my-eyes).
+
 ## Current identity
 
 - **Version:** 1.0-public

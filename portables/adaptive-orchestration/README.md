@@ -69,6 +69,10 @@ It does not itself create access to a model, tool, connector, subagent control o
 
 Sprint Mode does not expose allowance/reset state, create a native product feature or persist across runs. Product names, limits, inheritance behavior and availability are date-sensitive and must be rechecked when they matter.
 
+## Try it on a concrete problem
+
+**Fictional situation:** a research workflow spends expensive reasoning on repetitive scanning while a pivotal decision remains unresolved. Use AOP to identify that commitment, test a cheaper sufficient execution route and define acceptance. **Inspect:** a proportionate plan, not an assumption that extra models or agents are available. [More problems by method](../../docs/PROBLEM_TO_METHOD.md#adaptive-orchestration-protocol).
+
 ## Current identity
 
 - **Version:** 6.4
