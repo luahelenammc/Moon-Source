@@ -22,7 +22,7 @@ Moon Source is a public reference architecture for deciding which context AI sho
 
 | If you want to… | Start here |
 |---|---|
-| Choose a method for a concrete project problem | [Find a method by problem](docs/PROBLEM_TO_METHOD.md) · [Em português](docs/PROBLEM_TO_METHOD.pt-BR.md) |
+| Choose a method for a concrete project problem | [Find a method by problem](docs/PROBLEM_TO_METHOD.md) |
 | Help AI understand you or one of your projects more consistently | [Start Here](START_HERE.md), written for ordinary language and first-time readers |
 | Explore illustrative applications and bounded technical examples | [Application scenarios](examples/application-scenarios/) · [Public examples](examples/README.md) |
 | Build AI systems and see where governed context fits beside your existing stack | [For AI Builders](docs/FOR_AI_BUILDERS.md) |
@@ -96,7 +96,7 @@ The split below is architectural rather than merely a download taxonomy. **Porta
 | Use ambiguous or convergent evidence without inflating certainty | [🎚️ Signal Calibration](docs/SIGNAL_CALIBRATION.md) |
 | Turn recurring failure into the smallest validated reusable mechanism | [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) |
 
-For the full **problem → first move → observable result → stop line** route across the 16 current capabilities, use the [problem-first guide](docs/PROBLEM_TO_METHOD.md) ([Português](docs/PROBLEM_TO_METHOD.pt-BR.md)). The canonical bodies above still govern each method.
+For the full **problem → first move → observable result → stop line** route across the 16 current capabilities, use the [problem-first guide](docs/PROBLEM_TO_METHOD.md). The canonical bodies above still govern each method.
 
 ## First use
 
@@ -154,7 +154,7 @@ Moon Source helps govern context and responsibilities around AI work: which sour
 
 These examples make the public material easier to inspect. Synthetic and fictional examples show a bounded illustration, not a report of adoption or measured results.
 
-- [Find the relevant method](docs/PROBLEM_TO_METHOD.md) ([Português](docs/PROBLEM_TO_METHOD.pt-BR.md)): sixteen concrete problems mapped to the smallest useful action, result and boundary.
+- [Find the relevant method](docs/PROBLEM_TO_METHOD.md): sixteen concrete problems mapped to the smallest useful action, result and boundary.
 - [Walk through a first context decision](examples/first-use-project-context.md): a fictional project with sources, a conflict and an inspectable check.
 - [Explore application scenarios](examples/application-scenarios/): hypothetical examples across projects, teams and services, not reports of adoption.
 - [Inspect bounded technical examples](examples/README.md): synthetic reference implementations with runnable tests where available, not finished products.
