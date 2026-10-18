@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-18 — Balanced root README navigation
+
+- Rebalanced the opening routes, examples and architectural descriptions so no single application or execution protocol appears to represent the public Moon Source by default.
+- Routed practical examples through the existing problem-to-method guide, hypothetical scenarios and synthetic example catalog, retaining their discoverability under their established sources.
+- Synchronized all four governed README translations and formalized the editorial-balance rule. No change to canonical methods, the sixteen-capability registry, standalone distributions or evidence ceilings.
+
 ## 2026-10-18 — Problem-first discovery across public capabilities
 
 - Published English and Brazilian Portuguese problem-to-method navigation for all 16 registered public capabilities, with fictional situations, first actions, inspectable outputs, boundaries and links back to canonical semantic bodies.

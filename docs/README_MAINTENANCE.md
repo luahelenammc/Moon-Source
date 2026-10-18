@@ -16,6 +16,8 @@ For every current registered public capability, the [problem-first guide](PROBLE
 
 Keep canonical bodies and standalone packages authoritative. A reader-facing facade may link to the relevant problem entry, but should not copy the method's rules, release chronology or application-specific confidential examples.
 
+**Root README editorial balance:** orient readers by audience, task and architecture, not by the latest application, individual demonstration or most recently updated protocol. Keep application-specific examples in the existing problem guide, examples catalog and specialist documentation. Give an individual method prominent front-page treatment only when its architectural responsibility requires it, not because it is new.
+
 ## Keep chronological history out
 
 Do not use a README as a rolling update log. Sections such as *Recent changes*, *What changed in 6.1*, *Latest updates*, release notes, and version history belong in a dedicated history surface.

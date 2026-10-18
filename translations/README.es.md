@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: es
 source: ../README.md
-source_sha256: 51699c8e4364075ec75a54b9303b98a01c27d6ac2712a15b64ea1f98b70fa97f
+source_sha256: 4088907867897b5c5b501cf1b9988616b562dac9b7d70e63382cecfac0137e1a
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -32,9 +32,9 @@ Moon Source es una arquitectura pública de referencia para decidir qué context
 
 | Si quieres… | Empieza aquí |
 |---|---|
-| Tengo un problema concreto en mi proyecto, pero no sé qué método Moon Source puede ayudar | [Encuentra un método según el problema](../docs/PROBLEM_TO_METHOD.md) · [Português](../docs/PROBLEM_TO_METHOD.pt-BR.md) |
+| Elegir un método para un problema concreto de un proyecto | [Encuentra un método según el problema](../docs/PROBLEM_TO_METHOD.md) · [Português](../docs/PROBLEM_TO_METHOD.pt-BR.md) |
 | Ayudar a la IA a entenderte a ti o a uno de tus proyectos con más coherencia | [Empieza aquí](../START_HERE.md), escrito en lenguaje cotidiano para quienes llegan por primera vez |
-| Crear una aplicación de IA que retome procesos prolongados, limite qué contexto se reutiliza o identifique cuándo se necesita intervención humana | [Contexto Conversacional](../docs/CONVERSATIONAL_CONTEXT.md) · [Ejemplo sintético ejecutable](../examples/conversational-context/README.md) |
+| Explorar aplicaciones ilustrativas y ejemplos técnicos acotados | [Escenarios de aplicación](../examples/application-scenarios/) · [Ejemplos públicos](../examples/README.md) |
 | Crear sistemas de IA y ver cómo encaja el contexto gobernado en tu stack actual | [Para quienes construyen con IA](../docs/FOR_AI_BUILDERS.md) |
 | Examinar la arquitectura completa y el contrato de enrutamiento del lado de la IA | [Architecture](../ARCHITECTURE.md) · [Moon Source AI Kernel](../MOON_SOURCE_AI_KERNEL.md) |
 
@@ -73,7 +73,7 @@ En pocas palabras:
 
 Es una topología, no una secuencia obligatoria. La información nueva puede hacer que el trabajo vuelva a la observación, la autoridad o la responsabilidad.
 
-Las decisiones de ejecución también necesitan una gobernanza proporcional. El [Adaptive Orchestration Protocol (AOP)](../portables/adaptive-orchestration/README.md) parte de una regla práctica: **usa cada modelo, superficie y unidad de razonamiento donde realmente resulte útil**. Separa la raíz de control, la superficie de ejecución, la capacidad del modelo, el esfuerzo de razonamiento y la delegación, en lugar de reducirlos a una sola elección de prestigio. Su objetivo es el **mínimo de trabajo total para llegar a un estado aceptado**: la ejecución suficiente de menor costo absorbe el volumen reducible, la cognición más potente se concentra en los cuellos de botella reales, y la ingestión repetida de contexto, los reintentos, el cambio de herramientas, la delegación innecesaria y el cambio de superficie se consideran costes que hay que reducir, no carga invisible. El beneficio práctico es menos gasto evitable de tokens/contexto y menos razonamiento de nivel alto desperdiciado, sin fingir que una única llamada más barata sea siempre la ruta más barata.
+Además de seleccionar fuentes, Moon Source aborda la intención humana, la interpretación, el traslado de significado, las decisiones de ejecución, la colaboración y la verificación operativa. Son responsabilidades distintas que solo se combinan cuando la tarea lo requiere, no pasos de una secuencia obligatoria.
 
 ## Empieza por el problema, no por el vocabulario
 
@@ -158,18 +158,16 @@ flowchart TB
 
 Este es un modelo de orientación, no una ontología universal de stacks. Los productos pueden combinar o separar estas responsabilidades.
 
-Moon Source opera principalmente alrededor del contexto gobernado: ayuda a determinar en qué puede confiar un harness, qué puede recuperar, mantener, modificar y verificar. El [Adaptive Orchestration Protocol (AOP)](../portables/adaptive-orchestration/README.md) gobierna las decisiones entre las raíces de control, superficies de ejecución, modelos, esfuerzo de razonamiento y trabajadores delegados disponibles; el harness/runtime sigue realizando los ciclos, el uso de herramientas y la ejecución. RAG, almacenes de memoria, MCP/herramientas y otros mecanismos de recuperación u orquestación pueden participar en estas capas, pero Moon Source no es el modelo, el harness, el motor RAG ni el runtime del agente.
+Moon Source ayuda a gobernar el contexto y las responsabilidades del trabajo con IA: qué fuentes son fiables, qué significado debe conservarse, qué puede cambiar y qué debe verificarse. Los modelos, harnesses, sistemas de recuperación, conectores y herramientas existentes aportan el procesamiento y las acciones autorizadas. Moon Source no sustituye esas capas ni funciona como motor RAG o runtime de agentes.
 
 ## Verlo en la práctica
 
 Estos ejemplos facilitan la inspección del material público. Los ejemplos sintéticos y ficticios muestran una ilustración acotada, no un relato de adopción ni de resultados medidos.
 
-- [Recorrido de primer uso del contexto de proyecto](../examples/first-use-project-context.md): un conjunto ficticio de fuentes, un conflicto, una interpretación acotada y una comprobación repetible.
-- [Primer uso de Setup](../portables/setup/MOON_SOURCE_SETUP.md#first-use): un prompt independiente para decidir qué contexto ayudaría de verdad.
-- [Pequeño ejemplo de Connected Sources](../docs/CONNECTED_SOURCES.md#tiny-example): un recorrido sobre autoridad y vigencia de fuentes. No implica que exista un conector en todos los entornos.
-- [Procesos conversacionales de larga duración](../examples/conversational-context/README.md): decisiones sintéticas ejecutables en Node.js para retomar tras una pausa, cambios en el estado operativo, límites de consentimiento y revisión humana; no se envían mensajes.
-- [Browser Console Device](../examples/browser-console-device/README.md): una demostración sintética, experimental y de solo lectura que puede ejecutarse localmente.
-- [Escenarios de aplicación hipotéticos](../examples/application-scenarios/): casos ficticios de proyectos, equipos y servicios.
+- [Encontrar el método adecuado](../docs/PROBLEM_TO_METHOD.md) ([Português](../docs/PROBLEM_TO_METHOD.pt-BR.md)): dieciséis problemas concretos con la acción mínima útil, el resultado y sus límites.
+- [Seguir una primera decisión de contexto](../examples/first-use-project-context.md): proyecto ficticio con fuentes, un conflicto y una comprobación verificable.
+- [Explorar escenarios de aplicación](../examples/application-scenarios/): ejemplos hipotéticos en proyectos, equipos y servicios, no relatos de adopción.
+- [Examinar ejemplos técnicos acotados](../examples/README.md): implementaciones sintéticas de referencia con pruebas ejecutables cuando existan, no productos terminados.
 
 ### Cinco problemas pequeños de contexto
 

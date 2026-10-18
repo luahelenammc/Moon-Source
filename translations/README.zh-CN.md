@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: zh-CN
 source: ../README.md
-source_sha256: 51699c8e4364075ec75a54b9303b98a01c27d6ac2712a15b64ea1f98b70fa97f
+source_sha256: 4088907867897b5c5b501cf1b9988616b562dac9b7d70e63382cecfac0137e1a
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -32,9 +32,9 @@ Moon Source 是一套公开参考架构，用于决定 AI 应使用哪些上下�
 
 | 如果你想…… | 从这里开始 |
 |---|---|
-| 我遇到具体的项目问题，但不知道该用哪个 Moon Source 方法 | [按问题查找合适方法](../docs/PROBLEM_TO_METHOD.md) · [Português](../docs/PROBLEM_TO_METHOD.pt-BR.md) |
+| 为具体项目问题选择合适的方法 | [按问题查找合适方法](../docs/PROBLEM_TO_METHOD.md) · [Português](../docs/PROBLEM_TO_METHOD.pt-BR.md) |
 | 让 AI 更一致地理解你或你的某个项目 | [从这里开始](../START_HERE.md)，面向初次阅读者，以日常语言编写 |
-| 构建可恢复长期交互、限制上下文再利用并判断何时需要人工介入的 AI 应用 | [对话上下文](../docs/CONVERSATIONAL_CONTEXT.md) · [可运行的合成示例](../examples/conversational-context/README.md) |
+| 浏览示例应用和有界技术示例 | [应用场景](../examples/application-scenarios/) · [公开示例](../examples/README.md) |
 | 构建 AI 系统，并了解受治理上下文如何融入现有技术栈 | [面向 AI 构建者](../docs/FOR_AI_BUILDERS.md) |
 | 查看完整架构和面向 AI 的路由契约 | [Architecture](../ARCHITECTURE.md) · [Moon Source AI Kernel](../MOON_SOURCE_AI_KERNEL.md) |
 
@@ -73,7 +73,7 @@ Moon Source 把上下文视为一个有组织的场域，而不是一堆文本�
 
 这是一种拓扑结构，不是强制的瀑布式流程。新信息可能会让工作返回观察、权限归属或责任识别阶段。
 
-执行选择也需要适度的治理。[Adaptive Orchestration Protocol (AOP)](../portables/adaptive-orchestration/README.md) 从一条实用规则出发：**让每个模型、界面和推理单元在真正有价值的地方发挥作用**。它将控制根、执行界面、模型能力、推理力度和委派分开，而不是把它们折叠成一个“更高级”的选择。它追求的是**以最少总工作量达到被接受的状态**：成本更低但足够的执行处理可约简的大量工作；更强的认知能力集中在真正的瓶颈上；重复摄取上下文、重试、工具切换、不必要的扇出和界面切换都被视为需要降低的成本，而非看不见的开销。实际收益是减少可避免的 token/上下文消耗，以及浪费在高阶推理上的资源，但不会假装一次最便宜的调用永远是成本最低的路线。
+除了选择信息来源，Moon Source 还关注人的意图理解、情境解释、语义传递、执行路径选择、协作与操作结果核验。这些是各自独立的职责，仅在任务需要时组合使用，并非必须依次执行的流程。
 
 ## 从问题开始，而不是从术语开始
 
@@ -158,18 +158,16 @@ flowchart TB
 
 这是一个定位模型，不是普遍适用的技术栈本体论。产品可能会合并或拆分这些职责。
 
-Moon Source 主要在受治理上下文领域运作：它帮助判断 harness 可以信任、检索、延续、修改和验证哪些内容。[Adaptive Orchestration Protocol (AOP)](../portables/adaptive-orchestration/README.md) 负责在可用的控制根、执行界面、模型、推理力度和受委派工作者之间制定选择；实际循环、工具调用和执行仍由 harness/runtime 完成。RAG、记忆库、MCP/工具以及其他检索或编排机制可以参与这些层，但 Moon Source 不是模型、harness、RAG 引擎或 agent runtime。
+Moon Source 负责治理 AI 工作中的上下文与职责：哪些来源可信、哪些意义必须保留、哪些内容可以修改，以及哪些结果需要核验。现有模型、执行环境、检索系统、连接器和工具负责真正的计算与获授权的操作。Moon Source 不会取代这些层，也不是 RAG 引擎或代理运行时。
 
 ## 看看实际例子
 
 这些例子让公开材料更容易检查。合成和虚构示例用于展示有界的说明，不代表采用情况或衡量过的结果。
 
-- [项目上下文首次使用示例](../examples/first-use-project-context.md)：一组虚构来源、一个冲突、有界解释和可重复检查。
-- [Setup 首次使用](../portables/setup/MOON_SOURCE_SETUP.md#first-use)：用于判断哪种上下文真正有帮助的独立提示词。
-- [Connected Sources 简短示例](../docs/CONNECTED_SOURCES.md#tiny-example)：演示来源权限归属和时效性。这不意味着每个环境都提供连接器。
-- [长期对话与流程恢复](../examples/conversational-context/README.md)：可运行的 Node.js 合成决策示例，涵盖中断后恢复、运营状态变化、同意与上下文边界以及人工复核；不会发送消息。
-- [Browser Console Device](../examples/browser-console-device/README.md)：一个实验性的、只读的合成演示，可在本地运行。
-- [假设性应用场景](../examples/application-scenarios/)：涵盖项目、团队和服务的虚构案例。
+- [查找合适的方法](../docs/PROBLEM_TO_METHOD.md)（[Português](../docs/PROBLEM_TO_METHOD.pt-BR.md)）：将十六个具体问题对应到最小可行操作、可检查结果和使用边界。
+- [了解首次上下文决策](../examples/first-use-project-context.md)：使用虚构项目说明来源、冲突与可核验的检查。
+- [浏览应用场景](../examples/application-scenarios/)：涵盖项目、团队与服务的假设性示例，并非真实采用案例。
+- [查看有界技术示例](../examples/README.md)：合成参考实现，在适用时附有可运行测试，不是成品。
 
 ### 五个小型上下文问题
 
