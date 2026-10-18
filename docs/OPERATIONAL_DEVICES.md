@@ -168,6 +168,20 @@ These operations are composable, not six mandatory interfaces or six new Moon So
 
 A timer, drag handle, export button or persistent checkbox should only be offered as *working* when the current client actually supports that interaction. Otherwise use a supported alternative and state the boundary. A working interactive answer is not, by itself, a reusable web application, standalone HTML, a packaged module or a live integration.
 
+### Progressive rendering acceptance
+
+A working renderer should be *proven on the intended client*, not inferred from valid code or from a downloaded standalone HTML example. Test in increasing scope:
+
+1. **Native primitive:** one button, one value-changing control and one dependent result.
+2. **Selection/state:** a compact selector or checklist that visibly changes an output.
+3. **Embedded application (when supported):** an isolated HTML/JavaScript interaction with a genuine event handler and visible recalculation.
+4. **Small composition:** two or three working modules with distinct state and an unambiguous selection route.
+5. **Full composition:** add modules incrementally, check that the active view is visible, and rerun interaction, empty-state and regression checks.
+
+If the complete response fails, reduce it to a minimal reproducer and isolate the interaction path before attributing failure to the platform, HTML support, widget complexity or a specific code construct. A blank selector in one composite does not prove selectors are universally broken. Conversely, three successful primitives do not prove that a larger composite will render. Keep an inspectable plain-text fallback; offer standalone HTML only when independent execution is useful or the actual chat rendering remains unsupported.
+
+**Bounded field signal (2026-10-18):** one initial ten-module conversational example rendered its selector empty in a user screenshot; subsequent user-verified native controls, selector and embedded HTML/JavaScript interaction worked in the same conversation. This establishes the three tested capabilities in that client, not the root cause of the failed composite or a universal platform guarantee. The untested next boundary is incremental multi-module composition.
+
 ### Try the pattern without over-specifying the layout
 
 > Using these actual [items, amounts, rules], help me [make a decision or complete a task]. Let me change [inputs], select [items] and compare [results]. Recalculate [output and remaining work] when I change a value or mark a step finished. Show assumptions and limitations; do not execute any external changes. If interactive controls are unavailable, give me a usable non-interactive alternative.
