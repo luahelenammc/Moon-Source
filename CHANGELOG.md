@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-18 — Conversation-native interactive response tools
+
+- Extended Operational Devices with a subordinate, vendor-neutral response-instrument contract for six useful operations: changing parameters, selecting, comparing, sequencing, evaluating and replanning unfinished work.
+- Added explicit input/output, state, source-of-record, action-authorization, mobile/accessibility, calculation and postflight boundaries. Interactive responses are not automatically operational devices, persistent applications or permission to modify external systems.
+- Linked the design route from AI Kernel and For AI Builders; kept the existing capability registry, standalone packages, MSL grammar, AOP routing and translated READMEs unchanged.
+- Attributed the community example and verified GPT-6 Intelligent UI availability against official product sources; no claims of external adoption, an installed SDK, working client support outside verified surfaces or end-to-end application delivery.
+
 ## 2026-10-14 — Conversational continuity re-entry and handoff composition
 
 - Extended the existing synthetic conversational context selector with optional actor-scope, consent-revocation, effective-date, purpose-field and per-kind freshness boundaries. Existing input fixtures remain supported.
