@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: pt-BR
 source: ../README.md
-source_sha256: 15933afe0015015160e1522a6e177b5cab8e4081567f1c80cff2fb88c199f549
+source_sha256: ccf7ca2a261d99c597d8ee8079248e1148b63909ed93f791c864b80dc830ee52
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -33,6 +33,7 @@ Moon Source é uma arquitetura pública de referência para decidir qual context
 | Se você quer… | Comece por aqui |
 |---|---|
 | Ajudar a IA a entender você ou um de seus projetos com mais consistência | [Comece aqui](../START_HERE.md), escrito em linguagem comum para quem está chegando |
+| Criar uma aplicação de IA que retoma acompanhamentos ao longo do tempo, limita o contexto reutilizável ou identifica quando envolver uma pessoa | [Contexto Conversacional](../docs/CONVERSATIONAL_CONTEXT.md) · [Exemplo sintético executável](../examples/conversational-context/README.md) |
 | Construir sistemas de IA e ver como o contexto governado se encaixa na sua pilha atual | [Para quem constrói com IA](../docs/FOR_AI_BUILDERS.md) |
 | Examinar a arquitetura completa e o contrato de roteamento do lado da IA | [Architecture](../ARCHITECTURE.md) · [Moon Source AI Kernel](../MOON_SOURCE_AI_KERNEL.md) |
 
@@ -163,6 +164,7 @@ Estes exemplos tornam o material público mais fácil de examinar. Exemplos sint
 - [Percurso de primeira utilização do contexto de projeto](../examples/first-use-project-context.md): um conjunto fictício de fontes, um conflito, uma interpretação delimitada e uma verificação repetível.
 - [Primeiro uso de Setup](../portables/setup/MOON_SOURCE_SETUP.md#first-use): um prompt independente para decidir qual contexto realmente ajudaria.
 - [Exemplo breve de Connected Sources](../docs/CONNECTED_SOURCES.md#tiny-example): um percurso sobre autoridade e atualidade da fonte. Isso não significa que haja um conector disponível em todo ambiente.
+- [Jornadas conversacionais de longa duração](../examples/conversational-context/README.md): decisões sintéticas executáveis em Node.js para retomada após uma pausa, mudança de estado operacional, limites de consentimento e revisão humana; nenhuma mensagem é enviada.
 - [Browser Console Device](../examples/browser-console-device/README.md): uma demonstração sintética, experimental e somente de leitura, que pode ser executada localmente.
 - [Cenários hipotéticos de aplicação](../examples/application-scenarios/): casos fictícios em projetos, equipes e serviços.
 

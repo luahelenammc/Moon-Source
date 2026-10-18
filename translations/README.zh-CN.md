@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: zh-CN
 source: ../README.md
-source_sha256: 15933afe0015015160e1522a6e177b5cab8e4081567f1c80cff2fb88c199f549
+source_sha256: ccf7ca2a261d99c597d8ee8079248e1148b63909ed93f791c864b80dc830ee52
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -33,6 +33,7 @@ Moon Source 是一套公开参考架构，用于决定 AI 应使用哪些上下�
 | 如果你想…… | 从这里开始 |
 |---|---|
 | 让 AI 更一致地理解你或你的某个项目 | [从这里开始](../START_HERE.md)，面向初次阅读者，以日常语言编写 |
+| 构建可恢复长期交互、限制上下文再利用并判断何时需要人工介入的 AI 应用 | [对话上下文](../docs/CONVERSATIONAL_CONTEXT.md) · [可运行的合成示例](../examples/conversational-context/README.md) |
 | 构建 AI 系统，并了解受治理上下文如何融入现有技术栈 | [面向 AI 构建者](../docs/FOR_AI_BUILDERS.md) |
 | 查看完整架构和面向 AI 的路由契约 | [Architecture](../ARCHITECTURE.md) · [Moon Source AI Kernel](../MOON_SOURCE_AI_KERNEL.md) |
 
@@ -163,6 +164,7 @@ Moon Source 主要在受治理上下文领域运作：它帮助判断 harness �
 - [项目上下文首次使用示例](../examples/first-use-project-context.md)：一组虚构来源、一个冲突、有界解释和可重复检查。
 - [Setup 首次使用](../portables/setup/MOON_SOURCE_SETUP.md#first-use)：用于判断哪种上下文真正有帮助的独立提示词。
 - [Connected Sources 简短示例](../docs/CONNECTED_SOURCES.md#tiny-example)：演示来源权限归属和时效性。这不意味着每个环境都提供连接器。
+- [长期对话与流程恢复](../examples/conversational-context/README.md)：可运行的 Node.js 合成决策示例，涵盖中断后恢复、运营状态变化、同意与上下文边界以及人工复核；不会发送消息。
 - [Browser Console Device](../examples/browser-console-device/README.md)：一个实验性的、只读的合成演示，可在本地运行。
 - [假设性应用场景](../examples/application-scenarios/)：涵盖项目、团队和服务的虚构案例。
 
