@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: es
 source: ../README.md
-source_sha256: ccf7ca2a261d99c597d8ee8079248e1148b63909ed93f791c864b80dc830ee52
+source_sha256: 51699c8e4364075ec75a54b9303b98a01c27d6ac2712a15b64ea1f98b70fa97f
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -32,6 +32,7 @@ Moon Source es una arquitectura pública de referencia para decidir qué context
 
 | Si quieres… | Empieza aquí |
 |---|---|
+| Tengo un problema concreto en mi proyecto, pero no sé qué método Moon Source puede ayudar | [Encuentra un método según el problema](../docs/PROBLEM_TO_METHOD.md) · [Português](../docs/PROBLEM_TO_METHOD.pt-BR.md) |
 | Ayudar a la IA a entenderte a ti o a uno de tus proyectos con más coherencia | [Empieza aquí](../START_HERE.md), escrito en lenguaje cotidiano para quienes llegan por primera vez |
 | Crear una aplicación de IA que retome procesos prolongados, limite qué contexto se reutiliza o identifique cuándo se necesita intervención humana | [Contexto Conversacional](../docs/CONVERSATIONAL_CONTEXT.md) · [Ejemplo sintético ejecutable](../examples/conversational-context/README.md) |
 | Crear sistemas de IA y ver cómo encaja el contexto gobernado en tu stack actual | [Para quienes construyen con IA](../docs/FOR_AI_BUILDERS.md) |
@@ -104,6 +105,8 @@ La división de abajo es arquitectónica, no solo una clasificación de descarga
 | Materializar un procedimiento recurrente en una superficie de ejecución concreta con estado, protecciones y comprobantes | [🛠️ Operational Devices](../docs/OPERATIONAL_DEVICES.md) |
 | Usar evidencia ambigua o convergente sin exagerar la certeza | [🎚️ Signal Calibration](../docs/SIGNAL_CALIBRATION.md) |
 | Convertir un fallo recurrente en el mecanismo reutilizable más pequeño que haya sido validado | [🏭 Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) |
+
+Para encontrar **problema → primera acción → resultado observable → límite** entre las 16 capacidades actuales, consulta la [guía por problemas](../docs/PROBLEM_TO_METHOD.md) ([Português](../docs/PROBLEM_TO_METHOD.pt-BR.md)). Los cuerpos canónicos anteriores mantienen la autoridad.
 
 ## Primer uso
 

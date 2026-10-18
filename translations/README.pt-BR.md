@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: pt-BR
 source: ../README.md
-source_sha256: ccf7ca2a261d99c597d8ee8079248e1148b63909ed93f791c864b80dc830ee52
+source_sha256: 51699c8e4364075ec75a54b9303b98a01c27d6ac2712a15b64ea1f98b70fa97f
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -32,6 +32,7 @@ Moon Source é uma arquitetura pública de referência para decidir qual context
 
 | Se você quer… | Comece por aqui |
 |---|---|
+| Tenho um problema concreto no projeto, mas não sei qual método Moon Source ajuda | [Encontre o método pelo problema](../docs/PROBLEM_TO_METHOD.pt-BR.md) · [English](../docs/PROBLEM_TO_METHOD.md) |
 | Ajudar a IA a entender você ou um de seus projetos com mais consistência | [Comece aqui](../START_HERE.md), escrito em linguagem comum para quem está chegando |
 | Criar uma aplicação de IA que retoma acompanhamentos ao longo do tempo, limita o contexto reutilizável ou identifica quando envolver uma pessoa | [Contexto Conversacional](../docs/CONVERSATIONAL_CONTEXT.md) · [Exemplo sintético executável](../examples/conversational-context/README.md) |
 | Construir sistemas de IA e ver como o contexto governado se encaixa na sua pilha atual | [Para quem constrói com IA](../docs/FOR_AI_BUILDERS.md) |
@@ -104,6 +105,8 @@ A divisão abaixo é arquitetural, não apenas uma classificação de downloads.
 | Dar forma a um procedimento recorrente numa superfície de execução concreta com estado, proteções e registros | [🛠️ Operational Devices](../docs/OPERATIONAL_DEVICES.md) |
 | Usar evidências ambíguas ou convergentes sem inflar a certeza | [🎚️ Signal Calibration](../docs/SIGNAL_CALIBRATION.md) |
 | Transformar falhas recorrentes no menor mecanismo reutilizável que tenha sido validado | [🏭 Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) |
+
+Para a rota completa **problema → primeira ação → resultado observável → limite** nas 16 capacidades atuais, use o [guia orientado por problemas](../docs/PROBLEM_TO_METHOD.pt-BR.md) ([English](../docs/PROBLEM_TO_METHOD.md)). As fontes canônicas acima continuam governando cada método.
 
 ## Primeiro uso
 
