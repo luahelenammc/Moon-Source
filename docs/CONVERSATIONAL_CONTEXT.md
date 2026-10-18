@@ -6,6 +6,19 @@ A consumer chat window is one possible interface for AI. A product may instead a
 
 This guide defines a small implementation contract for that interaction. It is subordinate to [Field to Form](../ARCHITECTURE.md), [Connected Sources](CONNECTED_SOURCES.md), [Procedural Projection](PROCEDURAL_PROJECTION.md), [Operational Devices](OPERATIONAL_DEVICES.md), and [Operational Reliability](OPERATIONAL_RELIABILITY.md). Do not copy their semantic contracts into a competing module.
 
+## Find the project need first
+
+These are reusable design questions for education, membership, multi-session services, onboarding and other long-running interactions. They are **patterns to inspect**, not evidence of a deployed service.
+
+| What happens in the project | What should be decided | Inspectable reference |
+|---|---|---|
+| Someone returns after days or weeks | What remains authorized from the earlier interaction, what the operational system says now, and which next step is still legitimate | [Journey re-entry demonstration](../examples/conversational-context/README.md#journey-re-entry-boundary-and-handoff-composition) |
+| The person's state changed while they were away | Which current, approved version governs and whether older details must be left out | [Current-state selection and conflict tests](../examples/conversational-context/test-router.js) |
+| A preference or conversation detail could travel to a different purpose, person or region | Whether consent, purpose, scope, actor and field-level restrictions allow that specific reuse | [The existing context selector](../examples/conversational-context/router.js) |
+| Human judgment is requested or a current-state conflict cannot be resolved | Whether review is recommended or requested, who the configured role is, and what minimal context can be prepared | [Handoff decision, not delivery](../examples/conversational-context/continuity.js) |
+
+The decision flow is **approved scope → permitted current context → longitudinal comparison → optional human review**. The example returns inspectable structured data; it never sends a follow-up, notifies a reviewer, or substitutes for production consent, identity, retention or access controls.
+
 ## 1. What changes in an API-native product?
 
 | Dimension | A document-centered assistant may ask | A conversational application must also ask |
@@ -77,7 +90,7 @@ A database query can return current values without establishing that all queries
 
 ## 5. Synthetic reference you can execute
 
-The [conversational-context example](../examples/conversational-context/README.md) implements a **small deterministic context selector** with fabricated program and dialogue records. It does not generate conversation; it selects a minimal structure the application *could* review before calling a model.
+The [conversational-context example](../examples/conversational-context/README.md) implements a **small deterministic context selector plus a read-only re-entry/handoff evaluator** with fabricated program and dialogue records. It does not generate conversation; it selects a minimal structure the application *could* review before calling a model.
 
 Run its regression tests using Node.js:
 
