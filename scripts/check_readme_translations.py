@@ -75,8 +75,12 @@ def check_nav(text: str, label: str, locale: str | None, failures: list[str]) ->
         failures.append(f"{label}: language navigation is missing a required flag")
 
 
-def translated_target(target: str) -> str:
+def translated_target(target: str, locale: str | None = None) -> str:
     target = target.strip()
+    # One narrowly governed localized resource: each language has its own
+    # registry-checked problem guide. Other links must rebase byte-for-byte.
+    if locale in LANGUAGES and target == "docs/PROBLEM_TO_METHOD.md":
+        return f"../docs/PROBLEM_TO_METHOD.{locale}.md"
     parsed = urlsplit(target)
     if parsed.scheme or parsed.netloc or not parsed.path or parsed.path.startswith("../"):
         return target
@@ -157,7 +161,7 @@ def mermaid_shape(body: str) -> tuple[tuple[str, ...], tuple[tuple[str, str, str
     return nodes, edges
 
 
-def check_structure(source: str, translated: str, label: str, failures: list[str]) -> None:
+def check_structure(source: str, translated: str, label: str, failures: list[str], locale: str | None = None) -> None:
     if heading_signature(source) != heading_signature(translated):
         failures.append(f"{label}: heading hierarchy or section coverage differs from README.md")
     for prefix, description in (("|", "table rows"), ("- ", "list items"), (">", "block quotes")):
@@ -195,7 +199,7 @@ def check_structure(source: str, translated: str, label: str, failures: list[str
             failures.append(f"{label}: protected proper name is missing: {name}")
 
     expected = Counter(
-        translated_target(target)
+        translated_target(target, locale)
         for target, count in markdown_targets(source).items()
         for _ in range(count)
     )
@@ -276,7 +280,7 @@ def validate(root: Path = ROOT, changed_paths: set[str] | None = None) -> list[s
         if info["authority"] not in translated:
             failures.append(f"{label}: derived-translation authority statement is missing")
         check_nav(translated, label, locale, failures)
-        check_structure(source, translated, label, failures)
+        check_structure(source, translated, label, failures, locale)
 
     failures.extend(cochange_failures(changed_paths))
     return failures
