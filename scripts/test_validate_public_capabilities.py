@@ -56,6 +56,7 @@ Creator: Example Creator
             "readable_surface_path": "docs/CONNECTED_SOURCES.md",
             "status": "current",
             "architectural_role": "structural_crown_jewel",
+            "discovery_family": "govern",
             "canonical_path": "docs/CONNECTED_SOURCES.md",
             "function": "Govern living-source authority.",
             "claim_ceiling": "No guaranteed freshness or universal connector behavior.",
@@ -86,6 +87,7 @@ Creator: Example Creator
             "surface_title": "Source Operations — Moon Source component",
             "status": "current",
             "architectural_role": "source_operations_method",
+            "discovery_family": "govern",
             "canonical_path": "docs/SOURCE_OPERATIONS.md",
             "function": "Govern source transformations.",
             "claim_ceiling": "No guaranteed source outcome.",
@@ -105,12 +107,18 @@ Creator: Example Creator
             "canonical_repository": REPOSITORY,
             "public_surface_url": f"{REPOSITORY}/blob/main/README.md",
             "professional_context_url": f"{REPOSITORY}/blob/main/LICENSING.md",
+            "discovery_families": [
+                {"id": "understand", "title": "Understand requests and people", "purpose": "Read intent and signals."},
+                {"id": "govern", "title": "Govern sources and knowledge", "purpose": "Preserve context authority."},
+                {"id": "organize", "title": "Organize work and reuse", "purpose": "Manage durable work."},
+                {"id": "execute", "title": "Execute, verify and learn", "purpose": "Check outcomes."},
+            ],
             "capabilities": [connected_capability, repository_only_capability],
             "views": {"standalone_distributions": {"capability_ids": ["connected-sources"]}},
         }
         self.human_registry = (
-            "connected-sources Connected Sources docs/CONNECTED_SOURCES.md\n"
-            "source-operations Source Operations docs/SOURCE_OPERATIONS.md\n"
+            "| connected-sources | Connected Sources | Govern | docs/CONNECTED_SOURCES.md |\\n"
+            "| source-operations | Source Operations | Govern | docs/SOURCE_OPERATIONS.md |\\n"
         )
         self.kernel = "docs/CONNECTED_SOURCES.md\ndocs/SOURCE_OPERATIONS.md\n"
 
@@ -167,6 +175,20 @@ Creator: Example Creator
 
     def test_baseline_registry_is_valid(self):
         self.assertEqual(self.errors(), [])
+
+    def test_discovery_family_required_without_changing_architectural_role(self):
+        data = copy.deepcopy(self.data)
+        data["capabilities"][0].pop("discovery_family")
+        self.assert_error("missing a valid discovery_family", self.errors(data))
+
+    def test_discovery_families_are_ordered(self):
+        data = copy.deepcopy(self.data)
+        data["discovery_families"].reverse()
+        self.assert_error("four ordered groups", self.errors(data))
+
+    def test_human_registry_discovery_family_is_checked(self):
+        human = self.human_registry.replace(" | Govern |", " | Execute |", 1)
+        self.assert_error("discovery family missing from human registry", self.errors(human=human))
 
     def test_architectural_role_and_standalone_distribution_are_independent(self):
         data = copy.deepcopy(self.data)
