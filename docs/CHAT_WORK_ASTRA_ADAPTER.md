@@ -4,7 +4,7 @@ This document preserves the former locator and identity. The current adapter is 
 
 **Canonical adapter:** [portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](../portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md)
 
-The adapter remains independently versioned at 1.6. The governing canonical body is [portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md).
+The adapter remains independently versioned at 1.9. The governing canonical body is [portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md).
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

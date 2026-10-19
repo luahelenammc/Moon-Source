@@ -48,7 +48,8 @@
       "surface_title": "Be My Eyes — Moon Source portable",
       "title": "Be My Eyes",
       "version": "1.0-public",
-      "versioning_mode": "independent_public_capability_version"
+      "versioning_mode": "independent_public_capability_version",
+      "discovery_family": "understand"
     },
     {
       "architectural_role": "adaptive_execution_orchestration_protocol",
@@ -133,7 +134,8 @@
       ],
       "legacy_mirror_paths": [
         "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL.md"
-      ]
+      ],
+      "discovery_family": "execute"
     },
     {
       "architectural_role": "structural_crown_jewel",
@@ -174,7 +176,8 @@
       "surface_title": "Connected Sources — Moon Source structural component",
       "title": "Connected Sources",
       "version": "1.2",
-      "versioning_mode": "independent_public_capability_version"
+      "versioning_mode": "independent_public_capability_version",
+      "discovery_family": "govern"
     },
     {
       "architectural_role": "immaterial_asset_protection",
@@ -200,7 +203,8 @@
       "surface_title": "Credits & Attribution Ops — Moon Source component",
       "title": "Credits & Attribution Ops",
       "version": null,
-      "versioning_mode": "material_update_without_semantic_version"
+      "versioning_mode": "material_update_without_semantic_version",
+      "discovery_family": "organize"
     },
     {
       "architectural_role": "failure_to_capability_method",
@@ -226,7 +230,8 @@
       "surface_title": "Failure to Capability — Failure Foundry — Moon Source component",
       "title": "Failure to Capability — Failure Foundry",
       "version": null,
-      "versioning_mode": "material_update_without_semantic_version"
+      "versioning_mode": "material_update_without_semantic_version",
+      "discovery_family": "execute"
     },
     {
       "architectural_role": "lifecycle_workspace_routing_method",
@@ -258,7 +263,8 @@
       "surface_title": "Lifecycle Workspace Router — Moon Source component",
       "title": "Lifecycle Workspace Router",
       "version": "1.2",
-      "versioning_mode": "independent_public_capability_version"
+      "versioning_mode": "independent_public_capability_version",
+      "discovery_family": "organize"
     },
     {
       "architectural_role": "structural_grammar",
@@ -295,7 +301,8 @@
       "surface_title": "Moon Source Language — Moon Source portable",
       "title": "Moon Source Language",
       "version": "5.1",
-      "versioning_mode": "independent_public_capability_version"
+      "versioning_mode": "independent_public_capability_version",
+      "discovery_family": "govern"
     },
     {
       "architectural_role": "adaptive_context_router",
@@ -332,7 +339,8 @@
       "surface_title": "Setup — Moon Source portable",
       "title": "Moon Source Setup",
       "version": "3.1",
-      "versioning_mode": "independent_public_capability_version"
+      "versioning_mode": "independent_public_capability_version",
+      "discovery_family": "understand"
     },
     {
       "architectural_role": "operational_device_pattern",
@@ -358,7 +366,8 @@
       "surface_title": "Operational Devices — Moon Source component",
       "title": "Operational Devices",
       "version": null,
-      "versioning_mode": "material_update_without_semantic_version"
+      "versioning_mode": "material_update_without_semantic_version",
+      "discovery_family": "execute"
     },
     {
       "architectural_role": "operational_reliability_method",
@@ -384,7 +393,8 @@
       "surface_title": "Operational Reliability — Moon Source component",
       "title": "Operational Reliability",
       "version": null,
-      "versioning_mode": "material_update_without_semantic_version"
+      "versioning_mode": "material_update_without_semantic_version",
+      "discovery_family": "execute"
     },
     {
       "architectural_role": "transversal_interface_method",
@@ -421,7 +431,8 @@
       "surface_title": "Preflight — Moon Source portable",
       "title": "Preflight",
       "version": "2.3",
-      "versioning_mode": "independent_public_capability_version"
+      "versioning_mode": "independent_public_capability_version",
+      "discovery_family": "understand"
     },
     {
       "architectural_role": "procedural_projection_method",
@@ -447,7 +458,8 @@
       "surface_title": "Procedural Projection — Moon Source component",
       "title": "Procedural Projection",
       "version": null,
-      "versioning_mode": "material_update_without_semantic_version"
+      "versioning_mode": "material_update_without_semantic_version",
+      "discovery_family": "organize"
     },
     {
       "architectural_role": "semantic_topology_repair_method",
@@ -478,7 +490,8 @@
       "surface_title": "Semantic Reweave — Moon Source component",
       "title": "Semantic Reweave",
       "version": null,
-      "versioning_mode": "material_update_without_semantic_version"
+      "versioning_mode": "material_update_without_semantic_version",
+      "discovery_family": "govern"
     },
     {
       "architectural_role": "qualitative_signal_calibration",
@@ -504,7 +517,8 @@
       "surface_title": "Signal Calibration — Moon Source component",
       "title": "Signal Calibration",
       "version": null,
-      "versioning_mode": "material_update_without_semantic_version"
+      "versioning_mode": "material_update_without_semantic_version",
+      "discovery_family": "understand"
     },
     {
       "architectural_role": "source_hygiene_method",
@@ -530,7 +544,8 @@
       "surface_title": "Source Hygiene — Moon Source component",
       "title": "Source Hygiene",
       "version": null,
-      "versioning_mode": "material_update_without_semantic_version"
+      "versioning_mode": "material_update_without_semantic_version",
+      "discovery_family": "govern"
     },
     {
       "architectural_role": "source_operations_method",
@@ -556,7 +571,8 @@
       "surface_title": "Source Operations — Moon Source component",
       "title": "Source Operations — Retrieve, Process, Metabolize and Promote",
       "version": null,
-      "versioning_mode": "material_update_without_semantic_version"
+      "versioning_mode": "material_update_without_semantic_version",
+      "discovery_family": "govern"
     }
   ],
   "mirror_contract": {
@@ -591,5 +607,27 @@
       ],
       "description": "Filtered view of capabilities whose distribution.standalone is true; not a second semantic inventory."
     }
-  }
+  },
+  "discovery_families": [
+    {
+      "id": "understand",
+      "title": "Understand requests and people",
+      "purpose": "Reconstruct human intent, project needs, relational scenes and uncertain signals."
+    },
+    {
+      "id": "govern",
+      "title": "Govern sources and knowledge",
+      "purpose": "Keep source authority, continuity, operations, form and semantic passage legible."
+    },
+    {
+      "id": "organize",
+      "title": "Organize work and reuse",
+      "purpose": "Project durable workspace state, protect intellectual lineage and reuse proven procedures."
+    },
+    {
+      "id": "execute",
+      "title": "Execute, verify and learn",
+      "purpose": "Route execution, embody procedures, verify outcomes and learn from recurring failures."
+    }
+  ]
 }

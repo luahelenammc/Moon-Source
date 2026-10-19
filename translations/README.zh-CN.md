@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: zh-CN
 source: ../README.md
-source_sha256: 2d97aa4887af3a51b64dbaa668e0d79fe9491dc9fa77b795fb3119187f3bc2db
+source_sha256: db496c0da6468cbb8b69aeccaa58fdfe52874dee84efd0ad75696a2e076e8760
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -77,36 +77,47 @@ Moon Source 把上下文视为一个有组织的场域，而不是一堆文本�
 
 ## 从问题开始，而不是从术语开始
 
-下方的划分体现的是架构角色，而不只是下载分类。**Portables** 是语义身份本身可以独立携带的能力。**独立分发**则是另一种交付属性：结构组件也可以单独分发，但这不会使它成为 portable。下面的 Connected Sources 是一个重要例子。
+请根据**实际需要解决的问题**选择能力，而不是根据文件位于 `docs/` 还是 `portables/`。这四组只是**发现与导航视图**，并不是新的权威来源或强制顺序。方法可以跨组配合。要在选定持久形式之前判断场域需要什么，请参阅 [🏗️ Architecture — Field to Form](../ARCHITECTURE.md#field-to-form)。
 
-### 可移植入口
+**Portable** 表示能力的语义类型，**独立分发**是另一种交付属性。例如 Connected Sources 虽可独立打包为 ZIP，仍然属于结构组件。[规范登记表](../registry/PUBLIC_CAPABILITIES.md) 管理能力身份、版本及分发信息。
+
+### 理解请求、人物与信号
 
 | 如果你需要…… | 从这里开始 |
 |---|---|
-| 在控制根、界面、模型、推理力度和委派之间有效运用 AI 能力，以尽量少的总工作量获得可接受结果 | [🧬 Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) |
-| 在不同来源和界面之间传递上下文，同时保留含义、出处和权限归属 | [🧱 Moon Source Language](../portables/msl/README.md) |
-| 为个人或项目构建最小而有用的上下文 | [🧭 Setup](../portables/setup/README.md) |
 | 当表达混乱、不完整或不断自我修正时，在执行前重建人的真实任务 | [🛫 Preflight](../portables/preflight/README.md) |
+| 为个人或项目构建最小而有用的上下文 | [🧭 Setup](../portables/setup/README.md) |
 | 把通信和材料视为人的情境，同时区分观察与推断 | [👁️ Be My Eyes](../portables/be-my-eyes/README.md) |
+| 面对含糊或相互印证的证据时，不夸大确定性 | [🎚️ Signal Calibration](../docs/SIGNAL_CALIBRATION.md) |
 
-### 结构架构与组件
+### 治理来源与知识
 
 | 如果你需要…… | 从这里开始 |
 |---|---|
-| 在选择长期形式之前，先判断一个场域需要什么 | [🏗️ Architecture — Field to Form](../ARCHITECTURE.md#field-to-form) |
 | 访问持续变化的来源，同时治理访问权、权限归属、时效性、修改和回读 | [🔗 Connected Sources](../docs/CONNECTED_SOURCES.md#first-use) |
 | 检索、处理、吸收或提升受治理的来源材料 | [🔄 Source Operations](../docs/SOURCE_OPERATIONS.md) |
 | 诊断过期的权限归属、时效性问题、重复或矛盾，并找出对语料库最小且安全的修复 | [🧹 Source Hygiene](../docs/SOURCE_HYGIENE.md) |
 | 恢复语料库的语义拓扑，并修复继承而来的组织方式，而无需从头重建 | [🧵 Semantic Reweave](../docs/SEMANTIC_REWEAVE.md) |
+| 在不同来源和界面之间传递上下文，同时保留含义、出处和权限归属 | [🧱 Moon Source Language](../portables/msl/README.md) |
+
+### 组织工作与复用
+
+| 如果你需要…… | 从这里开始 |
+|---|---|
 | 把生命周期、行动和出处投射到持久工作区界面上 | [🗂️ Lifecycle Workspace Router](../docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
-| 在材料移动或更改时保留作者身份、权限、谱系和证据 | [🧾 Credits & Attribution Ops](../docs/CREDITS_ATTRIBUTION_OPS.md) |
 | 将稳定方法转换为有界且可复用的程序 | [🧩 Procedural Projection](../docs/PROCEDURAL_PROJECTION.md) |
-| 在可能时让执行保持有界、可诊断和可恢复 | [🛡️ Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) |
+| 在材料移动或更改时保留作者身份、权限、谱系和证据 | [🧾 Credits & Attribution Ops](../docs/CREDITS_ATTRIBUTION_OPS.md) |
+
+### 执行、验证与学习
+
+| 如果你需要…… | 从这里开始 |
+|---|---|
+| 在控制根、界面、模型、推理力度和委派之间有效运用 AI 能力，以尽量少的总工作量获得可接受结果 | [🧬 Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) |
 | 在具体执行界面中，通过状态、护栏和收据体现重复性程序 | [🛠️ Operational Devices](../docs/OPERATIONAL_DEVICES.md) |
-| 面对含糊或相互印证的证据时，不夸大确定性 | [🎚️ Signal Calibration](../docs/SIGNAL_CALIBRATION.md) |
+| 在可能时让执行保持有界、可诊断和可恢复 | [🛡️ Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) |
 | 将重复出现的失败转化为最小且经过验证的可复用机制 | [🏭 Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) |
 
-如需查看全部 16 项现有能力对应的**问题 → 第一步 → 可检验结果 → 使用界限**，请查阅[按问题查找方法](../docs/PROBLEM_TO_METHOD.zh-CN.md)。以上规范正文仍是各方法的权威来源。
+要查看全部 16 项能力的**问题 → 第一步 → 可观察结果 → 使用边界**，请访问[按问题查找方法](../docs/PROBLEM_TO_METHOD.zh-CN.md)。各规范正文仍是权威来源。
 
 ## 首次使用
 
@@ -218,6 +229,7 @@ Moon Source 本身仍然是公开的。希望把这套架构应用于真实上�
 
 | 需求 | 规范路径 |
 |---|---|
+| 按职责浏览文档 | [按职责浏览文档](../docs/README.md) |
 | 完整架构和 Field-to-Form 诊断 | [🏗️ Architecture](../ARCHITECTURE.md#field-to-form) |
 | AI 通过公开语料库进行路由 | [MOON_SOURCE_AI_KERNEL.md](../MOON_SOURCE_AI_KERNEL.md) |
 | 定义与责任边界 | [Terminology](../docs/TERMINOLOGY.md) + [Responsibility Map](../docs/RESPONSIBILITY_MAP.md) |

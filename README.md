@@ -67,36 +67,47 @@ Beyond source selection, Moon Source also addresses human intent, interpretation
 
 ## Start with the problem, not the vocabulary
 
-The split below is architectural rather than merely a download taxonomy. **Portables** are capabilities whose semantic identity is itself portable. **Standalone distribution** is a separate delivery property: a structural component can also be distributed independently without becoming a portable. Connected Sources is the important example below.
+Choose by **what you need to accomplish**, not by whether a file lives in `docs/` or `portables/`. These four families are **discovery views**, not new sources of authority or a mandatory sequence. Methods can compose across families. To decide what a field needs before choosing a durable form, see [🏗️ Architecture — Field to Form](ARCHITECTURE.md#field-to-form).
 
-### Portable entry points
+A **portable** is a semantic type of capability; **standalone distribution** is an independent delivery property. Connected Sources remains structural even though it also has a ZIP. The [canonical registry](registry/PUBLIC_CAPABILITIES.md) governs the identity, version and distribution of each capability.
+
+### Understand requests and people
 
 | If you need to… | Start here |
 |---|---|
-| Spend AI capability efficiently across roots, surfaces, models, reasoning effort and delegation while minimizing total work to an accepted result | [🧬 Adaptive Orchestration Protocol](portables/adaptive-orchestration/README.md) |
-| Carry context across sources and surfaces without losing meaning, provenance or authority | [🧱 Moon Source Language](portables/msl/README.md) |
-| Build the smallest useful context for a person or project | [🧭 Setup](portables/setup/README.md) |
 | Reconstruct the human task before execution when expression is messy, incomplete or self-correcting | [🛫 Preflight](portables/preflight/README.md) |
+| Build the smallest useful context for a person or project | [🧭 Setup](portables/setup/README.md) |
 | Read communications and artifacts as human scenes while distinguishing observation from inference | [👁️ Be My Eyes](portables/be-my-eyes/README.md) |
+| Use ambiguous or convergent evidence without inflating certainty | [🎚️ Signal Calibration](docs/SIGNAL_CALIBRATION.md) |
 
-### Structural architecture & components
+### Govern sources and knowledge
 
 | If you need to… | Start here |
 |---|---|
-| Decide what a field needs before choosing its durable form | [🏗️ Architecture — Field to Form](ARCHITECTURE.md#field-to-form) |
 | Reach living sources while keeping access, authority, freshness, mutation and readback governed | [🔗 Connected Sources](docs/CONNECTED_SOURCES.md#first-use) |
 | Retrieve, process, metabolize or promote governed source material | [🔄 Source Operations](docs/SOURCE_OPERATIONS.md) |
 | Diagnose stale authority, freshness problems, duplication or contradiction and find the smallest safe corpus repair | [🧹 Source Hygiene](docs/SOURCE_HYGIENE.md) |
 | Recover a corpus's semantic topology and repair inherited organization without rebuilding it from scratch | [🧵 Semantic Reweave](docs/SEMANTIC_REWEAVE.md) |
+| Carry context across sources and surfaces without losing meaning, provenance or authority | [🧱 Moon Source Language](portables/msl/README.md) |
+
+### Organize work and reuse
+
+| If you need to… | Start here |
+|---|---|
 | Project lifecycle, action and provenance onto durable workspace surfaces | [🗂️ Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
-| Preserve authorship, permissions, lineage and evidence as material moves or changes | [🧾 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) |
 | Turn a stable method into a bounded reusable procedure | [🧩 Procedural Projection](docs/PROCEDURAL_PROJECTION.md) |
-| Keep execution bounded, diagnosable and recoverable where possible | [🛡️ Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) |
+| Preserve authorship, permissions, lineage and evidence as material moves or changes | [🧾 Credits & Attribution Ops](docs/CREDITS_ATTRIBUTION_OPS.md) |
+
+### Execute, verify and learn
+
+| If you need to… | Start here |
+|---|---|
+| Spend AI capability efficiently across roots, surfaces, models, reasoning effort and delegation while minimizing total work to an accepted result | [🧬 Adaptive Orchestration Protocol](portables/adaptive-orchestration/README.md) |
 | Embody a recurring procedure on a concrete execution surface with state, guards and receipts | [🛠️ Operational Devices](docs/OPERATIONAL_DEVICES.md) |
-| Use ambiguous or convergent evidence without inflating certainty | [🎚️ Signal Calibration](docs/SIGNAL_CALIBRATION.md) |
+| Keep execution bounded, diagnosable and recoverable where possible | [🛡️ Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) |
 | Turn recurring failure into the smallest validated reusable mechanism | [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) |
 
-For the full **problem → first move → observable result → stop line** route across the 16 current capabilities, use the [problem-first guide](docs/PROBLEM_TO_METHOD.md). The canonical bodies above still govern each method.
+For the **problem → first move → observable result → stop line** route across all 16 capabilities, use the [problem-first guide](docs/PROBLEM_TO_METHOD.md). Canonical bodies still govern the actual methods.
 
 ## First use
 
@@ -208,6 +219,7 @@ This is a professional-service bridge, not a claim that Moon Source is a mature 
 
 | Need | Canonical route |
 |---|---|
+| Browse documentation by responsibility | [Documentation by responsibility](docs/README.md) |
 | Full architecture and Field-to-Form diagnostic | [🏗️ Architecture](ARCHITECTURE.md#field-to-form) |
 | AI-side routing through the public corpus | [MOON_SOURCE_AI_KERNEL.md](MOON_SOURCE_AI_KERNEL.md) |
 | Definitions and responsibility boundaries | [Terminology](docs/TERMINOLOGY.md) + [Responsibility Map](docs/RESPONSIBILITY_MAP.md) |

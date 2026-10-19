@@ -10,6 +10,12 @@ A capability README should let a first-time reader answer, in ordinary language:
 
 Example READMEs must distinguish a bounded executable demonstration from the method it illustrates and from a ready-to-use product. Preserve existing source authority, version, package, use-permission and evidence boundaries. The canonical root README governs the public summary; its four translations must remain fully synchronized.
 
+## Discovery families are presentation, not authority
+
+The unified public registry assigns exactly one `discovery_family` to each of the sixteen capabilities, following the four problem-first families: Understand, Govern, Organize and Execute. These groups are navigation views, not semantic categories, required stages, new source authorities or distribution classes. Capabilities may compose across groups without appearing twice in the primary catalog.
+
+When family membership changes, update the machine registry, human registry, root README, four translations and coverage checks together. Do not move canonical bodies or fork inventories to match presentation groups.
+
 ## Problem-first discovery without duplicated authority
 
 For every current registered public capability, the [problem-first guide](PROBLEM_TO_METHOD.md) provides one plausible situation, the smallest useful first step, observable output, stop line and link to the canonical body. This is a **navigation surface**, not a rival capability registry or a new semantic authority. Keep examples fictional and claims proportionate; do not turn a method into a claimed deployment. The English, pt-BR, Spanish, Simplified Chinese and Russian guides share the same registry IDs and four themed comparison tables. `scripts/check_problem_routes.py` validates one-to-one coverage, table structure, inspection and boundary fields, canonical links and stable deep-link anchors. New registered capabilities require an entry in all five; removed capabilities require matching guide updates. Structural checks do not replace human review of translation fidelity or evidence boundaries.

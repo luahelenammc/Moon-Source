@@ -10,28 +10,28 @@ that is not required: Connected Sources is a structural component with a
 supported standalone distribution. The machine-readable contract is
 [registry/public-capabilities.json](public-capabilities.json), schema 2.0.
 If you recognize a practical problem but do not know the capability name, start with [Find the method for your problem](../docs/PROBLEM_TO_METHOD.md). Its own language navigation covers five localized guides, all pointing back to these canonical records rather than forming a second registry.
-The table below is a human-readable view of the same sixteen records.
+The table below is a human-readable view of the same sixteen records. **Discovery family** is a navigational view only: it does not replace architectural responsibility, canonical authority, or standalone distribution. The four families (Understand, Govern, Organize, Execute) match the problem-first guides.
 
 The table's **Summary title** is the concise browsing label. The registry's semantic `title` remains stable in machine-readable metadata; individual README and canonical-body headings use `surface_title` to make the Moon Source role explicit without folding version into identity.
 
-| ID | Summary title | Architectural role | Version | Status | Canonical body | Standalone distribution |
-|---|---|---|---:|---|---|---|
-| be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) | contextual scene-reading method | 1.0-public | current | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md#first-use) | [ZIP](../downloads/be-my-eyes.zip) |
-| adaptive-orchestration | [Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) | adaptive execution orchestration protocol | 6.4 | current | [ADAPTIVE_ORCHESTRATION_PROTOCOL.md](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md#first-use) | [ZIP](../downloads/adaptive-orchestration-protocol.zip) |
-| connected-sources | [Connected Sources](../portables/connected-sources/README.md) | structural crown jewel | 1.2 | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources.zip) |
-| credits-attribution-ops | 🧾 Credits & Attribution Ops | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
-| failure-foundry | 🏭 Failure to Capability — Failure Foundry | failure-to-capability method | — | current | [FAILURE_FOUNDRY.md](../docs/FAILURE_FOUNDRY.md) | — |
-| lifecycle-workspace-router | 🗂️ Lifecycle Workspace Router | lifecycle workspace routing method | 1.2 | current | [LIFECYCLE_WORKSPACE_ROUTER.md](../docs/LIFECYCLE_WORKSPACE_ROUTER.md) | — |
-| moon-source-language | [Moon Source Language](../portables/msl/README.md) | sovereign semantic passage grammar | 5.1 | current | [MOON_SOURCE_LANGUAGE.md](../portables/msl/MOON_SOURCE_LANGUAGE.md#first-use) | [ZIP](../downloads/moon-source-language.zip) |
-| moon-source-setup | [Setup](../portables/setup/README.md) | adaptive context router | 3.1 | current | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md#first-use) | [ZIP](../downloads/moon-source-setup.zip) |
-| operational-devices | 🛠️ Operational Devices | operational-device pattern | — | current | [OPERATIONAL_DEVICES.md](../docs/OPERATIONAL_DEVICES.md) | — |
-| operational-reliability | 🛡️ Operational Reliability | operational-reliability method | — | current | [OPERATIONAL_RELIABILITY.md](../docs/OPERATIONAL_RELIABILITY.md) | — |
-| preflight | [Preflight](../portables/preflight/README.md) | transversal interface method | 2.3 | current | [PREFLIGHT.md](../portables/preflight/PREFLIGHT.md#first-use) | [ZIP](../downloads/preflight.zip) |
-| procedural-projection | 🧩 Procedural Projection | procedural-projection method | — | current | [PROCEDURAL_PROJECTION.md](../docs/PROCEDURAL_PROJECTION.md) | — |
-| semantic-reweave | 🧵 Semantic Reweave | semantic-topology repair method | — | current | [SEMANTIC_REWEAVE.md](../docs/SEMANTIC_REWEAVE.md) | — |
-| signal-calibration | 🎚️ Signal Calibration | qualitative signal calibration | — | current | [SIGNAL_CALIBRATION.md](../docs/SIGNAL_CALIBRATION.md) | — |
-| source-hygiene | 🧹 Source Hygiene | source-hygiene method | — | current | [SOURCE_HYGIENE.md](../docs/SOURCE_HYGIENE.md) | — |
-| source-operations | 🔄 Source Operations | source-operations method | — | current | [SOURCE_OPERATIONS.md](../docs/SOURCE_OPERATIONS.md) | — |
+| ID | Summary title | Discovery family | Architectural role | Version | Status | Canonical body | Standalone distribution |
+|---|---|---|---|---:|---|---|---|
+| be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) | Understand | contextual scene-reading method | 1.0-public | current | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md#first-use) | [ZIP](../downloads/be-my-eyes.zip) |
+| adaptive-orchestration | [Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) | Execute | adaptive execution orchestration protocol | 6.4 | current | [ADAPTIVE_ORCHESTRATION_PROTOCOL.md](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md#first-use) | [ZIP](../downloads/adaptive-orchestration-protocol.zip) |
+| connected-sources | [Connected Sources](../portables/connected-sources/README.md) | Govern | structural crown jewel | 1.2 | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources.zip) |
+| credits-attribution-ops | 🧾 Credits & Attribution Ops | Organize | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
+| failure-foundry | 🏭 Failure to Capability — Failure Foundry | Execute | failure-to-capability method | — | current | [FAILURE_FOUNDRY.md](../docs/FAILURE_FOUNDRY.md) | — |
+| lifecycle-workspace-router | 🗂️ Lifecycle Workspace Router | Organize | lifecycle workspace routing method | 1.2 | current | [LIFECYCLE_WORKSPACE_ROUTER.md](../docs/LIFECYCLE_WORKSPACE_ROUTER.md) | — |
+| moon-source-language | [Moon Source Language](../portables/msl/README.md) | Govern | sovereign semantic passage grammar | 5.1 | current | [MOON_SOURCE_LANGUAGE.md](../portables/msl/MOON_SOURCE_LANGUAGE.md#first-use) | [ZIP](../downloads/moon-source-language.zip) |
+| moon-source-setup | [Setup](../portables/setup/README.md) | Understand | adaptive context router | 3.1 | current | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md#first-use) | [ZIP](../downloads/moon-source-setup.zip) |
+| operational-devices | 🛠️ Operational Devices | Execute | operational-device pattern | — | current | [OPERATIONAL_DEVICES.md](../docs/OPERATIONAL_DEVICES.md) | — |
+| operational-reliability | 🛡️ Operational Reliability | Execute | operational-reliability method | — | current | [OPERATIONAL_RELIABILITY.md](../docs/OPERATIONAL_RELIABILITY.md) | — |
+| preflight | [Preflight](../portables/preflight/README.md) | Understand | transversal interface method | 2.3 | current | [PREFLIGHT.md](../portables/preflight/PREFLIGHT.md#first-use) | [ZIP](../downloads/preflight.zip) |
+| procedural-projection | 🧩 Procedural Projection | Organize | procedural-projection method | — | current | [PROCEDURAL_PROJECTION.md](../docs/PROCEDURAL_PROJECTION.md) | — |
+| semantic-reweave | 🧵 Semantic Reweave | Govern | semantic-topology repair method | — | current | [SEMANTIC_REWEAVE.md](../docs/SEMANTIC_REWEAVE.md) | — |
+| signal-calibration | 🎚️ Signal Calibration | Understand | qualitative signal calibration | — | current | [SIGNAL_CALIBRATION.md](../docs/SIGNAL_CALIBRATION.md) | — |
+| source-hygiene | 🧹 Source Hygiene | Govern | source-hygiene method | — | current | [SOURCE_HYGIENE.md](../docs/SOURCE_HYGIENE.md) | — |
+| source-operations | 🔄 Source Operations | Govern | source-operations method | — | current | [SOURCE_OPERATIONS.md](../docs/SOURCE_OPERATIONS.md) | — |
 
 ## Related public body
 

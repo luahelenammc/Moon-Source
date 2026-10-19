@@ -123,6 +123,14 @@ def validate_registry(
     identities: dict[str, str] = {}
     standalone_ids: list[str] = []
 
+    families = data.get("discovery_families")
+    family_ids = ("understand", "govern", "organize", "execute")
+    if not isinstance(families, list) or [f.get("id") if isinstance(f, dict) else None for f in families] != list(family_ids):
+        errors.append("discovery_families must contain the four ordered groups")
+    elif any(not isinstance(f.get("title"), str) or not f["title"].strip()
+             or not isinstance(f.get("purpose"), str) or not f["purpose"].strip() for f in families):
+        errors.append("discovery_families needs nonempty titles and purposes")
+
     for index, capability in enumerate(capabilities):
         label = capability.get("id", f"capability-{index}")
         if not isinstance(capability, dict):
@@ -170,6 +178,8 @@ def validate_registry(
         for field in ("architectural_role", "function", "claim_ceiling", "last_material_update_summary", "freshness", "creator", "license"):
             if not isinstance(capability[field], str) or not capability[field].strip():
                 errors.append(f"{capability_id} has an empty {field}")
+        if capability.get("discovery_family") not in family_ids:
+            errors.append(f"{capability_id} is missing a valid discovery_family")
         status = capability["status"]
         if status not in VALID_STATUSES:
             errors.append(f"{capability_id} has invalid status {status!r}")
@@ -389,7 +399,16 @@ def validate_registry(
         errors.append("standalone distribution view does not match capability records")
 
     if human_registry is not None:
+        family_labels = {"understand": "Understand", "govern": "Govern",
+                         "organize": "Organize", "execute": "Execute"}
         for capability in capabilities:
+            matching_rows = [
+                line for line in human_registry.splitlines()
+                if line.startswith(f"| {capability['id']} |")
+            ]
+            expected_family = family_labels.get(capability.get("discovery_family"), "UNKNOWN")
+            if len(matching_rows) != 1 or f"| {expected_family} |" not in matching_rows[0]:
+                errors.append(f"{capability['id']} discovery family missing from human registry")
             if not all(
                 marker in human_registry
                 for marker in (

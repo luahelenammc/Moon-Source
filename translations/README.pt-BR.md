@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: pt-BR
 source: ../README.md
-source_sha256: 2d97aa4887af3a51b64dbaa668e0d79fe9491dc9fa77b795fb3119187f3bc2db
+source_sha256: db496c0da6468cbb8b69aeccaa58fdfe52874dee84efd0ad75696a2e076e8760
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -77,36 +77,47 @@ Além da seleção de fontes, Moon Source também trata da intenção humana, in
 
 ## Comece pelo problema, não pelo vocabulário
 
-A divisão abaixo é arquitetural, não apenas uma classificação de downloads. **Portables** são capacidades cuja própria identidade semântica é portátil. **Distribuição independente** é uma propriedade de entrega separada: um componente estrutural também pode ser distribuído por conta própria sem se tornar um portable. Connected Sources é o exemplo importante abaixo.
+Escolha pelo **problema que precisa resolver**, não pela pasta `docs/` ou `portables/`. Estas quatro famílias são **formas de descoberta**, não novas autoridades nem etapas obrigatórias. Os métodos podem atuar entre famílias. Para decidir do que um campo precisa antes de escolher sua forma durável, consulte [🏗️ Architecture — Field to Form](../ARCHITECTURE.md#field-to-form).
 
-### Pontos de entrada portáteis
+**Portable** descreve uma identidade semântica; **distribuição independente** é uma propriedade de entrega distinta. Connected Sources continua estrutural mesmo tendo ZIP próprio. O [registro canônico](../registry/PUBLIC_CAPABILITIES.md) governa identidade, versão e distribuição.
+
+### Compreender pedidos, pessoas e sinais
 
 | Se você precisa… | Comece por aqui |
 |---|---|
-| Usar a capacidade de IA com eficiência entre raízes, superfícies, modelos, esforço de raciocínio e delegação, reduzindo o trabalho total até um resultado aceito | [🧬 Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) |
-| Transportar contexto entre fontes e superfícies sem perder significado, proveniência ou autoridade | [🧱 Moon Source Language](../portables/msl/README.md) |
-| Criar o menor contexto útil para uma pessoa ou projeto | [🧭 Setup](../portables/setup/README.md) |
 | Reconstruir a tarefa humana antes da execução quando a expressão está confusa, incompleta ou se corrige no meio da fala | [🛫 Preflight](../portables/preflight/README.md) |
+| Criar o menor contexto útil para uma pessoa ou projeto | [🧭 Setup](../portables/setup/README.md) |
 | Ler comunicações e artefatos como cenas humanas, distinguindo observação de inferência | [👁️ Be My Eyes](../portables/be-my-eyes/README.md) |
+| Usar evidências ambíguas ou convergentes sem inflar a certeza | [🎚️ Signal Calibration](../docs/SIGNAL_CALIBRATION.md) |
 
-### Arquitetura e componentes estruturais
+### Governar fontes e conhecimento
 
 | Se você precisa… | Comece por aqui |
 |---|---|
-| Decidir do que um campo precisa antes de escolher sua forma durável | [🏗️ Architecture — Field to Form](../ARCHITECTURE.md#field-to-form) |
 | Acessar fontes vivas mantendo sob governança o acesso, a autoridade, a atualidade, a alteração e a leitura de confirmação | [🔗 Connected Sources](../docs/CONNECTED_SOURCES.md#first-use) |
 | Recuperar, processar, metabolizar ou promover material governado de fontes | [🔄 Source Operations](../docs/SOURCE_OPERATIONS.md) |
 | Diagnosticar autoridade desatualizada, problemas de atualidade, duplicação ou contradição e encontrar o menor reparo seguro para o corpus | [🧹 Source Hygiene](../docs/SOURCE_HYGIENE.md) |
 | Recuperar a topologia semântica de um corpus e corrigir a organização herdada sem reconstruí-lo do zero | [🧵 Semantic Reweave](../docs/SEMANTIC_REWEAVE.md) |
+| Transportar contexto entre fontes e superfícies sem perder significado, proveniência ou autoridade | [🧱 Moon Source Language](../portables/msl/README.md) |
+
+### Organizar trabalho e reutilização
+
+| Se você precisa… | Comece por aqui |
+|---|---|
 | Projetar ciclo de vida, ação e proveniência em superfícies duráveis do espaço de trabalho | [🗂️ Lifecycle Workspace Router](../docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
-| Preservar autoria, permissões, linhagem e evidências enquanto o material circula ou muda | [🧾 Credits & Attribution Ops](../docs/CREDITS_ATTRIBUTION_OPS.md) |
 | Transformar um método estável em um procedimento reutilizável e delimitado | [🧩 Procedural Projection](../docs/PROCEDURAL_PROJECTION.md) |
-| Manter a execução delimitada, diagnosticável e recuperável quando possível | [🛡️ Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) |
+| Preservar autoria, permissões, linhagem e evidências enquanto o material circula ou muda | [🧾 Credits & Attribution Ops](../docs/CREDITS_ATTRIBUTION_OPS.md) |
+
+### Executar, verificar e aprender
+
+| Se você precisa… | Comece por aqui |
+|---|---|
+| Usar a capacidade de IA com eficiência entre raízes, superfícies, modelos, esforço de raciocínio e delegação, reduzindo o trabalho total até um resultado aceito | [🧬 Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) |
 | Dar forma a um procedimento recorrente numa superfície de execução concreta com estado, proteções e registros | [🛠️ Operational Devices](../docs/OPERATIONAL_DEVICES.md) |
-| Usar evidências ambíguas ou convergentes sem inflar a certeza | [🎚️ Signal Calibration](../docs/SIGNAL_CALIBRATION.md) |
+| Manter a execução delimitada, diagnosticável e recuperável quando possível | [🛡️ Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) |
 | Transformar falhas recorrentes no menor mecanismo reutilizável que tenha sido validado | [🏭 Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) |
 
-Para a rota completa **problema → primeira ação → resultado observável → limite** nas 16 capacidades atuais, use o [guia orientado por problemas](../docs/PROBLEM_TO_METHOD.pt-BR.md). As fontes canônicas acima continuam governando cada método.
+Para percorrer **problema → primeira ação → resultado observável → limite** nas 16 capacidades, consulte o [guia por problemas](../docs/PROBLEM_TO_METHOD.pt-BR.md). Os corpos canônicos continuam governando os métodos.
 
 ## Primeiro uso
 
@@ -218,6 +229,7 @@ Esta é uma ponte para serviços profissionais, não uma afirmação de que Moon
 
 | Necessidade | Caminho canônico |
 |---|---|
+| Navegar pela documentação por responsabilidade | [Documentação por responsabilidade](../docs/README.md) |
 | Arquitetura completa e diagnóstico Field-to-Form | [🏗️ Architecture](../ARCHITECTURE.md#field-to-form) |
 | Roteamento do lado da IA pelo corpus público | [MOON_SOURCE_AI_KERNEL.md](../MOON_SOURCE_AI_KERNEL.md) |
 | Definições e limites de responsabilidade | [Terminology](../docs/TERMINOLOGY.md) + [Responsibility Map](../docs/RESPONSIBILITY_MAP.md) |

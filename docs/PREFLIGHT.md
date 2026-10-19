@@ -1,9 +1,9 @@
 # Preflight — canonical portable moved
 
-Preflight is now a standalone Moon Source public portable, currently at version **2.1**.
+Preflight is now a standalone Moon Source public portable, currently at version **2.3**.
 
 **Current canonical path:** [`portables/preflight/PREFLIGHT.md`](../portables/preflight/PREFLIGHT.md)<br>
-**Current version:** 2.1  
+**Current version:** 2.3  
 **Portable promotion:** 2026-09-07
 
 This file is a succession pointer, not a second semantic body. The former component body and Preflight V1 lineage remain recoverable through Git history. For current use, load the canonical portable above.

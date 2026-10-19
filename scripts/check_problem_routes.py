@@ -44,6 +44,23 @@ def audit(root: Path = ROOT) -> list[str]:
             continue
         content = filepath.read_text(encoding="utf-8")
         matches = ROUTE_RE.findall(content)
+        parts = re.split(r"(?m)^### [^\n]+\n", content)
+        groups = [part for part in parts[1:] if ROUTE_RE.search(part)][:4]
+        families = registry.get("discovery_families", [])
+        if len(groups) != len(families):
+            failures.append(f"{filename}: expected {len(families)} thematic groups, got {len(groups)}")
+        else:
+            for family, section in zip(families, groups):
+                actual_ids = set(ROUTE_RE.findall(section))
+                expected_ids = {
+                    record["id"] for record in records
+                    if record.get("discovery_family") == family["id"]
+                }
+                if actual_ids != expected_ids:
+                    failures.append(
+                        f"{filename}: {family['id']} group differs from canonical registry; "
+                        f"missing={sorted(expected_ids - actual_ids)}, extra={sorted(actual_ids - expected_ids)}"
+                    )
         counts = Counter(matches)
         missing = sorted(set(ids) - set(counts))
         extras = sorted(set(counts) - set(ids))
