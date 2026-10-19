@@ -117,8 +117,8 @@ Creator: Example Creator
             "views": {"standalone_distributions": {"capability_ids": ["connected-sources"]}},
         }
         self.human_registry = (
-            "| connected-sources | Connected Sources | Govern | docs/CONNECTED_SOURCES.md |\\n"
-            "| source-operations | Source Operations | Govern | docs/SOURCE_OPERATIONS.md |\\n"
+            "| connected-sources | Connected Sources | Govern | docs/CONNECTED_SOURCES.md |\n"
+            "| source-operations | Source Operations | Govern | docs/SOURCE_OPERATIONS.md |\n"
         )
         self.kernel = "docs/CONNECTED_SOURCES.md\ndocs/SOURCE_OPERATIONS.md\n"
 
