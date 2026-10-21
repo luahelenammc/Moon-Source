@@ -39,6 +39,7 @@ Use each file for the responsibility it actually owns:
 - `docs/CREDITS_ATTRIBUTION_OPS.md` — intellectual-lineage, content-custody and immaterial-asset protection across identity, authorship, canonicality, transformations, permission envelopes, disclosure boundaries, derivatives, attribution and evidence.
 - `docs/PROCEDURAL_PROJECTION.md` — public source/procedure/skill contract, projection, QA and semantic-undercompilation checks.
 - `docs/OPERATIONAL_DEVICES.md` — bounded operational embodiment of a reusable procedure on a concrete execution surface.
+- `docs/CONVERSATION_NATIVE_VISUAL_EXPLANATION.md` — applied visual-first guide: didactic illustration, meaningful icons/color/layouts, optional interaction and truthful rendering limits; not a registered standalone capability.
 - `docs/OPERATIONAL_RELIABILITY.md` — read-only-first execution discipline, dependency checks, failure domains, ordinary and Context Receipts, and recovery.
 - `docs/FAILURE_FOUNDRY.md` — bounded failure-to-capability loop for recurring or costly operational failure.
 - `examples/browser-console-device/README.md` — experimental synthetic Browser Console Device reference implementation.
@@ -151,14 +152,16 @@ Load:
 
 Then load the governing source or procedure only as needed. Keep live state in the source; do not imply automatic synchronization or native execution where only a standalone distribution or mirror is available.
 
-### If the user needs to manipulate an answer in the conversation
+### If the user wants a visually illustrated explanation in the conversation
 
 Load:
-- [Operational Devices — Conversation-native interactive response tools](docs/OPERATIONAL_DEVICES.md#conversation-native-interactive-response-tools)
+- [Conversation-native Visual Explanation](docs/CONVERSATION_NATIVE_VISUAL_EXPLANATION.md)
 
-First reconstruct the actual decision or task. When useful and supported, give the person a way to change inputs, select items, compare alternatives, advance steps, evaluate results or replan the unfinished portion without rebuilding the whole answer. Keep assumptions, formulae, uncertainty and meaningful outcomes legible. Use plain text when interaction adds no value.
+First determine what must become easier to **see or understand**. For comparisons, processes, structure, priorities and difficult concepts, prefer the smallest accurate, elegant, icon/color-guided visual composition that teaches: aligned cards, a diagram, timeline, relationship flow or labeled chart where appropriate. Native visual composition does not require HTML source, an app, a dashboard or a working checkbox. Preserve facts, uncertainty, accessible labels and proportionality. If a brief paragraph suffices, use it.
 
-**Boundary:** an in-chat control is a response instrument, not automatically an operational device, a source-of-record, a persistent workflow or authority for external mutations. Surface availability and state behavior are product-specific; do not claim unsupported controls work. If a durable action, connector, or independently distributable application is needed, follow the relevant execution and source-authority routes. This is a subordinate response pattern, not a seventeenth capability or a mandatory new skill.
+The phrase "HTML in GPT-6" can refer to a visually illustrated answer inside Chat, not necessarily a standalone HTML file or embedded application. Resolve the intended medium from context; avoid building a mini-site in response to an explanation request. Add interaction only when changing, selecting, comparing or replanning materially benefits the user.
+
+**Boundary:** visual illustration, optional microinteraction, an operational device, a generated image and an independently distributable HTML app are distinct outputs. [Operational Devices](docs/OPERATIONAL_DEVICES.md#conversation-native-interaction-optional-not-the-visual-default) governs actual device/execution boundaries, not the visual default. This visual design guide is subordinate to existing authorities, not a new public capability, runtime or mandatory skill.
 
 ### If a recurring procedure needs a concrete bounded execution surface
 
