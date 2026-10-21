@@ -86,13 +86,15 @@ A practical starting case is a learning program, a multi-session service or an o
 
 **Inspect the three outcomes rather than building a chatbot first:** `buildContext(input)` selects authorized fields, `evaluateContinuity(input)` compares approved prior and current states, and a handoff result is only **recommended** or **requested**, never **delivered**, unless another authorized system actually performs and verifies delivery. The [runnable synthetic reference](../examples/conversational-context/README.md) demonstrates these decisions using fabricated data and fixed dates.
 
-### Conversation-native tools as presentation, not authority
+### Visual explanation before conversational tools
 
-When a conversational surface supports interactive responses, it can expose sliders, selections, quizzes, comparisons or an adaptive checklist without a separate product build. Use the [conversation-native response-instrument contract](OPERATIONAL_DEVICES.md#conversation-native-interactive-response-tools) to determine which controls are warranted, what data and transformations they depend on, and how to verify changing inputs against outputs.
+In a capable conversational client, the primary design opportunity may be a **beautiful, accurate explanation** rather than a new widget: aligned comparisons, illustrated steps, concept diagrams, colored semantic groups, icon-guided synthesis, timelines or small honest charts. Use the [Conversation-native Visual Explanation guide](CONVERSATION_NATIVE_VISUAL_EXPLANATION.md) to choose the simplest form that actually improves understanding.
 
-Treat view-local state and user clicks as *interaction state*, not the authoritative project record. If a user asks to save progress, update a document, make a booking or trigger a workflow, perform a separate permissioned operation using the available application surface and read back the result. When no interactive renderer is available, provide an honest text or file alternative instead of non-working controls.
+Before rendering, ask what relationship should become perceptible; do not interpret "HTML in GPT-6" by default as a mini-site, a dashboard, an embedded application or a request for source code. Preserve semantic correctness, hierarchy, accessible labeling and clear uncertainty. Visual grouping is not a substitute for factual support.
 
-This route is useful for exploration and bounded decision support; it does not make Moon Source a UI framework, an API, an agent runtime or a guaranteed feature of every model.
+If the person truly needs to change variables, select items, evaluate or replan, add working controls under the same visual hierarchy. [Operational Devices](OPERATIONAL_DEVICES.md#conversation-native-interaction-optional-not-the-visual-default) provides the subordinate interactive/device boundary. A click is not a persisted record or permission to modify Gmail, Drive, bookings or other external systems. Verify the actual client behavior, and fall back to supported forms when needed.
+
+This design route does not turn Moon Source into a renderer, a UI framework, a hosted application or a guarantee that any model can execute arbitrary HTML.
 
 ## Compositions that may help
 
