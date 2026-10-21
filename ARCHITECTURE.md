@@ -267,6 +267,8 @@ A field may need one materialization or several. Common choices include:
 
 The materialization earns its existence by changing what the field can support. A new file that only repeats another file is not an architectural improvement.
 
+Not every explanation needs a new artifact or workflow. When the immediate need is **understanding in conversation**, a visually composed answer can be the smallest materialization: a didactic diagram, comparison, short illustrated flow, icon/color-guided grouping or labeled chart. Choose the form for explanatory value before considering interactive widgets, a dashboard, HTML source or a separate application. See [Conversation-native Visual Explanation](docs/CONVERSATION_NATIVE_VISUAL_EXPLANATION.md) for the subordinate design guidance; do not promote it into a new architecture stage or capability.
+
 When one capability needs both structural responsibility and independent transport, keep one canonical semantic body and describe transport as a distribution role. Canonical placement follows architectural responsibility; standalone distribution neither creates a second registry identity nor requires a semantic twin.
 
 ## 6. Operation and transport
