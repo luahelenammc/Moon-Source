@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-21 — Visual-first rebasing of conversation-native explanations
+
+- Rebased the interaction-heavy material out of Operational Devices into the non-registered applied guide `docs/CONVERSATION_NATIVE_VISUAL_EXPLANATION.md`: accurate, beautiful and didactically useful explanation becomes the default; manipulation is optional.
+- Added intent-to-visual grammar, icon/color semantics, hierarchy, example-led interpretation of “HTML in GPT-6”, distinctions among inline illustration, generated images and standalone HTML, negative patterns and visual-first acceptance.
+- Updated the AI Kernel, For AI Builders and Architecture navigation; preserved bounded operational device contracts, optional interactivity and platform/action limits. No new capability registry entry, portable, image engine or external product claim.
+- Reconciled the public approach with the Local Moon Source interface responsibility; credited official product documentation and the earlier community input only for its applicable interactive subset.
+
 ## 2026-10-18 — Problem-to-method tables and five-language discovery
 
 - Reorganized the 16 problem routes into four themed Markdown comparison tables, retaining first action, observable result, stop line, canonical links and deep-link anchors.
