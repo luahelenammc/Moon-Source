@@ -137,62 +137,17 @@ Known adapter-specific fragility:
 Claim ceiling:
 ```
 
-## Conversation-native interactive response tools
+## Conversation-native interaction: optional, not the visual default
 
-Some AI conversations can present a working, task-specific interface directly in an answer: editable inputs, checklists, comparisons, simulations, charts or step-by-step controls. This is a **response instrument**, not automatically an installed application or an operational device. It earns a device contract only if there is an actual recurring procedure with a named executable surface, invocation, bounded state, guardrails and observable results. This distinction prevents a convenient chat control from impersonating source authority or persistent infrastructure.
+The primary home for **conversation-native visual explanation, illustrations, layouts, diagrams and visual-first acceptance** is [Conversation-native Visual Explanation](CONVERSATION_NATIVE_VISUAL_EXPLANATION.md). A visually didactic response does not require an operational device, an HTML site or working controls. Do not route "illustrate this" or "HTML in GPT-6" directly into tool construction when the person's real goal is understanding.
 
-### Choose the operation before the widget
+When manipulation **does** materially help, choose an interaction that operates on the explanation: change a parameter, select relevant items, compare outcomes, sequence a task, evaluate understanding or replan what remains. State the real inputs, transformations, outputs and assumptions. User-facing controls must be functional; refreshes, copy/export actions and timers must not be presented as implemented unless the target client supports them.
 
-First ask what the person needs to *do with* the answer. A useful set of reusable operations is:
+**Interaction boundary:** an in-chat control is a response instrument, not necessarily a registered operational device. State held in a conversation is not automatically a persistent record; it does not authorize account mutation, communication or purchases. An actual device earns the full contract above only with a recurring bounded operation, named execution surface, explicit permissions, state and observable receipt.
 
-| Operation | User capability | Possible response instrument |
-|---|---|---|
-| **Change** | Adjust assumptions and inspect consequences | Savings projection or budget allocator with editable inputs |
-| **Select** | Assign, tick, include or exclude items | Shared-expense allocation or grouped checklist |
-| **Compare** | Apply common criteria to alternatives | Plan selector with actual usage and transparent pricing rules |
-| **Sequence** | Work through dependent steps | Scalable recipe, study sequence or staged review |
-| **Evaluate** | Attempt, receive feedback and identify gaps | Quiz with explanations and a revision queue |
-| **Replan** | Recalculate the unfinished work after real progress | Study or project plan that preserves completed work and redistributes remaining tasks |
+**Implementation and proof:** validate a minimal native control and derived result, selection or toggle, optionally embedded HTML/JavaScript on a compatible client, and only then small-to-large compositions. Inspect the client's actual rendered behavior, not merely the source code or a standalone HTML file. If the large layout fails, isolate a minimal reproducer before asserting that the platform lacks interactive or HTML support.
 
-These operations are composable, not six mandatory interfaces or six new Moon Source capabilities. The best answer may still be a sentence, table or ordinary document. A user should not have to learn a special prompt formula to receive a useful presentation when their intent is already clear.
-
-### Response-instrument contract
-
-1. **Purpose and eligibility.** Identify the actual human decision or task and test whether interaction offers more value than text. Do not turn routine answers into dashboards by default.
-2. **Inputs and provenance.** Use real supplied or retrieved data; identify assumptions, missing fields, units and freshness. Do not populate plausible but invented prices, scores, baselines or availability.
-3. **Controls and transformation.** Make each exposed control functional and bind it to explicit calculations, criteria, constraints or dependencies. Label the controls clearly; show units, precision and any important rounding.
-4. **Result and delta.** Show the answer after a change and explain consequential differences, remaining amounts, trade-offs or unmet conditions. Essential information must stay readable without interaction.
-5. **Replanning semantics.** When progress changes, preserve the baseline and genuinely completed items. Reallocate only the remaining work, taking available time, priority, blockers and dependencies into account. Report the new plan and the cost of changed assumptions; never silently mark work done.
-6. **State and authority.** Distinguish ephemeral view state, supported same-conversation state, exported data, governed persistent records and third-party actions. A checkbox does not write to a source-of-record; a button is not permission to send, purchase, publish, schedule or modify an external system. Use an authorized connector or runtime and verify the resulting action separately.
-7. **Accessibility and postflight.** Prefer short labels, usable mobile layouts, numerical sanity checks, reset/revision paths where meaningful and meaningful text fallback. Verify dependent outputs update together and that empty, extreme and conflicting inputs fail visibly rather than returning misleading certainty.
-
-A timer, drag handle, export button or persistent checkbox should only be offered as *working* when the current client actually supports that interaction. Otherwise use a supported alternative and state the boundary. A working interactive answer is not, by itself, a reusable web application, standalone HTML, a packaged module or a live integration.
-
-### Progressive rendering acceptance
-
-A working renderer should be *proven on the intended client*, not inferred from valid code or from a downloaded standalone HTML example. Test in increasing scope:
-
-1. **Native primitive:** one button, one value-changing control and one dependent result.
-2. **Selection/state:** a compact selector or checklist that visibly changes an output.
-3. **Embedded application (when supported):** an isolated HTML/JavaScript interaction with a genuine event handler and visible recalculation.
-4. **Small composition:** two or three working modules with distinct state and an unambiguous selection route.
-5. **Full composition:** add modules incrementally, check that the active view is visible, and rerun interaction, empty-state and regression checks.
-
-If the complete response fails, reduce it to a minimal reproducer and isolate the interaction path before attributing failure to the platform, HTML support, widget complexity or a specific code construct. A blank selector in one composite does not prove selectors are universally broken. Conversely, three successful primitives do not prove that a larger composite will render. Keep an inspectable plain-text fallback; offer standalone HTML only when independent execution is useful or the actual chat rendering remains unsupported.
-
-**Bounded field signal (2026-10-18):** one initial ten-module conversational example rendered its selector empty in a user screenshot; subsequent user-verified native controls, selector and embedded HTML/JavaScript interaction worked in the same conversation. This establishes the three tested capabilities in that client, not the root cause of the failed composite or a universal platform guarantee. The untested next boundary is incremental multi-module composition.
-
-### Try the pattern without over-specifying the layout
-
-> Using these actual [items, amounts, rules], help me [make a decision or complete a task]. Let me change [inputs], select [items] and compare [results]. Recalculate [output and remaining work] when I change a value or mark a step finished. Show assumptions and limitations; do not execute any external changes. If interactive controls are unavailable, give me a usable non-interactive alternative.
-
-This is an optional formulation, not an activation spell. For higher-risk cases, decide authorization, privacy, jurisdiction and correctness before optimizing the presentation. When reliable persistence, long-running execution, external integrations or independent distribution are necessary, route to the appropriate application, workflow or [Adaptive Orchestration Protocol](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md). An interactive response remains subordinate to the source-of-record and the execution surface's controls.
-
-### Capability boundary and provenance
-
-OpenAI documented **Intelligent UI in GPT-6 ChatGPT** on 2026-10-07, including composable text, visualizations, buttons, forms and interactive tools inside a conversation; availability depends on the supported Chat client and model setting. This public method is vendor-neutral: it describes how to *design and check* a bounded interactive answer, not how to call undocumented platform APIs or guarantee equivalent UI in every AI product. See the [OpenAI launch](https://openai.com/index/gpt-6-for-everyone/) and [Intelligent UI help](https://help.openai.com/en/articles/20001598-intelligent-ui-in-chatgpt) for volatile product-specific behavior.
-
-**Community provenance:** the operational examples and change/select framing were informed by u/Professional-Rest138, “10 things to ask GPT-6 to build you now that ChatGPT answers with working tools instead of text,” r/PromptEngineering (excerpt supplied 2026-10-18); a comment by u/Educational-View8524 specifically suggested redistributing unfinished study topics after actual progress. The source was a practical inspiration, not a validated performance study, an implementation dependency or evidence of external adoption. The reusable six-operation contract and governance constraints above are a Moon Source adaptation.
+**Provenance:** the optional six-operation microtool pattern draws on a 2026-10-18 supplied excerpt of u/Professional-Rest138's r/PromptEngineering post and a suggestion by u/Educational-View8524 to replan from completed study work. The overarching visual-explanation capability is supported by [OpenAI's Intelligent UI documentation](https://help.openai.com/en/articles/20001598-intelligent-ui-in-chatgpt). These are different evidentiary roles, not a universal runtime guarantee.
 
 ## Public boundaries
 
