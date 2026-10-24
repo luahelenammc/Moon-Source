@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-24 — AOP 6.4 adapters: Sol 6.1 versus Astra capability and 3D quality
+
+- Updated GPT-6 Sol/Luna Strategy Adapter **1.7 → 1.8** and Astra Strategy Adapter **1.9 → 2.0**; canonical AOP remains **6.4** and MSL remains **5.1**.
+- Added cited, date-bound comparison of official DeepSWE/OSWorld findings, Artificial Analysis Max scores, token and task economics, and Vals AI Vibe Code Bench; distinguished coding competence from unproven identical high-polish 3D-game quality.
+- Added outcome-normalized escalation: test a bounded vertical slice, isolate tool/spec errors, inspect game and visual acceptance, then pay the Astra premium for demonstrated creative/architectural/scientific delta or avoided replay.
+- Preserved optional Maximum Token Economy, Astra Setup and strategy plurality, surface availability probes and the no-claims boundary between API pricing and ChatGPT credits.
+
+
 ## 2026-10-21 — Visual-first rebasing of conversation-native explanations
 
 - Rebased the interaction-heavy material out of Operational Devices into the non-registered applied guide `docs/CONVERSATION_NATIVE_VISUAL_EXPLANATION.md`: accurate, beautiful and didactically useful explanation becomes the default; manipulation is optional.

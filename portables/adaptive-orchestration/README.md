@@ -41,13 +41,13 @@ For release history, see the [repository changelog](../../CHANGELOG.md).
 
 Astra is an optional subordinate submodule of this Adaptive Orchestration portable, not a prescribed work style. Its canonical adapter lives at [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) and is independently versioned at **1.9**.
 
-GPT-6 Sol/Luna has a separate dated executor calibration at [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md), version **1.7**. It preserves the model-neutral core while mapping the family to heterogeneous execution: Luna for focused/high-volume work after material solution commitments are sufficiently resolved, Sol for strong roots and bounded high-leverage decisions when warranted, plus current Codex child-model/default configuration guidance.
+GPT-6 Sol/Luna has a separate dated executor calibration at [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md), version **1.8**. It preserves the model-neutral core while mapping the family to heterogeneous execution: Luna for focused/high-volume work after material solution commitments are sufficiently resolved, Sol for strong roots and bounded high-leverage decisions when warranted, plus current Codex child-model/default configuration guidance.
 
 As of the October 2026 Chat rollout, GPT-6 in Chat uses conversation-tuned Sol (eligible paid tiers) or Luna (Free/Go), distinct from the September Work/Codex executor releases. Model family does not determine available tools, reasoning controls or delegation on any surface.
 
 When Astra is actually available, Adaptive Orchestration can compile it as a judgment brain, broad reviewer, co-architect, bounded executor, frontier orchestrator or sustained full-run root. Role, autonomy, reasoning depth, context breadth, control surface and mutation authority remain separate.
 
-The dated GPT-6 adapter also exposes an explicit **Maximum Token Economy** profile. When a user activates that profile, GPT-6.1 Sol becomes the preferred substitute for Astra across most non-scientific frontier-shaped work; Astra remains an exception for material frontier gaps, explicit highest-capability requests and task classes where current evidence still favors it. This economic override is **not** the ordinary public default.
+The dated GPT-6 adapter also exposes an explicit **Maximum Token Economy** profile. When a user activates that profile, GPT-6.1 Sol becomes the preferred substitute for Astra across most non-scientific frontier-shaped work; Astra remains an exception for material frontier gaps, explicit highest-capability requests and task classes where current evidence still favors it. This economic override is **not** the ordinary public default. The October 24 adapter calibration separates coding ability from creative 3D quality and routes by total cost to an **accepted, inspected** artifact rather than by benchmark index or API token ratio.
 
 Examples of valid requests:
 
@@ -81,7 +81,7 @@ Sprint Mode does not expose allowance/reset state, create a native product featu
 - **Former identity:** Chat–Work Routing Protocol / Chat–Work Router / Chat–Work · retained only as compatibility and migration terminology
 - **Named continuity profile:** Chat–Work Loop Profile · Chat → Work/Codex → Chat
 - **Optional Astra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) · version **1.9**
-- **GPT-6 Sol/Luna submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md) · version **1.7**
+- **GPT-6 Sol/Luna submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md) · version **1.8**
 - **Adapter directory law:** current and future model-specific Adaptive Orchestration adapters co-reside under portables/adaptive-orchestration/adapters/; do not create one directory per model family unless a future adapter actually becomes a multi-file subsystem.
 - **Canonical body:** [portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md](ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
 - **Package:** [downloads/adaptive-orchestration-protocol.zip](../../downloads/adaptive-orchestration-protocol.zip)

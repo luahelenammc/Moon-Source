@@ -5,8 +5,8 @@
 ## Meta
 
 - **status:** current subordinate adapter
-- **adapter version:** 1.7
-- **as of:** 2026-10-10
+- **adapter version:** 1.8
+- **as of:** 2026-10-24
 - **governing capability:** [Adaptive Orchestration Protocol](../ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
 - **scope:** GPT-6.1 Sol and GPT-6 Sol/Luna routing across Chat, Work and Codex where available, with dated Chat-vs-Work model-variant boundaries, heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles, behavioral-fit calibration, commitment-bearing decision routing and API/product-boundary reasoning about executor choice
 - **authority:** subordinate; the canonical Adaptive Orchestration body wins on conflict
@@ -88,6 +88,29 @@ A useful behavior contract can state, subject to higher-priority safety/evidence
 If the selected model clears the capability floor but repeatedly misses that behavior contract, use `SIDE_ROUTE_MODEL_FOR_FIT` to another available executor with better observed fit. This is not automatic capability escalation. For GPT-6.1 Sol specifically, no negative behavioral conclusion is imported from the original GPT-6 Sol reports; its existing Maximum Token Economy calibration remains governed by current GPT-6.1 evidence and representative workload testing.
 
 Community reactions can justify a probe. They do not establish that GPT-6 Sol is globally worse, that GPT-6.1 Sol inherits the same behavior, or that any model has a permanent style rank.
+
+### Comparative capability and total-outcome calibration — 2026-10-24
+
+**Classification:** dated model evidence and workload-routing inference; not a revision of AOP's stable routing laws, not a model ranking, and not a claim about ChatGPT credits.
+
+**Evidence with comparable configurations.** The OpenAI September 2026 GPT-6.1 Sol release reports parity with Astra on DeepSWE v1.1 at about one-fifth of the cost and an OSWorld 2.0 offline-set gap of 2.1 percentage points at max effort at about one-seventh of the cost per task. It also explicitly keeps Astra ahead on its hardest scientific research evaluation. Independent Artificial Analysis Max-vs-Max measurements report Intelligence Index 52 vs 53 (Sol vs Astra), AutomationBench-AA 65% vs 68%, Terminal-Bench 4.0 56% vs 59%, SciCode 54% vs 56%, GDP.pdf 31% vs 31%, output tokens/task 38k vs 27k, time/task about 706 vs 476 seconds, and mean cost/task $0.72 vs $3.26. Results are snapshot- and harness-dependent; benchmark aggregates do not imply semantic interchangeability on every task.
+
+**Creative coding caution.** Vals AI Vibe Code Bench reports 88.93% for Sol vs 89.59% for Astra with OpenHands, but different mean run times and task costs ($6.23 / 1h15m vs $38.51 / 39m04s). The test supports broad vibe-code competence, **not** controlled parity for photorealistic 3D games, sophisticated animation, aesthetic direction or Unreal/Blender artifact quality. A visually compelling Astra demo is not itself a controlled A/B evaluation against Sol. For such jobs use the same stack, tools, asset/license budget, prompt, time window, acceptance tests, browser/engine QA and screenshot/video inspection before deciding whether an Astra premium buys a meaningful quality or iteration gain.
+
+**Operational choice in Maximum Token Economy (opt-in only):**
+
+1. Probe the *capability floor* and *artifact class*: code correctness, 3D world composition, interaction/gameplay, visual coherence, tool/harness constraints and acceptance quality are separate dimensions. Do not equate headline intelligence with reliable art direction.
+2. Prefer Sol 6.1 as a strong root / initial 3D implementation executor when permitted and available; use Luna only for separable, verifiable bulk. Keep the task's existing competent control root.
+3. Observe a bounded vertical slice, not just code output: build/run, inspect playability, responsiveness, camera, physics, UI, assets, performance and visual fidelity. Debug tool failures and underspecified requirements before blaming model capability.
+4. Apply an **outcome-normalized escalation gate**: compare expected completed-and-accepted cost, latency, reviewer burden, retries/replay and irreversible commitments. The 5× API unit-price difference is not a 5× guaranteed task saving; Sol may emit more tokens and take longer. ChatGPT allowances are governed separately.
+5. Move *only the stubborn delta* to Astra if the Sol result misses a material acceptance threshold despite a bounded repair, or when aesthetic/architectural judgment, hard scientific work, high-stakes ambiguity or strong evidence from same-task evaluation favors Astra. Astra may serve as root, co-architect, creative/visual critic, targeted debugger or final integrator; do not force it into a tiny brain-burst role.
+6. After Astra's decision or repair, return implementation and regression work to the cheapest sufficient authorized executor, unless continuity/replay cost makes a sustained Astra run more efficient.
+
+**Explicit non-claim:** Sol being able to generate a complex 3D game's code does not prove it can produce every Astra 3D demo with identical creative quality, tools or one-shot reliability. The inverse universal superiority claim is also unsupported.
+
+**Recalibration triggers:** representative same-task A/B tests, new agentic/creative benchmarks, new model revisions or effort settings, substantial price/token/latency shifts, changed Work/Codex surface controls, or observed repeated acceptance failures. Do not refresh public model evidence on each ordinary AOP invocation.
+
+**Public sources:** [OpenAI GPT-6.1 Sol](https://openai.com/index/introducing-gpt-6-1-sol/); [OpenAI GPT-6 model selection](https://developers.openai.com/api/docs/models); [Artificial Analysis Sol Max vs Astra Max](https://artificialanalysis.ai/models/comparisons/gpt-6-1-sol-vs-gpt-6-astra); [Vals AI Vibe Code Bench](https://www.vals.ai/benchmarks/vibe-code).
 
 ## 2A. Official GPT-6 launch facts
 

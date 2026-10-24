@@ -17,12 +17,16 @@ They should not be collapsed into one number.
 
 - Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-27; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, through the 5.x strategy/adaptation line, to delegation-first 6.0 and then surface-neutral control-root 6.1 on 2026-09-24.
 - Current structural grammar: Moon Source Language, version 5.1.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (version 1.2), Moon Source Language (version 5.1) and Adaptive Orchestration Protocol (version 6.4).
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (version 1.2), Moon Source Language (version 5.1) and Adaptive Orchestration Protocol (version 6.4; subordinate GPT-6 Sol/Luna adapter 1.8 and Astra adapter 2.0).
 - All sixteen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry, while Lifecycle Workspace Router is a repository-only capability with its own independent version.
 - Credits & Attribution Ops, Lifecycle Workspace Router, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
 - Website: production public convenience surface; each current portable mirror must remain byte-equal to its canonical current portable before mirror status is called verified.
 - Repository: luahelenammc/Moon-Source, public reference and versioning body; software and automation are Apache-2.0, while documentation, methods and public portables are CC-BY-4.0.
+
+## Adaptive Orchestration Sol 6.1 / Astra capability calibration — 2026-10-24
+
+The model-neutral Adaptive Orchestration Protocol canonical core stays at **6.4**, since its routing laws are unchanged. Its independently versioned GPT-6 Sol/Luna adapter advances **1.7 → 1.8** and the Astra adapter **1.9 → 2.0**. Both add dated, cited evidence about near-parity in agentic coding, persistent gaps in hard cases, token/latency differences and non-parity in untested 3D game quality. The updated rule routes by **cost/time/correction and verified acceptance**, not model price, headline benchmarks or isolated showcase impressions. Astra's role plurality and required setup, Maximum Token Economy opt-in, stable portability and MSL **5.1** stay unchanged. The composite distribution ZIP must contain the updated adapters even though the exact-byte website mirror of the unchanged core needs no rewrite.
 
 ## Release rules
 
