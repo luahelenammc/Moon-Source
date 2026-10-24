@@ -5,12 +5,12 @@
 ## Public status
 
 - **status:** current subordinate adapter; optional public guidance
-- **version:** 1.9
+- **version:** 2.0
 - **versioning mode:** independently versioned subordinate submodule; the human title remains unversioned
 - **first public release:** 2026-09-09
-- **last material update:** 2026-10-01
-- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1 → 1.5 official Astra prompting/skills calibration → 1.6 delegated-bundle and worker-ownership calibration from credited external mechanism study → 1.7 GPT-6.1 Sol / Maximum Token Economy compatibility → 1.8 Adaptive Orchestration 6.2 Behavioral Fit compatibility → 1.9 Adaptive Orchestration 6.3 Commitment Geometry compatibility
-- **applies to:** Adaptive Orchestration Protocol 6.3
+- **last material update:** 2026-10-24
+- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1 → 1.5 official Astra prompting/skills calibration → 1.6 delegated-bundle and worker-ownership calibration from credited external mechanism study → 1.7 GPT-6.1 Sol / Maximum Token Economy compatibility → 1.8 Adaptive Orchestration 6.2 Behavioral Fit compatibility → 1.9 Adaptive Orchestration 6.3 Commitment Geometry compatibility → 2.0 evidence-backed GPT-6.1 Sol / Astra capability-cost calibration
+- **applies to:** Adaptive Orchestration Protocol 6.4
 - **effective date:** 2026-09-29
 - **governing canonical body:** `portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md`
 - **canonical release lineage:** introduced under Chat–Work 5.1, updated through Chat–Work 6.0 Delegation-First orchestration and aligned to the surface-neutral control-root model in Chat–Work 6.1; those releases are the same lineage now named Adaptive Orchestration Protocol, whose current body uses the unversioned filename ADAPTIVE_ORCHESTRATION_PROTOCOL.md
@@ -31,6 +31,18 @@ Astra can be used as a bounded reasoning brain with almost no execution autonomy
 > **Astra is a capability target, not a prescribed work style.**
 
 This adapter makes Astra configurable without allowing Astra-specific habits or volatile product facts to colonize the general router.
+
+## Sol 6.1 versus Astra: outcome frontier and 3D creative work — 2026-10-24
+
+Astra's advantage must be purchased for a *demonstrable remaining result gap*, not inferred merely from the model's flagship label. Sol 6.1 approaches Astra on agentic software engineering, computer use and professional work, but Astra still leads several difficult coding/science/automation probes and may produce a more efficient reasoning trace. Artificial Analysis (Max) reports Intelligence Index 53 vs 52 (Astra vs Sol); Terminal-Bench 4.0 59% vs 56%; AutomationBench-AA 68% vs 65%; and mean output tokens/task 27k vs 38k. The latter makes equal prompt size a poor proxy for equal latency or token volume. OpenAI reports near parity for DeepSWE v1.1 and a 2.1-point max-effort OSWorld offline-set gap, but keeps Astra ahead in the hardest science evaluation.
+
+For **games and interactive 3D environments**, distinguish the engineering layer (project setup, shaders, controls, physics, scene graph, performance and browser debugging) from experience/design layers (readable navigation, coherent visual language, camera feel, game loop, art direction and final polish). Vals AI Vibe Code Bench gives Sol 88.93% and Astra 89.59%, but that aggregate is not a head-to-head proof for any specific high-polish 3D game. A polished Astra showcase by itself is not evidence of Sol's inability to build that class. Use controlled vertical-slice A/B with the same harness and acceptance rubric if premium routing matters.
+
+**Astra exception gate:** route Astra where a bounded Sol attempt is below the capability/quality floor after correcting specification, context and tool defects; where a particularly difficult high-leverage architecture or creative commitment justifies stronger judgment upfront; or where comparable task-specific measurements predict less total rework. Preserve the Astra Setup Contract, authority, budget, and user-selected quality priority. Astra can be the sustained owner of a difficult full run when splitting creates more replay than savings, but must not be automatically assigned all implementation bulk.
+
+**No automatic price-to-value conversion:** the API Standard nominal text rate is $10/$50 per million Astra input/output tokens versus $2/$10 for Sol, while cached input is $1 versus $0.10. Different sampling effort, token volume, tools, wall time, failure probability and plan credits can overturn a naive 5× cost comparison. Prefer **minimum cost to accepted artifact**, including inspection/replay, not minimum model price or average benchmark score.
+
+References: [OpenAI release](https://openai.com/index/introducing-gpt-6-1-sol/), [model pricing](https://developers.openai.com/api/docs/models/compare?model=gpt-6-astra&model=gpt-6.1-sol), [Artificial Analysis](https://artificialanalysis.ai/models/comparisons/gpt-6-1-sol-vs-gpt-6-astra), [Vals AI](https://www.vals.ai/benchmarks/vibe-code).
 
 ## Core / adapter boundary
 
