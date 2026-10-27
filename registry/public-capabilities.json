@@ -8,7 +8,7 @@
     "project": "Moon Source",
     "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md"
   },
-  "as_of": "2026-10-24",
+  "as_of": "2026-10-26",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "capabilities": [
     {
@@ -63,11 +63,12 @@
         "Work and Codex subagent availability, child-model inheritance/override behavior, concurrency and permissions are run-time conditions; Delegation-First never fabricates unavailable controls",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions",
         "Optional Astra strategy adapter v2.0 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md; subordinate to the canonical Adaptive Orchestration body, independently versioned as a submodule, setup-gated, delegation-aware, worker-ownership calibrated and aligned to the surface-neutral control-root model and Decision Commitment Gate",
-        "GPT-6 Sol/Luna strategy adapter v1.8 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md; dated heterogeneous executor/subagent and commitment-routing calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics",
-        "GPT-6.1 Terra strategy adapter 1.0 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md; dated Work/Codex visual/computer-use routing with Luna/Sol/Astra fit, acceptance probes and API-vs-allowance non-claims",
+        "GPT-6 Sol/Luna strategy adapter v1.9 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md; dated heterogeneous executor/subagent and commitment-routing calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics",
+        "GPT-6.1 Terra strategy adapter 1.1 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md; dated Work/Codex visual/computer-use routing with Luna/Sol/Astra fit, acceptance probes and API-vs-allowance non-claims",
         "Control surface/root, root model/tier and execution surface/harness are distinct routing dimensions; AUTO preserves the current competent root before considering a human-visible surface transition",
         "Behavioral Fit is separate from capability rank: use observable task-specific acceptance behavior and representative probes when material; community anecdotes may motivate a probe but do not establish permanent model rankings",
-        "Commitment Geometry is separate from Behavioral Fit: assess reversibility, downstream leverage, solution openness, evaluation latency, judgment load and external consequence before scaling dependent work; side-route or up-route only the commitment-bearing delta when warranted, and reopen the smallest affected boundary when objective-linked evidence shows the choice was inadequate"
+        "Commitment Geometry is separate from Behavioral Fit: assess reversibility, downstream leverage, solution openness, evaluation latency, judgment load and external consequence before scaling dependent work; side-route or up-route only the commitment-bearing delta when warranted, and reopen the smallest affected boundary when objective-linked evidence shows the choice was inadequate",
+        "Profile-only economic Plus / Maximum Token Economy frontier preference: Terra 6.1 first when available and sufficient for frontier-shaped workload; direct Sol/Astra exceptions for anticipated task-specific capability/quality/replay gaps. Plus plan alone does not activate the profile or grant tool/worker controls."
       ],
       "difficulty": "advanced",
       "distribution": {
@@ -98,12 +99,12 @@
           }
         ]
       },
-      "freshness": "AOP core 6.4 unchanged; model adapters Terra 1.0 (2026-10-26), Sol/Luna 1.8 and Astra 2.0 (2026-10-24). Check current model availability, Work/Codex controls, allowance terms, benchmarks, API pricing, and same-task acceptance evidence when material; API price is not a usage-credit formula.",
+      "freshness": "AOP model-neutral core 6.4 and MSL 5.1 unchanged. Dated model adapters: Terra 1.1, Sol/Luna 1.9 (2026-10-26), Astra 2.0 (2026-10-24). Economic Plus frontier default is conditional Terra-first, never a global Plus/AUTO model default. Refresh current product availability, relative accepted-task costs and Work/Codex allowance claims when routing requires them.",
       "function": "Route by sovereign object and workload shape from the current competent control root across Chat, Work and optional Codex using configurable execution profiles, explicit control-root/execution-surface separation, Behavioral Fit with representative micro-probes and lateral side-routing, Commitment Geometry with a Decision Commitment Gate, direct/probe/explore/side-route/up-route/reopen outcomes, proportional Branch Before Build, Surface Continuity, Delegation-First orchestration, heterogeneous root/child model topology, Budget Survivability, the model-neutral Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification and premature-commitment recovery, connector-aware source transport, bounded micro-bursts, optional explicitly activated ephemeral Sprint Mode, a finite Decision Sprint sibling-delta exception, auditable Decision Trace for material higher-tier, side-routed and commitment rulings, decision-bearing return capsules, subordinate model-specific strategy adapters, Sprint Receipts, Control-Root Postflight and delta-only re-entry",
       "id": "adaptive-orchestration",
       "language": "English",
       "last_material_update_on": "2026-10-26",
-      "last_material_update_summary": "Introduced subordinate GPT-6.1 Terra 1.0 strategy adapter with October 26 official visual/computer-use, factuality, latency, benchmark and API pricing evidence; routes Terra by visual/screen fit rather than a mandatory Luna→Terra→Sol→Astra ladder. Canonical AOP core stays 6.4; MSL stays 5.1.",
+      "last_material_update_summary": "Refined Terra 1.0→1.1 and Sol/Luna 1.8→1.9 with evidence-ranked official/independent/community filters, correcting stale no-Terra guidance and setting Terra 6.1 as the conditional frontier-shaped executor default ONLY in opt-in economic Plus / Maximum Token Economy profiles, with proactive Sol/Astra exceptions; AOP core 6.4 and MSL 5.1 unchanged.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
