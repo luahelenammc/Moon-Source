@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-26 — AOP Terra 1.1 / Sol-Luna 1.9: economic Plus frontier-first refinement
+
+- Filtered official October 26 Terra launch claims, independent Artificial Analysis effort/cost data, and user-provided same-day Reddit reactions by evidence grade; community observations are test triggers rather than proof or permanent model rankings.
+- Advanced Terra adapter **1.0 → 1.1** and GPT-6 Sol/Luna adapter **1.8 → 1.9**. Removed the stale claim that GPT-6 has no Terra variant.
+- Within the **opt-in Plus Economy / Maximum Token Economy profile only**, Terra 6.1 is the **conditional default candidate for frontier-shaped execution**, ideally via bounded medium-effort probe. This does not classify Terra as the top frontier-capability model or force its use where the task's acceptance floor is already known to exceed it.
+- Luna remains first for cheap sufficient bulk; move directly to Sol for irreducible complex code/architecture/reasoning and Astra for supported frontier scientific, creative or quality-critical deltas. Compare total completed-and-accepted cost including retries, latency and replay, not API sticker prices.
+- The model-neutral AOP **6.4** core, MSL **5.1**, Astra adapter **2.0**, optional profile activation, real-harness/allowance checks, authority and Control-Root Postflight are preserved. Four-member ZIP compatibility and downstream Drive/native projection parity need separate verification.
+
 ## 2026-10-26 — AOP Terra 1.0 visual/computer-use executor calibration
 
 - Added subordinate [GPT-6.1 Terra Strategy Adapter 1.0](portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md) with sourced launch evidence, capability/behavior/commitment gates, visual and screen-action routing, sample acceptance probes, and explicit no-credits/non-automatic-delegation boundaries.
