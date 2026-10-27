@@ -22,3 +22,9 @@ These are portable projections for the public repository, not evidence of instal
 | Source Operations | Define how governed context is retrieved, processed, metabolized within its jurisdiction or deliberately promoted across jurisdictions, with lifecycle, succession, lineage and… | Bounded public source-operations and lifecycle method; not an autonomous migration, promotion or archive engine, universal standard or adoption claim |
 
 The source-facing `SKILL.md` files are maintained in `source/`. Run `python scripts/build_public_skills.py` after source changes and `python scripts/test_public_skill_packages.py` before release. The build rewrites links to omitted repository material into live public URLs; the provenance manifest records the source hashes. A snapshot does not replace current evidence, authorize access or mutation, or install itself.
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).

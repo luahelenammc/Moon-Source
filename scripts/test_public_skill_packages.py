@@ -35,3 +35,6 @@ for rec in records:
                 resolved=posixpath.normpath(posixpath.join(posixpath.dirname(name),unquote(u.path)))
                 assert resolved in names or any(n.startswith(resolved.rstrip('/')+'/') for n in names), (slug,name,target)
 print(f'validated structure, integrity, source hashes and local links of {len(records)} skills')
+
+# MOON-SOURCE-PUBLIC-STAMP
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip · Questions, suggestions, or proposals? Feel free to contact me at LuaHelenaMMC@gmail.com.

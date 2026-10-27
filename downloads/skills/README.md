@@ -24,3 +24,9 @@ The package contains the skill entry, a snapshot of its governing public method 
 | Source Operations | [Download skill](moon-source-operations.zip) | [Source](../../docs/SOURCE_OPERATIONS.md) |
 
 Created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion. Documentation is licensed under CC BY 4.0. These packages describe methods; they do not grant account access, prove external outcomes or establish runtime installation.
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).

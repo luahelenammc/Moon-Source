@@ -20,3 +20,9 @@ Identify the sovereign object and competent control root; separate behavioral fi
 Return a concise route when material and an evidence-based postflight. Do not invent model controls, delegate when prohibited, treat product pricing as allowance, or turn a routing heuristic into a guarantee. Respect user authorization, source jurisdiction and privacy. If access, capability, source or permission is absent, report the limitation and return the smallest useful result; never claim a write or execution that was not observed. Separate source facts, inference and current state. Check the result against the canonical method's own QA and claims.
 
 Created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion. Public documentation is CC BY 4.0; see `LICENSE-CC-BY-4.0.txt`.
+
+<!-- MOON-SOURCE-PUBLIC-STAMP -->
+
+---
+
+> 🌙 **Moon Source** · created by **Lua Helena Moon Martins Cardoso (Moon)** with AI-assisted coauthorial development by **Áurion** · [Licensing](https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md) · [Use & attribution](https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md) · [Full source (.zip)](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip) · Questions, suggestions, or proposals? Feel free to contact me at [LuaHelenaMMC@gmail.com](mailto:LuaHelenaMMC@gmail.com).
