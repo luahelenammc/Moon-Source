@@ -1,0 +1,26 @@
+# Public Agent Skills
+
+Each ZIP is a separate Agent Skill projection of its canonical public capability. Choose a package, download it, and use the import procedure of your compatible AI environment. Installation, tool availability, permissions and activation depend on the receiving runtime.
+
+The package contains the skill entry, a snapshot of its governing public method and selected linked references, source hashes and licensing. Files outside the bundle are linked to their live public repository locations. The live canonical source remains the authority; check its freshness. Building and checking the bundles requires `python scripts/build_public_skills.py` and `python scripts/build_public_skills.py --check`.
+
+| Capability | Agent Skill | Canonical source |
+|---|---|---|
+| Be My Eyes | [Download skill](moon-be-my-eyes.zip) | [Source](../../portables/be-my-eyes/BE_MY_EYES.md) |
+| Adaptive Orchestration Protocol | [Download skill](moon-adaptive-orchestration.zip) | [Source](../../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md) |
+| Connected Sources | [Download skill](moon-connected-sources.zip) | [Source](../../docs/CONNECTED_SOURCES.md) |
+| Credits & Attribution Ops | [Download skill](moon-credits-attribution-ops.zip) | [Source](../../docs/CREDITS_ATTRIBUTION_OPS.md) |
+| Failure to Capability — Failure Foundry | [Download skill](moon-failure-foundry.zip) | [Source](../../docs/FAILURE_FOUNDRY.md) |
+| Lifecycle Workspace Router | [Download skill](moon-lifecycle-workspace-router.zip) | [Source](../../docs/LIFECYCLE_WORKSPACE_ROUTER.md) |
+| Moon Source Language | [Download skill](moon-source-language.zip) | [Source](../../portables/msl/MOON_SOURCE_LANGUAGE.md) |
+| Setup | [Download skill](moon-source-setup.zip) | [Source](../../portables/setup/MOON_SOURCE_SETUP.md) |
+| Operational Devices | [Download skill](moon-operational-devices.zip) | [Source](../../docs/OPERATIONAL_DEVICES.md) |
+| Operational Reliability | [Download skill](moon-operational-reliability.zip) | [Source](../../docs/OPERATIONAL_RELIABILITY.md) |
+| Preflight | [Download skill](moon-preflight.zip) | [Source](../../portables/preflight/PREFLIGHT.md) |
+| Procedural Projection | [Download skill](moon-procedural-projection.zip) | [Source](../../docs/PROCEDURAL_PROJECTION.md) |
+| Semantic Reweave | [Download skill](moon-semantic-reweave.zip) | [Source](../../docs/SEMANTIC_REWEAVE.md) |
+| Signal Calibration | [Download skill](moon-signal-calibration.zip) | [Source](../../docs/SIGNAL_CALIBRATION.md) |
+| Source Hygiene | [Download skill](moon-source-hygiene.zip) | [Source](../../docs/SOURCE_HYGIENE.md) |
+| Source Operations | [Download skill](moon-source-operations.zip) | [Source](../../docs/SOURCE_OPERATIONS.md) |
+
+Created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion. Documentation is licensed under CC BY 4.0. These packages describe methods; they do not grant account access, prove external outcomes or establish runtime installation.

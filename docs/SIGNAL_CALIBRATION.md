@@ -1,5 +1,8 @@
 # 🎚️ Signal Calibration — Moon Source component
 
+**Agent Skill:** [Download Signal Calibration skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-signal-calibration.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 A bounded method for using weak, convergent or ambiguous evidence without turning inference into fact or uncertainty into blindness.
 
 > **Calibrate confidence; do not erase signal.**

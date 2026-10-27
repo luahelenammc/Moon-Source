@@ -1,5 +1,8 @@
 # 🗂️ Lifecycle Workspace Router — Moon Source component
 
+**Agent Skill:** [Download Lifecycle Workspace Router skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-lifecycle-workspace-router.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 Capability version: **1.2**
 
 The Lifecycle Workspace Router is a Moon Source method and reference architecture for projecting multidimensional artifact and source state onto durable workspace surfaces. It can support a single actor, a role or process, an AI operating under human authority, or multiple collaborators. Collaboration is an application profile, not the ontology of the method. “Router” names an organizational method, not executable routing software, a daemon or an automatic synchronization engine.

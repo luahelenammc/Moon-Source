@@ -1,5 +1,8 @@
 # 🛠️ Operational Devices — Moon Source component
 
+**Agent Skill:** [Download Operational Devices skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-operational-devices.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 An **operational device** is a bounded operational embodiment of a reusable procedure on a concrete execution surface.
 
 > A procedure describes how work should be done. An operational device embodies a bounded procedure on a concrete execution surface.

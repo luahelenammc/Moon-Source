@@ -1,5 +1,8 @@
 # 🛡️ Operational Reliability — Moon Source component
 
+**Agent Skill:** [Download Operational Reliability skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-operational-reliability.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 Operational reliability is the discipline of making execution diagnosable, bounded, reversible where possible and honest about what the evidence shows.
 
 It applies to a procedure, device, workflow or bounded runtime. It does not promise that a target is healthy, that a repair is safe in every environment or that a log is automatically authoritative.

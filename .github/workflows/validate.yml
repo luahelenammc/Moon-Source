@@ -62,6 +62,8 @@ jobs:
         with:
           python-version: "3.x"
       - run: python -m pip install --disable-pip-version-check --no-input reuse cffconvert
+      - run: python scripts/build_public_skills.py --check
+      - run: python scripts/test_public_skill_packages.py
       - run: python scripts/moon_source.py validate
       - uses: actions/setup-node@v4
         with:

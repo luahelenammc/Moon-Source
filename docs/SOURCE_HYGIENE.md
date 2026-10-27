@@ -1,5 +1,8 @@
 # 🧹 Source Hygiene — Moon Source component
 
+**Agent Skill:** [Download Source Hygiene skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-source-hygiene.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 A public source-hygiene method for auditing context corpora, project files and knowledge systems whose problem is deeper than retrieval.
 
 > Better retrieval cannot repair a source that is itself stale, contradictory, duplicated or governed by the wrong authority.

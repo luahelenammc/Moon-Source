@@ -1,5 +1,8 @@
 # 👁️ Be My Eyes — Moon Source portable
 
+**Agent Skill:** [Download Be My Eyes skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-be-my-eyes.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 **Read a message, thread, screenshot, note or draft as a human scene — without pretending inference is fact.**
 
 **How to apply it:** provide the canonical Be My Eyes method with a message, scene or draft and ask a compatible AI to distinguish observations, possible interpretations and unknowns. The method guides a reading; it does not establish anyone's private motives.

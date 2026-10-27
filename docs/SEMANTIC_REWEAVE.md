@@ -1,5 +1,8 @@
 # 🧵 Semantic Reweave — Moon Source component
 
+**Agent Skill:** [Download Semantic Reweave skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-semantic-reweave.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 A bounded method for recovering the latent semantic topology of an evolving project or corpus and repairing inherited organization without rebuilding it from scratch.
 
 > **Let meaning regroup before containers govern it.**

@@ -1,5 +1,8 @@
 # 🔗 Connected Sources — Moon Source structural component
 
+**Agent Skill:** [Download Connected Sources skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-connected-sources.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 **Let AI work with persistent external sources while keeping access, authority, freshness, mutation and readback separate.**
 
 **How to apply it:** supply the canonical Connected Sources instructions when an AI already has authorized access to relevant files or services. They guide retrieval, source authority and readback; a protocol does not install a connector or create access rights.

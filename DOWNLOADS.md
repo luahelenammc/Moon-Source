@@ -4,6 +4,10 @@
 
 **Plan B:** use the downloadable ZIPs below if GitHub retrieval is unavailable or incomplete, or if offline/snapshot transport is required. No ZIP is necessary when Plan A works.
 
+## Agent Skills
+
+Each public capability also has a separately installable Agent Skill package in [downloads/skills](downloads/skills/README.md). The skill packages contain a procedural entry point, source snapshot, provenance and license. They are separate from the existing documentation ZIPs below; installation depends on the receiving runtime. The public canonical document remains authoritative.
+
 ## Full public Moon Source · ZIP fallback
 
 [**Download the complete Moon Source repository (.zip)**](https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip)

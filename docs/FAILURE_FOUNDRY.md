@@ -1,5 +1,8 @@
 # 🏭 Failure to Capability — Failure Foundry — Moon Source component
 
+**Agent Skill:** [Download Failure to Capability — Failure Foundry skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-failure-foundry.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 Failure Foundry is a bounded loop for turning a recurring, costly, systemic or epistemically dangerous failure into the smallest reusable capability that has actually earned publication or reuse.
 
 It treats failure as evidence to be classified and metabolized. It does not treat every error as doctrine, and it does not claim autonomous self-improvement.

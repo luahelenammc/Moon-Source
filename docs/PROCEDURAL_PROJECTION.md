@@ -1,5 +1,8 @@
 # 🧩 Procedural Projection — Moon Source component
 
+**Agent Skill:** [Download Procedural Projection skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-procedural-projection.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 A public method for turning a stable way of working into a reusable procedural capability without confusing procedure with source authority.
 
 > A **source** governs truth, state and authority. A **procedural projection** governs reusable procedure and quality checks.

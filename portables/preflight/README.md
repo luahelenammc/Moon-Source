@@ -1,5 +1,8 @@
 # 🛫 Preflight — Moon Source portable
 
+**Agent Skill:** [Download Preflight skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-preflight.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 **Turn messy, conversational or self-correcting human expression into the faithful task the person actually meant before execution begins.**
 
 **How to apply it:** provide the canonical Preflight instructions to a compatible AI when a request needs clarification of intent before execution. It guides interpretation and checks; it does not execute tools or grant permissions itself.

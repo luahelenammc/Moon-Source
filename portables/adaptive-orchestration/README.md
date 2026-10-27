@@ -1,5 +1,8 @@
 # 🧬 Adaptive Orchestration Protocol — Moon Source portable
 
+**Agent Skill:** [Download Adaptive Orchestration Protocol skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-adaptive-orchestration.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 **Use each model, surface and unit of reasoning where it actually pays for itself.**
 
 Adaptive Orchestration Protocol (AOP) helps an AI route work across the right control root, execution surface, model capability, behavioral fit, commitment geometry, reasoning effort and delegation topology while preserving continuity, evidence, convergence and acceptance.

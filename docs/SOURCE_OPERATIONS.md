@@ -1,5 +1,8 @@
 # 🔄 Source Operations — Moon Source component
 
+**Agent Skill:** [Download Source Operations skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-source-operations.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 Source Operations is the public Moon Source method surface for deciding how governed context is found, interpreted, changed, preserved and deliberately generalized across jurisdictions.
 
 Its central distinction is:

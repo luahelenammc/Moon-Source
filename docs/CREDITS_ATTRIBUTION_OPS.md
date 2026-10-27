@@ -1,5 +1,8 @@
 # 🧾 Credits & Attribution Ops — Moon Source component
 
+**Agent Skill:** [Download Credits & Attribution Ops skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-credits-attribution-ops.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 ## Intellectual lineage, content custody & immaterial-asset protection
 
 - **distributed with:** Moon Source

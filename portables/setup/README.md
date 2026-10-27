@@ -1,5 +1,8 @@
 # 🧭 Setup — Moon Source portable
 
+**Agent Skill:** [Download Setup skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-source-setup.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+
+
 **Build the smallest useful AI context setup for a person or project without turning context into a pile of everything.**
 
 **How to apply it:** give a compatible AI the canonical Setup instructions and describe the person or project context you want to organize. Setup guides the questions and structure; the AI's environment must supply any storage or lasting memory.
