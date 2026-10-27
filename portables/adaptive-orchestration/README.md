@@ -39,9 +39,11 @@ For release history, see the [repository changelog](../../CHANGELOG.md).
 
 ## Astra submodule, not Astra mode
 
-Astra is an optional subordinate submodule of this Adaptive Orchestration portable, not a prescribed work style. Its canonical adapter lives at [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) and is independently versioned at **1.9**.
+Astra is an optional subordinate submodule of this Adaptive Orchestration portable, not a prescribed work style. Its canonical adapter lives at [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) and is independently versioned at **2.0**.
 
 GPT-6 Sol/Luna has a separate dated executor calibration at [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md), version **1.8**. It preserves the model-neutral core while mapping the family to heterogeneous execution: Luna for focused/high-volume work after material solution commitments are sufficiently resolved, Sol for strong roots and bounded high-leverage decisions when warranted, plus current Codex child-model/default configuration guidance.
+
+**New on October 26, 2026:** [GPT-6.1 Terra Strategy Adapter 1.0](adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md) calibrates visual reasoning, onscreen action, scoped coding and natural writing across Work/Codex. Terra is not a universal replacement for cheaper Luna: at dated Standard API rates, Terra costs 10× Luna, half of Sol 6.1 and one tenth of Astra per uncached input/output token. Route by *accepted task cost*, capability floor, observed behavioral fit, tools and real allowance availability. OpenAI-reported computer-use/visual benchmarks justify bounded trials, not automatic hierarchy or guaranteed credits saved.
 
 As of the October 2026 Chat rollout, GPT-6 in Chat uses conversation-tuned Sol (eligible paid tiers) or Luna (Free/Go), distinct from the September Work/Codex executor releases. Model family does not determine available tools, reasoning controls or delegation on any surface.
 
@@ -80,14 +82,15 @@ Sprint Mode does not expose allowance/reset state, create a native product featu
 - **Status:** current · supported standalone distribution
 - **Former identity:** Chat–Work Routing Protocol / Chat–Work Router / Chat–Work · retained only as compatibility and migration terminology
 - **Named continuity profile:** Chat–Work Loop Profile · Chat → Work/Codex → Chat
-- **Optional Astra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) · version **1.9**
+- **Optional Astra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) · version **2.0**
 - **GPT-6 Sol/Luna submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md) · version **1.8**
+- **GPT-6.1 Terra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md) · version **1.0**, dated 2026-10-26
 - **Adapter directory law:** current and future model-specific Adaptive Orchestration adapters co-reside under portables/adaptive-orchestration/adapters/; do not create one directory per model family unless a future adapter actually becomes a multi-file subsystem.
 - **Canonical body:** [portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md](ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
 - **Package:** [downloads/adaptive-orchestration-protocol.zip](../../downloads/adaptive-orchestration-protocol.zip)
 - **License:** CC BY 4.0 · see [Licensing](../../LICENSING.md)
 
-> **Authority:** This README is the human-facing presentation surface. [ADAPTIVE_ORCHESTRATION_PROTOCOL.md](ADAPTIVE_ORCHESTRATION_PROTOCOL.md) remains the semantic authority and contains the operative **First use** instructions. The Astra and GPT-6 Sol/Luna adapters are subordinate to that body and do not create separate capability identities.
+> **Authority:** This README is the human-facing presentation surface. [ADAPTIVE_ORCHESTRATION_PROTOCOL.md](ADAPTIVE_ORCHESTRATION_PROTOCOL.md) remains the semantic authority and contains the operative **First use** instructions. The Astra, GPT-6 Sol/Luna and Terra adapters are subordinate to that body and do not create separate capability identities.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
