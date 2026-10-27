@@ -125,7 +125,7 @@ execution_profile_example:
 
 ## 7. Public/local boundary
 
-The **public AUTO/default** remains profile-dependent and model-neutral; it does not silently enable Maximum Token Economy or a universal Terra-first policy. **Inside the expressly selected Plus Economy / Maximum Token Economy profile, however, Terra becomes the conditional default executor for frontier-shaped work, with Sol/Astra available through evidence-based exception gates.** Any **Local Moon Source preference** may favor Terra for suitable visual/computer-use workloads but must be identified as a *local profile calibration*, not projected back into public core law. Native Personal Skills, Drive Runtime Mirrors and website/package copies have separate verification states: a GitHub commit alone proves none of those projections are synchronized.
+The **public AUTO/default** remains profile-dependent and model-neutral; it does not silently enable Maximum Token Economy or a universal Terra-first policy. **Inside the expressly selected Plus Economy / Maximum Token Economy profile, however, Terra becomes the conditional default executor for frontier-shaped work, with Sol/Astra available through evidence-based exception gates.** A local preference may favor Terra for suitable visual/computer-use workloads, but it must be identified as a *local profile calibration*, not projected back into public core law.
 
 ## Verification sources and freshness
 
