@@ -5,8 +5,8 @@
 ## Meta
 
 - **status:** current subordinate adapter
-- **adapter version:** 1.8
-- **as of:** 2026-10-24
+- **adapter version:** 1.9
+- **as of:** 2026-10-26
 - **governing capability:** [Adaptive Orchestration Protocol](../ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
 - **scope:** GPT-6.1 Sol and GPT-6 Sol/Luna routing across Chat, Work and Codex where available, with dated Chat-vs-Work model-variant boundaries, heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles, behavioral-fit calibration, commitment-bearing decision routing and API/product-boundary reasoning about executor choice
 - **authority:** subordinate; the canonical Adaptive Orchestration body wins on conflict
@@ -18,7 +18,7 @@
 
 ## 1. Why this adapter exists
 
-GPT-6 changes the practical executor geometry, and current subagent support makes heterogeneous model delegation a first-class execution option under Adaptive Orchestration 6.3. The 6.3 core is surface-neutral, behavior-aware and commitment-aware: Sol/Luna topology does not require Chat to be the control root when Work or Codex can retain objective, convergence and postflight, and capability sufficiency does not erase behavioral-fit or commitment-fit differences between executors.
+GPT-6 changes the practical executor geometry, and current subagent support makes heterogeneous model delegation a first-class execution option under Adaptive Orchestration 6.4. The 6.4 core is surface-neutral, behavior-aware and commitment-aware: Sol/Luna topology does not require Chat to be the control root when Work or Codex can retain objective, convergence and postflight, and capability sufficiency does not erase behavioral-fit or commitment-fit differences between executors.
 
 At launch, OpenAI positions:
 
@@ -49,25 +49,26 @@ For the OpenAI API **Standard / short-context** text-token regime, the current G
 
 Within that API pricing regime, GPT-6.1 Sol is therefore **5× cheaper on uncached input and output** and **10× cheaper on cached input** than Astra. This ratio is a dated API-pricing fact, not a ChatGPT Work/Codex allowance conversion, credit-rate claim or proof that every product run consumes exactly one fifth as much plan usage.
 
-### Maximum Token Economy mode — public opt-in profile
+### Maximum Token Economy and Plus Economy frontier preference — 2026-10-26 rebase
 
-`Maximum Token Economy` is an **explicit opt-in routing profile**, not the public default.
+**Activation:** `Maximum Token Economy` remains an explicit **opt-in public Execution Profile**. `Plus Economy` means that economic preference *within a verified/selected Plus-plan run*; **Plus entitlement alone does not silently opt the user in**. This is a calibrated profile preference, **not a universal model tier**, not the default in balanced/quality profiles, and not a promise of computer-use tools, child-model controls or fixed Work credits.
 
-Activate it only when the user or governing execution profile clearly asks to minimize model-token cost aggressively while preserving the acceptance boundary. Do not infer this mode merely because a cheaper model exists.
+**Frontier-default rule, exclusively in these economic/Plus profile contexts:** when the task is genuinely frontier-shaped, **GPT-6.1 Terra is the first model to test or select at an appropriate effort** if it is exposed on the required Work/Codex surface and a bounded capability, behavioral-fit and commitment-risk check predicts acceptable results. `frontier` describes the *workload requirement*, **not a claim Terra has the highest frontier capability**. Do not lower task acceptance, omit necessary review or send a high-risk irreducible decision to Terra merely to obey the preset.
 
-When active and GPT-6.1 Sol is available:
+**Preference by work geometry, not a universal staircase:**
 
-1. keep **Luna** as the first choice for bounded, high-volume work that clears the capability floor;
-2. use **GPT-6.1 Sol** as the preferred strong root and as the default substitute for Astra across most non-scientific frontier-shaped work;
-3. keep **Astra** behind an exception gate rather than as the routine frontier step;
-4. escalate to Astra directly when current evidence indicates a material frontier gap for the task class, when the user explicitly asks for the highest available capability, or when the acceptance risk makes the residual capability difference more important than token economy;
-5. after a bounded GPT-6.1 Sol attempt, escalate only for a diagnosed capability shortfall, not for source, authority, tooling, specification or context failure.
+1. Keep **GPT-6 Luna** for verifiable focused/bulk work when sufficient. Its API input/output unit prices are much lower than Terra's; never promote routine Luna work to Terra just because the Plus profile has a frontier default.
+2. Within **frontier-shaped work** under the economic Plus profile, **try Terra 6.1 first** at medium effort when uncertainty and harness allow; use a representative micro-probe when a bad architectural/creative/legal/technical commitment could cause replay. Terra is an efficient *candidate*, not a demonstrated equal substitute for Sol or Astra on every workload.
+3. **Route straight to GPT-6.1 Sol** where the task has a known stronger-than-Terra floor: large, ambiguous refactors, demanding multi-domain inference, architecture that evolves during execution, hard coding or irreducible decision authority. A prior reliable same-task comparison or intolerable retry cost can justify Sol without a sacrificial Terra run.
+4. **Route to Astra** where evidence or explicit user preference warrants its hardest-work capability, aesthetic or architectural leadership, scientific judgment, deep review, or end-to-end execution. Astra is not restricted to a tiny burst and is never blocked by an economy preset when acceptance risk requires it.
+5. **Escalate on accepted-output economics**: compare expected retries, elapsed time, tool churn, source reload, human review and quality failure, *not* just model API token sticker prices. A targeted Sol/Astra judgment may be cheaper than repeated unsuccessful Terra attempts. Failures caused by access, source, permissions, specification or harness must be repaired rather than classified as model intelligence.
+6. **Preserve control-root continuity** and use real compatible child workers where supported; neither the Plus label nor model announcement grants automatic subagent routing or UI switches.
 
-The mode changes the **economic preference ordering**, not the semantic tier model:
+**Effort gate:** medium is the starting *probe setting*, not a rigid default for every request; low may outperform it economically on simple tasks, high/max only with verified acceptance gain. Max-effort Terra can narrow the cost advantage through token verbosity; do not assume API 50% unit price implies 50% cheaper accepted tasks or Work credits. The current official Plus usage guidance does not provide a Terra per-five-hour numeric message band; **do not invent one**.
 
-`Luna for cheap sufficient bulk → GPT-6.1 Sol for strong and most frontier-shaped work → Astra only when the remaining frontier delta is material.`
+**Baseline exceptions:** outside the opt-in economic profile, preserve the ordinary AOP routing and Astra strategy plurality. The older 2026-09-29 Sol-first economy rule is superseded **only for the explicitly chosen economic/Plus frontier default**; Sol remains a strong executor and a justified immediate escalation when Terra cannot satisfy the task.
 
-Outside `Maximum Token Economy`, preserve the ordinary Adaptive Orchestration rules and the Astra adapter's broader plurality of legitimate roles.
+**Sources and provenance:** [OpenAI Terra release, 2026-10-26](https://openai.com/index/introducing-gpt-6-1-terra/); [Artificial Analysis Terra release](https://artificialanalysis.ai/models/releases/gpt-6-1-terra); [Work/Codex usage guidance](https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex). [Terra adapter](ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md) owns the detailed dated calibration. Provider benchmarks and user-shared Reddit reactions are different evidentiary classes.
 
 ### GPT-6 Sol behavioral-fit field signal — 2026-09-29 review
 
@@ -202,7 +203,7 @@ A model change, child spawn and surface transition are separate events. Prefer i
 
 ## 5. The overlap zone: balanced is not a missing product
 
-GPT-6 currently has no named Terra model in the released family. Do not manufacture one.
+**October 26 correction:** GPT-6.1 Terra now exists in Work/Codex and is governed by the separate [Terra Strategy Adapter](ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md). A balanced route may consider Terra when observed capability and task acceptance justify it; the model name does not force a universal middle tier.
 
 A `balanced` Adaptive Orchestration route can legitimately compile to, for example:
 
