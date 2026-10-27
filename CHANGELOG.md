@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-26 — AOP Terra 1.0 visual/computer-use executor calibration
+
+- Added subordinate [GPT-6.1 Terra Strategy Adapter 1.0](portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md) with sourced launch evidence, capability/behavior/commitment gates, visual and screen-action routing, sample acceptance probes, and explicit no-credits/non-automatic-delegation boundaries.
+- Clarified economic split: Luna remains cheaper for sufficient simple bulk; Terra 6.1 occupies a task-fit visual/computer-use role between Luna and Sol (standard API uncached input/output 10× Luna, 0.5× Sol 6.1, 0.1× Astra), without imposing a linear model escalation hierarchy.
+- Registered Terra in the four-member composite AOP ZIP manifest and portable README. Canonical Adaptive Orchestration **6.4**, its neutral laws, existing Sol/Luna **1.8** and Astra **2.0** adapters, and MSL **5.1** are unchanged.
+- Public evidence dated October 26, 2026; benchmark and API-unit economics must not be promoted into fixed ChatGPT Work/Codex allowance rates. Downstream mirrors, bundles and native skill projections require separate readback before any parity claim.
+
 ## 2026-10-24 — AOP 6.4 adapters: Sol 6.1 versus Astra capability and 3D quality
 
 - Updated GPT-6 Sol/Luna Strategy Adapter **1.7 → 1.8** and Astra Strategy Adapter **1.9 → 2.0**; canonical AOP remains **6.4** and MSL remains **5.1**.
