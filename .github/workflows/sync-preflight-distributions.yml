@@ -1,0 +1,77 @@
+# SPDX-FileCopyrightText: 2026 Lua Helena Moon Martins Cardoso (Moon)
+# SPDX-License-Identifier: Apache-2.0
+
+name: Synchronize Preflight distributions
+on:
+  push:
+    branches: [main]
+    paths:
+      - "portables/preflight/PREFLIGHT.md"
+      - "portables/preflight/README.md"
+      - "downloads/skills/source/moon-preflight/SKILL.md"
+      - "registry/public-capabilities.json"
+      - ".github/workflows/sync-preflight-distributions.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  synchronize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Rebuild reproducible Agent Skill ZIPs
+        run: python scripts/build_public_skills.py
+      - name: Refresh Preflight standalone ZIP preserving entry paths
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import os
+
+          path = Path("downloads/preflight.zip")
+          canonical = Path("portables/preflight/PREFLIGHT.md").read_bytes()
+          readme = Path("portables/preflight/README.md").read_bytes()
+          tmp = path.with_suffix(".zip.tmp")
+          seen_canonical = False
+
+          with ZipFile(path, "r") as source, ZipFile(tmp, "w") as target:
+              for entry in source.infolist():
+                  raw = source.read(entry.filename)
+                  basename = entry.filename.rsplit("/", 1)[-1]
+                  if basename == "PREFLIGHT.md":
+                      raw = canonical
+                      seen_canonical = True
+                  elif basename == "README.md" and ("/" not in entry.filename or "preflight" in entry.filename.lower()):
+                      raw = readme
+                  target.writestr(entry, raw, compress_type=entry.compress_type)
+              if not seen_canonical:
+                  target.writestr("PREFLIGHT.md", canonical)
+          os.replace(tmp, path)
+
+          with ZipFile(path) as verify:
+              assert any(verify.read(x) == canonical for x in verify.namelist() if x.endswith("PREFLIGHT.md"))
+          PY
+      - name: Verify source-aligned bundles
+        run: python scripts/build_public_skills.py --check
+      - name: Commit changed distribution artifacts only
+        run: |
+          git add downloads/preflight.zip downloads/skills/moon-preflight.zip
+          if git diff --cached --quiet; then
+            echo "Preflight distributions already synchronized"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "build(preflight): synchronize 2.4 ZIP distributions"
+          git push origin HEAD:main
+
+# MOON-SOURCE-PUBLIC-STAMP
+# 🌙 Moon Source · Lua Helena Moon Martins Cardoso (Moon) + Áurion (AI-assisted) · Licensing: https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md · Use & attribution: https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md · Full source: https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip · Questions, suggestions, or proposals? Feel free to contact me at LuaHelenaMMC@gmail.com.
