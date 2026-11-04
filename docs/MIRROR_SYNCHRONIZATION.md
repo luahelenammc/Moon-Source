@@ -59,6 +59,9 @@ A non-zero exit means at least one canonical current file or current mirror has 
 
 Use the [public capability registry](../registry/PUBLIC_CAPABILITIES.md) for canonical paths, roles and fingerprints, the [download hub](../DOWNLOADS.md) for standalone public access, [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) for mirror lineage and content custody, or [Architecture](../ARCHITECTURE.md) for the responsibilities behind the files.
 
+
+On 2026-11-04, Preflight 2.4 made AI-led task-level self-prompt engineering explicit as the public semantic core, with faithful human-intent reconstruction as its quality criterion. Authority, source jurisdiction, provenance, safety and mutation remain conditional execution guardrails. The canonical body and the D1 website download mirror were reconciled to exact bytes, and the standalone/Agent Skill ZIPs were regenerated from the upstream source. Private frozen consumers remain governed by their own registered F1 readback, not by this D1 receipt.
+
 On 2026-09-27, the Chat–Work Routing Protocol identity moved to Adaptive Orchestration Protocol at version 6.1 under the naming-only version rule. The canonical package and exact-byte website mirror use the new identity; the old folder, body, adapter paths, package and mirror remain thin compatibility routes to the current canonical artifacts. Astra 1.6 and GPT-6 Sol/Luna 1.3 are unchanged.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
