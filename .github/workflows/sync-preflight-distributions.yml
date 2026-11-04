@@ -10,6 +10,7 @@ on:
       - "portables/preflight/README.md"
       - "downloads/skills/source/moon-preflight/SKILL.md"
       - "registry/public-capabilities.json"
+      - "docs/MIRROR_SYNCHRONIZATION.md"
       - ".github/workflows/sync-preflight-distributions.yml"
   workflow_dispatch:
 
