@@ -26,7 +26,7 @@ The table's **Summary title** is the concise browsing label. The registry's sema
 | moon-source-setup | [Setup](../portables/setup/README.md) | Understand | adaptive context router | 3.1 | current | [MOON_SOURCE_SETUP.md](../portables/setup/MOON_SOURCE_SETUP.md#first-use) | [ZIP](../downloads/moon-source-setup.zip) |
 | operational-devices | 🛠️ Operational Devices | Execute | operational-device pattern | — | current | [OPERATIONAL_DEVICES.md](../docs/OPERATIONAL_DEVICES.md) | — |
 | operational-reliability | 🛡️ Operational Reliability | Execute | operational-reliability method | — | current | [OPERATIONAL_RELIABILITY.md](../docs/OPERATIONAL_RELIABILITY.md) | — |
-| preflight | [Preflight](../portables/preflight/README.md) | Understand | transversal interface method | 2.3 | current | [PREFLIGHT.md](../portables/preflight/PREFLIGHT.md#first-use) | [ZIP](../downloads/preflight.zip) |
+| preflight | [Preflight](../portables/preflight/README.md) | Understand | transversal interface method | 2.4 | current | [PREFLIGHT.md](../portables/preflight/PREFLIGHT.md#first-use) | [ZIP](../downloads/preflight.zip) |
 | procedural-projection | 🧩 Procedural Projection | Organize | procedural-projection method | — | current | [PROCEDURAL_PROJECTION.md](../docs/PROCEDURAL_PROJECTION.md) | — |
 | semantic-reweave | 🧵 Semantic Reweave | Govern | semantic-topology repair method | — | current | [SEMANTIC_REWEAVE.md](../docs/SEMANTIC_REWEAVE.md) | — |
 | signal-calibration | 🎚️ Signal Calibration | Understand | qualitative signal calibration | — | current | [SIGNAL_CALIBRATION.md](../docs/SIGNAL_CALIBRATION.md) | — |
@@ -106,7 +106,7 @@ naming precedent.
 
 The current independently versioned capabilities are Lifecycle Workspace Router at
 1.2, Connected Sources at 1.2, MSL at 5.1, Adaptive Orchestration at 6.4,
-Setup at 3.1, Preflight at 2.3 and Be My Eyes at 1.0-public. Adaptive Orchestration 6.4
+Setup at 3.1, Preflight at 2.4 and Be My Eyes at 1.0-public. Adaptive Orchestration 6.4
 preserves Delegation-First, the surface-neutral control-root model, Behavioral Fit and Commitment Geometry as a separate decision-closure route: high-leverage solution choices can be probed or explored before dependent work scales, only the commitment-bearing delta may be side-routed or up-routed, and objective-linked evidence can reopen the smallest affected boundary. The historical Chat → Work/Codex → Chat loop remains a named first-class profile rather than the mandatory topology. The Astra Strategy Adapter is 2.0, the GPT-6 Sol/Luna Adapter is 1.9 and the GPT-6.1 Terra Adapter is 1.1. Within the user-opted-in economic Plus / Maximum Token Economy profile only, Terra 6.1 is the conditional frontier-shaped executor default when sufficient; direct Sol/Astra exceptions remain available. Outside that profile, public AUTO is model-neutral. The 2026-10-24 calibration evaluates capability by accepted artifacts, retries, latency and verification cost; 3D game-design equivalence is not assumed from aggregate coding benchmarks. Model, token-economy, behavior and subagent calibration remains dated and subordinate; Maximum Token Economy is public opt-in only and does not globally demote Astra. MSL's formatting contract remains part of the current 5.1 body and release identity.
 
 Product-specific connector behavior, model names, plans, prices, availability

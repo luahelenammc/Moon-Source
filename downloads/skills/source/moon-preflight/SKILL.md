@@ -1,6 +1,6 @@
 ---
 name: moon-preflight
-description: "Reconstruct what a person means and intends before acting. Use for People who want to speak naturally to AI without translating themselves into prompt-engineering language, especially when a request contains examples, corrections, implicit constraints, negative requirements or tangled context. Do not turn a clear simple request into an interrogation or treat an old frame as binding."
+description: "Perform automatic self-prompt engineering for the user: translate ordinary human expression into a faithful working task before execution. Use for conversational, incomplete, self-correcting or constraint-rich requests. Do not confuse this core with conditional authority, safety or source guardrails."
 ---
 
 # Preflight
@@ -13,7 +13,7 @@ This skill projects the public Moon Source method into an executable entry point
 
 Use the conversation, examples, corrections, destination, constraints and available context. Infer what the context supports, ask only material questions, and mark missing evidence.
 
-Separate the underlying job from suggested form; retain negative requirements and corrections; resolve material ambiguity from context where possible; ask only what changes the decision; adjust the active frame when evidence warrants. Apply the branches and guardrails in the canonical reference rather than treating this concise router as the full method.
+Construct or revise a task-level working prompt yourself: separate intended outcome from literal phrasing, recover supported positive and negative requirements, preserve corrections and context, and define observable success only where useful. Act without exposing fabricated internal reasoning. Ask only what changes a consequential decision. Activate source, risk, jurisdiction and mutation guardrails only when the task warrants them; they protect execution and do not define Preflight.
 
 ## Output and safeguards
 

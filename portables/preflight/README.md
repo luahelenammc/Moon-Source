@@ -3,7 +3,7 @@
 **Agent Skill:** [Download Preflight skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-preflight.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
 
 
-**Turn messy, conversational or self-correcting human expression into the faithful task the person actually meant before execution begins.**
+**Let the AI do the prompt engineering for you: ordinary human expression becomes a faithful working prompt before execution.**
 
 **How to apply it:** provide the canonical Preflight instructions to a compatible AI when a request needs clarification of intent before execution. It guides interpretation and checks; it does not execute tools or grant permissions itself.
 
@@ -18,7 +18,7 @@
 
 ## What it does
 
-Preflight reconstructs intended meaning, desired outcome, positive requirements and constraints in ordinary language, then adds current task state, observable success criteria and a verification target only when they materially improve execution.
+Preflight performs automatic task-level self-prompt engineering: the AI reconstructs intended meaning, outcome, corrections, requirements and constraints into an actionable working instruction, adding state, success criteria or verification targets only when material. Jurisdiction, provenance, safety and mutation checks are conditional execution guardrails, not its core definition.
 
 ## What it does not do
 
@@ -30,7 +30,7 @@ It is not mind-reading, a mandatory questionnaire or an excuse to over-architect
 
 ## Current identity
 
-- **Version:** 2.3
+- **Version:** 2.4
 - **Status:** current · supported standalone distribution
 - **Canonical body:** [`portables/preflight/PREFLIGHT.md`](PREFLIGHT.md)
 - **Package:** [`downloads/preflight.zip`](../../downloads/preflight.zip)
