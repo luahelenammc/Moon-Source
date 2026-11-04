@@ -63,7 +63,9 @@ jobs:
         run: python scripts/build_public_skills.py --check
       - name: Commit changed distribution artifacts only
         run: |
-          git add downloads/preflight.zip downloads/skills/moon-preflight.zip
+          # Regenerate all deterministic skill artifacts to clear pre-existing package drift.
+          # Their canonical semantics remain untouched.
+          git add downloads/preflight.zip downloads/skills/*.zip
           if git diff --cached --quiet; then
             echo "Preflight distributions already synchronized"
             exit 0
