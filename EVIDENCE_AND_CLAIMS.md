@@ -68,6 +68,19 @@ The files under `examples/application-scenarios/` are intentionally labeled **hy
 
 Do not rename these files as case studies, client cases, proven results, adoption examples or validated deployments. Do not add real patient, client, institution or organization material, realistic identifiers or invented outcome metrics. The gallery explains the method and its boundaries; it does not raise the public claim ceiling.
 
+## Community-use evidence and verification
+
+The [real-world use report template](.github/ISSUE_TEMPLATE/usage_report.md) allows external users to voluntarily submit a public, permissioned account of where a specific Moon Source component is used. These reports are leads for verification, **not automatic adoption claims**.
+
+- **REPORTED:** first-hand or third-party account, with date and scope; not yet independently checked.
+- **VERIFIED_PUBLIC:** a maintainer has checked a live public implementation or dependency, identified the exact component and version/commit, and confirmed that the cited artifact supports the narrow claim being made.
+- **UNVERIFIED_PRIVATE:** usage asserted without public evidence; keep aggregate counts and names out of public claims unless explicit permission and suitable substantiation exist.
+- **PLANNED:** prospective or hypothetical use; never count it as an adopter, dependent, download, user, deployment or outcome.
+
+Only count unique independent adopters where the evidence permits deduplication; do not conflate stars, forks, ZIP downloads, synthetic demos, author-owned mirrors, PR volume or GitHub activity with downstream adoption. Maintain provenance for each verified entry, keep consent revocable for public naming, and update or remove stale claims after readback.
+
+**Current claim ceiling:** until individually verified external-use entries exist, the repository continues to make **no claim of independently demonstrated external adoption or ecosystem dependence**. This evidence process does not confer such evidence by itself.
+
 ## Claim discipline
 
 `EVIDENCE_AND_CLAIMS.md` governs public claims about Moon Source and should not be interpreted as requiring every useful working inference inside a field to meet publication-grade evidence before it can be stated as an inference.
