@@ -36,6 +36,19 @@ Moon Source is disclosed through existing evidence only. This repository organiz
 - The public examples gallery contains eight fictional application scenarios. Evidence: PUBLIC_ARTIFACT for the existence of explanatory files only; the scenarios do not establish implementation, adoption, measured impact, sector validation or independent evidence.
 - The website is a human-facing public surface and the professional page is a separate professional context. Evidence: PUBLIC_REPOSITORY and public URLs.
 
+## Third-party public references (observed 2026-11-06)
+
+A distinct GitHub account, `ChrisCanadian`, publicly credits Moon Source's [Credits & Attribution Ops Protocol](docs/CREDITS_ATTRIBUTION_OPS.md) as **reference / inspiration for the presentation of attribution and provenance records** in four currently accessible repositories:
+
+- [Live Runtime Acceptance Rig · ATTRIBUTION.md](https://github.com/ChrisCanadian/Live-Runtime-Acceptance-Rig/blob/main/ATTRIBUTION.md)
+- [Nexus Proof Runtime · PROVENANCE.md](https://github.com/ChrisCanadian/nexus-proof-runtime/blob/main/PROVENANCE.md)
+- [Nexus Mode Card Creator · ATTRIBUTION.md](https://github.com/ChrisCanadian/nexus-mode-card-creator/blob/main/ATTRIBUTION.md)
+- [Nexus Memory Kernel · ATTRIBUTION.md](https://github.com/ChrisCanadian/Nexus-Memory-Kernel/blob/main/ATTRIBUTION.md)
+
+**What this supports:** four public attribution references under **one other GitHub account**, identifying a specific Moon Source method as a source of inspiration for an attribution practice. The linked files were read in their default branches on the observation date.
+
+**What this does not support:** four independent adopters, code reuse, package dependency, runtime integration, validated deployment, measurable results, endorsement, partnership, or significant ecosystem dependence. The external records explicitly limit the relationship to attribution practice. Treat this as public **reference evidence**, not as adoption or an ecosystem-impact threshold. Counts and link validity must be rechecked before future publication.
+
 ## What the current public body does not establish
 
 Public artifact is not adoption.
