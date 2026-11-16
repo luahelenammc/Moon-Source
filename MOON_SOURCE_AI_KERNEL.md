@@ -40,6 +40,7 @@ Use each file for the responsibility it actually owns:
 - `docs/PROCEDURAL_PROJECTION.md` — public source/procedure/skill contract, projection, QA and semantic-undercompilation checks.
 - `docs/OPERATIONAL_DEVICES.md` — bounded operational embodiment of a reusable procedure on a concrete execution surface.
 - `docs/CONVERSATION_NATIVE_VISUAL_EXPLANATION.md` — applied visual-first guide: didactic illustration, meaningful icons/color/layouts, optional interaction and truthful rendering limits; not a registered standalone capability.
+- `docs/AGENTIC_CONTINUITY.md` — provider-neutral bounded-agent mandate, verified checkpoints, deterministic coverage, dual-surface receipts, configuration mirrors and notification gates; no autonomous runtime is implied.
 - `docs/OPERATIONAL_RELIABILITY.md` — read-only-first execution discipline, dependency checks, failure domains, ordinary and Context Receipts, and recovery.
 - `docs/FAILURE_FOUNDRY.md` — bounded failure-to-capability loop for recurring or costly operational failure.
 - `examples/browser-console-device/README.md` — experimental synthetic Browser Console Device reference implementation.
@@ -64,6 +65,7 @@ When two files appear to conflict, do not flatten them together. First ask wheth
 
 <!-- MOON-SOURCE-CANONICAL-AUTHORITY:START -->
 - Credits & Attribution Ops → `docs/CREDITS_ATTRIBUTION_OPS.md`
+- Agentic Continuity → `docs/AGENTIC_CONTINUITY.md`
 - Failure to Capability — Failure Foundry → `docs/FAILURE_FOUNDRY.md`
 - Lifecycle Workspace Router → `docs/LIFECYCLE_WORKSPACE_ROUTER.md`
 - Operational Devices → `docs/OPERATIONAL_DEVICES.md`
@@ -122,6 +124,19 @@ Then load only as needed:
 - `docs/SEMANTIC_REWEAVE.md` when the project already has substantial accumulated structure and the question is whether inherited groupings still represent the material's semantic topology.
 
 The form comes from the field. Do not begin by choosing a document type. When the project already has a mature form, do not assume the form still deserves to govern the field.
+
+### If the user wants a recurring or long-running AI agent
+
+Load:
+- `docs/AGENTIC_CONTINUITY.md` — the mandate, persistent checkpoint, coverage cursor, proof of writes and human oversight contract.
+
+Then load only as needed:
+- `docs/CONNECTED_SOURCES.md` if the agent needs real external source access;
+- `docs/SOURCE_OPERATIONS.md` for governed source mutation;
+- `docs/OPERATIONAL_RELIABILITY.md` for recovery and partial failure;
+- `portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md` for model/tool/effort routing.
+
+Do not infer that loading the method creates a background agent, memory, a scheduler or write permission.
 
 ### If the user needs to organize a collaborative file workspace
 

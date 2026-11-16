@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: pt-BR
 source: ../README.md
-source_sha256: db496c0da6468cbb8b69aeccaa58fdfe52874dee84efd0ad75696a2e076e8760
+source_sha256: 61fcac9ad6ee0a4906b5e2174f4d7375fdadafc3bfa06a5cbf35514a72b5fd32
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -115,9 +115,10 @@ Escolha pelo **problema que precisa resolver**, não pela pasta `docs/` ou `port
 | Usar a capacidade de IA com eficiência entre raízes, superfícies, modelos, esforço de raciocínio e delegação, reduzindo o trabalho total até um resultado aceito | [🧬 Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) |
 | Dar forma a um procedimento recorrente numa superfície de execução concreta com estado, proteções e registros | [🛠️ Operational Devices](../docs/OPERATIONAL_DEVICES.md) |
 | Manter a execução delimitada, diagnosticável e recuperável quando possível | [🛡️ Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) |
+| Retomar agentes recorrentes com checkpoints verificáveis e cobertura sistemática | [🧭 Agentic Continuity](../docs/AGENTIC_CONTINUITY.md) |
 | Transformar falhas recorrentes no menor mecanismo reutilizável que tenha sido validado | [🏭 Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) |
 
-Para percorrer **problema → primeira ação → resultado observável → limite** nas 16 capacidades, consulte o [guia por problemas](../docs/PROBLEM_TO_METHOD.pt-BR.md). Os corpos canônicos continuam governando os métodos.
+Para percorrer **problema → primeira ação → resultado observável → limite** nas 17 capacidades, consulte o [guia por problemas](../docs/PROBLEM_TO_METHOD.pt-BR.md). Os corpos canônicos continuam governando os métodos.
 
 ## Primeiro uso
 
@@ -175,7 +176,7 @@ Moon Source ajuda a governar o contexto e as responsabilidades ao redor do traba
 
 Estes exemplos tornam o material público mais fácil de examinar. Exemplos sintéticos e fictícios mostram uma ilustração delimitada, não um relato de adoção ou de resultados medidos.
 
-- [Encontrar o método adequado](../docs/PROBLEM_TO_METHOD.pt-BR.md): dezesseis problemas concretos ligados à menor ação útil, ao resultado e ao limite.
+- [Encontrar o método adequado](../docs/PROBLEM_TO_METHOD.pt-BR.md): dezessete problemas concretos ligados à menor ação útil, ao resultado e ao limite.
 - [Acompanhar uma primeira decisão de contexto](../examples/first-use-project-context.md): projeto fictício com fontes, um conflito e uma verificação inspecionável.
 - [Explorar cenários de aplicação](../examples/application-scenarios/): exemplos hipotéticos em projetos, equipes e serviços, não relatos de adoção.
 - [Examinar exemplos técnicos delimitados](../examples/README.md): implementações sintéticas de referência, com testes executáveis quando disponíveis, não produtos finalizados.

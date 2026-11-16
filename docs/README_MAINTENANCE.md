@@ -12,7 +12,7 @@ Example READMEs must distinguish a bounded executable demonstration from the met
 
 ## Discovery families are presentation, not authority
 
-The unified public registry assigns exactly one `discovery_family` to each of the sixteen capabilities, following the four problem-first families: Understand, Govern, Organize and Execute. These groups are navigation views, not semantic categories, required stages, new source authorities or distribution classes. Capabilities may compose across groups without appearing twice in the primary catalog.
+The unified public registry assigns exactly one `discovery_family` to each of the seventeen capabilities, following the four problem-first families: Understand, Govern, Organize and Execute. These groups are navigation views, not semantic categories, required stages, new source authorities or distribution classes. Capabilities may compose across groups without appearing twice in the primary catalog.
 
 When family membership changes, update the machine registry, human registry, root README, four translations and coverage checks together. Do not move canonical bodies or fork inventories to match presentation groups.
 

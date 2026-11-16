@@ -21,9 +21,10 @@ def bundle(rec):
     skill=ROOT/'downloads/skills/source'/slug/'SKILL.md'
     contents={f'{slug}/SKILL.md':skill.read_bytes()}
     selected={source}
-    for m in LINK.finditer(source.read_text(encoding='utf-8')):
-        p=relative_target(source,m.group(2))
-        if p and p.is_file() and p.suffix.lower()=='.md' and not p.name.startswith('README'): selected.add(p)
+    if rec.get('skill_snapshot_scope') != 'canonical_only':
+        for m in LINK.finditer(source.read_text(encoding='utf-8')):
+            p=relative_target(source,m.group(2))
+            if p and p.is_file() and p.suffix.lower()=='.md' and not p.name.startswith('README'): selected.add(p)
     if rec['id']=='adaptive-orchestration':
         selected.update((ROOT/'portables/adaptive-orchestration/adapters').glob('*.md'))
     hashes={}
@@ -45,10 +46,11 @@ def bundle(rec):
     contents[f'{slug}/references/PROVENANCE.json']=(json.dumps(manifest,ensure_ascii=False,indent=2,sort_keys=True)+'\n').encode()
     contents[f'{slug}/LICENSE-CC-BY-4.0.txt']=(ROOT/'LICENSES/CC-BY-4.0.txt').read_bytes()
     output=io.BytesIO()
-    with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
+    archive_mode = zipfile.ZIP_STORED if rec.get('skill_archive_compression') == 'stored' else zipfile.ZIP_DEFLATED
+    with zipfile.ZipFile(output,'w',archive_mode,compresslevel=9) as z:
         for path, data in sorted(contents.items()):
-            info=zipfile.ZipInfo(path,(2026,1,1,0,0,0)); info.compress_type=zipfile.ZIP_DEFLATED; info.external_attr=0o100644<<16
-            z.writestr(info,data,compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
+            info=zipfile.ZipInfo(path,(2026,1,1,0,0,0)); info.compress_type=archive_mode; info.external_attr=0o100644<<16
+            z.writestr(info,data,compress_type=archive_mode,compresslevel=9)
     return output.getvalue()
 
 def main():

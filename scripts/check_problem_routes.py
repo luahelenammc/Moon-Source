@@ -106,7 +106,7 @@ def main() -> int:
         for finding in findings:
             print("FAIL:", finding)
         return 1
-    print("PASS: 16 canonical capabilities in four themed tables across five languages")
+    print(f"PASS: {len(json.loads((ROOT / 'registry' / 'public-capabilities.json').read_text(encoding='utf-8'))['capabilities'])} canonical capabilities in four themed tables across five languages")
     return 0
 
 
