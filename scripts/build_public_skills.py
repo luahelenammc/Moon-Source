@@ -21,9 +21,10 @@ def bundle(rec):
     skill=ROOT/'downloads/skills/source'/slug/'SKILL.md'
     contents={f'{slug}/SKILL.md':skill.read_bytes()}
     selected={source}
-    for m in LINK.finditer(source.read_text(encoding='utf-8')):
-        p=relative_target(source,m.group(2))
-        if p and p.is_file() and p.suffix.lower()=='.md' and not p.name.startswith('README'): selected.add(p)
+    if rec.get('skill_snapshot_scope') != 'canonical_only':
+        for m in LINK.finditer(source.read_text(encoding='utf-8')):
+            p=relative_target(source,m.group(2))
+            if p and p.is_file() and p.suffix.lower()=='.md' and not p.name.startswith('README'): selected.add(p)
     if rec['id']=='adaptive-orchestration':
         selected.update((ROOT/'portables/adaptive-orchestration/adapters').glob('*.md'))
     hashes={}
