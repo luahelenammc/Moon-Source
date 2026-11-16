@@ -175,7 +175,8 @@
       "title": "Agentic Continuity",
       "version": "1.0",
       "versioning_mode": "independent_public_capability_version",
-      "discovery_family": "execute"
+      "discovery_family": "execute",
+      "skill_archive_compression": "stored"
     },
     {
       "architectural_role": "structural_crown_jewel",
