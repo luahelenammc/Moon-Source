@@ -8,7 +8,7 @@
     "project": "Moon Source",
     "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md"
   },
-  "as_of": "2026-10-26",
+  "as_of": "2026-11-16",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "capabilities": [
     {
@@ -141,6 +141,40 @@
       "legacy_mirror_paths": [
         "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL.md"
       ],
+      "discovery_family": "execute"
+    },
+    {
+      "architectural_role": "governed_agent_continuity_method",
+      "best_for": "People and builders coordinating bounded recurring AI agents who need verifiable cross-run state, scoped source permissions, systematic coverage, receipts and human oversight",
+      "canonical_path": "docs/AGENTIC_CONTINUITY.md",
+      "claim_ceiling": "Published provider-neutral method and synthetic test fixture, version 1.0; not an installed agent, persistent-memory service, connector, schedule, production automation, validated privacy system, guaranteed resource savings or evidence of external adoption",
+      "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+      "dependencies": [
+        "Complementary to Preflight and Adaptive Orchestration for intent and execution routing",
+        "Connected Sources and Source Operations govern access, source authority, mutation and promotion",
+        "Lifecycle Workspace Router and Operational Reliability govern workspace projection, readback and failure containment"
+      ],
+      "difficulty": "intermediate to advanced",
+      "distribution": {
+        "standalone": false
+      },
+      "freshness": "General public contract as of 2026-11-16; verify each provider's current tools, persistence, scheduling, quota and permissions at execution time",
+      "function": "Govern agent mandate, selective source loading, recovery checkpoints, deterministic defragmented coverage, dual-surface source and report evidence, configuration mirrors, decision inboxes, optional authorized notifications and cost-bounded recurring work",
+      "id": "agentic-continuity",
+      "language": "English with language-sensitive execution",
+      "last_material_update_on": "2026-11-16",
+      "last_material_update_summary": "Introduced the public Agentic Continuity component with bounded bootstrap, progressive coverage, source/workspace readback, configuration mirrors and synthetic acceptance cases",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
+      "public_created_on": "2026-11-16",
+      "public_surface_url": "https://www.luahelena.com.br/moonsource/?lang=en",
+      "status": "current",
+      "summary_title": "Agentic Continuity",
+      "surface_title": "Agentic Continuity — Moon Source component",
+      "title": "Agentic Continuity",
+      "version": "1.0",
+      "versioning_mode": "independent_public_capability_version",
       "discovery_family": "execute"
     },
     {
