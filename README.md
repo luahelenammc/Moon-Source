@@ -105,9 +105,10 @@ A **portable** is a semantic type of capability; **standalone distribution** is 
 | Spend AI capability efficiently across roots, surfaces, models, reasoning effort and delegation while minimizing total work to an accepted result | [🧬 Adaptive Orchestration Protocol](portables/adaptive-orchestration/README.md) |
 | Embody a recurring procedure on a concrete execution surface with state, guards and receipts | [🛠️ Operational Devices](docs/OPERATIONAL_DEVICES.md) |
 | Keep execution bounded, diagnosable and recoverable where possible | [🛡️ Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) |
+| Resume recurring AI work with verified checkpoints and systematic coverage | [🧭 Agentic Continuity](docs/AGENTIC_CONTINUITY.md) |
 | Turn recurring failure into the smallest validated reusable mechanism | [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) |
 
-For the **problem → first move → observable result → stop line** route across all 16 capabilities, use the [problem-first guide](docs/PROBLEM_TO_METHOD.md). Canonical bodies still govern the actual methods.
+For the **problem → first move → observable result → stop line** route across all 17 capabilities, use the [problem-first guide](docs/PROBLEM_TO_METHOD.md). Canonical bodies still govern the actual methods.
 
 ## First use
 
@@ -165,7 +166,7 @@ Moon Source helps govern context and responsibilities around AI work: which sour
 
 These examples make the public material easier to inspect. Synthetic and fictional examples show a bounded illustration, not a report of adoption or measured results.
 
-- [Find the relevant method](docs/PROBLEM_TO_METHOD.md): sixteen concrete problems mapped to the smallest useful action, result and boundary.
+- [Find the relevant method](docs/PROBLEM_TO_METHOD.md): seventeen concrete problems mapped to the smallest useful action, result and boundary.
 - [Walk through a first context decision](examples/first-use-project-context.md): a fictional project with sources, a conflict and an inspectable check.
 - [Explore application scenarios](examples/application-scenarios/): hypothetical examples across projects, teams and services, not reports of adoption.
 - [Inspect bounded technical examples](examples/README.md): synthetic reference implementations with runnable tests where available, not finished products.
