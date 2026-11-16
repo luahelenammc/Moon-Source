@@ -176,7 +176,8 @@
       "version": "1.0",
       "versioning_mode": "independent_public_capability_version",
       "discovery_family": "execute",
-      "skill_archive_compression": "stored"
+      "skill_archive_compression": "stored",
+      "skill_snapshot_scope": "canonical_only"
     },
     {
       "architectural_role": "structural_crown_jewel",
