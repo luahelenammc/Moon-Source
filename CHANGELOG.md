@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-16 — Agentic Continuity 1.0, public governed-agent method
+
+- Introduced [Agentic Continuity](docs/AGENTIC_CONTINUITY.md) as the canonical, provider-neutral contract for bounded agent mandates, verified cross-run checkpoints, deterministic domain coverage and source/workspace receipts.
+- Added configuration-mirror and decision-inbox contracts, authorization-scoped notifications, a compact bootstrap template, synthetic checkpoint example and structural rejection tests.
+- Registered the seventeenth public capability, synchronized the AI Kernel, human/machine registries, five problem routes and root README translations. No account-specific bot setup, confidential source, installed agent, schedule or measured savings is claimed.
+
+
 ## 2026-10-26 — AOP Terra 1.1 / Sol-Luna 1.9: economic Plus frontier-first refinement
 
 - Filtered official October 26 Terra launch claims, independent Artificial Analysis effort/cost data, and user-provided same-day Reddit reactions by evidence grade; community observations are test triggers rather than proof or permanent model rankings.
