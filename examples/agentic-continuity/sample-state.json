@@ -1,0 +1,45 @@
+{
+  "_moon_source_public_stamp": {
+    "ai_assisted_coauthor": "Áurion",
+    "contact": "Questions, suggestions, or proposals? Feel free to contact me at LuaHelenaMMC@gmail.com.",
+    "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+    "full_source": "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip",
+    "licensing": "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md",
+    "project": "Moon Source",
+    "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md"
+  },
+  "schema": "moon-agentic-continuity/1",
+  "agent_id": "example-agent",
+  "mandate_version": "1",
+  "run_id": "run-0002",
+  "run_status": "NO_DELTA",
+  "trigger": "authorized_manual",
+  "source_manifest_version": "v1",
+  "cursor": {
+    "unit_key": "unit-002",
+    "next_unit_key": "unit-003"
+  },
+  "coverage": [
+    {
+      "unit_key": "unit-001",
+      "status": "reviewed",
+      "source_revision": "r1"
+    },
+    {
+      "unit_key": "unit-002",
+      "status": "reviewed",
+      "source_revision": "r2"
+    }
+  ],
+  "evidence": [
+    {
+      "kind": "INDEPENDENT_READBACK",
+      "target": "workspace-state",
+      "verified": true
+    }
+  ],
+  "source_write": "NOT_REQUIRED",
+  "report_write": "REPORT_PERSISTED_VERIFIED",
+  "notification": "NOT_REQUIRED",
+  "next_action": "review unit-003"
+}
