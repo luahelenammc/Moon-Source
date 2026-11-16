@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: zh-CN
 source: ../README.md
-source_sha256: db496c0da6468cbb8b69aeccaa58fdfe52874dee84efd0ad75696a2e076e8760
+source_sha256: 61fcac9ad6ee0a4906b5e2174f4d7375fdadafc3bfa06a5cbf35514a72b5fd32
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -115,9 +115,10 @@ Moon Source 把上下文视为一个有组织的场域，而不是一堆文本�
 | 在控制根、界面、模型、推理力度和委派之间有效运用 AI 能力，以尽量少的总工作量获得可接受结果 | [🧬 Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) |
 | 在具体执行界面中，通过状态、护栏和收据体现重复性程序 | [🛠️ Operational Devices](../docs/OPERATIONAL_DEVICES.md) |
 | 在可能时让执行保持有界、可诊断和可恢复 | [🛡️ Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) |
+| 使用可验证检查点和系统覆盖来恢复定期 AI 代理工作 | [🧭 Agentic Continuity](../docs/AGENTIC_CONTINUITY.md) |
 | 将重复出现的失败转化为最小且经过验证的可复用机制 | [🏭 Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) |
 
-要查看全部 16 项能力的**问题 → 第一步 → 可观察结果 → 使用边界**，请访问[按问题查找方法](../docs/PROBLEM_TO_METHOD.zh-CN.md)。各规范正文仍是权威来源。
+要查看全部 17 项能力的**问题 → 第一步 → 可观察结果 → 使用边界**，请访问[按问题查找方法](../docs/PROBLEM_TO_METHOD.zh-CN.md)。各规范正文仍是权威来源。
 
 ## 首次使用
 
@@ -175,7 +176,7 @@ Moon Source 负责治理 AI 工作中的上下文与职责：哪些来源可信�
 
 这些例子让公开材料更容易检查。合成和虚构示例用于展示有界的说明，不代表采用情况或衡量过的结果。
 
-- [查找合适的方法](../docs/PROBLEM_TO_METHOD.zh-CN.md)：将十六个具体问题对应到最小可行操作、可检查结果和使用边界。
+- [查找合适的方法](../docs/PROBLEM_TO_METHOD.zh-CN.md)：将十七个具体问题对应到最小可行操作、可检查结果和使用边界。
 - [了解首次上下文决策](../examples/first-use-project-context.md)：使用虚构项目说明来源、冲突与可核验的检查。
 - [浏览应用场景](../examples/application-scenarios/)：涵盖项目、团队与服务的假设性示例，并非真实采用案例。
 - [查看有界技术示例](../examples/README.md)：合成参考实现，在适用时附有可运行测试，不是成品。
