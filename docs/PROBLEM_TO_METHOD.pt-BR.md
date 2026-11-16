@@ -6,7 +6,7 @@ Esta é uma **rota de leitura**, não uma nova capacidade, um segundo registro o
 
 🌐 **Language / Idioma:** [English](PROBLEM_TO_METHOD.md) · [Português](PROBLEM_TO_METHOD.pt-BR.md) · [Español](PROBLEM_TO_METHOD.es.md) · [简体中文](PROBLEM_TO_METHOD.zh-CN.md) · [Русский](PROBLEM_TO_METHOD.ru.md) · [Primeiro contato](../START_HERE.md) · [Capacidades canônicas](../registry/PUBLIC_CAPABILITIES.md)
 
-## Escolha entre as 16 capacidades públicas atuais
+## Escolha entre as 17 capacidades públicas atuais
 
 As situações são exemplos fictícios, não casos de clientes nem alegações de resultado medido. Normalmente basta **um** método, não os dezesseis.
 
@@ -41,6 +41,7 @@ As situações são exemplos fictícios, não casos de clientes nem alegações 
 
 | Sua situação | Método / fonte canônica | Primeiro movimento | O que conferir e o que não presumir |
 |---|---|---|---|
+| Um agente recorrente repete a primeira tarefa e não comprova onde parou. | <!-- problem-route: agentic-continuity --><a id="agentic-continuity"></a>[Agentic Continuity](AGENTIC_CONTINUITY.md) | Defina mandato, fila de chaves estáveis, checkpoint verificável e teste de retomada em outra execução. | **Confira:** Cursor recuperado, próxima unidade sem duplicação, recibos separados e permissões explícitas. **Limite:** O protocolo não instala agenda, memória nem acesso autônomo. |
 | Uma tarefa grande desperdiça raciocínio caro em extrações repetitivas e reenvios de contexto. | <!-- problem-route: adaptive-orchestration --><a id="adaptive-orchestration-protocol"></a>[Adaptive Orchestration Protocol](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md) | Separe decisão difícil de trabalho mecânico e distribua esforço e delegação conforme disponibilidade. | **Confira:** Plano de execução com critérios de aceite e custo total do trabalho. **Limite:** Não libera modelos, agentes, orçamento nem permissões inexistentes. |
 | Uma revisão recorrente precisa operar numa interface com checkpoints visíveis. | <!-- problem-route: operational-devices --><a id="operational-devices"></a>[Operational Devices](OPERATIONAL_DEVICES.md) | Defina superfície real, gatilho, entradas, autorização, simulação, parada e recibo. | **Confira:** Contrato de dispositivo delimitado e evidência do que rodou naquela superfície. **Limite:** O contrato não instala runtime nem libera ferramentas irrestritas. |
 | Um deploy ou atualização falha no meio e tentativas repetidas escondem a causa. | <!-- problem-route: operational-reliability --><a id="operational-reliability"></a>[Operational Reliability](OPERATIONAL_RELIABILITY.md) | Verifique alvo, instrumento, dependências e escopo antes da menor tentativa reversível. | **Confira:** Diagnóstico, ação delimitada, recibo antes/depois e recuperação. **Limite:** Erro diferente ou log da ferramenta não prova sucesso sozinho. |
