@@ -38,6 +38,7 @@ def local_validation_steps() -> list[tuple[str, list[str]]]:
             "public capability registry tests",
             python_script("test_validate_public_capabilities.py"),
         ),
+        ("agentic checkpoint fixture", python_script("validate_agentic_checkpoint.py")),
         ("AI Kernel package", python_script("check_kernel_package.py")),
         ("title/version separation", python_script("check_title_version_separation.py")),
         (
