@@ -614,7 +614,8 @@
       "title": "Source Operations — Retrieve, Process, Metabolize and Promote",
       "version": null,
       "versioning_mode": "material_update_without_semantic_version",
-      "discovery_family": "govern"
+      "discovery_family": "govern",
+      "skill_archive_compression": "stored"
     }
   ],
   "mirror_contract": {
