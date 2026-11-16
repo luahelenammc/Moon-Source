@@ -10,7 +10,7 @@ that is not required: Connected Sources is a structural component with a
 supported standalone distribution. The machine-readable contract is
 [registry/public-capabilities.json](public-capabilities.json), schema 2.0.
 If you recognize a practical problem but do not know the capability name, start with [Find the method for your problem](../docs/PROBLEM_TO_METHOD.md). Its own language navigation covers five localized guides, all pointing back to these canonical records rather than forming a second registry.
-The table below is a human-readable view of the same sixteen records. **Discovery family** is a navigational view only: it does not replace architectural responsibility, canonical authority, or standalone distribution. The four families (Understand, Govern, Organize, Execute) match the problem-first guides.
+The table below is a human-readable view of the same seventeen records. **Discovery family** is a navigational view only: it does not replace architectural responsibility, canonical authority, or standalone distribution. The four families (Understand, Govern, Organize, Execute) match the problem-first guides.
 
 The table's **Summary title** is the concise browsing label. The registry's semantic `title` remains stable in machine-readable metadata; individual README and canonical-body headings use `surface_title` to make the Moon Source role explicit without folding version into identity.
 
@@ -18,6 +18,7 @@ The table's **Summary title** is the concise browsing label. The registry's sema
 |---|---|---|---|---:|---|---|---|
 | be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) | Understand | contextual scene-reading method | 1.0-public | current | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md#first-use) | [ZIP](../downloads/be-my-eyes.zip) |
 | adaptive-orchestration | [Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) | Execute | adaptive execution orchestration protocol | 6.4 | current | [ADAPTIVE_ORCHESTRATION_PROTOCOL.md](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md#first-use) | [ZIP](../downloads/adaptive-orchestration-protocol.zip) |
+| agentic-continuity | 🧭 [Agentic Continuity](../docs/AGENTIC_CONTINUITY.md) | Execute | governed agent continuity method | 1.0 | current | [AGENTIC_CONTINUITY.md](../docs/AGENTIC_CONTINUITY.md) | — |
 | connected-sources | [Connected Sources](../portables/connected-sources/README.md) | Govern | structural crown jewel | 1.2 | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources.zip) |
 | credits-attribution-ops | 🧾 Credits & Attribution Ops | Organize | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
 | failure-foundry | 🏭 Failure to Capability — Failure Foundry | Execute | failure-to-capability method | — | current | [FAILURE_FOUNDRY.md](../docs/FAILURE_FOUNDRY.md) | — |
