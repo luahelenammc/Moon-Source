@@ -46,9 +46,12 @@ The [Grok Bot & Persistent Agent Economy Adapter 1.0](adapters/ADAPTIVE_ORCHESTR
 
 ## Astra submodule, not Astra mode
 
-Astra is an optional subordinate submodule of this Adaptive Orchestration portable, not a prescribed work style. Its canonical adapter lives at [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) and is independently versioned at **2.0**.
+**November 18, 2026 version-family calibration:** one Astra adapter now contains a 6.0 compatibility baseline, a strictly non-executable 6.1 nonrelease tombstone and a GPT-6.2 Astra microadapter with explicit blocker disclosure, source/tool proof and independent acceptance. GPT-6.2 Sol is also a released cheaper-sufficient peer for complex work. These overlays do not change the model-neutral AOP 6.4 core or imply ordinary Chat access. Consult official current model/plan support, not model-number prestige.
 
-GPT-6 Sol/Luna has a separate dated executor calibration at [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md), version **1.9**. It preserves the model-neutral core while mapping the family to heterogeneous execution: Luna for focused/high-volume work after material solution commitments are sufficiently resolved, Sol for strong roots and bounded high-leverage decisions when warranted, plus current Codex child-model/default configuration guidance.
+
+Astra is an optional subordinate submodule of this Adaptive Orchestration portable, not a prescribed work style. Its canonical adapter lives at [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) and is independently versioned at **2.1**.
+
+GPT-6 Sol/Luna has a separate dated executor calibration at [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md), version **2.0**. It preserves the model-neutral core while mapping the family to heterogeneous execution: Luna for focused/high-volume work after material solution commitments are sufficiently resolved, Sol for strong roots and bounded high-leverage decisions when warranted, plus current Codex child-model/default configuration guidance.
 
 **Refined on October 26, 2026:** [GPT-6.1 Terra Strategy Adapter 1.1](adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md) calibrates visual reasoning, onscreen action, scoped coding and natural writing across Work/Codex. Terra is not a universal replacement for cheaper Luna: at dated Standard API rates, Terra costs 10× Luna, half of Sol 6.1 and one tenth of Astra per uncached input/output token. Route by *accepted task cost*, capability floor, observed behavioral fit, tools and real allowance availability. OpenAI-reported computer-use/visual benchmarks justify bounded trials, not automatic hierarchy or guaranteed credits saved.
 
