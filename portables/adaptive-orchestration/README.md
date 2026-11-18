@@ -40,6 +40,10 @@ More intelligence is useful when the task needs it. Applying the highest tier ev
 
 For release history, see the [repository changelog](../../CHANGELOG.md).
 
+## Grok Bot and persistent-agent economy
+
+The [Grok Bot & Persistent Agent Economy Adapter 1.0](adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md) adds a **delta-first, state-aware execution profile** for xAI Grok Bot, based on a sanitized field note and official provider documentation. It uses verified cursors and freshness checks, minimally sufficient information channels, bounded computer use, conditional helper reuse, skills-before-routines, privacy-scoped bulk exports, exact stop gates and write/readback evidence. It avoids fabricated token-cost rankings and savings claims. Its transferable core applies to other persistent agents only after their specific memory, computer, connector, scheduling and custody capabilities have been verified. The model-neutral AOP core remains version 6.4.
+
 ## Astra submodule, not Astra mode
 
 Astra is an optional subordinate submodule of this Adaptive Orchestration portable, not a prescribed work style. Its canonical adapter lives at [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) and is independently versioned at **2.0**.
@@ -87,6 +91,7 @@ Sprint Mode does not expose allowance/reset state, create a native product featu
 - **Named continuity profile:** Chat–Work Loop Profile · Chat → Work/Codex → Chat
 - **Optional Astra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) · version **2.0**
 - **GPT-6 Sol/Luna submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md) · version **1.8**
+- **Grok Bot & persistent-agent economy submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md) · version **1.0** (2026-11-17)
 - **GPT-6.1 Terra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md) · version **1.1**, dated 2026-10-26
 - **Adapter directory law:** current and future model-specific Adaptive Orchestration adapters co-reside under portables/adaptive-orchestration/adapters/; do not create one directory per model family unless a future adapter actually becomes a multi-file subsystem.
 - **Canonical body:** [portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md](ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
