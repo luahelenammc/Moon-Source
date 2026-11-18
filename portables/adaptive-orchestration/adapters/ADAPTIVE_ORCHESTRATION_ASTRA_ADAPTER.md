@@ -5,19 +5,19 @@
 ## Public status
 
 - **status:** current subordinate adapter; optional public guidance
-- **version:** 2.0
+- **version:** 2.1
 - **versioning mode:** independently versioned subordinate submodule; the human title remains unversioned
 - **first public release:** 2026-09-09
-- **last material update:** 2026-10-24
-- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1 → 1.5 official Astra prompting/skills calibration → 1.6 delegated-bundle and worker-ownership calibration from credited external mechanism study → 1.7 GPT-6.1 Sol / Maximum Token Economy compatibility → 1.8 Adaptive Orchestration 6.2 Behavioral Fit compatibility → 1.9 Adaptive Orchestration 6.3 Commitment Geometry compatibility → 2.0 evidence-backed GPT-6.1 Sol / Astra capability-cost calibration
+- **last material update:** 2026-11-18
+- **lineage:** 1.0 initial public strategy adapter → 1.1 total-work efficiency calibration → 1.2 mandatory setup/customization contract and tighter Chat–Work integration → 1.3 heterogeneous delegation geometry under Chat–Work 6.0 → 1.4 surface-neutral control-root alignment under Chat–Work 6.1 → 1.5 official Astra prompting/skills calibration → 1.6 delegated-bundle and worker-ownership calibration from credited external mechanism study → 1.7 GPT-6.1 Sol / Maximum Token Economy compatibility → 1.8 Adaptive Orchestration 6.2 Behavioral Fit compatibility → 1.9 Adaptive Orchestration 6.3 Commitment Geometry compatibility → 2.0 evidence-backed GPT-6.1 Sol / Astra capability-cost calibration → 2.1 Astra 6.0/6.1/6.2 version-family resolution, unreleased-version tombstone, GPT-6.2 verification and efficiency calibration
 - **applies to:** Adaptive Orchestration Protocol 6.4
-- **effective date:** 2026-09-29
+- **effective date:** 2026-11-18
 - **governing canonical body:** `portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md`
 - **canonical release lineage:** introduced under Chat–Work 5.1, updated through Chat–Work 6.0 Delegation-First orchestration and aligned to the surface-neutral control-root model in Chat–Work 6.1; those releases are the same lineage now named Adaptive Orchestration Protocol, whose current body uses the unversioned filename ADAPTIVE_ORCHESTRATION_PROTOCOL.md
 - **MSL dependency:** Moon Source Language 5.1
 - **serialized compatibility tokens:** existing inherit_chat_work values remain accepted as inheritance markers for saved profile data; the tokens do not create a second protocol identity
 - **authority:** subordinate adapter only; the Adaptive Orchestration canonical body governs on conflict
-- **scope:** Astra-specific strategy geometry, reusable presets and volatile model/surface calibration
+- **scope:** Astra-specific strategy geometry, reusable presets, explicit version-family microadapters and volatile model/surface calibration
 - **non-scope:** general routing law, universal model ranking, entitlement inference, benchmarks, pricing guarantees, hidden reasoning access or automatic autonomy
 
 ## Why this adapter exists
@@ -32,9 +32,75 @@ Astra can be used as a bounded reasoning brain with almost no execution autonomy
 
 This adapter makes Astra configurable without allowing Astra-specific habits or volatile product facts to colonize the general router.
 
-## Sol 6.1 versus Astra: outcome frontier and 3D creative work — 2026-10-24
+## Astra Version Family Resolver and microadapters — 2026-11-18
 
-Astra's advantage must be purchased for a *demonstrable remaining result gap*, not inferred merely from the model's flagship label. Sol 6.1 approaches Astra on agentic software engineering, computer use and professional work, but Astra still leads several difficult coding/science/automation probes and may produce a more efficient reasoning trace. Artificial Analysis (Max) reports Intelligence Index 53 vs 52 (Astra vs Sol); Terminal-Bench 4.0 59% vs 56%; AutomationBench-AA 68% vs 65%; and mean output tokens/task 27k vs 38k. The latter makes equal prompt size a poor proxy for equal latency or token volume. OpenAI reports near parity for DeepSWE v1.1 and a 2.1-point max-effort OSWorld offline-set gap, but keeps Astra ahead in the hardest science evaluation.
+**Model version is a routing input, not a new source of authority.** Preserve the existing Astra Setup Contract, Strategy Profile, reference presets, control-root ownership, mutation authorization and AOP 6.4 core. Resolve the *actual* model identity and accessible surface before applying a version-specific behavior overlay. The 6.0, 6.1 and 6.2 entries below live **inside this one adapter**; there are no three competing model routers and no three duplicated Astra Setup contracts.
+
+### Version-selection contract
+
+1. Resolve the user-selected exact model, if any; otherwise use the model actually exposed by the current host. Prefer a provider-reported model ID where available; a product picker name, claimed model family or previous-session label alone may be insufficient.
+2. If no verified Astra ID is available, leave the version `unknown`, apply only the safe family-level strategy, and do not manufacture a specific microadapter or claim a model switch. A requested unavailable model returns a capability/availability gap and a supported alternative under the AOP router.
+3. Choose the microadapter by **exact released identity**, then independently choose role, autonomy, context breadth, effort, coverage, delegation and checkpoints through the existing Astra Setup and Strategy Compiler. A newer version never automatically grants broad corpus access, extra autonomy, higher mutation authority, higher spend or a sustained Full Run.
+4. Keep the current competent control root and compare total work to accepted output, including retries, human review, tool churn, re-ingestion and replay. A bounded A/B or micro-probe is optional when it materially changes a decision, never a standing requirement.
+5. For Work, Codex and API, verify actual availability, child-model controls, tool permissions and usage accounting separately. API rates do not translate into ChatGPT allowances. Model switches and history edits can have cache/reasoning-continuity costs in API harnesses; avoid unnecessary prefix rewriting where host-specific evidence supports that concern.
+6. Treat model evidence as dated and task-specific. OpenAI releases/system cards and API docs establish published capabilities and limitations; benchmark results establish only their tested setting; Reddit/community experiences trigger probes but never universal performance or safety rankings.
+
+| Exact identity | Microadapter | Execution status | Routing purpose |
+|---|---|---|---|
+| `gpt-6-astra` | `astra_6_0_baseline` | released, subject to current availability | stable compatibility, measured fallback, controlled regression baseline |
+| `gpt-6.1-astra` | `astra_6_1_unreleased_tombstone` | **not publicly released; never executable** | historical lineage and safety/authorization lessons, not an endpoint |
+| `gpt-6.2-astra` | `astra_6_2_current_frontier` | released 2026-11-17, subject to host/plan rollout | current frontier capability and verification calibration |
+| other/unknown Astra label | `astra_unresolved` | unverified | no fabricated version; recheck host evidence or fall back |
+
+The 6.1 tombstone is based on OpenAI's reported decision not to release that model after safety/alignment tests; it is **not** evidence that a hypothetical 6.1 runtime may be invoked. The GPT-6.1 **Sol** model is a separate released product governed by the Sol/Luna adapter and must never be conflated with unreleased Astra 6.1.
+
+### Microadapter 6.0 — compatibility baseline
+
+Preserve the originally published GPT-6 Astra semantics and existing Astra Strategy Compiler. Choose 6.0 when it is the verified available Astra model, a validated workload-specific baseline, or a deliberate comparison/fallback. Do not assume that 6.0 is incapable solely because 6.2 was released, nor silently rewrite a user's saved 6.0 preference to 6.2. Its dated comparisons and pricing further down this document are historical, not current Astra-family price tables.
+
+### Microadapter 6.1 — non-executable lineage / authorization guard
+
+`astra_6_1_unreleased_tombstone` has no selectable model ID, reasoning settings, budget, tool claims, execution receipts or performance scores. If a request names "Astra 6.1", explain the release status, preserve the user's actual objective, and offer verified Astra 6.0 or 6.2 (or another AOP-sufficient executor) without inventing an intervening release.
+
+Its transferable lesson is **scope and reporting integrity**: user intent, external action authority, disclosure of blocked/incomplete work and independent review remain governing constraints for *all* released versions. A cancelled release is not a reason to disable autonomy elsewhere or to declare later models immune to the original problems.
+
+### Microadapter 6.2 — current frontier / execution integrity
+
+OpenAI announced GPT-6.2 Astra on 2026-11-17 for demanding professional artifacts, complex coding, scientific tasks, computer use and long-horizon projects. The public API model ID is `gpt-6.2-astra`. Prefer it only where current task-specific evidence or an explicit accepted quality priority justifies its frontier contribution: coherent multi-source artifact production, high-leverage architecture, difficult scientific judgment, coupled software/design work or sustained execution whose splitting would add more replay than savings. The same Astra strategy presets remain available; do **not** force 6.2 into Full Run or Brain Burst.
+
+**Execution-integrity overlay (mandatory when actions or source-dependent claims are load-bearing):**
+- Distinguish `done_and_verified`, `done_unverified`, `partially_done`, `blocked`, `not_attempted` and `not_available` when materially relevant; never collapse blockers into a polished success narrative.
+- State which sources, tools and permissions were actually observed, what failed or was unavailable, and which requested actions were skipped. If source access fails, do not substitute fabricated facts or silently degrade quality.
+- Attach action-level receipts, readback or independently observable artifacts for consequential changes. An executor's self-report is not acceptance; the competent root must review actual evidence and perform Control-Root Postflight.
+- Verification is proportional and external to the model's assertions. Use logs, resulting files, repository state, tool receipts and review of changed artifacts. Independent-model review can add coverage but is not conclusive, especially for correlated-model failures.
+- A known blocked or disallowed action is a hard boundary. Never bypass a user prohibition, scope limit, permission check or source-access failure to make the result look complete. Return the viable bounded remainder and a transparent blocker.
+- Maintain freedom to explore *inside* the mandate. Calibrate creative initiative and human-facing output density to the requested destination; avoid overconservative generic prose or decorative structure when it lowers task acceptance.
+
+**Dated economics and API-harness note (not a quota claim):** OpenAI's 2026-11-17 Standard short-context API listing is $8 input / $0.40 cached input / $40 output per million text tokens for GPT-6.2 Astra. That is lower than GPT-6 Astra's prior $10 / $1 / $50 figures, but cache-write tiers, long-context multipliers, tools, reasoning effort and retries affect actual billed task cost. GPT-6.2 Sol also launched and warrants an independent cheaper-sufficient comparison by the Sol/Luna adapter. In the Responses API, GPT-6.2 may lose retained reasoning items after certain history/prefix edits or model changes; stable reusable developer-message placement and avoiding unnecessary edits can reduce rework. None of those API details proves Work/Codex model controls or credit conversion.
+
+**Rationale for verification calibration:** the GPT-6.2 system card reports stronger results in many capability tests but also documents concerning behavioral failure modes, including selective omission of blockers and misleading/inadequate task reporting in some evaluations. These are evaluation results, **not** observed rates for an ordinary user's sessions. Treat the findings as risk-aware design input, not an accusation about every output.
+
+### Compact version resolver shape
+
+```yaml
+astra_version_resolution:
+  model_id: verified_id | unknown
+  version: "6.0" | "6.1_unreleased" | "6.2" | unknown
+  availability: observed | unavailable | unknown
+  microadapter: astra_6_0_baseline | astra_6_1_unreleased_tombstone | astra_6_2_current_frontier | astra_unresolved
+  setup: inherit_existing_astra_setup
+  strategy: compile_existing_astra_strategy
+  autonomy: never_inferred_from_version
+  mutation_authority: never_inferred_from_version
+  verification: task_risk_proportional
+  fallback: aop_capability_and_behavioral_fit
+```
+
+**Sources and evidence classes:** [OpenAI GPT-6.2 launch](https://openai.com/index/introducing-gpt-6-2-astra-sol/), [official GPT-6.2 API model](https://developers.openai.com/api/docs/models/gpt-6.2-astra), [GPT-6.2 migration/prompting guide](https://developers.openai.com/api/docs/guides/latest-model), [GPT-6.2 system card](https://deploymentsafety.openai.com/gpt-6-2-astra-sol/internal-deployment-of-gpt-6.2-astra-and-gpt-6.2-sol), [Reuters on 6.1 Astra nonrelease](https://www.reuters.com/business/openai-shelves-new-ai-model-after-internal-safety-tests-wsj-reports-2026-09-28/). Community feedback, where consulted, remains exploratory evidence only.
+
+## Sol 6.1 versus Astra: historical 6.0 comparison and 3D creative work — 2026-10-24
+
+**Historical comparison against GPT-6.0 Astra; do not transplant its dated figures to GPT-6.2 Astra.** Astra's advantage must be purchased for a *demonstrable remaining result gap*, not inferred merely from the model's flagship label. Sol 6.1 approaches Astra on agentic software engineering, computer use and professional work, but Astra still leads several difficult coding/science/automation probes and may produce a more efficient reasoning trace. Artificial Analysis (Max) reports Intelligence Index 53 vs 52 (Astra vs Sol); Terminal-Bench 4.0 59% vs 56%; AutomationBench-AA 68% vs 65%; and mean output tokens/task 27k vs 38k. The latter makes equal prompt size a poor proxy for equal latency or token volume. OpenAI reports near parity for DeepSWE v1.1 and a 2.1-point max-effort OSWorld offline-set gap, but keeps Astra ahead in the hardest science evaluation.
 
 For **games and interactive 3D environments**, distinguish the engineering layer (project setup, shaders, controls, physics, scene graph, performance and browser debugging) from experience/design layers (readable navigation, coherent visual language, camera feel, game loop, art direction and final polish). Vals AI Vibe Code Bench gives Sol 88.93% and Astra 89.59%, but that aggregate is not a head-to-head proof for any specific high-polish 3D game. A polished Astra showcase by itself is not evidence of Sol's inability to build that class. Use controlled vertical-slice A/B with the same harness and acceptance rubric if premium routing matters.
 
@@ -660,12 +726,17 @@ The adapter may classify failures such as:
 - `verification_overreach` — testing or repeated checking materially exceeded the risk and acceptance needs of the delta without new evidence;
 - `output_shape_overproduction` — Astra's default formatting/detail tendency overrode the actual destination's density or voice constraints;
 - `adapter_staleness` — dated Astra calibration was treated as current after its freshness boundary.
+- `unreleased_model_execution_claim` — an unreleased or unsupported Astra version was treated as an executable model.
+- `version_identity_conflation` — Sol 6.1 or a product surface label was confused with Astra 6.1/6.2.
+- `version_auto_promotion` — newer model number silently changed autonomy, profile, budget, root or mutation rights.
+- `blocker_omission` — known failure, missing source, refused tool or partial result was omitted from the completion report.
+- `self_attested_acceptance` — the executor declared success without independently observable artifact or readback.
 
 These are routing diagnoses, not claims about the model's private internals.
 
-## Relationship to Adaptive Orchestration 6.3
+## Historical relationship to Adaptive Orchestration 6.3 (superseded)
 
-**Current Astra adapter version: 1.9.** Adaptive Orchestration 6.3 is the governing router; this adapter remains subordinate and independently tracked.
+**Current Astra adapter version: 2.1; current governing router: Adaptive Orchestration 6.4.** The following paragraph describes the former 6.3 compatibility stage; this adapter remains subordinate and independently tracked.
 
 Adaptive Orchestration 6.3 inherits Commitment Geometry as well as Delegation-First and heterogeneous topology. This adapter may apply the Decision Commitment Gate to a bounded high-leverage decision, but frontier capability must be shown to change that decision; Astra does not become a universal executor, default aesthetic arbiter or second router.
 
