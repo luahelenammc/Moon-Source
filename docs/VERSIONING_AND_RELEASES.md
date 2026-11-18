@@ -13,6 +13,13 @@ Moon Source has several versioned layers with different responsibilities:
 
 They should not be collapsed into one number.
 
+## Astra family microadapters / Sol 6.2 calibration — 2026-11-18
+
+- Astra Strategy Adapter **2.0 → 2.1**: one canonical file now resolves Astra 6.0 (baseline), Astra 6.1 (unreleased historical tombstone, never executable) and released Astra 6.2 (current frontier calibration with explicit blocker disclosure, independently observable action receipts and model/surface verification).
+- GPT-6 Sol/Luna Strategy Adapter **1.9 → 2.0**: calibrates GPT-6.2 Sol as a current cheaper-sufficient competitor to Astra 6.2 where capability and acceptance support it. September and October price comparisons remain historical, never converted to Work/Codex allowance ratios.
+- AOP core stays **6.4**, MSL stays **5.1** and all user-selected setup/autonomy/mutation permissions remain unchanged. The public AOP skill source, composite ZIP, compatibility ZIP and independent personal-skill ZIP require respective build/readback; downstream local F1 frozen mirror remains a separate, permissioned synchronization step.
+- Evidence: [OpenAI announcement](https://openai.com/index/introducing-gpt-6-2-astra-sol/), [Astra model](https://developers.openai.com/api/docs/models/gpt-6.2-astra), [system card](https://deploymentsafety.openai.com/gpt-6-2-astra-sol/internal-deployment-of-gpt-6.2-astra-and-gpt-6.2-sol), [Reuters on withdrawn 6.1 Astra](https://www.reuters.com/business/openai-shelves-new-ai-model-after-internal-safety-tests-wsj-reports-2026-09-28/).
+
 ## Adaptive Orchestration Terra / Plus Economy refinement — 2026-10-26
 
 GPT-6.1 Terra launched on October 26. The dated Terra model adapter advanced from **1.0 to 1.1**, while the existing GPT-6 Sol/Luna adapter advanced from **1.8 to 1.9** to correct stale absence-of-Terra guidance and make the user-opted-in economic Plus / Maximum Token Economy **frontier-shaped Terra-first preference** explicit. This is a material update to subordinate model-specific strategy, not a new core routing law: Adaptive Orchestration remains **6.4**, Astra remains **2.0**, and MSL remains **5.1**.
@@ -25,7 +32,7 @@ Source evidence is tiered: OpenAI's dated release and usage guidance; independen
 
 - Public architecture baseline: 2026-08-16; additive capability and operational updates continued through 2026-09-27; Chat–Work tri-surface routing advanced to V4 on 2026-09-06, through the 5.x strategy/adaptation line, to delegation-first 6.0 and then surface-neutral control-root 6.1 on 2026-09-24.
 - Current structural grammar: Moon Source Language, version 5.1.
-- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (version 1.2), Moon Source Language (version 5.1) and Adaptive Orchestration Protocol (version 6.4; subordinate Terra adapter 1.1, GPT-6 Sol/Luna adapter 1.9 and Astra adapter 2.0).
+- Current standalone distributions: Moon Source Setup (version 3.1), Preflight (version 2.3), Be My Eyes (legacy distributed version 1.0-public), Connected Sources (version 1.2), Moon Source Language (version 5.1) and Adaptive Orchestration Protocol (version 6.4; subordinate Terra adapter 1.1, GPT-6 Sol/Luna adapter 2.0 and Astra adapter 2.1).
 - All seventeen public capabilities are tracked once in `registry/public-capabilities.json` schema 2.0 and `registry/PUBLIC_CAPABILITIES.md`; standalone distributions are a filtered view of that unified registry, while Lifecycle Workspace Router is a repository-only capability with its own independent version.
 - Credits & Attribution Ops, Lifecycle Workspace Router, Operational Devices, Operational Reliability, Failure Foundry, Source Operations, Source Hygiene, Signal Calibration and Procedural Projection are repository-only capabilities. Connected Sources is the structural crown jewel at `docs/CONNECTED_SOURCES.md` and remains independently distributable.
 - Browser Console Device is an experimental bounded reference implementation outside the current portable family.
