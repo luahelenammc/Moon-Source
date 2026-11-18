@@ -19,6 +19,12 @@ Identify the sovereign object and competent control root; separate behavioral fi
 
 For xAI Grok Bot workflows involving repeated routines, long-lived Bots, connectors, browser/computer use or large personal collections, consult `references/source/portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md` as the subordinate host-specific guide. Apply verified freshness checks, delta-only work, source-scoped permissions, bounded navigation and reproducible readback. Use its portable rules on other agents only after checking equivalent persistence and tool affordances. Do not assume cost ratios, guaranteed savings, memory isolation or scheduling support.
 
+### Astra 6.0 / 6.1 / 6.2 microadapter selection
+
+When a task actually uses or evaluates Astra, consult `references/source/portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md`, version 2.1 (or refresh from the canonical live source). The single Astra adapter now resolves a verified released identity before compiling its existing strategy: GPT-6 Astra/6.0 is compatibility baseline; Astra 6.1 was **not released** and its historical tombstone is not an executable model; GPT-6.2 Astra is a dated frontier calibration with mandatory truthful blocker disclosure and evidence-backed readback when tools or sources matter. Model version does not infer autonomous scope, execution rights or access.
+
+GPT-6.2 Sol is a released cheaper-sufficient peer under the dated [Sol/Luna adapter](https://github.com/luahelenammc/Moon-Source/blob/main/portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md), version 2.0; compare task-specific accepted-result economics, not unverified plan credits. Do not invent a 6.1 Astra ID, automatically upgrade versions or conceal incomplete work. Native Personal Skill installation is not implied by this source change.
+
 ## Output and safeguards
 
 Return a concise route when material and an evidence-based postflight. Do not invent model controls, delegate when prohibited, treat product pricing as allowance, or turn a routing heuristic into a guarantee. Respect user authorization, source jurisdiction and privacy. If access, capability, source or permission is absent, report the limitation and return the smallest useful result; never claim a write or execution that was not observed. Separate source facts, inference and current state. Check the result against the canonical method's own QA and claims.
