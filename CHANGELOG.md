@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-18 — AOP Sol/Luna 2.1: released Sol version microadapters and GPT-6.2 comparative calibration
+
+- Researched OpenAI's GPT-6.2 launch, model-selection and API guidance, system-card blockers and competing first-day Reddit user reports. Treated published benchmark scope and community anecdotes separately.
+- Added an exact identity resolver for released Sol 6.0, 6.1 and 6.2 inside the **same Sol/Luna adapter**, without changing Luna or the AOP 6.4 core. Sol 6.2 is a default *candidate* for most Work/Codex tasks, not an entitlement assertion, a force-switch, or an override of Moon's explicit economy profiles.
+- Documented GDPval v2 +5.3 p.p. versus Sol 6.1, FrontierCode near Astra 6.2 at lower tested cost, unchanged 6.1 Sol API rates, long-context pricing, API-only `none` effort rejection, Responses tool path, coherent prompt prefix/cache use and evidence-led blocking/readback.
+- Updated public docs, registry and Agent Skill source; downstream F1 local mirror, public ZIP distributions and native skill parity each require independent verification.
+
 ## 2026-11-18 — AOP Astra 2.1 microadapter family / Sol-Luna 2.0
 
 - Kept AOP core 6.4 and Astra's independently configured Setup/Strategy Compiler intact. Added one internal version resolver for GPT-6 Astra 6.0 baseline, unreleased Astra 6.1 tombstone and GPT-6.2 Astra frontier calibration; no new standalone router or false 6.1 endpoint.
