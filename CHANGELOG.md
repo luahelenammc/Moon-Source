@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-18 — AOP Astra 2.1 microadapter family / Sol-Luna 2.0
+
+- Kept AOP core 6.4 and Astra's independently configured Setup/Strategy Compiler intact. Added one internal version resolver for GPT-6 Astra 6.0 baseline, unreleased Astra 6.1 tombstone and GPT-6.2 Astra frontier calibration; no new standalone router or false 6.1 endpoint.
+- Introduced GPT-6.2 action-reporting integrity checks: blocker and source/tool limitation disclosure, observable mutation receipts, independently reviewed readback, scope/authority preservation and proportional verification.
+- Updated the Sol/Luna 2.0 dated executor guidance for released GPT-6.2 Sol, comparing cheaper-sufficient peer routes to Astra by quality, actual harness and accepted total cost. The prior Sol 6.1 vs Astra 6.0 prices remain historical.
+- Refreshed the AOP public skill source, registry dependencies, README and release metadata. Canonical protocol 6.4, MSL 5.1, opt-in economy preference and personal autonomy permissions are preserved; packaging and local F1/native projections require independent synchronization and readback.
+
 ## 2026-11-16 — Agentic Continuity 1.0, public governed-agent method
 
 - Introduced [Agentic Continuity](docs/AGENTIC_CONTINUITY.md) as the canonical, provider-neutral contract for bounded agent mandates, verified cross-run checkpoints, deterministic domain coverage and source/workspace receipts.
