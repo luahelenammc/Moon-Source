@@ -5,10 +5,10 @@
 ## Meta
 
 - **status:** current subordinate adapter
-- **adapter version:** 1.9
-- **as of:** 2026-10-26
+- **adapter version:** 2.0
+- **as of:** 2026-11-18
 - **governing capability:** [Adaptive Orchestration Protocol](../ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
-- **scope:** GPT-6.1 Sol and GPT-6 Sol/Luna routing across Chat, Work and Codex where available, with dated Chat-vs-Work model-variant boundaries, heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles, behavioral-fit calibration, commitment-bearing decision routing and API/product-boundary reasoning about executor choice
+- **scope:** GPT-6.2 Sol, GPT-6.1 Sol and GPT-6 Sol/Luna routing across Chat, Work and Codex where available, with dated Chat-vs-Work model-variant boundaries, heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles, behavioral-fit calibration, commitment-bearing decision routing and API/product-boundary reasoning about executor choice
 - **authority:** subordinate; the canonical Adaptive Orchestration body wins on conflict
 - **volatility:** high; availability, model menus, reasoning controls, plan/workspace exposure and usage economics must be rechecked
 - **product boundary:** not OpenAI policy, not a benchmark ranking system and not a guarantee about ChatGPT allowance consumption
@@ -33,6 +33,18 @@ The core semantic tiers remain:
 `efficient | balanced | strong | frontier`
 
 A named model can span more than one semantic tier. A semantic tier does not require a dedicated named model.
+
+## 2026-11-18 current generation: GPT-6.2 Sol alongside Astra 6.2
+
+OpenAI released `gpt-6.2-sol` and `gpt-6.2-astra` on 2026-11-17. As of this calibration the pair is available through eligible ChatGPT Work, Codex and OpenAI API surfaces, subject to real product exposure. This rollout is not proof that either is selectable in ordinary Chat. **Version identity and product exposure must be checked independently.**
+
+For complex coding, professional deliverables, computer use and agentic workflows, assess GPT-6.2 Sol as the *potential cheaper-sufficient alternative* to Astra 6.2, with optional bounded task-specific probes when consequential. Route straight to Astra 6.2 where a demonstrated frontier gap, specialized scientific reasoning, high-leverage architecture, creative/visual leadership, unusually coupled end-to-end work or a user-accepted quality-first posture warrants it. Do not enforce a Sol-before-Astra staircase, rewrite saved Astra Setup profiles, or assume that model version alone changes autonomy or mutation authority.
+
+The previous 2026-09-29 GPT-6.1 Sol versus **GPT-6.0 Astra** comparison below remains historical reference only. Do not reuse its $2/$10 and $10/$50 pair as a current comparison with 6.2 Astra, or equate API unit prices with Work/Codex subscription allowances. New Sol and Astra have separate model IDs; the Astra adapter 2.1 owns the explicit 6.0/6.1-unreleased/6.2 microadapter resolver. The cancelled **Astra 6.1** should never be conflated with released **Sol 6.1**.
+
+Under user-opted-in Maximum Token Economy/Plus Economy, retain the existing conditional Terra-first *candidate* only if that task's measured capability and behavioral/commitment fit support acceptance. Since the 6.2 release changes the economic and quality frontier, reevaluate the Terra/Sol/Astra selection using actual runtime availability and total cost to accepted work; do not make Terra an unavoidable sacrificial probe. This update is a dated calibration, **not** a change to the AOP 6.4 model-neutral core.
+
+Sources: [OpenAI GPT-6.2 launch](https://openai.com/index/introducing-gpt-6-2-astra-sol/), [GPT-6.2 Sol API model](https://developers.openai.com/api/docs/models/gpt-6.2-sol), [GPT-6.2 Astra API model](https://developers.openai.com/api/docs/models/gpt-6.2-astra), [Astra adapter](ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md).
 
 ## 2. GPT-6.1 Sol update — 2026-09-29
 
