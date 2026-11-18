@@ -8,7 +8,7 @@
     "project": "Moon Source",
     "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md"
   },
-  "as_of": "2026-11-16",
+  "as_of": "2026-11-18",
   "canonical_repository": "https://github.com/luahelenammc/Moon-Source",
   "capabilities": [
     {
@@ -62,14 +62,16 @@
         "Source transport records governing source or family, locator, facet, operation, coverage, freshness, mutation authorization, readback and fallback; a locator is not authority",
         "Work and Codex subagent availability, child-model inheritance/override behavior, concurrency and permissions are run-time conditions; Delegation-First never fabricates unavailable controls",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions",
-        "Optional Astra strategy adapter v2.0 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md; subordinate to the canonical Adaptive Orchestration body, independently versioned as a submodule, setup-gated, delegation-aware, worker-ownership calibrated and aligned to the surface-neutral control-root model and Decision Commitment Gate",
-        "GPT-6 Sol/Luna strategy adapter v1.9 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md; dated heterogeneous executor/subagent and commitment-routing calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics",
+        "Optional Astra strategy adapter v2.1 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md; subordinate to the canonical Adaptive Orchestration body, independently versioned as a submodule, setup-gated, delegation-aware, worker-ownership calibrated and aligned to the surface-neutral control-root model and Decision Commitment Gate",
+        "GPT-6 Sol/Luna strategy adapter v2.0 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md; dated heterogeneous executor/subagent and commitment-routing calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics",
         "GPT-6.1 Terra strategy adapter 1.1 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md; dated Work/Codex visual/computer-use routing with Luna/Sol/Astra fit, acceptance probes and API-vs-allowance non-claims",
         "Control surface/root, root model/tier and execution surface/harness are distinct routing dimensions; AUTO preserves the current competent root before considering a human-visible surface transition",
         "Behavioral Fit is separate from capability rank: use observable task-specific acceptance behavior and representative probes when material; community anecdotes may motivate a probe but do not establish permanent model rankings",
         "Commitment Geometry is separate from Behavioral Fit: assess reversibility, downstream leverage, solution openness, evaluation latency, judgment load and external consequence before scaling dependent work; side-route or up-route only the commitment-bearing delta when warranted, and reopen the smallest affected boundary when objective-linked evidence shows the choice was inadequate",
         "Profile-only economic Plus / Maximum Token Economy frontier preference: Terra 6.1 first when available and sufficient for frontier-shaped workload; direct Sol/Astra exceptions for anticipated task-specific capability/quality/replay gaps. Plus plan alone does not activate the profile or grant tool/worker controls.",
-        "Grok Bot & persistent-agent token-economy adapter v1.0 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md; field-derived, provider-validated affordances, source freshness and scope-gated channel economics; applicable to other persistent agents only after capability probes"
+        "Grok Bot & persistent-agent token-economy adapter v1.0 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md; field-derived, provider-validated affordances, source freshness and scope-gated channel economics; applicable to other persistent agents only after capability probes",
+        "Astra version-family resolver (adapter 2.1, 2026-11-18): released 6.0 compatibility, non-executable 6.1 tombstone, released 6.2 current frontier; never infer model availability, autonomy or authority from version.",
+        "GPT-6.2 Sol (Sol/Luna adapter 2.0) is a dated cheaper-sufficient peer to Astra 6.2 where the accepted result and actual harness warrant it; API token rates are not Work/Codex allowance conversions."
       ],
       "difficulty": "advanced",
       "distribution": {
@@ -108,8 +110,8 @@
       "function": "Route by sovereign object and workload shape from the current competent control root across Chat, Work and optional Codex using configurable execution profiles, explicit control-root/execution-surface separation, Behavioral Fit with representative micro-probes and lateral side-routing, Commitment Geometry with a Decision Commitment Gate, direct/probe/explore/side-route/up-route/reopen outcomes, proportional Branch Before Build, Surface Continuity, Delegation-First orchestration, heterogeneous root/child model topology, Budget Survivability, the model-neutral Intelligence Distillation Ladder, bounded exhaustiveness, scope-amplification and premature-commitment recovery, connector-aware source transport, bounded micro-bursts, optional explicitly activated ephemeral Sprint Mode, a finite Decision Sprint sibling-delta exception, auditable Decision Trace for material higher-tier, side-routed and commitment rulings, decision-bearing return capsules, subordinate model-specific strategy adapters, Sprint Receipts, Control-Root Postflight and delta-only re-entry",
       "id": "adaptive-orchestration",
       "language": "English",
-      "last_material_update_on": "2026-11-17",
-      "last_material_update_summary": "Added Grok Bot & Persistent Agent Economy Adapter 1.0 (sanitized field-derived), distributing delta-first routines, verified source freshness, bounded browser use, controlled helper reuse and portability gates. AOP model-neutral core remains 6.4; no measured token savings or universal channel-cost ratios asserted.",
+      "last_material_update_on": "2026-11-18",
+      "last_material_update_summary": "Subordinate Astra 2.1 family microadapters and Sol/Luna 2.0 GPT-6.2 routing calibration; model-neutral AOP 6.4 unchanged.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
