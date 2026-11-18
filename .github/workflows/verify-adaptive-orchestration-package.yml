@@ -6,6 +6,7 @@ on:
     paths:
       - "portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md"
       - "portables/adaptive-orchestration/adapters/**"
+      - "downloads/skills/source/moon-adaptive-orchestration/SKILL.md"
       - "registry/public-capabilities.json"
       - ".github/workflows/verify-adaptive-orchestration-package.yml"
   workflow_dispatch:
@@ -50,18 +51,24 @@ jobs:
                       info.external_attr = 0o100644 << 16
                       archive.writestr(info, source.read_bytes(), compress_type=ZIP_DEFLATED, compresslevel=9)
           PY
+      - name: Rebuild reproducible public skill packages
+        run: python scripts/build_public_skills.py
+      - name: Verify public skill packages
+        run: |
+          python scripts/build_public_skills.py --check
+          python scripts/test_public_skill_packages.py
       - name: Verify registry and packaged bytes
         run: python scripts/validate_public_capabilities.py
       - name: Publish synchronized packages
         run: |
-          git add downloads/adaptive-orchestration-protocol.zip downloads/chat-work-routing-protocol.zip
+          git add downloads/adaptive-orchestration-protocol.zip downloads/chat-work-routing-protocol.zip downloads/skills/moon-adaptive-orchestration.zip
           if git diff --cached --quiet; then
-            echo "AOP packages already synchronized"
+            echo "AOP and skill packages already synchronized"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "build(aop): synchronize composite and compatibility ZIPs"
+          git commit -m "build(aop): synchronize composite, compatibility and skill ZIPs"
           git push origin HEAD:main
 
 # MOON-SOURCE-PUBLIC-STAMP
