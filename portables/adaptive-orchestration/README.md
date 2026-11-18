@@ -90,7 +90,7 @@ Sprint Mode does not expose allowance/reset state, create a native product featu
 - **Former identity:** Chat–Work Routing Protocol / Chat–Work Router / Chat–Work · retained only as compatibility and migration terminology
 - **Named continuity profile:** Chat–Work Loop Profile · Chat → Work/Codex → Chat
 - **Optional Astra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) · version **2.0**
-- **GPT-6 Sol/Luna submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md) · version **1.8**
+- **GPT-6 Sol/Luna submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md) · version **1.9**
 - **Grok Bot & persistent-agent economy submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md) · version **1.0** (2026-11-17)
 - **GPT-6.1 Terra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md) · version **1.1**, dated 2026-10-26
 - **Adapter directory law:** current and future model-specific Adaptive Orchestration adapters co-reside under portables/adaptive-orchestration/adapters/; do not create one directory per model family unless a future adapter actually becomes a multi-file subsystem.
