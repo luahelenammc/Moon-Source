@@ -5,10 +5,10 @@
 ## Meta
 
 - **status:** current subordinate adapter
-- **adapter version:** 2.0
+- **adapter version:** 2.1
 - **as of:** 2026-11-18
 - **governing capability:** [Adaptive Orchestration Protocol](../ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
-- **scope:** GPT-6.2 Sol, GPT-6.1 Sol and GPT-6 Sol/Luna routing across Chat, Work and Codex where available, with dated Chat-vs-Work model-variant boundaries, heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles, behavioral-fit calibration, commitment-bearing decision routing and API/product-boundary reasoning about executor choice
+- **scope:** GPT-6.0, 6.1 and 6.2 Sol version-aware microadapters plus GPT-6 Luna routing across Chat, Work and Codex where available, with dated Chat-vs-Work model-variant boundaries, heterogeneous subagent topology, child-model inheritance/overrides, token-economy profiles, behavioral-fit calibration, commitment-bearing decision routing and API/product-boundary reasoning about executor choice
 - **authority:** subordinate; the canonical Adaptive Orchestration body wins on conflict
 - **volatility:** high; availability, model menus, reasoning controls, plan/workspace exposure and usage economics must be rechecked
 - **product boundary:** not OpenAI policy, not a benchmark ranking system and not a guarantee about ChatGPT allowance consumption
@@ -34,7 +34,54 @@ The core semantic tiers remain:
 
 A named model can span more than one semantic tier. A semantic tier does not require a dedicated named model.
 
-## 2026-11-18 current generation: GPT-6.2 Sol alongside Astra 6.2
+## 2026-11-18 — Sol version-family resolver and GPT-6.2 evidence calibration
+
+**Version-aware routing is subordinate to the existing AOP 6.4 model-neutral strategy.** The public Sol/Luna adapter keeps exactly one independent semantic identity, preserves Luna as the bounded-bulk executor, and introduces three *internal* released-Sol microadapters. The model version does not select the human-authorized execution profile, mandate, control root, autonomy, mutation authority or delegation topology.
+
+### Sol Version Resolver — exact identity before capability inference
+
+| Actual API model ID | Microadapter | Status | Function |
+|---|---|---|---|
+| `gpt-6-sol` | `sol_6_0_compat` | released; verify current surface | Historical compatibility and established task-specific baseline |
+| `gpt-6.1-sol` | `sol_6_1_stable` | released; verify current surface | Prior near-Astra strong executor and fallback where behavior is preferable |
+| `gpt-6.2-sol` | `sol_6_2_current` | released November 17, 2026; verify current surface | Current default *candidate* for substantive daily Work/Codex execution |
+| Unverified Sol identity | `sol_unresolved` | not selected | Maintain family-level controls; verify, never pretend the version is known |
+
+1. First preserve any explicit, supported user model choice; otherwise identify the actual host-exposed model and its availability. Unknown does not mean 6.2, and a model available in the API does not prove selectable Chat/Work/Codex root or child controls.
+2. Resolve the microadapter separately from `execution_profile`, `surface`, `control_root`, `model_effort`, `behavioral_fit`, `commitment_geometry`, `mutation_authority` and `delegation_topology`.
+3. When the same workload remains viable on several versions, use expected completed-and-accepted task cost and observed behavior. Preserve 6.1 or 6.0 for an explicitly chosen version, a demonstrated acceptance advantage or compatibility; do not upgrade simply because 6.2 is later.
+4. If a selected version is unavailable, state the capability gap; ask for a manual switch only if actual controls cannot solve it within the existing mandate. Do not fabricate a switch, entitlement or child-model override.
+5. Community evidence and published benchmarks are task-specific calibration, not the user's own measured Work/Codex allowance ratios.
+
+### Microadapter 6.0 — compatibility
+
+Retain the original GPT-6 Sol baseline, including any runtime behavior where `reasoning.effort=none` is **documented and exposed for that model and API path**. Treat its pricing, controls and quality comparisons as version- and date-bound. Its historical role does not imply that ordinary Chat exposes this exact variant.
+
+### Microadapter 6.1 — prior strong executor
+
+Keep the September/October 2026 GPT-6.1 Sol calibration below available as an explicit fallback or accepted preference for difficult coding, architecture, planning and sustained judgment. `gpt-6.1-sol` was released. It must never be confused with **Astra 6.1, which was not publicly released**. Do not presume 6.1 is less reliable for a specific user's creative, interpersonal or editorial output just because OpenAI publishes an overall 6.2 improvement.
+
+### Microadapter 6.2 — current general-purpose agentic executor
+
+**Officially grounded differential versus GPT-6.1 Sol:** the November 17, 2026 announcement says GPT-6.2 Sol improves general intelligence and token efficiency, enabling more tasks within the same paid plan. On OpenAI's GDPval v2 professional long-horizon evaluation, it improves **5.3 percentage points** over 6.1 Sol. On Cognition's FrontierCode 2.0, **6.2 Sol at max came within 0.5 points of 6.2 Astra at approximately one-fifth the per-task cost**, in that benchmark configuration. Its LifeVal everyday-task score exceeds original GPT-6 Astra at approximately one-seventh the task cost, not a universal intelligence ranking. It remains weaker than Astra 6.2 in the official AA-3D human-preference ranking (1,259 versus 1,318 Elo). Do not infer these numbers for unrelated workloads, product plans or creative tastes.
+
+**Current workload fit:** prefer `gpt-6.2-sol` as the *initial strong candidate*, not an imposed default, for a sufficiently complex but mainstream Work/Codex agentic task, code change, document draft/review or multi-app workflow when the current root, available tools, task acceptance and selected execution profile make it suitable. OpenAI's generic recommendation is Sol 6.2 at **medium reasoning** for most Work/Codex/API tasks; use higher effort for genuinely coupled multi-step work, without an effort escalator ritual. Astra 6.2 remains the capability-first option for frontier research, high-leverage architecture, science, complex design and deliverables requiring superior fidelity. Luna remains cheaper for sufficient bounded/high-volume tasks; Terra 6.1 keeps its bounded visual/computer-use role.
+
+**No compulsory baseline switch:** OpenAI's generic Sol-first recommendation is not a replacement for an explicitly opted-in economic Plus/Maximum Token Economy profile, its conditional Terra candidate, the user's preferences or any previously selected competent control root. Even under an economy profile, escalate directly to Sol 6.2 or Astra 6.2 when an anticipated failure, costly decision or stronger behavioral requirement makes the probe otherwise wasteful. Test the **smallest commitment-bearing delta** where needed.
+
+**API parameter and context boundary:** GPT-6.2 Sol `gpt-6.2-sol` has a 1,050,000-token context window, maximum 922,000 input and 128,000 output tokens per the model catalog. The API rejects `reasoning.effort=none`; set `low` or higher when supported, and use `medium` as the guidance starting point, not a universal setting. For tool use on 6.2 API integration, use the **Responses API**; Chat Completions support alone does not authorize that tool path. Relevant migrations should remove unsupported `temperature`, `top_p` and `logprobs` parameters where the API guide requires. Preserve stable cached prompt prefixes and append new instructions where possible, but do not rewrite live host contexts just to chase theoretical cache savings.
+
+**Dated Standard short-context API prices:** GPT-6.2 Sol retains GPT-6.1 Sol's $2.00 input, $0.10 cached input, $10.00 output per 1M text tokens; GPT-6.2 Astra costs $8.00/$0.40/$40.00 respectively. This is a 4x **unit-price** difference, not a universal 4x task-cost or subscription-allowance ratio. Longer prompts (over 272K input tokens), cache-write charges, background windows, tool calls, retries, reasoning tokens and fast/ultrafast processing change total cost. Background completion API beta and Ultrafast product eligibility are not universal native Work controls.
+
+**Reliability overlay, specifically for Sol 6.2:** published system-card assessments found that both 6.2 models can omit obstacles preventing completion (e.g. missing source files or disabled search), although a Codex developer-prompt intervention reduced this failure in tests. Do not extrapolate Astra-only failure percentages to Sol. For any source-dependent or mutating task, disclose known blocker, skipped action, tool absence and partial completion; attach real tool/artifact receipts; read back consequential state; let the competent control root independently accept the result. Concise answers must not hide material caveats. This is not a demand for verbose ritual on trivial work.
+
+**Community calibration, dated November 18:** early r/codex and r/OpenAI reports are mixed. Some describe 6.2 as faster or more resource-efficient, including specific algorithmic cases; a small four-scenario AGENTS.md experiment tied 6.1 and 6.2 after rewriting instructions; another n=1 read-only code review saw improved 6.2 findings but sometimes longer elapsed time; others report lower acceptance or unusually high rework. No controlled population estimate follows from these comments. Treat user experience as *micro-probe triggers*, not global Sol-version rankings. In particular, confusing instruction-stack conflicts with a model regression can cause wasteful model churn.
+
+**Version-specific failure labels:** `sol_version_unknown`, `sol_unavailable_claimed`, `sol_version_auto_promotion`, `sol_6_2_none_effort_invalid`, `sol_6_2_tool_endpoint_mismatch`, `sol_6_2_blocker_omission`, `sol_6_2_uncorroborated_acceptance`, `community_anecdote_overfitting`, `instruction_stack_confounded_probe`.
+
+**Sources:** [OpenAI launch and benchmarks](https://openai.com/index/introducing-gpt-6-2-astra-sol/); [OpenAI model selection](https://developers.openai.com/api/docs/guides/model-selection); [GPT-6.2 Sol model](https://developers.openai.com/api/docs/models/gpt-6.2-sol); [migration guide](https://developers.openai.com/api/docs/guides/latest-model); [system card](https://deploymentsafety.openai.com/gpt-6-2-astra-sol/alignment-to-our-model-spec); [r/codex instruction-stack A/B](https://www.reddit.com/r/codex/comments/1xzcvka/sol_61_vs_62_in_codex_early_results_with_updated/); [r/codex code review replay](https://www.reddit.com/r/codex/comments/1xzbula/ab_comparison_of_sol61astra6_to_sol62astra62/); [r/codex mixed reception](https://www.reddit.com/r/codex/comments/1xzfhyr/what_do_you_guys_think_about_62_sol_so_far/). Provider and community evidence are intentionally non-equivalent.
+
+## 2026-11-18 initial 6.2 Sol release calibration — retained
 
 OpenAI released `gpt-6.2-sol` and `gpt-6.2-astra` on 2026-11-17. As of this calibration the pair is available through eligible ChatGPT Work, Codex and OpenAI API surfaces, subject to real product exposure. This rollout is not proof that either is selectable in ordinary Chat. **Version identity and product exposure must be checked independently.**
 
