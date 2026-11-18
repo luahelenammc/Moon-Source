@@ -63,7 +63,7 @@
         "Work and Codex subagent availability, child-model inheritance/override behavior, concurrency and permissions are run-time conditions; Delegation-First never fabricates unavailable controls",
         "Codex is optional; surface availability, enablement and shared resource-pool state remain run-time conditions",
         "Optional Astra strategy adapter v2.1 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md; subordinate to the canonical Adaptive Orchestration body, independently versioned as a submodule, setup-gated, delegation-aware, worker-ownership calibrated and aligned to the surface-neutral control-root model and Decision Commitment Gate",
-        "GPT-6 Sol/Luna strategy adapter v2.0 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md; dated heterogeneous executor/subagent and commitment-routing calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics",
+        "GPT-6 Sol/Luna strategy adapter v2.1 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md; dated heterogeneous executor/subagent and commitment-routing calibration, subordinate to the canonical body and explicitly separated from ChatGPT allowance economics",
         "GPT-6.1 Terra strategy adapter 1.1 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md; dated Work/Codex visual/computer-use routing with Luna/Sol/Astra fit, acceptance probes and API-vs-allowance non-claims",
         "Control surface/root, root model/tier and execution surface/harness are distinct routing dimensions; AUTO preserves the current competent root before considering a human-visible surface transition",
         "Behavioral Fit is separate from capability rank: use observable task-specific acceptance behavior and representative probes when material; community anecdotes may motivate a probe but do not establish permanent model rankings",
@@ -71,7 +71,8 @@
         "Profile-only economic Plus / Maximum Token Economy frontier preference: Terra 6.1 first when available and sufficient for frontier-shaped workload; direct Sol/Astra exceptions for anticipated task-specific capability/quality/replay gaps. Plus plan alone does not activate the profile or grant tool/worker controls.",
         "Grok Bot & persistent-agent token-economy adapter v1.0 at portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md; field-derived, provider-validated affordances, source freshness and scope-gated channel economics; applicable to other persistent agents only after capability probes",
         "Astra version-family resolver (adapter 2.1, 2026-11-18): released 6.0 compatibility, non-executable 6.1 tombstone, released 6.2 current frontier; never infer model availability, autonomy or authority from version.",
-        "GPT-6.2 Sol (Sol/Luna adapter 2.0) is a dated cheaper-sufficient peer to Astra 6.2 where the accepted result and actual harness warrant it; API token rates are not Work/Codex allowance conversions."
+        "GPT-6.2 Sol (Sol/Luna adapter 2.1) is a dated cheaper-sufficient peer to Astra 6.2 where the accepted result and actual harness warrant it; API token rates are not Work/Codex allowance conversions.",
+        "Sol/Luna v2.1 version-aware microadapters: released Sol 6.0/6.1/6.2 with exact model-ID routing, 6.2 medium-effort initial candidate for mainstream Work/Codex tasks, stronger 6.2 source/tool blocker and readback checks, and no automatic selection overriding the user-selected economy profile or root."
       ],
       "difficulty": "advanced",
       "distribution": {
@@ -111,7 +112,7 @@
       "id": "adaptive-orchestration",
       "language": "English",
       "last_material_update_on": "2026-11-18",
-      "last_material_update_summary": "Subordinate Astra 2.1 family microadapters and Sol/Luna 2.0 GPT-6.2 routing calibration; model-neutral AOP 6.4 unchanged.",
+      "last_material_update_summary": "Astra 2.1 version-family resolver retained; Sol/Luna 2.1 adds grounded 6.2 Sol deltas, 6.0/6.1/6.2 microadapters and blocker-disclosure/effort compatibility, without changing model-neutral AOP 6.4.",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "professional_context_url": "https://www.luahelena.com.br/ia/?lang=en",
