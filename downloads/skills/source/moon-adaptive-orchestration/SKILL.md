@@ -15,6 +15,10 @@ Use the goal, constraints, available tools, authority and acceptance criteria. I
 
 Identify the sovereign object and competent control root; separate behavioral fit from commitment geometry; choose proportional execution, delegation and source transport; verify capability and permissions; converge with evidence and delta-only re-entry. Apply the branches and guardrails in the canonical reference rather than treating this concise router as the full method.
 
+### Grok Bot / persistent-agent adapter
+
+For xAI Grok Bot workflows involving repeated routines, long-lived Bots, connectors, browser/computer use or large personal collections, consult `references/source/portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md` as the subordinate host-specific guide. Apply verified freshness checks, delta-only work, source-scoped permissions, bounded navigation and reproducible readback. Use its portable rules on other agents only after checking equivalent persistence and tool affordances. Do not assume cost ratios, guaranteed savings, memory isolation or scheduling support.
+
 ## Output and safeguards
 
 Return a concise route when material and an evidence-based postflight. Do not invent model controls, delegate when prohibited, treat product pricing as allowance, or turn a routing heuristic into a guarantee. Respect user authorization, source jurisdiction and privacy. If access, capability, source or permission is absent, report the limitation and return the smallest useful result; never claim a write or execution that was not observed. Separate source facts, inference and current state. Check the result against the canonical method's own QA and claims.
