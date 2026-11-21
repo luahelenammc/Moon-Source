@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-21 — Agentic Continuity 1.1: situated delegation and context return
+
+- Added a field-sensitive mandate and return contract that separates task jurisdiction, access, capability, outcomes and source authority across execution surfaces.
+- Updated the bootstrap, fictional acceptance probes and paired public Skill. This is a documented method and synthetic cases, not a deployed agent, security guarantee or claim of exclusive invention.
+
 ## 2026-11-18 — AOP Sol/Luna 2.1: released Sol version microadapters and GPT-6.2 comparative calibration
 
 - Researched OpenAI's GPT-6.2 launch, model-selection and API guidance, system-card blockers and competing first-day Reddit user reports. Treated published benchmark scope and community anecdotes separately.
