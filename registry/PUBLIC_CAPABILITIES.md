@@ -105,7 +105,7 @@ material release. Connected Sources advanced to `1.2` on 2026-09-27 and is
 no longer covered by this exception; the legacy value does not establish a
 naming precedent.
 
-The current independently versioned Moon Source capabilities are Lifecycle Workspace Router at 1.2, Connected Sources at 1.2, Moon Source Language at 5.1, Setup at 3.1, Preflight at 2.4 and Be My Eyes at 1.0-public. Adaptive Orchestration Protocol 6.4 and its Astra 2.1, GPT-6 Sol/Luna 2.1, GPT-6.1 Terra 1.1 and Grok Bot 1.0 adapters are versioned only in the [independent AOP repository](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol); they are not Moon Source capability records. Model and product calibration remains date-sensitive and subordinate within AOP.
+The current independently versioned Moon Source capabilities are Lifecycle Workspace Router at 1.2, Connected Sources at 1.2, Moon Source Language at 5.1, Setup at 3.1, Preflight at 2.4 and Be My Eyes at 1.0-public. Adaptive Orchestration Protocol 6.5 and its Astra 2.1, GPT-6 Sol/Luna 2.1, GPT-6.1 Terra 1.1 and Grok Bot 1.0 adapters are versioned only in the [independent AOP repository](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol); they are not Moon Source capability records. Model and product calibration remains date-sensitive and subordinate within AOP.
 
 Product-specific connector behavior, model names, plans, prices, availability
 and other volatile facts must be rechecked before being treated as current.
