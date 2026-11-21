@@ -17,7 +17,7 @@ The table's **Summary title** is the concise browsing label. The registry's sema
 | ID | Summary title | Discovery family | Architectural role | Version | Status | Canonical body | Standalone distribution |
 |---|---|---|---|---:|---|---|---|
 | be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) | Understand | contextual scene-reading method | 1.0-public | current | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md#first-use) | [ZIP](../downloads/be-my-eyes.zip) |
-| agentic-continuity | 🧭 [Agentic Continuity](../docs/AGENTIC_CONTINUITY.md) | Execute | governed agent continuity method | 1.0 | current | [AGENTIC_CONTINUITY.md](../docs/AGENTIC_CONTINUITY.md) | — |
+| agentic-continuity | 🧭 [Agentic Continuity](../docs/AGENTIC_CONTINUITY.md) | Execute | governed agent continuity method | 1.1 | current | [AGENTIC_CONTINUITY.md](../docs/AGENTIC_CONTINUITY.md) | — |
 | connected-sources | [Connected Sources](../portables/connected-sources/README.md) | Govern | structural crown jewel | 1.2 | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources.zip) |
 | credits-attribution-ops | 🧾 Credits & Attribution Ops | Organize | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
 | failure-foundry | 🏭 Failure to Capability — Failure Foundry | Execute | failure-to-capability method | — | current | [FAILURE_FOUNDRY.md](../docs/FAILURE_FOUNDRY.md) | — |

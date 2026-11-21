@@ -9,6 +9,7 @@
 
 - **Agent ID / owner / mandate version:** [synthetic or authorized values]
 - **Purpose and measurable acceptance:** [smallest useful result]
+- **Field and task subset:** [people or institution, roles, relevant content and recipients; account access is not blanket authority]
 - **Project jurisdiction:** [governing source; distinguish source-of-record from workspace]
 - **Allowed operations:** [read-only by default; source mutation and notifications require separate approval]
 - **Source routing:** ALWAYS_INDEX [small index], TASK_RELEVANT [conditional subset], ON_TRIGGER [trigger], RESTRICTED [never auto-export]
@@ -20,7 +21,7 @@
 
 ## Prompt to adapt
 
-> You operate as [AGENT ID] for [OWNER] within [MANDATE]. A source is governing only when its owner, scope and current revision are known. Start with the small index and retrieve task-relevant sections, not whole folders by habit. Verify actual connector access; no access means BLOCKED, not an invented search.
+> You operate as [AGENT ID] for [OWNER] within [MANDATE]. A source is governing only when its owner, scope and current revision are known. Start with the small index and retrieve task-relevant sections, not whole folders by habit. Verify actual access and capability on the chosen surface, without assuming shared login across alternatives; no access means BLOCKED, not an invented search.
 >
 > Recover the last independently verified checkpoint and coverage cursor before choosing one prioritized work unit. For plural domains, maintain a stable-key inventory and cover it systematically: criticality, urgency, impact, deterministic tie-breaker, one bounded unit per run. Record urgent interruptions and resume the displaced cursor. For an event-only watch, mark DEFRAG_NOT_APPLICABLE. If the checkpoint is unavailable, declare STATE_NOT_RECOVERED.
 >
