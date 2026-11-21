@@ -1,0 +1,47 @@
+{
+  "canonical_repository": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol",
+  "canonical_commit": "b4b297f568aeed74cff20abd139bad83db70f5a3",
+  "protocol_version": "6.4",
+  "core_path": "ADAPTIVE_ORCHESTRATION_PROTOCOL.md",
+  "core_sha256": "12e1cd74a0731ddf687ce864037c72b9f18946c92597387aeae98c41a543dd43",
+  "composite_zip_path": "downloads/adaptive-orchestration-protocol.zip",
+  "composite_zip_sha256": "03c6c5c26d6ce3c6285890fb1940b8293afe40af397cabce3777ebff507ab27a",
+  "compatibility_composite_paths": [
+    "downloads/adaptive-orchestration-protocol.zip",
+    "downloads/chat-work-routing-protocol.zip"
+  ],
+  "skill_source_path": "skills/moon-adaptive-orchestration/SKILL.md",
+  "skill_zip_path": "downloads/skills/moon-adaptive-orchestration.zip",
+  "skill_zip_sha256": "ef52f0b7494e403124b65ac1ee4c4edb66ccd2ffe06921f0f0d06d6b263ef1e0",
+  "compatibility_skill_path": "downloads/skills/moon-adaptive-orchestration.zip",
+  "pointer_paths": {
+    "portables/adaptive-orchestration/README.md": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol",
+    "portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/ADAPTIVE_ORCHESTRATION_PROTOCOL.md",
+    "portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md",
+    "portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md",
+    "portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md",
+    "portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md",
+    "portables/chat-work/README.md": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol",
+    "portables/chat-work/CHAT_WORK_ROUTING_PROTOCOL.md": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/ADAPTIVE_ORCHESTRATION_PROTOCOL.md",
+    "portables/chat-work/adapters/CHAT_WORK_ASTRA_ADAPTER.md": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md",
+    "portables/chat-work/adapters/CHAT_WORK_GPT6_SOL_LUNA_ADAPTER.md": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md",
+    "docs/CHAT_WORK_ASTRA_ADAPTER.md": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md"
+  },
+  "skill_source_pointer": "downloads/skills/source/moon-adaptive-orchestration/SKILL.md",
+  "site_repository": "https://github.com/luahelenammc/LUAHELENA",
+  "site_index_path": "moonsource/index.html",
+  "site_core_mirrors": [
+    "moonsource/downloads/ADAPTIVE_ORCHESTRATION_PROTOCOL.md",
+    "moonsource/downloads/CHAT_WORK_ROUTING_PROTOCOL.md"
+  ],
+  "contract": "Compatibility projections are read-only downstream artifacts. Update them only by reviewed exact-byte projection from this pinned canonical AOP source.",
+  "_moon_source_public_stamp": {
+    "ai_assisted_coauthor": "Áurion",
+    "contact": "Questions, suggestions, or proposals? Feel free to contact me at LuaHelenaMMC@gmail.com.",
+    "creator": "Lua Helena Moon Martins Cardoso (Moon)",
+    "full_source": "https://github.com/luahelenammc/Moon-Source/archive/refs/heads/main.zip",
+    "licensing": "https://github.com/luahelenammc/Moon-Source/blob/main/LICENSING.md",
+    "project": "Moon Source",
+    "use_and_attribution": "https://github.com/luahelenammc/Moon-Source/blob/main/MOON_SOURCE_USE_AND_ATTRIBUTION.md"
+  }
+}

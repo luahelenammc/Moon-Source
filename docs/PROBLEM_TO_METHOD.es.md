@@ -6,7 +6,7 @@ Esta es una **guía de navegación**, no otra capacidad ni un registro alternati
 
 🌐 **Language / Idioma:** [English](PROBLEM_TO_METHOD.md) · [Português](PROBLEM_TO_METHOD.pt-BR.md) · [Español](PROBLEM_TO_METHOD.es.md) · [简体中文](PROBLEM_TO_METHOD.zh-CN.md) · [Русский](PROBLEM_TO_METHOD.ru.md) · [Start Here](../START_HERE.md) · [Public capabilities](../registry/PUBLIC_CAPABILITIES.md)
 
-## Elige entre las 17 capacidades públicas actuales
+## Elige entre las 16 capacidades públicas actuales
 
 Los casos son **ficticios**: no describen clientes reales, despliegues ni resultados medidos. Normalmente basta con un solo método.
 
@@ -42,10 +42,11 @@ Los casos son **ficticios**: no describen clientes reales, despliegues ni result
 | Situación concreta | Método / fuente canónica | Primera acción | Qué comprobar y qué no asumir |
 |---|---|---|---|
 | Un agente recurrente repite tareas y no demuestra dónde dejó el trabajo. | <!-- problem-route: agentic-continuity --><a id="agentic-continuity"></a>[Agentic Continuity](AGENTIC_CONTINUITY.md) | Define mandato, cola con claves estables, checkpoint verificable y prueba de reanudación en otra ejecución. | **Comprueba:** Cursor recuperado, avance sin duplicación, recibos separados y permisos explícitos. **Límite:** El protocolo no instala agenda, memoria ni acceso autónomo. |
-| Una tarea grande gasta razonamiento costoso en trabajo repetitivo. | <!-- problem-route: adaptive-orchestration --><a id="adaptive-orchestration-protocol"></a>[Adaptive Orchestration Protocol](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md) | Separa decisiones difíciles del volumen mecánico y asigna esfuerzo proporcional. | **Comprueba:** Plan con criterios de aceptación y coste total de trabajo visible. **Límite:** No desbloquea modelos, agentes ni permisos inexistentes. |
 | Una revisión habitual necesita ejecutarse con checkpoints en una interfaz. | <!-- problem-route: operational-devices --><a id="operational-devices"></a>[Operational Devices](OPERATIONAL_DEVICES.md) | Define entorno real, disparador, entradas, permisos, simulación y parada. | **Comprueba:** Contrato acotado con evidencia de lo ejecutado. **Límite:** La especificación no instala el entorno ni aumenta permisos. |
 | Un despliegue falla a medias y los reintentos ocultan la causa. | <!-- problem-route: operational-reliability --><a id="operational-reliability"></a>[Operational Reliability](OPERATIONAL_RELIABILITY.md) | Comprueba objetivo, instrumento, dependencias y alcance antes de reintentar. | **Comprueba:** Diagnóstico, cambio mínimo y comprobación antes/después con recuperación. **Límite:** Un mensaje de error distinto no prueba que se resolvió. |
 | Un fallo de traspaso reaparece pese a correcciones puntuales. | <!-- problem-route: failure-foundry --><a id="failure-foundry"></a>[Failure Foundry](FAILURE_FOUNDRY.md) | Conserva pruebas seguras, clasifica la causa y prueba una regla reutilizable. | **Comprueba:** Checklist, control o procedimiento probado, o aprendizaje solo local. **Límite:** Un fallo no justifica por sí solo una capacidad universal. |
+
+**Protocolo independiente relacionado:** [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) gobierna el enrutamiento de la ejecución de IA y se mantiene fuera del registro de Moon Source.
 
 ## Combinaciones para proyectos reales
 

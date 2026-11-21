@@ -25,8 +25,6 @@ def bundle(rec):
         for m in LINK.finditer(source.read_text(encoding='utf-8')):
             p=relative_target(source,m.group(2))
             if p and p.is_file() and p.suffix.lower()=='.md' and not p.name.startswith('README'): selected.add(p)
-    if rec['id']=='adaptive-orchestration':
-        selected.update((ROOT/'portables/adaptive-orchestration/adapters').glob('*.md'))
     hashes={}
     for p in sorted(selected):
         name=p.relative_to(ROOT).as_posix(); raw=p.read_text(encoding='utf-8')

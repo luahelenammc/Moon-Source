@@ -102,13 +102,12 @@ A **portable** is a semantic type of capability; **standalone distribution** is 
 
 | If you need to… | Start here |
 |---|---|
-| Spend AI capability efficiently across roots, surfaces, models, reasoning effort and delegation while minimizing total work to an accepted result | [🧬 Adaptive Orchestration Protocol](portables/adaptive-orchestration/README.md) |
 | Embody a recurring procedure on a concrete execution surface with state, guards and receipts | [🛠️ Operational Devices](docs/OPERATIONAL_DEVICES.md) |
 | Keep execution bounded, diagnosable and recoverable where possible | [🛡️ Operational Reliability](docs/OPERATIONAL_RELIABILITY.md) |
 | Resume recurring AI work with verified checkpoints and systematic coverage | [🧭 Agentic Continuity](docs/AGENTIC_CONTINUITY.md) |
 | Turn recurring failure into the smallest validated reusable mechanism | [🏭 Failure to Capability — Failure Foundry](docs/FAILURE_FOUNDRY.md) |
 
-For the **problem → first move → observable result → stop line** route across all 17 capabilities, use the [problem-first guide](docs/PROBLEM_TO_METHOD.md). Canonical bodies still govern the actual methods.
+For the **problem → first move → observable result → stop line** route across all 16 capabilities, use the [problem-first guide](docs/PROBLEM_TO_METHOD.md). Canonical bodies still govern the actual methods. The independent [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) is maintained in its own repository and is not a Moon Source capability.
 
 ## First use
 
@@ -135,7 +134,7 @@ Access is not activation. A reachable source is not automatically authoritative,
 - **Humans should not have to prompt like machines.** [Preflight](portables/preflight/PREFLIGHT.md) reconstructs intended meaning before execution and escalates guardrails only when consequence requires them.
 - **Read the scene, not only the sentence.** [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) reconstructs actors, relationship and plausible subtext while keeping observation, inference and overread distinct.
 - **Workspace state must not invent authority.** [Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) projects lifecycle, action and provenance onto durable surfaces without replacing the source of record.
-- **Optimize total work to an accepted state.** [Adaptive Orchestration](portables/adaptive-orchestration/README.md) uses cheaper sufficient execution for reducible bulk, concentrates stronger cognition at real bottlenecks, and treats context churn, retries and unnecessary fan-out as costs rather than free plumbing.
+- **Optimize total work to an accepted state.** The independent [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) uses cheaper sufficient execution for reducible bulk, concentrates stronger cognition at real bottlenecks, and treats context churn, retries and unnecessary fan-out as costs rather than free plumbing.
 
 ## Public capabilities
 
@@ -166,7 +165,7 @@ Moon Source helps govern context and responsibilities around AI work: which sour
 
 These examples make the public material easier to inspect. Synthetic and fictional examples show a bounded illustration, not a report of adoption or measured results.
 
-- [Find the relevant method](docs/PROBLEM_TO_METHOD.md): seventeen concrete problems mapped to the smallest useful action, result and boundary.
+- [Find the relevant method](docs/PROBLEM_TO_METHOD.md): sixteen registered problems mapped to the smallest useful action, result and boundary.
 - [Walk through a first context decision](examples/first-use-project-context.md): a fictional project with sources, a conflict and an inspectable check.
 - [Explore application scenarios](examples/application-scenarios/): hypothetical examples across projects, teams and services, not reports of adoption.
 - [Inspect bounded technical examples](examples/README.md): synthetic reference implementations with runnable tests where available, not finished products.

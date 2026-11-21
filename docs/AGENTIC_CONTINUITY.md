@@ -18,7 +18,7 @@ It is a **documented protocol and reference architecture**, not a hosted agent, 
 This component owns the **longitudinal agent contract**: assignment, per-run resumption, coverage, receipts, source/workspace reconciliation, configuration drift and notification boundaries. It does not replace:
 
 - [Preflight](../portables/preflight/PREFLIGHT.md) for reconstructing user intent or delegation;
-- [Adaptive Orchestration](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md) for model/surface/delegation selection and effort routing;
+- [Adaptive Orchestration](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/ADAPTIVE_ORCHESTRATION_PROTOCOL.md) for model/surface/delegation selection and effort routing;
 - [Connected Sources](CONNECTED_SOURCES.md) for connector reach, source access and authority;
 - [Source Operations](SOURCE_OPERATIONS.md) for retrieve/process/metabolize/promote;
 - [Lifecycle Workspace Router](LIFECYCLE_WORKSPACE_ROUTER.md) for artifact lifecycle and workspace projection;

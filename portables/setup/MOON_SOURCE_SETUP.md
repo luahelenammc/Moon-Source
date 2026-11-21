@@ -503,7 +503,7 @@ When repository-aware, use the smallest relevant set:
 | A reusable structure has been earned | portables/msl/MOON_SOURCE_LANGUAGE.md |
 | A source, method, mirror or output needs lineage or permission boundaries | docs/CREDITS_ATTRIBUTION_OPS.md |
 | A current source, durable continuity or cross-session living context is needed | docs/CONNECTED_SOURCES.md; load the subordinate ChatGPT adapter only for volatile product facts |
-| ChatGPT surface, model or reasoning routing is the actual question | portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md |
+| ChatGPT surface, model or reasoning routing is the actual question | https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/ADAPTIVE_ORCHESTRATION_PROTOCOL.md |
 | The full repository or ZIP has been supplied | MOON_SOURCE_AI_KERNEL.md governs loading |
 
 This list is a route, not a reading assignment.

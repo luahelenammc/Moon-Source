@@ -1,8 +1,14 @@
-# GPT-6 Sol/Luna Strategy Adapter — legacy path
+<!-- SPDX-FileCopyrightText: 2026 Lua Helena Moon Martins Cardoso (Moon) -->
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
 
-The current adapter is [Adaptive Orchestration GPT-6 Sol/Luna Strategy Adapter](../../adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md), subordinate to the [canonical protocol](../../adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md).
+# Chat–Work GPT6 SOL LUNA ADAPTER — compatibility pointer
 
-This pointer preserves the old deep link. It contains no independent adapter procedure.
+This stable Moon Source path is preserved for existing links. It is a readable locator only; no Adaptive Orchestration rules, versions or adapters are maintained here.
+
+**canonical GPT-6 Sol/Luna adapter:** [canonical GPT-6 Sol/Luna adapter](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md)
+
+AOP originated in Moon Source and now has its own canonical repository, release history, adapters and packages. Use the linked source for current content and version metadata. Existing Moon Source compatibility ZIP paths remain byte-verified copies.
+
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

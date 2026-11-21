@@ -69,7 +69,7 @@ Ordinary runtime uses the existing verified local snapshot. A consumer is permit
 
 ## 6. Known adoption routes
 
-The **Moon Source** repository governs this shared method and specializes D1 website distribution in [Mirror Synchronization](MIRROR_SYNCHRONIZATION.md). It contains public method sources used by F1 consumers (including Preflight and Adaptive Orchestration) without owning those consumers' private overlays.
+The **Moon Source** repository governs this shared method and specializes D1 website distribution in [Mirror Synchronization](MIRROR_SYNCHRONIZATION.md). It contains public method sources used by F1 consumers, including Preflight, without owning those consumers' private overlays. AOP is a separate public method source maintained in its own repository and may be consumed by reference.
 
 The **Moon Cortex** repository may adopt F1 for selected public modules such as Probability Calibration and Moon Image Cortex. Its [Module Design Contract](https://github.com/luahelenammc/Moon-Cortex/blob/main/docs/MODULE_DESIGN_CONTRACT.md) governs what makes a public module publishable; this protocol governs the **cross-source aftercare** when an explicitly registered consumer exists. Cortex does not inherit Moon Source as its domain authority or a mandatory runtime.
 

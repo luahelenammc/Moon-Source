@@ -1,10 +1,14 @@
-# Chat–Work Astra Strategy Adapter — legacy locator
+<!-- SPDX-FileCopyrightText: 2026 Lua Helena Moon Martins Cardoso (Moon) -->
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
 
-This document preserves the former locator and identity. The current adapter is subordinate to Adaptive Orchestration Protocol.
+# Chat–Work ASTRA ADAPTER — compatibility pointer
 
-**Canonical adapter:** [portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](../portables/adaptive-orchestration/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md)
+This stable Moon Source path is preserved for existing links. It is a readable locator only; no Adaptive Orchestration rules, versions or adapters are maintained here.
 
-The adapter remains independently versioned at 2.1. The governing canonical body is [portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md).
+**canonical Astra adapter:** [canonical Astra adapter](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md)
+
+AOP originated in Moon Source and now has its own canonical repository, release history, adapters and packages. Use the linked source for current content and version metadata. Existing Moon Source compatibility ZIP paths remain byte-verified copies.
+
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

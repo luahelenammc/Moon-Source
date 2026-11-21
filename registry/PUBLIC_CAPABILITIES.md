@@ -10,14 +10,13 @@ that is not required: Connected Sources is a structural component with a
 supported standalone distribution. The machine-readable contract is
 [registry/public-capabilities.json](public-capabilities.json), schema 2.0.
 If you recognize a practical problem but do not know the capability name, start with [Find the method for your problem](../docs/PROBLEM_TO_METHOD.md). Its own language navigation covers five localized guides, all pointing back to these canonical records rather than forming a second registry.
-The table below is a human-readable view of the same seventeen records. **Discovery family** is a navigational view only: it does not replace architectural responsibility, canonical authority, or standalone distribution. The four families (Understand, Govern, Organize, Execute) match the problem-first guides.
+The table below is a human-readable view of the same sixteen records. **Discovery family** is a navigational view only: it does not replace architectural responsibility, canonical authority, or standalone distribution. The four families (Understand, Govern, Organize, Execute) match the problem-first guides.
 
 The table's **Summary title** is the concise browsing label. The registry's semantic `title` remains stable in machine-readable metadata; individual README and canonical-body headings use `surface_title` to make the Moon Source role explicit without folding version into identity.
 
 | ID | Summary title | Discovery family | Architectural role | Version | Status | Canonical body | Standalone distribution |
 |---|---|---|---|---:|---|---|---|
 | be-my-eyes | [Be My Eyes](../portables/be-my-eyes/README.md) | Understand | contextual scene-reading method | 1.0-public | current | [BE_MY_EYES.md](../portables/be-my-eyes/BE_MY_EYES.md#first-use) | [ZIP](../downloads/be-my-eyes.zip) |
-| adaptive-orchestration | [Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) | Execute | adaptive execution orchestration protocol | 6.4 | current | [ADAPTIVE_ORCHESTRATION_PROTOCOL.md](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md#first-use) | [ZIP](../downloads/adaptive-orchestration-protocol.zip) |
 | agentic-continuity | 🧭 [Agentic Continuity](../docs/AGENTIC_CONTINUITY.md) | Execute | governed agent continuity method | 1.0 | current | [AGENTIC_CONTINUITY.md](../docs/AGENTIC_CONTINUITY.md) | — |
 | connected-sources | [Connected Sources](../portables/connected-sources/README.md) | Govern | structural crown jewel | 1.2 | current | [CONNECTED_SOURCES.md](../docs/CONNECTED_SOURCES.md#first-use) | [ZIP](../downloads/connected-sources.zip) |
 | credits-attribution-ops | 🧾 Credits & Attribution Ops | Organize | immaterial-asset protection | — | current | [CREDITS_ATTRIBUTION_OPS.md](../docs/CREDITS_ATTRIBUTION_OPS.md) | — |
@@ -38,6 +37,8 @@ The table's **Summary title** is the concise browsing label. The registry's sema
 
 [Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) is a separate related public body for domain-shaped systems. It is intentionally not a record in this Moon Source capability registry.
 
+[Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) is an independent public protocol for AI execution routing. Moon Source preserves legacy pointers and read-only byte-verified compatibility copies, but does not version or distribute AOP as a registered capability.
+
 ## How to read the registry
 
 The canonical body is the semantic authority. The architectural role says what
@@ -53,10 +54,10 @@ does not change architectural identity and does not create a second authority.
 Connected Sources therefore remains structural even though it can travel as a
 standalone package.
 
-The six standalone distributions are a filtered view of the unified registry:
-👁️ Be My Eyes, 🧬 Adaptive Orchestration Protocol, 🔗 Connected Sources, 🧱 Moon Source Language,
-🧭 Setup and 🛫 Preflight. This filter is not a second semantic
-inventory.
+The five standalone distributions are a filtered view of the unified registry:
+👁️ Be My Eyes, 🔗 Connected Sources, 🧱 Moon Source Language, 🧭 Setup and 🛫 Preflight.
+This filter is not a second semantic inventory. The former AOP distribution path
+remains a separately verified compatibility copy; it is not in this registry.
 
 ## Connected Sources
 
@@ -84,9 +85,8 @@ capabilities under:
 - https://www.luahelena.com.br/moonsource/downloads/BE_MY_EYES.md
 - https://www.luahelena.com.br/moonsource/downloads/CONNECTED_SOURCES.md
 - https://www.luahelena.com.br/moonsource/downloads/MOON_SOURCE_PUBLIC_PORTABLE_MSL.md
-- https://www.luahelena.com.br/moonsource/downloads/ADAPTIVE_ORCHESTRATION_PROTOCOL.md
 
-The former CHAT_WORK_ROUTING_PROTOCOL.md mirror remains a minimal migration pointer to this current mirror.
+The AOP website mirrors are separately verified against the independent repository by `scripts/check_aop_compatibility.py`; they are not registry-owned Moon Source mirrors.
 
 These are delivery surfaces, not semantic authorities. Each mirror must remain
 byte-identical to its mapped canonical body.
@@ -105,10 +105,7 @@ material release. Connected Sources advanced to `1.2` on 2026-09-27 and is
 no longer covered by this exception; the legacy value does not establish a
 naming precedent.
 
-The current independently versioned capabilities are Lifecycle Workspace Router at
-1.2, Connected Sources at 1.2, MSL at 5.1, Adaptive Orchestration at 6.4,
-Setup at 3.1, Preflight at 2.4 and Be My Eyes at 1.0-public. Adaptive Orchestration 6.4
-preserves Delegation-First, the surface-neutral control-root model, Behavioral Fit and Commitment Geometry as a separate decision-closure route: high-leverage solution choices can be probed or explored before dependent work scales, only the commitment-bearing delta may be side-routed or up-routed, and objective-linked evidence can reopen the smallest affected boundary. The historical Chat → Work/Codex → Chat loop remains a named first-class profile rather than the mandatory topology. The Astra Strategy Adapter is 2.1, the GPT-6 Sol/Luna Adapter is 2.0 and the GPT-6.1 Terra Adapter is 1.1. Within the user-opted-in economic Plus / Maximum Token Economy profile only, Terra 6.1 is the conditional frontier-shaped executor default when sufficient; direct Sol/Astra exceptions remain available. Outside that profile, public AUTO is model-neutral. The 2026-10-24 calibration evaluates capability by accepted artifacts, retries, latency and verification cost; 3D game-design equivalence is not assumed from aggregate coding benchmarks. Model, token-economy, behavior and subagent calibration remains dated and subordinate; Maximum Token Economy is public opt-in only and does not globally demote Astra. MSL's formatting contract remains part of the current 5.1 body and release identity.
+The current independently versioned Moon Source capabilities are Lifecycle Workspace Router at 1.2, Connected Sources at 1.2, Moon Source Language at 5.1, Setup at 3.1, Preflight at 2.4 and Be My Eyes at 1.0-public. Adaptive Orchestration Protocol 6.4 and its Astra 2.1, GPT-6 Sol/Luna 2.1, GPT-6.1 Terra 1.1 and Grok Bot 1.0 adapters are versioned only in the [independent AOP repository](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol); they are not Moon Source capability records. Model and product calibration remains date-sensitive and subordinate within AOP.
 
 Product-specific connector behavior, model names, plans, prices, availability
 and other volatile facts must be rechecked before being treated as current.
@@ -122,7 +119,7 @@ changes, update its supported distribution and mirror only after the canonical
 registry and validators pass. Use
 python scripts/check_mirror_sync.py for exact SHA-256 equality.
 
-The legacy id chat-work-routing, legacy names Chat–Work Routing Protocol / Chat–Work Router / Chat–Work, old artifact paths, package and mirror are compatibility pointers to adaptive-orchestration; they do not add a second capability record.
+The legacy id `chat-work-routing`, names Chat–Work Routing Protocol / Chat–Work Router / Chat–Work, old artifact paths, package and mirror remain compatibility routes to the independent AOP repository. They add no current record to the Moon Source registry.
 
 The registry does not replace [Credits & Attribution
 Ops](../docs/CREDITS_ATTRIBUTION_OPS.md), which governs intellectual lineage,
