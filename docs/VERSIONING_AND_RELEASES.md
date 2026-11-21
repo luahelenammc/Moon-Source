@@ -13,6 +13,12 @@ Moon Source has several versioned layers with different responsibilities:
 
 They should not be collapsed into one number.
 
+## Current external AOP authority — 2026-11-21
+
+Adaptive Orchestration Protocol now has an **independent canonical repository** at [luahelenammc/Adaptive-Orchestration-Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol), with **AOP core 6.5** at its main branch. Moon Source is the origin and an interoperable neighbor, not the owner of AOP releases. The legacy AOP directories, ZIPs and website downloads are compatibility routes and must not be presented as canonical or as Moon Source registry capabilities.
+
+The dated AOP 6.4 references in the historical release notes below remain accurate as *snapshots of their corresponding dates*, not current-version declarations. Follow the independent repository for release notes, adapters, package integrity and skill-projection state. Website mirrors and native skill installations require separate readback; a repository update alone does not prove either is active.
+
 ## Sol 6.2 full differential / Sol-Luna 2.1 — 2026-11-18
 
 - Advanced **Sol/Luna 2.0 → 2.1**, retaining its single canonical adapter but adding exact released Sol 6.0/6.1/6.2 internal microadapters. Sol 6.2 is a conditional general Work/Codex/API candidate; Luna bounded bulk, Terra visual-computer work, Astra frontier and Moon's model/root preferences are preserved.
