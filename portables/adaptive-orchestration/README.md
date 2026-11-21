@@ -1,107 +1,14 @@
-# 🧬 Adaptive Orchestration Protocol — Moon Source portable
+<!-- SPDX-FileCopyrightText: 2026 Lua Helena Moon Martins Cardoso (Moon) -->
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
 
-**Agent Skill:** [Download Adaptive Orchestration Protocol skill (.zip)](https://github.com/luahelenammc/Moon-Source/raw/refs/heads/main/downloads/skills/moon-adaptive-orchestration.zip) · [All public skills](https://github.com/luahelenammc/Moon-Source/tree/main/downloads/skills)
+# README — compatibility pointer
 
+This stable Moon Source path is preserved for existing links. It is a readable locator only; no Adaptive Orchestration rules, versions or adapters are maintained here.
 
-**Use each model, surface and unit of reasoning where it actually pays for itself.**
+**Adaptive Orchestration Protocol repository:** [Adaptive Orchestration Protocol repository](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol)
 
-Adaptive Orchestration Protocol (AOP) helps an AI route work across the right control root, execution surface, model capability, behavioral fit, commitment geometry, reasoning effort and delegation topology while preserving continuity, evidence, convergence and acceptance.
+AOP originated in Moon Source and now has its own canonical repository, release history, adapters and packages. Use the linked source for current content and version metadata. Existing Moon Source compatibility ZIP paths remain byte-verified copies.
 
-Its efficiency target is **minimum total work to an accepted state**. Lower-cost sufficient execution should absorb reducible bulk; stronger cognition should be concentrated at the bottlenecks where it can materially change the result. AOP also checks whether an open, high-leverage solution choice should be probed or resolved before dependent work scales, since an inexpensive first commitment can create costly correction or replay. Repeated context ingestion, unnecessary surface switching, avoidable retries, tool churn and agent fan-out remain real execution costs, without lowering the capability floor the task actually needs.
-
-**How to apply it:** give a compatible AI the canonical AOP instructions before a task whose execution choices matter. The protocol guides routing and verification; the actual available models, tools, delegation and actions depend on the host environment.
-
-[▶️ Canonical entry · Plan A](ADAPTIVE_ORCHESTRATION_PROTOCOL.md#first-use) · [⬇️ ZIP fallback · Plan B](../../downloads/adaptive-orchestration-protocol.zip) · [🌙 Moon Source](../../README.md)
-
-## Why use AOP?
-
-Without an explicit routing layer, AI workflows can spend frontier reasoning on repetitive work, keep the root busy with scans that cheaper workers could absorb, reload the same context after unnecessary handoffs, or save on one turn only to lose more on retries and repair.
-
-AOP routes around that waste:
-
-- **keep the competent control root** when it can finish and verify the task;
-- **delegate reducible bulk** such as scanning, extraction, testing and repetitive work to cheaper sufficient execution when available;
-- **escalate only the irreducible delta** that actually needs stronger judgment;
-- **resolve high-leverage commitments before scaling dependent work**, using bounded probes or a commitment-only route only when they lower total work to acceptance;
-- **spend tokens and context deliberately**, instead of repeatedly re-ingesting material that does not need to travel;
-- **optimize the whole run**, including retries, tool churn, fan-out, convergence and verification, rather than optimizing the apparent cost of one call.
-
-More intelligence is useful when the task needs it. Applying the highest tier everywhere is not orchestration; it is just expensive uniformity.
-
-## Use this when
-
-- a task may span Chat, Work, Codex or delegated workers;
-- you want the current surface to stay in control when it can complete and verify the objective;
-- one task contains expensive judgment plus cheaper parallelizable work;
-- you need to choose **control surface/root**, **root model/tier**, **execution surface/harness**, reasoning effort and child topology separately;
-- you want internal delegation before human-visible model or surface switching;
-- an executor result needs evidence-bearing convergence and postflight;
-- expensive execution needs a survivability check before spending the budget.
-
-For release history, see the [repository changelog](../../CHANGELOG.md).
-
-## Grok Bot and persistent-agent economy
-
-The [Grok Bot & Persistent Agent Economy Adapter 1.0](adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md) adds a **delta-first, state-aware execution profile** for xAI Grok Bot, based on a sanitized field note and official provider documentation. It uses verified cursors and freshness checks, minimally sufficient information channels, bounded computer use, conditional helper reuse, skills-before-routines, privacy-scoped bulk exports, exact stop gates and write/readback evidence. It avoids fabricated token-cost rankings and savings claims. Its transferable core applies to other persistent agents only after their specific memory, computer, connector, scheduling and custody capabilities have been verified. The model-neutral AOP core remains version 6.4.
-
-## Astra submodule, not Astra mode
-
-**Sol/Luna 2.1 follow-on (November 18, 2026):** released Sol 6.0, Sol 6.1 and Sol 6.2 now resolve as internal microadapters. Sol 6.2 is the provider's first candidate for most Work/Codex tasks at medium effort, but not a compulsory model switch or a replacement for user-selected economy profiles. It retains 6.1 API token rates, rejects `none` effort in the API and inherits verified blocker-reporting/readback controls. Reddit field signals remain competing low-confidence hypotheses.\n\n**November 18, 2026 version-family calibration:** one Astra adapter now contains a 6.0 compatibility baseline, a strictly non-executable 6.1 nonrelease tombstone and a GPT-6.2 Astra microadapter with explicit blocker disclosure, source/tool proof and independent acceptance. GPT-6.2 Sol is also a released cheaper-sufficient peer for complex work. These overlays do not change the model-neutral AOP 6.4 core or imply ordinary Chat access. Consult official current model/plan support, not model-number prestige.
-
-
-Astra is an optional subordinate submodule of this Adaptive Orchestration portable, not a prescribed work style. Its canonical adapter lives at [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) and is independently versioned at **2.1**.
-
-GPT-6 Sol/Luna has a separate dated executor calibration at [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md), version **2.1**. It preserves the model-neutral core while mapping the family to heterogeneous execution: Luna for focused/high-volume work after material solution commitments are sufficiently resolved, Sol for strong roots and bounded high-leverage decisions when warranted, plus current Codex child-model/default configuration guidance.
-
-**Refined on October 26, 2026:** [GPT-6.1 Terra Strategy Adapter 1.1](adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md) calibrates visual reasoning, onscreen action, scoped coding and natural writing across Work/Codex. Terra is not a universal replacement for cheaper Luna: at dated Standard API rates, Terra costs 10× Luna, half of Sol 6.1 and one tenth of Astra per uncached input/output token. Route by *accepted task cost*, capability floor, observed behavioral fit, tools and real allowance availability. OpenAI-reported computer-use/visual benchmarks justify bounded trials, not automatic hierarchy or guaranteed credits saved.
-
-As of the October 2026 Chat rollout, GPT-6 in Chat uses conversation-tuned Sol (eligible paid tiers) or Luna (Free/Go), distinct from the September Work/Codex executor releases. Model family does not determine available tools, reasoning controls or delegation on any surface.
-
-When Astra is actually available, Adaptive Orchestration can compile it as a judgment brain, broad reviewer, co-architect, bounded executor, frontier orchestrator or sustained full-run root. Role, autonomy, reasoning depth, context breadth, control surface and mutation authority remain separate.
-
-The dated GPT-6 adapters also expose a user-selected **Maximum Token Economy** profile and the related **Plus Economy** configuration (opt-in within a Plus run, not automatically activated by a Plus subscription). In this profile **Terra 6.1 is the conditional first choice for frontier-shaped work**, at bounded/medium effort when its capability and behavioral fit are credible. This is an economic executor default, **not a claim of highest frontier capability** and not a global default for ordinary AUTO or balanced/quality settings. Luna still handles cheaper routine sufficient bulk. Route directly to Sol 6.1 for known hard coding/architecture/reasoning and to Astra for evidenced frontier, scientific, creative/visual or high-consequence advantage. Use a representative micro-probe where helpful, compare **total work to acceptance**, and avoid sacrificial low-tier attempts when costly replay is predictable. Benchmark, API prices, subscription usage and native harness access remain separate evidence domains. See [Terra 1.1](adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md) and [Sol/Luna 2.1](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md).
-
-Examples of valid requests:
-
-- “Stay in Work unless another surface is actually required.”
-- “Keep Sol as the root and send bounded scans to Luna.”
-- “Use Astra only for the hard ruling, then converge on the current root.”
-- “Use the Chat–Work Loop Profile for this task; keep Chat as my continuity surface.”
-- “Run a Decision Sprint across this finite docket.”
-
-## What it does
-
-Adaptive Orchestration 6.4 defines surface-neutral control-root routing across Chat, Work and optional Codex, including execution profiles, Surface Continuity, separate Behavioral Fit and Decision Commitment Gates, commitment-only side- or up-routing, proportional Branch Before Build, Delegation-First orchestration, heterogeneous root/child topology, connector-aware source transport, Budget Survivability, the Intelligence Distillation Ladder, bounded exhaustiveness, an auditable Decision Trace for material rulings, optional explicitly activated ephemeral Sprint Mode, Control-Root Postflight and delta-only re-entry.
-
-The Decision Trace exposes the smallest decision-bearing comparison needed to audit a material ruling — alternatives, acceptance criteria when relevant, decisive reasons, adversarial correction, falsifier/test, uncertainty and downstream assumptions — **not** hidden chain-of-thought or private scratchpad content.
-
-## What it does not do
-
-It does not itself create access to a model, tool, connector, subagent control or execution surface. It cannot force a runtime to honor a child-model override or cross-surface handoff it does not expose. It does not require Chat, Work or Codex to exist in every environment, and it does not claim that every surface can retain root control.
-
-Sprint Mode does not expose allowance/reset state, create a native product feature or persist across runs. Product names, limits, inheritance behavior and availability are date-sensitive and must be rechecked when they matter.
-
-## Try it on a concrete problem
-
-**Fictional situation:** a research workflow spends expensive reasoning on repetitive scanning while a pivotal decision remains unresolved. Use AOP to identify that commitment, test a cheaper sufficient execution route and define acceptance. **Inspect:** a proportionate plan, not an assumption that extra models or agents are available. [More problems by method](../../docs/PROBLEM_TO_METHOD.md#adaptive-orchestration-protocol).
-
-## Current identity
-
-- **Version:** 6.4
-- **Protocol family:** V6
-- **Status:** current · supported standalone distribution
-- **Former identity:** Chat–Work Routing Protocol / Chat–Work Router / Chat–Work · retained only as compatibility and migration terminology
-- **Named continuity profile:** Chat–Work Loop Profile · Chat → Work/Codex → Chat
-- **Optional Astra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_ASTRA_ADAPTER.md) · version **2.0**
-- **GPT-6 Sol/Luna submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_SOL_LUNA_ADAPTER.md) · version **1.9**
-- **Grok Bot & persistent-agent economy submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GROK_BOT_ADAPTER.md) · version **1.0** (2026-11-17)
-- **GPT-6.1 Terra submodule:** [adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md](adapters/ADAPTIVE_ORCHESTRATION_GPT6_TERRA_ADAPTER.md) · version **1.1**, dated 2026-10-26
-- **Adapter directory law:** current and future model-specific Adaptive Orchestration adapters co-reside under portables/adaptive-orchestration/adapters/; do not create one directory per model family unless a future adapter actually becomes a multi-file subsystem.
-- **Canonical body:** [portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md](ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
-- **Package:** [downloads/adaptive-orchestration-protocol.zip](../../downloads/adaptive-orchestration-protocol.zip)
-- **License:** CC BY 4.0 · see [Licensing](../../LICENSING.md)
-
-> **Authority:** This README is the human-facing presentation surface. [ADAPTIVE_ORCHESTRATION_PROTOCOL.md](ADAPTIVE_ORCHESTRATION_PROTOCOL.md) remains the semantic authority and contains the operative **First use** instructions. The Astra, GPT-6 Sol/Luna and Terra adapters are subordinate to that body and do not create separate capability identities.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

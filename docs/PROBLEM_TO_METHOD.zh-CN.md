@@ -6,7 +6,7 @@
 
 🌐 **Language / Idioma:** [English](PROBLEM_TO_METHOD.md) · [Português](PROBLEM_TO_METHOD.pt-BR.md) · [Español](PROBLEM_TO_METHOD.es.md) · [简体中文](PROBLEM_TO_METHOD.zh-CN.md) · [Русский](PROBLEM_TO_METHOD.ru.md) · [Start Here](../START_HERE.md) · [Public capabilities](../registry/PUBLIC_CAPABILITIES.md)
 
-## 从 17 项现行公开能力中选择
+## 从 16 项现行公开能力中选择
 
 以下均为**虚构示例**，不代表真实客户、部署或经测量的效果。大多数问题只需要一个方法。
 
@@ -42,10 +42,11 @@
 | 具体问题 | 方法／规范来源 | 第一步 | 检查结果与适用边界 |
 |---|---|---|---|
 | 定期运行的 AI 助手反复执行第一项任务，却无法证明上次停在哪里。 | <!-- problem-route: agentic-continuity --><a id="agentic-continuity"></a>[Agentic Continuity](AGENTIC_CONTINUITY.md) | 确定职责、稳定键任务队列、可验证检查点，并在独立执行中测试恢复。 | **检查:** 恢复的游标、无重复的下一项、分离的来源与报告回执以及明确权限。 **边界:** 协议本身不会安装定时器、记忆或自主访问。 |
-| 大任务把昂贵推理耗费在重复提取工作上。 | <!-- problem-route: adaptive-orchestration --><a id="adaptive-orchestration-protocol"></a>[Adaptive Orchestration Protocol](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md) | 分离关键决策与机械工作，按可用环境合理分配资源。 | **检查:** 具有验收条件与总工作成本考量的计划。 **边界:** 不会解锁不存在的模型、代理或权限。 |
 | 某项例行审核必须在具体界面中运行并留下检查点。 | <!-- problem-route: operational-devices --><a id="operational-devices"></a>[Operational Devices](OPERATIONAL_DEVICES.md) | 定义真实平台、触发、输入、授权、模拟和停止条件。 | **检查:** 有执行证据的边界明确的设备合同。 **边界:** 合同不会安装执行环境或扩大权限。 |
 | 部署中途失败，重复尝试掩盖真正的错误。 | <!-- problem-route: operational-reliability --><a id="operational-reliability"></a>[Operational Reliability](OPERATIONAL_RELIABILITY.md) | 先查目标、工具、依赖与范围，再作最小可恢复尝试。 | **检查:** 诊断、有限修改、前后回读及恢复路径。 **边界:** 错误消息变化并不自动意味着成功。 |
 | 交接错误在单次修复后反复出现。 | <!-- problem-route: failure-foundry --><a id="failure-foundry"></a>[Failure Foundry](FAILURE_FOUNDRY.md) | 安全保留证据、区分故障域并测试可复用的微规则。 | **检查:** 已测试的检查表、关口或程序，或仅限本情境的经验。 **边界:** 单一故障不自动产生通用新能力。 |
+
+**相关独立协议：** [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) 负责 AI 执行路由，在 Moon Source 注册表之外单独维护。
 
 ## 在项目中组合方法
 

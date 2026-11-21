@@ -38,3 +38,9 @@ SPDX-License-Identifier = "CC-BY-4.0"
 
 # The files under LICENSES/ are standard legal texts reproduced verbatim and
 # are handled by REUSE as license files rather than Moon-authored project files.
+
+[[annotations]]
+path = "downloads/external-projections/*.json"
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Lua Helena Moon Martins Cardoso (Moon)"
+SPDX-License-Identifier = "CC-BY-4.0"

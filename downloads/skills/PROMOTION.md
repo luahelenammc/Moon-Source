@@ -5,7 +5,6 @@ These are portable projections for the public repository, not evidence of instal
 | Capability | Gate rationale | Boundary |
 |---|---|---|
 | Be My Eyes | Read messages, threads, screenshots, notes, posts and drafts as human scenes by separating observation from inference, mapping relationship and power, testing subtext and… | Published contextual scene-reading portable; not mind-reading, psychological diagnosis, scientifically validated interpersonal prediction, guaranteed… |
-| Adaptive Orchestration Protocol | Route by sovereign object and workload shape from the current competent control root across Chat, Work and optional Codex using configurable execution profiles, explicit… | Published Adaptive Orchestration Protocol, version 6.4; surface-neutral control-root routing heuristic with Delegation-First orchestration, separate… |
 | Connected Sources | Operate over standalone, connected-read, living-source and federated source modes with explicit source/host reach, consumer-scoped delivery, authority, capability probing,… | Published Living Source Protocol; not universal or arbitrary connector support, automatic synchronization, exhaustive retrieval, authority by locator,… |
 | Credits & Attribution Ops | Protect intellectual lineage and content custody across identity, origin, authorship, canonicality, transformations, donor exposure, permission envelopes, disclosure… | Operational and evidentiary continuity layer; not a licence, legal rights resolver, ownership proof, enforcement mechanism or adoption claim |
 | Failure to Capability — Failure Foundry | Preserve recurring failure evidence and forge the smallest validated reusable mechanism while keeping protected machinery bounded | Bounded public projection; not an autonomous self-improvement engine, compiler, benchmark, universal promotion rule or measured-impact claim |
@@ -22,6 +21,11 @@ These are portable projections for the public repository, not evidence of instal
 | Source Operations | Define how governed context is retrieved, processed, metabolized within its jurisdiction or deliberately promoted across jurisdictions, with lifecycle, succession, lineage and… | Bounded public source-operations and lifecycle method; not an autonomous migration, promotion or archive engine, universal standard or adoption claim |
 
 The source-facing `SKILL.md` files are maintained in `source/`. Run `python scripts/build_public_skills.py` after source changes and `python scripts/test_public_skill_packages.py` before release. The build rewrites links to omitted repository material into live public URLs; the provenance manifest records the source hashes. A snapshot does not replace current evidence, authorize access or mutation, or install itself.
+
+
+## External AOP compatibility package
+
+`moon-adaptive-orchestration.zip` is retained as an externally maintained compatibility download, not a registry-generated Moon Source skill. Its canonical skill source and release package are maintained at [Adaptive-Orchestration-Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol). Update this ZIP by exact-byte projection from an accepted AOP release and verify it with `scripts/check_aop_compatibility.py`; do not rebuild it with `build_public_skills.py`.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 

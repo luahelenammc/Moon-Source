@@ -49,7 +49,7 @@ Use each file for the responsibility it actually owns:
 - `docs/SOURCE_HYGIENE.md` — public corpus-hygiene and bounded Project MRI diagnostic surface.
 - `portables/setup/MOON_SOURCE_SETUP.md` — adaptive personal and project-context router, currently version 3.1.
 - `portables/msl/MOON_SOURCE_LANGUAGE.md` — current public structural grammar for semantic passage and materialization. MSL is currently 5.1.
-- `portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md` — current Adaptive Orchestration 6.4 surface-neutral, delegation-first protocol: preserve the current competent control root, separate control root from execution harness and root model, use heterogeneous root/child topology when useful, and close through Control-Root Postflight; the named Chat–Work Loop Profile remains available while product/subagent details stay date-sensitive.
+- [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/ADAPTIVE_ORCHESTRATION_PROTOCOL.md) — current Adaptive Orchestration 6.4 surface-neutral, delegation-first protocol: preserve the current competent control root, separate control root from execution harness and root model, use heterogeneous root/child topology when useful, and close through Control-Root Postflight; the named Chat–Work Loop Profile remains available while product/subagent details stay date-sensitive.
 - `registry/PUBLIC_CAPABILITIES.md` — human-readable unified public capability identities, roles, versions, status and standalone-distribution routes.
 - `registry/public-capabilities.json` — machine-readable one-record-per-capability registry; standalone distribution is nested metadata and does not create a second semantic inventory.
 - `docs/PORTABLE_DESIGN_CONTRACT.md` — portable publication, canonical-path and mirror rules.
@@ -77,7 +77,7 @@ When two files appear to conflict, do not flatten them together. First ask wheth
 - Source Operations — Retrieve, Process, Metabolize and Promote → `docs/SOURCE_OPERATIONS.md`
 - Connected Sources → `docs/CONNECTED_SOURCES.md`
 - Be My Eyes → `portables/be-my-eyes/BE_MY_EYES.md`
-- Adaptive Orchestration Protocol → `portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md`
+- Adaptive Orchestration Protocol → [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
 - Moon Source Language → `portables/msl/MOON_SOURCE_LANGUAGE.md`
 - Moon Source Setup → `portables/setup/MOON_SOURCE_SETUP.md`
 - Preflight → `portables/preflight/PREFLIGHT.md`
@@ -134,7 +134,7 @@ Then load only as needed:
 - `docs/CONNECTED_SOURCES.md` if the agent needs real external source access;
 - `docs/SOURCE_OPERATIONS.md` for governed source mutation;
 - `docs/OPERATIONAL_RELIABILITY.md` for recovery and partial failure;
-- `portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md` for model/tool/effort routing.
+- [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/ADAPTIVE_ORCHESTRATION_PROTOCOL.md) for model/tool/effort routing.
 
 Do not infer that loading the method creates a background agent, memory, a scheduler or write permission.
 
@@ -299,7 +299,7 @@ Route current-use questions about superseded artifacts to their active successor
 ### If the user asks where ChatGPT work should run
 
 Load:
-- `portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md`
+- [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
 
 Apply the V6.4 surface-neutral, delegation-first loop: route by sovereign object across Chat, Work and Codex; preserve the current competent control root when it can complete and verify the objective; choose control root, execution harness, root capability, child topology and effort separately; prefer internal subagent delegation before asking for a manual model or surface switch when the harness exposes it; run Budget Survivability before expensive work; and after material executor return perform Control-Root Postflight before treating the cycle as complete. Use the named Chat–Work Loop Profile when Chat continuity is preferred. Treat model names, prices, usage pools, limits and product behavior as date-sensitive. Re-verify current product facts when the answer depends on them.
 

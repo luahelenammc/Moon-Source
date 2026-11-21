@@ -6,7 +6,7 @@ This is a **reader's route**, not a new capability, second registry or replaceme
 
 🌐 **Language / Idioma:** [English](PROBLEM_TO_METHOD.md) · [Português](PROBLEM_TO_METHOD.pt-BR.md) · [Español](PROBLEM_TO_METHOD.es.md) · [简体中文](PROBLEM_TO_METHOD.zh-CN.md) · [Русский](PROBLEM_TO_METHOD.ru.md) · [First-time guide](../START_HERE.md) · [Canonical capabilities](../registry/PUBLIC_CAPABILITIES.md)
 
-## Find a fit among the 17 current public capabilities
+## Find a fit among the 16 current public capabilities
 
 The situations are fictional examples, not real clients or claims of measured results. You usually need **one** method, not all sixteen.
 
@@ -42,10 +42,11 @@ The situations are fictional examples, not real clients or claims of measured re
 | Your situation | Method / canonical source | First move | What to check and what it does not prove |
 |---|---|---|---|
 | A recurring AI assistant keeps repeating the first task and cannot prove where it left off. | <!-- problem-route: agentic-continuity --><a id="agentic-continuity"></a>[Agentic Continuity](AGENTIC_CONTINUITY.md) | Define its mandate, stable-key backlog, verified checkpoint and second-run resumption test. | **Inspect:** A recovered cursor, deduplicated next unit, separated source/report receipts and explicit permissions. **Limit:** A protocol does not install scheduling, memory or autonomous access. |
-| A large task wastes expensive reasoning on repetitive extraction and repeats the same context across handoffs. | <!-- problem-route: adaptive-orchestration --><a id="adaptive-orchestration-protocol"></a>[Adaptive Orchestration Protocol](../portables/adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md) | Separate the decision bottleneck from bulk work; choose available surface, model effort and delegation proportionally. | **Inspect:** An execution plan with acceptance checks and total-work tradeoffs. **Limit:** It does not unlock unavailable models, agents, budgets or execution rights. |
 | A recurring review must run in a specific browser or workflow with visible checkpoints. | <!-- problem-route: operational-devices --><a id="operational-devices"></a>[Operational Devices](OPERATIONAL_DEVICES.md) | Define the concrete surface, trigger, inputs, authorization, dry-run, stop conditions and receipt. | **Inspect:** A bounded device contract and evidence of what actually ran on that surface. **Limit:** The contract does not provide the browser runtime or unrestricted tools. |
 | A deployment or data update fails halfway and retries keep hiding the actual failure. | <!-- problem-route: operational-reliability --><a id="operational-reliability"></a>[Operational Reliability](OPERATIONAL_RELIABILITY.md) | Check target, instrument, dependencies and scope before the smallest reversible retry. | **Inspect:** A diagnosis, bounded action, before/after receipt and recovery path. **Limit:** A new error or tool log does not by itself prove success. |
 | The same handoff mistake keeps resurfacing after individual fixes. | <!-- problem-route: failure-foundry --><a id="failure-foundry"></a>[Failure Foundry](FAILURE_FOUNDRY.md) | Collect safe evidence, isolate failure domain, fix the case and test a transferable micro-rule. | **Inspect:** A tested checklist, gate or procedure candidate, or a situated lesson only. **Limit:** One failure does not automatically justify a universal new capability. |
+
+**Independent related protocol:** [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) governs AI execution routing and is maintained outside the Moon Source registry.
 
 ## Compositions for real project shapes
 

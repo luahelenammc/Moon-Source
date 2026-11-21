@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: zh-CN
 source: ../README.md
-source_sha256: 61fcac9ad6ee0a4906b5e2174f4d7375fdadafc3bfa06a5cbf35514a72b5fd32
+source_sha256: b885cb717bb04a073ddc4a5f99481d20a0ee5b1e1c8e8d978eb4bc78f6fb8ea1
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -112,13 +112,12 @@ Moon Source 把上下文视为一个有组织的场域，而不是一堆文本�
 
 | 如果你需要…… | 从这里开始 |
 |---|---|
-| 在控制根、界面、模型、推理力度和委派之间有效运用 AI 能力，以尽量少的总工作量获得可接受结果 | [🧬 Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) |
 | 在具体执行界面中，通过状态、护栏和收据体现重复性程序 | [🛠️ Operational Devices](../docs/OPERATIONAL_DEVICES.md) |
 | 在可能时让执行保持有界、可诊断和可恢复 | [🛡️ Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) |
 | 使用可验证检查点和系统覆盖来恢复定期 AI 代理工作 | [🧭 Agentic Continuity](../docs/AGENTIC_CONTINUITY.md) |
 | 将重复出现的失败转化为最小且经过验证的可复用机制 | [🏭 Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) |
 
-要查看全部 17 项能力的**问题 → 第一步 → 可观察结果 → 使用边界**，请访问[按问题查找方法](../docs/PROBLEM_TO_METHOD.zh-CN.md)。各规范正文仍是权威来源。
+要查看全部 16 项能力的**问题 → 第一步 → 可观察结果 → 使用边界**，请访问[按问题查找方法](../docs/PROBLEM_TO_METHOD.zh-CN.md)。各规范正文仍是权威来源。 [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) 是单独仓库维护的独立协议，不属于 Moon Source 能力。
 
 ## 首次使用
 
@@ -145,7 +144,7 @@ Moon Source 是一套上下文架构，不是会安装后台服务、记忆系�
 - **人不该被迫像机器那样写提示词。** [Preflight](../portables/preflight/PREFLIGHT.md) 会在执行前重建预期含义，并只在后果需要时加强护栏。
 - **读情境，而不只是句子。** [Be My Eyes](../portables/be-my-eyes/BE_MY_EYES.md) 会重建参与者、关系和合理的潜台词，同时区分观察、推断和过度解读。
 - **工作区状态不能凭空创造权限。** [Lifecycle Workspace Router](../docs/LIFECYCLE_WORKSPACE_ROUTER.md) 会把生命周期、行动和出处投射到持久界面上，但不会替代记录来源。
-- **优化到被接受状态的总工作量。** [Adaptive Orchestration](../portables/adaptive-orchestration/README.md) 会用成本更低但足够的执行处理可约简工作，把更强的认知能力集中在真正的瓶颈上，并把上下文反复变动、重试和不必要的扇出视为成本，而不是免费的管道。
+- **优化到被接受状态的总工作量。** 独立协议 [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) 会用成本更低但足够的执行处理可约简工作，把更强的认知能力集中在真正的瓶颈上，并把上下文反复变动、重试和不必要的扇出视为成本，而不是免费的管道。
 
 ## 公开能力
 

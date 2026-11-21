@@ -9,7 +9,7 @@ This directory contains structural method bodies, public reading guides, technic
 | **Understand** | [Signal Calibration](SIGNAL_CALIBRATION.md) | [Preflight](../portables/preflight/README.md), [Setup](../portables/setup/README.md), [Be My Eyes](../portables/be-my-eyes/README.md) |
 | **Govern** | [Connected Sources](CONNECTED_SOURCES.md), [Source Operations](SOURCE_OPERATIONS.md), [Source Hygiene](SOURCE_HYGIENE.md), [Semantic Reweave](SEMANTIC_REWEAVE.md) | [Moon Source Language](../portables/msl/README.md) |
 | **Organize** | [Lifecycle Workspace Router](LIFECYCLE_WORKSPACE_ROUTER.md), [Procedural Projection](PROCEDURAL_PROJECTION.md), [Credits & Attribution Ops](CREDITS_ATTRIBUTION_OPS.md) | — |
-| **Execute** | [Agentic Continuity](AGENTIC_CONTINUITY.md), [Operational Devices](OPERATIONAL_DEVICES.md), [Operational Reliability](OPERATIONAL_RELIABILITY.md), [Failure Foundry](FAILURE_FOUNDRY.md) | [Adaptive Orchestration](../portables/adaptive-orchestration/README.md) |
+| **Execute** | [Agentic Continuity](AGENTIC_CONTINUITY.md), [Operational Devices](OPERATIONAL_DEVICES.md), [Operational Reliability](OPERATIONAL_RELIABILITY.md), [Failure Foundry](FAILURE_FOUNDRY.md) | Independent protocol: [Adaptive Orchestration](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) |
 
 These groups do not imply a compulsory pipeline or a new authority structure. [Architecture — Field to Form](../ARCHITECTURE.md) and the [AI Kernel](../MOON_SOURCE_AI_KERNEL.md) are cross-cutting architectural entry points, not additional public capabilities.
 

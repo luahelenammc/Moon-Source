@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: es
 source: ../README.md
-source_sha256: 61fcac9ad6ee0a4906b5e2174f4d7375fdadafc3bfa06a5cbf35514a72b5fd32
+source_sha256: b885cb717bb04a073ddc4a5f99481d20a0ee5b1e1c8e8d978eb4bc78f6fb8ea1
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -112,13 +112,12 @@ Una capacidad **portable** tiene una identidad semántica transportable; la **di
 
 | Si necesitas… | Empieza aquí |
 |---|---|
-| Usar la capacidad de IA con eficiencia entre raíces, superficies, modelos, esfuerzo de razonamiento y delegación, minimizando el trabajo total hasta un resultado aceptado | [🧬 Adaptive Orchestration Protocol](../portables/adaptive-orchestration/README.md) |
 | Materializar un procedimiento recurrente en una superficie de ejecución concreta con estado, protecciones y comprobantes | [🛠️ Operational Devices](../docs/OPERATIONAL_DEVICES.md) |
 | Mantener la ejecución acotada, diagnosticable y recuperable cuando sea posible | [🛡️ Operational Reliability](../docs/OPERATIONAL_RELIABILITY.md) |
 | Reanudar agentes periódicos con checkpoints verificables y cobertura sistemática | [🧭 Agentic Continuity](../docs/AGENTIC_CONTINUITY.md) |
 | Convertir un fallo recurrente en el mecanismo reutilizable más pequeño que haya sido validado | [🏭 Failure to Capability — Failure Foundry](../docs/FAILURE_FOUNDRY.md) |
 
-Para recorrer **problema → primer paso → resultado observable → límite** en las 17 capacidades, consulta la [guía basada en problemas](../docs/PROBLEM_TO_METHOD.es.md). Los cuerpos canónicos siguen gobernando cada método.
+Para recorrer **problema → primer paso → resultado observable → límite** en las 16 capacidades, consulta la [guía basada en problemas](../docs/PROBLEM_TO_METHOD.es.md). Los cuerpos canónicos siguen gobernando cada método. [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) es un protocolo independiente, mantenido en su propio repositorio, y no forma parte de las capacidades de Moon Source.
 
 ## Primer uso
 
@@ -145,7 +144,7 @@ Acceso no significa activación. Una fuente accesible no es automáticamente aut
 - **Las personas no deberían tener que escribir prompts como máquinas.** [Preflight](../portables/preflight/PREFLIGHT.md) reconstruye el sentido previsto antes de ejecutar y refuerza las protecciones solo cuando las consecuencias lo requieren.
 - **Lee la escena, no solo la frase.** [Be My Eyes](../portables/be-my-eyes/BE_MY_EYES.md) reconstruye actores, relaciones y subtexto plausible, manteniendo separadas la observación, la inferencia y la sobreinterpretación.
 - **El estado del espacio de trabajo no debe inventar autoridad.** [Lifecycle Workspace Router](../docs/LIFECYCLE_WORKSPACE_ROUTER.md) proyecta ciclo de vida, acción y procedencia en superficies duraderas sin sustituir la fuente de registro.
-- **Optimiza el trabajo total hasta un estado aceptado.** [Adaptive Orchestration](../portables/adaptive-orchestration/README.md) usa la ejecución suficiente de menor costo para el volumen reducible, concentra la cognición más potente en los cuellos de botella reales y trata el cambio de contexto, los reintentos y la delegación innecesaria como costes, no como infraestructura gratuita.
+- **Optimiza el trabajo total hasta un estado aceptado.** El protocolo independiente [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) usa la ejecución suficiente de menor costo para el volumen reducible, concentra la cognición más potente en los cuellos de botella reales y trata el cambio de contexto, los reintentos y la delegación innecesaria como costes, no como infraestructura gratuita.
 
 ## Capacidades públicas
 

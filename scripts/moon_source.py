@@ -38,6 +38,7 @@ def local_validation_steps() -> list[tuple[str, list[str]]]:
             "public capability registry tests",
             python_script("test_validate_public_capabilities.py"),
         ),
+        ("external AOP compatibility projections", python_script("check_aop_compatibility.py")),
         ("agentic checkpoint fixture", python_script("validate_agentic_checkpoint.py")),
         ("AI Kernel package", python_script("check_kernel_package.py")),
         ("title/version separation", python_script("check_title_version_separation.py")),
@@ -99,7 +100,10 @@ def command_steps(command: str, args: argparse.Namespace) -> list[tuple[str, lis
         command_line = python_script("check_mirror_sync.py")
         if args.mirror_root is not None:
             command_line.extend(["--mirror-root", str(args.mirror_root)])
-        return [("canonical/mirror synchronization", command_line)]
+        steps=[("canonical/mirror synchronization", command_line)]
+        if args.mirror_root is not None:
+            steps.append(("external AOP compatibility mirrors", python_script("check_aop_compatibility.py", "--site-root", str(args.mirror_root))))
+        return steps
     raise ValueError(f"unknown maintenance command: {command}")
 
 

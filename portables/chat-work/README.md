@@ -1,13 +1,14 @@
-# Chat–Work is now Adaptive Orchestration
+<!-- SPDX-FileCopyrightText: 2026 Lua Helena Moon Martins Cardoso (Moon) -->
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
 
-**Chat–Work is the legacy name. The current capability is the Adaptive Orchestration Protocol.**
+# README — compatibility pointer
 
-- [Open the current readable surface](../adaptive-orchestration/README.md)
-- [Open the canonical protocol body](../adaptive-orchestration/ADAPTIVE_ORCHESTRATION_PROTOCOL.md)
+This stable Moon Source path is preserved for existing links. It is a readable locator only; no Adaptive Orchestration rules, versions or adapters are maintained here.
 
-This legacy name is not a separate executable tool; the linked current protocol guides how a compatible AI chooses and verifies its execution path.
+**Adaptive Orchestration Protocol repository:** [Adaptive Orchestration Protocol repository](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol)
 
-This page is a compatibility landing surface. **Plan A:** give your AI the current canonical-protocol GitHub link above and ask it to read the applicable First use section. **Plan B:** use the [Adaptive Orchestration ZIP](../../downloads/adaptive-orchestration-protocol.zip) if direct URL retrieval is unavailable. [Access guide](../../docs/USE_WITH_AI.md). The links above lead to the single current semantic authority.
+AOP originated in Moon Source and now has its own canonical repository, release history, adapters and packages. Use the linked source for current content and version metadata. Existing Moon Source compatibility ZIP paths remain byte-verified copies.
+
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
 
