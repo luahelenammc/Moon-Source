@@ -234,8 +234,6 @@ This is a professional-service bridge, not a claim that Moon Source is a mature 
 
 [Moon Cortex](https://github.com/luahelenammc/Moon-Cortex) is a separate, optional applied/system body for domain-shaped modules. It can use Moon Source governance where useful, but it is not part of Moon Source and is not a permanent runtime dependency.
 
-For discovery across autonomous architectures, see the [Moon Cortex Federation Atlas](https://github.com/luahelenammc/Moon-Cortex/blob/main/ECOSYSTEM.md). For source-governed representation, fictional character exploration, labeled persona simulation and structured contrast, consult the independent [PRISMA](https://github.com/luahelenammc/PRISMA/blob/main/PRISMA.md) public release candidate. Neither is a Moon Source capability or a required runtime dependency.
-
 Moon Source was created by Lua Helena Moon Martins Cardoso (Moon). Some materials were developed through an AI-assisted coauthorial process with Áurion. Moon retains final authority.
 
 <!-- MOON-SOURCE-PUBLIC-STAMP -->
