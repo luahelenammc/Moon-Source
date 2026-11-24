@@ -134,7 +134,7 @@ Access is not activation. A reachable source is not automatically authoritative,
 - **Humans should not have to prompt like machines.** [Preflight](portables/preflight/PREFLIGHT.md) reconstructs intended meaning before execution and escalates guardrails only when consequence requires them.
 - **Read the scene, not only the sentence.** [Be My Eyes](portables/be-my-eyes/BE_MY_EYES.md) reconstructs actors, relationship and plausible subtext while keeping observation, inference and overread distinct.
 - **Workspace state must not invent authority.** [Lifecycle Workspace Router](docs/LIFECYCLE_WORKSPACE_ROUTER.md) projects lifecycle, action and provenance onto durable surfaces without replacing the source of record.
-- **Optimize total work to an accepted state.** The independent [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) uses cheaper sufficient execution for reducible bulk, concentrates stronger cognition at real bottlenecks, and treats context churn, retries and unnecessary fan-out as costs rather than free plumbing.
+- **Optimize total work to an accepted state.** The independent [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) uses cheaper sufficient execution for reducible bulk, concentrates stronger cognition at real bottlenecks, and treats context churn, retries, unnecessary fan-out and avoidable human rework as costs rather than free plumbing. AOP 6.6 also assesses collaborative fit at the control root and recovers proportionately from material behavioral drift.
 
 ## Public capabilities
 
