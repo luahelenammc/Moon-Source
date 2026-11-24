@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: pt-BR
 source: ../README.md
-source_sha256: b885cb717bb04a073ddc4a5f99481d20a0ee5b1e1c8e8d978eb4bc78f6fb8ea1
+source_sha256: dec61b43412ae593c10df1a331cf7b823436f9a111d789d989ebb5ca0f68dfc4
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -144,7 +144,7 @@ Acesso não é ativação. Uma fonte acessível não se torna automaticamente au
 - **As pessoas não deveriam ter de escrever prompts como máquinas.** [Preflight](../portables/preflight/PREFLIGHT.md) reconstrói o sentido pretendido antes da execução e amplia as proteções apenas quando as consequências exigem isso.
 - **Leia a cena, não só a frase.** [Be My Eyes](../portables/be-my-eyes/BE_MY_EYES.md) reconstrói atores, relações e subtexto plausível, mantendo distintas a observação, a inferência e a extrapolação.
 - **O estado do espaço de trabalho não deve inventar autoridade.** [Lifecycle Workspace Router](../docs/LIFECYCLE_WORKSPACE_ROUTER.md) projeta ciclo de vida, ação e proveniência em superfícies duráveis sem substituir a fonte oficial.
-- **Otimize o trabalho total até um estado aceito.** O protocolo independente [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) usa execução suficiente e mais econômica para o volume redutível, concentra cognição mais forte nos gargalos reais e trata a troca de contexto, as novas tentativas e a delegação desnecessária como custos, não como infraestrutura gratuita.
+- **Otimize o trabalho total até um estado aceito.** O protocolo independente [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) usa execução suficiente e mais econômica para o volume redutível, concentra cognição mais forte nos gargalos reais e trata a troca de contexto, as novas tentativas a delegação desnecessária e o retrabalho humano evitável como custos, não como infraestrutura gratuita. O AOP 6.6 também avalia a adequação colaborativa na raiz de controle e prevê recuperação proporcional de desvios comportamentais relevantes.
 
 ## Capacidades públicas
 

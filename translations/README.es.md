@@ -4,7 +4,7 @@
 MOON-SOURCE-README-TRANSLATION
 locale: es
 source: ../README.md
-source_sha256: b885cb717bb04a073ddc4a5f99481d20a0ee5b1e1c8e8d978eb4bc78f6fb8ea1
+source_sha256: dec61b43412ae593c10df1a331cf7b823436f9a111d789d989ebb5ca0f68dfc4
 contract: ../docs/README_TRANSLATIONS.md
 -->
 
@@ -144,7 +144,7 @@ Acceso no significa activación. Una fuente accesible no es automáticamente aut
 - **Las personas no deberían tener que escribir prompts como máquinas.** [Preflight](../portables/preflight/PREFLIGHT.md) reconstruye el sentido previsto antes de ejecutar y refuerza las protecciones solo cuando las consecuencias lo requieren.
 - **Lee la escena, no solo la frase.** [Be My Eyes](../portables/be-my-eyes/BE_MY_EYES.md) reconstruye actores, relaciones y subtexto plausible, manteniendo separadas la observación, la inferencia y la sobreinterpretación.
 - **El estado del espacio de trabajo no debe inventar autoridad.** [Lifecycle Workspace Router](../docs/LIFECYCLE_WORKSPACE_ROUTER.md) proyecta ciclo de vida, acción y procedencia en superficies duraderas sin sustituir la fuente de registro.
-- **Optimiza el trabajo total hasta un estado aceptado.** El protocolo independiente [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) usa la ejecución suficiente de menor costo para el volumen reducible, concentra la cognición más potente en los cuellos de botella reales y trata el cambio de contexto, los reintentos y la delegación innecesaria como costes, no como infraestructura gratuita.
+- **Optimiza el trabajo total hasta un estado aceptado.** El protocolo independiente [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol) usa la ejecución suficiente de menor costo para el volumen reducible, concentra la cognición más potente en los cuellos de botella reales y trata el cambio de contexto, los reintentos la delegación innecesaria y el retrabajo humano evitable como costes, no como infraestructura gratuita. AOP 6.6 también evalúa la adecuación colaborativa de la raíz de control y prevé una recuperación proporcional ante desviaciones de comportamiento relevantes.
 
 ## Capacidades públicas
 
