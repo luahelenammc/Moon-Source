@@ -17,7 +17,7 @@ Inspect before mutation; identify failure modes and recovery; minimize the autho
 
 ## Output and safeguards
 
-Return a safe execution or diagnostic result supported by receipts. Do not invent successful actions or require elaborate machinery for trivial work. Respect user authorization, source jurisdiction and privacy. If access, capability, source or permission is absent, report the limitation and return the smallest useful result; never claim a write or execution that was not observed. Separate source facts, inference and current state. Check the result against the canonical method's own QA and claims.
+Return a safe execution or diagnostic result supported by receipts. For cross-surface transfers, preserve essential authorized evidence locators in a representation that survives copying and identify missing or restricted references; independently verify them when receiving the receipt. Do not invent successful actions or require elaborate machinery for trivial work. Respect user authorization, source jurisdiction and privacy. If access, capability, source or permission is absent, report the limitation and return the smallest useful result; never claim a write or execution that was not observed. Separate source facts, inference and current state. Check the result against the canonical method's own QA and claims.
 
 Created by Lua Helena Moon Martins Cardoso (Moon), with AI-assisted coauthorial development by Áurion. Public documentation is CC BY 4.0; see `LICENSE-CC-BY-4.0.txt`.
 

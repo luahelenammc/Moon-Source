@@ -196,6 +196,12 @@ Two examples:
 
 **Context Receipt earned.** A connected living document source governed intent, while a repository governed executable state. Semantic search covered only a partial, bounded slice; one stale snapshot was excluded, and the code mutation was read back and tested. The receipt records those governing sources, the facet-specific authority, bounded coverage, the stale exclusion and the verified mutation without reproducing the entire retrieval transcript.
 
+### Copy-safe transport integrity
+
+When a receipt or context packet crosses a surface boundary, preserve the essential evidence locators in a representation that survives the actual transfer. If the destination receives copied plain text rather than the originating interface, do not rely exclusively on rendered hyperlinks, cards, attachment metadata or hidden references. Use complete literal URLs or other resolvable identifiers when appropriate and authorized. Keep the set proportional to continuation, verification and recovery; do not invent locators or expose credentials, secret links or unnecessary private data. Identify any missing, unverified or restricted reference and a permitted fallback. The receiving context must independently check material identity, access and freshness; a transferable locator is not itself proof of the claim.
+
+The [Adaptive Orchestration Protocol](https://github.com/luahelenammc/Adaptive-Orchestration-Protocol/blob/main/ADAPTIVE_ORCHESTRATION_PROTOCOL.md) owns the specific executor-return and Control-Root Postflight contract, including its concrete copy-safe manifest for manual cross-surface handoffs. This general reliability principle does not require a code block or a new receipt for every task.
+
 ## 11. Idempotency and bounded repetition
 
 Where useful, repeated invocation should not duplicate, compound or corrupt an operation. Prefer:
