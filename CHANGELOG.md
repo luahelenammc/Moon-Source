@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-26 — Operational Reliability: copy-safe transport integrity
+
+- Extend receipt and context-packet reliability to essential evidence locators that must survive surface transfer; preserve privacy, proportionality and independent verification.
+- Reference the independent AOP for its specific executor-return manifest and postflight contract. No new capability, component version or universal output-format rule is introduced.
+
 ## 2026-11-21 — Agentic Continuity 1.1: situated delegation and context return
 
 - Added a field-sensitive mandate and return contract that separates task jurisdiction, access, capability, outcomes and source authority across execution surfaces.
