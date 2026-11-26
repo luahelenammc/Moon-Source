@@ -1,0 +1,35 @@
+# SPDX-FileCopyrightText: 2026 Lua Helena Moon Martins Cardoso (Moon)
+# SPDX-License-Identifier: Apache-2.0
+name: Temporary receipt transport package build
+on:
+  push:
+    branches: ["upstream/receipt-transport-integrity"]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Rebuild and validate skills
+        run: |
+          python scripts/build_public_skills.py
+          python scripts/build_public_skills.py --check
+          python scripts/test_public_skill_packages.py
+          git diff --name-only -- downloads/skills
+      - name: Emit affected public skill package
+        run: |
+          python - <<'PY'
+          import base64, hashlib
+          from pathlib import Path
+          path = "downloads/skills/moon-operational-reliability.zip"
+          data = Path(path).read_bytes()
+          print("PACKAGE_BEGIN " + path + " " + hashlib.sha256(data).hexdigest())
+          encoded = base64.b64encode(data).decode()
+          for i in range(0, len(encoded), 120):
+              print("PACKAGE_DATA " + encoded[i:i+120])
+          print("PACKAGE_END " + path)
+          PY
