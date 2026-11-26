@@ -1,18 +1,18 @@
 {
   "canonical_repository": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol",
-  "canonical_commit": "d77af43ed721da957e1c1e4aef4fb2f9be746b82",
-  "protocol_version": "6.6",
+  "canonical_commit": "2b5611034fce05bfb728dce924a7114460a81929",
+  "protocol_version": "6.7",
   "core_path": "ADAPTIVE_ORCHESTRATION_PROTOCOL.md",
-  "core_sha256": "037200e73e6513c1f84e6375f756cb044407d7e8e3c02d5ca967a7c9d49f5844",
+  "core_sha256": "5a76bc7abc2a46fc0b780b2d32c758dab35d25a5a9ca5af8fe18d8b74a0b6152",
   "composite_zip_path": "downloads/adaptive-orchestration-protocol.zip",
-  "composite_zip_sha256": "0ba20b581babb4f82e594c00a9842a7b4b74eb0b6255ede9f651f386809eddbe",
+  "composite_zip_sha256": "a618404e4259225ddbf22785735d46e9b01e138ad1c4b0993618d0b2cfc9a6b1",
   "compatibility_composite_paths": [
     "downloads/adaptive-orchestration-protocol.zip",
     "downloads/chat-work-routing-protocol.zip"
   ],
   "skill_source_path": "skills/moon-adaptive-orchestration/SKILL.md",
   "skill_zip_path": "downloads/skills/moon-adaptive-orchestration.zip",
-  "skill_zip_sha256": "b5da3abe880aa990e74a86e6ce53bc28749aebb49113a57b81e124c74aa6bac1",
+  "skill_zip_sha256": "8ee5f0826b73d3cba57c5d00d926c87883cc4eae06738389c06be20adaecd1a3",
   "compatibility_skill_path": "downloads/skills/moon-adaptive-orchestration.zip",
   "pointer_paths": {
     "portables/adaptive-orchestration/README.md": "https://github.com/luahelenammc/Adaptive-Orchestration-Protocol",
